@@ -123,7 +123,7 @@ class SettingsViewController: TableViewController {
   private var sections: [Static.Section] {
     var list = [
       defaultBrowserSection,
-      featuresSection,
+      //featuresSection,
       generalSection,
       displaySection,
       tabsSection,

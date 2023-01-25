@@ -51,12 +51,15 @@ class RewardsButton: UIButton {
     case .initial:
       setImage(UIImage(sharedNamed: "brave.basicattentiontoken")!, for: .normal)
       lookAtMeBadge.isHidden = false
+      self.isHidden = true
     case .enabled:
       setImage(UIImage(sharedNamed: "brave.basicattentiontoken")!, for: .normal)
       lookAtMeBadge.isHidden = true
+      self.isHidden = true
     case .disabled:
       setImage(UIImage(sharedNamed: "brave.basicattentiontoken.greyscale")!, for: .normal)
       lookAtMeBadge.isHidden = true
+      self.isHidden = true
     }
   }
 

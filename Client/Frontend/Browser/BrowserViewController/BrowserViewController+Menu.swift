@@ -115,7 +115,7 @@ extension BrowserViewController {
         }
       }
 
-      if isShownOnWebPage {
+      /*if isShownOnWebPage {
         MenuItemFactory.button(for: .wallet()) {[weak self] in
           self?.presentWallet()
         }
@@ -123,7 +123,7 @@ extension BrowserViewController {
           guard let self = self else { return }
           self.presentPlaylistController()
         }
-      }
+      }*/
       MenuItemFactory.button(for: .settings) { [unowned self, unowned menuController] in
         let isPrivateMode = PrivateBrowsingManager.shared.isPrivateBrowsing
         let keyringService = BraveWallet.KeyringServiceFactory.get(privateMode: isPrivateMode)
