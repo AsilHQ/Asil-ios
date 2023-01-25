@@ -146,7 +146,7 @@ class SettingsViewController: TableViewController {
     }()
 
     if shouldShowVPNSection {
-      list.insert(enableBraveVPNSection, at: 0)
+      //list.insert(enableBraveVPNSection, at: 0)
     }
 
     if let debugSection = debugSection {
