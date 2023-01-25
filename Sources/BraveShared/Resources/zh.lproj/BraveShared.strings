@@ -293,7 +293,7 @@
 "callout.p3aCalloutLinkTitle" = "了解更多关于我们的隐私保护产品分析（P3A）。";
 
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutTitle" = "協助提升 Brave 品質。";
+"callout.p3aCalloutTitle" = "協助提升 Asil Browser 品質。";
 
 /* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
 "callout.p3aCalloutToggleTitle" = "匿名分享私密的产品见解。";

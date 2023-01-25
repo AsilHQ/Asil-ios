@@ -293,7 +293,7 @@
 "callout.p3aCalloutLinkTitle" = "Erfahren Sie mehr über unsere Produktanalyse, die den Datenschutz respektiert (P3A).";
 
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutTitle" = "Brave mit Ihrer Hilfe verbessern.";
+"callout.p3aCalloutTitle" = "Asil Browser mit Ihrer Hilfe verbessern.";
 
 /* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
 "callout.p3aCalloutToggleTitle" = "Teilen Sie anonyme und private Produkteinblicke.";

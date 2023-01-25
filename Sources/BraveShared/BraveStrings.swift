@@ -276,7 +276,7 @@ extension Strings {
       NSLocalizedString(
         "callout.p3aCalloutTitle",
         tableName: "BraveShared", bundle: .module,
-        value: "Help make Brave better.",
+        value: "Help make Asil Browser better.",
         comment: "Title for p3a (Privacy Preserving Analytics) Full Screen Callout")
     public static let p3aCalloutDescription =
       NSLocalizedString(

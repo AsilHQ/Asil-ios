@@ -293,7 +293,7 @@
 "callout.p3aCalloutLinkTitle" = "Gizlilik Korumalı Ürün Analizlerimiz (P3A) hakkında daha fazlasını öğrenin.";
 
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutTitle" = "Brave'i daha iyi hale getirmeye yardım edin.";
+"callout.p3aCalloutTitle" = "Asil Browser'ı daha iyi hale getirmeye yardım edin.";
 
 /* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
 "callout.p3aCalloutToggleTitle" = "Anonim, gizli ürün içgörüleri paylaşın.";

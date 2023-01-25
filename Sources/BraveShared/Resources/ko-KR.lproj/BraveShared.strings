@@ -293,7 +293,7 @@
 "callout.p3aCalloutLinkTitle" = "프라이버시 보호 제품 분석(P3A)에 대해 자세히 알아보기.";
 
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutTitle" = "Brave 개선에 참여.";
+"callout.p3aCalloutTitle" = "Asil Browser 개선에 참여.";
 
 /* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
 "callout.p3aCalloutToggleTitle" = "익명으로 프라이버시를 보호하며 제품 인사이트 공유.";
