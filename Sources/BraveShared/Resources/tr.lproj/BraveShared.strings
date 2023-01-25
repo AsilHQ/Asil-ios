@@ -1193,7 +1193,7 @@
 "OBSearchEngineDetail" = "Varsayılan arama motorunuzu seçin";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Brave Tarayıcı'ya Hoş Geldiniz";
+"OBSearchEngineTitle" = "Asil Tarayıcı'ya Hoş Geldiniz";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "Web'de takip edilmeden gezinebilmek için gizliliği ihlal eden izleyicileri engelleyin";
@@ -1235,7 +1235,7 @@
 "onboarding.omniboxOnboardingPopOverTitle" = "Bir web sitesi adı veya URL yazın";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "Brave'e hoş geldiniz";
+"onboarding.welcomeScreenTitle" = "Asil Browser'e hoş geldiniz";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "Devam et";

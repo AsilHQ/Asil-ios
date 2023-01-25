@@ -1193,7 +1193,7 @@
 "OBSearchEngineDetail" = "Välj din standardsökmotor";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Välkommen till Brave webbläsaren";
+"OBSearchEngineTitle" = "Välkommen till Asil Browser webbläsaren";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "Blockera sekretessinträngande spårare så att du kan bläddra utan att följas på webben";
@@ -1235,7 +1235,7 @@
 "onboarding.omniboxOnboardingPopOverTitle" = "Skriv webbplatsens namn eller URL";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "Välkommen till Brave";
+"onboarding.welcomeScreenTitle" = "Välkommen till Asil Browser";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "Fortsätt";

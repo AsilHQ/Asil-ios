@@ -1170,7 +1170,7 @@ extension Strings {
   public static let OBTurnOnButton = NSLocalizedString("OBTurnOnButton", tableName: "BraveShared", bundle: .module, value: "Start", comment: "Button to show Brave Rewards.")
   public static let OBShowMeButton = NSLocalizedString("OBShowMeButton", tableName: "BraveShared", bundle: .module, value: "Show Me", comment: "Button to show the Brave Rewards Ads.")
   public static let OBDidntSeeAdButton = NSLocalizedString("OBDidntSeeAdButton", tableName: "BraveShared", bundle: .module, value: "I didn't see an ad", comment: "Button to show information on how to enable ads")
-  public static let OBSearchEngineTitle = NSLocalizedString("OBSearchEngineTitle", tableName: "BraveShared", bundle: .module, value: "Welcome to Brave Browser", comment: "Title for search engine onboarding screen")
+  public static let OBSearchEngineTitle = NSLocalizedString("OBSearchEngineTitle", tableName: "BraveShared", bundle: .module, value: "Welcome to Asil Browser", comment: "Title for search engine onboarding screen")
   public static let OBSearchEngineDetail = NSLocalizedString("OBSearchEngineDetail", tableName: "BraveShared", bundle: .module, value: "Select your default search engine", comment: "Detail text for search engine onboarding screen")
   public static let OBShieldsTitle = NSLocalizedString("OBShieldsTitle", tableName: "BraveShared", bundle: .module, value: "Brave Shields", comment: "Title for shields onboarding screen")
   public static let OBShieldsDetail = NSLocalizedString("OBShieldsDetail", tableName: "BraveShared", bundle: .module, value: "Block privacy-invading trackers so you can browse without being followed around the web", comment: "Detail text for shields onboarding screen")

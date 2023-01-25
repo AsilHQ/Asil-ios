@@ -1193,7 +1193,7 @@
 "OBSearchEngineDetail" = "Виберіть пошукову систему за замовчуванням";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Вітаємо в браузері Brave!";
+"OBSearchEngineTitle" = "Вітаємо в браузері Asil!";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "Блокування трекерів, які порушують приватність, щоб за вами не стежили в мережі";
@@ -1235,7 +1235,7 @@
 "onboarding.omniboxOnboardingPopOverTitle" = "Наберіть назву сайту або введіть URL-посилання";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "Вітаємо у Brave!";
+"onboarding.welcomeScreenTitle" = "Вітаємо у Asil Browser!";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "Продовжити";

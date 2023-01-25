@@ -1193,7 +1193,7 @@
 "OBSearchEngineDetail" = "Pilih enjin carian lalai anda";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Selamat datang ke Pelayar Brave";
+"OBSearchEngineTitle" = "Selamat datang ke Pelayar Asil Browser";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "Sekat penjejak yang menceroboh privasi agar anda boleh melayari internet dengan tenang tanpa diikuti.";
@@ -1235,7 +1235,7 @@
 "onboarding.omniboxOnboardingPopOverTitle" = "Taip nama laman web atau URL";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "Selamat Datang ke Brave";
+"onboarding.welcomeScreenTitle" = "Selamat Datang ke Asil Browser";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "Teruskan";

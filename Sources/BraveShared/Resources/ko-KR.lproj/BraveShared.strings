@@ -1193,7 +1193,7 @@
 "OBSearchEngineDetail" = "기본 검색 엔진 선택";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Brave 브라우저에 오신 것을 환영합니다.";
+"OBSearchEngineTitle" = "Asil Browser 브라우저에 오신 것을 환영합니다.";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "프라이버시를 침해하는 트래커를 차단하여 웹에서 불필요한 사이트 방문 없이 브라우징 가능";
@@ -1235,7 +1235,7 @@
 "onboarding.omniboxOnboardingPopOverTitle" = "웹사이트 이름 또는 URL 타이핑";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "반갑습니다, Brave입니다";
+"onboarding.welcomeScreenTitle" = "반갑습니다, Asil Browser입니다";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "계속";

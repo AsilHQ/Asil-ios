@@ -1193,7 +1193,7 @@
 "OBSearchEngineDetail" = "选择默认搜索引擎";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "欢迎使用 Brave 浏览器";
+"OBSearchEngineTitle" = "欢迎使用 Asil Browser 浏览器";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "拦截侵犯隐私的跟踪程序，让您能够浏览网络内容，无需担心被跟踪";
@@ -1235,7 +1235,7 @@
 "onboarding.omniboxOnboardingPopOverTitle" = "输入网站名称或 URL";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "欢迎使用 Brave";
+"onboarding.welcomeScreenTitle" = "欢迎使用 Asil Browser";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "继续";

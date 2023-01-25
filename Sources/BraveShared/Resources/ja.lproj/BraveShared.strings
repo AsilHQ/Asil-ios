@@ -1193,7 +1193,7 @@
 "OBSearchEngineDetail" = "デフォルトの検索エンジンを設定する";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Braveブラウザにようこそ！";
+"OBSearchEngineTitle" = "Asil Browserブラウザにようこそ！";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "プライバシーを侵害するトラッカーをブロックすることで、インターネット上でつきまとわれずにブラウジングすることができます。";
@@ -1235,7 +1235,7 @@
 "onboarding.omniboxOnboardingPopOverTitle" = "ウェブサイト名またはURLを入力";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "Braveへようこそ";
+"onboarding.welcomeScreenTitle" = "Asil Browserへようこそ";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "続ける";
