@@ -272,7 +272,7 @@
 "Cache" = "캐시";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Brave를 기본으로 설정하면 탭한 모든 링크가 Brave의 프라이버시 보호가 적용되어 열립니다.";
+"callout.defaultBrowserCalloutDescription" = "Asil Browser를 기본으로 설정하면 탭한 모든 링크가 Asil Browser의 프라이버시 보호가 적용되어 열립니다.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "기본 브라우저로 설정";

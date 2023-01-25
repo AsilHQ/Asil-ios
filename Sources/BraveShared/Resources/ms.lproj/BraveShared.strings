@@ -272,7 +272,7 @@
 "Cache" = "Cache";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Dengan Brave sebagai lalai, setiap pautan yang anda ketik dibuka dengan perlindungan privasi Brave.";
+"callout.defaultBrowserCalloutDescription" = "Dengan Asil Browser sebagai lalai, setiap pautan yang anda ketik dibuka dengan perlindungan privasi Asil Browser.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Tetapkan sebagai pelayar lalai";

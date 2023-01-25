@@ -272,7 +272,7 @@
 "Cache" = "Önbellek";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Brave varsayılan olarak ayarlandığında, tıkladığınız her bağlantı Brave'in gizlilik korumasıyla açılır.";
+"callout.defaultBrowserCalloutDescription" = "Asil Browser varsayılan olarak ayarlandığında, tıkladığınız her bağlantı Asil Browser'in gizlilik korumasıyla açılır.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Varsayılan tarayıcı olarak ayarla";

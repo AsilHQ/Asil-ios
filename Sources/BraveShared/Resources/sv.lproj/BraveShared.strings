@@ -272,7 +272,7 @@
 "Cache" = "Cache";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Med Brave som standard öppnas varje länk med Braves integritetsskydd.";
+"callout.defaultBrowserCalloutDescription" = "Med Asil Browser som standard öppnas varje länk med Asil Browsers integritetsskydd.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Ange som standardwebbläsare";

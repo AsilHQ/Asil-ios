@@ -272,7 +272,7 @@
 "Cache" = "缓存";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "有 Brave 作为默认设置，您点击的每个链接都会在 Brave 的隐私保护下打开。";
+"callout.defaultBrowserCalloutDescription" = "有 Asil Browser 作为默认设置，您点击的每个链接都会在 Asil Browser 的隐私保护下打开。";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "设置为默认浏览器";

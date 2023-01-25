@@ -272,7 +272,7 @@
 "Cache" = "Cache";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Wenn Brave als Standard gewählt wurde, wird jeder Link, den Sie antippen, mit den Datenschutzmechanismen von Brave geöffnet.";
+"callout.defaultBrowserCalloutDescription" = "Wenn Asil Browser als Standard gewählt wurde, wird jeder Link, den Sie antippen, mit den Datenschutzmechanismen von Asil Browser geöffnet.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Als Standard-Browser festlegen";

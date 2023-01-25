@@ -272,7 +272,7 @@
 "Cache" = "快取";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "將 Brave 設為預設瀏覽器的話，您所輕觸的每個連結都會在 Brave 的隱私保護下開啟。";
+"callout.defaultBrowserCalloutDescription" = "將 Asil Browser 設為預設瀏覽器的話，您所輕觸的每個連結都會在 Asil Browser 的隱私保護下開啟。";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "設為預設瀏覽器";

@@ -272,7 +272,7 @@
 "Cache" = "Buffer";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Med Brave som standard åpnes alle linker du trykker på, med Braves innebygde standardinnstillinger.";
+"callout.defaultBrowserCalloutDescription" = "Med Asil Browser som standard åpnes alle linker du trykker på, med Asil Browsers innebygde standardinnstillinger.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Angi som standardnettleser";

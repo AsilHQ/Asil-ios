@@ -272,7 +272,7 @@
 "Cache" = "Кеш";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Якщо Brave буде вибрано за замовчуванням, кожне посилання відкриватиметься з налаштуваннями безпеки від Brave.";
+"callout.defaultBrowserCalloutDescription" = "Якщо Asil Browser буде вибрано за замовчуванням, кожне посилання відкриватиметься з налаштуваннями безпеки від Asil Browser.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Установити як браузер за замовчуванням";

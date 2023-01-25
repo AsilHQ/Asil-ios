@@ -272,7 +272,7 @@
 "Cache" = "Caché";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Si usas Brave como navegador predeterminado, todos los enlaces que pulses se abrirán con la protección de privacidad de Brave.";
+"callout.defaultBrowserCalloutDescription" = "Si usas Asil Browser como navegador predeterminado, todos los enlaces que pulses se abrirán con la protección de privacidad de Asil Browser.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Establecer como navegador predeterminado";

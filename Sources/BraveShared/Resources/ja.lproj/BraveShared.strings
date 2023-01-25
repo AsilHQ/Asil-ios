@@ -272,7 +272,7 @@
 "Cache" = "キャッシュ";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Braveをデフォルトに設定すると、すべてのリンクをBraveのプライバシー保護により開くことができます。";
+"callout.defaultBrowserCalloutDescription" = "Asil Browserをデフォルトに設定すると、すべてのリンクをAsil Browserのプライバシー保護により開くことができます。";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "デフォルトブラウザに設定する";

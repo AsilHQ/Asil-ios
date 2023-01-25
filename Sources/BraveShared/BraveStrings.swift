@@ -204,13 +204,13 @@ extension Strings {
       NSLocalizedString(
         "callout.defaultBrowserCalloutDescription",
         tableName: "BraveShared", bundle: .module,
-        value: "With Brave as default, every link you tap opens with Brave's privacy protections.",
+        value: "With Asil Browser as default, every link you tap opens with Asil Browser's privacy protections.",
         comment: "Subtitle - Description for Default Browser Full Screen Callout")
     public static let defaultBrowserCalloutButtonDescription =
       NSLocalizedString(
         "callout.defaultBrowserCalloutButtonDescription",
         tableName: "BraveShared", bundle: .module,
-        value: "Set Brave as default browser?",
+        value: "Set Asil Browser as default browser?",
         comment: "Description - Description used for main button in Default Browser Full Screen Callout")
     public static let defaultBrowserCalloutPrimaryButtonTitle =
       NSLocalizedString(
