@@ -282,7 +282,7 @@ extension Strings {
       NSLocalizedString(
         "callout.p3aCalloutDescription",
         tableName: "BraveShared", bundle: .module,
-        value: "This helps us learn what Brave features are used most often. Change this at any time in Brave Settings under ‘Brave Shields and Privacy’.",
+        value: "This helps us learn what Asil Browser features are used most often. Change this at any time in Asil Browser Settings under ‘Asil Browser Shields and Privacy’.",
         comment: "Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout")
     public static let p3aCalloutToggleTitle =
       NSLocalizedString(

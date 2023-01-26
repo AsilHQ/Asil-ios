@@ -287,7 +287,7 @@
 "callout.defaultBrowserTitle" = "Prosty sposób na prywatność.";
 
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "To pomoże nam zrozumieć, które funkcje Brave są używane najczęściej. Możesz to zmienić w dowolnej chwili w Ustawieniach Brave w zakładce Tarcze Brave i prywatność.";
+"callout.p3aCalloutDescription" = "To pomoże nam zrozumieć, które funkcje Asil Browser są używane najczęściej. Możesz to zmienić w dowolnej chwili w Ustawieniach Asil Browser w zakładce Tarcze Asil Browser i prywatność.";
 
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "Dowiedz się więcej o naszej analizie produktów z zachowaniem prywatności (P3A).";

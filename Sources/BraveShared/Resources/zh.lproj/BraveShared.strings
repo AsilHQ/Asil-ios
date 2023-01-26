@@ -287,7 +287,7 @@
 "callout.defaultBrowserTitle" = "隐私。让事情变得简单明了。";
 
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "这有助于我们了解 Brave 最常用的功能。在 Brave 设置下的 Brave 防护盾和隐私中随时更改此设置。";
+"callout.p3aCalloutDescription" = "这有助于我们了解 Asil Browser 最常用的功能。在 Asil Browser 设置下的 Asil Browser 防护盾和隐私中随时更改此设置。";
 
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "了解更多关于我们的隐私保护产品分析（P3A）。";

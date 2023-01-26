@@ -287,7 +287,7 @@
 "callout.defaultBrowserTitle" = "프라이버시. 심플하게.";
 
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "어떤 Brave 기능이 가장 자주 사용되는지 학습할 수 있습니다. 'Brave Shields 및 프라이버시' 아래 Brave 설정에서 언제든지 변경할 수 있습니다.";
+"callout.p3aCalloutDescription" = "어떤 Asil Browser 기능이 가장 자주 사용되는지 학습할 수 있습니다. 'Asil Browser Shields 및 프라이버시' 아래 Asil Browser 설정에서 언제든지 변경할 수 있습니다.";
 
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "프라이버시 보호 제품 분석(P3A)에 대해 자세히 알아보기.";

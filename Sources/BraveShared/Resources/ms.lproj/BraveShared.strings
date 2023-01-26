@@ -287,7 +287,7 @@
 "callout.defaultBrowserTitle" = "Privasi. Dihasilkan Secara Mudah.";
 
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "Ini membantu kami mengetahui tentang ciri Brave yang paling kerap digunakan. Tukarkan ini pada bila-bila masa di Tetapan Brave di bawah 'Perisai Brave dan Privasi'.";
+"callout.p3aCalloutDescription" = "Ini membantu kami mengetahui tentang ciri Asil Browser yang paling kerap digunakan. Tukarkan ini pada bila-bila masa di Tetapan Asil Browser di bawah 'Perisai Asil Browser dan Privasi'.";
 
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "Ketahui lebih lanjut tentang Analitik Produk Pengekalan Privasi (P3A).";
