@@ -190,7 +190,7 @@ class NewTabPageViewController: UIViewController {
 
     // This is a one-off view, adding it to the NTP only if necessary.
     if NTPDefaultBrowserCalloutProvider.shouldShowCallout {
-      sections.insert(NTPDefaultBrowserCalloutProvider(), at: 0)
+      //sections.insert(NTPDefaultBrowserCalloutProvider(), at: 0)
     }
 
     if !PrivateBrowsingManager.shared.isPrivateBrowsing {
