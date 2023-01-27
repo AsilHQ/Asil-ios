@@ -224,7 +224,7 @@
 "BraveShieldsSiteBroken" = "Si no ves este sitio web correctamente, prueba a desactivar los escudos";
 
 /* Context: 'Brave Shields Up' or 'Brave Shields Down' */
-"BraveShieldsStatusTitle" = "Escudos de Brave";
+"BraveShieldsStatusTitle" = "Escudos de Asil Browser";
 
 /* Context: The 'Down' in 'Brave Shields Down' */
 "BraveShieldsStatusValueDown" = "desactivados";
@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "Ajustes";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Lista de reproducción de Brave";
+"playlist.carplayTitle" = "Lista de reproducción de Asil Browser";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Eliminar caché sin conexión";
@@ -1604,13 +1604,13 @@
 "playlist.popoverAddBody" = "Las listas de reproducción de Brave admiten los modos de reproducción sin conexión, imagen en imagen, reproducción continua y repetición.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Este archivo multimedia está en tu lista de reproducción de Brave";
+"playlist.popoverAddedTitle" = "Este archivo multimedia está en tu lista de reproducción de Asil Browser";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "¿Te gustaría añadir este archivo multimedia a tu lista de reproducción de Brave?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Abrir en la lista de reproducción de Brave";
+"playlist.popoverOpenInBravePlaylist" = "Abrir en la lista de reproducción de Asil Browser";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Eliminar";
@@ -2129,7 +2129,7 @@
 "RestoreTabNegativeButtonTitle" = "No";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Parece que Brave se cerró repentinamente. ¿Le gustaría recuperar sus pestañas?";
+"RestoreTabOnCrashAlertMessage" = "Parece que Asil Browser se cerró repentinamente. ¿Le gustaría recuperar sus pestañas?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "Vaya, esto es embarazoso.";

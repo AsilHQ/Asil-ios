@@ -224,7 +224,7 @@
 "BraveShieldsSiteBroken" = "Якщо вебсайт не працює, спробуйте вимкнути щити";
 
 /* Context: 'Brave Shields Up' or 'Brave Shields Down' */
-"BraveShieldsStatusTitle" = "Щити Brave";
+"BraveShieldsStatusTitle" = "Щити Asil Browser";
 
 /* Context: The 'Down' in 'Brave Shields Down' */
 "BraveShieldsStatusValueDown" = "Вимкн.";
@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "Налаштування";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Список відтворення Brave";
+"playlist.carplayTitle" = "Список відтворення Asil Browser";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Видалити офлайн-кеш";
@@ -1604,13 +1604,13 @@
 "playlist.popoverAddBody" = "Список відтворення Brave підтримує відтворення в режимі офлайн, «зображення в зображені», безперервне відтворення й режими повторення.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Цей медіафайл у вашому списку відтворення Brave";
+"playlist.popoverAddedTitle" = "Цей медіафайл у вашому списку відтворення Asil Browser";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "Додати цей медіафайл до списку відтворення Brave?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Відкрити в списку відтворення Brave";
+"playlist.popoverOpenInBravePlaylist" = "Відкрити в списку відтворення Asil Browser";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Видалити";
@@ -2129,7 +2129,7 @@
 "RestoreTabNegativeButtonTitle" = "Ні";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Здається, роботу Brave було завершено в аварійному режимі. Відновити закриті вкладки?";
+"RestoreTabOnCrashAlertMessage" = "Здається, роботу Asil Browser було завершено в аварійному режимі. Відновити закриті вкладки?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "Нам дуже шкода.";

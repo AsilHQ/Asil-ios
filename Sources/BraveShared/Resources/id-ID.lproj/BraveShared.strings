@@ -224,7 +224,7 @@
 "BraveShieldsSiteBroken" = "Jika situs ini tampak rusak, coba turunkan Perisai";
 
 /* Context: 'Brave Shields Up' or 'Brave Shields Down' */
-"BraveShieldsStatusTitle" = "Perisai Brave";
+"BraveShieldsStatusTitle" = "Perisai Asil Browser";
 
 /* Context: The 'Down' in 'Brave Shields Down' */
 "BraveShieldsStatusValueDown" = "Turun";
@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "Pengaturan";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Daftar Putar Brave";
+"playlist.carplayTitle" = "Daftar Putar Asil Browser";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Hapus Cache Luring";
@@ -1604,13 +1604,13 @@
 "playlist.popoverAddBody" = "Daftar Putar Brave mendukung Putar Kembali Luring, Gambar dalam Gambar, putar kembali terus-menerus, serta mode pengulangan.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Media ini ada di Daftar Putar Brave Anda";
+"playlist.popoverAddedTitle" = "Media ini ada di Daftar Putar Asil Browser Anda";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "Apakah Anda ingin menambahkan media ini ke Daftar Putar Brave Anda?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Buka di Daftar Putar Brave";
+"playlist.popoverOpenInBravePlaylist" = "Buka di Daftar Putar Asil Browser";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Hapus";
@@ -2129,7 +2129,7 @@
 "RestoreTabNegativeButtonTitle" = "Tidak";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Sepertinya Brave mogok. Ingin mengembalikan tab Anda?";
+"RestoreTabOnCrashAlertMessage" = "Sepertinya Asil Browser mogok. Ingin mengembalikan tab Anda?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "Terjadi masalah.";

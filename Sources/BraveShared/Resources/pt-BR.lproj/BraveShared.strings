@@ -224,7 +224,7 @@
 "BraveShieldsSiteBroken" = "Se este site não estiver funcionando, tente desativar as Proteções";
 
 /* Context: 'Brave Shields Up' or 'Brave Shields Down' */
-"BraveShieldsStatusTitle" = "Proteções do Brave";
+"BraveShieldsStatusTitle" = "Proteções do Asil Browser";
 
 /* Context: The 'Down' in 'Brave Shields Down' */
 "BraveShieldsStatusValueDown" = "Desativadas";
@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "Configurações";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Playlist do Brave";
+"playlist.carplayTitle" = "Playlist do Asil Browser";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Excluir cache off-line";
@@ -1604,13 +1604,13 @@
 "playlist.popoverAddBody" = "As Playlists do Brave são compatíveis com os modos de reprodução off-line, picture-in-picture, reprodução contínua e repetição.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Esta mídia está na sua Playlist do Brave";
+"playlist.popoverAddedTitle" = "Esta mídia está na sua Playlist do Asil Browser";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "Você deseja adicionar esta mídia à sua Playlist do Brave?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Abrir na Playlist do Brave";
+"playlist.popoverOpenInBravePlaylist" = "Abrir na Playlist do Asil Browser";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Remover";
@@ -2129,7 +2129,7 @@
 "RestoreTabNegativeButtonTitle" = "Não";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Parece que o Brave apresentou uma falha anteriormente. Deseja restaurar suas abas?";
+"RestoreTabOnCrashAlertMessage" = "Parece que o Asil Browser apresentou uma falha anteriormente. Deseja restaurar suas abas?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "É, isso não é nada bom.";

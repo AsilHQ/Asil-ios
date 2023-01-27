@@ -224,7 +224,7 @@
 "BraveShieldsSiteBroken" = "Jeśli strona wygląda nieprawidłowo, spróbuj wyłączyć funkcję ochrony";
 
 /* Context: 'Brave Shields Up' or 'Brave Shields Down' */
-"BraveShieldsStatusTitle" = "Brave Shields";
+"BraveShieldsStatusTitle" = "Asil Browser Shields";
 
 /* Context: The 'Down' in 'Brave Shields Down' */
 "BraveShieldsStatusValueDown" = "Wyłączone";
@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "Ustawienia";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Lista odtwarzania Brave";
+"playlist.carplayTitle" = "Lista odtwarzania Asil Browser";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Usuń pliki offline";
@@ -1604,13 +1604,13 @@
 "playlist.popoverAddBody" = "Lista odtwarzania Brave obsługuje odtwarzanie offline, funkcję obrazu w obrazie, tryby odtwarzania ciągłego i powtarzania.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Ten plik multimedialny jest na Twojej liście odtwarzania Brave";
+"playlist.popoverAddedTitle" = "Ten plik multimedialny jest na Twojej liście odtwarzania Asil Browser";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "Czy chcesz dodać ten plik multimedialny do swojej listy odtwarzania Brave?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Otwórz na liście odtwarzania Brave";
+"playlist.popoverOpenInBravePlaylist" = "Otwórz na liście odtwarzania Asil Browser";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Usuń";
@@ -2129,7 +2129,7 @@
 "RestoreTabNegativeButtonTitle" = "Nie";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Wygląda na to, że przeglądarka Brave zawiesiła się, gdy z niej ostatnio korzystano. Czy chcesz przywrócić swoje karty?";
+"RestoreTabOnCrashAlertMessage" = "Wygląda na to, że przeglądarka Asil Browser zawiesiła się, gdy z niej ostatnio korzystano. Czy chcesz przywrócić swoje karty?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "Cóż, to krępujące.";

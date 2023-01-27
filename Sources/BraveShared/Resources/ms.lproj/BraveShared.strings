@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "Tetapan";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Senarai Main Brave";
+"playlist.carplayTitle" = "Senarai Main Asil Browser";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Padamkan Cache Luar Talian";
@@ -1604,13 +1604,13 @@
 "playlist.popoverAddBody" = "Senarai Main Brave menyokong mod Main Semula Luar Talian, Gambar dalam gambar, main semula berterusan dan ulang.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Media ini berada dalam Senarai Main Brave anda";
+"playlist.popoverAddedTitle" = "Media ini berada dalam Senarai Main Asil Browser anda";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "Adakah anda mahu menambahkan media ini pada Senarai Main Brave?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Buka Dalam Senarai Main Brave";
+"playlist.popoverOpenInBravePlaylist" = "Buka Dalam Senarai Main Asil Browser";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Alih Keluar";
@@ -2129,7 +2129,7 @@
 "RestoreTabNegativeButtonTitle" = "Tidak";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Nampaknya Brave telah rosak sebelumnya. Adakah anda ingin memulihkan tab anda?";
+"RestoreTabOnCrashAlertMessage" = "Nampaknya Asil Browser telah rosak sebelumnya. Adakah anda ingin memulihkan tab anda?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "Aduh, ini memalukan.";

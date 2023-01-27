@@ -224,7 +224,7 @@
 "BraveShieldsSiteBroken" = "사이트가 깨진 것으로 표시되면 Shields 해제 권장";
 
 /* Context: 'Brave Shields Up' or 'Brave Shields Down' */
-"BraveShieldsStatusTitle" = "Brave Shields";
+"BraveShieldsStatusTitle" = "Asil Browser Shields";
 
 /* Context: The 'Down' in 'Brave Shields Down' */
 "BraveShieldsStatusValueDown" = "해제";
@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "설정";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Brave 재생목록";
+"playlist.carplayTitle" = "Asil Browser 재생목록";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "오프라인 캐시 삭제";
@@ -1604,13 +1604,13 @@
 "playlist.popoverAddBody" = "Brave 재생목록은 오프라인 재생, PIP(Picture-in-picture), 연속 재생, 반복 모드를 지원합니다.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Brave 재생목록에 있는 미디어";
+"playlist.popoverAddedTitle" = "Asil Browser 재생목록에 있는 미디어";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "이 미디어를 Brave 재생목록에 추가하시겠습니까?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Brave 재생목록에서 열기";
+"playlist.popoverOpenInBravePlaylist" = "Asil Browser 재생목록에서 열기";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "제거";
@@ -2129,7 +2129,7 @@
 "RestoreTabNegativeButtonTitle" = "아니요";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "이전에 Brave에서 오류가 발생했던 것 같습니다. 탭을 복원하시겠습니까?";
+"RestoreTabOnCrashAlertMessage" = "이전에 Asil Browser에서 오류가 발생했던 것 같습니다. 탭을 복원하시겠습니까?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "곤란한 문제가 발생했습니다.";

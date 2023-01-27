@@ -224,7 +224,7 @@
 "BraveShieldsSiteBroken" = "サイトの表示が崩れている場合は、Shieldをオフにしてみてください";
 
 /* Context: 'Brave Shields Up' or 'Brave Shields Down' */
-"BraveShieldsStatusTitle" = "Brave Shields";
+"BraveShieldsStatusTitle" = "Asil Browser Shields";
 
 /* Context: The 'Down' in 'Brave Shields Down' */
 "BraveShieldsStatusValueDown" = "オフ";
@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "設定";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Brave Playlist";
+"playlist.carplayTitle" = "Asil Browser Playlist";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "オフラインキャッシュを削除";
@@ -1604,13 +1604,13 @@
 "playlist.popoverAddBody" = "Brave Playlistにより、オフライン再生、ピクチャー・イン・ピクチャー再生、連続再生、リピート再生ができるようになります。";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "このメディアはBrave Playlistに追加されています。";
+"playlist.popoverAddedTitle" = "このメディアはAsil Browser Playlistに追加されています。";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "このメディアをBrave Playlistに追加しますか？";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Brave Playlistで開く";
+"playlist.popoverOpenInBravePlaylist" = "Asil Browser Playlistで開く";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "削除";
@@ -2129,7 +2129,7 @@
 "RestoreTabNegativeButtonTitle" = "いいえ";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "前回 Brave はクラッシュしたようです。タブを復元しますか？";
+"RestoreTabOnCrashAlertMessage" = "前回 Asil Browser はクラッシュしたようです。タブを復元しますか？";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "申し訳ありません";

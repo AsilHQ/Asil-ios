@@ -224,7 +224,7 @@
 "BraveShieldsSiteBroken" = "Hvis nettstedet ser ut til å være ødelagt, prøv Skjold ned";
 
 /* Context: 'Brave Shields Up' or 'Brave Shields Down' */
-"BraveShieldsStatusTitle" = "Brave-skjold";
+"BraveShieldsStatusTitle" = "Asil Browser-skjold";
 
 /* Context: The 'Down' in 'Brave Shields Down' */
 "BraveShieldsStatusValueDown" = "Ned";
@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "Innstillinger";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Brave-spilleliste";
+"playlist.carplayTitle" = "Asil Browser-spilleliste";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Slett offline-bufferdata";
@@ -1604,13 +1604,13 @@
 "playlist.popoverAddBody" = "Brave-spillelister støtter frakoblet avspilling, bilde-i-bilde, kontinuerlig avspilling og gjentagelsesmoduser.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Denne videoen er i Brave-spillelisten din";
+"playlist.popoverAddedTitle" = "Denne videoen er i Asil Browser-spillelisten din";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "Vil du legge til denne videoen i spillelisten din?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Åpne i Brave-spilleliste";
+"playlist.popoverOpenInBravePlaylist" = "Åpne i Asil Browser-spilleliste";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Fjern";
@@ -2129,7 +2129,7 @@
 "RestoreTabNegativeButtonTitle" = "Nei";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Det ser ut til at Brave krasjet. Vil du gjenopprette fanene dine?";
+"RestoreTabOnCrashAlertMessage" = "Det ser ut til at Asil Browser krasjet. Vil du gjenopprette fanene dine?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "Dette er litt flaut.";

@@ -224,7 +224,7 @@
 "BraveShieldsSiteBroken" = "如果這個網站貌似無法正常運作，請嘗試關閉 Shields";
 
 /* Context: 'Brave Shields Up' or 'Brave Shields Down' */
-"BraveShieldsStatusTitle" = "Brave Shields";
+"BraveShieldsStatusTitle" = "Asil Browser Shields";
 
 /* Context: The 'Down' in 'Brave Shields Down' */
 "BraveShieldsStatusValueDown" = "關閉";
@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "設定";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Brave 播放清單";
+"playlist.carplayTitle" = "Asil Browser 播放清單";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "刪除離線快取";
@@ -1604,13 +1604,13 @@
 "playlist.popoverAddBody" = "Brave 播放清單支援離線播放、子母畫面、連續播放和重複模式。";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "此媒體已在您的 Brave 播放清單";
+"playlist.popoverAddedTitle" = "此媒體已在您的 Asil Browser 播放清單";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "想把此媒體新至您的 Brave 播放清單嗎？";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "在 Brave 播放清單中開啟";
+"playlist.popoverOpenInBravePlaylist" = "在 Asil Browser 播放清單中開啟";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "移除";
@@ -2129,7 +2129,7 @@
 "RestoreTabNegativeButtonTitle" = "否";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "很抱歉，Brave 之前當機了。是否要回復之前開啟的分頁？";
+"RestoreTabOnCrashAlertMessage" = "很抱歉，Asil Browser 之前當機了。是否要回復之前開啟的分頁？";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "哎呀，真抱歉。";

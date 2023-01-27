@@ -59,7 +59,7 @@ extension Strings {
   public static let alwaysSendButtonTitle = NSLocalizedString("AlwaysSendButtonTitle", tableName: "BraveShared", bundle: .module, value: "Always Send", comment: "Used as a button label for crash dialog prompt")
   public static let dontSendButtonTitle = NSLocalizedString("DontSendButtonTitle", tableName: "BraveShared", bundle: .module, value: "Don’t Send", comment: "Used as a button label for crash dialog prompt")
   public static let restoreTabOnCrashAlertTitle = NSLocalizedString("RestoreTabOnCrashAlertTitle", tableName: "BraveShared", bundle: .module, value: "Well, this is embarrassing.", comment: "Restore Tabs Prompt Title")
-  public static let restoreTabOnCrashAlertMessage = NSLocalizedString("RestoreTabOnCrashAlertMessage", tableName: "BraveShared", bundle: .module, value: "Looks like Brave crashed previously. Would you like to restore your tabs?", comment: "Restore Tabs Prompt Description")
+  public static let restoreTabOnCrashAlertMessage = NSLocalizedString("RestoreTabOnCrashAlertMessage", tableName: "BraveShared", bundle: .module, value: "Looks like Asil Browser crashed previously. Would you like to restore your tabs?", comment: "Restore Tabs Prompt Description")
   public static let restoreTabNegativeButtonTitle = NSLocalizedString("RestoreTabNegativeButtonTitle", tableName: "BraveShared", bundle: .module, value: "No", comment: "Restore Tabs Negative Action")
   public static let restoreTabAffirmativeButtonTitle = NSLocalizedString("RestoreTabAffirmativeButtonTitle", tableName: "BraveShared", bundle: .module, value: "Okay", comment: "Restore Tabs Affirmative Action")
   public static let clearPrivateDataAlertCancelButtonTitle = NSLocalizedString("ClearPrivateDataAlertCancelButtonTitle", tableName: "BraveShared", bundle: .module, value: "Cancel", comment: "The cancel button when confirming clear private data.")
@@ -1319,7 +1319,7 @@ extension Strings {
 extension Strings {
   public struct Shields {
     public static let toggleHint = NSLocalizedString("BraveShieldsToggleHint", tableName: "BraveShared", bundle: .module, value: "Double-tap to toggle Brave Shields", comment: "The accessibility hint spoken when focused on the main shields toggle")
-    public static let statusTitle = NSLocalizedString("BraveShieldsStatusTitle", tableName: "BraveShared", bundle: .module, value: "Brave Shields", comment: "Context: 'Brave Shields Up' or 'Brave Shields Down'")
+    public static let statusTitle = NSLocalizedString("BraveShieldsStatusTitle", tableName: "BraveShared", bundle: .module, value: "Asil Browser Shields", comment: "Context: 'Brave Shields Up' or 'Brave Shields Down'")
     public static let statusValueUp = NSLocalizedString("BraveShieldsStatusValueUp", tableName: "BraveShared", bundle: .module, value: "Up", comment: "Context: The 'Up' in 'Brave Shields Up'")
     public static let statusValueDown = NSLocalizedString("BraveShieldsStatusValueDown", tableName: "BraveShared", bundle: .module, value: "Down", comment: "Context: The 'Down' in 'Brave Shields Down'")
     public static let blockedCountLabel = NSLocalizedString("BraveShieldsBlockedCountLabel", tableName: "BraveShared", bundle: .module, value: "Ads and other creepy things blocked", comment: "The number of ads and trackers blocked will be next to this")
@@ -1767,12 +1767,12 @@ extension Strings {
 
     public static let playlistPopoverAddedTitle =
       NSLocalizedString("playlist.popoverAddedTitle", tableName: "BraveShared", bundle: .module,
-        value: "This media is in your Brave Playlist",
+        value: "This media is in your Asil Browser Playlist",
         comment: "Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar")
 
     public static let playlistPopoverOpenInBravePlaylist =
       NSLocalizedString("playlist.popoverOpenInBravePlaylist", tableName: "BraveShared", bundle: .module,
-        value: "Open In Brave Playlist",
+        value: "Open In Asil Browser Playlist",
         comment: "Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar")
 
     public static let playlistPopoverRemoveFromBravePlaylist =
@@ -1782,7 +1782,7 @@ extension Strings {
 
     public static let playlistCarplayTitle =
       NSLocalizedString("playlist.carplayTitle", tableName: "BraveShared", bundle: .module,
-        value: "Brave Playlist",
+        value: "Asil Browser Playlist",
         comment: "The title of the playlist when in Carplay mode")
 
     public static let playlistCarplaySettingsSectionTitle =
