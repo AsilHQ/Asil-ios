@@ -1439,7 +1439,7 @@
 "playList.addToPlayListAlertDescription" = "Apakah Anda ingin menambahkan video ini ke daftar putar Anda?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Tambahkan ke Brave Playlist";
+"playList.addToPlayListAlertTitle" = "Tambahkan ke Asil Browser Playlist";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "Opsi Putar Kembali";
@@ -1667,13 +1667,13 @@
 "playList.sorryAlertTitle" = "Maaf";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Ditambahkan ke Daftar Putar Brave";
+"playList.toastAddedToPlaylistTitle" = "Ditambahkan ke Daftar Putar Asil Browser";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "Buka";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Tambahkan ke Brave Playlist";
+"playList.toastAddToPlaylistTitle" = "Tambahkan ke Asil Browser Playlist";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
 "playList.toastExitingItemPlaylistTitle" = "Lihat di Brave Playlist";

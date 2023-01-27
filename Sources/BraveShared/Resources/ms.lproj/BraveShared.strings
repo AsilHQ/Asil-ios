@@ -1439,7 +1439,7 @@
 "playList.addToPlayListAlertDescription" = "Adakah anda mahu menambah video ini ke senarai main anda?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Tambah ke Senarai Main Brave";
+"playList.addToPlayListAlertTitle" = "Tambah ke Senarai Main Asil Browser";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "Pilihan Main Semula";
@@ -1667,13 +1667,13 @@
 "playList.sorryAlertTitle" = "Maaf";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Ditambah ke Senarai Main Brave";
+"playList.toastAddedToPlaylistTitle" = "Ditambah ke Senarai Main Asil Browser";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "Buka";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Tambah ke Senarai Main Brave";
+"playList.toastAddToPlaylistTitle" = "Tambah ke Senarai Main Asil Browser";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
 "playList.toastExitingItemPlaylistTitle" = "Lihat dalam Senarai Main Brave";

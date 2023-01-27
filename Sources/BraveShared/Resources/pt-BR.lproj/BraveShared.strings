@@ -1439,7 +1439,7 @@
 "playList.addToPlayListAlertDescription" = "Você deseja adicionar este vídeo à sua playlist?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Adicionar à Playlist do Brave";
+"playList.addToPlayListAlertTitle" = "Adicionar à Playlist do Asil Browser";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "Opções de reprodução";
@@ -1667,13 +1667,13 @@
 "playList.sorryAlertTitle" = "Lamentamos";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Adicionado à Playlist do Brave";
+"playList.toastAddedToPlaylistTitle" = "Adicionado à Playlist do Asil Browser";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "Abrir";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Adicionar à Playlist do Brave";
+"playList.toastAddToPlaylistTitle" = "Adicionar à Playlist do Asil Browser";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
 "playList.toastExitingItemPlaylistTitle" = "Ver na Brave Playlist";

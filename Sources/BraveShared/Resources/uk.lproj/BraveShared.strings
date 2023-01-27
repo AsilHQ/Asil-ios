@@ -1439,7 +1439,7 @@
 "playList.addToPlayListAlertDescription" = "Хочете додати це відео до списку відтворення?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Додати у Brave Playlist";
+"playList.addToPlayListAlertTitle" = "Додати у Asil Browser Playlist";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "Параметри відтворення";
@@ -1667,13 +1667,13 @@
 "playList.sorryAlertTitle" = "Помилка";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Додано у Brave Playlist";
+"playList.toastAddedToPlaylistTitle" = "Додано у Asil Browser Playlist";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "Відкрити";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Додати у Brave Playlist";
+"playList.toastAddToPlaylistTitle" = "Додати у Asil Browser Playlist";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
 "playList.toastExitingItemPlaylistTitle" = "Подивитися у Brave Playlist";

@@ -1482,7 +1482,7 @@ extension Strings {
 
     public static let addToPlayListAlertTitle =
       NSLocalizedString("playList.addToPlayListAlertTitle", tableName: "BraveShared", bundle: .module,
-        value: "Add to Brave Playlist",
+        value: "Add to Asil Browser Playlist",
         comment: "Alert Title for adding videos to playlist")
 
     public static let addToPlayListAlertDescription =
@@ -1532,12 +1532,12 @@ extension Strings {
 
     public static let toastAddToPlaylistTitle =
       NSLocalizedString("playList.toastAddToPlaylistTitle", tableName: "BraveShared", bundle: .module,
-        value: "Add to Brave Playlist",
+        value: "Add to Asil Browser Playlist",
         comment: "The title for the toast that shows up on a page containing a playlist item")
 
     public static let toastAddedToPlaylistTitle =
       NSLocalizedString("playList.toastAddedToPlaylistTitle", tableName: "BraveShared", bundle: .module,
-        value: "Added to Brave Playlist",
+        value: "Added to Asil Browser Playlist",
         comment: "The title for the toast that shows up on a page containing a playlist item that was added to playlist")
 
     public static let toastAddToPlaylistOpenButton =

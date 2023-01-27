@@ -1439,7 +1439,7 @@
 "playList.addToPlayListAlertDescription" = "你想新增此影片至播放清單嗎？";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "新增至 Brave Playlist";
+"playList.addToPlayListAlertTitle" = "新增至 Asil Browser Playlist";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "播放選項";
@@ -1667,13 +1667,13 @@
 "playList.sorryAlertTitle" = "抱歉";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "新增至 Brave 播放清單";
+"playList.toastAddedToPlaylistTitle" = "新增至 Asil Browser 播放清單";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "開啟";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "新增至 Brave Playlist";
+"playList.toastAddToPlaylistTitle" = "新增至 Asil Browser Playlist";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
 "playList.toastExitingItemPlaylistTitle" = "檢視 Brave Playlist";

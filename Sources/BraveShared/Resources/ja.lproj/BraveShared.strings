@@ -1439,7 +1439,7 @@
 "playList.addToPlayListAlertDescription" = "この動画をPlaylistに追加しますか？";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Brave Playlistに追加する";
+"playList.addToPlayListAlertTitle" = "Asil Browser Playlistに追加する";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "再生オプション";
@@ -1667,13 +1667,13 @@
 "playList.sorryAlertTitle" = "申し訳ありません";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Brave Playlistに追加されました";
+"playList.toastAddedToPlaylistTitle" = "Asil Browser Playlistに追加されました";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "開く";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Brave Playlistに追加する";
+"playList.toastAddToPlaylistTitle" = "Asil Browser Playlistに追加する";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
 "playList.toastExitingItemPlaylistTitle" = "Brave Playlistで見る";

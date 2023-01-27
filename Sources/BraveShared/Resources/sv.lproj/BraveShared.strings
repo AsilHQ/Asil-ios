@@ -1439,7 +1439,7 @@
 "playList.addToPlayListAlertDescription" = "Vill du lägga till den här videon i din spellista?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Lägg till i Brave Playlist";
+"playList.addToPlayListAlertTitle" = "Lägg till i Asil Browser Playlist";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "Uppspelningsalternativ";
@@ -1667,13 +1667,13 @@
 "playList.sorryAlertTitle" = "Tyvärr";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Tillagd i Brave Playlist";
+"playList.toastAddedToPlaylistTitle" = "Tillagd i Asil Browser Playlist";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "Öppna";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Lägg till i Brave Playlist";
+"playList.toastAddToPlaylistTitle" = "Lägg till i Asil Browser Playlist";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
 "playList.toastExitingItemPlaylistTitle" = "Visa i Brave Playlist";

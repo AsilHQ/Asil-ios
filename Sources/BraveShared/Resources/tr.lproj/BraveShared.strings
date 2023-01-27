@@ -1439,7 +1439,7 @@
 "playList.addToPlayListAlertDescription" = "Bu videoyu oynatma listenize eklemek ister misiniz?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Brave Oynatma Listesine Ekle";
+"playList.addToPlayListAlertTitle" = "Asil Browser Oynatma Listesine Ekle";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "Oynatma Seçenekleri";
@@ -1667,13 +1667,13 @@
 "playList.sorryAlertTitle" = "Özür dileriz";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Brave Oynatma Listesine Eklendi";
+"playList.toastAddedToPlaylistTitle" = "Asil Browser Oynatma Listesine Eklendi";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "Aç";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Brave Oynatma Listesine Ekle";
+"playList.toastAddToPlaylistTitle" = "Asil Browser Oynatma Listesine Ekle";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
 "playList.toastExitingItemPlaylistTitle" = "Brave Oynatma Listesinde Görüntüle";

@@ -1439,7 +1439,7 @@
 "playList.addToPlayListAlertDescription" = "이 동영상을 재생목록에 추가하시겠습니까?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Brave Playlist에 추가";
+"playList.addToPlayListAlertTitle" = "Asil Browser Playlist에 추가";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "재생 옵션";
@@ -1667,13 +1667,13 @@
 "playList.sorryAlertTitle" = "죄송합니다";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Brave Playlist에 추가됨";
+"playList.toastAddedToPlaylistTitle" = "Asil Browser Playlist에 추가됨";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "열기";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Brave Playlist에 추가";
+"playList.toastAddToPlaylistTitle" = "Asil Browser Playlist에 추가";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
 "playList.toastExitingItemPlaylistTitle" = "Brave Playlist에서 보기";
