@@ -425,7 +425,7 @@ class TabLocationView: UIView {
     // --
     // The requirement to remove scheme comes from Desktop. Also we do not remove the path like in other browsers either.
     // Therefore, we follow Brave Desktop instead of Chrome or Safari iOS
-    urlTextField.text = URLFormatter.formatURL(url?.withoutWWW.absoluteString ?? "", formatTypes: [.omitDefaults], unescapeOptions: []).removeSchemeFromURLString(url?.scheme)
+    urlTextField.text = URLFormatter.formatURL(url?.withoutWWW.absoluteString ?? "").removeSchemeFromURLString(url?.scheme)
   }
 }
 
