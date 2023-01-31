@@ -194,7 +194,6 @@ class NewTabPageViewController: UIViewController {
     }
 
     if !PrivateBrowsingManager.shared.isPrivateBrowsing {
-        /*
       sections.append(
         BraveNewsSectionProvider(
           dataSource: feedDataSource,
@@ -204,7 +203,7 @@ class NewTabPageViewController: UIViewController {
           }
         )
       )
-      layout.braveNewsSection = sections.firstIndex(where: { $0 is BraveNewsSectionProvider })*/
+      layout.braveNewsSection = sections.firstIndex(where: { $0 is BraveNewsSectionProvider })
     }
 
     collectionView.do {
