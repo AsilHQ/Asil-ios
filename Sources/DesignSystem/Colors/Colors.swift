@@ -59,6 +59,8 @@ enum DesignSystemColor: String {
 
   case gradient05_step0 = "gradient05-step0"
   case gradient05_step1 = "gradient05-step1"
+    
+  case asilPrimaryBlue
   
   var color: UIColor {
     return UIColor(named: rawValue, in: .module, compatibleWith: nil)!
@@ -68,6 +70,9 @@ enum DesignSystemColor: String {
 // MARK: - Design System Colors
 
 extension UIColor {
+  public static var asilPrimaryBlue: UIColor {
+    DesignSystemColor.asilPrimaryBlue.color
+  }
   public static var braveBackground: UIColor {
     DesignSystemColor.background02.color
   }
