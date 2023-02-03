@@ -242,7 +242,7 @@
 "BraveSyncInternalsTitle" = "Senkronizasyon Hata Ayıklama";
 
 /* Sync settings welcome */
-"BraveSyncWelcome" = "Başlamak için, senkronize etmeyi planladığınız tüm cihazlarda Asil Browser'in yüklü olması gerekir. Bunları birbirine zincirlemek için, tüm cihazlarınızı güvenli bir şekilde birbirine bağlarken kullanacağınız bir eşitleme zinciri başlatın.";
+"BraveSyncWelcome" = "Başlamak için, senkronize etmeyi planladığınız tüm cihazlarda Asil Browser'ın yüklü olması gerekir. Bunları birbirine zincirlemek için, tüm cihazlarınızı güvenli bir şekilde birbirine bağlarken kullanacağınız bir eşitleme zinciri başlatın.";
 
 /* The name of the feature */
 "bravetalk.braveTalkTitle" = "Asil Browser Sohbet";
@@ -251,7 +251,7 @@
 "BrowserLock" = "Tarayıcı Kilidi";
 
 /* No comment provided by engineer. */
-"BrowserLockDescription" = "Touch ID, Face ID veya sistem geçiş koduyla Asil Browser'in kilidini açın.";
+"BrowserLockDescription" = "Touch ID, Face ID veya sistem geçiş koduyla Asil Browser'ın kilidini açın.";
 
 /* A button title for the action to move to the next step of the browser lock migration process. */
 "browserLockMigrationContinueButtonTitle" = "Devam et";
@@ -263,7 +263,7 @@
 "browserLockMigrationSubtitle" = "Asil Browser Geçiş Kodlarını basitleştirdik. Artık Asil Browser'e telefonunuzda kullandığınız aynı ID veya geçiş koduyla erişebilirsiniz.";
 
 /* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationTitle" = "Apple Face ID, Touch ID veya geçiş kodunuzla Asil Browser'i açın";
+"browserLockMigrationTitle" = "Apple Face ID, Touch ID veya geçiş kodunuzla Asil Browser'ı açın";
 
 /* Settings item for clearing browsing history */
 "BrowsingHistory" = "Arama Geçmişi";
@@ -272,7 +272,7 @@
 "Cache" = "Önbellek";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Asil Browser varsayılan olarak ayarlandığında, tıkladığınız her bağlantı Asil Browser'in gizlilik korumasıyla açılır.";
+"callout.defaultBrowserCalloutDescription" = "Asil Browser varsayılan olarak ayarlandığında, tıkladığınız her bağlantı Asil Browser'ın gizlilik korumasıyla açılır.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Varsayılan tarayıcı olarak ayarla";
@@ -308,7 +308,7 @@
 "callout.playlistOnboardingViewTitle" = "Videoyu Oynatma Listesine ekle...";
 
 /* Subtitle - Description for Privacy Everywhere Full Screen Callout */
-"callout.privacyEverywhereCalloutDescription" = "Bilgisayarınızda veya tabletinizde Asil Browser'in gizliliğinin keyfini çıkarın, cihazlarınız arasında yer işaretlerinizi ve eklentilerinizi senkronize edin.";
+"callout.privacyEverywhereCalloutDescription" = "Bilgisayarınızda veya tabletinizde Asil Browser'ın gizliliğinin keyfini çıkarın, cihazlarınız arasında yer işaretlerinizi ve eklentilerinizi senkronize edin.";
 
 /* Title for button in Default Browser Full Screen Callout */
 "callout.privacyEverywhereCalloutPrimaryButtonTitle" = "Şimdi senkronize et";
@@ -605,10 +605,10 @@
 "defaultBrowserCallout.introSecondaryText" = "Asil Browser Kalkanları, izleyicileri ve reklamları engeller, veri kurtarır ve ziyaret ettiğiniz her sitede size zaman kazandırır";
 
 /* Tertiary text on default browser popup screen */
-"defaultBrowserCallout.introTertiaryText" = "Ayarlar'ı açın, Varsayılan Tarayıcı Uygulaması'nı dokunun ve Asil Browser'i seçin.";
+"defaultBrowserCallout.introTertiaryText" = "Ayarlar'ı açın, Varsayılan Tarayıcı Uygulaması'nı dokunun ve Asil Browser'ı seçin.";
 
 /* Notification body to promote setting Asil Browser app as default browser */
-"defaultBrowserCallout.notificationBody" = "iOS %@ için optimize edilmiştir. Asil Browser'i bugün varsayılan tarayıcınız yapın.";
+"defaultBrowserCallout.notificationBody" = "iOS %@ için optimize edilmiştir. Asil Browser'ı bugün varsayılan tarayıcınız yapın.";
 
 /* Notification title to promote setting Asil Browser app as default browser */
 "defaultBrowserCallout.notificationTitle" = "Asil Browser Web Tarayıcısı";
@@ -1148,10 +1148,10 @@
 "OBJoinButton" = "birleştirmek";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentClipboardPermission" = "Asil Browser'in panomda eşleşen bir başvuru kodu olup olmadığını denetlemesine izin ver";
+"OBPrivacyConsentClipboardPermission" = "Asil Browser'ın panomda eşleşen bir başvuru kodu olup olmadığını denetlemesine izin ver";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentDetail" = "Asil Browser'i sizi yönlendiren kişiyi desteklemek için indirmiş olabilirsiniz. Sizi yönlendiren kişiyi algılamak için Asil Browser, panonuzda bir kerelik eşleşen başvuru kodu denetimi gerçekleştirir. Bu kontrol yalnızca kodla sınırlıdır ve başka hiçbir kişisel veri iletilmeyecektir.  Eğer vazgeçerseniz, sizi yönlendiren kişi Asil Browser'den ödül almaz.";
+"OBPrivacyConsentDetail" = "Asil Browser'ı sizi yönlendiren kişiyi desteklemek için indirmiş olabilirsiniz. Sizi yönlendiren kişiyi algılamak için Asil Browser, panonuzda bir kerelik eşleşen başvuru kodu denetimi gerçekleştirir. Bu kontrol yalnızca kodla sınırlıdır ve başka hiçbir kişisel veri iletilmeyecektir.  Eğer vazgeçerseniz, sizi yönlendiren kişi Asil Browser'den ödül almaz.";
 
 /* No comment provided by engineer. */
 "OBPrivacyConsentNoButton" = "Bu denetime izin verme";
@@ -1211,7 +1211,7 @@
 "onboarding.blockedAdsOnboardingBigTechInformationText" = "%1$@ ve %2$lld ile diğer reklamlar ve izleyiciler engellendi";
 
 /* The footnote indicating what Asil Browser shields is blocking */
-"onboarding.blockedAdsOnboardingFootnoteText" = "Shields ile Asil Browser'in her sayfada engellediği tüm zararlı içerikleri görün";
+"onboarding.blockedAdsOnboardingFootnoteText" = "Shields ile Asil Browser'ın her sayfada engellediği tüm zararlı içerikleri görün";
 
 /* The text describing user where they should press in order to open Shield panel */
 "onboarding.blockedAdsOnboardingInstructionsText" = "Asil Browser Shields'ı görmek için dokunun";
@@ -1229,7 +1229,7 @@
 "onboarding.ntpOnboardingPopOverTrackerDescription" = "İzleyiciler ve reklamlar engellendiğinde, web siteleri daha az veri kullanır ve çok daha hızlı yüklenir.";
 
 /* Description for the Omnibox (URL Bar) pop-over that describes faster load times. */
-"onboarding.omniboxOnboardingPopOverDescription" = "Asil Browser'in farkını görün\nReklam yok. İzleyici yok. Çok daha hızlı yüklenen sayfalar.";
+"onboarding.omniboxOnboardingPopOverDescription" = "Asil Browser'ın farkını görün\nReklam yok. İzleyici yok. Çok daha hızlı yüklenen sayfalar.";
 
 /* Title for the Omnibox (URL Bar) pop-over that describes faster load times. */
 "onboarding.omniboxOnboardingPopOverTitle" = "Bir web sitesi adı veya URL yazın";
@@ -1295,7 +1295,7 @@
 "opentabs.noSyncChainPlaceHolderViewDescription" = "Başlamak için bir senkronizasyon zinciri ayarlayın ve Senkronizasyon Ayarlarından \"Sekmeleri Aç\"a geçin.";
 
 /* The additional description of the view describing tab syncing should be enabled. */
-"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Asil Browser'in Ayarlardaki senkronizasyonlarını yönetin.";
+"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Asil Browser'ın Ayarlardaki senkronizasyonlarını yönetin.";
 
 /* The description of the view describing no other sessions are active in sync. */
 "opentabs.noSyncSessionPlaceHolderViewDescription" = "Diğer cihazlarınızdan gösterilecek etkin bir oturum bulunmuyor.";
@@ -1391,7 +1391,7 @@
 "OtherSettingsSection" = "Diğer Ayarlar";
 
 /* A subtitle shown on the setting that toggles analytics on Asil Browser. */
-"p3a.settingSubtitle" = "Anonimleştirilmiş P3A bilgisi, Asil Browser'in genel kullanımı tahmin etmesine yardımcı olur ve popüler özellikleri geliştirmeye devam etmemizi garanti eder.";
+"p3a.settingSubtitle" = "Anonimleştirilmiş P3A bilgisi, Asil Browser'ın genel kullanımı tahmin etmesine yardımcı olur ve popüler özellikleri geliştirmeye devam etmemizi garanti eder.";
 
 /* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
 "p3a.settingTitle" = "Gizlilik Korumalı Ürün Analizine İzin Ver (P3A)";
@@ -1883,7 +1883,7 @@
 "privacyHub.notificationCalloutButtonText" = "Bildirimleri aç";
 
 /* Message of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
-"privacyHub.notificationMessage" = "Asil Browser'in sizi bu hafta çevrimiçi olarak nasıl koruduğunun bir özeti.";
+"privacyHub.notificationMessage" = "Asil Browser'ın sizi bu hafta çevrimiçi olarak nasıl koruduğunun bir özeti.";
 
 /* Title of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
 "privacyHub.notificationTitle" = "Haftalık Gizlilik Raporu";
@@ -1973,7 +1973,7 @@
 "PrivateTabBody" = "Gizli Sekmeler Asil Browser'e kaydedilmez, ancak bu sizi internette anonim hale getirmez. Gizli bir sekmede ziyaret ettiğiniz siteler geçmişinizde gösterilmez ve bunları kapattığınızda çerezleri her zaman kaybolur - Asil Browser'de bunlardan hiçbir iz kalmaz. Ancak, indirmeler kaydedilir.\nMobil operatörünüz (veya bağlı olduğunuz Wi-Fi ağının veya VPN'in sahibi) hangi siteleri ziyaret ettiğinizi görebilir ve bu siteler Gizli Sekmelerde bile herkese açık IP adresinizi öğrenir.";
 
 /* Private tab detail text */
-"PrivateTabDetails" = "Gizli Sekmeleri kullanmak yalnızca Asil Browser'in cihazınızda yaptıklarını değiştirir, başka hiç kimsenin davranışını değiştirmez.\n\nSiteler IP adresinizi onları her ziyaret ettiğinizde öğrenir. Bundan genellikle nerede olduğunuzu, tipik olarak bulunduğunuz şehri tahmin edebilir. Bazen bu konum tahmini çok daha spesifik olabilir. Siteler ayrıca arama terimleri gibi özel olarak onlara ilettiğiniz her şeyi bilir. Bir siteye giriş yaptığınızda, söz konusu hesabın sahibi olduğunuzu anlarlar. Gizli Sekmeleri kapattığınızda yine de oturumunuz kapatılacaktır, çünkü Asil Browser oturumunuzun açık kalmasını sağlayan çerezi silecektir.\n\nSizi internete bağlayan taraf (İSS'niz) tüm ağ etkinliğinizi görebilir. Genellikle, bu mobil operatörünüzdür. Bir Wi-Fi ağına bağlıysanız, bu ağın sahibidir ve bir VPN kullanıyorsanız, o VPN'i işleten taraftır. İSS'niz hangi siteleri ziyaret ettiğinizi siz siteleri ziyaret ederken görebilir. Bu siteler HTTPS kullanıyorsa, bu sitelerde ne yaptığınız hakkında bilgiye dayalı bir tahminden daha fazlasını yapamazlar. Ancak bir site yalnızca HTTP kullanıyorsa İSS'niz her şeyi görebilir: arama terimleriniz, hangi sayfaları okuduğunuz ve hangi bağlantıları takip ettiğiniz.\n\nCihazınızı bir işveren yönetiyorsa, o da cihazınızla ne yaptığınızı takip edebilir. Gizli Sekmeleri kullanmak muhtemelen hangi siteleri ziyaret ettiğinizi bilmelerini engellemez. Cihazınıza erişimi olan başka biri de etkinliğinizi izleyen bir yazılım yüklemiş olabilir ve Gizli Sekmeler sizi bundan korumaz.";
+"PrivateTabDetails" = "Gizli Sekmeleri kullanmak yalnızca Asil Browser'ın cihazınızda yaptıklarını değiştirir, başka hiç kimsenin davranışını değiştirmez.\n\nSiteler IP adresinizi onları her ziyaret ettiğinizde öğrenir. Bundan genellikle nerede olduğunuzu, tipik olarak bulunduğunuz şehri tahmin edebilir. Bazen bu konum tahmini çok daha spesifik olabilir. Siteler ayrıca arama terimleri gibi özel olarak onlara ilettiğiniz her şeyi bilir. Bir siteye giriş yaptığınızda, söz konusu hesabın sahibi olduğunuzu anlarlar. Gizli Sekmeleri kapattığınızda yine de oturumunuz kapatılacaktır, çünkü Asil Browser oturumunuzun açık kalmasını sağlayan çerezi silecektir.\n\nSizi internete bağlayan taraf (İSS'niz) tüm ağ etkinliğinizi görebilir. Genellikle, bu mobil operatörünüzdür. Bir Wi-Fi ağına bağlıysanız, bu ağın sahibidir ve bir VPN kullanıyorsanız, o VPN'i işleten taraftır. İSS'niz hangi siteleri ziyaret ettiğinizi siz siteleri ziyaret ederken görebilir. Bu siteler HTTPS kullanıyorsa, bu sitelerde ne yaptığınız hakkında bilgiye dayalı bir tahminden daha fazlasını yapamazlar. Ancak bir site yalnızca HTTP kullanıyorsa İSS'niz her şeyi görebilir: arama terimleriniz, hangi sayfaları okuduğunuz ve hangi bağlantıları takip ettiğiniz.\n\nCihazınızı bir işveren yönetiyorsa, o da cihazınızla ne yaptığınızı takip edebilir. Gizli Sekmeleri kullanmak muhtemelen hangi siteleri ziyaret ettiğinizi bilmelerini engellemez. Cihazınıza erişimi olan başka biri de etkinliğinizi izleyen bir yazılım yüklemiş olabilir ve Gizli Sekmeler sizi bundan korumaz.";
 
 /* Private tab information link */
 "PrivateTabLink" = "Gizli Sekmeler hakkında bilgi edinin.";
@@ -1988,7 +1988,7 @@
 "QuickSearchEngines" = "Hızlı Arama Motorları";
 
 /* Open the App Store to rate Asil Browser. */
-"RateBrave" = "Asil Browser'i Değerlendirin";
+"RateBrave" = "Asil Browser'ı Değerlendirin";
 
 /* Accessibility label for button increasing font size in display settings of reader mode */
 "ReaderModeBiggerFontButtonAccessibilityLabel" = "Metin boyutunu büyüt";
@@ -2108,7 +2108,7 @@
 "ReportABug" = "Hata Bildirme";
 
 /* First part of the report a broken site copy. After the colon is a new line and then a website address */
-"ReportBrokenSiteBody1" = "Asil Browser'in geliştiricilerine bu sitenin Kalkanlar ile düzgün çalışmadığını bildirin:";
+"ReportBrokenSiteBody1" = "Asil Browser'ın geliştiricilerine bu sitenin Kalkanlar ile düzgün çalışmadığını bildirin:";
 
 /* No comment provided by engineer. */
 "ReportBrokenSiteBody2" = "Not: Bu site adresi Asil Browser sürüm numaranız ve IP adresinizle birlikte gönderilecektir (bu veri depolanmayacaktır).";
@@ -2252,7 +2252,7 @@
 "rewards.unverifiedPublisher" = "Bu içerik üretici, içerik üretici desteğini doğrulamadı ve desteğe dahil edilmeyecek";
 
 /* A confirmation message shown to the user after completing a wallet transfer successfully */
-"rewards.walletTransferCompleteBody" = "Aktarımınız başlatıldı. Mevcut herhangi bir BAT bakiyenin masaüstü Asil Browser Ödülleri cüzdanınızda görünmesi birkaç dakika sürebilir. Aktarım tamamlandığında ayrıntılar için Masaüstü'ndeki Ödül özetinizi kontrol edin.\n\nBu pencereyi kapatabilir ve aktarımınız gerçekleştirilirken Asil Browser'i kullanmaya devam edebilirsiniz.";
+"rewards.walletTransferCompleteBody" = "Aktarımınız başlatıldı. Mevcut herhangi bir BAT bakiyenin masaüstü Asil Browser Ödülleri cüzdanınızda görünmesi birkaç dakika sürebilir. Aktarım tamamlandığında ayrıntılar için Masaüstü'ndeki Ödül özetinizi kontrol edin.\n\nBu pencereyi kapatabilir ve aktarımınız gerçekleştirilirken Asil Browser'ı kullanmaya devam edebilirsiniz.";
 
 /* Title shown above the confirmation message after completing a wallet transfer successfully */
 "rewards.walletTransferCompleteTitle" = "Bakiye aktarımı başlatıldı";
@@ -2588,7 +2588,7 @@
 "Security" = "Güvenlik";
 
 /* Message displayed in the crash dialog above the buttons used to select when sending reports */
-"SendCrashReportAlertMessage" = "Asil Browser'in sorunu çözebilmesi için bir çökme raporu göndermek ister misiniz?";
+"SendCrashReportAlertMessage" = "Asil Browser'ın sorunu çözebilmesi için bir çökme raporu göndermek ister misiniz?";
 
 /* Title for prompt displayed to user after the app crashes */
 "SendCrashReportAlertTitle" = "Hop! Asil Browser çöktü!";
@@ -2621,7 +2621,7 @@
 "settings.autocloseTabsSetting" = "Sekmeleri Kapat";
 
 /* Description of autoclose tabs feature. */
-"settings.autocloseTabsSettingFooter" = "Asil Browser'in yakın zamanda görüntülenmeyen sekmeleri otomatik olarak kapatmasına izin ver.";
+"settings.autocloseTabsSettingFooter" = "Asil Browser'ın yakın zamanda görüntülenmeyen sekmeleri otomatik olarak kapatmasına izin ver.";
 
 /* Error message that is shown in settings when there was a problem loading */
 "SettingsContentLoadErrorMessage" = "Sayfa yüklenemedi.";
@@ -2702,7 +2702,7 @@
 "ShieldsDefaultsFooter" = "Bunlar, yeni siteler için varsayılan Kalkan ayarlarıdır. Bunları değiştirmek mevcut site başına ayarlarınızı etkilemez.";
 
 /* No comment provided by engineer. */
-"ShieldsDownDisclaimer" = "Asil Browser'in gizlilik koruması olmadan bu siteye göz atıyorsunuz. Kalkanlar açıkken düzgün çalışmıyor mu?";
+"ShieldsDownDisclaimer" = "Asil Browser'ın gizlilik koruması olmadan bu siteye göz atıyorsunuz. Kalkanlar açıkken düzgün çalışmıyor mu?";
 
 /* shields overview message */
 "ShieldsOverview" = "Site Kalkanları, ziyaret ettiğiniz her site için reklamların ve izleyicilerin ne zaman engellendiğini kontrol etmenizi sağlar. Reklamları belirli bir sitede görmeyi tercih ediyorsanız, reklamları burada etkinleştirebilirsiniz.";
@@ -2867,7 +2867,7 @@
 "ShowTabsBar" = "Sekme Çubuğu";
 
 /* No comment provided by engineer. */
-"SiteReportedBody" = "Asil Browser'in geliştiricilerine bu sitede bir sorun olduğunu bildirin. Düzeltmek için elimizden geleni yapacağız!";
+"SiteReportedBody" = "Asil Browser'ın geliştiricilerine bu sitede bir sorun olduğunu bildirin. Düzeltmek için elimizden geleni yapacağız!";
 
 /* No comment provided by engineer. */
 "SiteReportedTitle" = "Teşekkürler";
@@ -2969,7 +2969,7 @@
 "SyncComputerDevice" = "Bilgisayar";
 
 /* Sync Error Description */
-"syncDeprecatedVersionError" = "Bu senkronizasyon kodu, başka bir cihazda Asil Browser'in eski bir sürümü tarafından oluşturuldu. Lütfen Asil Browser'i tüm senkronize edilmiş cihazlarda güncelleyin ve tekrar deneyin.";
+"syncDeprecatedVersionError" = "Bu senkronizasyon kodu, başka bir cihazda Asil Browser'ın eski bir sürümü tarafından oluşturuldu. Lütfen Asil Browser'ı tüm senkronize edilmiş cihazlarda güncelleyin ve tekrar deneyin.";
 
 /* Sync you browser settings across devices. */
 "SyncDevices" = "Aygıtlar ve Ayarlar";
@@ -3161,7 +3161,7 @@
 "themeQRCodeShareButton" = "Paylaş...";
 
 /* Title for QR popup encouraging users to share the code with their friends. */
-"themeQRCodeShareTitle" = "Asil Browser'i arkadaşlarınızla paylaşın!";
+"themeQRCodeShareTitle" = "Asil Browser'ı arkadaşlarınızla paylaşın!";
 
 /* Selection to automatically color/style the user interface. */
 "ThemesAutomaticOption" = "Otomatik";
@@ -3497,7 +3497,7 @@
 "vpn.iapDisclaimer" = "Tüm abonelikler otomatik olarak yenilenir, ancak yenilemeden önce iptal edilebilir.";
 
 /* Text explaining how the VPN works. */
-"vpn.installProfileBody" = "Bu profil, VPN'in cihazınızdaki trafiği her zaman otomatik olarak bağlamasını ve güvenli hale almasını sağlar. Bu VPN bağlantısı, zararlı ve istilacı olabilecek bağlantıları engellemek için Asil Browser'in akıllı güvenlik duvarı üzerinden şifrelenecek ve yönlendirilecektir.";
+"vpn.installProfileBody" = "Bu profil, VPN'in cihazınızdaki trafiği her zaman otomatik olarak bağlamasını ve güvenli hale almasını sağlar. Bu VPN bağlantısı, zararlı ve istilacı olabilecek bağlantıları engellemek için Asil Browser'ın akıllı güvenlik duvarı üzerinden şifrelenecek ve yönlendirilecektir.";
 
 /* Text for 'install vpn profile' button */
 "vpn.installProfileButtonText" = "VPN Profili Yükle";
@@ -3707,13 +3707,13 @@
 "widgets.favoritesWidgetTitle" = "Favoriler";
 
 /* This shows when you add a widget but have no favorites added in your app */
-"widgets.noFavoritesFound" = "Lütfen favorilerinizi burada görüntülemek için Asil Browser'i açın";
+"widgets.noFavoritesFound" = "Lütfen favorilerinizi burada görüntülemek için Asil Browser'ı açın";
 
 /* Description for the search option on the 'shortcuts' widget. */
 "widgets.searchShortcutTitle" = "Ara";
 
 /* Description for Asil Browser Shields widget on 'add widget' screen. */
-"widgets.shieldStatsDescription" = "Asil Browser'in size nasıl zaman kazandırdığı ve çevrimiçi dünyada sizi nasıl koruduğuna dair bir özet.";
+"widgets.shieldStatsDescription" = "Asil Browser'ın size nasıl zaman kazandırdığı ve çevrimiçi dünyada sizi nasıl koruduğuna dair bir özet.";
 
 /* Title for Asil Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsTitle" = "Gizlilik İstatistikleri";
@@ -3740,7 +3740,7 @@
 "widgets.shortcutsWidgetTitle" = "Kısayollar";
 
 /* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
-"widgets.singleStatDescription" = "Asil Browser'in sizi çevrimiçi dünyada nasıl koruduğunun özeti.";
+"widgets.singleStatDescription" = "Asil Browser'ın sizi çevrimiçi dünyada nasıl koruduğunun özeti.";
 
 /* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatTitle" = "Gizlilik İstatistiği";
