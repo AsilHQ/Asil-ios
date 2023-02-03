@@ -554,7 +554,8 @@ class SettingsViewController: TableViewController {
             self.dismiss(animated: true)
           },
           image: UIImage(named: "settings-report-bug", in: .module, compatibleWith: nil)!.template,
-          cellClass: MultilineValue1Cell.self),
+          cellClass: MultilineValue1Cell.self)
+        /*
         Row(
           text: Strings.rateBrave,
           selection: { [unowned self] in
@@ -565,7 +566,7 @@ class SettingsViewController: TableViewController {
             self.dismiss(animated: true)
           },
           image: UIImage(named: "settings-rate", in: .module, compatibleWith: nil)!.template,
-          cellClass: MultilineValue1Cell.self),
+          cellClass: MultilineValue1Cell.self),*/
       ]
     )
   }()
