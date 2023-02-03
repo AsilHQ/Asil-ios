@@ -4,7 +4,7 @@ import Foundation
 import UIKit
 
 public struct BraveUX {
-  public static let braveCommunityURL = URL(string: "https://community.brave.com/")!
+  public static let braveCommunityURL = URL(string: "https://community.asil.co")!
   public static let braveVPNFaqURL = URL(string: "https://support.brave.com/hc/en-us/articles/360045045952")!
   public static let braveVPNLinkReceiptProd =
     URL(string: "https://account.brave.com/?intent=connect-receipt&product=vpn")!
@@ -12,14 +12,14 @@ public struct BraveUX {
     URL(string: "https://account.bravesoftware.com/?intent=connect-receipt&product=vpn")!
   public static let braveVPNLinkReceiptDev =
     URL(string: "https://account.brave.software/?intent=connect-receipt&product=vpn")!
-  public static let bravePrivacyURL = URL(string: "https://brave.com/privacy/")!
+    public static let bravePrivacyURL = URL(string: "https://asil.co/privacy/")!
   public static let braveNewsPrivacyURL = URL(string: "https://brave.com/privacy/#brave-news")!
   public static let braveOffersURL = URL(string: "https://offers.brave.com/")!
   public static let bravePlaylistOnboardingURL = URL(string: "https://brave.com/playlist")!
   public static let braveRewardsLearnMoreURL = URL(string: "https://brave.com/rewards-ios/")!
   public static let braveRewardsUnverifiedPublisherLearnMoreURL = URL(string: "https://brave.com/faq-rewards/#unclaimed-funds")!
   public static let braveNewsPartnersURL = URL(string: "https://brave.com/brave-news/")!
-  public static let braveTermsOfUseURL = URL(string: "https://www.brave.com/terms_of_use")!
+    public static let braveTermsOfUseURL = URL(string: "https://asil.co/terms-of-use/")!
   public static let batTermsOfUseURL = URL(string: "https://basicattentiontoken.org/user-terms-of-service/")!
   public static let ntpTutorialPageURL = URL(string: "https://brave.com/ja/ntp-tutorial")
   public static let privacyReportsURL = URL(string: "https://brave.com/privacy-features/")!
