@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "background.png",
+      "filename" : "background.jpg",
       "idiom" : "iphone",
       "scale" : "1x"
     },
@@ -14,16 +14,6 @@
       "filename" : "background@3x.png",
       "idiom" : "iphone",
       "scale" : "3x"
-    },
-    {
-      "filename" : "background@2x-1.png",
-      "idiom" : "ipad",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "background@3x-1.png",
-      "idiom" : "ipad",
-      "scale" : "2x"
     }
   ],
   "info" : {
