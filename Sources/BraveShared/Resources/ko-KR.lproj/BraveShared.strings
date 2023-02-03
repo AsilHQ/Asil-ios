@@ -1,17 +1,17 @@
 /* About settings section title */
 "About" = "정보";
 
-/* The title of the screen explaining Brave Shields */
-"AboutBraveShields" = "Brave Shields 정보";
+/* The title of the screen explaining Asil Browser Shields */
+"AboutBraveShields" = "Asil Browser Shields 정보";
 
-/* The body of the screen explaining Brave Shields */
+/* The body of the screen explaining Asil Browser Shields */
 "AboutBraveShieldsBody" = "사이트에는 방문자와 방문자의 기기를 식별하기 위한 쿠키 및 스크립트가 포함되어 있을 수 있습니다. 이러한 요소는 방문자를 식별하고 방문자가 방문하는 웹사이트를 따라다니며 모든 사이트에서의 방문자 행동 패턴을 추적합니다.\n\nBrave는 이러한 요소를 차단하므로 추적되지 않고 브라우징을 즐길 수 있습니다.";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "이는 카메라 롤에 이미지를 저장하도록 허용합니다.";
 
 /* See http://mzl.la/1G7uHo7 */
-"AccessPhotoDeniedAlertTitle" = "Brave 브라우저가 내 사진에 액세스하려고 합니다.";
+"AccessPhotoDeniedAlertTitle" = "Asil Browser 브라우저가 내 사진에 액세스하려고 합니다.";
 
 /* Button to add a bookmark */
 "AddBookmark" = "북마크 추가";
@@ -52,8 +52,8 @@
 /* Label for the Face ID/Passcode item in Settings */
 "AuthenticationFaceIDPasscodeSetting" = "Face ID 및 암호";
 
-/* Touch ID or PIN entry prompt subtitle when accessing Brave with the Browser Lock feature enabled */
-"AuthenticationLoginsTouchReason" = "이 방법으로 Brave 액세스를 인증합니다.";
+/* Touch ID or PIN entry prompt subtitle when accessing Asil Browser with the Browser Lock feature enabled */
+"AuthenticationLoginsTouchReason" = "이 방법으로 Asil Browser 액세스를 인증합니다.";
 
 /* Label for the Passcode item in Settings */
 "AuthenticationPasscode" = "패스코드";
@@ -130,7 +130,7 @@
 /* A title for setting which blocks 'switch to app' popups */
 "blockMobileAnnoyances" = "'앱으로 전환' 요청 차단";
 
-/* Brave panel individual toggle title */
+/* Asil Browser panel individual toggle title */
 "BlockPhishing" = "피싱 차단";
 
 /* No comment provided by engineer. */
@@ -175,38 +175,38 @@
 /* Placeholder text for adding or editing a bookmark */
 "BookmarkUrlPlaceholderText" = "주소";
 
-/* Button to show the brave panel */
-"BravePanel" = "Brave 패널";
+/* Button to show the Asil Browser panel */
+"BravePanel" = "Asil Browser 패널";
 
 /* No comment provided by engineer. */
-"BraveRewardsAdNotificationTitle" = "Brave Rewards";
+"BraveRewardsAdNotificationTitle" = "Asil Browser Rewards";
 
 /* No comment provided by engineer. */
 "BraveRewardsOpen" = "열기";
 
-/* Brave Rewards settings title */
-"BraveRewardsTitle" = "Brave Rewards";
+/* Asil Browser Rewards settings title */
+"BraveRewardsTitle" = "Asil Browser Rewards";
 
-/* Brave Search Banner Promotion description content in Search Suggestions */
-"braveSearchPromotion.bannerDescription" = "Brave 검색은 사용자의 신원이나 검색어, 클릭 활동을 추적하지 않습니다.";
+/* Asil Browser Search Banner Promotion description content in Search Suggestions */
+"braveSearchPromotion.bannerDescription" = "Asil Browser 검색은 사용자의 신원이나 검색어, 클릭 활동을 추적하지 않습니다.";
 
-/* Brave Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
+/* Asil Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
 "braveSearchPromotion.bannerMaybeLaterButtonTitle" = "나중에";
 
-/* Brave Search Banner Promotion title in Search Suggestions */
+/* Asil Browser Search Banner Promotion title in Search Suggestions */
 "braveSearchPromotion.bannerTitle" = "프라이버시가 한층 강화된 독립적인 검색 엔진";
 
-/* Brave Search Banner Promotion title for try button in Search Suggestions */
-"braveSearchPromotion.bannerTryButtonTitle" = "Brave 검색 사용해보기";
+/* Asil Browser Search Banner Promotion title for try button in Search Suggestions */
+"braveSearchPromotion.bannerTryButtonTitle" = "Asil Browser 검색 사용해보기";
 
-/* Brave Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
+/* Asil Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
 "braveSearchPromotion.braveSearchPromotionBannerDismissButtonTitle" = "숨기기";
 
 /* No comment provided by engineer. */
 "BraveShieldsAdvancedControls" = "고급 컨트롤";
 
 /* No comment provided by engineer. */
-"BraveShieldsAndPrivacy" = "Brave Shields 및 프라이버시";
+"BraveShieldsAndPrivacy" = "Asil Browser Shields 및 프라이버시";
 
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "광고 등 유쾌하지 않은 콘텐츠 차단 완료";
@@ -223,17 +223,17 @@
 /* No comment provided by engineer. */
 "BraveShieldsSiteBroken" = "사이트가 깨진 것으로 표시되면 Shields 해제 권장";
 
-/* Context: 'Brave Shields Up' or 'Brave Shields Down' */
+/* Context: 'Asil Browser Shields Up' or 'Asil Browser Shields Down' */
 "BraveShieldsStatusTitle" = "Asil Browser Shields";
 
-/* Context: The 'Down' in 'Brave Shields Down' */
+/* Context: The 'Down' in 'Asil Browser Shields Down' */
 "BraveShieldsStatusValueDown" = "해제";
 
-/* Context: The 'Up' in 'Brave Shields Up' */
+/* Context: The 'Up' in 'Asil Browser Shields Up' */
 "BraveShieldsStatusValueUp" = "사용";
 
 /* The accessibility hint spoken when focused on the main shields toggle */
-"BraveShieldsToggleHint" = "두 번 탭하여 Brave Shields 토글";
+"BraveShieldsToggleHint" = "두 번 탭하여 Asil Browser Shields 토글";
 
 /* Sync page title */
 "BraveSync" = "동기화";
@@ -245,7 +245,7 @@
 "BraveSyncWelcome" = "시작하려면 동기화하려는 모든 기기에 Brave가 설치되어 있어야 합니다. 모든 기기를 연결하려면 모든 기기를 안전하게 연결하는 데 사용할 동기화 체인을 시작하십시오.";
 
 /* The name of the feature */
-"bravetalk.braveTalkTitle" = "Brave Talk";
+"bravetalk.braveTalkTitle" = "Asil Browser Talk";
 
 /* Setting to enable the browser lock privacy feature */
 "BrowserLock" = "브라우저 잠금";
@@ -260,10 +260,10 @@
 "browserLockMigrationNoPasscodeSetup" = "ID나 패스코드를 설정하지 않으셨나요? 설정을 열고 \"%@\"를 탭하세요.";
 
 /* Subtitle on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationSubtitle" = "Brave 패스코드가 간편해졌습니다. 휴대전화에서 사용하는 것과 동일한 ID 또는 패스코드로 Brave에 액세스할 수 있습니다.";
+"browserLockMigrationSubtitle" = "Asil Browser 패스코드가 간편해졌습니다. 휴대전화에서 사용하는 것과 동일한 ID 또는 패스코드로 Brave에 액세스할 수 있습니다.";
 
 /* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationTitle" = "Apple Face ID, Touch ID, 또는 패스코드로 Brave 열기";
+"browserLockMigrationTitle" = "Apple Face ID, Touch ID, 또는 패스코드로 Asil Browser 열기";
 
 /* Settings item for clearing browsing history */
 "BrowsingHistory" = "방문 기록";
@@ -349,7 +349,7 @@
 /* Title indicating whether or not a private key can be used to derive some data from another piece of data. IE: Use one key to generate another */
 "certificateViewer.deriveTitle" = "파생";
 
-/* Title of the section for the Domain Component such as: DNS or brave.com or a website's domain. */
+/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
 "certificateViewer.domainComponentTitle" = "도메인 컴포넌트";
 
 /* Title of the section indication which 'Encryption' algorithm was used. */
@@ -388,7 +388,7 @@
 /* Title of the section for Department of the Company. Example: Human Resources. */
 "certificateViewer.organizationalUnitTitle" = "조직 내 부서";
 
-/* Title of the section for Name of the Company. Example: Brave Inc. */
+/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
 "certificateViewer.organizationTitle" = "조직";
 
 /* Title indicating 'Parameters' or Input passed to a function/algorithm. */
@@ -602,22 +602,22 @@
 "defaultBrowserCallout.introPrimaryText" = "모든 링크를 Brave로 열어 프라이버시를 보호하세요.";
 
 /* Secondary text on default browser popup. */
-"defaultBrowserCallout.introSecondaryText" = "Brave Shields가 트래커와 광고를 차단하여 사이트를 방문할 때마다 데이터와 시간을 절약합니다.";
+"defaultBrowserCallout.introSecondaryText" = "Asil Browser Shields가 트래커와 광고를 차단하여 사이트를 방문할 때마다 데이터와 시간을 절약합니다.";
 
 /* Tertiary text on default browser popup screen */
 "defaultBrowserCallout.introTertiaryText" = "설정을 열고 기본 브라우저 앱을 탭한 다음 Brave를 선택하세요.";
 
-/* Notification body to promote setting Brave app as default browser */
+/* Notification body to promote setting Asil Browser app as default browser */
 "defaultBrowserCallout.notificationBody" = "iOS %@에 최적. Brave를 기본 브라우저로 설정하세요.";
 
-/* Notification title to promote setting Brave app as default browser */
-"defaultBrowserCallout.notificationTitle" = "Brave 웹브라우저";
+/* Notification title to promote setting Asil Browser app as default browser */
+"defaultBrowserCallout.notificationTitle" = "Asil Browser 웹브라우저";
 
 /* No comment provided by engineer. */
 "defaultBrowserCalloutCloseAccesabilityLabel" = "기본 브라우저 설정 안내 닫기";
 
-/* Name for default Brave theme. */
-"defaultThemeName" = "Brave 기본값";
+/* Name for default Asil Browser theme. */
+"defaultThemeName" = "Asil Browser 기본값";
 
 /* No comment provided by engineer. */
 "Delete" = "삭제";
@@ -772,10 +772,10 @@
 /* Allow link to switch apps? */
 "ExternalAppURLAlertTitle" = "앱 전환 링크를 허용하시겠습니까?";
 
-/* Allow Brave to open the external app URL */
+/* Allow Asil Browser to open the external app URL */
 "ExternalAppURLAllow" = "허용";
 
-/* Don't allow Brave to open the external app URL */
+/* Don't allow Asil Browser to open the external app URL */
 "ExternalAppURLDontAllow" = "허용하지 않음";
 
 /* Footer text when user selects to save to favorites when editing a bookmark */
@@ -854,10 +854,10 @@
 "HideLinkPreviewsActionTitle" = "링크 미리보기 숨기기";
 
 /* Hides the rewards icon */
-"HideRewardsIcon" = "Brave Rewards 아이콘 숨기기";
+"HideRewardsIcon" = "Asil Browser Rewards 아이콘 숨기기";
 
 /* Hide the rewards icon explination. */
-"HideRewardsIconSubtitle" = "Brave Rewards가 활성화되지 않았을 때 Brave Rewards 아이콘 숨김";
+"HideRewardsIconSubtitle" = "Asil Browser Rewards가 활성화되지 않았을 때 Asil Browser Rewards 아이콘 숨김";
 
 /* Title for history menu item */
 "HistortMenuItem" = "기록";
@@ -995,13 +995,13 @@
 "MonthlyAdsClaimNotificationBody" = "무료 토큰을 받으려면 탭하세요.";
 
 /* The title of the notification that goes out monthly to users who can claim an ads grant */
-"MonthlyAdsClaimNotificationTitle" = "Brave Rewards 💵🎁";
+"MonthlyAdsClaimNotificationTitle" = "Asil Browser Rewards 💵🎁";
 
 /* No comment provided by engineer. */
 "MyFirstAdBody" = "자세히 알아보려면 여기를 탭하세요.";
 
 /* No comment provided by engineer. */
-"MyFirstAdTitle" = "첫 번째로 표시되는 Brave 광고";
+"MyFirstAdTitle" = "첫 번째로 표시되는 Asil Browser 광고";
 
 /* Bookmark title / Device name */
 "Name" = "이름";
@@ -1063,13 +1063,13 @@
 /* Setting title for option to automatically redirect a url to another url */
 "nprRedirectFooter" = "NPR 링크를 텍스트 기반 버전(text.npr.org)으로 자동 리디렉션합니다.";
 
-/* Bookmark title for Brave Support */
-"ntp.braveSupportFavoriteTitle" = "Brave 지원";
+/* Bookmark title for Asil Browser Support */
+"ntp.braveSupportFavoriteTitle" = "Asil Browser 지원";
 
 /* No comment provided by engineer. */
 "ntp.claimRewards" = "토큰 받기";
 
-/* Placeholder example: 'You earned 42 BAT by browsing with Brave.' */
+/* Placeholder example: 'You earned 42 BAT by browsing with Asil Browser.' */
 "ntp.earningsReport" = "Brave로 브라우징하여 %@를 얻었습니다.";
 
 /* The context is to praise the user that they did a good job, to keep it up. It is used in full sentence like: 'Way to go! You earned 40 BAT last month.' */
@@ -1079,10 +1079,10 @@
 "ntp.hideSponsoredImages" = "스폰서 이미지 숨기기";
 
 /* The text description of image type which is being used NTP */
-"ntp.imageTypeSelectionDescription" = "'스폰서'는 브랜드의 후원을 받았다는 의미로, Brave Rewards 적립이 가능합니다.";
+"ntp.imageTypeSelectionDescription" = "'스폰서'는 브랜드의 후원을 받았다는 의미로, Asil Browser Rewards 적립이 가능합니다.";
 
 /* No comment provided by engineer. */
-"ntp.learnMoreAboutRewards" = "Brave Rewards 자세히 알아보기";
+"ntp.learnMoreAboutRewards" = "Asil Browser Rewards 자세히 알아보기";
 
 /* No comment provided by engineer. */
 "ntp.learnMoreAboutSI" = "스폰서 이미지 자세히 알아보기";
@@ -1114,17 +1114,17 @@
 /* The placeholder says 'Terms of Service'. So full sentence goes like: 'By turning Rewards, you agree to the Terms of Service'. */
 "ntp.turnRewardsTos" = "Rewards를 켜면 %@에 동의하는 것으로 간주됩니다.";
 
-/* Message when opting into brave Ads when region becomes available */
+/* Message when opting into Asil Browser Ads when region becomes available */
 "OBAdsOptInMessage" = "브라우징하면서 토큰을 얻어 좋은 콘텐츠를 만들어준 제작자에게 보답하세요.";
 
-/* Message when opting into brave Ads when region becomes available */
+/* Message when opting into Asil Browser Ads when region becomes available */
 "OBAdsOptInMessageJapan" = "브라우징하면서 포인트를 얻어 좋은 콘텐츠를 만들어준 제작자에게 보답하세요.";
 
-/* Title when opting into brave Ads when region becomes available */
-"OBAdsOptInTitle" = "Brave Ads 이용 가능!";
+/* Title when opting into Asil Browser Ads when region becomes available */
+"OBAdsOptInTitle" = "Asil Browser Ads 이용 가능!";
 
 /* Title for ads onboarding screen */
-"OBAdsTitle" = "첫 Brave 광고가 다음 시간 후 표시됩니다.";
+"OBAdsTitle" = "첫 Asil Browser 광고가 다음 시간 후 표시됩니다.";
 
 /* Title for when the user completes onboarding */
 "OBCompleteTitle" = "이제 준비를 마쳤습니다.";
@@ -1144,7 +1144,7 @@
 /* Button to finish onboarding and start using the app. */
 "OBFinishButton" = "브라우징 시작";
 
-/* Button to join Brave Rewards. */
+/* Button to join Asil Browser Rewards. */
 "OBJoinButton" = "가입";
 
 /* No comment provided by engineer. */
@@ -1172,10 +1172,10 @@
 "OBRewardsAgreementDetailsAnd" = "및";
 
 /* Title for rewards agreement onboarding screen */
-"OBRewardsAgreementTitle" = "Brave Rewards";
+"OBRewardsAgreementTitle" = "Asil Browser Rewards";
 
 /* Detail text for rewards onboarding screen */
-"OBRewardsDetail" = "Brave Private Ads를 선택하면 광고를 보고 게시자와 콘텐츠 제작자를 지원할 수 있습니다.";
+"OBRewardsDetail" = "Asil Browser Private Ads를 선택하면 광고를 보고 게시자와 콘텐츠 제작자를 지원할 수 있습니다.";
 
 /* Detail text for rewards onboarding screen */
 "OBRewardsDetailInAdRegion" = "브라우징하면서 토큰을 얻어 좋은 콘텐츠를 만들어준 제작자에게 보답하세요.";
@@ -1184,7 +1184,7 @@
 "OBRewardsPrivacyPolicyDetailLink" = "개인정보 취급방침";
 
 /* Title for rewards onboarding screen */
-"OBRewardsTitle" = "Brave Rewards";
+"OBRewardsTitle" = "Asil Browser Rewards";
 
 /* Save button to save current selection */
 "OBSaveButton" = "저장";
@@ -1199,22 +1199,22 @@
 "OBShieldsDetail" = "프라이버시를 침해하는 트래커를 차단하여 웹에서 불필요한 사이트 방문 없이 브라우징 가능";
 
 /* Title for shields onboarding screen */
-"OBShieldsTitle" = "Brave Shields";
+"OBShieldsTitle" = "Asil Browser Shields";
 
-/* Button to show the Brave Rewards Ads. */
+/* Button to show the Asil Browser Rewards Ads. */
 "OBShowMeButton" = "표시";
 
-/* Button to show Brave Rewards. */
+/* Button to show Asil Browser Rewards. */
 "OBTurnOnButton" = "시작";
 
 /* The description text shown when there is big tech tracker among trackers. Example usage: Google, Amazon and 32 other trackers blocked */
 "onboarding.blockedAdsOnboardingBigTechInformationText" = "%1$@ 외 %2$lld개의 광고 및 트래커 차단됨";
 
-/* The footnote indicating what Brave shields is blocking */
-"onboarding.blockedAdsOnboardingFootnoteText" = "모든 페이지에서 Brave가 Shields로 차단한 악성 콘텐츠를 모두 확인해보세요.";
+/* The footnote indicating what Asil Browser shields is blocking */
+"onboarding.blockedAdsOnboardingFootnoteText" = "모든 페이지에서 Asil Browser가 Shields로 차단한 악성 콘텐츠를 모두 확인해보세요.";
 
 /* The text describing user where they should press in order to open Shield panel */
-"onboarding.blockedAdsOnboardingInstructionsText" = "Brave Shields를 보려면 탭";
+"onboarding.blockedAdsOnboardingInstructionsText" = "Asil Browser Shields를 보려면 탭";
 
 /* The description text shown when there is no big tech tracker among trackers. Example usage: 31 Ads & trackers blocked. The number here is presented separately so it is not in translation. */
 "onboarding.blockedAdsOnboardingNoBigTechInformationText" = "광고 및 트래커 차단됨";
@@ -1249,8 +1249,8 @@
 /* Context menu item for opening all folder bookmarks */
 "OpenAllBookmarks" = "모두 열기(%i)";
 
-/* Button title for opening the Brave Rewards panel to settings */
-"OpenBraveRewardsSettings" = "Brave Rewards 설정 열기";
+/* Button title for opening the Asil Browser Rewards panel to settings */
+"OpenBraveRewardsSettings" = "Asil Browser Rewards 설정 열기";
 
 /* Error description when there is an error while navigating to Files App */
 "OpenDownloadsFolderErrorDescription" = "파일 앱에서 다운로드 폴더를 여는 중 알 수 없는 오류가 발생했습니다.";
@@ -1301,7 +1301,7 @@
 "opentabs.noSyncSessionPlaceHolderViewDescription" = "귀하의 다른 기기에 표시할 활성 세션이 없습니다.";
 
 /* The title of the view showing no synced sessions */
-"opentabs.noSyncSessionPlaceHolderViewTitle" = "다른 기기에 열린 Brave 탭이 표시되는 공간";
+"opentabs.noSyncSessionPlaceHolderViewTitle" = "다른 기기에 열린 Asil Browser 탭이 표시되는 공간";
 
 /* The title for the action to hide open session with all tabs */
 "opentabs.openSessionHideAllActionTitle" = "지금 숨기기";
@@ -1354,35 +1354,35 @@
 /* Button title to that opens a website. */
 "OpenWebsite" = "웹사이트 열기";
 
-/* The subtitle description of menu item Brave News */
+/* The subtitle description of menu item Asil Browser News */
 "optionsMenu.braveNewsItemDescription" = "비공개 뉴스 피드에 오늘의 인기 스토리 제공";
 
-/* Brave News Item Menu title */
+/* Asil Browser News Item Menu title */
 "optionsMenu.braveNewsItemTitle" = "뉴스";
 
-/* The subtitle description of menu item Brave Playlist */
+/* The subtitle description of menu item Asil Browser Playlist */
 "optionsMenu.bravePlaylistItemDescription" = "모든 동영상/스트림 오프라인 재생목록 유지";
 
-/* Brave News Item Menu title */
+/* Asil Browser News Item Menu title */
 "optionsMenu.bravePlaylistItemTitle" = "재생목록";
 
-/* The subtitle description of menu item Brave Talk */
+/* The subtitle description of menu item Asil Browser Talk */
 "optionsMenu.braveTalkItemDescription" = "브라우저에서 바로 비공개 영상 통화";
 
-/* Brave Talk Item Menu title */
+/* Asil Browser Talk Item Menu title */
 "optionsMenu.braveTalkItemTitle" = "Talk";
 
-/* The subtitle description of menu item Brave VPN */
+/* The subtitle description of menu item Asil Browser VPN */
 "optionsMenu.braveVPNItemDescription" = "온라인 상태인 기기 전체 보호";
 
-/* Brave VPN Item Menu title */
+/* Asil Browser VPN Item Menu title */
 "optionsMenu.braveVPNItemTitle" = "VPN";
 
-/* The subtitle description of menu item Brave Wallet */
+/* The subtitle description of menu item Asil Browser Wallet */
 "optionsMenu.braveWalletItemDescription" = "안전한 암호화폐 월렛. 확장 프로그램 불필요";
 
 /* Privacy Features Section title */
-"optionsMenu.menuSectionTitle" = "Brave 특장점";
+"optionsMenu.menuSectionTitle" = "Asil Browser 특장점";
 
 /* Section name for other privacy settings */
 "OtherPrivacySettingsSection" = "기타 프라이버시 설정";
@@ -1390,10 +1390,10 @@
 /* Section name for other settings. */
 "OtherSettingsSection" = "기타 설정";
 
-/* A subtitle shown on the setting that toggles analytics on Brave. */
+/* A subtitle shown on the setting that toggles analytics on Asil Browser. */
 "p3a.settingSubtitle" = "익명 P3A 정보는 Brave가 총체적인 사용 패턴을 평가하여 인기 기능을 개선하는 데 도움이 됩니다.";
 
-/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Brave. */
+/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
 "p3a.settingTitle" = "프라이버시 보호 제품 분석(P3A) 허용";
 
 /* Title for the section for the global/default zoom level */
@@ -1478,7 +1478,7 @@
 "playList.loadResourcesErrorAlertDescription" = "리소스를 로드하는 중에 문제가 발생했습니다.";
 
 /* Description footer for playlist menu badge option */
-"playlist.menuBadgeOptionFooterText" = "활성화하면 메인 메뉴 아이콘에 배지가 표시되어 페이지상의 미디어가 Brave 재생목록에 추가될 수 있음을 나타냅니다.";
+"playlist.menuBadgeOptionFooterText" = "활성화하면 메인 메뉴 아이콘에 배지가 표시되어 페이지상의 미디어가 Asil Browser 재생목록에 추가될 수 있음을 나타냅니다.";
 
 /* Title for playlist menu badge option */
 "playlist.menuBadgeOptionTitle" = "메뉴 알림 배지 표시";
@@ -1487,7 +1487,7 @@
 "playlist.movePlaylistShareActionMenuTitle" = "이동...";
 
 /* Detail Text when there are no items in the playlist */
-"playList.noItemLabelDetailLabel" = "브라우저 내에서 Brave 재생목록에 항목을 추가할 수 있습니다.";
+"playList.noItemLabelDetailLabel" = "브라우저 내에서 Asil Browser 재생목록에 항목을 추가할 수 있습니다.";
 
 /* Text when there are no items in the playlist */
 "playList.noItemLabelTitle" = "사용 가능한 항목 없음";
@@ -1565,7 +1565,7 @@
 "playList.playListSettingTitle" = "재생목록";
 
 /* Body for the error message that shows when a playlist folder already exists */
-"playList.playlistSharedFolderAlreadyExistsBody" = "Brave 재생목록에 이 폴더가 이미 존재함";
+"playList.playlistSharedFolderAlreadyExistsBody" = "Asil Browser 재생목록에 이 폴더가 이미 존재함";
 
 /* Title for the error message that shows when a playlist folder already exists */
 "playList.playlistSharedFolderAlreadyExistsTitle" = "죄송합니다";
@@ -1601,13 +1601,13 @@
 "playlist.playlistWebCompatibilityTitle" = "웹 호환성";
 
 /* Body of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddBody" = "Brave 재생목록은 오프라인 재생, PIP(Picture-in-picture), 연속 재생, 반복 모드를 지원합니다.";
+"playlist.popoverAddBody" = "Asil Browser 재생목록은 오프라인 재생, PIP(Picture-in-picture), 연속 재생, 반복 모드를 지원합니다.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddedTitle" = "Asil Browser 재생목록에 있는 미디어";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddTitle" = "이 미디어를 Brave 재생목록에 추가하시겠습니까?";
+"playlist.popoverAddTitle" = "이 미디어를 Asil Browser 재생목록에 추가하시겠습니까?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverOpenInBravePlaylist" = "Asil Browser 재생목록에서 열기";
@@ -1652,7 +1652,7 @@
 "playlist.sharePlaylistActionDetailsTitle" = "새 탭에서 현재 항목을 열거나 시스템 공유 메뉴를 통해 공유할 수 있습니다.";
 
 /* Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
-"playlist.sharePlaylistActionTitle" = "Brave 재생목록 메뉴";
+"playlist.sharePlaylistActionTitle" = "Asil Browser 재생목록 메뉴";
 
 /* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
 "playlist.sharePlaylistOpenInNewPrivateTabTitle" = "비공개 탭에서 열기";
@@ -1676,10 +1676,10 @@
 "playList.toastAddToPlaylistTitle" = "Asil Browser Playlist에 추가";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
-"playList.toastExitingItemPlaylistTitle" = "Brave Playlist에서 보기";
+"playList.toastExitingItemPlaylistTitle" = "Asil Browser Playlist에서 보기";
 
 /* Footer for option to disable URL-Bar button */
-"playlist.urlBarButtonOptionFooter" = "Brave 브라우저 주소창 옆에 재생목록 버튼(줄 4개에 + 기호가 더해진 모양)을 추가합니다. 이 빠른 액세스 버튼을 이용하면 신속하게 재생목록을 열거나 미디어를 추가 또는 제거할 수 있습니다.";
+"playlist.urlBarButtonOptionFooter" = "Asil Browser 브라우저 주소창 옆에 재생목록 버튼(줄 4개에 + 기호가 더해진 모양)을 추가합니다. 이 빠른 액세스 버튼을 이용하면 신속하게 재생목록을 열거나 미디어를 추가 또는 제거할 수 있습니다.";
 
 /* Title for option to disable URL-Bar button */
 "playlist.urlBarButtonOptionTitle" = "빠른 액세스 버튼 활성화";
@@ -1708,7 +1708,7 @@
 /* The title of the screen where the user will move an item from one folder to another folder. */
 "playlistFolders.moveFolderScreenTitle" = "이동";
 
-/* %@ Should NOT be localized. It is a placeholder. Example: Brave Folder and 1 more item. */
+/* %@ Should NOT be localized. It is a placeholder. Example: Asil Browser Folder and 1 more item. */
 "playlistFolders.moveItemDescription" = "%@ 외 1개 항목";
 
 /* %lld is a placeholder and should not be localized. Sometimes items can have no name. So this is a generic title to use */
@@ -1717,7 +1717,7 @@
 /* Sometimes an item can have no name. So this is a generic title to use */
 "playlistFolders.moveItemWithNoNameTitle" = "1개 항목";
 
-/* %@ and %lld Should NOT be localized. They are placeholders. Example: Brave Folder and 3 more items. Music and 2 more items. */
+/* %@ and %lld Should NOT be localized. They are placeholders. Example: Asil Browser Folder and 3 more items. Music and 2 more items. */
 "playlistFolders.moveMultipleItemDescription" = "%1$@ 외 %2$lld개 항목";
 
 /* The title of the button to create a new folder */
@@ -1751,7 +1751,7 @@
 "playlistFolders.untitledFolderTitle" = "무제 폴더";
 
 /* Accessibility Title for the button that adds the playlist to the database. */
-"playlistFolderSharing.addButtonAccessibilityTitle" = "Brave 재생목록에 추가 버튼";
+"playlistFolderSharing.addButtonAccessibilityTitle" = "Asil Browser 재생목록에 추가 버튼";
 
 /* Title for the button that adds the playlist to the database. */
 "playlistFolderSharing.addButtonTitle" = "추가";
@@ -1795,7 +1795,7 @@
 /* Description for closing a popover menu that is displayed. */
 "PopoverDefaultClose" = "맥락 메뉴 닫기";
 
-/* Description for closing the `Brave Shields` popover menu that is displayed. */
+/* Description for closing the `Asil Browser Shields` popover menu that is displayed. */
 "PopoverShieldsMenuClose" = "Shields 메뉴 닫기";
 
 /* Label for preview action on Tab Tray Tab to add current tab to Bookmarks */
@@ -1819,7 +1819,7 @@
 /* Header text, under it we show items blocked by our ad blocker. 'All  time' sentence context is like 'All time items blocked by our ad blocker. */
 "privacyHub.allTimeListsHeader" = "올타임";
 
-/* Title of a section to show total count of trackers blocked by Brave */
+/* Title of a section to show total count of trackers blocked by Asil Browser */
 "privacyHub.allTimeListsTrackersView" = "트래커 및 광고";
 
 /* Title of a section to show websites containing highest amount of trackers */
@@ -1843,10 +1843,10 @@
 /* Title under which we display a website on which there's the highest number of trackers or ads. */
 "privacyHub.allTimeWebsiteTitle" = "웹사이트";
 
-/* Text for a button to display a list of all alerts caught by the Brave VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
+/* Text for a button to display a list of all alerts caught by the Asil Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
 "privacyHub.allVPNAlertsButtonText" = "모든 경고";
 
-/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Brave Shields', 'Blocked by BraveVPN */
+/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Asil Browser Shields', 'Blocked by BraveVPN */
 "privacyHub.blockedBy" = "차단됨 -";
 
 /* It says that a ad or tracker was blocked. Think of it in context of 'A tracker X was blocked' */
@@ -1864,8 +1864,8 @@
 /* Header text, under it we display blocked items from last week */
 "privacyHub.lastWeekHeader" = "지난주";
 
-/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Brave Shields on 42 sites' */
-"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@**이(가) Brave Shields에 의해 **%2$lld**개 사이트에서 차단됨";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Asil Browser Shields on 42 sites' */
+"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@**이(가) Asil Browser Shields에 의해 **%2$lld**개 사이트에서 차단됨";
 
 /* Title under which we display a tracker which was most frequently detected by our ad blocking mechanism. */
 "privacyHub.mostFrequentTrackerAndAdTitle" = "가장 자주 탐지된 트래커 및 광고";
@@ -1897,7 +1897,7 @@
 /* Text of a disclaimer that explains how the data for generating privacy reprots is stored. */
 "privacyHub.privacyReportsDisclaimer" = "프라이버시 허브 데이터는 로컬에 저장되어 다른 어디로도 전송되지 않습니다.";
 
-/* Title of main privacy hub screen. This screen shows various stats caught by Brave's ad blockers. */
+/* Title of main privacy hub screen. This screen shows various stats caught by Asil Browser's ad blockers. */
 "privacyHub.privacyReportsTitle" = "프라이버시 허브";
 
 /* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which website had the most tracker per visit, example usage: 'example.com had an average of 10 trackers & ads blocked per visit ' */
@@ -1906,22 +1906,22 @@
 /* Title of a website that contained the most trackers per visit. */
 "privacyHub.riskiestWebsiteTitle" = "트래커가 가장 많은 사이트";
 
-/* This text explains a setting that lets Brave monitor blocked network requests */
+/* This text explains a setting that lets Asil Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsFooter" = "프라이버시 허브에는 Shields의 차단 횟수가 표시됩니다. 설정은 새 탭 페이지의 Shields 카운터에 영향을 주지 않습니다. 비공개 창에서는 Shields 데이터가 집계되지 않습니다.";
 
-/* Title of a setting that lets Brave monitor blocked network requests */
+/* Title of a setting that lets Asil Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsTitle" = "Shields 데이터 표시";
 
-/* This text explains a setting that lets Brave monitor blocked network requests captured by Brave VPN */
+/* This text explains a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
 "privacyHub.settingsEnableVPNAlertsFooter" = "VPN 구독 구매 시에만 설정이 적용됩니다.";
 
-/* Title of a setting that lets Brave monitor blocked network requests captured by Brave VPN */
+/* Title of a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
 "privacyHub.settingsEnableVPNAlertsTitle" = "VPN 경고 표시";
 
 /* This text explains what the button to clear datain the Privacy Hub is for. */
 "privacyHub.settingsSlearDataFooter" = "Shields 차단 개수 기록을 초기화합니다.";
 
-/* Button that lets user clear all blocked requests and vpn alerts data that Brave captured for them. */
+/* Button that lets user clear all blocked requests and vpn alerts data that Asil Browser captured for them. */
 "privacyHub.settingsSlearDataTitle" = "Shields 데이터 지우기";
 
 /* This label says shields, as a source of by what a resource was blocked. Think of it in context of 'Blocked by Shields' */
@@ -1946,15 +1946,15 @@
 "privacyHub.vpnAlertRegularTrackerTypeSingular" = "트래커 또는 광고";
 
 /* Section title, this section displays vpn alerts: items which the vpn managed to block on users behalf. */
-"privacyHub.vpnAlertsHeader" = "Brave Firewall + VPN 경고";
+"privacyHub.vpnAlertsHeader" = "Asil Browser Firewall + VPN 경고";
 
-/* This label says about Brave VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
+/* This label says about Asil Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
 "privacyHub.vpnLabel" = "Firewall + VPN";
 
 /* It shows a total count of items blocked by our VPN shields */
 "privacyHub.vpvnAlertsTotalCount" = "총 개수";
 
-/* Show Brave Browser Privacy Policy page from the Privacy section in the settings. */
+/* Show Asil Browser Browser Privacy Policy page from the Privacy section in the settings. */
 "PrivacyPolicy" = "개인정보 취급방침";
 
 /* Private button title */
@@ -1973,7 +1973,7 @@
 "PrivateTabBody" = "비공개 탭은 Brave에 저장되지 않지만 이를 통해 온라인에서 익명으로 활동할 수 있는 것은 아닙니다. 비공개 탭에서 방문한 사이트는 방문 기록에 표시되지 않으며, 탭을 닫으면 항상 해당 쿠키가 사라집니다. 즉, Brave에는 해당 사이트에 대한 어떤 흔적도 남지 않게 됩니다. 하지만 다운로드는 저장됩니다.\n비공개 탭에서 방문했더라도 귀하의 이동통신 사업자(또는 귀하가 접속하고 있는 Wi-Fi 네트워크나 VPN의 소유자)는 귀하가 어느 사이트를 방문했는지 볼 수 있으며, 해당 사이트에서는 귀하의 공용 IP 주소를 확인할 수 있습니다.";
 
 /* Private tab detail text */
-"PrivateTabDetails" = "비공개 탭을 사용할 경우 귀하의 기기에서 수행된 Brave 작업만이 변경되며, 다른 사용자의 동작은 변경되지 않습니다.\n\n사이트를 방문하면 사이트에서 항상 귀하의 IP 주소를 학습합니다. 즉, 사이트에서 귀하의 위치(주로 도시)를 대략적으로 추측할 수 있습니다. 경우에 따라서는 위치가 훨씬 구체적으로 추측되기도 합니다. 또한 귀하가 사이트에서 수행한 모든 작업(검색어 등)이 해당 사이트에 기록됩니다. 귀하가 사이트에 로그인하면 해당 사이트에서 귀하가 해당 계정의 소유자임을 인식합니다. 비공개 탭을 닫으면 Brave에서 로그인 상태를 유지하는 쿠키를 지우기 때문에 로그아웃 상태가 됩니다.\n\n인터넷 연결을 위해 귀하가 이용하는 ISP에서는 귀하의 네트워크 활동을 모두 확인할 수 있습니다. 대부분의 경우 이러한 ISP는 이동통신 사업자입니다. Wi-Fi 네트워크에 연결한 경우 ISP는 해당 네트워크의 소유자이며, VPN을 사용하는 경우에는 해당 VPN의 운영자입니다. 귀하가 이용하는 ISP에서는 귀하가 사이트를 방문하면 귀하가 방문한 사이트를 알 수 있습니다. 해당 사이트에서 HTTPS를 사용하는 경우 ISP에서는 귀하가 해당 사이트에서 수행하는 작업을 기록에 따라 추측만 할 수 있습니다. 그러나 사이트에서 HTTP만을 사용한다면 ISP에서 귀하가 사용한 검색어, 귀하가 읽은 페이지와 따라 간 링크 등 모든 것을 알 수 있습니다.\n\n고용주가 귀하의 기기를 관리하는 경우 고용주는 귀하가 해당 기기로 무엇을 하는지 추적할 수도 있습니다. 비공개 탭을 사용한다고 해도 귀하가 방문한 사이트를 고용주가 알지 못하도록 차단하지는 못할 것입니다. 귀하의 기기에 액세스할 수 있는 권한을 가진 다른 사람도 귀하의 활동을 모니터링하는 소프트웨어를 설치할 수 있으며, 이것 또한 비공개 탭으로는 차단하지 못합니다.";
+"PrivateTabDetails" = "비공개 탭을 사용할 경우 귀하의 기기에서 수행된 Asil Browser 작업만이 변경되며, 다른 사용자의 동작은 변경되지 않습니다.\n\n사이트를 방문하면 사이트에서 항상 귀하의 IP 주소를 학습합니다. 즉, 사이트에서 귀하의 위치(주로 도시)를 대략적으로 추측할 수 있습니다. 경우에 따라서는 위치가 훨씬 구체적으로 추측되기도 합니다. 또한 귀하가 사이트에서 수행한 모든 작업(검색어 등)이 해당 사이트에 기록됩니다. 귀하가 사이트에 로그인하면 해당 사이트에서 귀하가 해당 계정의 소유자임을 인식합니다. 비공개 탭을 닫으면 Brave에서 로그인 상태를 유지하는 쿠키를 지우기 때문에 로그아웃 상태가 됩니다.\n\n인터넷 연결을 위해 귀하가 이용하는 ISP에서는 귀하의 네트워크 활동을 모두 확인할 수 있습니다. 대부분의 경우 이러한 ISP는 이동통신 사업자입니다. Wi-Fi 네트워크에 연결한 경우 ISP는 해당 네트워크의 소유자이며, VPN을 사용하는 경우에는 해당 VPN의 운영자입니다. 귀하가 이용하는 ISP에서는 귀하가 사이트를 방문하면 귀하가 방문한 사이트를 알 수 있습니다. 해당 사이트에서 HTTPS를 사용하는 경우 ISP에서는 귀하가 해당 사이트에서 수행하는 작업을 기록에 따라 추측만 할 수 있습니다. 그러나 사이트에서 HTTP만을 사용한다면 ISP에서 귀하가 사용한 검색어, 귀하가 읽은 페이지와 따라 간 링크 등 모든 것을 알 수 있습니다.\n\n고용주가 귀하의 기기를 관리하는 경우 고용주는 귀하가 해당 기기로 무엇을 하는지 추적할 수도 있습니다. 비공개 탭을 사용한다고 해도 귀하가 방문한 사이트를 고용주가 알지 못하도록 차단하지는 못할 것입니다. 귀하의 기기에 액세스할 수 있는 권한을 가진 다른 사람도 귀하의 활동을 모니터링하는 소프트웨어를 설치할 수 있으며, 이것 또한 비공개 탭으로는 차단하지 못합니다.";
 
 /* Private tab information link */
 "PrivateTabLink" = "비공개 탭에 대해 자세히 알아보기";
@@ -1987,8 +1987,8 @@
 /* Title for quick-search engines settings section. */
 "QuickSearchEngines" = "빠른 검색 엔진";
 
-/* Open the App Store to rate Brave. */
-"RateBrave" = "Brave 평가하기";
+/* Open the App Store to rate Asil Browser. */
+"RateBrave" = "Asil Browser 평가하기";
 
 /* Accessibility label for button increasing font size in display settings of reader mode */
 "ReaderModeBiggerFontButtonAccessibilityLabel" = "텍스트 크기 확대";
@@ -2017,13 +2017,13 @@
 /* Accessibility hint for the font type buttons in reader mode display settings */
 "ReaderModeFontTypeButtonAccessibilityHint" = "글꼴 유형을 변경합니다.";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Brave reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModeLoadingContentDisplayText" = "콘텐츠 로드 중…";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Brave reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModeLoadOriginalLinkText" = "원래 페이지 로드";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Brave reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModePageCantShowDisplayText" = "읽기 전용 뷰에서 페이지를 표시할 수 없습니다.";
 
 /* Title of a bar that show up when you enter reader mode. */
@@ -2111,7 +2111,7 @@
 "ReportBrokenSiteBody1" = "다음 사이트가 Shields에서 제대로 작동하는지 Brava 개발자가 파악할 수 있게 합니다.";
 
 /* No comment provided by engineer. */
-"ReportBrokenSiteBody2" = "참고: Brave 버전 번호와 IP 주소와 함께 사이트 주소가 제출됩니다. (저장되지는 않음)";
+"ReportBrokenSiteBody2" = "참고: Asil Browser 버전 번호와 IP 주소와 함께 사이트 주소가 제출됩니다. (저장되지는 않음)";
 
 /* No comment provided by engineer. */
 "ReportBrokenSubmitButtonTitle" = "제출";
@@ -2134,28 +2134,28 @@
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "곤란한 문제가 발생했습니다.";
 
-/* Body for Brave Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInBody" = "Brave Rewards를 이용하면 Brave Ads 네트워크에서 프라이버시 보장 광고를 볼 수 있습니다. 트래커가 없어 느려지지 않습니다. 그리고 데이터가 완벽히 안전하게 보호됩니다.";
+/* Body for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInBody" = "Asil Browser Rewards를 이용하면 Asil Browser Ads 네트워크에서 프라이버시 보장 광고를 볼 수 있습니다. 트래커가 없어 느려지지 않습니다. 그리고 데이터가 완벽히 안전하게 보호됩니다.";
 
-/* Title for Brave Talk rewards opt-in screen button */
+/* Title for Asil Browser Talk rewards opt-in screen button */
 "rewards.braveTalkRewardsOptInButtonTitle" = "Rewards 켜기";
 
-/* Body for successful Brave Talk rewards opt-in */
-"rewards.braveTalkRewardsOptInSuccessBody" = "Brave Talk로 계속하려면 화면의 아무데나 클릭하세요.";
+/* Body for successful Asil Browser Talk rewards opt-in */
+"rewards.braveTalkRewardsOptInSuccessBody" = "Asil Browser Talk로 계속하려면 화면의 아무데나 클릭하세요.";
 
-/* Title for successful Brave Talk rewards opt-in */
+/* Title for successful Asil Browser Talk rewards opt-in */
 "rewards.braveTalkRewardsOptInSuccessTitle" = "무료 통화를 시작할 수 있습니다.";
 
-/* Title for Brave Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInTitle" = "무료 통화를 시작하려면 Brave Rewards를 켜세요.";
+/* Title for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInTitle" = "무료 통화를 시작하려면 Asil Browser Rewards를 켜세요.";
 
-/* Displayed when Brave Rewards is disabled */
+/* Displayed when Asil Browser Rewards is disabled */
 "rewards.disabledBody" = "콘텐츠 제작자를 지원하려면 켜세요.";
 
 /* Displayed in the status container when rewards is disabled */
-"rewards.disabledStatusBody" = "Brave Rewards를 사용하면 브라우징하면서 콘텐츠 제작자를 지원할 수 있습니다.";
+"rewards.disabledStatusBody" = "Asil Browser Rewards를 사용하면 브라우징하면서 콘텐츠 제작자를 지원할 수 있습니다.";
 
-/* Displayed when Brave Rewards is enabled */
+/* Displayed when Asil Browser Rewards is enabled */
 "rewards.enabledBody" = "콘텐츠 제작자를 지원하고 계십니다.";
 
 /* Displayed in the status container when rewards is enabled but you're not currently supporting any publishers (0 AC count) */
@@ -2180,7 +2180,7 @@
 "rewards.legacyWalletTransferStatusButtonPendingTitle" = "레거시 월렛 이전이 보류 중 상태입니다.";
 
 /* No comment provided by engineer. */
-"rewards.legacyWalletTransferStatusCompletedBody" = "레거시 월렛 이전이 완료되었습니다! 기존 잔액은 몇 분 후 데스크톱 Brave Rewards 월렛에 나타납니다.";
+"rewards.legacyWalletTransferStatusCompletedBody" = "레거시 월렛 이전이 완료되었습니다! 기존 잔액은 몇 분 후 데스크톱 Asil Browser Rewards 월렛에 나타납니다.";
 
 /* Title shown above body of text explaining that their transfer is completed */
 "rewards.legacyWalletTransferStatusCompletedTitle" = "이전 완료!";
@@ -2231,13 +2231,13 @@
 "rewards.optInDisclaimer" = "클릭하면 %1$@ 및 %2$@에 동의하게 됩니다. 설정에서 언제든지 비활성화할 수 있습니다.";
 
 /* No comment provided by engineer. */
-"rewards.settingsFooterMessage" = "Brave Rewards 결제를 일시적으로 이 기기에서 이용할 수 없습니다. 기존 월렛 잔액을 데스크톱 월렛으로 이전하여 토큰을 안전하게 보호하세요.";
+"rewards.settingsFooterMessage" = "Asil Browser Rewards 결제를 일시적으로 이 기기에서 이용할 수 없습니다. 기존 월렛 잔액을 데스크톱 월렛으로 이전하여 토큰을 안전하게 보호하세요.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleMessage" = "Brave Private Ads를 활성화하면 자동으로 콘텐츠 제작자와 게시자를 지원하게 됩니다. Brave Private Ads는 개인정보를 존중하는 광고로 콘텐츠 제작자에게 보상을 줍니다.";
+"rewards.settingsToggleMessage" = "Asil Browser Private Ads를 활성화하면 자동으로 콘텐츠 제작자와 게시자를 지원하게 됩니다. Asil Browser Private Ads는 개인정보를 존중하는 광고로 콘텐츠 제작자에게 보상을 줍니다.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleTitle" = "Brave Rewards 활성화";
+"rewards.settingsToggleTitle" = "Asil Browser Rewards 활성화";
 
 /* Displayed under verified publishers */
 "rewards.supportingPublisher" = "이 제작자와 같은 콘텐츠 제작자를 지원하고 계십니다.";
@@ -2252,19 +2252,19 @@
 "rewards.unverifiedPublisher" = "확인되지 않은 제작자이기 때문에 제작자 지원에 포함되지 않습니다.";
 
 /* A confirmation message shown to the user after completing a wallet transfer successfully */
-"rewards.walletTransferCompleteBody" = "이전이 시작되었습니다. 기존 BAT 잔액이 데스크톱 Brave Rewards 잔액에 표시되려면 몇 분 정도 소요될 수 있습니다. 이전이 완료되었을 때 자세한 내용을 보려면 데스크톱에서 Rewards 요약을 확인하세요.\n\n이 창을 닫고 Brave 사용을 계속해도 이전이 진행됩니다.";
+"rewards.walletTransferCompleteBody" = "이전이 시작되었습니다. 기존 BAT 잔액이 데스크톱 Asil Browser Rewards 잔액에 표시되려면 몇 분 정도 소요될 수 있습니다. 이전이 완료되었을 때 자세한 내용을 보려면 데스크톱에서 Rewards 요약을 확인하세요.\n\n이 창을 닫고 Asil Browser 사용을 계속해도 이전이 진행됩니다.";
 
 /* Title shown above the confirmation message after completing a wallet transfer successfully */
 "rewards.walletTransferCompleteTitle" = "잔액 이전 시작됨";
 
 /* Message on the alert presented if wallet transfer fails */
-"rewards.walletTransferFailureAlertMessage" = "Brave Rewards 서버가 응답하지 않습니다. 잠시 후 다시 시도하세요.";
+"rewards.walletTransferFailureAlertMessage" = "Asil Browser Rewards 서버가 응답하지 않습니다. 잠시 후 다시 시도하세요.";
 
 /* Title on the alert presented if wallet transfer fails */
 "rewards.walletTransferFailureAlertTitle" = "연결 오류";
 
 /* Describes the steps for using wallet transfer */
-"rewards.walletTransferStepsBody" = "Brave Rewards 토큰 잔액을 기존 Brave Rewards 데스크톱 월렛으로 단 한 번 이전할 수 있습니다.\n\n1. 데스크톱에서 Brave 브라우저를 엽니다.\n2. brave://rewards 페이지로 이동합니다.\n3. “QR Code”를 클릭합니다.\n4. 기기로 QR 코드를 스캔합니다.";
+"rewards.walletTransferStepsBody" = "Asil Browser Rewards 토큰 잔액을 기존 Asil Browser Rewards 데스크톱 월렛으로 단 한 번 이전할 수 있습니다.\n\n1. 데스크톱에서 Asil Browser 브라우저를 엽니다.\n2. Asil Browser://rewards 페이지로 이동합니다.\n3. “QR Code”를 클릭합니다.\n4. 기기로 QR 코드를 스캔합니다.";
 
 /* Title above the steps to use wallet transfer */
 "rewards.walletTransferStepsTitle" = "일회성 이전 코드 스캔";
@@ -2297,7 +2297,7 @@
 "RewardsInternalsContributionAmount" = "후원 금액";
 
 /* No comment provided by engineer. */
-"RewardsInternalsContributionProcessorBraveTokens" = "Brave 토큰";
+"RewardsInternalsContributionProcessorBraveTokens" = "Asil Browser 토큰";
 
 /* No comment provided by engineer. */
 "RewardsInternalsContributionProcessorNone" = "없음";
@@ -2449,7 +2449,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsShare" = "공유";
 
-/* 'Rewards' as in 'Brave Rewards' */
+/* 'Rewards' as in 'Asil Browser Rewards' */
 "RewardsInternalsShareInternalsTitle" = "Rewards 내부 공유";
 
 /* No comment provided by engineer. */
@@ -2467,7 +2467,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsSupported" = "지원됨";
 
-/* 'Rewards' as in 'Brave Rewards' */
+/* 'Rewards' as in 'Asil Browser Rewards' */
 "RewardsInternalsTitle" = "Rewards 내부";
 
 /* No comment provided by engineer. */
@@ -2599,7 +2599,7 @@
 /* No comment provided by engineer. */
 "setDefaultBrowserCalloutTitle" = "이제 iOS에서 Brave를 기본 브라우저로 설정할 수 있습니다. 여기를 탭하여 설정을 여세요.";
 
-/* Settings item to set the Brave as a default browser on the iOS device. */
+/* Settings item to set the Asil Browser as a default browser on the iOS device. */
 "setDefaultBrowserSettingsCell" = "기본 브라우저로 설정";
 
 /* No comment provided by engineer. */
@@ -2681,7 +2681,7 @@
 "shieldEducation.shareTheNewsTitle" = "뉴스 공유";
 
 /* Subtitle for Shield Education Tracker Ad Warning */
-"shieldEducation.trackerAdWarningSubTitle" = "Brave Shields가 방금 온라인 프라이버시를 보호해드렸습니다.";
+"shieldEducation.trackerAdWarningSubTitle" = "Asil Browser Shields가 방금 온라인 프라이버시를 보호해드렸습니다.";
 
 /* Subtitle for Shield Education Tracker Count Share */
 "shieldEducation.trackerCountShareSubtitle" = "축하합니다. 정말 특별하십니다.";
@@ -2696,7 +2696,7 @@
 "shieldEducation.videoAdBlockTitle" = "이 웹사이트에서 동영상을 시청하는 동안 광고가 차단되었습니다.";
 
 /* Section title for adbblock, tracking protection, HTTPS-E, and cookies */
-"ShieldsDefaults" = "Brave Shields 전역 기본값";
+"ShieldsDefaults" = "Asil Browser Shields 전역 기본값";
 
 /* Section footer for global shields defaults */
 "ShieldsDefaultsFooter" = "새로운 사이트에 적용되는 기본 Shields 설정입니다. 이 설정을 변경해도 기존 사이트별 설정에는 영향을 주지 않습니다.";
@@ -2732,7 +2732,7 @@
 "ShortcutItemTitleQRCode" = "QR 코드 스캔";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeBraveNewsDescription" = "Brave News를 열고 오늘의 인기 스토리 확인";
+"shortcuts.activityTypeBraveNewsDescription" = "Asil Browser News를 열고 오늘의 인기 스토리 확인";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeClearHistoryDescription" = "새 탭에서 브라우저를 열고 비공개 브라우저 기록 데이터 삭제";
@@ -2741,7 +2741,7 @@
 "shortcuts.activityTypeClearHistorySuggestedPhrase" = "브라우저 기록 지우기";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeClearHistoryTitle" = "Brave 방문 기록 지우기";
+"shortcuts.activityTypeClearHistoryTitle" = "Asil Browser 방문 기록 지우기";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeEnableVPNDescription" = "새 탭에서 브라우저를 열고 VPN 활성화";
@@ -2750,7 +2750,7 @@
 "shortcuts.activityTypeEnableVPNSuggestedPhrase" = "VPN 활성화";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeEnableVPNTitle" = "새 탭에서 Brave 브라우저를 열고 VPN 활성화";
+"shortcuts.activityTypeEnableVPNTitle" = "새 탭에서 Asil Browser 브라우저를 열고 VPN 활성화";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeNewPrivateTabSuggestedPhrase" = "새 비공개 탭 열기";
@@ -2765,10 +2765,10 @@
 "shortcuts.activityTypeNewTabTitle" = "새 브라우저 탭 열기";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveNewsTitle" = "Brave News 열기";
+"shortcuts.activityTypeOpenBraveNewsTitle" = "Asil Browser News 열기";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Brave News 열기";
+"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Asil Browser News 열기";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeOpenPlaylistDescription" = "재생목록 내 동영상 재생 시작";
@@ -2791,8 +2791,8 @@
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenWebsiteSuggestedPhrase" = "웹사이트 열기";
 
-/* Description for opening Brave Settings for altering Siri shortcut. */
-"shortcuts.shortcutOpenApplicationSettingsDescription" = "이 옵션은 Brave 설정을 엽니다. 다양한 Siri 옵션을 변경하려면 '시리 및 검색' 메뉴 항목을 선택하고 원하는 대로 맞춤 설정하세요.";
+/* Description for opening Asil Browser Settings for altering Siri shortcut. */
+"shortcuts.shortcutOpenApplicationSettingsDescription" = "이 옵션은 Asil Browser 설정을 엽니다. 다양한 Siri 옵션을 변경하려면 '시리 및 검색' 메뉴 항목을 선택하고 원하는 대로 맞춤 설정하세요.";
 
 /* Button title that open application settings */
 "shortcuts.shortcutOpenApplicationSettingsTitle" = "설정 열기";
@@ -2804,16 +2804,16 @@
 "shortcuts.shortcutSettingsClearBrowserHistoryTitle" = "브라우저 기록 지우기";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsEnableVPNDescription" = "Siri - Voice Assistant를 통해 바로가기를 사용하여 Brave VPN 활성화";
+"shortcuts.shortcutSettingsEnableVPNDescription" = "Siri - Voice Assistant를 통해 바로가기를 사용하여 Asil Browser VPN 활성화";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsEnableVPNTitle" = "VPN 활성화";
 
-/* Description of Open Brave News Siri Shortcut in Settings Screen */
-"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Siri - Voice Assistant를 통해 바로가기를 사용하여 새 탭 열기 및 Brave News 피드 표시";
+/* Description of Open Asil Browser News Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Siri - Voice Assistant를 통해 바로가기를 사용하여 새 탭 열기 및 Asil Browser News 피드 표시";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Brave News 열기";
+"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Asil Browser News 열기";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsOpenNewPrivateTabDescription" = "Siri - Voice Assistant를 통해 바로가기를 사용하여 새 비공개 탭 열기";
@@ -2867,18 +2867,18 @@
 "ShowTabsBar" = "탭 바";
 
 /* No comment provided by engineer. */
-"SiteReportedBody" = "이 사이트에 문제가 있다는 사실을 Brave 개발자가 파악할 수 있게 해주셔서 감사합니다. 최선을 다해 해결하겠습니다!";
+"SiteReportedBody" = "이 사이트에 문제가 있다는 사실을 Asil Browser 개발자가 파악할 수 있게 해주셔서 감사합니다. 최선을 다해 해결하겠습니다!";
 
 /* No comment provided by engineer. */
 "SiteReportedTitle" = "감사합니다.";
 
-/* Brave panel topmost title */
+/* Asil Browser panel topmost title */
 "SiteShieldSettings" = "차단";
 
 /* Title used when in warning pop-over when domain specific data save appears */
 "socialSharing.domainSpecificDataSavedTitle" = "매일 웹 브라우징에 Brave를 사용하여 데이터를 절약합니다.";
 
-/* Text used for social sharing together with Brave Shield values */
+/* Text used for social sharing together with Asil Browser Shield values */
 "socialSharing.shareDescriptionTitle" = "매일 웹 브라우징에 Brave를 사용하여 데이터를 절약합니다.";
 
 /* Open search section of settings */
@@ -2911,8 +2911,8 @@
 /* Title for Sync Settings Toggle Header */
 "sync.syncSettingsTitle" = "동기화 설정";
 
-/* Text that informs a user about Brave Sync service deprecation. */
-"sync.syncV1DeprecationText" = "새로운 Brave Sync가 출시되어 설정에 적용될 예정입니다. 곧 업그레이드됩니다.";
+/* Text that informs a user about Asil Browser Sync service deprecation. */
+"sync.syncV1DeprecationText" = "새로운 Asil Browser Sync가 출시되어 설정에 적용될 예정입니다. 곧 업그레이드됩니다.";
 
 /* Message for popup when the bookmark migration fails */
 "sync.v2MigrationErrorMessage" = "북마크를 마이그레이션하지 못했습니다. 나중에 다시 시도하세요.";
@@ -2927,7 +2927,7 @@
 "sync.v2MigrationInterstitialTitle" = "북마크 마이그레이션";
 
 /* Message for popup to inform the user that bookmarks migration is required for sync */
-"sync.v2MigrationMessage" = "Brave Sync를 사용하려면 기존 북마크를 마이그레이션해야 새 시스템을 사용할 수 있습니다. 이 작업은 북마크를 삭제하지 않습니다.";
+"sync.v2MigrationMessage" = "Asil Browser Sync를 사용하려면 기존 북마크를 마이그레이션해야 새 시스템을 사용할 수 있습니다. 이 작업은 북마크를 삭제하지 않습니다.";
 
 /* Button to perform bookmarks migration in order to support sync */
 "sync.v2MigrationOKButton" = "마이그레이션";
@@ -2990,10 +2990,10 @@
 "SyncInitErrorTitle" = "동기화 통신 오류";
 
 /* Default name for a device */
-"syncJoinChainCameraWarning" = "이러한 QR 코드를 생성하는 디바이스에 비밀번호 등, 귀하의 Brave 데이터가 공유됩니다. 본인이 소유한 디바이스에서 생성된 QR 코드인지 주의하여 확인하시기 바랍니다. 계속하시겠습니까?";
+"syncJoinChainCameraWarning" = "이러한 QR 코드를 생성하는 디바이스에 비밀번호 등, 귀하의 Asil Browser 데이터가 공유됩니다. 본인이 소유한 디바이스에서 생성된 QR 코드인지 주의하여 확인하시기 바랍니다. 계속하시겠습니까?";
 
 /* Default name for a device */
-"syncJoinChainCodewordsWarning" = "이러한 코드 단어를 생성하는 디바이스에 비밀번호 등, 귀하의 Brave 데이터가 공유됩니다. 본인이 소유한 디바이스에서 생성된 코드 단어인지 주의하여 확인하시기 바랍니다. 계속하시겠습니까?";
+"syncJoinChainCodewordsWarning" = "이러한 코드 단어를 생성하는 디바이스에 비밀번호 등, 귀하의 Asil Browser 데이터가 공유됩니다. 본인이 소유한 디바이스에서 생성된 코드 단어인지 주의하여 확인하시기 바랍니다. 계속하시겠습니까?";
 
 /* Title for pairing sync device */
 "syncJoinChainWarningTitle" = "경고";
@@ -3056,7 +3056,7 @@
 "SyncToDevice" = "기기에 동기화";
 
 /* Sync to existing device description */
-"SyncToDeviceDescription" = "기존에 동기화된 기기를 사용하여 Brave 설정을 열고 설정 -> 동기화로 이동하여 \"기기 추가\"를 선택한 다음, 화면에 표시되는 코드를 스캔하십시오.";
+"SyncToDeviceDescription" = "기존에 동기화된 기기를 사용하여 Asil Browser 설정을 열고 설정 -> 동기화로 이동하여 \"기기 추가\"를 선택한 다음, 화면에 표시되는 코드를 스캔하십시오.";
 
 /* Description on popup when setting up a sync group fails */
 "SyncUnableCreateGroup" = "이 기기를 동기화할 수 없음";
@@ -3154,7 +3154,7 @@
 /* No comment provided by engineer. */
 "TermsOfService" = "서비스 약관";
 
-/* Show Brave Browser TOS page from the Privacy section in the settings. */
+/* Show Asil Browser Browser TOS page from the Privacy section in the settings. */
 "TermsOfUse" = "이용 약관";
 
 /* Text for button to share referral's QR code. */
@@ -3203,13 +3203,13 @@
 "today.addSourceNoFeedsFoundMessage" = "피드 주소에 아무런 내용도 없습니다.";
 
 /* The action title displayed in the iOS share menu */
-"today.addSourceShareTitle" = "Brave News에 출처 추가";
+"today.addSourceShareTitle" = "Asil Browser News에 출처 추가";
 
 /* A header title shown above a button that will allow the user to fetch RSS feeds for a website they have typed in */
 "today.availableRSSFeedsHeaderTitle" = "사용 가능한 RSS 피드";
 
 /* The name of the feature */
-"today.braveToday" = "Brave News";
+"today.braveToday" = "Asil Browser News";
 
 /* Shown below 'Channels' explaining what will be shown when tapping on it. */
 "today.channelsButtonSubtitle" = "관심 있는 주제 팔로우";
@@ -3229,13 +3229,13 @@
 /* No comment provided by engineer. */
 "today.deals" = "딜";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
-"today.disabledAlertBody" = "Brave News에 %@ 제공 콘텐츠를 표시하지 않음";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+"today.disabledAlertBody" = "Asil Browser News에 %@ 제공 콘텐츠를 표시하지 않음";
 
 /* No comment provided by engineer. */
 "today.disabledAlertTitle" = "비활성화됨";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
 "today.disablePublisherContent" = "%@ 제공 콘텐츠 숨기기";
 
 /* No comment provided by engineer. */
@@ -3244,11 +3244,11 @@
 /* No comment provided by engineer. */
 "today.emptyFeedTitle" = "표시할 기사 없음";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
 "today.enablePublisherContent" = "%@ 제공 콘텐츠 허용";
 
 /* No comment provided by engineer. */
-"today.errorGeneralBody" = "Brave News에 문제가 발생했습니다. 다시 시도하세요.";
+"today.errorGeneralBody" = "Asil Browser News에 문제가 발생했습니다. 다시 시도하세요.";
 
 /* No comment provided by engineer. */
 "today.errorGeneralTitle" = "죄송합니다...";
@@ -3265,7 +3265,7 @@
 /* A toggle title shown next to a source or channel that the user can follow. When tapped switches to 'Unfollow' */
 "today.followToggleTitle" = "팔로우";
 
-/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://brave.com'. */
+/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Asil Browser.com'. */
 "today.getFeedsFromSiteButtonTitle" = "다음 출처의 피드 받기";
 
 /* \"OPML\" is a file extension that contains a list of rss feeds. */
@@ -3274,20 +3274,20 @@
 /* The header above the list of insecure sources */
 "today.insecureSourcesHeader" = "비보안 출처 - 위험을 감수하고 추가";
 
-/* Shown above a button that turns on the \"Brave News\" product in the app. by sources & feeds they mean websites & blogs. */
+/* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
 "today.introCardBody" = "좋아하는 소스를 피드 한 곳에서 팔로우하세요. Brave에서 탭을 열고 아래로 스크롤하면, 다 보이죠!\nBrave Today는 프라이버시를 존중하고 익명화된 광고의 지원으로 제공됩니다.";
 
-/* Shown above a button that turns on the \"Brave News\" product in the app. */
-"today.introCardTitle" = "Brave News를 켜고 스토리를 놓치지 마세요";
+/* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
+"today.introCardTitle" = "Asil Browser News를 켜고 스토리를 놓치지 마세요";
 
 /* No comment provided by engineer. */
-"today.isEnabledToggleLabel" = "Brave News 표시";
+"today.isEnabledToggleLabel" = "Asil Browser News 표시";
 
 /* No comment provided by engineer. */
 "today.learnMoreTitle" = "사용자 데이터에 대해 자세히 알아보기";
 
-/* 'Brave Offers' is a product name */
-"today.moreBraveOffers" = "Brave Offers 더보기";
+/* 'Asil Browser Offers' is a product name */
+"today.moreBraveOffers" = "Asil Browser Offers 더보기";
 
 /* No comment provided by engineer. */
 "today.noInternet" = "인터넷 끊김";
@@ -3335,7 +3335,7 @@
 "today.suggestedTitle" = "추천";
 
 /* No comment provided by engineer. */
-"today.turnOnBraveToday" = "Brave News 켜기";
+"today.turnOnBraveToday" = "Asil Browser News 켜기";
 
 /* A toggle title shown next to a source or channel that the user can unfollow. When tapped switches to 'Follow' */
 "today.unfollowToggleTitle" = "언팔로우";
@@ -3382,34 +3382,34 @@
 /* No comment provided by engineer. */
 "UserWalletGenericErrorTitle" = "문제가 발생했습니다.";
 
-/* Version number of Brave shown in settings */
+/* Version number of Asil Browser shown in settings */
 "VersionTemplate" = "버전 %1$@(%2$@)";
 
 /* Label that says where to view an item. '%@' is a placeholder and will include things like 'Instagram', 'unsplash'. The full label will look like 'View  on Instagram'. */
 "ViewOn" = "%@에서 보기";
 
-/* Button text to buy Brave VPN */
+/* Button text to buy Asil Browser VPN */
 "vpn.buyButton" = "구매";
 
 /* Title for screen to buy the VPN. */
-"vpn.buyVPNTitle" = "Brave Firewall + VPN";
+"vpn.buyVPNTitle" = "Asil Browser Firewall + VPN";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxBlockAds" = "원치 않는 네트워크 연결 차단";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxEncryption" = "IKEv2 보안 암호화 VPN 터널 사용";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxFast" = "최대 100Mbps의 속도 지원";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxGeoSelector" = "지역/국가 위치 선택";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxNoIPLog" = "익명 온라인 상태 유지";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxNoSellout" = "사용자 정보 공유 또는 판매 절대 없음";
 
 /* AppStore Receipt field for customer support contact form. */
@@ -3476,9 +3476,9 @@
 "vpn.contactFormTimezone" = "iOS 시간대";
 
 /* Title for contact form email. */
-"vpn.contactFormTitle" = "Brave Firewall + VPN 문제";
+"vpn.contactFormTitle" = "Asil Browser Firewall + VPN 문제";
 
-/* Button text to enable Brave VPN */
+/* Button text to enable Asil Browser VPN */
 "vpn.enableButton" = "활성화";
 
 /* Message for an alert when the VPN can't get prices from the App Store */
@@ -3511,7 +3511,7 @@
 /* Title for screen to install the VPN. */
 "vpn.installTitle" = "VPN 설치";
 
-/* Button text to try free Brave VPN */
+/* Button text to try free Asil Browser VPN */
 "vpn.learnMore" = "무료로 사용해보기";
 
 /* Used in context: 'Monthly subscription, (it) renews monthly' */
@@ -3523,10 +3523,10 @@
 /* Text to show user when their vpn plan has expired */
 "vpn.planExpired" = "만료됨";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.popupCheckmark247Support" = "연중무휴 지원";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.popupCheckmarkSecureConnections" = "모든 연결 안전하게 보호";
 
 /* It is used in context: 'Powered by BRAND_NAME' */
@@ -3575,10 +3575,10 @@
 "vpn.settingsFAQ" = "VPN 지원";
 
 /* Button to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceipt" = "구매한 항목을 Brave 계정에 연결";
+"vpn.settingsLinkReceipt" = "구매한 항목을 Asil Browser 계정에 연결";
 
 /* Footer text to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceiptFooter" = "다른 기기에서도 Brave VPN을 사용하려면 App Store 구매 항목을 Brave 계정에 연결하세요.";
+"vpn.settingsLinkReceiptFooter" = "다른 기기에서도 Asil Browser VPN을 사용하려면 App Store 구매 항목을 Asil Browser 계정에 연결하세요.";
 
 /* Button to manage your VPN subscription */
 "vpn.settingsManageSubscription" = "구독 관리";
@@ -3617,7 +3617,7 @@
 "vpn.vpnBackgroundNotificationBody" = "Brave는 백그라운드에서도 계속 사용자를 보호해줍니다.";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationTitle" = "Brave Firewall + VPN 켜짐";
+"vpn.vpnBackgroundNotificationTitle" = "Asil Browser Firewall + VPN 켜짐";
 
 /* Message for an alert when the VPN can't be configured. */
 "vpn.vpnConfigGenericErrorBody" = "VPN을 초기화하는 중에 문제가 발생했습니다. 다시 시도하거나 VPN 설정 페이지에서 구성을 초기화해 보세요.";
@@ -3626,7 +3626,7 @@
 "vpn.vpnConfigGenericErrorTitle" = "오류";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
-"vpn.vpnConfigPermissionDeniedErrorBody" = "Brave Firewall + VPN이 동작하려면 디바이스에 VPN 프로필이 설치되어 있어야 합니다.";
+"vpn.vpnConfigPermissionDeniedErrorBody" = "Asil Browser Firewall + VPN이 동작하려면 디바이스에 VPN 프로필이 설치되어 있어야 합니다.";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
 "vpn.vpnConfigPermissionDeniedErrorTitle" = "권한 거부됨";
@@ -3641,7 +3641,7 @@
 "vpn.vpnIAPBoilerPlate" = "구독 대금은 iTunes 계정을 통해 청구됩니다.\n\n구독을 구매하면 무료 평가판에서 미사용된 부분은 포기한 것으로 간주합니다.\n\n현재 구독 기간 종료 최소 24시간 전에 취소하지 않으면 구독이 자동으로 갱신됩니다.\n\n구매 후 설정에서 구독을 관리할 수 있습니다.\n\nBrave를 사용하면 이용 약관 및 개인정보 취급방침을 읽고 이에 동의한 것으로 간주됩니다.";
 
 /* Message for alert to reset vpn configuration */
-"vpn.vpnResetAlertBody" = "Brave Firewall + VPN 구성이 재설정되고 모든 오류가 정정됩니다. 이 프로세스는 1분 정도 소요됩니다.";
+"vpn.vpnResetAlertBody" = "Asil Browser Firewall + VPN 구성이 재설정되고 모든 오류가 정정됩니다. 이 프로세스는 1분 정도 소요됩니다.";
 
 /* Title for alert to reset vpn configuration */
 "vpn.vpnResetAlertTitle" = "구성 재설정";
@@ -3712,13 +3712,13 @@
 /* Description for the search option on the 'shortcuts' widget. */
 "widgets.searchShortcutTitle" = "검색";
 
-/* Description for Brave Shields widget on 'add widget' screen. */
+/* Description for Asil Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsDescription" = "Brave가 어떻게 시간을 절약하고 온라인 프라이버시를 보호하는지에 대한 개요가 제공됩니다.";
 
-/* Title for Brave Shields widget on 'add widget' screen. */
+/* Title for Asil Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsTitle" = "프라이버시 통계";
 
-/* Title of Brave Shields widget shown above stat numbers. */
+/* Title of Asil Browser Shields widget shown above stat numbers. */
 "widgets.shieldStatsWidgetTitle" = "프라이버시 통계";
 
 /* Button to the browser and enter URL or make a search query there. */
@@ -3739,14 +3739,14 @@
 /* Title for shortcuts widget on 'add widget' screen. */
 "widgets.shortcutsWidgetTitle" = "바로가기";
 
-/* Description for Brave Shields single stat widget on 'add widget' screen. */
+/* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatDescription" = "Brave가 어떻게 온라인 프라이버시를 보호하는지에 대한 개요가 제공됩니다.";
 
-/* Title for Brave Shields single stat widget on 'add widget' screen. */
+/* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatTitle" = "프라이버시 통계";
 
-/* Description for the Brave Wallet option on the 'shortcuts' widget. */
-"widgets.walletShortcutTitle" = "Brave 월렛";
+/* Description for the Asil Browser Wallet option on the 'shortcuts' widget. */
+"widgets.walletShortcutTitle" = "Asil Browser 월렛";
 
 /* Title of the settings for widgets part */
 "widgets.widgetTitle" = "위젯";

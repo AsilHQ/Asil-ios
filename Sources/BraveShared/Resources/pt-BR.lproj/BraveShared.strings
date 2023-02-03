@@ -1,17 +1,17 @@
 /* About settings section title */
 "About" = "Sobre";
 
-/* The title of the screen explaining Brave Shields */
-"AboutBraveShields" = "Sobre as Proteções do Brave";
+/* The title of the screen explaining Asil Browser Shields */
+"AboutBraveShields" = "Sobre as Proteções do Asil Browser";
 
-/* The body of the screen explaining Brave Shields */
-"AboutBraveShieldsBody" = "Geralmente, os sites contêm cookies e scripts que tentam identificar você e seu dispositivo. Eles querem descobrir quem você é e seguir você pela web, monitorando o que você faz em todos os sites.\n\nO Brave bloqueia esses itens para que você possa navegar sem ser vigiado.";
+/* The body of the screen explaining Asil Browser Shields */
+"AboutBraveShieldsBody" = "Geralmente, os sites contêm cookies e scripts que tentam identificar você e seu dispositivo. Eles querem descobrir quem você é e seguir você pela web, monitorando o que você faz em todos os sites.\n\nO Asil Browser bloqueia esses itens para que você possa navegar sem ser vigiado.";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "Isso permite que você salve a imagem no Rolo da Câmera.";
 
 /* See http://mzl.la/1G7uHo7 */
-"AccessPhotoDeniedAlertTitle" = "O Brave deseja acessar suas fotos";
+"AccessPhotoDeniedAlertTitle" = "O Asil Browser deseja acessar suas fotos";
 
 /* Button to add a bookmark */
 "AddBookmark" = "Adicionar favorito";
@@ -52,8 +52,8 @@
 /* Label for the Face ID/Passcode item in Settings */
 "AuthenticationFaceIDPasscodeSetting" = "Face ID e código de acesso";
 
-/* Touch ID or PIN entry prompt subtitle when accessing Brave with the Browser Lock feature enabled */
-"AuthenticationLoginsTouchReason" = "Isso autentica seu acesso ao Brave";
+/* Touch ID or PIN entry prompt subtitle when accessing Asil Browser with the Browser Lock feature enabled */
+"AuthenticationLoginsTouchReason" = "Isso autentica seu acesso ao Asil Browser";
 
 /* Label for the Passcode item in Settings */
 "AuthenticationPasscode" = "Código de acesso";
@@ -116,7 +116,7 @@
 "BlockCookieConsentNotices" = "Bloquear avisos de consentimento para cookies";
 
 /* A description for a popup that notifies the user that we can block cookie consent notices */
-"BlockCookieConsentNoticesPopupDescription" = "O Brave já bloqueia cookies de terceiros. Podemos bloquear também os avisos de consentimento para cookies.";
+"BlockCookieConsentNoticesPopupDescription" = "O Asil Browser já bloqueia cookies de terceiros. Podemos bloquear também os avisos de consentimento para cookies.";
 
 /* A title for a popup that notifies the user that we can block cookie consent notices */
 "BlockCookieConsentNoticesPopupTitle" = "Não aguenta mais avisos de consentimento para cookies?";
@@ -130,7 +130,7 @@
 /* A title for setting which blocks 'switch to app' popups */
 "blockMobileAnnoyances" = "Bloquear avisos \"Mudar para o app\"";
 
-/* Brave panel individual toggle title */
+/* Asil Browser panel individual toggle title */
 "BlockPhishing" = "Bloquear phishing";
 
 /* No comment provided by engineer. */
@@ -175,38 +175,38 @@
 /* Placeholder text for adding or editing a bookmark */
 "BookmarkUrlPlaceholderText" = "Endereço";
 
-/* Button to show the brave panel */
-"BravePanel" = "Painel do Brave";
+/* Button to show the Asil Browser panel */
+"BravePanel" = "Painel do Asil Browser";
 
 /* No comment provided by engineer. */
-"BraveRewardsAdNotificationTitle" = "Recompensas Brave";
+"BraveRewardsAdNotificationTitle" = "Recompensas Asil Browser";
 
 /* No comment provided by engineer. */
 "BraveRewardsOpen" = "Abrir";
 
-/* Brave Rewards settings title */
-"BraveRewardsTitle" = "Recompensas Brave";
+/* Asil Browser Rewards settings title */
+"BraveRewardsTitle" = "Recompensas Asil Browser";
 
-/* Brave Search Banner Promotion description content in Search Suggestions */
-"braveSearchPromotion.bannerDescription" = "A Pesquisa Brave não rastreia você, suas consultas nem seus cliques.";
+/* Asil Browser Search Banner Promotion description content in Search Suggestions */
+"braveSearchPromotion.bannerDescription" = "A Pesquisa Asil Browser não rastreia você, suas consultas nem seus cliques.";
 
-/* Brave Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
+/* Asil Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
 "braveSearchPromotion.bannerMaybeLaterButtonTitle" = "Talvez mais tarde";
 
-/* Brave Search Banner Promotion title in Search Suggestions */
+/* Asil Browser Search Banner Promotion title in Search Suggestions */
 "braveSearchPromotion.bannerTitle" = "Apoie uma pesquisa independente com mais privacidade";
 
-/* Brave Search Banner Promotion title for try button in Search Suggestions */
-"braveSearchPromotion.bannerTryButtonTitle" = "Testar a Pesquisa Brave";
+/* Asil Browser Search Banner Promotion title for try button in Search Suggestions */
+"braveSearchPromotion.bannerTryButtonTitle" = "Testar a Pesquisa Asil Browser";
 
-/* Brave Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
+/* Asil Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
 "braveSearchPromotion.braveSearchPromotionBannerDismissButtonTitle" = "Dispensar";
 
 /* No comment provided by engineer. */
 "BraveShieldsAdvancedControls" = "Controles avançados";
 
 /* No comment provided by engineer. */
-"BraveShieldsAndPrivacy" = "Brave Shields e privacidade";
+"BraveShieldsAndPrivacy" = "Asil Browser Shields e privacidade";
 
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "Anúncios e outros itens estranhos bloqueados";
@@ -223,17 +223,17 @@
 /* No comment provided by engineer. */
 "BraveShieldsSiteBroken" = "Se este site não estiver funcionando, tente desativar as Proteções";
 
-/* Context: 'Brave Shields Up' or 'Brave Shields Down' */
+/* Context: 'Asil Browser Shields Up' or 'Asil Browser Shields Down' */
 "BraveShieldsStatusTitle" = "Proteções do Asil Browser";
 
-/* Context: The 'Down' in 'Brave Shields Down' */
+/* Context: The 'Down' in 'Asil Browser Shields Down' */
 "BraveShieldsStatusValueDown" = "Desativadas";
 
-/* Context: The 'Up' in 'Brave Shields Up' */
+/* Context: The 'Up' in 'Asil Browser Shields Up' */
 "BraveShieldsStatusValueUp" = "Ativadas";
 
 /* The accessibility hint spoken when focused on the main shields toggle */
-"BraveShieldsToggleHint" = "Toque duas vezes para ativar/desativar o Brave Shields";
+"BraveShieldsToggleHint" = "Toque duas vezes para ativar/desativar o Asil Browser Shields";
 
 /* Sync page title */
 "BraveSync" = "Sincronizar";
@@ -242,16 +242,16 @@
 "BraveSyncInternalsTitle" = "Sincronizar dados internos";
 
 /* Sync settings welcome */
-"BraveSyncWelcome" = "Para começar, é necessário que o Brave esteja instalado em todos os dispositivos que você pretende sincronizar. Para vincular todos os seus dispositivos com segurança, crie uma cadeia de sincronização.";
+"BraveSyncWelcome" = "Para começar, é necessário que o Asil Browser esteja instalado em todos os dispositivos que você pretende sincronizar. Para vincular todos os seus dispositivos com segurança, crie uma cadeia de sincronização.";
 
 /* The name of the feature */
-"bravetalk.braveTalkTitle" = "Brave Talk";
+"bravetalk.braveTalkTitle" = "Asil Browser Talk";
 
 /* Setting to enable the browser lock privacy feature */
 "BrowserLock" = "Bloqueio do navegador";
 
 /* No comment provided by engineer. */
-"BrowserLockDescription" = "Desbloqueie o Brave com o Touch ID, o Face ID ou o código de acesso do sistema.";
+"BrowserLockDescription" = "Desbloqueie o Asil Browser com o Touch ID, o Face ID ou o código de acesso do sistema.";
 
 /* A button title for the action to move to the next step of the browser lock migration process. */
 "browserLockMigrationContinueButtonTitle" = "Continuar";
@@ -260,10 +260,10 @@
 "browserLockMigrationNoPasscodeSetup" = "Não definiu um ID ou um código de acesso? Abra os Ajustes e toque em \"%@\"";
 
 /* Subtitle on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationSubtitle" = "Simplificamos os códigos de acesso do Brave. Agora você pode acessar o Brave com o mesmo ID ou código de acesso que já usa no seu telefone.";
+"browserLockMigrationSubtitle" = "Simplificamos os códigos de acesso do Asil Browser. Agora você pode acessar o Asil Browser com o mesmo ID ou código de acesso que já usa no seu telefone.";
 
 /* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationTitle" = "Abra o Brave com seu Face ID, Touch ID ou código de acesso da Apple";
+"browserLockMigrationTitle" = "Abra o Asil Browser com seu Face ID, Touch ID ou código de acesso da Apple";
 
 /* Settings item for clearing browsing history */
 "BrowsingHistory" = "Histórico de navegação";
@@ -308,7 +308,7 @@
 "callout.playlistOnboardingViewTitle" = "Adicionar vídeo à Playlist…";
 
 /* Subtitle - Description for Privacy Everywhere Full Screen Callout */
-"callout.privacyEverywhereCalloutDescription" = "Tenha a privacidade do Brave no seu computador ou tablet e sincronize favoritos e extensões entre dispositivos.";
+"callout.privacyEverywhereCalloutDescription" = "Tenha a privacidade do Asil Browser no seu computador ou tablet e sincronize favoritos e extensões entre dispositivos.";
 
 /* Title for button in Default Browser Full Screen Callout */
 "callout.privacyEverywhereCalloutPrimaryButtonTitle" = "Sincronizar agora";
@@ -349,7 +349,7 @@
 /* Title indicating whether or not a private key can be used to derive some data from another piece of data. IE: Use one key to generate another */
 "certificateViewer.deriveTitle" = "Derivar";
 
-/* Title of the section for the Domain Component such as: DNS or brave.com or a website's domain. */
+/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
 "certificateViewer.domainComponentTitle" = "Componente de domínio";
 
 /* Title of the section indication which 'Encryption' algorithm was used. */
@@ -388,7 +388,7 @@
 /* Title of the section for Department of the Company. Example: Human Resources. */
 "certificateViewer.organizationalUnitTitle" = "Unidade organizacional";
 
-/* Title of the section for Name of the Company. Example: Brave Inc. */
+/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
 "certificateViewer.organizationTitle" = "Organização";
 
 /* Title indicating 'Parameters' or Input passed to a function/algorithm. */
@@ -599,25 +599,25 @@
 "defaultBrowserCallout.introOpenSettingsButtonText" = "Abrir configurações";
 
 /* Primary text on default browser popup screen */
-"defaultBrowserCallout.introPrimaryText" = "Abra todos os links com o Brave para proteger sua privacidade";
+"defaultBrowserCallout.introPrimaryText" = "Abra todos os links com o Asil Browser para proteger sua privacidade";
 
 /* Secondary text on default browser popup. */
-"defaultBrowserCallout.introSecondaryText" = "O Brave Shields bloqueia rastreadores e anúncios, economiza dados e poupa seu tempo em todos os sites que você acessa";
+"defaultBrowserCallout.introSecondaryText" = "O Asil Browser Shields bloqueia rastreadores e anúncios, economiza dados e poupa seu tempo em todos os sites que você acessa";
 
 /* Tertiary text on default browser popup screen */
-"defaultBrowserCallout.introTertiaryText" = "Abra os Ajustes, toque em \"App de Navegador Padrão\" e selecione \"Brave\".";
+"defaultBrowserCallout.introTertiaryText" = "Abra os Ajustes, toque em \"App de Navegador Padrão\" e selecione \"Asil Browser\".";
 
-/* Notification body to promote setting Brave app as default browser */
-"defaultBrowserCallout.notificationBody" = "Otimizado para o iOS %@. Torne o Brave seu navegador padrão hoje mesmo.";
+/* Notification body to promote setting Asil Browser app as default browser */
+"defaultBrowserCallout.notificationBody" = "Otimizado para o iOS %@. Torne o Asil Browser seu navegador padrão hoje mesmo.";
 
-/* Notification title to promote setting Brave app as default browser */
-"defaultBrowserCallout.notificationTitle" = "Navegador da web Brave";
+/* Notification title to promote setting Asil Browser app as default browser */
+"defaultBrowserCallout.notificationTitle" = "Navegador da web Asil Browser";
 
 /* No comment provided by engineer. */
 "defaultBrowserCalloutCloseAccesabilityLabel" = "Fechar texto explicativo padrão do navegador";
 
-/* Name for default Brave theme. */
-"defaultThemeName" = "Padrão do Brave";
+/* Name for default Asil Browser theme. */
+"defaultThemeName" = "Padrão do Asil Browser";
 
 /* No comment provided by engineer. */
 "Delete" = "Excluir";
@@ -772,10 +772,10 @@
 /* Allow link to switch apps? */
 "ExternalAppURLAlertTitle" = "Permitir link para trocar de app?";
 
-/* Allow Brave to open the external app URL */
+/* Allow Asil Browser to open the external app URL */
 "ExternalAppURLAllow" = "Permitir";
 
-/* Don't allow Brave to open the external app URL */
+/* Don't allow Asil Browser to open the external app URL */
 "ExternalAppURLDontAllow" = "Não permitir";
 
 /* Footer text when user selects to save to favorites when editing a bookmark */
@@ -854,10 +854,10 @@
 "HideLinkPreviewsActionTitle" = "Ocultar pré-visualizações de links";
 
 /* Hides the rewards icon */
-"HideRewardsIcon" = "Ocultar ícone do Brave Rewards";
+"HideRewardsIcon" = "Ocultar ícone do Asil Browser Rewards";
 
 /* Hide the rewards icon explination. */
-"HideRewardsIconSubtitle" = "Oculta o ícone do Brave Rewards quando o Brave Rewards não está ativado";
+"HideRewardsIconSubtitle" = "Oculta o ícone do Asil Browser Rewards quando o Asil Browser Rewards não está ativado";
 
 /* Title for history menu item */
 "HistortMenuItem" = "Histórico";
@@ -995,13 +995,13 @@
 "MonthlyAdsClaimNotificationBody" = "Toque para reivindicar seus tokens gratuitos.";
 
 /* The title of the notification that goes out monthly to users who can claim an ads grant */
-"MonthlyAdsClaimNotificationTitle" = "Recompensas Brave 💵🎁";
+"MonthlyAdsClaimNotificationTitle" = "Recompensas Asil Browser 💵🎁";
 
 /* No comment provided by engineer. */
 "MyFirstAdBody" = "Toque aqui para saber mais.";
 
 /* No comment provided by engineer. */
-"MyFirstAdTitle" = "Este é seu primeiro anúncio do Brave";
+"MyFirstAdTitle" = "Este é seu primeiro anúncio do Asil Browser";
 
 /* Bookmark title / Device name */
 "Name" = "Nome";
@@ -1063,14 +1063,14 @@
 /* Setting title for option to automatically redirect a url to another url */
 "nprRedirectFooter" = "Redireciona automaticamente links da NPR para a respectiva versão de texto (em text.npr.org).";
 
-/* Bookmark title for Brave Support */
-"ntp.braveSupportFavoriteTitle" = "Suporte do Brave";
+/* Bookmark title for Asil Browser Support */
+"ntp.braveSupportFavoriteTitle" = "Suporte do Asil Browser";
 
 /* No comment provided by engineer. */
 "ntp.claimRewards" = "Reivindicar tokens";
 
-/* Placeholder example: 'You earned 42 BAT by browsing with Brave.' */
-"ntp.earningsReport" = "Você ganhou %@ navegando com o Brave.";
+/* Placeholder example: 'You earned 42 BAT by browsing with Asil Browser.' */
+"ntp.earningsReport" = "Você ganhou %@ navegando com o Asil Browser.";
 
 /* The context is to praise the user that they did a good job, to keep it up. It is used in full sentence like: 'Way to go! You earned 40 BAT last month.' */
 "ntp.goodJob" = "Muito bem!";
@@ -1079,10 +1079,10 @@
 "ntp.hideSponsoredImages" = "Ocultar imagens patrocinadas";
 
 /* The text description of image type which is being used NTP */
-"ntp.imageTypeSelectionDescription" = "'Patrocinado' são fundos adicionais que pode ganhar com a ativação de Brave Rewards.";
+"ntp.imageTypeSelectionDescription" = "'Patrocinado' são fundos adicionais que pode ganhar com a ativação de Asil Browser Rewards.";
 
 /* No comment provided by engineer. */
-"ntp.learnMoreAboutRewards" = "Saiba mais sobre o Brave Rewards";
+"ntp.learnMoreAboutRewards" = "Saiba mais sobre o Asil Browser Rewards";
 
 /* No comment provided by engineer. */
 "ntp.learnMoreAboutSI" = "Saiba mais sobre imagens patrocinadas";
@@ -1114,17 +1114,17 @@
 /* The placeholder says 'Terms of Service'. So full sentence goes like: 'By turning Rewards, you agree to the Terms of Service'. */
 "ntp.turnRewardsTos" = "Ao ativar o Rewards, você concorda com os %@.";
 
-/* Message when opting into brave Ads when region becomes available */
+/* Message when opting into Asil Browser Ads when region becomes available */
 "OBAdsOptInMessage" = "Ganhe tokens enquanto navega e doe-os a criadores pelo conteúdo de qualidade que eles produzem.";
 
-/* Message when opting into brave Ads when region becomes available */
+/* Message when opting into Asil Browser Ads when region becomes available */
 "OBAdsOptInMessageJapan" = "Ganhe pontos enquanto navega e doe-os a criadores pelo conteúdo de qualidade que eles produzem.";
 
-/* Title when opting into brave Ads when region becomes available */
-"OBAdsOptInTitle" = "O Brave Ads chegou!";
+/* Title when opting into Asil Browser Ads when region becomes available */
+"OBAdsOptInTitle" = "O Asil Browser Ads chegou!";
 
 /* Title for ads onboarding screen */
-"OBAdsTitle" = "O Brave mostrará seu primeiro anúncio em";
+"OBAdsTitle" = "O Asil Browser mostrará seu primeiro anúncio em";
 
 /* Title for when the user completes onboarding */
 "OBCompleteTitle" = "Agora está tudo pronto.";
@@ -1144,14 +1144,14 @@
 /* Button to finish onboarding and start using the app. */
 "OBFinishButton" = "Começar a navegar";
 
-/* Button to join Brave Rewards. */
+/* Button to join Asil Browser Rewards. */
 "OBJoinButton" = "Participar";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentClipboardPermission" = "Permitir que o Brave verifique se há um código de indicação correspondente na minha área de transferência";
+"OBPrivacyConsentClipboardPermission" = "Permitir que o Asil Browser verifique se há um código de indicação correspondente na minha área de transferência";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentDetail" = "Talvez você tenha baixado o Brave para apoiar a pessoa que indicou você. Para detectar o responsável pela indicação, o Brave realiza uma verificação única da sua área de transferência em busca do código de indicação correspondente. Essa verificação se limita apenas ao código, e nenhum outro dado pessoal será transmitido. Se você desativar essa opção, o autor da indicação não receberá recompensas do Brave.";
+"OBPrivacyConsentDetail" = "Talvez você tenha baixado o Asil Browser para apoiar a pessoa que indicou você. Para detectar o responsável pela indicação, o Asil Browser realiza uma verificação única da sua área de transferência em busca do código de indicação correspondente. Essa verificação se limita apenas ao código, e nenhum outro dado pessoal será transmitido. Se você desativar essa opção, o autor da indicação não receberá recompensas do Asil Browser.";
 
 /* No comment provided by engineer. */
 "OBPrivacyConsentNoButton" = "Não permitir essa verificação";
@@ -1172,10 +1172,10 @@
 "OBRewardsAgreementDetailsAnd" = "e";
 
 /* Title for rewards agreement onboarding screen */
-"OBRewardsAgreementTitle" = "Recompensas Brave";
+"OBRewardsAgreementTitle" = "Recompensas Asil Browser";
 
 /* Detail text for rewards onboarding screen */
-"OBRewardsDetail" = "A ativação dos Anúncios privados do Brave apoia editores e criadores de conteúdo com cada anúncio visualizado.";
+"OBRewardsDetail" = "A ativação dos Anúncios privados do Asil Browser apoia editores e criadores de conteúdo com cada anúncio visualizado.";
 
 /* Detail text for rewards onboarding screen */
 "OBRewardsDetailInAdRegion" = "Ganhe tokens enquanto navega e doe-os a criadores pelo conteúdo de qualidade que eles produzem.";
@@ -1184,7 +1184,7 @@
 "OBRewardsPrivacyPolicyDetailLink" = "Política de Privacidade";
 
 /* Title for rewards onboarding screen */
-"OBRewardsTitle" = "Recompensas Brave";
+"OBRewardsTitle" = "Recompensas Asil Browser";
 
 /* Save button to save current selection */
 "OBSaveButton" = "Salvar";
@@ -1199,22 +1199,22 @@
 "OBShieldsDetail" = "Bloqueie rastreadores que invadem sua privacidade para poder navegar sem ser seguido na web";
 
 /* Title for shields onboarding screen */
-"OBShieldsTitle" = "Proteções do Brave";
+"OBShieldsTitle" = "Proteções do Asil Browser";
 
-/* Button to show the Brave Rewards Ads. */
+/* Button to show the Asil Browser Rewards Ads. */
 "OBShowMeButton" = "Mostrar";
 
-/* Button to show Brave Rewards. */
+/* Button to show Asil Browser Rewards. */
 "OBTurnOnButton" = "Iniciar";
 
 /* The description text shown when there is big tech tracker among trackers. Example usage: Google, Amazon and 32 other trackers blocked */
 "onboarding.blockedAdsOnboardingBigTechInformationText" = "%1$@ e mais %2$lld anúncios e rastreadores bloqueados";
 
-/* The footnote indicating what Brave shields is blocking */
-"onboarding.blockedAdsOnboardingFootnoteText" = "Veja todo o conteúdo indesejado bloqueado pelo Brave, em todas as páginas, com as Proteções.";
+/* The footnote indicating what Asil Browser shields is blocking */
+"onboarding.blockedAdsOnboardingFootnoteText" = "Veja todo o conteúdo indesejado bloqueado pelo Asil Browser, em todas as páginas, com as Proteções.";
 
 /* The text describing user where they should press in order to open Shield panel */
-"onboarding.blockedAdsOnboardingInstructionsText" = "Toque para ver as Proteções do Brave";
+"onboarding.blockedAdsOnboardingInstructionsText" = "Toque para ver as Proteções do Asil Browser";
 
 /* The description text shown when there is no big tech tracker among trackers. Example usage: 31 Ads & trackers blocked. The number here is presented separately so it is not in translation. */
 "onboarding.blockedAdsOnboardingNoBigTechInformationText" = "Anúncios e rastreadores bloqueados";
@@ -1229,7 +1229,7 @@
 "onboarding.ntpOnboardingPopOverTrackerDescription" = "Com o bloqueio de rastreadores e anúncios, os sites usam menos dados e carregam bem mais rapidamente.";
 
 /* Description for the Omnibox (URL Bar) pop-over that describes faster load times. */
-"onboarding.omniboxOnboardingPopOverDescription" = "Veja o diferencial do Brave:\nNada de anúncios. Nada de rastreadores. Páginas que carregam bem mais rápido.";
+"onboarding.omniboxOnboardingPopOverDescription" = "Veja o diferencial do Asil Browser:\nNada de anúncios. Nada de rastreadores. Páginas que carregam bem mais rápido.";
 
 /* Title for the Omnibox (URL Bar) pop-over that describes faster load times. */
 "onboarding.omniboxOnboardingPopOverTitle" = "Digite o nome ou URL de um site";
@@ -1249,8 +1249,8 @@
 /* Context menu item for opening all folder bookmarks */
 "OpenAllBookmarks" = "Abrir tudo (%i)";
 
-/* Button title for opening the Brave Rewards panel to settings */
-"OpenBraveRewardsSettings" = "Abrir as configurações do Brave Rewards";
+/* Button title for opening the Asil Browser Rewards panel to settings */
+"OpenBraveRewardsSettings" = "Abrir as configurações do Asil Browser Rewards";
 
 /* Error description when there is an error while navigating to Files App */
 "OpenDownloadsFolderErrorDescription" = "Ocorreu um erro desconhecido ao abrir a pasta \"Downloads\" do app Arquivos.";
@@ -1295,13 +1295,13 @@
 "opentabs.noSyncChainPlaceHolderViewDescription" = "Para começar, configure uma cadeia de sincronização e ative a opção \"Guias abertas\" nas Configurações de sincronização.";
 
 /* The additional description of the view describing tab syncing should be enabled. */
-"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Gerencie o que o Brave sincroniza nas Configurações.";
+"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Gerencie o que o Asil Browser sincroniza nas Configurações.";
 
 /* The description of the view describing no other sessions are active in sync. */
 "opentabs.noSyncSessionPlaceHolderViewDescription" = "Não há sessões ativas para mostrar dos seus outros dispositivos.";
 
 /* The title of the view showing no synced sessions */
-"opentabs.noSyncSessionPlaceHolderViewTitle" = "Este espaço mostra as guias do Brave abertas em outros dispositivos";
+"opentabs.noSyncSessionPlaceHolderViewTitle" = "Este espaço mostra as guias do Asil Browser abertas em outros dispositivos";
 
 /* The title for the action to hide open session with all tabs */
 "opentabs.openSessionHideAllActionTitle" = "Ocultar por enquanto";
@@ -1354,35 +1354,35 @@
 /* Button title to that opens a website. */
 "OpenWebsite" = "Abrir site";
 
-/* The subtitle description of menu item Brave News */
+/* The subtitle description of menu item Asil Browser News */
 "optionsMenu.braveNewsItemDescription" = "As principais notícias de hoje em um feed privado";
 
-/* Brave News Item Menu title */
+/* Asil Browser News Item Menu title */
 "optionsMenu.braveNewsItemTitle" = "Notícias";
 
-/* The subtitle description of menu item Brave Playlist */
+/* The subtitle description of menu item Asil Browser Playlist */
 "optionsMenu.bravePlaylistItemDescription" = "Mantenha uma playlist off-line de qualquer vídeo/transmissão";
 
-/* Brave News Item Menu title */
+/* Asil Browser News Item Menu title */
 "optionsMenu.bravePlaylistItemTitle" = "Playlist";
 
-/* The subtitle description of menu item Brave Talk */
+/* The subtitle description of menu item Asil Browser Talk */
 "optionsMenu.braveTalkItemDescription" = "Chamadas de vídeo privadas, diretamente no seu navegador";
 
-/* Brave Talk Item Menu title */
+/* Asil Browser Talk Item Menu title */
 "optionsMenu.braveTalkItemTitle" = "Talk";
 
-/* The subtitle description of menu item Brave VPN */
+/* The subtitle description of menu item Asil Browser VPN */
 "optionsMenu.braveVPNItemDescription" = "Proteja todo o seu dispositivo on-line";
 
-/* Brave VPN Item Menu title */
+/* Asil Browser VPN Item Menu title */
 "optionsMenu.braveVPNItemTitle" = "VPN";
 
-/* The subtitle description of menu item Brave Wallet */
+/* The subtitle description of menu item Asil Browser Wallet */
 "optionsMenu.braveWalletItemDescription" = "A carteira de criptomoedas segura, sem necessidade de extensão";
 
 /* Privacy Features Section title */
-"optionsMenu.menuSectionTitle" = "Recursos do Brave";
+"optionsMenu.menuSectionTitle" = "Recursos do Asil Browser";
 
 /* Section name for other privacy settings */
 "OtherPrivacySettingsSection" = "Outras configurações de privacidade";
@@ -1390,10 +1390,10 @@
 /* Section name for other settings. */
 "OtherSettingsSection" = "Outras configurações";
 
-/* A subtitle shown on the setting that toggles analytics on Brave. */
-"p3a.settingSubtitle" = "As informações anonimizadas de P3A ajudam o Brave a estimar o uso geral e a garantir que estamos melhorando os recursos populares.";
+/* A subtitle shown on the setting that toggles analytics on Asil Browser. */
+"p3a.settingSubtitle" = "As informações anonimizadas de P3A ajudam o Asil Browser a estimar o uso geral e a garantir que estamos melhorando os recursos populares.";
 
-/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Brave. */
+/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
 "p3a.settingTitle" = "Permitir a análise de produtos com preservação da privacidade (P3A)";
 
 /* Title for the section for the global/default zoom level */
@@ -1478,7 +1478,7 @@
 "playList.loadResourcesErrorAlertDescription" = "Houve um problema ao carregar o recurso.";
 
 /* Description footer for playlist menu badge option */
-"playlist.menuBadgeOptionFooterText" = "Quando essa opção for ativada, um aviso será exibido no ícone do menu principal, indicando que a mídia presente na página poderá ser adicionada à Playlist do Brave.";
+"playlist.menuBadgeOptionFooterText" = "Quando essa opção for ativada, um aviso será exibido no ícone do menu principal, indicando que a mídia presente na página poderá ser adicionada à Playlist do Asil Browser.";
 
 /* Title for playlist menu badge option */
 "playlist.menuBadgeOptionTitle" = "Mostrar aviso de notificação no menu";
@@ -1487,7 +1487,7 @@
 "playlist.movePlaylistShareActionMenuTitle" = "Mover...";
 
 /* Detail Text when there are no items in the playlist */
-"playList.noItemLabelDetailLabel" = "Você pode adicionar itens à sua Playlist do Brave no navegador.";
+"playList.noItemLabelDetailLabel" = "Você pode adicionar itens à sua Playlist do Asil Browser no navegador.";
 
 /* Text when there are no items in the playlist */
 "playList.noItemLabelTitle" = "Nenhum item disponível";
@@ -1565,7 +1565,7 @@
 "playList.playListSettingTitle" = "Playlist";
 
 /* Body for the error message that shows when a playlist folder already exists */
-"playList.playlistSharedFolderAlreadyExistsBody" = "Esta pasta já existe na sua Playlist do Brave";
+"playList.playlistSharedFolderAlreadyExistsBody" = "Esta pasta já existe na sua Playlist do Asil Browser";
 
 /* Title for the error message that shows when a playlist folder already exists */
 "playList.playlistSharedFolderAlreadyExistsTitle" = "Lamentamos";
@@ -1601,13 +1601,13 @@
 "playlist.playlistWebCompatibilityTitle" = "Compatibilidade com a web";
 
 /* Body of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddBody" = "As Playlists do Brave são compatíveis com os modos de reprodução off-line, picture-in-picture, reprodução contínua e repetição.";
+"playlist.popoverAddBody" = "As Playlists do Asil Browser são compatíveis com os modos de reprodução off-line, picture-in-picture, reprodução contínua e repetição.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddedTitle" = "Esta mídia está na sua Playlist do Asil Browser";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddTitle" = "Você deseja adicionar esta mídia à sua Playlist do Brave?";
+"playlist.popoverAddTitle" = "Você deseja adicionar esta mídia à sua Playlist do Asil Browser?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverOpenInBravePlaylist" = "Abrir na Playlist do Asil Browser";
@@ -1652,7 +1652,7 @@
 "playlist.sharePlaylistActionDetailsTitle" = "Você pode abrir o item atual em uma nova aba ou compartilhá-lo por meio do menu de compartilhamento do sistema";
 
 /* Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
-"playlist.sharePlaylistActionTitle" = "Menu da Playlist do Brave";
+"playlist.sharePlaylistActionTitle" = "Menu da Playlist do Asil Browser";
 
 /* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
 "playlist.sharePlaylistOpenInNewPrivateTabTitle" = "Abrir em uma aba privada";
@@ -1676,10 +1676,10 @@
 "playList.toastAddToPlaylistTitle" = "Adicionar à Playlist do Asil Browser";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
-"playList.toastExitingItemPlaylistTitle" = "Ver na Brave Playlist";
+"playList.toastExitingItemPlaylistTitle" = "Ver na Asil Browser Playlist";
 
 /* Footer for option to disable URL-Bar button */
-"playlist.urlBarButtonOptionFooter" = "Adiciona um botão de playlist (semelhante a 4 linhas com um símbolo \"+\") ao lado da barra de endereço no navegador Brave. Esse botão oferece acesso rápido para abrir a playlist ou para adicionar ou remover mídia.";
+"playlist.urlBarButtonOptionFooter" = "Adiciona um botão de playlist (semelhante a 4 linhas com um símbolo \"+\") ao lado da barra de endereço no navegador Asil Browser. Esse botão oferece acesso rápido para abrir a playlist ou para adicionar ou remover mídia.";
 
 /* Title for option to disable URL-Bar button */
 "playlist.urlBarButtonOptionTitle" = "Ativar botão de acesso rápido";
@@ -1708,7 +1708,7 @@
 /* The title of the screen where the user will move an item from one folder to another folder. */
 "playlistFolders.moveFolderScreenTitle" = "Mover";
 
-/* %@ Should NOT be localized. It is a placeholder. Example: Brave Folder and 1 more item. */
+/* %@ Should NOT be localized. It is a placeholder. Example: Asil Browser Folder and 1 more item. */
 "playlistFolders.moveItemDescription" = "%@ e mais 1 item";
 
 /* %lld is a placeholder and should not be localized. Sometimes items can have no name. So this is a generic title to use */
@@ -1717,7 +1717,7 @@
 /* Sometimes an item can have no name. So this is a generic title to use */
 "playlistFolders.moveItemWithNoNameTitle" = "1 item";
 
-/* %@ and %lld Should NOT be localized. They are placeholders. Example: Brave Folder and 3 more items. Music and 2 more items. */
+/* %@ and %lld Should NOT be localized. They are placeholders. Example: Asil Browser Folder and 3 more items. Music and 2 more items. */
 "playlistFolders.moveMultipleItemDescription" = "%1$@ e mais %2$lld itens";
 
 /* The title of the button to create a new folder */
@@ -1751,7 +1751,7 @@
 "playlistFolders.untitledFolderTitle" = "Pasta sem título";
 
 /* Accessibility Title for the button that adds the playlist to the database. */
-"playlistFolderSharing.addButtonAccessibilityTitle" = "Botão \"Adicionar à Playlist do Brave\"";
+"playlistFolderSharing.addButtonAccessibilityTitle" = "Botão \"Adicionar à Playlist do Asil Browser\"";
 
 /* Title for the button that adds the playlist to the database. */
 "playlistFolderSharing.addButtonTitle" = "Adicionar";
@@ -1795,7 +1795,7 @@
 /* Description for closing a popover menu that is displayed. */
 "PopoverDefaultClose" = "Fechar menu de contexto";
 
-/* Description for closing the `Brave Shields` popover menu that is displayed. */
+/* Description for closing the `Asil Browser Shields` popover menu that is displayed. */
 "PopoverShieldsMenuClose" = "Fechar menu de proteções";
 
 /* Label for preview action on Tab Tray Tab to add current tab to Bookmarks */
@@ -1819,7 +1819,7 @@
 /* Header text, under it we show items blocked by our ad blocker. 'All  time' sentence context is like 'All time items blocked by our ad blocker. */
 "privacyHub.allTimeListsHeader" = "Todo o período";
 
-/* Title of a section to show total count of trackers blocked by Brave */
+/* Title of a section to show total count of trackers blocked by Asil Browser */
 "privacyHub.allTimeListsTrackersView" = "Rastreadores e anúncios";
 
 /* Title of a section to show websites containing highest amount of trackers */
@@ -1843,10 +1843,10 @@
 /* Title under which we display a website on which there's the highest number of trackers or ads. */
 "privacyHub.allTimeWebsiteTitle" = "Site";
 
-/* Text for a button to display a list of all alerts caught by the Brave VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
+/* Text for a button to display a list of all alerts caught by the Asil Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
 "privacyHub.allVPNAlertsButtonText" = "Todos os alertas";
 
-/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Brave Shields', 'Blocked by BraveVPN */
+/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Asil Browser Shields', 'Blocked by BraveVPN */
 "privacyHub.blockedBy" = "Bloqueado por";
 
 /* It says that a ad or tracker was blocked. Think of it in context of 'A tracker X was blocked' */
@@ -1864,8 +1864,8 @@
 /* Header text, under it we display blocked items from last week */
 "privacyHub.lastWeekHeader" = "Última semana";
 
-/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Brave Shields on 42 sites' */
-"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** foi bloqueado pelas Proteções do Brave em **%2$lld** sites";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Asil Browser Shields on 42 sites' */
+"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** foi bloqueado pelas Proteções do Asil Browser em **%2$lld** sites";
 
 /* Title under which we display a tracker which was most frequently detected by our ad blocking mechanism. */
 "privacyHub.mostFrequentTrackerAndAdTitle" = "Rastreador e anúncio mais frequentes";
@@ -1883,7 +1883,7 @@
 "privacyHub.notificationCalloutButtonText" = "Ativar notificações";
 
 /* Message of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
-"privacyHub.notificationMessage" = "Um resumo de como o Brave protegeu você on-line nesta semana.";
+"privacyHub.notificationMessage" = "Um resumo de como o Asil Browser protegeu você on-line nesta semana.";
 
 /* Title of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
 "privacyHub.notificationTitle" = "Relatório de privacidade semanal";
@@ -1897,7 +1897,7 @@
 /* Text of a disclaimer that explains how the data for generating privacy reprots is stored. */
 "privacyHub.privacyReportsDisclaimer" = "Os dados da Central de privacidade são armazenados localmente e nunca são enviados para lugar nenhum.";
 
-/* Title of main privacy hub screen. This screen shows various stats caught by Brave's ad blockers. */
+/* Title of main privacy hub screen. This screen shows various stats caught by Asil Browser's ad blockers. */
 "privacyHub.privacyReportsTitle" = "Central de privacidade";
 
 /* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which website had the most tracker per visit, example usage: 'example.com had an average of 10 trackers & ads blocked per visit ' */
@@ -1906,22 +1906,22 @@
 /* Title of a website that contained the most trackers per visit. */
 "privacyHub.riskiestWebsiteTitle" = "Site com mais rastreadores";
 
-/* This text explains a setting that lets Brave monitor blocked network requests */
+/* This text explains a setting that lets Asil Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsFooter" = "A Central de privacidade mostra uma contagem daquilo que as Proteções bloquearam. A configuração não afetará o contador das Proteções na página de nova guia. Os dados das Proteções não são contabilizados em janelas privadas.";
 
-/* Title of a setting that lets Brave monitor blocked network requests */
+/* Title of a setting that lets Asil Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsTitle" = "Mostrar dados das Proteções";
 
-/* This text explains a setting that lets Brave monitor blocked network requests captured by Brave VPN */
+/* This text explains a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
 "privacyHub.settingsEnableVPNAlertsFooter" = "A configuração só se aplicará caso você tenha adquirido uma assinatura de VPN.";
 
-/* Title of a setting that lets Brave monitor blocked network requests captured by Brave VPN */
+/* Title of a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
 "privacyHub.settingsEnableVPNAlertsTitle" = "Mostrar alertas de VPN";
 
 /* This text explains what the button to clear datain the Privacy Hub is for. */
 "privacyHub.settingsSlearDataFooter" = "Redefine a contagem de tudo que as Proteções bloquearam.";
 
-/* Button that lets user clear all blocked requests and vpn alerts data that Brave captured for them. */
+/* Button that lets user clear all blocked requests and vpn alerts data that Asil Browser captured for them. */
 "privacyHub.settingsSlearDataTitle" = "Limpar dados das Proteções";
 
 /* This label says shields, as a source of by what a resource was blocked. Think of it in context of 'Blocked by Shields' */
@@ -1946,15 +1946,15 @@
 "privacyHub.vpnAlertRegularTrackerTypeSingular" = "Rastreador ou anúncio";
 
 /* Section title, this section displays vpn alerts: items which the vpn managed to block on users behalf. */
-"privacyHub.vpnAlertsHeader" = "Alertas do Firewall + VPN Brave";
+"privacyHub.vpnAlertsHeader" = "Alertas do Firewall + VPN Asil Browser";
 
-/* This label says about Brave VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
+/* This label says about Asil Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
 "privacyHub.vpnLabel" = "Firewall + VPN";
 
 /* It shows a total count of items blocked by our VPN shields */
 "privacyHub.vpvnAlertsTotalCount" = "Contagem total";
 
-/* Show Brave Browser Privacy Policy page from the Privacy section in the settings. */
+/* Show Asil Browser Browser Privacy Policy page from the Privacy section in the settings. */
 "PrivacyPolicy" = "Política de Privacidade";
 
 /* Private button title */
@@ -1970,10 +1970,10 @@
 "PrivateBrowsingOnlyWarning" = "O modo Somente navegação privada fechará todas as guias atuais e encerrará suas sessões em todos os sites.";
 
 /* Private tab details */
-"PrivateTabBody" = "As Abas privadas não são salvas no Brave, mas elas não garantem navegação anônima on-line. Os sites que você acessar em uma aba privada não serão exibidos no seu histórico, e os cookies deles serão excluídos quando você os fechar (nenhuma informação ficará salva no Brave). No entanto, os downloads serão salvos.\nSua operadora de telefonia móvel (ou o proprietário da rede Wi-Fi ou VPN à qual você está conectado) poderá ver quais sites você acessa, e esses sites detectarão seu endereço IP público, mesmo nas Abas privadas.";
+"PrivateTabBody" = "As Abas privadas não são salvas no Asil Browser, mas elas não garantem navegação anônima on-line. Os sites que você acessar em uma aba privada não serão exibidos no seu histórico, e os cookies deles serão excluídos quando você os fechar (nenhuma informação ficará salva no Asil Browser). No entanto, os downloads serão salvos.\nSua operadora de telefonia móvel (ou o proprietário da rede Wi-Fi ou VPN à qual você está conectado) poderá ver quais sites você acessa, e esses sites detectarão seu endereço IP público, mesmo nas Abas privadas.";
 
 /* Private tab detail text */
-"PrivateTabDetails" = "O uso das Abas privadas só muda o que o Brave faz no seu dispositivo. O comportamento das outras partes envolvidas não é alterado.\n\nOs sites sempre detectam seu endereço IP quando você os acessa. Com base nisso, normalmente é possível ter uma ideia geral de onde você está, como sua cidade. Às vezes, essa estimativa de localização pode ser bem mais específica. Os sites também têm acesso a todas as informações que você fornece a eles (por exemplo, termos de pesquisa). Se você fizer login em um site, ele saberá que você é o proprietário dessa conta. Sua sessão será encerrada quando você fechar as Abas privadas, pois o Brave excluirá o cookie que mantém você conectado à conta.\n\nO responsável pela sua conexão com a internet (seu provedor de serviços de internet), que em muitos casos é sua operadora, pode ver toda a sua atividade na rede. Se você está conectado a uma rede Wi-Fi, o provedor é o proprietário dessa rede. Se você está usando uma VPN, o proprietário é quem a mantém em funcionamento. Seu provedor pode ver os sites que você acessa no momento em que isso acontece. Se esses sites usam HTTPS, ele não tem como saber exatamente o que você faz neles. No entanto, se um site só utiliza HTTP, seu provedor pode ver tudo: seus termos de pesquisa, quais páginas você acessa e em quais links você clica.\n\nSe a empresa na qual você trabalha gerencia seu dispositivo, é possível que ela monitore o que você faz com ele. O uso das Abas privadas provavelmente não a impedirá de saber os sites que você acessou. É possível que outra pessoa que tenha acesso ao seu dispositivo tenha instalado um software para monitorar sua atividade; nesse caso, as Abas privadas não poderão proteger você.";
+"PrivateTabDetails" = "O uso das Abas privadas só muda o que o Asil Browser faz no seu dispositivo. O comportamento das outras partes envolvidas não é alterado.\n\nOs sites sempre detectam seu endereço IP quando você os acessa. Com base nisso, normalmente é possível ter uma ideia geral de onde você está, como sua cidade. Às vezes, essa estimativa de localização pode ser bem mais específica. Os sites também têm acesso a todas as informações que você fornece a eles (por exemplo, termos de pesquisa). Se você fizer login em um site, ele saberá que você é o proprietário dessa conta. Sua sessão será encerrada quando você fechar as Abas privadas, pois o Asil Browser excluirá o cookie que mantém você conectado à conta.\n\nO responsável pela sua conexão com a internet (seu provedor de serviços de internet), que em muitos casos é sua operadora, pode ver toda a sua atividade na rede. Se você está conectado a uma rede Wi-Fi, o provedor é o proprietário dessa rede. Se você está usando uma VPN, o proprietário é quem a mantém em funcionamento. Seu provedor pode ver os sites que você acessa no momento em que isso acontece. Se esses sites usam HTTPS, ele não tem como saber exatamente o que você faz neles. No entanto, se um site só utiliza HTTP, seu provedor pode ver tudo: seus termos de pesquisa, quais páginas você acessa e em quais links você clica.\n\nSe a empresa na qual você trabalha gerencia seu dispositivo, é possível que ela monitore o que você faz com ele. O uso das Abas privadas provavelmente não a impedirá de saber os sites que você acessou. É possível que outra pessoa que tenha acesso ao seu dispositivo tenha instalado um software para monitorar sua atividade; nesse caso, as Abas privadas não poderão proteger você.";
 
 /* Private tab information link */
 "PrivateTabLink" = "Saiba mais sobre abas privadas.";
@@ -1987,8 +1987,8 @@
 /* Title for quick-search engines settings section. */
 "QuickSearchEngines" = "Mecanismos de pesquisa rápida";
 
-/* Open the App Store to rate Brave. */
-"RateBrave" = "Avaliar o Brave";
+/* Open the App Store to rate Asil Browser. */
+"RateBrave" = "Avaliar o Asil Browser";
 
 /* Accessibility label for button increasing font size in display settings of reader mode */
 "ReaderModeBiggerFontButtonAccessibilityLabel" = "Aumentar o tamanho do texto";
@@ -2017,13 +2017,13 @@
 /* Accessibility hint for the font type buttons in reader mode display settings */
 "ReaderModeFontTypeButtonAccessibilityHint" = "Altera o tipo de fonte.";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Brave reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModeLoadingContentDisplayText" = "Carregando conteúdo...";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Brave reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModeLoadOriginalLinkText" = "Carregar página original";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Brave reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModePageCantShowDisplayText" = "Não foi possível exibir a página na Visualização de leitor.";
 
 /* Title of a bar that show up when you enter reader mode. */
@@ -2108,10 +2108,10 @@
 "ReportABug" = "Relatar a existência de um bug";
 
 /* First part of the report a broken site copy. After the colon is a new line and then a website address */
-"ReportBrokenSiteBody1" = "Informe aos desenvolvedores do Brave que este site não funciona corretamente com o Shields:";
+"ReportBrokenSiteBody1" = "Informe aos desenvolvedores do Asil Browser que este site não funciona corretamente com o Shields:";
 
 /* No comment provided by engineer. */
-"ReportBrokenSiteBody2" = "Observação: o endereço deste site será enviado juntamente com o número da sua versão do Brave e seu endereço IP (que não será armazenado).";
+"ReportBrokenSiteBody2" = "Observação: o endereço deste site será enviado juntamente com o número da sua versão do Asil Browser e seu endereço IP (que não será armazenado).";
 
 /* No comment provided by engineer. */
 "ReportBrokenSubmitButtonTitle" = "Enviar";
@@ -2134,28 +2134,28 @@
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "É, isso não é nada bom.";
 
-/* Body for Brave Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInBody" = "Com o Brave Rewards, você pode visualizar anúncios da rede do Brave Ads que preservam sua privacidade. Sem rastreadores. Sem lentidão. E seus dados ficam totalmente seguros.";
+/* Body for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInBody" = "Com o Asil Browser Rewards, você pode visualizar anúncios da rede do Asil Browser Ads que preservam sua privacidade. Sem rastreadores. Sem lentidão. E seus dados ficam totalmente seguros.";
 
-/* Title for Brave Talk rewards opt-in screen button */
+/* Title for Asil Browser Talk rewards opt-in screen button */
 "rewards.braveTalkRewardsOptInButtonTitle" = "Ativar Recompensas";
 
-/* Body for successful Brave Talk rewards opt-in */
-"rewards.braveTalkRewardsOptInSuccessBody" = "Clique em qualquer parte da tela para ir para o Brave Talk.";
+/* Body for successful Asil Browser Talk rewards opt-in */
+"rewards.braveTalkRewardsOptInSuccessBody" = "Clique em qualquer parte da tela para ir para o Asil Browser Talk.";
 
-/* Title for successful Brave Talk rewards opt-in */
+/* Title for successful Asil Browser Talk rewards opt-in */
 "rewards.braveTalkRewardsOptInSuccessTitle" = "Agora você pode iniciar uma chamada gratuita";
 
-/* Title for Brave Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInTitle" = "Para iniciar uma chamada gratuita, ative o Brave Rewards";
+/* Title for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInTitle" = "Para iniciar uma chamada gratuita, ative o Asil Browser Rewards";
 
-/* Displayed when Brave Rewards is disabled */
+/* Displayed when Asil Browser Rewards is disabled */
 "rewards.disabledBody" = "Ative para apoiar criadores de conteúdo";
 
 /* Displayed in the status container when rewards is disabled */
-"rewards.disabledStatusBody" = "Ao usar o Brave Rewards, você apoia os criadores do conteúdo que você acessa.";
+"rewards.disabledStatusBody" = "Ao usar o Asil Browser Rewards, você apoia os criadores do conteúdo que você acessa.";
 
-/* Displayed when Brave Rewards is enabled */
+/* Displayed when Asil Browser Rewards is enabled */
 "rewards.enabledBody" = "Você está apoiando criadores de conteúdo";
 
 /* Displayed in the status container when rewards is enabled but you're not currently supporting any publishers (0 AC count) */
@@ -2180,7 +2180,7 @@
 "rewards.legacyWalletTransferStatusButtonPendingTitle" = "O status da transferência da sua carteira legada está pendente.";
 
 /* No comment provided by engineer. */
-"rewards.legacyWalletTransferStatusCompletedBody" = "A transferência da sua carteira legada foi concluída. Seu saldo atual poderá levar alguns minutos para ser exibido na sua carteira do Brave Rewards para computador.";
+"rewards.legacyWalletTransferStatusCompletedBody" = "A transferência da sua carteira legada foi concluída. Seu saldo atual poderá levar alguns minutos para ser exibido na sua carteira do Asil Browser Rewards para computador.";
 
 /* Title shown above body of text explaining that their transfer is completed */
 "rewards.legacyWalletTransferStatusCompletedTitle" = "Transferência concluída!";
@@ -2231,13 +2231,13 @@
 "rewards.optInDisclaimer" = "Ao clicar, você concorda com os %1$@ e a %2$@. Desative quando quiser nas Configurações.";
 
 /* No comment provided by engineer. */
-"rewards.settingsFooterMessage" = "Os pagamentos do Brave Rewards estão temporariamente indisponíveis neste dispositivo. Para manter seus tokens, transfira os fundos da sua carteira atual para uma carteira para computador.";
+"rewards.settingsFooterMessage" = "Os pagamentos do Asil Browser Rewards estão temporariamente indisponíveis neste dispositivo. Para manter seus tokens, transfira os fundos da sua carteira atual para uma carteira para computador.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleMessage" = "Ative o Brave Private Ads para apoiar criadores de conteúdo e editores com a exibição de anúncios que respeitam sua privacidade.";
+"rewards.settingsToggleMessage" = "Ative o Asil Browser Private Ads para apoiar criadores de conteúdo e editores com a exibição de anúncios que respeitam sua privacidade.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleTitle" = "Ativar o Brave Rewards";
+"rewards.settingsToggleTitle" = "Ativar o Asil Browser Rewards";
 
 /* Displayed under verified publishers */
 "rewards.supportingPublisher" = "Você está apoiando criadores de conteúdo como este.";
@@ -2252,19 +2252,19 @@
 "rewards.unverifiedPublisher" = "Este criador de conteúdo não foi verificado e não será incluído no apoio a criadores";
 
 /* A confirmation message shown to the user after completing a wallet transfer successfully */
-"rewards.walletTransferCompleteBody" = "Sua transferência foi iniciada. Qualquer saldo de BATs existente poderá levar alguns minutos para ser exibido na sua carteira do Brave Rewards para computador. Verifique seu resumo do Rewards em um computador para saber quando a transferência foi concluída.\n\nVocê pode fechar esta janela e continuar usando o Brave enquanto sua transferência está em andamento.";
+"rewards.walletTransferCompleteBody" = "Sua transferência foi iniciada. Qualquer saldo de BATs existente poderá levar alguns minutos para ser exibido na sua carteira do Asil Browser Rewards para computador. Verifique seu resumo do Rewards em um computador para saber quando a transferência foi concluída.\n\nVocê pode fechar esta janela e continuar usando o Asil Browser enquanto sua transferência está em andamento.";
 
 /* Title shown above the confirmation message after completing a wallet transfer successfully */
 "rewards.walletTransferCompleteTitle" = "A transferência de saldo foi iniciada";
 
 /* Message on the alert presented if wallet transfer fails */
-"rewards.walletTransferFailureAlertMessage" = "O servidor do Brave Rewards não respondeu. Tente novamente em alguns instantes.";
+"rewards.walletTransferFailureAlertMessage" = "O servidor do Asil Browser Rewards não respondeu. Tente novamente em alguns instantes.";
 
 /* Title on the alert presented if wallet transfer fails */
 "rewards.walletTransferFailureAlertTitle" = "Erro de conexão";
 
 /* Describes the steps for using wallet transfer */
-"rewards.walletTransferStepsBody" = "Seu saldo de tokens do Brave Rewards pode ser transferido uma vez para uma carteira para computador existente do Brave Rewards.\n\n1. Abra o navegador Brave no seu computador\n2. Navegue até brave://rewards\n3. Clique em \"Código QR\"\n4. Leia o código QR com seu dispositivo";
+"rewards.walletTransferStepsBody" = "Seu saldo de tokens do Asil Browser Rewards pode ser transferido uma vez para uma carteira para computador existente do Asil Browser Rewards.\n\n1. Abra o navegador Asil Browser no seu computador\n2. Navegue até Asil Browser://rewards\n3. Clique em \"Código QR\"\n4. Leia o código QR com seu dispositivo";
 
 /* Title above the steps to use wallet transfer */
 "rewards.walletTransferStepsTitle" = "Ler código de transferência única";
@@ -2297,7 +2297,7 @@
 "RewardsInternalsContributionAmount" = "Valor da contribuição";
 
 /* No comment provided by engineer. */
-"RewardsInternalsContributionProcessorBraveTokens" = "Tokens do Brave";
+"RewardsInternalsContributionProcessorBraveTokens" = "Tokens do Asil Browser";
 
 /* No comment provided by engineer. */
 "RewardsInternalsContributionProcessorNone" = "Nenhum";
@@ -2449,7 +2449,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsShare" = "Compartilhar";
 
-/* 'Rewards' as in 'Brave Rewards' */
+/* 'Rewards' as in 'Asil Browser Rewards' */
 "RewardsInternalsShareInternalsTitle" = "Compartilhar dados internos do Rewards";
 
 /* No comment provided by engineer. */
@@ -2467,7 +2467,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsSupported" = "Compatível";
 
-/* 'Rewards' as in 'Brave Rewards' */
+/* 'Rewards' as in 'Asil Browser Rewards' */
 "RewardsInternalsTitle" = "Dados internos do Rewards";
 
 /* No comment provided by engineer. */
@@ -2582,24 +2582,24 @@
 "SearchSuggestionsSectionHeader" = "Sugestões de pesquisa";
 
 /* Title of an action that allows user to perform a one-click web search for selected text */
-"SearchWithBrave" = "Pesquisar com o Brave";
+"SearchWithBrave" = "Pesquisar com o Asil Browser";
 
 /* Settings security section title */
 "Security" = "Segurança";
 
 /* Message displayed in the crash dialog above the buttons used to select when sending reports */
-"SendCrashReportAlertMessage" = "Enviar um relatório de falha para que o Brave possa corrigir o problema?";
+"SendCrashReportAlertMessage" = "Enviar um relatório de falha para que o Asil Browser possa corrigir o problema?";
 
 /* Title for prompt displayed to user after the app crashes */
-"SendCrashReportAlertTitle" = "Opa! Houve uma falha no Brave";
+"SendCrashReportAlertTitle" = "Opa! Houve uma falha no Asil Browser";
 
 /* Used as a button label for crash dialog prompt */
 "SendReportButtonTitle" = "Enviar relatório";
 
 /* No comment provided by engineer. */
-"setDefaultBrowserCalloutTitle" = "Agora o Brave pode ser definido como seu navegador padrão no iOS. Toque aqui para abrir as configurações.";
+"setDefaultBrowserCalloutTitle" = "Agora o Asil Browser pode ser definido como seu navegador padrão no iOS. Toque aqui para abrir as configurações.";
 
-/* Settings item to set the Brave as a default browser on the iOS device. */
+/* Settings item to set the Asil Browser as a default browser on the iOS device. */
 "setDefaultBrowserSettingsCell" = "Definir como navegador padrão";
 
 /* No comment provided by engineer. */
@@ -2621,7 +2621,7 @@
 "settings.autocloseTabsSetting" = "Fechar abas";
 
 /* Description of autoclose tabs feature. */
-"settings.autocloseTabsSettingFooter" = "Permita que o Brave feche automaticamente as abas que não foram visualizadas recentemente.";
+"settings.autocloseTabsSettingFooter" = "Permita que o Asil Browser feche automaticamente as abas que não foram visualizadas recentemente.";
 
 /* Error message that is shown in settings when there was a problem loading */
 "SettingsContentLoadErrorMessage" = "Não foi possível carregar a página.";
@@ -2681,7 +2681,7 @@
 "shieldEducation.shareTheNewsTitle" = "Compartilhe a novidade";
 
 /* Subtitle for Shield Education Tracker Ad Warning */
-"shieldEducation.trackerAdWarningSubTitle" = "O Brave Shields acabou de proteger sua privacidade on-line.";
+"shieldEducation.trackerAdWarningSubTitle" = "O Asil Browser Shields acabou de proteger sua privacidade on-line.";
 
 /* Subtitle for Shield Education Tracker Count Share */
 "shieldEducation.trackerCountShareSubtitle" = "Parabéns. Você é muito especial.";
@@ -2696,13 +2696,13 @@
 "shieldEducation.videoAdBlockTitle" = "Os anúncios são bloqueados enquanto você assiste a vídeos neste site.";
 
 /* Section title for adbblock, tracking protection, HTTPS-E, and cookies */
-"ShieldsDefaults" = "Padrões globais do Brave Shields";
+"ShieldsDefaults" = "Padrões globais do Asil Browser Shields";
 
 /* Section footer for global shields defaults */
 "ShieldsDefaultsFooter" = "Essas são as configurações padrão do Shields para novos sites. A alteração delas não afetará suas atuais configurações específicas por site.";
 
 /* No comment provided by engineer. */
-"ShieldsDownDisclaimer" = "Você está navegando neste site sem as proteções de privacidade do Brave. O site não funciona com as Proteções ativadas?";
+"ShieldsDownDisclaimer" = "Você está navegando neste site sem as proteções de privacidade do Asil Browser. O site não funciona com as Proteções ativadas?";
 
 /* shields overview message */
 "ShieldsOverview" = "As Proteções de site permitem que você controle quando anúncios e rastreadores são bloqueados em cada site que você acessa. Se preferir ver anúncios em um site específico, você poderá ativá-los aqui.";
@@ -2732,7 +2732,7 @@
 "ShortcutItemTitleQRCode" = "Ler código QR";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeBraveNewsDescription" = "Abrir o Brave News e conferir as principais notícias de hoje";
+"shortcuts.activityTypeBraveNewsDescription" = "Abrir o Asil Browser News e conferir as principais notícias de hoje";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeClearHistoryDescription" = "Abrir o navegador em uma nova aba e excluir todos os dados de histórico de navegação privada";
@@ -2741,7 +2741,7 @@
 "shortcuts.activityTypeClearHistorySuggestedPhrase" = "Limpar histórico do navegador";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeClearHistoryTitle" = "Limpar histórico de navegação do Brave";
+"shortcuts.activityTypeClearHistoryTitle" = "Limpar histórico de navegação do Asil Browser";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeEnableVPNDescription" = "Abrir o navegador em uma nova aba e ativar a VPN";
@@ -2750,7 +2750,7 @@
 "shortcuts.activityTypeEnableVPNSuggestedPhrase" = "Ativar a VPN";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeEnableVPNTitle" = "Abrir o navegador Brave e ativar a VPN";
+"shortcuts.activityTypeEnableVPNTitle" = "Abrir o navegador Asil Browser e ativar a VPN";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeNewPrivateTabSuggestedPhrase" = "Abrir nova aba privada";
@@ -2765,10 +2765,10 @@
 "shortcuts.activityTypeNewTabTitle" = "Abrir uma nova aba do navegador";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveNewsTitle" = "Abrir o Brave News";
+"shortcuts.activityTypeOpenBraveNewsTitle" = "Abrir o Asil Browser News";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Abrir o Brave News";
+"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Abrir o Asil Browser News";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeOpenPlaylistDescription" = "Começar a reproduzir seus vídeos na playlist";
@@ -2780,7 +2780,7 @@
 "shortcuts.activityTypeOpenPlaylistTitle" = "Abrir playlist";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeTabDescription" = "Começar a pesquisar com segurança na web com o Brave";
+"shortcuts.activityTypeTabDescription" = "Começar a pesquisar com segurança na web com o Asil Browser";
 
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenBookmarkSuggestedPhrase" = "Abrir site dos favoritos";
@@ -2791,8 +2791,8 @@
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenWebsiteSuggestedPhrase" = "Abrir site";
 
-/* Description for opening Brave Settings for altering Siri shortcut. */
-"shortcuts.shortcutOpenApplicationSettingsDescription" = "Esta opção abrirá as configurações do Brave. Para alterar várias opções da Siri, selecione o item de menu \"Siri e Busca\" e personalize suas escolhas.";
+/* Description for opening Asil Browser Settings for altering Siri shortcut. */
+"shortcuts.shortcutOpenApplicationSettingsDescription" = "Esta opção abrirá as configurações do Asil Browser. Para alterar várias opções da Siri, selecione o item de menu \"Siri e Busca\" e personalize suas escolhas.";
 
 /* Button title that open application settings */
 "shortcuts.shortcutOpenApplicationSettingsTitle" = "Abrir configurações";
@@ -2804,16 +2804,16 @@
 "shortcuts.shortcutSettingsClearBrowserHistoryTitle" = "Limpar histórico do navegador";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsEnableVPNDescription" = "Usar atalhos para ativar o Brave VPN com a Siri - Assistente de voz";
+"shortcuts.shortcutSettingsEnableVPNDescription" = "Usar atalhos para ativar o Asil Browser VPN com a Siri - Assistente de voz";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsEnableVPNTitle" = "Ativar a VPN";
 
-/* Description of Open Brave News Siri Shortcut in Settings Screen */
-"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Usar atalhos para abrir uma nova guia e mostrar o feed das Notícias Brave com a Siri - Assistente de voz";
+/* Description of Open Asil Browser News Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Usar atalhos para abrir uma nova guia e mostrar o feed das Notícias Asil Browser com a Siri - Assistente de voz";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Abrir o Brave News";
+"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Abrir o Asil Browser News";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsOpenNewPrivateTabDescription" = "Usar atalhos para abrir uma nova aba com a Siri - Assistente de voz";
@@ -2867,19 +2867,19 @@
 "ShowTabsBar" = "Barra de guias";
 
 /* No comment provided by engineer. */
-"SiteReportedBody" = "Obrigado por informar aos desenvolvedores do Brave que há um problema com este site. Faremos o possível para corrigi-lo!";
+"SiteReportedBody" = "Obrigado por informar aos desenvolvedores do Asil Browser que há um problema com este site. Faremos o possível para corrigi-lo!";
 
 /* No comment provided by engineer. */
 "SiteReportedTitle" = "Obrigado";
 
-/* Brave panel topmost title */
+/* Asil Browser panel topmost title */
 "SiteShieldSettings" = "Proteções";
 
 /* Title used when in warning pop-over when domain specific data save appears */
-"socialSharing.domainSpecificDataSavedTitle" = "Economizo dados diariamente navegando na web com o Brave.";
+"socialSharing.domainSpecificDataSavedTitle" = "Economizo dados diariamente navegando na web com o Asil Browser.";
 
-/* Text used for social sharing together with Brave Shield values */
-"socialSharing.shareDescriptionTitle" = "Economizo dados diariamente navegando na web com o Brave.";
+/* Text used for social sharing together with Asil Browser Shield values */
+"socialSharing.shareDescriptionTitle" = "Economizo dados diariamente navegando na web com o Asil Browser.";
 
 /* Open search section of settings */
 "StandardTabSearch" = "Aba padrão";
@@ -2911,8 +2911,8 @@
 /* Title for Sync Settings Toggle Header */
 "sync.syncSettingsTitle" = "Sincronizar configurações";
 
-/* Text that informs a user about Brave Sync service deprecation. */
-"sync.syncV1DeprecationText" = "Uma nova versão do Brave Sync chegará em breve e afetará sua configuração. Prepare-se para o upgrade.";
+/* Text that informs a user about Asil Browser Sync service deprecation. */
+"sync.syncV1DeprecationText" = "Uma nova versão do Asil Browser Sync chegará em breve e afetará sua configuração. Prepare-se para o upgrade.";
 
 /* Message for popup when the bookmark migration fails */
 "sync.v2MigrationErrorMessage" = "Não foi possível migrar os favoritos. Tente novamente mais tarde.";
@@ -2927,7 +2927,7 @@
 "sync.v2MigrationInterstitialTitle" = "Migração de favoritos";
 
 /* Message for popup to inform the user that bookmarks migration is required for sync */
-"sync.v2MigrationMessage" = "Para usar o Brave Sync, seus favoritos atuais precisam ser migrados para que utilizem o novo sistema. Essa operação não excluirá seus favoritos.";
+"sync.v2MigrationMessage" = "Para usar o Asil Browser Sync, seus favoritos atuais precisam ser migrados para que utilizem o novo sistema. Essa operação não excluirá seus favoritos.";
 
 /* Button to perform bookmarks migration in order to support sync */
 "sync.v2MigrationOKButton" = "Migrar";
@@ -2969,7 +2969,7 @@
 "SyncComputerDevice" = "Computador";
 
 /* Sync Error Description */
-"syncDeprecatedVersionError" = "Esse código de sincronização foi gerado por uma versão desatualizada do Brave em outro dispositivo. Atualize o Brave em todos os dispositivos sincronizados e tente novamente.";
+"syncDeprecatedVersionError" = "Esse código de sincronização foi gerado por uma versão desatualizada do Asil Browser em outro dispositivo. Atualize o Asil Browser em todos os dispositivos sincronizados e tente novamente.";
 
 /* Sync you browser settings across devices. */
 "SyncDevices" = "Dispositivos e configurações";
@@ -2990,10 +2990,10 @@
 "SyncInitErrorTitle" = "Erro de comunicação na sincronização";
 
 /* Default name for a device */
-"syncJoinChainCameraWarning" = "Isso compartilhará seus dados do Brave (inclusive, possivelmente, suas senhas) com o dispositivo que gerou esse código QR. Verifique novamente se esse código QR foi gerado por um dispositivo que pertence a você. Tem certeza de que deseja fazer isso?";
+"syncJoinChainCameraWarning" = "Isso compartilhará seus dados do Asil Browser (inclusive, possivelmente, suas senhas) com o dispositivo que gerou esse código QR. Verifique novamente se esse código QR foi gerado por um dispositivo que pertence a você. Tem certeza de que deseja fazer isso?";
 
 /* Default name for a device */
-"syncJoinChainCodewordsWarning" = "Isso compartilhará seus dados do Brave (inclusive, possivelmente, suas senhas) com o dispositivo que gerou esses códigos QR. Verifique novamente se esses códigos QR foram gerados por um dispositivo que pertence a você. Tem certeza de que deseja fazer isso?";
+"syncJoinChainCodewordsWarning" = "Isso compartilhará seus dados do Asil Browser (inclusive, possivelmente, suas senhas) com o dispositivo que gerou esses códigos QR. Verifique novamente se esses códigos QR foram gerados por um dispositivo que pertence a você. Tem certeza de que deseja fazer isso?";
 
 /* Title for pairing sync device */
 "syncJoinChainWarningTitle" = "Aviso";
@@ -3017,7 +3017,7 @@
 "SyncRemoveDeviceDefaultName" = "Dispositivo";
 
 /* Message for removing last device from Sync */
-"SyncRemoveLastDeviceMessage" = "Os dados que estão sincronizados no momento serão mantidos, mas todos os dados presentes no cache de sincronização do Brave serão excluídos. Você precisará criar uma nova cadeia de sincronização para sincronizar os dados do dispositivo novamente.";
+"SyncRemoveLastDeviceMessage" = "Os dados que estão sincronizados no momento serão mantidos, mas todos os dados presentes no cache de sincronização do Asil Browser serão excluídos. Você precisará criar uma nova cadeia de sincronização para sincronizar os dados do dispositivo novamente.";
 
 /* Button name for removing last device from Sync */
 "SyncRemoveLastDeviceRemoveButtonName" = "Excluir Cadeia de sincronização";
@@ -3056,7 +3056,7 @@
 "SyncToDevice" = "Sincronizar com o dispositivo";
 
 /* Sync to existing device description */
-"SyncToDeviceDescription" = "Usando um dispositivo existente sincronizado, abra as Configurações do Brave e acesse Configurações -> Sincronizar. Escolha \"Adicionar dispositivo\" e realize a leitura do código exibido na tela.";
+"SyncToDeviceDescription" = "Usando um dispositivo existente sincronizado, abra as Configurações do Asil Browser e acesse Configurações -> Sincronizar. Escolha \"Adicionar dispositivo\" e realize a leitura do código exibido na tela.";
 
 /* Description on popup when setting up a sync group fails */
 "SyncUnableCreateGroup" = "Não foi possível sincronizar este dispositivo";
@@ -3154,14 +3154,14 @@
 /* No comment provided by engineer. */
 "TermsOfService" = "Termos de Serviço";
 
-/* Show Brave Browser TOS page from the Privacy section in the settings. */
+/* Show Asil Browser Browser TOS page from the Privacy section in the settings. */
 "TermsOfUse" = "Termos de uso";
 
 /* Text for button to share referral's QR code. */
 "themeQRCodeShareButton" = "Compartilhar...";
 
 /* Title for QR popup encouraging users to share the code with their friends. */
-"themeQRCodeShareTitle" = "Compartilhe o Brave com seus amigos!";
+"themeQRCodeShareTitle" = "Compartilhe o Asil Browser com seus amigos!";
 
 /* Selection to automatically color/style the user interface. */
 "ThemesAutomaticOption" = "Automático";
@@ -3203,13 +3203,13 @@
 "today.addSourceNoFeedsFoundMessage" = "Esse endereço de feed não tem nenhum conteúdo.";
 
 /* The action title displayed in the iOS share menu */
-"today.addSourceShareTitle" = "Adicionar fonte ao Brave News";
+"today.addSourceShareTitle" = "Adicionar fonte ao Asil Browser News";
 
 /* A header title shown above a button that will allow the user to fetch RSS feeds for a website they have typed in */
 "today.availableRSSFeedsHeaderTitle" = "Feeds RSS disponíveis";
 
 /* The name of the feature */
-"today.braveToday" = "Brave News";
+"today.braveToday" = "Asil Browser News";
 
 /* Shown below 'Channels' explaining what will be shown when tapping on it. */
 "today.channelsButtonSubtitle" = "Siga os tópicos do seu interesse";
@@ -3229,13 +3229,13 @@
 /* No comment provided by engineer. */
 "today.deals" = "Ofertas";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
-"today.disabledAlertBody" = "O Brave News deixará de exibir conteúdo de %@";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+"today.disabledAlertBody" = "O Asil Browser News deixará de exibir conteúdo de %@";
 
 /* No comment provided by engineer. */
 "today.disabledAlertTitle" = "Desativado";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
 "today.disablePublisherContent" = "Ocultar conteúdo de %@";
 
 /* No comment provided by engineer. */
@@ -3244,11 +3244,11 @@
 /* No comment provided by engineer. */
 "today.emptyFeedTitle" = "Não há artigos para exibir";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
 "today.enablePublisherContent" = "Permitir conteúdo de %@";
 
 /* No comment provided by engineer. */
-"today.errorGeneralBody" = "O Brave News está enfrentando alguns problemas. Tente novamente.";
+"today.errorGeneralBody" = "O Asil Browser News está enfrentando alguns problemas. Tente novamente.";
 
 /* No comment provided by engineer. */
 "today.errorGeneralTitle" = "Ops…";
@@ -3265,7 +3265,7 @@
 /* A toggle title shown next to a source or channel that the user can follow. When tapped switches to 'Unfollow' */
 "today.followToggleTitle" = "Seguir";
 
-/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://brave.com'. */
+/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Asil Browser.com'. */
 "today.getFeedsFromSiteButtonTitle" = "Obter feeds de";
 
 /* \"OPML\" is a file extension that contains a list of rss feeds. */
@@ -3274,20 +3274,20 @@
 /* The header above the list of insecure sources */
 "today.insecureSourcesHeader" = "Fontes não seguras: adicione-as por sua conta e risco";
 
-/* Shown above a button that turns on the \"Brave News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "Siga suas fontes favoritas em um único feed. Basta abrir uma guia no Brave, rolar a tela para baixo e pronto!\nO Notícias Brave exibe anúncios totalmente privados e anonimizados.";
+/* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
+"today.introCardBody" = "Siga suas fontes favoritas em um único feed. Basta abrir uma guia no Asil Browser, rolar a tela para baixo e pronto!\nO Notícias Asil Browser exibe anúncios totalmente privados e anonimizados.";
 
-/* Shown above a button that turns on the \"Brave News\" product in the app. */
-"today.introCardTitle" = "Ative o Notícias Brave e nunca fique por fora das notícias";
+/* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
+"today.introCardTitle" = "Ative o Notícias Asil Browser e nunca fique por fora das notícias";
 
 /* No comment provided by engineer. */
-"today.isEnabledToggleLabel" = "Mostrar o Brave News";
+"today.isEnabledToggleLabel" = "Mostrar o Asil Browser News";
 
 /* No comment provided by engineer. */
 "today.learnMoreTitle" = "Saiba mais sobre seus dados";
 
-/* 'Brave Offers' is a product name */
-"today.moreBraveOffers" = "Mais Brave Offers";
+/* 'Asil Browser Offers' is a product name */
+"today.moreBraveOffers" = "Mais Asil Browser Offers";
 
 /* No comment provided by engineer. */
 "today.noInternet" = "Sem internet";
@@ -3335,7 +3335,7 @@
 "today.suggestedTitle" = "Sugerido";
 
 /* No comment provided by engineer. */
-"today.turnOnBraveToday" = "Ativar o Brave News";
+"today.turnOnBraveToday" = "Ativar o Asil Browser News";
 
 /* A toggle title shown next to a source or channel that the user can unfollow. When tapped switches to 'Follow' */
 "today.unfollowToggleTitle" = "Deixar de seguir";
@@ -3382,34 +3382,34 @@
 /* No comment provided by engineer. */
 "UserWalletGenericErrorTitle" = "Algo deu errado";
 
-/* Version number of Brave shown in settings */
+/* Version number of Asil Browser shown in settings */
 "VersionTemplate" = "Versão %1$@ (%2$@)";
 
 /* Label that says where to view an item. '%@' is a placeholder and will include things like 'Instagram', 'unsplash'. The full label will look like 'View  on Instagram'. */
 "ViewOn" = "Ver no %@";
 
-/* Button text to buy Brave VPN */
+/* Button text to buy Asil Browser VPN */
 "vpn.buyButton" = "Comprar";
 
 /* Title for screen to buy the VPN. */
-"vpn.buyVPNTitle" = "Brave Firewall + VPN";
+"vpn.buyVPNTitle" = "Asil Browser Firewall + VPN";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxBlockAds" = "Bloqueia conexões de rede indesejadas";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxEncryption" = "Usa o túnel VPN criptografado e seguro IKEv2";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxFast" = "É compatível com velocidades de até 100 Mbps";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxGeoSelector" = "Escolha seu país/região geográfica";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxNoIPLog" = "Garante seu anonimato on-line";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxNoSellout" = "Nunca compartilhamos nem vendemos suas informações";
 
 /* AppStore Receipt field for customer support contact form. */
@@ -3422,7 +3422,7 @@
 "vpn.contactFormCarrier" = "Operadora de celular";
 
 /* Text to tell user to not modify support info below email's body. */
-"vpn.contactFormDoNotEditText" = "Como o Brave não rastreia suas ações nem sabe de que forma você usa nosso app, não sabemos como você configurou a VPN. Compartilhe informações sobre o problema que você está enfrentando. Faremos o que estiver ao nosso alcance para resolvê-lo o mais rápido possível.";
+"vpn.contactFormDoNotEditText" = "Como o Asil Browser não rastreia suas ações nem sabe de que forma você usa nosso app, não sabemos como você configurou a VPN. Compartilhe informações sobre o problema que você está enfrentando. Faremos o que estiver ao nosso alcance para resolvê-lo o mais rápido possível.";
 
 /* Button name to send contact form. */
 "vpn.contactFormEmailNotConfiguredBody" = "Não é possível enviar e-mails. Verifique sua configuração de e-mail.";
@@ -3476,9 +3476,9 @@
 "vpn.contactFormTimezone" = "Fuso horário do iOS";
 
 /* Title for contact form email. */
-"vpn.contactFormTitle" = "Problema com o Brave Firewall + VPN";
+"vpn.contactFormTitle" = "Problema com o Asil Browser Firewall + VPN";
 
-/* Button text to enable Brave VPN */
+/* Button text to enable Asil Browser VPN */
 "vpn.enableButton" = "Ativar";
 
 /* Message for an alert when the VPN can't get prices from the App Store */
@@ -3497,13 +3497,13 @@
 "vpn.iapDisclaimer" = "Todas as assinaturas são renovadas automaticamente, mas é possível cancelá-las antes da renovação.";
 
 /* Text explaining how the VPN works. */
-"vpn.installProfileBody" = "Esse perfil permite que a VPN se conecte automaticamente e proteja o tráfego no seu dispositivo o tempo todo. Essa conexão VPN será criptografada e passará pelo firewall inteligente do Brave para bloquear conexões possivelmente nocivas e invasivas.";
+"vpn.installProfileBody" = "Esse perfil permite que a VPN se conecte automaticamente e proteja o tráfego no seu dispositivo o tempo todo. Essa conexão VPN será criptografada e passará pelo firewall inteligente do Asil Browser para bloquear conexões possivelmente nocivas e invasivas.";
 
 /* Text for 'install vpn profile' button */
 "vpn.installProfileButtonText" = "Instalar perfil de VPN";
 
 /* No comment provided by engineer. */
-"vpn.installProfileTitle" = "Agora o Brave instalará um perfil de VPN.";
+"vpn.installProfileTitle" = "Agora o Asil Browser instalará um perfil de VPN.";
 
 /* Popup that shows after user installs the vpn for the first time. */
 "vpn.installSuccessPopup" = "A VPN foi ativada";
@@ -3511,7 +3511,7 @@
 /* Title for screen to install the VPN. */
 "vpn.installTitle" = "Instalar VPN";
 
-/* Button text to try free Brave VPN */
+/* Button text to try free Asil Browser VPN */
 "vpn.learnMore" = "Testar GRÁTIS";
 
 /* Used in context: 'Monthly subscription, (it) renews monthly' */
@@ -3523,10 +3523,10 @@
 /* Text to show user when their vpn plan has expired */
 "vpn.planExpired" = "Expirou";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.popupCheckmark247Support" = "Suporte 24 horas por dia, 7 dias por semana";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.popupCheckmarkSecureConnections" = "Protege todas as conexões";
 
 /* It is used in context: 'Powered by BRAND_NAME' */
@@ -3575,10 +3575,10 @@
 "vpn.settingsFAQ" = "Suporte relacionado à VPN";
 
 /* Button to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceipt" = "Vincular compra à sua conta Brave";
+"vpn.settingsLinkReceipt" = "Vincular compra à sua conta Asil Browser";
 
 /* Footer text to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceiptFooter" = "Vincule sua compra na App Store à sua conta Brave para usar a VPN Brave em outros dispositivos.";
+"vpn.settingsLinkReceiptFooter" = "Vincule sua compra na App Store à sua conta Asil Browser para usar a VPN Asil Browser em outros dispositivos.";
 
 /* Button to manage your VPN subscription */
 "vpn.settingsManageSubscription" = "Gerenciar assinatura";
@@ -3614,10 +3614,10 @@
 "vpn.settingsVPNExpired" = "Expirou";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationBody" = "Mesmo em segundo plano, o Brave continuará protegendo você.";
+"vpn.vpnBackgroundNotificationBody" = "Mesmo em segundo plano, o Asil Browser continuará protegendo você.";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationTitle" = "O Brave Firewall + VPN está ativado";
+"vpn.vpnBackgroundNotificationTitle" = "O Asil Browser Firewall + VPN está ativado";
 
 /* Message for an alert when the VPN can't be configured. */
 "vpn.vpnConfigGenericErrorBody" = "Houve um problema ao inicializar a VPN. Tente novamente ou redefina a configuração na página de configurações da VPN.";
@@ -3626,7 +3626,7 @@
 "vpn.vpnConfigGenericErrorTitle" = "Erro";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
-"vpn.vpnConfigPermissionDeniedErrorBody" = "Para funcionar, o Brave Firewall + VPN exige a instalação de um perfil de VPN no seu dispositivo.";
+"vpn.vpnConfigPermissionDeniedErrorBody" = "Para funcionar, o Asil Browser Firewall + VPN exige a instalação de um perfil de VPN no seu dispositivo.";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
 "vpn.vpnConfigPermissionDeniedErrorTitle" = "Permissão negada";
@@ -3638,10 +3638,10 @@
 "vpn.vpnErrorPurchaseFailedTitle" = "Erro";
 
 /* Disclaimer for user purchasing the VPN plan. */
-"vpn.vpnIAPBoilerPlate" = "A cobrança das assinaturas ocorrerá na sua conta do iTunes.\n\nAo adquirir uma assinatura, você abrirá mão de qualquer parte não utilizada de um teste gratuito.\n\nSua assinatura será renovada automaticamente, a menos que seja cancelada pelo menos 24 horas antes do final do período atual.\n\nVocê pode gerenciar suas assinaturas nas Configurações.\n\nAo usar o Brave, você concorda com os Termos de uso e com a Política de privacidade.";
+"vpn.vpnIAPBoilerPlate" = "A cobrança das assinaturas ocorrerá na sua conta do iTunes.\n\nAo adquirir uma assinatura, você abrirá mão de qualquer parte não utilizada de um teste gratuito.\n\nSua assinatura será renovada automaticamente, a menos que seja cancelada pelo menos 24 horas antes do final do período atual.\n\nVocê pode gerenciar suas assinaturas nas Configurações.\n\nAo usar o Asil Browser, você concorda com os Termos de uso e com a Política de privacidade.";
 
 /* Message for alert to reset vpn configuration */
-"vpn.vpnResetAlertBody" = "Essa ação redefinirá sua configuração do Brave Firewall + VPN e corrigirá quaisquer erros. Esse processo pode demorar um pouco.";
+"vpn.vpnResetAlertBody" = "Essa ação redefinirá sua configuração do Asil Browser Firewall + VPN e corrigirá quaisquer erros. Esse processo pode demorar um pouco.";
 
 /* Title for alert to reset vpn configuration */
 "vpn.vpnResetAlertTitle" = "Redefinir configuração";
@@ -3707,18 +3707,18 @@
 "widgets.favoritesWidgetTitle" = "Favoritos";
 
 /* This shows when you add a widget but have no favorites added in your app */
-"widgets.noFavoritesFound" = "Abra o Brave para ver seus favoritos aqui";
+"widgets.noFavoritesFound" = "Abra o Asil Browser para ver seus favoritos aqui";
 
 /* Description for the search option on the 'shortcuts' widget. */
 "widgets.searchShortcutTitle" = "Pesquisa";
 
-/* Description for Brave Shields widget on 'add widget' screen. */
-"widgets.shieldStatsDescription" = "Um resumo de como o Brave economiza seu tempo e protege você on-line.";
+/* Description for Asil Browser Shields widget on 'add widget' screen. */
+"widgets.shieldStatsDescription" = "Um resumo de como o Asil Browser economiza seu tempo e protege você on-line.";
 
-/* Title for Brave Shields widget on 'add widget' screen. */
+/* Title for Asil Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsTitle" = "Estatísticas de privacidade";
 
-/* Title of Brave Shields widget shown above stat numbers. */
+/* Title of Asil Browser Shields widget shown above stat numbers. */
 "widgets.shieldStatsWidgetTitle" = "Estatísticas de privacidade";
 
 /* Button to the browser and enter URL or make a search query there. */
@@ -3734,19 +3734,19 @@
 "widgets.shortcutsPrivateTabButton" = "Guia privada";
 
 /* Description for shortcuts widget on 'add widget' screen. */
-"widgets.shortcutsWidgetDescription" = "Acesso rápido para pesquisar na web ou abrir páginas da web no Brave.";
+"widgets.shortcutsWidgetDescription" = "Acesso rápido para pesquisar na web ou abrir páginas da web no Asil Browser.";
 
 /* Title for shortcuts widget on 'add widget' screen. */
 "widgets.shortcutsWidgetTitle" = "Atalhos";
 
-/* Description for Brave Shields single stat widget on 'add widget' screen. */
-"widgets.singleStatDescription" = "Um resumo de como o Brave tem protegido você on-line.";
+/* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
+"widgets.singleStatDescription" = "Um resumo de como o Asil Browser tem protegido você on-line.";
 
-/* Title for Brave Shields single stat widget on 'add widget' screen. */
+/* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatTitle" = "Estatística de privacidade";
 
-/* Description for the Brave Wallet option on the 'shortcuts' widget. */
-"widgets.walletShortcutTitle" = "Carteira Brave";
+/* Description for the Asil Browser Wallet option on the 'shortcuts' widget. */
+"widgets.walletShortcutTitle" = "Carteira Asil Browser";
 
 /* Title of the settings for widgets part */
 "widgets.widgetTitle" = "Widgets";

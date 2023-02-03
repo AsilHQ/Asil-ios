@@ -1,17 +1,17 @@
 /* About settings section title */
 "About" = "关于";
 
-/* The title of the screen explaining Brave Shields */
-"AboutBraveShields" = "关于 Brave Shields";
+/* The title of the screen explaining Asil Browser Shields */
+"AboutBraveShields" = "关于 Asil Browser Shields";
 
-/* The body of the screen explaining Brave Shields */
+/* The body of the screen explaining Asil Browser Shields */
 "AboutBraveShieldsBody" = "网站通常包含试图识别您和您的设备的 cookie 和脚本。它们想弄清楚您是谁，并在网上跟踪您，即跟踪您在每个站点上所执行的操作。\n\nBrave 会屏蔽这些操作，这样您就可以随意浏览，而不会被跟踪。";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "这允许您将图像保存到您的手机相册中";
 
 /* See http://mzl.la/1G7uHo7 */
-"AccessPhotoDeniedAlertTitle" = "Brave 想访问您的相册";
+"AccessPhotoDeniedAlertTitle" = "Asil Browser 想访问您的相册";
 
 /* Button to add a bookmark */
 "AddBookmark" = "添加书签";
@@ -52,8 +52,8 @@
 /* Label for the Face ID/Passcode item in Settings */
 "AuthenticationFaceIDPasscodeSetting" = "Face ID 和密码";
 
-/* Touch ID or PIN entry prompt subtitle when accessing Brave with the Browser Lock feature enabled */
-"AuthenticationLoginsTouchReason" = "这将证明您获有对 Brave 的访问权";
+/* Touch ID or PIN entry prompt subtitle when accessing Asil Browser with the Browser Lock feature enabled */
+"AuthenticationLoginsTouchReason" = "这将证明您获有对 Asil Browser 的访问权";
 
 /* Label for the Passcode item in Settings */
 "AuthenticationPasscode" = "密码";
@@ -116,7 +116,7 @@
 "BlockCookieConsentNotices" = "阻止 Cookie 同意通知";
 
 /* A description for a popup that notifies the user that we can block cookie consent notices */
-"BlockCookieConsentNoticesPopupDescription" = "Brave 已经阻止了第三方 cookie。我们也可以阻止 cookie 同意通知。";
+"BlockCookieConsentNoticesPopupDescription" = "Asil Browser 已经阻止了第三方 cookie。我们也可以阻止 cookie 同意通知。";
 
 /* A title for a popup that notifies the user that we can block cookie consent notices */
 "BlockCookieConsentNoticesPopupTitle" = "不想再收到 cookie 同意通知？";
@@ -130,7 +130,7 @@
 /* A title for setting which blocks 'switch to app' popups */
 "blockMobileAnnoyances" = "屏蔽“切换到应用程序”通知";
 
-/* Brave panel individual toggle title */
+/* Asil Browser panel individual toggle title */
 "BlockPhishing" = "拦截钓鱼网站";
 
 /* No comment provided by engineer. */
@@ -175,38 +175,38 @@
 /* Placeholder text for adding or editing a bookmark */
 "BookmarkUrlPlaceholderText" = "地址";
 
-/* Button to show the brave panel */
-"BravePanel" = "Brave 面板";
+/* Button to show the Asil Browser panel */
+"BravePanel" = "Asil Browser 面板";
 
 /* No comment provided by engineer. */
-"BraveRewardsAdNotificationTitle" = "Brave 奖励";
+"BraveRewardsAdNotificationTitle" = "Asil Browser 奖励";
 
 /* No comment provided by engineer. */
 "BraveRewardsOpen" = "打开";
 
-/* Brave Rewards settings title */
-"BraveRewardsTitle" = "Brave 奖励";
+/* Asil Browser Rewards settings title */
+"BraveRewardsTitle" = "Asil Browser 奖励";
 
-/* Brave Search Banner Promotion description content in Search Suggestions */
-"braveSearchPromotion.bannerDescription" = "Brave 搜索不会跟踪您、您查询和点击的内容。";
+/* Asil Browser Search Banner Promotion description content in Search Suggestions */
+"braveSearchPromotion.bannerDescription" = "Asil Browser 搜索不会跟踪您、您查询和点击的内容。";
 
-/* Brave Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
+/* Asil Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
 "braveSearchPromotion.bannerMaybeLaterButtonTitle" = "稍後再說";
 
-/* Brave Search Banner Promotion title in Search Suggestions */
+/* Asil Browser Search Banner Promotion title in Search Suggestions */
 "braveSearchPromotion.bannerTitle" = "支持独立的搜索，具有更好的隐私性";
 
-/* Brave Search Banner Promotion title for try button in Search Suggestions */
-"braveSearchPromotion.bannerTryButtonTitle" = "尝试使用 Brave 搜索";
+/* Asil Browser Search Banner Promotion title for try button in Search Suggestions */
+"braveSearchPromotion.bannerTryButtonTitle" = "尝试使用 Asil Browser 搜索";
 
-/* Brave Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
+/* Asil Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
 "braveSearchPromotion.braveSearchPromotionBannerDismissButtonTitle" = "關閉";
 
 /* No comment provided by engineer. */
 "BraveShieldsAdvancedControls" = "进阶控件";
 
 /* No comment provided by engineer. */
-"BraveShieldsAndPrivacy" = "Brave Shields 与隐私";
+"BraveShieldsAndPrivacy" = "Asil Browser Shields 与隐私";
 
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "被屏蔽的广告和其他令人毛骨悚然的内容";
@@ -223,17 +223,17 @@
 /* No comment provided by engineer. */
 "BraveShieldsSiteBroken" = "如果此站点显示为已损坏，请尝试关闭 Shields。";
 
-/* Context: 'Brave Shields Up' or 'Brave Shields Down' */
+/* Context: 'Asil Browser Shields Up' or 'Asil Browser Shields Down' */
 "BraveShieldsStatusTitle" = "Asil Browser   Shields";
 
-/* Context: The 'Down' in 'Brave Shields Down' */
+/* Context: The 'Down' in 'Asil Browser Shields Down' */
 "BraveShieldsStatusValueDown" = "关闭";
 
-/* Context: The 'Up' in 'Brave Shields Up' */
+/* Context: The 'Up' in 'Asil Browser Shields Up' */
 "BraveShieldsStatusValueUp" = "开启";
 
 /* The accessibility hint spoken when focused on the main shields toggle */
-"BraveShieldsToggleHint" = "轻击两次即可切换 Brave Shields";
+"BraveShieldsToggleHint" = "轻击两次即可切换 Asil Browser Shields";
 
 /* Sync page title */
 "BraveSync" = "同步";
@@ -242,16 +242,16 @@
 "BraveSyncInternalsTitle" = "内部同步";
 
 /* Sync settings welcome */
-"BraveSyncWelcome" = "首先，您需要在所有计划同步的设备上安装 Brave。要将它们链接在一起，请启动同步链，您将使用该同步链将所有设备安全地链接在一起。";
+"BraveSyncWelcome" = "首先，您需要在所有计划同步的设备上安装 Asil Browser。要将它们链接在一起，请启动同步链，您将使用该同步链将所有设备安全地链接在一起。";
 
 /* The name of the feature */
-"bravetalk.braveTalkTitle" = "Brave 通话";
+"bravetalk.braveTalkTitle" = "Asil Browser 通话";
 
 /* Setting to enable the browser lock privacy feature */
 "BrowserLock" = "浏览器锁定";
 
 /* No comment provided by engineer. */
-"BrowserLockDescription" = "用 Touch ID、Face ID 或系统密码解锁 Brave。";
+"BrowserLockDescription" = "用 Touch ID、Face ID 或系统密码解锁 Asil Browser。";
 
 /* A button title for the action to move to the next step of the browser lock migration process. */
 "browserLockMigrationContinueButtonTitle" = "继续";
@@ -260,10 +260,10 @@
 "browserLockMigrationNoPasscodeSetup" = "还没有设置 ID 或密码？打开设置，然后点击 \"%@\"即可设置。";
 
 /* Subtitle on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationSubtitle" = "我们简化了 Brave 的密码。现在您用您在手机上使用的 ID 或密码就可以访问 Brave 了 。";
+"browserLockMigrationSubtitle" = "我们简化了 Asil Browser 的密码。现在您用您在手机上使用的 ID 或密码就可以访问 Asil Browser 了 。";
 
 /* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationTitle" = "用您的 Apple Face ID、Touch ID 或密码打开 Brave";
+"browserLockMigrationTitle" = "用您的 Apple Face ID、Touch ID 或密码打开 Asil Browser";
 
 /* Settings item for clearing browsing history */
 "BrowsingHistory" = "浏览历史";
@@ -308,7 +308,7 @@
 "callout.playlistOnboardingViewTitle" = "将视频添加至播放列表...";
 
 /* Subtitle - Description for Privacy Everywhere Full Screen Callout */
-"callout.privacyEverywhereCalloutDescription" = "在您的计算机或平板电脑上体验 Brave 隐私保护，在设备间同步书签和扩展部件。";
+"callout.privacyEverywhereCalloutDescription" = "在您的计算机或平板电脑上体验 Asil Browser 隐私保护，在设备间同步书签和扩展部件。";
 
 /* Title for button in Default Browser Full Screen Callout */
 "callout.privacyEverywhereCalloutPrimaryButtonTitle" = "立即同步";
@@ -349,7 +349,7 @@
 /* Title indicating whether or not a private key can be used to derive some data from another piece of data. IE: Use one key to generate another */
 "certificateViewer.deriveTitle" = "导出";
 
-/* Title of the section for the Domain Component such as: DNS or brave.com or a website's domain. */
+/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
 "certificateViewer.domainComponentTitle" = "域组成部分";
 
 /* Title of the section indication which 'Encryption' algorithm was used. */
@@ -388,7 +388,7 @@
 /* Title of the section for Department of the Company. Example: Human Resources. */
 "certificateViewer.organizationalUnitTitle" = "公司业务部门";
 
-/* Title of the section for Name of the Company. Example: Brave Inc. */
+/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
 "certificateViewer.organizationTitle" = "公司";
 
 /* Title indicating 'Parameters' or Input passed to a function/algorithm. */
@@ -599,25 +599,25 @@
 "defaultBrowserCallout.introOpenSettingsButtonText" = "打开设置";
 
 /* Primary text on default browser popup screen */
-"defaultBrowserCallout.introPrimaryText" = "用 Brave 打开所有链接以保护您的隐私";
+"defaultBrowserCallout.introPrimaryText" = "用 Asil Browser 打开所有链接以保护您的隐私";
 
 /* Secondary text on default browser popup. */
-"defaultBrowserCallout.introSecondaryText" = "Brave Shields 可屏蔽跟踪器和广告、保存数据，并节省您访问每个网站的时间";
+"defaultBrowserCallout.introSecondaryText" = "Asil Browser Shields 可屏蔽跟踪器和广告、保存数据，并节省您访问每个网站的时间";
 
 /* Tertiary text on default browser popup screen */
-"defaultBrowserCallout.introTertiaryText" = "打开设置、点击默认浏览器应用，然后选择 Brave。";
+"defaultBrowserCallout.introTertiaryText" = "打开设置、点击默认浏览器应用，然后选择 Asil Browser。";
 
-/* Notification body to promote setting Brave app as default browser */
-"defaultBrowserCallout.notificationBody" = "针对 iOS %@ 进行了优化。立即将 Brave 设为您的默认浏览器。";
+/* Notification body to promote setting Asil Browser app as default browser */
+"defaultBrowserCallout.notificationBody" = "针对 iOS %@ 进行了优化。立即将 Asil Browser 设为您的默认浏览器。";
 
-/* Notification title to promote setting Brave app as default browser */
-"defaultBrowserCallout.notificationTitle" = "Brave 网页浏览器";
+/* Notification title to promote setting Asil Browser app as default browser */
+"defaultBrowserCallout.notificationTitle" = "Asil Browser 网页浏览器";
 
 /* No comment provided by engineer. */
 "defaultBrowserCalloutCloseAccesabilityLabel" = "关闭默认浏览器标注";
 
-/* Name for default Brave theme. */
-"defaultThemeName" = "Brave 默认";
+/* Name for default Asil Browser theme. */
+"defaultThemeName" = "Asil Browser 默认";
 
 /* No comment provided by engineer. */
 "Delete" = "删除";
@@ -772,10 +772,10 @@
 /* Allow link to switch apps? */
 "ExternalAppURLAlertTitle" = "允许连接以切换应用吗？";
 
-/* Allow Brave to open the external app URL */
+/* Allow Asil Browser to open the external app URL */
 "ExternalAppURLAllow" = "允许";
 
-/* Don't allow Brave to open the external app URL */
+/* Don't allow Asil Browser to open the external app URL */
 "ExternalAppURLDontAllow" = "不允许";
 
 /* Footer text when user selects to save to favorites when editing a bookmark */
@@ -854,10 +854,10 @@
 "HideLinkPreviewsActionTitle" = "隐藏链接预览";
 
 /* Hides the rewards icon */
-"HideRewardsIcon" = "隐藏 Brave Rewards 图标";
+"HideRewardsIcon" = "隐藏 Asil Browser Rewards 图标";
 
 /* Hide the rewards icon explination. */
-"HideRewardsIconSubtitle" = "未启用“Brave Rewards”时隐藏“Brave Rewards”图标";
+"HideRewardsIconSubtitle" = "未启用“Asil Browser Rewards”时隐藏“Asil Browser Rewards”图标";
 
 /* Title for history menu item */
 "HistortMenuItem" = "历史记录";
@@ -995,13 +995,13 @@
 "MonthlyAdsClaimNotificationBody" = "点按以领取免费代币。";
 
 /* The title of the notification that goes out monthly to users who can claim an ads grant */
-"MonthlyAdsClaimNotificationTitle" = "Brave 奖励 💵🎁";
+"MonthlyAdsClaimNotificationTitle" = "Asil Browser 奖励 💵🎁";
 
 /* No comment provided by engineer. */
 "MyFirstAdBody" = "点击此处了解更多信息。";
 
 /* No comment provided by engineer. */
-"MyFirstAdTitle" = "这是您的第一个 Brave 广告";
+"MyFirstAdTitle" = "这是您的第一个 Asil Browser 广告";
 
 /* Bookmark title / Device name */
 "Name" = "名称";
@@ -1063,14 +1063,14 @@
 /* Setting title for option to automatically redirect a url to another url */
 "nprRedirectFooter" = "自动将 NPR 链接重定向到其基于文本的版本（位于 text.npr.org）。";
 
-/* Bookmark title for Brave Support */
-"ntp.braveSupportFavoriteTitle" = "Brave 支持";
+/* Bookmark title for Asil Browser Support */
+"ntp.braveSupportFavoriteTitle" = "Asil Browser 支持";
 
 /* No comment provided by engineer. */
 "ntp.claimRewards" = "领取代币";
 
-/* Placeholder example: 'You earned 42 BAT by browsing with Brave.' */
-"ntp.earningsReport" = "您通过用 Brave 进行浏览赚取了 %@。";
+/* Placeholder example: 'You earned 42 BAT by browsing with Asil Browser.' */
+"ntp.earningsReport" = "您通过用 Asil Browser 进行浏览赚取了 %@。";
 
 /* The context is to praise the user that they did a good job, to keep it up. It is used in full sentence like: 'Way to go! You earned 40 BAT last month.' */
 "ntp.goodJob" = "太棒了！";
@@ -1079,10 +1079,10 @@
 "ntp.hideSponsoredImages" = "隐藏赞助图片";
 
 /* The text description of image type which is being used NTP */
-"ntp.imageTypeSelectionDescription" = "“赞助”是您可以通过启用 Brave Rewards 获得的额外品牌背景。";
+"ntp.imageTypeSelectionDescription" = "“赞助”是您可以通过启用 Asil Browser Rewards 获得的额外品牌背景。";
 
 /* No comment provided by engineer. */
-"ntp.learnMoreAboutRewards" = "了解更多有关 Brave Rewards 的内容";
+"ntp.learnMoreAboutRewards" = "了解更多有关 Asil Browser Rewards 的内容";
 
 /* No comment provided by engineer. */
 "ntp.learnMoreAboutSI" = "了解更多有关赞助图片的内容";
@@ -1114,17 +1114,17 @@
 /* The placeholder says 'Terms of Service'. So full sentence goes like: 'By turning Rewards, you agree to the Terms of Service'. */
 "ntp.turnRewardsTos" = "开启 Rewards 即表示您同意 %@。";
 
-/* Message when opting into brave Ads when region becomes available */
+/* Message when opting into Asil Browser Ads when region becomes available */
 "OBAdsOptInMessage" = "一边浏览，一边赚取代币并奖励创作者，以获得精彩内容。";
 
-/* Message when opting into brave Ads when region becomes available */
+/* Message when opting into Asil Browser Ads when region becomes available */
 "OBAdsOptInMessageJapan" = "一边浏览，一边赚取代币并奖励创作者，以获得精彩内容。";
 
-/* Title when opting into brave Ads when region becomes available */
-"OBAdsOptInTitle" = "Brave Ads 来了！";
+/* Title when opting into Asil Browser Ads when region becomes available */
+"OBAdsOptInTitle" = "Asil Browser Ads 来了！";
 
 /* Title for ads onboarding screen */
-"OBAdsTitle" = "Brave 会在以下时间内显示您的第一个广告：";
+"OBAdsTitle" = "Asil Browser 会在以下时间内显示您的第一个广告：";
 
 /* Title for when the user completes onboarding */
 "OBCompleteTitle" = "现在您可以开始了。";
@@ -1144,14 +1144,14 @@
 /* Button to finish onboarding and start using the app. */
 "OBFinishButton" = "开始浏览";
 
-/* Button to join Brave Rewards. */
+/* Button to join Asil Browser Rewards. */
 "OBJoinButton" = "加入";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentClipboardPermission" = "允许 Brave 检查我的剪贴板中是否有匹配的推荐代码";
+"OBPrivacyConsentClipboardPermission" = "允许 Asil Browser 检查我的剪贴板中是否有匹配的推荐代码";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentDetail" = "您可能已经下载了 Brave 以支持您的推荐人。为了检测您的引荐来源，Brave 会对剪贴板进行一次一次性的检查以查找匹配的推荐代码。此检查仅限于代码，不会传输其他个人数据。如果您选择退出，推荐人将不会获得 Brave 的奖励。";
+"OBPrivacyConsentDetail" = "您可能已经下载了 Asil Browser 以支持您的推荐人。为了检测您的引荐来源，Asil Browser 会对剪贴板进行一次一次性的检查以查找匹配的推荐代码。此检查仅限于代码，不会传输其他个人数据。如果您选择退出，推荐人将不会获得 Asil Browser 的奖励。";
 
 /* No comment provided by engineer. */
 "OBPrivacyConsentNoButton" = "不允许此检查";
@@ -1172,10 +1172,10 @@
 "OBRewardsAgreementDetailsAnd" = "和";
 
 /* Title for rewards agreement onboarding screen */
-"OBRewardsAgreementTitle" = "Brave 奖励";
+"OBRewardsAgreementTitle" = "Asil Browser 奖励";
 
 /* Detail text for rewards onboarding screen */
-"OBRewardsDetail" = "选择加入 Brave 私密广告后，每查看一条广告，即可支持发布者和内容创作者。";
+"OBRewardsDetail" = "选择加入 Asil Browser 私密广告后，每查看一条广告，即可支持发布者和内容创作者。";
 
 /* Detail text for rewards onboarding screen */
 "OBRewardsDetailInAdRegion" = "一边浏览，一边赚取代币并奖励创作者，以获得精彩内容。";
@@ -1184,7 +1184,7 @@
 "OBRewardsPrivacyPolicyDetailLink" = "隐私政策";
 
 /* Title for rewards onboarding screen */
-"OBRewardsTitle" = "Brave 奖励";
+"OBRewardsTitle" = "Asil Browser 奖励";
 
 /* Save button to save current selection */
 "OBSaveButton" = "保存";
@@ -1199,22 +1199,22 @@
 "OBShieldsDetail" = "拦截侵犯隐私的跟踪程序，让您能够浏览网络内容，无需担心被跟踪";
 
 /* Title for shields onboarding screen */
-"OBShieldsTitle" = "Brave Shields";
+"OBShieldsTitle" = "Asil Browser Shields";
 
-/* Button to show the Brave Rewards Ads. */
+/* Button to show the Asil Browser Rewards Ads. */
 "OBShowMeButton" = "给我看看";
 
-/* Button to show Brave Rewards. */
+/* Button to show Asil Browser Rewards. */
 "OBTurnOnButton" = "开始";
 
 /* The description text shown when there is big tech tracker among trackers. Example usage: Google, Amazon and 32 other trackers blocked */
 "onboarding.blockedAdsOnboardingBigTechInformationText" = "%1$@ 和 %2$lld 个其他广告和跟踪器被屏蔽";
 
-/* The footnote indicating what Brave shields is blocking */
-"onboarding.blockedAdsOnboardingFootnoteText" = "使用 Shields 在每个页面上查看 Brave 阻止的所有不良内容。";
+/* The footnote indicating what Asil Browser shields is blocking */
+"onboarding.blockedAdsOnboardingFootnoteText" = "使用 Shields 在每个页面上查看 Asil Browser 阻止的所有不良内容。";
 
 /* The text describing user where they should press in order to open Shield panel */
-"onboarding.blockedAdsOnboardingInstructionsText" = "点击查看 Brave Shields";
+"onboarding.blockedAdsOnboardingInstructionsText" = "点击查看 Asil Browser Shields";
 
 /* The description text shown when there is no big tech tracker among trackers. Example usage: 31 Ads & trackers blocked. The number here is presented separately so it is not in translation. */
 "onboarding.blockedAdsOnboardingNoBigTechInformationText" = "广告和跟踪器被阻止";
@@ -1229,7 +1229,7 @@
 "onboarding.ntpOnboardingPopOverTrackerDescription" = "屏蔽跟踪程序和广告后，可将网站数据用量减少，加载速度更快。";
 
 /* Description for the Omnibox (URL Bar) pop-over that describes faster load times. */
-"onboarding.omniboxOnboardingPopOverDescription" = "看到 Brave 的不同：\n没有广告。没有跟踪器。页面加载速度更快。";
+"onboarding.omniboxOnboardingPopOverDescription" = "看到 Asil Browser 的不同：\n没有广告。没有跟踪器。页面加载速度更快。";
 
 /* Title for the Omnibox (URL Bar) pop-over that describes faster load times. */
 "onboarding.omniboxOnboardingPopOverTitle" = "输入网站名称或 URL";
@@ -1249,8 +1249,8 @@
 /* Context menu item for opening all folder bookmarks */
 "OpenAllBookmarks" = "打开所有（%i）";
 
-/* Button title for opening the Brave Rewards panel to settings */
-"OpenBraveRewardsSettings" = "打开 Brave Rewards 设置";
+/* Button title for opening the Asil Browser Rewards panel to settings */
+"OpenBraveRewardsSettings" = "打开 Asil Browser Rewards 设置";
 
 /* Error description when there is an error while navigating to Files App */
 "OpenDownloadsFolderErrorDescription" = "在“文件”应用中打开“下载”文件夹时出现未知错误。";
@@ -1295,13 +1295,13 @@
 "opentabs.noSyncChainPlaceHolderViewDescription" = "首先，设置一个同步链并在同步设置中切换“打开选项卡”。";
 
 /* The additional description of the view describing tab syncing should be enabled. */
-"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "在设置中管理 Brave 同步的内容。";
+"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "在设置中管理 Asil Browser 同步的内容。";
 
 /* The description of the view describing no other sessions are active in sync. */
 "opentabs.noSyncSessionPlaceHolderViewDescription" = "您的其他设备上没有可显示的现有会话。";
 
 /* The title of the view showing no synced sessions */
-"opentabs.noSyncSessionPlaceHolderViewTitle" = "此空间显示在其他设备中打开的 Brave 选项卡";
+"opentabs.noSyncSessionPlaceHolderViewTitle" = "此空间显示在其他设备中打开的 Asil Browser 选项卡";
 
 /* The title for the action to hide open session with all tabs */
 "opentabs.openSessionHideAllActionTitle" = "暂时隐藏";
@@ -1354,35 +1354,35 @@
 /* Button title to that opens a website. */
 "OpenWebsite" = "打开网站";
 
-/* The subtitle description of menu item Brave News */
+/* The subtitle description of menu item Asil Browser News */
 "optionsMenu.braveNewsItemDescription" = "私密新闻订阅源中的今日头条新闻";
 
-/* Brave News Item Menu title */
+/* Asil Browser News Item Menu title */
 "optionsMenu.braveNewsItemTitle" = "新闻";
 
-/* The subtitle description of menu item Brave Playlist */
+/* The subtitle description of menu item Asil Browser Playlist */
 "optionsMenu.bravePlaylistItemDescription" = "保留任何视频/流媒体的离线播放列表";
 
-/* Brave News Item Menu title */
+/* Asil Browser News Item Menu title */
 "optionsMenu.bravePlaylistItemTitle" = "播放列表";
 
-/* The subtitle description of menu item Brave Talk */
+/* The subtitle description of menu item Asil Browser Talk */
 "optionsMenu.braveTalkItemDescription" = "直接在浏览器中完成私密视频通话";
 
-/* Brave Talk Item Menu title */
+/* Asil Browser Talk Item Menu title */
 "optionsMenu.braveTalkItemTitle" = "Talk";
 
-/* The subtitle description of menu item Brave VPN */
+/* The subtitle description of menu item Asil Browser VPN */
 "optionsMenu.braveVPNItemDescription" = "在线保护您的完整设备";
 
-/* Brave VPN Item Menu title */
+/* Asil Browser VPN Item Menu title */
 "optionsMenu.braveVPNItemTitle" = "VPN";
 
-/* The subtitle description of menu item Brave Wallet */
+/* The subtitle description of menu item Asil Browser Wallet */
 "optionsMenu.braveWalletItemDescription" = "安全加密货币钱包，无需扩展程序";
 
 /* Privacy Features Section title */
-"optionsMenu.menuSectionTitle" = "Brave 功能";
+"optionsMenu.menuSectionTitle" = "Asil Browser 功能";
 
 /* Section name for other privacy settings */
 "OtherPrivacySettingsSection" = "其他隐私设置";
@@ -1390,10 +1390,10 @@
 /* Section name for other settings. */
 "OtherSettingsSection" = "其他设置";
 
-/* A subtitle shown on the setting that toggles analytics on Brave. */
-"p3a.settingSubtitle" = "匿名的 P3A 信息可协助 Brave 预估整体使用量，并确保我们可以改进受欢迎的功能。";
+/* A subtitle shown on the setting that toggles analytics on Asil Browser. */
+"p3a.settingSubtitle" = "匿名的 P3A 信息可协助 Asil Browser 预估整体使用量，并确保我们可以改进受欢迎的功能。";
 
-/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Brave. */
+/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
 "p3a.settingTitle" = "允许保护隐私的产品分析 (P3A)";
 
 /* Title for the section for the global/default zoom level */
@@ -1478,7 +1478,7 @@
 "playList.loadResourcesErrorAlertDescription" = "加载资源时出现问题。";
 
 /* Description footer for playlist menu badge option */
-"playlist.menuBadgeOptionFooterText" = "启用后，主菜单图标上会显示一个徽章，表示可以将页面上的媒体添加到 Brave 播放列单中。";
+"playlist.menuBadgeOptionFooterText" = "启用后，主菜单图标上会显示一个徽章，表示可以将页面上的媒体添加到 Asil Browser 播放列单中。";
 
 /* Title for playlist menu badge option */
 "playlist.menuBadgeOptionTitle" = "显示菜单通知徽章";
@@ -1487,7 +1487,7 @@
 "playlist.movePlaylistShareActionMenuTitle" = "移动...";
 
 /* Detail Text when there are no items in the playlist */
-"playList.noItemLabelDetailLabel" = "您可以在浏览器中将项目添加到 Brave 播放列表";
+"playList.noItemLabelDetailLabel" = "您可以在浏览器中将项目添加到 Asil Browser 播放列表";
 
 /* Text when there are no items in the playlist */
 "playList.noItemLabelTitle" = "无可用项目";
@@ -1565,7 +1565,7 @@
 "playList.playListSettingTitle" = "播放列表";
 
 /* Body for the error message that shows when a playlist folder already exists */
-"playList.playlistSharedFolderAlreadyExistsBody" = "此文件夹已在您的 Brave 播放列表中";
+"playList.playlistSharedFolderAlreadyExistsBody" = "此文件夹已在您的 Asil Browser 播放列表中";
 
 /* Title for the error message that shows when a playlist folder already exists */
 "playList.playlistSharedFolderAlreadyExistsTitle" = "抱歉";
@@ -1601,13 +1601,13 @@
 "playlist.playlistWebCompatibilityTitle" = "Web 兼容性";
 
 /* Body of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddBody" = "Brave 播放列表支持离线播放、画中画、连续播放和重复模式。";
+"playlist.popoverAddBody" = "Asil Browser 播放列表支持离线播放、画中画、连续播放和重复模式。";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddedTitle" = "此媒体已在您的 Asil Browser 播放列表中";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddTitle" = "您想将此媒体添加到您的 Brave 播放列表中？";
+"playlist.popoverAddTitle" = "您想将此媒体添加到您的 Asil Browser 播放列表中？";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverOpenInBravePlaylist" = "在 Asil Browser 播放列表中打开";
@@ -1652,7 +1652,7 @@
 "playlist.sharePlaylistActionDetailsTitle" = "您可以在新选项卡中打开当前项目，或通过系统共享菜单进行共享";
 
 /* Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
-"playlist.sharePlaylistActionTitle" = "Brave 播放列表菜单";
+"playlist.sharePlaylistActionTitle" = "Asil Browser 播放列表菜单";
 
 /* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
 "playlist.sharePlaylistOpenInNewPrivateTabTitle" = "在私人标签中打开";
@@ -1676,10 +1676,10 @@
 "playList.toastAddToPlaylistTitle" = "添加至 Asil Browser Playlist";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
-"playList.toastExitingItemPlaylistTitle" = "在 Brave Playlist 中查看";
+"playList.toastExitingItemPlaylistTitle" = "在 Asil Browser Playlist 中查看";
 
 /* Footer for option to disable URL-Bar button */
-"playlist.urlBarButtonOptionFooter" = "在 Brave 浏览器的地址栏旁边添加一个播放列表按钮（它看起来就象是 4 行带有一个 + 符号）。此按钮可让您能够快速访问、打开播放列表，或者添加或删除媒体。";
+"playlist.urlBarButtonOptionFooter" = "在 Asil Browser 浏览器的地址栏旁边添加一个播放列表按钮（它看起来就象是 4 行带有一个 + 符号）。此按钮可让您能够快速访问、打开播放列表，或者添加或删除媒体。";
 
 /* Title for option to disable URL-Bar button */
 "playlist.urlBarButtonOptionTitle" = "启用快速访问按钮";
@@ -1708,7 +1708,7 @@
 /* The title of the screen where the user will move an item from one folder to another folder. */
 "playlistFolders.moveFolderScreenTitle" = "移动";
 
-/* %@ Should NOT be localized. It is a placeholder. Example: Brave Folder and 1 more item. */
+/* %@ Should NOT be localized. It is a placeholder. Example: Asil Browser Folder and 1 more item. */
 "playlistFolders.moveItemDescription" = "%@ 和另外 1 个项目";
 
 /* %lld is a placeholder and should not be localized. Sometimes items can have no name. So this is a generic title to use */
@@ -1717,7 +1717,7 @@
 /* Sometimes an item can have no name. So this is a generic title to use */
 "playlistFolders.moveItemWithNoNameTitle" = "1 个项目";
 
-/* %@ and %lld Should NOT be localized. They are placeholders. Example: Brave Folder and 3 more items. Music and 2 more items. */
+/* %@ and %lld Should NOT be localized. They are placeholders. Example: Asil Browser Folder and 3 more items. Music and 2 more items. */
 "playlistFolders.moveMultipleItemDescription" = "%1$@ 和另外 %2$lld 个项目";
 
 /* The title of the button to create a new folder */
@@ -1751,7 +1751,7 @@
 "playlistFolders.untitledFolderTitle" = "无标题文件夹";
 
 /* Accessibility Title for the button that adds the playlist to the database. */
-"playlistFolderSharing.addButtonAccessibilityTitle" = "添加到 Brave 播放列表按钮";
+"playlistFolderSharing.addButtonAccessibilityTitle" = "添加到 Asil Browser 播放列表按钮";
 
 /* Title for the button that adds the playlist to the database. */
 "playlistFolderSharing.addButtonTitle" = "添加";
@@ -1795,7 +1795,7 @@
 /* Description for closing a popover menu that is displayed. */
 "PopoverDefaultClose" = "关闭 Context 菜单";
 
-/* Description for closing the `Brave Shields` popover menu that is displayed. */
+/* Description for closing the `Asil Browser Shields` popover menu that is displayed. */
 "PopoverShieldsMenuClose" = "关闭 Shields 菜单";
 
 /* Label for preview action on Tab Tray Tab to add current tab to Bookmarks */
@@ -1819,7 +1819,7 @@
 /* Header text, under it we show items blocked by our ad blocker. 'All  time' sentence context is like 'All time items blocked by our ad blocker. */
 "privacyHub.allTimeListsHeader" = "所有时间";
 
-/* Title of a section to show total count of trackers blocked by Brave */
+/* Title of a section to show total count of trackers blocked by Asil Browser */
 "privacyHub.allTimeListsTrackersView" = "跟踪器和广告";
 
 /* Title of a section to show websites containing highest amount of trackers */
@@ -1843,10 +1843,10 @@
 /* Title under which we display a website on which there's the highest number of trackers or ads. */
 "privacyHub.allTimeWebsiteTitle" = "网站";
 
-/* Text for a button to display a list of all alerts caught by the Brave VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
+/* Text for a button to display a list of all alerts caught by the Asil Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
 "privacyHub.allVPNAlertsButtonText" = "所有警报";
 
-/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Brave Shields', 'Blocked by BraveVPN */
+/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Asil Browser Shields', 'Blocked by BraveVPN */
 "privacyHub.blockedBy" = "封鎖操作方";
 
 /* It says that a ad or tracker was blocked. Think of it in context of 'A tracker X was blocked' */
@@ -1864,8 +1864,8 @@
 /* Header text, under it we display blocked items from last week */
 "privacyHub.lastWeekHeader" = "上周";
 
-/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Brave Shields on 42 sites' */
-"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** 在 **%2$lld** 网站上被 Brave Shields 阻止";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Asil Browser Shields on 42 sites' */
+"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** 在 **%2$lld** 网站上被 Asil Browser Shields 阻止";
 
 /* Title under which we display a tracker which was most frequently detected by our ad blocking mechanism. */
 "privacyHub.mostFrequentTrackerAndAdTitle" = "最常见的跟踪器和广告";
@@ -1883,7 +1883,7 @@
 "privacyHub.notificationCalloutButtonText" = "开启通知";
 
 /* Message of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
-"privacyHub.notificationMessage" = "回顾本周 Brave 是如何在线保护您的。";
+"privacyHub.notificationMessage" = "回顾本周 Asil Browser 是如何在线保护您的。";
 
 /* Title of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
 "privacyHub.notificationTitle" = "每周隐私报告";
@@ -1897,7 +1897,7 @@
 /* Text of a disclaimer that explains how the data for generating privacy reprots is stored. */
 "privacyHub.privacyReportsDisclaimer" = "隐私中心的数据是存储在本地的，从不发送到任何地方。";
 
-/* Title of main privacy hub screen. This screen shows various stats caught by Brave's ad blockers. */
+/* Title of main privacy hub screen. This screen shows various stats caught by Asil Browser's ad blockers. */
 "privacyHub.privacyReportsTitle" = "隐私中心";
 
 /* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which website had the most tracker per visit, example usage: 'example.com had an average of 10 trackers & ads blocked per visit ' */
@@ -1906,22 +1906,22 @@
 /* Title of a website that contained the most trackers per visit. */
 "privacyHub.riskiestWebsiteTitle" = "追踪器数量最多的网站";
 
-/* This text explains a setting that lets Brave monitor blocked network requests */
+/* This text explains a setting that lets Asil Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsFooter" = "隐私中心显示 Shields 阻止的内容的计数。设置不会影响新标签页上的 Shields 计数器。Shields 数据不计入私人窗口。";
 
-/* Title of a setting that lets Brave monitor blocked network requests */
+/* Title of a setting that lets Asil Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsTitle" = "显示 Shields 数据";
 
-/* This text explains a setting that lets Brave monitor blocked network requests captured by Brave VPN */
+/* This text explains a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
 "privacyHub.settingsEnableVPNAlertsFooter" = "设置仅适用于您已购买 VPN 订阅的情况。";
 
-/* Title of a setting that lets Brave monitor blocked network requests captured by Brave VPN */
+/* Title of a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
 "privacyHub.settingsEnableVPNAlertsTitle" = "显示 VPN 警报";
 
 /* This text explains what the button to clear datain the Privacy Hub is for. */
 "privacyHub.settingsSlearDataFooter" = "重置 Shields 已阻止的所有内容的计数。";
 
-/* Button that lets user clear all blocked requests and vpn alerts data that Brave captured for them. */
+/* Button that lets user clear all blocked requests and vpn alerts data that Asil Browser captured for them. */
 "privacyHub.settingsSlearDataTitle" = "清除 Shields 数据";
 
 /* This label says shields, as a source of by what a resource was blocked. Think of it in context of 'Blocked by Shields' */
@@ -1946,15 +1946,15 @@
 "privacyHub.vpnAlertRegularTrackerTypeSingular" = "跟踪器或广告";
 
 /* Section title, this section displays vpn alerts: items which the vpn managed to block on users behalf. */
-"privacyHub.vpnAlertsHeader" = "Brave 防火墙 + VPN 警报";
+"privacyHub.vpnAlertsHeader" = "Asil Browser 防火墙 + VPN 警报";
 
-/* This label says about Brave VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
+/* This label says about Asil Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
 "privacyHub.vpnLabel" = " 防火墙 + VPN";
 
 /* It shows a total count of items blocked by our VPN shields */
 "privacyHub.vpvnAlertsTotalCount" = "总数";
 
-/* Show Brave Browser Privacy Policy page from the Privacy section in the settings. */
+/* Show Asil Browser Browser Privacy Policy page from the Privacy section in the settings. */
 "PrivacyPolicy" = "隐私政策";
 
 /* Private button title */
@@ -1970,10 +1970,10 @@
 "PrivateBrowsingOnlyWarning" = "“仅私人浏览”模式会关闭所有当前选项卡，而且还会将你退出所有站点。";
 
 /* Private tab details */
-"PrivateTabBody" = "私人标签未保存在 Brave 上，但它们不会让您在线匿名。您在私人标签中访问的网站将不会在您的历史记录中显示，并且当您关闭那些网站时，其 Cookie 总是会消失，而不会在Brave  中留下任何痕迹。但是，下载会被保存。\n您的移动运营商（或您所连接的 WiFi 网络或 VPN  的所有者）可以看到您访问了哪些网站，而那些网站会指导您的公共 IP 地址（即使在私人标签中也是如此）。";
+"PrivateTabBody" = "私人标签未保存在 Asil Browser 上，但它们不会让您在线匿名。您在私人标签中访问的网站将不会在您的历史记录中显示，并且当您关闭那些网站时，其 Cookie 总是会消失，而不会在Brave  中留下任何痕迹。但是，下载会被保存。\n您的移动运营商（或您所连接的 WiFi 网络或 VPN  的所有者）可以看到您访问了哪些网站，而那些网站会指导您的公共 IP 地址（即使在私人标签中也是如此）。";
 
 /* Private tab detail text */
-"PrivateTabDetails" = "使用私人标签只会更改 Brave 在您设备上的操作，不会更改其他应用在您设备上的操作。\n\n当您访问网站时，网站会随时知晓您的 IP 地址。由此地址，他们通常可以大致猜测您的位置（通常是您所在的城市）。有时，对于位置的猜测可能更加具体。网站也会知晓您明确告诉他们的所有内容，例如您的搜索条件。如果您登录某个网站，他们就会知晓您是该帐户的所有者。当您关闭私人标签时，您仍然会被迫退出，因为 Brave 会删除辅助您随时登录的 cookie。\n\n为您连网（您的 ISP）的任何人都可以看到您所有的网络活动。通常是您的移动运营商。如果您连接到 WiFi 网络，则是该网络的所有者，如果您在使用 VPN，则是运行该 VPN 的人。您的 ISP 可以在您访问时查看您访问的网站。如果这些网站使用 HTTPS，它们只能对您在这些网站上所进行的操作进行合理的猜测。但是，如果某个网站仅使用 HTTP，那么您的 ISP 可以查看所有内容：您的搜索条件，您所阅读的页面以及您关注的链接。\n\n如果雇主管理您的设备，他们也可能会跟踪您的设备。使用私人标签可能不会阻止他们知晓您访问过哪些网站。有权访问您设备的其他人也可能安装了监控您活动的软件，而私人标签 也无法保护您不受此影响。";
+"PrivateTabDetails" = "使用私人标签只会更改 Asil Browser 在您设备上的操作，不会更改其他应用在您设备上的操作。\n\n当您访问网站时，网站会随时知晓您的 IP 地址。由此地址，他们通常可以大致猜测您的位置（通常是您所在的城市）。有时，对于位置的猜测可能更加具体。网站也会知晓您明确告诉他们的所有内容，例如您的搜索条件。如果您登录某个网站，他们就会知晓您是该帐户的所有者。当您关闭私人标签时，您仍然会被迫退出，因为 Asil Browser 会删除辅助您随时登录的 cookie。\n\n为您连网（您的 ISP）的任何人都可以看到您所有的网络活动。通常是您的移动运营商。如果您连接到 WiFi 网络，则是该网络的所有者，如果您在使用 VPN，则是运行该 VPN 的人。您的 ISP 可以在您访问时查看您访问的网站。如果这些网站使用 HTTPS，它们只能对您在这些网站上所进行的操作进行合理的猜测。但是，如果某个网站仅使用 HTTP，那么您的 ISP 可以查看所有内容：您的搜索条件，您所阅读的页面以及您关注的链接。\n\n如果雇主管理您的设备，他们也可能会跟踪您的设备。使用私人标签可能不会阻止他们知晓您访问过哪些网站。有权访问您设备的其他人也可能安装了监控您活动的软件，而私人标签 也无法保护您不受此影响。";
 
 /* Private tab information link */
 "PrivateTabLink" = "了解私人标签";
@@ -1987,8 +1987,8 @@
 /* Title for quick-search engines settings section. */
 "QuickSearchEngines" = "快速搜索引擎";
 
-/* Open the App Store to rate Brave. */
-"RateBrave" = "对 Brave 评分";
+/* Open the App Store to rate Asil Browser. */
+"RateBrave" = "对 Asil Browser 评分";
 
 /* Accessibility label for button increasing font size in display settings of reader mode */
 "ReaderModeBiggerFontButtonAccessibilityLabel" = "增大字体";
@@ -2017,13 +2017,13 @@
 /* Accessibility hint for the font type buttons in reader mode display settings */
 "ReaderModeFontTypeButtonAccessibilityHint" = "更改字体。";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Brave reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModeLoadingContentDisplayText" = "正在加载内容…";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Brave reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModeLoadOriginalLinkText" = "加载原始页面";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Brave reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModePageCantShowDisplayText" = "该页面无法在阅读器视图中显示。";
 
 /* Title of a bar that show up when you enter reader mode. */
@@ -2069,7 +2069,7 @@
 "RecentSearchScanned" = "已扫描";
 
 /* Scanning a QR Code for searching body */
-"RecentSearchScannerDescriptionBody" = "我每天都通过使用 Brave 浏览网页来保存数据。";
+"RecentSearchScannerDescriptionBody" = "我每天都通过使用 Asil Browser 浏览网页来保存数据。";
 
 /* Scanning a QR Code for title */
 "RecentSearchScannerDescriptionTitle" = "说明";
@@ -2108,10 +2108,10 @@
 "ReportABug" = "报告缺陷";
 
 /* First part of the report a broken site copy. After the colon is a new line and then a website address */
-"ReportBrokenSiteBody1" = "让 Brave 的开发人员知道此网站无法与 Shields 一起正常使用：";
+"ReportBrokenSiteBody1" = "让 Asil Browser 的开发人员知道此网站无法与 Shields 一起正常使用：";
 
 /* No comment provided by engineer. */
-"ReportBrokenSiteBody2" = "注意：该站点地址将与您使用的 Brave 的版本号和 IP 地址（不会存储）一起被提交。";
+"ReportBrokenSiteBody2" = "注意：该站点地址将与您使用的 Asil Browser 的版本号和 IP 地址（不会存储）一起被提交。";
 
 /* No comment provided by engineer. */
 "ReportBrokenSubmitButtonTitle" = "提交";
@@ -2134,28 +2134,28 @@
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "这很尴尬。";
 
-/* Body for Brave Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInBody" = "借助 Brave Rewards，您可以查看来自 Brave Ads 网络的隐私保护广告。无需跟踪器，无需减速，而您的数据绝对安全。";
+/* Body for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInBody" = "借助 Asil Browser Rewards，您可以查看来自 Asil Browser Ads 网络的隐私保护广告。无需跟踪器，无需减速，而您的数据绝对安全。";
 
-/* Title for Brave Talk rewards opt-in screen button */
+/* Title for Asil Browser Talk rewards opt-in screen button */
 "rewards.braveTalkRewardsOptInButtonTitle" = "開啟 Rewards";
 
-/* Body for successful Brave Talk rewards opt-in */
-"rewards.braveTalkRewardsOptInSuccessBody" = "点击屏幕上的任意位置即可继续 Brave Talk。";
+/* Body for successful Asil Browser Talk rewards opt-in */
+"rewards.braveTalkRewardsOptInSuccessBody" = "点击屏幕上的任意位置即可继续 Asil Browser Talk。";
 
-/* Title for successful Brave Talk rewards opt-in */
+/* Title for successful Asil Browser Talk rewards opt-in */
 "rewards.braveTalkRewardsOptInSuccessTitle" = "您现在可以开始免费通话了";
 
-/* Title for Brave Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInTitle" = "要开始免费通话，开启 Brave Rewards";
+/* Title for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInTitle" = "要开始免费通话，开启 Asil Browser Rewards";
 
-/* Displayed when Brave Rewards is disabled */
+/* Displayed when Asil Browser Rewards is disabled */
 "rewards.disabledBody" = "开启以帮助支持内容创建者";
 
 /* Displayed in the status container when rewards is disabled */
-"rewards.disabledStatusBody" = "在浏览时使用 Brave Rewards 功能帮助支持内容创建者。";
+"rewards.disabledStatusBody" = "在浏览时使用 Asil Browser Rewards 功能帮助支持内容创建者。";
 
-/* Displayed when Brave Rewards is enabled */
+/* Displayed when Asil Browser Rewards is enabled */
 "rewards.enabledBody" = "您即将帮助支持内容创建者";
 
 /* Displayed in the status container when rewards is enabled but you're not currently supporting any publishers (0 AC count) */
@@ -2180,7 +2180,7 @@
 "rewards.legacyWalletTransferStatusButtonPendingTitle" = "您的旧钱包转账状态为暂停";
 
 /* No comment provided by engineer. */
-"rewards.legacyWalletTransferStatusCompletedBody" = "您的旧钱包转账已完成！当前余额可能需要几分钟才会出现在桌面版 Brave Rewards 钱包中。";
+"rewards.legacyWalletTransferStatusCompletedBody" = "您的旧钱包转账已完成！当前余额可能需要几分钟才会出现在桌面版 Asil Browser Rewards 钱包中。";
 
 /* Title shown above body of text explaining that their transfer is completed */
 "rewards.legacyWalletTransferStatusCompletedTitle" = "转账完成！";
@@ -2231,13 +2231,13 @@
 "rewards.optInDisclaimer" = "点击即表示您同意 %1$@ 和 %2$@。随时可在“设置”中禁用。";
 
 /* No comment provided by engineer. */
-"rewards.settingsFooterMessage" = "暂时无法在此设备上使用 Brave Rewards。将您钱包里现有的资金转账到台式机钱包中可保留代币。";
+"rewards.settingsFooterMessage" = "暂时无法在此设备上使用 Asil Browser Rewards。将您钱包里现有的资金转账到台式机钱包中可保留代币。";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleMessage" = "通过启用 Brave Private Ads 自动支持内容创建者和发布者。Brave Private Ads 是尊重隐私的、回馈内容创作者的广告。";
+"rewards.settingsToggleMessage" = "通过启用 Asil Browser Private Ads 自动支持内容创建者和发布者。Asil Browser Private Ads 是尊重隐私的、回馈内容创作者的广告。";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleTitle" = "开启 Brave Rewards";
+"rewards.settingsToggleTitle" = "开启 Asil Browser Rewards";
 
 /* Displayed under verified publishers */
 "rewards.supportingPublisher" = "您即将帮助支持象这一位这样的内容创建者。";
@@ -2252,19 +2252,19 @@
 "rewards.unverifiedPublisher" = "该创建者尚未验证，因此不会受创建者支持";
 
 /* A confirmation message shown to the user after completing a wallet transfer successfully */
-"rewards.walletTransferCompleteBody" = "您的转账程序已启动。现有，所有 BAT 余额可能都需要几分钟才能显示在您桌面的 Brave Reward 钱包中。完成转账后，请在桌面上查看您的“奖励”摘要以了解详情。\n\n您可以关闭此窗口，并在转账过程中继续使用 Brave。";
+"rewards.walletTransferCompleteBody" = "您的转账程序已启动。现有，所有 BAT 余额可能都需要几分钟才能显示在您桌面的 Asil Browser Reward 钱包中。完成转账后，请在桌面上查看您的“奖励”摘要以了解详情。\n\n您可以关闭此窗口，并在转账过程中继续使用 Asil Browser。";
 
 /* Title shown above the confirmation message after completing a wallet transfer successfully */
 "rewards.walletTransferCompleteTitle" = "余额转移已启动";
 
 /* Message on the alert presented if wallet transfer fails */
-"rewards.walletTransferFailureAlertMessage" = "Brave Rewards 服务器未响应。请稍后重试。";
+"rewards.walletTransferFailureAlertMessage" = "Asil Browser Rewards 服务器未响应。请稍后重试。";
 
 /* Title on the alert presented if wallet transfer fails */
 "rewards.walletTransferFailureAlertTitle" = "连接错误";
 
 /* Describes the steps for using wallet transfer */
-"rewards.walletTransferStepsBody" = "您的 Brave Rewards 代币余额可以一次转到现有的 Brave Rewards 桌面钱包中。\n\n1. 在桌面上打开 Brave 浏览器 \n2. 导航至 brave://rewards\n3. 点击“QR 码”\n4. 使用设备扫描 QR 码";
+"rewards.walletTransferStepsBody" = "您的 Asil Browser Rewards 代币余额可以一次转到现有的 Asil Browser Rewards 桌面钱包中。\n\n1. 在桌面上打开 Asil Browser 浏览器 \n2. 导航至 Asil Browser://rewards\n3. 点击“QR 码”\n4. 使用设备扫描 QR 码";
 
 /* Title above the steps to use wallet transfer */
 "rewards.walletTransferStepsTitle" = "扫描一次性转账码";
@@ -2297,7 +2297,7 @@
 "RewardsInternalsContributionAmount" = "捐款金额";
 
 /* No comment provided by engineer. */
-"RewardsInternalsContributionProcessorBraveTokens" = "Brave 代币";
+"RewardsInternalsContributionProcessorBraveTokens" = "Asil Browser 代币";
 
 /* No comment provided by engineer. */
 "RewardsInternalsContributionProcessorNone" = "无";
@@ -2449,7 +2449,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsShare" = "分享";
 
-/* 'Rewards' as in 'Brave Rewards' */
+/* 'Rewards' as in 'Asil Browser Rewards' */
 "RewardsInternalsShareInternalsTitle" = "分享奖励（内部）";
 
 /* No comment provided by engineer. */
@@ -2467,7 +2467,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsSupported" = "受支持";
 
-/* 'Rewards' as in 'Brave Rewards' */
+/* 'Rewards' as in 'Asil Browser Rewards' */
 "RewardsInternalsTitle" = "奖励（内部）";
 
 /* No comment provided by engineer. */
@@ -2582,24 +2582,24 @@
 "SearchSuggestionsSectionHeader" = "搜索建议";
 
 /* Title of an action that allows user to perform a one-click web search for selected text */
-"SearchWithBrave" = "使用 Brave 搜寻";
+"SearchWithBrave" = "使用 Asil Browser 搜寻";
 
 /* Settings security section title */
 "Security" = "安全";
 
 /* Message displayed in the crash dialog above the buttons used to select when sending reports */
-"SendCrashReportAlertMessage" = "发送崩溃报告，Brave 可以修复问题？";
+"SendCrashReportAlertMessage" = "发送崩溃报告，Asil Browser 可以修复问题？";
 
 /* Title for prompt displayed to user after the app crashes */
-"SendCrashReportAlertTitle" = "糟糕！Brave 崩溃了";
+"SendCrashReportAlertTitle" = "糟糕！Asil Browser 崩溃了";
 
 /* Used as a button label for crash dialog prompt */
 "SendReportButtonTitle" = "发送报告";
 
 /* No comment provided by engineer. */
-"setDefaultBrowserCalloutTitle" = "现在，您可将 Brave 设置为您的 iOS 默认浏览器。点击此处打开设置。";
+"setDefaultBrowserCalloutTitle" = "现在，您可将 Asil Browser 设置为您的 iOS 默认浏览器。点击此处打开设置。";
 
-/* Settings item to set the Brave as a default browser on the iOS device. */
+/* Settings item to set the Asil Browser as a default browser on the iOS device. */
 "setDefaultBrowserSettingsCell" = "设为默认浏览器";
 
 /* No comment provided by engineer. */
@@ -2621,7 +2621,7 @@
 "settings.autocloseTabsSetting" = "关闭标签";
 
 /* Description of autoclose tabs feature. */
-"settings.autocloseTabsSettingFooter" = "允许 Brave 自动关闭最近未查看的标签。";
+"settings.autocloseTabsSettingFooter" = "允许 Asil Browser 自动关闭最近未查看的标签。";
 
 /* Error message that is shown in settings when there was a problem loading */
 "SettingsContentLoadErrorMessage" = "无法加载页面。";
@@ -2681,7 +2681,7 @@
 "shieldEducation.shareTheNewsTitle" = "分享消息";
 
 /* Subtitle for Shield Education Tracker Ad Warning */
-"shieldEducation.trackerAdWarningSubTitle" = "Brave Shields 只是保护了您的在线隐私。";
+"shieldEducation.trackerAdWarningSubTitle" = "Asil Browser Shields 只是保护了您的在线隐私。";
 
 /* Subtitle for Shield Education Tracker Count Share */
 "shieldEducation.trackerCountShareSubtitle" = "您很特别。恭喜您！";
@@ -2696,13 +2696,13 @@
 "shieldEducation.videoAdBlockTitle" = "在此网站上观看视频时，广告被屏蔽。";
 
 /* Section title for adbblock, tracking protection, HTTPS-E, and cookies */
-"ShieldsDefaults" = "Brave Shields 全局默认";
+"ShieldsDefaults" = "Asil Browser Shields 全局默认";
 
 /* Section footer for global shields defaults */
 "ShieldsDefaultsFooter" = "这些是新站点的默认 Shields 设置。更改这些设置不会影响您现有的每个站点的设置。";
 
 /* No comment provided by engineer. */
-"ShieldsDownDisclaimer" = "你正在没有 Brave 隐私保护的情况下浏览本网站。Shields 处于开启状态时无法正常工作吗？";
+"ShieldsDownDisclaimer" = "你正在没有 Asil Browser 隐私保护的情况下浏览本网站。Shields 处于开启状态时无法正常工作吗？";
 
 /* shields overview message */
 "ShieldsOverview" = "利用网站屏幕，您在访问每个网站时可以控制是否拦截广告和跟踪程序。如果您希望查看某个特定网站的广告，则可以在此处启用这些广告。";
@@ -2732,7 +2732,7 @@
 "ShortcutItemTitleQRCode" = "扫描二维码";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeBraveNewsDescription" = "打开 Brave 新闻并查看今日头条";
+"shortcuts.activityTypeBraveNewsDescription" = "打开 Asil Browser 新闻并查看今日头条";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeClearHistoryDescription" = "在新标签页中打开浏览器，然后删除所有私人浏览器的历史记录数据";
@@ -2741,7 +2741,7 @@
 "shortcuts.activityTypeClearHistorySuggestedPhrase" = "清除浏览器历史记录";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeClearHistoryTitle" = "清除 Brave 浏览器历史记录";
+"shortcuts.activityTypeClearHistoryTitle" = "清除 Asil Browser 浏览器历史记录";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeEnableVPNDescription" = "在新标签页中打开浏览器并启用 VPN";
@@ -2750,7 +2750,7 @@
 "shortcuts.activityTypeEnableVPNSuggestedPhrase" = "启用 VPN";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeEnableVPNTitle" = "打开 Brave 浏览器并启用 VPN";
+"shortcuts.activityTypeEnableVPNTitle" = "打开 Asil Browser 浏览器并启用 VPN";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeNewPrivateTabSuggestedPhrase" = "打开新的私人标签页";
@@ -2765,10 +2765,10 @@
 "shortcuts.activityTypeNewTabTitle" = "打开一个新的浏览器标签页";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveNewsTitle" = "打开 Brave 新闻";
+"shortcuts.activityTypeOpenBraveNewsTitle" = "打开 Asil Browser 新闻";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "打开 Brave 新闻";
+"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "打开 Asil Browser 新闻";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeOpenPlaylistDescription" = "开始播放播放列表中的视频";
@@ -2780,7 +2780,7 @@
 "shortcuts.activityTypeOpenPlaylistTitle" = "打开播放列表";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeTabDescription" = "开始通过 Brave 安全地搜索网络";
+"shortcuts.activityTypeTabDescription" = "开始通过 Asil Browser 安全地搜索网络";
 
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenBookmarkSuggestedPhrase" = "打开书签网站";
@@ -2791,8 +2791,8 @@
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenWebsiteSuggestedPhrase" = "打开网站";
 
-/* Description for opening Brave Settings for altering Siri shortcut. */
-"shortcuts.shortcutOpenApplicationSettingsDescription" = "此选项会打开 Brave 设置。要更改各种 Siri 选项，请选择“Siri & Search”菜单项并自定义您的选择。";
+/* Description for opening Asil Browser Settings for altering Siri shortcut. */
+"shortcuts.shortcutOpenApplicationSettingsDescription" = "此选项会打开 Asil Browser 设置。要更改各种 Siri 选项，请选择“Siri & Search”菜单项并自定义您的选择。";
 
 /* Button title that open application settings */
 "shortcuts.shortcutOpenApplicationSettingsTitle" = "打开设置";
@@ -2804,16 +2804,16 @@
 "shortcuts.shortcutSettingsClearBrowserHistoryTitle" = "清除浏览器历史记录";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsEnableVPNDescription" = "用快捷方式通过 Siri - 语音助手来启用 Brave VPN ";
+"shortcuts.shortcutSettingsEnableVPNDescription" = "用快捷方式通过 Siri - 语音助手来启用 Asil Browser VPN ";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsEnableVPNTitle" = "启用 VPN";
 
-/* Description of Open Brave News Siri Shortcut in Settings Screen */
-"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "用快捷方式通过 Siri - 语音助手打开一个新标签页并显示 Brave 的新闻提要";
+/* Description of Open Asil Browser News Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "用快捷方式通过 Siri - 语音助手打开一个新标签页并显示 Asil Browser 的新闻提要";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "打开 Brave 新闻";
+"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "打开 Asil Browser 新闻";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsOpenNewPrivateTabDescription" = "用快捷方式通过 Siri - 语音助手打开一个新标签页";
@@ -2867,19 +2867,19 @@
 "ShowTabsBar" = "标签栏";
 
 /* No comment provided by engineer. */
-"SiteReportedBody" = "感谢您让 Brave 的开发人员知道该站点出了问题。我们将尽力解决这个问题！";
+"SiteReportedBody" = "感谢您让 Asil Browser 的开发人员知道该站点出了问题。我们将尽力解决这个问题！";
 
 /* No comment provided by engineer. */
 "SiteReportedTitle" = "谢谢您！";
 
-/* Brave panel topmost title */
+/* Asil Browser panel topmost title */
 "SiteShieldSettings" = "屏蔽";
 
 /* Title used when in warning pop-over when domain specific data save appears */
-"socialSharing.domainSpecificDataSavedTitle" = "我每天都通过使用 Brave 浏览网页来保存数据。";
+"socialSharing.domainSpecificDataSavedTitle" = "我每天都通过使用 Asil Browser 浏览网页来保存数据。";
 
-/* Text used for social sharing together with Brave Shield values */
-"socialSharing.shareDescriptionTitle" = "我每天都通过使用 Brave 浏览网页来保存数据。";
+/* Text used for social sharing together with Asil Browser Shield values */
+"socialSharing.shareDescriptionTitle" = "我每天都通过使用 Asil Browser 浏览网页来保存数据。";
 
 /* Open search section of settings */
 "StandardTabSearch" = "标准标签";
@@ -2911,8 +2911,8 @@
 /* Title for Sync Settings Toggle Header */
 "sync.syncSettingsTitle" = "同步设置";
 
-/* Text that informs a user about Brave Sync service deprecation. */
-"sync.syncV1DeprecationText" = "即将推出新的 Brave Sync，它将影响您的设置。赶快做好升级的准备吧。";
+/* Text that informs a user about Asil Browser Sync service deprecation. */
+"sync.syncV1DeprecationText" = "即将推出新的 Asil Browser Sync，它将影响您的设置。赶快做好升级的准备吧。";
 
 /* Message for popup when the bookmark migration fails */
 "sync.v2MigrationErrorMessage" = "无法迁移书签。请稍后再试。";
@@ -2927,7 +2927,7 @@
 "sync.v2MigrationInterstitialTitle" = "书签迁移";
 
 /* Message for popup to inform the user that bookmarks migration is required for sync */
-"sync.v2MigrationMessage" = "要使用 Brave Sync，必须先迁移现有的书签才能使用新系统。此操作不会删除您的书签。";
+"sync.v2MigrationMessage" = "要使用 Asil Browser Sync，必须先迁移现有的书签才能使用新系统。此操作不会删除您的书签。";
 
 /* Button to perform bookmarks migration in order to support sync */
 "sync.v2MigrationOKButton" = "迁移";
@@ -2969,7 +2969,7 @@
 "SyncComputerDevice" = "计算机";
 
 /* Sync Error Description */
-"syncDeprecatedVersionError" = "这是由其他设备上已过期版本的 Brave 生成的同步码。请在所有同步的设备上更新 Brave，然后重试。";
+"syncDeprecatedVersionError" = "这是由其他设备上已过期版本的 Asil Browser 生成的同步码。请在所有同步的设备上更新 Asil Browser，然后重试。";
 
 /* Sync you browser settings across devices. */
 "SyncDevices" = "设备&设置";
@@ -2990,10 +2990,10 @@
 "SyncInitErrorTitle" = "同步通信错误";
 
 /* Default name for a device */
-"syncJoinChainCameraWarning" = "这样会与生成此二维码的设备分享您的 Brave 数据，可能包括您的密码。请再次确认此二维码是由您所拥有的设备生成的。确定要这么做吗？";
+"syncJoinChainCameraWarning" = "这样会与生成此二维码的设备分享您的 Asil Browser 数据，可能包括您的密码。请再次确认此二维码是由您所拥有的设备生成的。确定要这么做吗？";
 
 /* Default name for a device */
-"syncJoinChainCodewordsWarning" = "这样会与生成这些代码的设备分享您的 Brave 数据，可能包括您的密码。请再次确认这些代码是由您所拥有的设备生成的。确定要这么做吗？";
+"syncJoinChainCodewordsWarning" = "这样会与生成这些代码的设备分享您的 Asil Browser 数据，可能包括您的密码。请再次确认这些代码是由您所拥有的设备生成的。确定要这么做吗？";
 
 /* Title for pairing sync device */
 "syncJoinChainWarningTitle" = "警告";
@@ -3017,7 +3017,7 @@
 "SyncRemoveDeviceDefaultName" = "设备";
 
 /* Message for removing last device from Sync */
-"SyncRemoveLastDeviceMessage" = "当前同步的数据将保留，但 Brave 的同步缓存中的所有数据将删除。您将需要启动一个新的同步链来再次同步设备数据。";
+"SyncRemoveLastDeviceMessage" = "当前同步的数据将保留，但 Asil Browser 的同步缓存中的所有数据将删除。您将需要启动一个新的同步链来再次同步设备数据。";
 
 /* Button name for removing last device from Sync */
 "SyncRemoveLastDeviceRemoveButtonName" = "删除同步链";
@@ -3056,7 +3056,7 @@
 "SyncToDevice" = "同步到设备";
 
 /* Sync to existing device description */
-"SyncToDeviceDescription" = "使用现有已同步设备打开 Brave 设置，并浏览至“设置”>“同步”。选择“添加设备”，然后扫描屏幕上显示的码。";
+"SyncToDeviceDescription" = "使用现有已同步设备打开 Asil Browser 设置，并浏览至“设置”>“同步”。选择“添加设备”，然后扫描屏幕上显示的码。";
 
 /* Description on popup when setting up a sync group fails */
 "SyncUnableCreateGroup" = "无法同步此设备";
@@ -3154,14 +3154,14 @@
 /* No comment provided by engineer. */
 "TermsOfService" = "服务条款";
 
-/* Show Brave Browser TOS page from the Privacy section in the settings. */
+/* Show Asil Browser Browser TOS page from the Privacy section in the settings. */
 "TermsOfUse" = "使用条款";
 
 /* Text for button to share referral's QR code. */
 "themeQRCodeShareButton" = "共享...";
 
 /* Title for QR popup encouraging users to share the code with their friends. */
-"themeQRCodeShareTitle" = "与你的朋友分享 Brave 吧！";
+"themeQRCodeShareTitle" = "与你的朋友分享 Asil Browser 吧！";
 
 /* Selection to automatically color/style the user interface. */
 "ThemesAutomaticOption" = "自动选择器";
@@ -3203,13 +3203,13 @@
 "today.addSourceNoFeedsFoundMessage" = "抱歉，该提要地址没有任何内容。";
 
 /* The action title displayed in the iOS share menu */
-"today.addSourceShareTitle" = "将源添加到 Brave News";
+"today.addSourceShareTitle" = "将源添加到 Asil Browser News";
 
 /* A header title shown above a button that will allow the user to fetch RSS feeds for a website they have typed in */
 "today.availableRSSFeedsHeaderTitle" = "可用的 RSS 摘要";
 
 /* The name of the feature */
-"today.braveToday" = "Brave 新闻";
+"today.braveToday" = "Asil Browser 新闻";
 
 /* Shown below 'Channels' explaining what will be shown when tapping on it. */
 "today.channelsButtonSubtitle" = "关注您感兴趣的主题";
@@ -3229,13 +3229,13 @@
 /* No comment provided by engineer. */
 "today.deals" = "交易";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
-"today.disabledAlertBody" = "Brave News 将不再显示来自 %@ 的内容";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+"today.disabledAlertBody" = "Asil Browser News 将不再显示来自 %@ 的内容";
 
 /* No comment provided by engineer. */
 "today.disabledAlertTitle" = "已阻止";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
 "today.disablePublisherContent" = "隐藏来自 %@ 的內容";
 
 /* No comment provided by engineer. */
@@ -3244,11 +3244,11 @@
 /* No comment provided by engineer. */
 "today.emptyFeedTitle" = "没有待显示的文章";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
 "today.enablePublisherContent" = "允许来自 %@ 的內容";
 
 /* No comment provided by engineer. */
-"today.errorGeneralBody" = "Brave News 出现问题。请重试。";
+"today.errorGeneralBody" = "Asil Browser News 出现问题。请重试。";
 
 /* No comment provided by engineer. */
 "today.errorGeneralTitle" = "哎呀...";
@@ -3265,7 +3265,7 @@
 /* A toggle title shown next to a source or channel that the user can follow. When tapped switches to 'Unfollow' */
 "today.followToggleTitle" = "跟隨";
 
-/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://brave.com'. */
+/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Asil Browser.com'. */
 "today.getFeedsFromSiteButtonTitle" = "获取以下来源的摘要：";
 
 /* \"OPML\" is a file extension that contains a list of rss feeds. */
@@ -3274,20 +3274,20 @@
 /* The header above the list of insecure sources */
 "today.insecureSourcesHeader" = "不安全源 - 如果添加，风险自负";
 
-/* Shown above a button that turns on the \"Brave News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "通过单一摘要关注您喜爱的来源。只要在 Brave 中开启分页、向下滑动，一切搞定！\nBrave 新闻支援匿名投放私人广告。";
+/* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
+"today.introCardBody" = "通过单一摘要关注您喜爱的来源。只要在 Asil Browser 中开启分页、向下滑动，一切搞定！\nBrave 新闻支援匿名投放私人广告。";
 
-/* Shown above a button that turns on the \"Brave News\" product in the app. */
-"today.introCardTitle" = "开启 Brave 新闻，绝不错过每一条消息";
+/* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
+"today.introCardTitle" = "开启 Asil Browser 新闻，绝不错过每一条消息";
 
 /* No comment provided by engineer. */
-"today.isEnabledToggleLabel" = "显示 Show Brave News";
+"today.isEnabledToggleLabel" = "显示 Show Asil Browser News";
 
 /* No comment provided by engineer. */
 "today.learnMoreTitle" = "详细了解您的数据";
 
-/* 'Brave Offers' is a product name */
-"today.moreBraveOffers" = "更多 Brave 服务";
+/* 'Asil Browser Offers' is a product name */
+"today.moreBraveOffers" = "更多 Asil Browser 服务";
 
 /* No comment provided by engineer. */
 "today.noInternet" = "无网络";
@@ -3335,7 +3335,7 @@
 "today.suggestedTitle" = "建议";
 
 /* No comment provided by engineer. */
-"today.turnOnBraveToday" = "开启 Brave News";
+"today.turnOnBraveToday" = "开启 Asil Browser News";
 
 /* A toggle title shown next to a source or channel that the user can unfollow. When tapped switches to 'Follow' */
 "today.unfollowToggleTitle" = "取消跟隨";
@@ -3382,34 +3382,34 @@
 /* No comment provided by engineer. */
 "UserWalletGenericErrorTitle" = "抱歉，出错了";
 
-/* Version number of Brave shown in settings */
+/* Version number of Asil Browser shown in settings */
 "VersionTemplate" = "版本 %1$@ （%2$@）";
 
 /* Label that says where to view an item. '%@' is a placeholder and will include things like 'Instagram', 'unsplash'. The full label will look like 'View  on Instagram'. */
 "ViewOn" = "在 %@ 上查看";
 
-/* Button text to buy Brave VPN */
+/* Button text to buy Asil Browser VPN */
 "vpn.buyButton" = "购买";
 
 /* Title for screen to buy the VPN. */
-"vpn.buyVPNTitle" = "Brave Firewall + VPN";
+"vpn.buyVPNTitle" = "Asil Browser Firewall + VPN";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxBlockAds" = "阻止不需要的网络连接";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxEncryption" = "使用 IKEv2 安全加密的 VPN 隧道";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxFast" = "最高支持 100 Mbps 的速度";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxGeoSelector" = "选择地理/国家位置";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxNoIPLog" = "让您匿名在线";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxNoSellout" = "我们绝不会分享或出售您的信息";
 
 /* AppStore Receipt field for customer support contact form. */
@@ -3422,7 +3422,7 @@
 "vpn.contactFormCarrier" = "蜂窝网络提供商";
 
 /* Text to tell user to not modify support info below email's body. */
-"vpn.contactFormDoNotEditText" = "Brave 不会跟踪您，也不知道您如何使用我们的应用程序，所以我们无法得知您如何设置 VPN。请告知您所遇到的问题，我们将尽最大努力尽快解决这些问题。";
+"vpn.contactFormDoNotEditText" = "Asil Browser 不会跟踪您，也不知道您如何使用我们的应用程序，所以我们无法得知您如何设置 VPN。请告知您所遇到的问题，我们将尽最大努力尽快解决这些问题。";
 
 /* Button name to send contact form. */
 "vpn.contactFormEmailNotConfiguredBody" = "无法发送电子邮件。请检查您的电子邮箱配置。";
@@ -3476,9 +3476,9 @@
 "vpn.contactFormTimezone" = "iOS 时区";
 
 /* Title for contact form email. */
-"vpn.contactFormTitle" = "Brave Firewall + VPN 问题";
+"vpn.contactFormTitle" = "Asil Browser Firewall + VPN 问题";
 
-/* Button text to enable Brave VPN */
+/* Button text to enable Asil Browser VPN */
 "vpn.enableButton" = "启用";
 
 /* Message for an alert when the VPN can't get prices from the App Store */
@@ -3497,13 +3497,13 @@
 "vpn.iapDisclaimer" = "所有订阅都会自动续订，但也可以在续订之前取消。";
 
 /* Text explaining how the VPN works. */
-"vpn.installProfileBody" = "此配置文件让 VPN 可以始终自动连接并保护设备上的流量。此 VPN 连接会被加密，并会通过 Brave 的智能防火墙进行路由，以阻止潜在有害和侵入性的连接。";
+"vpn.installProfileBody" = "此配置文件让 VPN 可以始终自动连接并保护设备上的流量。此 VPN 连接会被加密，并会通过 Asil Browser 的智能防火墙进行路由，以阻止潜在有害和侵入性的连接。";
 
 /* Text for 'install vpn profile' button */
 "vpn.installProfileButtonText" = "安装 VPN 配置文件";
 
 /* No comment provided by engineer. */
-"vpn.installProfileTitle" = "Brave 现在会安装一个 VPN 配置文件。";
+"vpn.installProfileTitle" = "Asil Browser 现在会安装一个 VPN 配置文件。";
 
 /* Popup that shows after user installs the vpn for the first time. */
 "vpn.installSuccessPopup" = "VPN 已启用";
@@ -3511,7 +3511,7 @@
 /* Title for screen to install the VPN. */
 "vpn.installTitle" = "安装 VPN";
 
-/* Button text to try free Brave VPN */
+/* Button text to try free Asil Browser VPN */
 "vpn.learnMore" = "免费试用";
 
 /* Used in context: 'Monthly subscription, (it) renews monthly' */
@@ -3523,10 +3523,10 @@
 /* Text to show user when their vpn plan has expired */
 "vpn.planExpired" = "已过期";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.popupCheckmark247Support" = "24/7 支持";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.popupCheckmarkSecureConnections" = "保护所有连接";
 
 /* It is used in context: 'Powered by BRAND_NAME' */
@@ -3575,10 +3575,10 @@
 "vpn.settingsFAQ" = "VPN 支持";
 
 /* Button to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceipt" = "将购买交易连接至您的 Brave 帐户";
+"vpn.settingsLinkReceipt" = "将购买交易连接至您的 Asil Browser 帐户";
 
 /* Footer text to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceiptFooter" = "将您的 App Store 购买交易连接至 Brave 帐户，以便在其他裝置上使用 Brave VPN。";
+"vpn.settingsLinkReceiptFooter" = "将您的 App Store 购买交易连接至 Asil Browser 帐户，以便在其他裝置上使用 Asil Browser VPN。";
 
 /* Button to manage your VPN subscription */
 "vpn.settingsManageSubscription" = "管理订阅";
@@ -3614,10 +3614,10 @@
 "vpn.settingsVPNExpired" = "已过期";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationBody" = "即使在后台， Brave 也会继续保护您。";
+"vpn.vpnBackgroundNotificationBody" = "即使在后台， Asil Browser 也会继续保护您。";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationTitle" = "Brave Firewall + VPN 已启用";
+"vpn.vpnBackgroundNotificationTitle" = "Asil Browser Firewall + VPN 已启用";
 
 /* Message for an alert when the VPN can't be configured. */
 "vpn.vpnConfigGenericErrorBody" = "初始化 VPN 时出现问题。请重试或尝试在 VPN 设置页面中重置配置。";
@@ -3626,7 +3626,7 @@
 "vpn.vpnConfigGenericErrorTitle" = "错误";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
-"vpn.vpnConfigPermissionDeniedErrorBody" = "需要在设备上安装 VPN 配置文件，Brave Firewall + VPN 才能正常工作。";
+"vpn.vpnConfigPermissionDeniedErrorBody" = "需要在设备上安装 VPN 配置文件，Asil Browser Firewall + VPN 才能正常工作。";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
 "vpn.vpnConfigPermissionDeniedErrorTitle" = "授权被拒";
@@ -3638,10 +3638,10 @@
 "vpn.vpnErrorPurchaseFailedTitle" = "错误";
 
 /* Disclaimer for user purchasing the VPN plan. */
-"vpn.vpnIAPBoilerPlate" = "我们会通过您的 iTunes 账户收取订阅费用。\n\n购买订阅后，免费试用的任何未使用部分（如已提供）会被没收。\n\n您的订阅会自动更新，除非在当前订阅期结束前至少 24 小时以前取消该订阅。\n\n您可以在“设置”中管理您的订阅。\n\n使用 Brave，即表示您同意使用条款和隐私政策。";
+"vpn.vpnIAPBoilerPlate" = "我们会通过您的 iTunes 账户收取订阅费用。\n\n购买订阅后，免费试用的任何未使用部分（如已提供）会被没收。\n\n您的订阅会自动更新，除非在当前订阅期结束前至少 24 小时以前取消该订阅。\n\n您可以在“设置”中管理您的订阅。\n\n使用 Asil Browser，即表示您同意使用条款和隐私政策。";
 
 /* Message for alert to reset vpn configuration */
-"vpn.vpnResetAlertBody" = "这将重置您的 Brave Firewall + VPN 配置并修复所有错误。此过程可能需要一分钟。";
+"vpn.vpnResetAlertBody" = "这将重置您的 Asil Browser Firewall + VPN 配置并修复所有错误。此过程可能需要一分钟。";
 
 /* Title for alert to reset vpn configuration */
 "vpn.vpnResetAlertTitle" = "重置配置";
@@ -3707,18 +3707,18 @@
 "widgets.favoritesWidgetTitle" = "收藏夹";
 
 /* This shows when you add a widget but have no favorites added in your app */
-"widgets.noFavoritesFound" = "请打开 Brave，在此查看您的收藏夹";
+"widgets.noFavoritesFound" = "请打开 Asil Browser，在此查看您的收藏夹";
 
 /* Description for the search option on the 'shortcuts' widget. */
 "widgets.searchShortcutTitle" = "搜索";
 
-/* Description for Brave Shields widget on 'add widget' screen. */
-"widgets.shieldStatsDescription" = "一览 Brave 是如何节省时间以及提供在线保护的。";
+/* Description for Asil Browser Shields widget on 'add widget' screen. */
+"widgets.shieldStatsDescription" = "一览 Asil Browser 是如何节省时间以及提供在线保护的。";
 
-/* Title for Brave Shields widget on 'add widget' screen. */
+/* Title for Asil Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsTitle" = "隐私统计数据";
 
-/* Title of Brave Shields widget shown above stat numbers. */
+/* Title of Asil Browser Shields widget shown above stat numbers. */
 "widgets.shieldStatsWidgetTitle" = "隐私统计数据";
 
 /* Button to the browser and enter URL or make a search query there. */
@@ -3734,19 +3734,19 @@
 "widgets.shortcutsPrivateTabButton" = "隐私标签页";
 
 /* Description for shortcuts widget on 'add widget' screen. */
-"widgets.shortcutsWidgetDescription" = "快速访问，在 Brave 中搜索 Web 或打开网页。";
+"widgets.shortcutsWidgetDescription" = "快速访问，在 Asil Browser 中搜索 Web 或打开网页。";
 
 /* Title for shortcuts widget on 'add widget' screen. */
 "widgets.shortcutsWidgetTitle" = "快捷方式";
 
-/* Description for Brave Shields single stat widget on 'add widget' screen. */
-"widgets.singleStatDescription" = "一览 Brave 是如何提供在线保护的。";
+/* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
+"widgets.singleStatDescription" = "一览 Asil Browser 是如何提供在线保护的。";
 
-/* Title for Brave Shields single stat widget on 'add widget' screen. */
+/* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatTitle" = "隐私统计数据";
 
-/* Description for the Brave Wallet option on the 'shortcuts' widget. */
-"widgets.walletShortcutTitle" = "Brave 钱包";
+/* Description for the Asil Browser Wallet option on the 'shortcuts' widget. */
+"widgets.walletShortcutTitle" = "Asil Browser 钱包";
 
 /* Title of the settings for widgets part */
 "widgets.widgetTitle" = "小部件";
