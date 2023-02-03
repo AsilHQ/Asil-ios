@@ -8,13 +8,13 @@
 "NSCameraUsageDescription" = "Cette option vous permet de prendre des photos et de les importer.";
 
 /* Privacy - Face ID Usage Description */
-"NSFaceIDUsageDescription" = "Authentifie votre accès à Brave";
+"NSFaceIDUsageDescription" = "Authentifie votre accès à Asil Browser";
 
 /* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Les sites Web que vous consultez peuvent demander votre position.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Ce paramètre autorise l'utilisation de votre microphone lorsque vous utilisez Brave.";
+"NSMicrophoneUsageDescription" = "Ce paramètre autorise l'utilisation de votre microphone lorsque vous utilisez Asil Browser.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Cette option vous permet d'enregistrer des photos.";
