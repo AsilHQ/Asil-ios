@@ -274,7 +274,7 @@ extension BrowserViewController {
         guard let self = self else { return }
 
         if self.shouldShowPlaylistOnboardingThisSession {
-          self.showPlaylistOnboarding(tab: self.tabManager.selectedTab)
+          // self.showPlaylistOnboarding(tab: self.tabManager.selectedTab)
         }
       }
     }

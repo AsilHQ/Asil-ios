@@ -90,21 +90,21 @@ extension BrowserViewController: PlaylistScriptHandlerDelegate, PlaylistFolderSh
       switch state {
       case .none:
         topToolbar.updatePlaylistButtonState(.none)
-        topToolbar.menuButton.removeBadge(.playlist, animated: true)
-        toolbar?.menuButton.removeBadge(.playlist, animated: true)
+        // topToolbar.menuButton.removeBadge(.playlist, animated: true)
+        // toolbar?.menuButton.removeBadge(.playlist, animated: true)
       case .newItem:
         topToolbar.updatePlaylistButtonState(shouldShowPlaylistURLBarButton ? .addToPlaylist : .none)
-        if Preferences.Playlist.enablePlaylistMenuBadge.value {
+        /*if Preferences.Playlist.enablePlaylistMenuBadge.value {
           topToolbar.menuButton.addBadge(.playlist, animated: true)
           toolbar?.menuButton.addBadge(.playlist, animated: true)
         } else {
           topToolbar.menuButton.removeBadge(.playlist, animated: true)
           toolbar?.menuButton.removeBadge(.playlist, animated: true)
-        }
+        }*/
       case .existingItem:
         topToolbar.updatePlaylistButtonState(shouldShowPlaylistURLBarButton ? .addedToPlaylist : .none)
-        topToolbar.menuButton.removeBadge(.playlist, animated: true)
-        toolbar?.menuButton.removeBadge(.playlist, animated: true)
+        // topToolbar.menuButton.removeBadge(.playlist, animated: true)
+        // toolbar?.menuButton.removeBadge(.playlist, animated: true)
       }
     }
   }

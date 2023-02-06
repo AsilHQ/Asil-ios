@@ -209,7 +209,7 @@ extension BrowserViewController {
       VStack(alignment: .leading, spacing: 0) {
         MenuTabDetailsView(tab: browserViewController.tabManager.selectedTab, url: tabURL)
         VStack(spacing: 0) {
-          if let activity = playlistActivity, activity.enabled, let item = activity.item {
+          /*if let activity = playlistActivity, activity.enabled, let item = activity.item {
             PlaylistMenuButton(isAdded: isPlaylistItemAdded) {
               if !isPlaylistItemAdded {
                 // Add to playlist
@@ -234,7 +234,7 @@ extension BrowserViewController {
               }
             }
             .animation(.default, value: playlistItemAdded)
-          }
+          }*/
           MenuItemButton(icon: UIImage(named: "nav-share", in: .module, compatibleWith: nil)!.template, title: Strings.shareWithMenuItem) {
             browserViewController.dismiss(animated: true)
             browserViewController.tabToolbarDidPressShare()

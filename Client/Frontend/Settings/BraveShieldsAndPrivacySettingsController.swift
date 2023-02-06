@@ -256,12 +256,12 @@ class BraveShieldsAndPrivacySettingsController: TableViewController {
 
     let others: [(clearable: Clearable, checked: Bool)] =
       [
-        (PlayListCacheClearable(), false),
-        (PlayListDataClearable(), false),
+        // (PlayListCacheClearable(), false),
+        // (PlayListDataClearable(), false),
         (RecentSearchClearable(), true),
       ]
 
-    alwaysVisible.append((BraveNewsClearable(feedDataSource: self.feedDataSource), true))
+    // alwaysVisible.append((BraveNewsClearable(feedDataSource: self.feedDataSource), true))
 
     alwaysVisible.append(contentsOf: others)
 
