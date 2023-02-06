@@ -117,7 +117,7 @@ public class NTPDataSource {
         return (theme.wallpapers, .withQRCode(refCode), .randomOrderAvoidDuplicates)
       }
 
-      if let sponsor = sponsor {
+      /*if let sponsor = sponsor {
         let attemptSponsored =
           Preferences.NewTabPage.backgroundSponsoredImages.value
           && backgroundRotationCounter == NTPDataSource.sponsorshipShowValue
@@ -131,7 +131,7 @@ public class NTPDataSource {
             return (campaign.wallpapers, .withBrandLogo(campaign.logo), .sponsoredRotation)
           }
         }
-      }
+      }*/
 
       return (standardBackgrounds, .regular, .randomOrderAvoidDuplicates)
     }()
