@@ -122,7 +122,7 @@ class SettingsViewController: TableViewController {
   // Do not use `sections` directly to access sections/rows. Use DataSource.sections instead.
   private var sections: [Static.Section] {
     var list = [
-      defaultBrowserSection,
+      //defaultBrowserSection,
       //featuresSection,
       generalSection,
       displaySection,
