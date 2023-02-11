@@ -342,7 +342,7 @@ extension BrowserViewController: TopToolbarDelegate {
   }
 
   func topToolbarDidTapBraveRewardsButton(_ topToolbar: TopToolbarView) {
-    showBraveRewardsPanel()
+    //showBraveRewardsPanel()
   }
 
   func topToolbarDidLongPressBraveRewardsButton(_ topToolbar: TopToolbarView) {

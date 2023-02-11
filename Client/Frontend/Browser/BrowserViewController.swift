@@ -1150,9 +1150,9 @@ public class BrowserViewController: UIViewController {
     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
       self.presentP3AScreenCallout()
       self.presentBottomBarCallout()
-      self.presentVPNAlertCallout()
-      self.presentDefaultBrowserScreenCallout()
-      self.presentBraveRewardsScreenCallout()
+      //self.presentVPNAlertCallout()
+      //self.presentDefaultBrowserScreenCallout()
+      //self.presentBraveRewardsScreenCallout()
       self.presentCookieNotificationBlockingCalloutIfNeeded()
     }
 
