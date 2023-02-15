@@ -259,7 +259,7 @@ extension BrowserViewController: PlaylistScriptHandlerDelegate, PlaylistFolderSh
         topToolbar.layoutIfNeeded()
         view.layoutIfNeeded()
 
-        DispatchQueue.main.async {
+        /*DispatchQueue.main.async {
           let onboardingController = PlaylistOnboardingViewController()
           let popover = PopoverController(contentController: onboardingController)
           popover.present(from: self.topToolbar.locationView.playlistButton, on: self)
@@ -300,7 +300,7 @@ extension BrowserViewController: PlaylistScriptHandlerDelegate, PlaylistFolderSh
               pulseAnimation.removeFromSuperview()
             }
           }
-        }
+        }*/
 
         shouldShowPlaylistOnboardingThisSession = false
       }
