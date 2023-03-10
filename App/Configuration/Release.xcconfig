@@ -4,10 +4,10 @@
 
 #include "Base.xcconfig"
 
-MOZ_BUNDLE_DISPLAY_NAME = Brave
+MOZ_BUNDLE_DISPLAY_NAME = Asil Browser
 
 // Bundle Identifier
-MOZ_BUNDLE_ID = $(BASE_BUNDLE_ID).browser
+MOZ_BUNDLE_ID = $(BASE_BUNDLE_ID)
 
 // Flag to indicate if we want to include the debug settings bundle or not
 INCLUDE_SETTINGS_BUNDLE = NO

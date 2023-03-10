@@ -24,34 +24,15 @@ class ShieldsSwitch: UIControl {
 
   func setOn(_ on: Bool, animated: Bool) {
     _isOn = on
+      if on {
+          backgroundView.backgroundColor = .asilPrimaryBlue
+      } else {
+          backgroundView.backgroundColor = offBackgroundColor
+      }
     if animated {
-      if gradientView.isHidden {
-        gradientView.isHidden = false
-        gradientView.alpha = 0.0
-      }
-      let animator = UIViewPropertyAnimator(duration: 0.4, curve: .linear) {
-        self.gradientView.alpha = on ? 1.0 : 0.0
-      }
-      animator.addCompletion { [weak self] _ in
-        guard let self = self else { return }
-        if on {
-          self.beginGradientAnimations()
-        } else {
-          self.gradientView.isHidden = true
-          self.gradientView.alpha = 1.0
-          self.endGradientAnimations()
-        }
-      }
-      animator.startAnimation()
       animateThumbViewFrameUpdate()
     } else {
       thumbView.frame = self.thumbViewFrame
-      gradientView.isHidden = !on
-      if on {
-        beginGradientAnimations()
-      } else {
-        endGradientAnimations()
-      }
     }
   }
 
@@ -60,19 +41,6 @@ class ShieldsSwitch: UIControl {
     didSet {
       backgroundView.backgroundColor = offBackgroundColor
     }
-  }
-
-  private let gradientView = GradientView().then {
-    $0.isUserInteractionEnabled = false
-    $0.gradientLayer.type = .radial
-    $0.gradientLayer.locations = [0, 1]
-    $0.gradientLayer.startPoint = CGPoint(x: 1, y: 1)
-    $0.gradientLayer.endPoint = .zero
-    $0.gradientLayer.shadowOffset = .zero
-    $0.gradientLayer.shadowRadius = 3
-    $0.gradientLayer.shadowOpacity = 0.8
-    $0.gradientLayer.borderColor = UIColor(white: 0.0, alpha: 0.2).cgColor
-    $0.gradientLayer.borderWidth = 1.0 / UIScreen.main.scale
   }
 
   private let backgroundView = UIView().then {
@@ -97,21 +65,10 @@ class ShieldsSwitch: UIControl {
     accessibilityHint = Strings.Shields.toggleHint
 
     addSubview(backgroundView)
-    addSubview(gradientView)
     addSubview(thumbView)
-
-    gradientView.isHidden = true
 
     backgroundView.snp.makeConstraints {
       $0.edges.equalTo(self)
-    }
-    gradientView.snp.makeConstraints {
-      $0.edges.equalTo(self)
-    }
-
-    if let step = steps.first {
-      gradientView.gradientLayer.colors = step.gradientColors
-      gradientView.gradientLayer.shadowColor = step.shadowColor
     }
   }
 
@@ -137,10 +94,7 @@ class ShieldsSwitch: UIControl {
 
   override func layoutSubviews() {
     super.layoutSubviews()
-
-    gradientView.layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: bounds.height / 2.0).cgPath
     backgroundView.layer.cornerRadius = bounds.size.height / 2.0
-    gradientView.layer.cornerRadius = bounds.size.height / 2.0
     thumbView.layer.cornerRadius = thumbView.bounds.size.height / 2.0
   }
 
@@ -225,15 +179,6 @@ class ShieldsSwitch: UIControl {
     group.repeatCount = Float.infinity
     group.beginTime = CACurrentMediaTime()
 
-    gradientView.gradientLayer.add(group, forKey: "animateBg")
-  }
-
-  private func endGradientAnimations() {
-    gradientView.gradientLayer.removeAllAnimations()
-    if let step = steps.first {
-      gradientView.gradientLayer.colors = step.gradientColors
-      gradientView.gradientLayer.shadowColor = step.shadowColor
-    }
   }
 
   override func endTracking(_ touch: UITouch?, with event: UIEvent?) {

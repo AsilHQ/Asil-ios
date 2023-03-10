@@ -50,15 +50,6 @@ public class WelcomeViewController: UIViewController {
     $0.contentMode = .scaleAspectFill
   }
 
-  private let topImageView = UIImageView().then {
-    $0.image = UIImage(named: "welcome-view-top-image", in: .module, compatibleWith: nil)!
-    $0.contentMode = .scaleAspectFill
-    $0.setContentHuggingPriority(.required, for: .vertical)
-    $0.setContentCompressionResistancePriority(.required, for: .vertical)
-    $0.setContentHuggingPriority(.required, for: .horizontal)
-    $0.setContentCompressionResistancePriority(.required, for: .horizontal)
-  }
-
   private let contentContainer = UIStackView().then {
     $0.axis = .vertical
     $0.spacing = 8
@@ -73,21 +64,6 @@ public class WelcomeViewController: UIViewController {
     $0.contentMode = .scaleAspectFit
     $0.setContentCompressionResistancePriority(.init(rawValue: 100), for: .vertical)
   }
-
-  private let iconBackgroundView = UIImageView().then {
-    $0.image = UIImage(named: "welcome-view-icon-background", in: .module, compatibleWith: nil)!
-    $0.contentMode = .scaleAspectFit
-  }
-
-  private let bottomImageView = UIImageView().then {
-    $0.image = UIImage(named: "welcome-view-bottom-image", in: .module, compatibleWith: nil)!
-    $0.contentMode = .scaleAspectFill
-    $0.setContentHuggingPriority(.required, for: .vertical)
-    $0.setContentCompressionResistancePriority(.required, for: .vertical)
-    $0.setContentHuggingPriority(.required, for: .horizontal)
-    $0.setContentCompressionResistancePriority(.required, for: .horizontal)
-  }
-
   public override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -122,7 +98,7 @@ public class WelcomeViewController: UIViewController {
       }
       
       DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-        self.animateToDefaultBrowserState()
+        self.animateToP3aState()
       }
     case .settings:
       calloutView.animateTitleViewVisibility(alpha: 1.0, duration: 1.5)
@@ -137,12 +113,9 @@ public class WelcomeViewController: UIViewController {
 
   private func doLayout() {
     backgroundImageView.tag = WelcomeViewID.background.rawValue
-    topImageView.tag = WelcomeViewID.topImage.rawValue
     contentContainer.tag = WelcomeViewID.contents.rawValue
     calloutView.tag = WelcomeViewID.callout.rawValue
     iconView.tag = WelcomeViewID.iconView.rawValue
-    bottomImageView.tag = WelcomeViewID.bottomImage.rawValue
-    iconBackgroundView.tag = WelcomeViewID.iconBackground.rawValue
 
     let stack = UIStackView().then {
       $0.distribution = .equalSpacing
@@ -152,11 +125,9 @@ public class WelcomeViewController: UIViewController {
 
     let scrollView = UIScrollView()
 
-    [backgroundImageView, topImageView, bottomImageView, scrollView].forEach {
+    [backgroundImageView, scrollView].forEach {
       view.addSubview($0)
     }
-
-    view.insertSubview(iconBackgroundView, belowSubview: scrollView)
 
     scrollView.addSubview(stack)
     scrollView.snp.makeConstraints {
@@ -182,22 +153,9 @@ public class WelcomeViewController: UIViewController {
       contentContainer.addArrangedSubview($0)
     }
 
-    iconBackgroundView.snp.makeConstraints {
-      $0.center.equalTo(iconView.snp.center)
-      $0.width.equalTo(iconView.snp.width).multipliedBy(2.25)
-      $0.height.equalTo(iconView.snp.height).multipliedBy(2.25)
-    }
 
     backgroundImageView.snp.makeConstraints {
       $0.edges.equalToSuperview()
-    }
-
-    topImageView.snp.makeConstraints {
-      $0.leading.trailing.top.equalToSuperview()
-    }
-
-    bottomImageView.snp.makeConstraints {
-      $0.leading.trailing.bottom.equalToSuperview()
     }
   }
 
@@ -206,11 +164,8 @@ public class WelcomeViewController: UIViewController {
 
     switch state {
     case .loading:
-      topImageView.transform = .identity
-      bottomImageView.transform = .identity
       iconView.transform = .identity
       contentContainer.spacing = 0.0
-      iconBackgroundView.alpha = 1.0
       iconView.snp.remakeConstraints {
         $0.height.equalTo(225.0)
       }
@@ -231,12 +186,9 @@ public class WelcomeViewController: UIViewController {
         return transformation
       }()
 
-      topImageView.transform = topTransform
-      bottomImageView.transform = bottomTransform
       iconView.transform = .identity
       contentContainer.spacing = 0.0
       contentContainer.layoutMargins = UIEdgeInsets(top: 0.0, left: 15.0, bottom: 0.0, right: 15.0)
-      iconBackgroundView.alpha = 1.0
       iconView.snp.remakeConstraints {
         $0.height.equalTo(175.0)
       }
@@ -257,11 +209,8 @@ public class WelcomeViewController: UIViewController {
         return transformation
       }()
 
-      topImageView.transform = topTransform
-      bottomImageView.transform = bottomTransform
       contentContainer.spacing = 25.0
       contentContainer.layoutMargins = UIEdgeInsets(top: 0.0, left: 22.0, bottom: 0.0, right: 22.0)
-      iconBackgroundView.alpha = 1.0
       iconView.snp.remakeConstraints {
         $0.height.equalTo(180.0)
       }
@@ -281,10 +230,7 @@ public class WelcomeViewController: UIViewController {
         return transformation
       }()
 
-      topImageView.transform = topTransform
-      bottomImageView.transform = bottomTransform
       contentContainer.spacing = 20.0
-      iconBackgroundView.alpha = 1.0
       iconView.snp.remakeConstraints {
         $0.height.equalTo(180.0)
       }
@@ -304,11 +250,8 @@ public class WelcomeViewController: UIViewController {
         return transformation
       }()
 
-      topImageView.transform = topTransform
-      bottomImageView.transform = bottomTransform
       iconView.image = UIImage(named: "welcome-view-phone", in: .module, compatibleWith: nil)!
       contentContainer.spacing = 0.0
-      iconBackgroundView.alpha = 0.0
       iconView.snp.remakeConstraints {
         $0.height.equalTo(175.0)
       }

@@ -73,9 +73,6 @@ extension PrivacyReportsView {
               || (horizontalSizeClass == .regular && sizeCategory.isAccessibilityCategory) {
             HStack(alignment: .top) {
               HStack {
-                if !sizeCategory.isAccessibilityCategory {
-                  Image("brave_document", bundle: .module)
-                }
                 Text(Strings.PrivacyHub.notificationCalloutBody)
                   .font(.headline)
                   .fixedSize(horizontal: false, vertical: true)
@@ -94,7 +91,6 @@ extension PrivacyReportsView {
             }
             
             HStack(spacing: 24) {
-              Image("brave_document", bundle: .module)
               Text(Strings.PrivacyHub.notificationCalloutBody)
                 .font(.headline)
                 .fixedSize(horizontal: false, vertical: true)

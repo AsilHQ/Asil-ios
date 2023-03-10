@@ -62,7 +62,7 @@ class NTPTableViewController: TableViewController {
     )
 
     if Preferences.NewTabPage.backgroundImages.value {
-      imageSection.rows.append(backgroundImagesSetting(section: imageSection))
+      //imageSection.rows.append(backgroundImagesSetting(section: imageSection))
     }
     
     let widgetSection = Section(

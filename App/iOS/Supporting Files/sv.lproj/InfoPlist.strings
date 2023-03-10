@@ -8,13 +8,13 @@
 "NSCameraUsageDescription" = "Med det här kan du ta foton och ladda upp dem.";
 
 /* Privacy - Face ID Usage Description */
-"NSFaceIDUsageDescription" = "Detta autentiserar din åtkomst till Brave";
+"NSFaceIDUsageDescription" = "Detta autentiserar din åtkomst till Asil Browser";
 
 /* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Webbplatser som du besöker kan be om din plats.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Det här tillåter användning av din mikrofon när Brave används.";
+"NSMicrophoneUsageDescription" = "Det här tillåter användning av din mikrofon när Asil Browser används.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Det här låter dig spara foton.";

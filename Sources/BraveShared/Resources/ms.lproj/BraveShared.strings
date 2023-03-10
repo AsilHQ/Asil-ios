@@ -1,17 +1,17 @@
 /* About settings section title */
 "About" = "Mengenai";
 
-/* The title of the screen explaining Brave Shields */
-"AboutBraveShields" = "Mengenai Pelindung Brave";
+/* The title of the screen explaining Asil Browser Shields */
+"AboutBraveShields" = "Mengenai Pelindung Asil Browser";
 
-/* The body of the screen explaining Brave Shields */
+/* The body of the screen explaining Asil Browser Shields */
 "AboutBraveShieldsBody" = "Laman sering termasuk kuki dan skrip yang cuba mengenal pasti anda dan peranti anda. Laman ingin mengetahui anda dan mengikuti anda sepanjang web — menjejaki perkara yang anda lakukan pada setiap laman.\n\nBrave menyekat semua hal ini supaya anda boleh melayari laman tanpa diikuti.";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "Ini membolehkan anda menyimpan imej ke Gulungan Kamera anda.";
 
 /* See http://mzl.la/1G7uHo7 */
-"AccessPhotoDeniedAlertTitle" = "Brave ingin mengakses Foto anda";
+"AccessPhotoDeniedAlertTitle" = "Asil Browser ingin mengakses Foto anda";
 
 /* Button to add a bookmark */
 "AddBookmark" = "Tambah Penanda Halaman";
@@ -52,8 +52,8 @@
 /* Label for the Face ID/Passcode item in Settings */
 "AuthenticationFaceIDPasscodeSetting" = "ID Muka & Kod Laluan";
 
-/* Touch ID or PIN entry prompt subtitle when accessing Brave with the Browser Lock feature enabled */
-"AuthenticationLoginsTouchReason" = "Ini mengesahkan akses anda ke Brave";
+/* Touch ID or PIN entry prompt subtitle when accessing Asil Browser with the Browser Lock feature enabled */
+"AuthenticationLoginsTouchReason" = "Ini mengesahkan akses anda ke Asil Browser";
 
 /* Label for the Passcode item in Settings */
 "AuthenticationPasscode" = "Kod laluan";
@@ -116,7 +116,7 @@
 "BlockCookieConsentNotices" = "Sekat Notis Persetujuan Kuki";
 
 /* A description for a popup that notifies the user that we can block cookie consent notices */
-"BlockCookieConsentNoticesPopupDescription" = "Brave sudah menyekat kuki pihak ketiga. Kami juga boleh menyekat notis persetujuan kuki.";
+"BlockCookieConsentNoticesPopupDescription" = "Asil Browser sudah menyekat kuki pihak ketiga. Kami juga boleh menyekat notis persetujuan kuki.";
 
 /* A title for a popup that notifies the user that we can block cookie consent notices */
 "BlockCookieConsentNoticesPopupTitle" = "Bosan dengan notis persetujuan kuki?";
@@ -130,7 +130,7 @@
 /* A title for setting which blocks 'switch to app' popups */
 "blockMobileAnnoyances" = "Sekat Notis 'Tukar kepada Aplikasi'";
 
-/* Brave panel individual toggle title */
+/* Asil Browser panel individual toggle title */
 "BlockPhishing" = "Sekat Pemalsuan";
 
 /* No comment provided by engineer. */
@@ -175,38 +175,38 @@
 /* Placeholder text for adding or editing a bookmark */
 "BookmarkUrlPlaceholderText" = "Alamat";
 
-/* Button to show the brave panel */
-"BravePanel" = "Panel Brave";
+/* Button to show the Asil Browser panel */
+"BravePanel" = "Panel Asil Browser";
 
 /* No comment provided by engineer. */
-"BraveRewardsAdNotificationTitle" = "Brave Rewards";
+"BraveRewardsAdNotificationTitle" = "Asil Browser Rewards";
 
 /* No comment provided by engineer. */
 "BraveRewardsOpen" = "Buka";
 
-/* Brave Rewards settings title */
-"BraveRewardsTitle" = "Brave Rewards";
+/* Asil Browser Rewards settings title */
+"BraveRewardsTitle" = "Asil Browser Rewards";
 
-/* Brave Search Banner Promotion description content in Search Suggestions */
-"braveSearchPromotion.bannerDescription" = "Carian Brave tidak menjejaki anda, pertanyaan anda atau klikan anda.";
+/* Asil Browser Search Banner Promotion description content in Search Suggestions */
+"braveSearchPromotion.bannerDescription" = "Carian Asil Browser tidak menjejaki anda, pertanyaan anda atau klikan anda.";
 
-/* Brave Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
+/* Asil Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
 "braveSearchPromotion.bannerMaybeLaterButtonTitle" = "Mungkin kemudian";
 
-/* Brave Search Banner Promotion title in Search Suggestions */
+/* Asil Browser Search Banner Promotion title in Search Suggestions */
 "braveSearchPromotion.bannerTitle" = "Sokong carian bebas dengan privasi lebih terjamin";
 
-/* Brave Search Banner Promotion title for try button in Search Suggestions */
-"braveSearchPromotion.bannerTryButtonTitle" = "Cuba gunakan Carian Brave";
+/* Asil Browser Search Banner Promotion title for try button in Search Suggestions */
+"braveSearchPromotion.bannerTryButtonTitle" = "Cuba gunakan Carian Asil Browser";
 
-/* Brave Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
+/* Asil Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
 "braveSearchPromotion.braveSearchPromotionBannerDismissButtonTitle" = "Singkirkan";
 
 /* No comment provided by engineer. */
 "BraveShieldsAdvancedControls" = "Kawalan lanjutan";
 
 /* No comment provided by engineer. */
-"BraveShieldsAndPrivacy" = "Brave Shields & Privasi";
+"BraveShieldsAndPrivacy" = "Asil Browser Shields & Privasi";
 
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "Iklan dan perkara menakutkan yang lain disekat";
@@ -223,17 +223,17 @@
 /* No comment provided by engineer. */
 "BraveShieldsSiteBroken" = "Jika laman ini kelihatan rosak, cubalah Pelindung di bawah";
 
-/* Context: 'Brave Shields Up' or 'Brave Shields Down' */
+/* Context: 'Asil Browser Shields Up' or 'Asil Browser Shields Down' */
 "BraveShieldsStatusTitle" = "Menahan Pelindung";
 
-/* Context: The 'Down' in 'Brave Shields Down' */
+/* Context: The 'Down' in 'Asil Browser Shields Down' */
 "BraveShieldsStatusValueDown" = "Bawah";
 
-/* Context: The 'Up' in 'Brave Shields Up' */
+/* Context: The 'Up' in 'Asil Browser Shields Up' */
 "BraveShieldsStatusValueUp" = "Atas";
 
 /* The accessibility hint spoken when focused on the main shields toggle */
-"BraveShieldsToggleHint" = "Ketik dua kali untuk togol Brave Shields";
+"BraveShieldsToggleHint" = "Ketik dua kali untuk togol Asil Browser Shields";
 
 /* Sync page title */
 "BraveSync" = "Segerak";
@@ -242,16 +242,16 @@
 "BraveSyncInternalsTitle" = "Segerak Dalaman";
 
 /* Sync settings welcome */
-"BraveSyncWelcome" = "Untuk bermula, anda perlu memasangkan Brave pada semua peranti yang anda ingin segerakkan. Untuk menghubungkan mereka bersama-sama, mulakan rantaian penyegerakan yang anda akan gunakan untuk menghubungkan semua peranti anda dengan selamat.";
+"BraveSyncWelcome" = "Untuk bermula, anda perlu memasangkan Asil Browser pada semua peranti yang anda ingin segerakkan. Untuk menghubungkan mereka bersama-sama, mulakan rantaian penyegerakan yang anda akan gunakan untuk menghubungkan semua peranti anda dengan selamat.";
 
 /* The name of the feature */
-"bravetalk.braveTalkTitle" = "Brave Talk";
+"bravetalk.braveTalkTitle" = "Asil Browser Talk";
 
 /* Setting to enable the browser lock privacy feature */
 "BrowserLock" = "Kunci Pelayar";
 
 /* No comment provided by engineer. */
-"BrowserLockDescription" = "Buka kunci Brave menggunakan Touch ID, Face ID atau kod laluan sistem.";
+"BrowserLockDescription" = "Buka kunci Asil Browser menggunakan Touch ID, Face ID atau kod laluan sistem.";
 
 /* A button title for the action to move to the next step of the browser lock migration process. */
 "browserLockMigrationContinueButtonTitle" = "Teruskan";
@@ -260,10 +260,10 @@
 "browserLockMigrationNoPasscodeSetup" = "Belum menetapkan ID atau kod laluan? Buka Tetapan, kemudian ketik \"%@\"";
 
 /* Subtitle on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationSubtitle" = "Kami telah mempermudahkan Kod Laluan Brave. Anda kini boleh mengakses Brave menggunakan ID atau kod laluan yang sama yang anda gunakan pada telefon anda.";
+"browserLockMigrationSubtitle" = "Kami telah mempermudahkan Kod Laluan Asil Browser. Anda kini boleh mengakses Asil Browser menggunakan ID atau kod laluan yang sama yang anda gunakan pada telefon anda.";
 
 /* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationTitle" = "Buka Brave menggunakan Apple Face ID, Touch ID, atau kod laluan anda";
+"browserLockMigrationTitle" = "Buka Asil Browser menggunakan Apple Face ID, Touch ID, atau kod laluan anda";
 
 /* Settings item for clearing browsing history */
 "BrowsingHistory" = "Menyemak Imbas Sejarah";
@@ -272,7 +272,7 @@
 "Cache" = "Cache";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Dengan Brave sebagai lalai, setiap pautan yang anda ketik dibuka dengan perlindungan privasi Brave.";
+"callout.defaultBrowserCalloutDescription" = "Dengan Asil Browser sebagai lalai, setiap pautan yang anda ketik dibuka dengan perlindungan privasi Asil Browser.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Tetapkan sebagai pelayar lalai";
@@ -287,13 +287,13 @@
 "callout.defaultBrowserTitle" = "Privasi. Dihasilkan Secara Mudah.";
 
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "Ini membantu kami mengetahui tentang ciri Brave yang paling kerap digunakan. Tukarkan ini pada bila-bila masa di Tetapan Brave di bawah 'Perisai Brave dan Privasi'.";
+"callout.p3aCalloutDescription" = "Ini membantu kami mengetahui tentang ciri Asil Browser yang paling kerap digunakan. Tukarkan ini pada bila-bila masa di Tetapan Asil Browser di bawah 'Perisai Asil Browser dan Privasi'.";
 
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "Ketahui lebih lanjut tentang Analitik Produk Pengekalan Privasi (P3A).";
 
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutTitle" = "Bantu usaha menambah baik Brave.";
+"callout.p3aCalloutTitle" = "Bantu usaha menambah baik Asil Browser.";
 
 /* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
 "callout.p3aCalloutToggleTitle" = "Kongsikan cerapan produk yang bersifat peribadi dan tanpa nama.";
@@ -308,7 +308,7 @@
 "callout.playlistOnboardingViewTitle" = "Tambahkan video pada Senarai Main…";
 
 /* Subtitle - Description for Privacy Everywhere Full Screen Callout */
-"callout.privacyEverywhereCalloutDescription" = "Dapatkan ciri privasi Brave pada komputer atau tablet anda, dan segerakkan penanda halaman & sambungan antara peranti.";
+"callout.privacyEverywhereCalloutDescription" = "Dapatkan ciri privasi Asil Browser pada komputer atau tablet anda, dan segerakkan penanda halaman & sambungan antara peranti.";
 
 /* Title for button in Default Browser Full Screen Callout */
 "callout.privacyEverywhereCalloutPrimaryButtonTitle" = "Segerakkan sekarang";
@@ -349,7 +349,7 @@
 /* Title indicating whether or not a private key can be used to derive some data from another piece of data. IE: Use one key to generate another */
 "certificateViewer.deriveTitle" = "Terbitan";
 
-/* Title of the section for the Domain Component such as: DNS or brave.com or a website's domain. */
+/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
 "certificateViewer.domainComponentTitle" = "Komponen Domain";
 
 /* Title of the section indication which 'Encryption' algorithm was used. */
@@ -388,7 +388,7 @@
 /* Title of the section for Department of the Company. Example: Human Resources. */
 "certificateViewer.organizationalUnitTitle" = "Unit Organisasi";
 
-/* Title of the section for Name of the Company. Example: Brave Inc. */
+/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
 "certificateViewer.organizationTitle" = "Organisasi";
 
 /* Title indicating 'Parameters' or Input passed to a function/algorithm. */
@@ -599,25 +599,25 @@
 "defaultBrowserCallout.introOpenSettingsButtonText" = "Buka Tetapan";
 
 /* Primary text on default browser popup screen */
-"defaultBrowserCallout.introPrimaryText" = "Buka semua pautan dengan Brave untuk melindungi privasi anda  ";
+"defaultBrowserCallout.introPrimaryText" = "Buka semua pautan dengan Asil Browser untuk melindungi privasi anda  ";
 
 /* Secondary text on default browser popup. */
-"defaultBrowserCallout.introSecondaryText" = "Brave Shields menyekat penjejak & iklan, menjimatkan data, dan menjimatkan masa anda pada setiap laman yang anda lawati     ";
+"defaultBrowserCallout.introSecondaryText" = "Asil Browser Shields menyekat penjejak & iklan, menjimatkan data, dan menjimatkan masa anda pada setiap laman yang anda lawati     ";
 
 /* Tertiary text on default browser popup screen */
-"defaultBrowserCallout.introTertiaryText" = "Buka Tetapan, ketik Aplikasi Penyemak Imbas Lalai, dan pilih Brave.  ";
+"defaultBrowserCallout.introTertiaryText" = "Buka Tetapan, ketik Aplikasi Penyemak Imbas Lalai, dan pilih Asil Browser.  ";
 
-/* Notification body to promote setting Brave app as default browser */
-"defaultBrowserCallout.notificationBody" = "Dioptimumkan untuk iOS %@. Jadikan Brave sebagai penyemak imbas lalai anda hari ini.";
+/* Notification body to promote setting Asil Browser app as default browser */
+"defaultBrowserCallout.notificationBody" = "Dioptimumkan untuk iOS %@. Jadikan Asil Browser sebagai penyemak imbas lalai anda hari ini.";
 
-/* Notification title to promote setting Brave app as default browser */
-"defaultBrowserCallout.notificationTitle" = "Penyemk Imbas Web Brave";
+/* Notification title to promote setting Asil Browser app as default browser */
+"defaultBrowserCallout.notificationTitle" = "Penyemk Imbas Web Asil Browser";
 
 /* No comment provided by engineer. */
 "defaultBrowserCalloutCloseAccesabilityLabel" = "Tutup timbul penyemak imbas lalai";
 
-/* Name for default Brave theme. */
-"defaultThemeName" = "Brave gagal";
+/* Name for default Asil Browser theme. */
+"defaultThemeName" = "Asil Browser gagal";
 
 /* No comment provided by engineer. */
 "Delete" = "Padam";
@@ -772,10 +772,10 @@
 /* Allow link to switch apps? */
 "ExternalAppURLAlertTitle" = "Benarkan pautan untuk menukar apl?";
 
-/* Allow Brave to open the external app URL */
+/* Allow Asil Browser to open the external app URL */
 "ExternalAppURLAllow" = "Benarkan";
 
-/* Don't allow Brave to open the external app URL */
+/* Don't allow Asil Browser to open the external app URL */
 "ExternalAppURLDontAllow" = "Tidak Benarkan";
 
 /* Footer text when user selects to save to favorites when editing a bookmark */
@@ -854,10 +854,10 @@
 "HideLinkPreviewsActionTitle" = "Sembunyikan Pratonton Pautan";
 
 /* Hides the rewards icon */
-"HideRewardsIcon" = "Sembunyikan Ikon Brave Rewards";
+"HideRewardsIcon" = "Sembunyikan Ikon Asil Browser Rewards";
 
 /* Hide the rewards icon explination. */
-"HideRewardsIconSubtitle" = "Sembunyikan ikon Brave Rewards apabila Brave Rewards tidak didayakan";
+"HideRewardsIconSubtitle" = "Sembunyikan ikon Asil Browser Rewards apabila Asil Browser Rewards tidak didayakan";
 
 /* Title for history menu item */
 "HistortMenuItem" = "Sejarah";
@@ -995,13 +995,13 @@
 "MonthlyAdsClaimNotificationBody" = "Ketik untuk menuntut token percuma anda.";
 
 /* The title of the notification that goes out monthly to users who can claim an ads grant */
-"MonthlyAdsClaimNotificationTitle" = "Brave Rewards 💵🎁";
+"MonthlyAdsClaimNotificationTitle" = "Asil Browser Rewards 💵🎁";
 
 /* No comment provided by engineer. */
 "MyFirstAdBody" = "Ketik di sini untuk mengetahui lebih lanjut.";
 
 /* No comment provided by engineer. */
-"MyFirstAdTitle" = "Ini ialah iklan Brave pertama anda";
+"MyFirstAdTitle" = "Ini ialah iklan Asil Browser pertama anda";
 
 /* Bookmark title / Device name */
 "Name" = "Nama";
@@ -1063,14 +1063,14 @@
 /* Setting title for option to automatically redirect a url to another url */
 "nprRedirectFooter" = "Mengubah hala pautan NPR secara automatik kepada versi berasaskan teks mereka (di text.npr.org).";
 
-/* Bookmark title for Brave Support */
-"ntp.braveSupportFavoriteTitle" = "Sokongan Brave";
+/* Bookmark title for Asil Browser Support */
+"ntp.braveSupportFavoriteTitle" = "Sokongan Asil Browser";
 
 /* No comment provided by engineer. */
 "ntp.claimRewards" = "Tuntut Token";
 
-/* Placeholder example: 'You earned 42 BAT by browsing with Brave.' */
-"ntp.earningsReport" = "Anda mendapat %@ dengan menyemak lalu dengan Brave.";
+/* Placeholder example: 'You earned 42 BAT by browsing with Asil Browser.' */
+"ntp.earningsReport" = "Anda mendapat %@ dengan menyemak lalu dengan Asil Browser.";
 
 /* The context is to praise the user that they did a good job, to keep it up. It is used in full sentence like: 'Way to go! You earned 40 BAT last month.' */
 "ntp.goodJob" = "Begitu caranya!";
@@ -1079,10 +1079,10 @@
 "ntp.hideSponsoredImages" = "Sembunyikan imej tajaan";
 
 /* The text description of image type which is being used NTP */
-"ntp.imageTypeSelectionDescription" = "'Tajaan' ialah latar belakang jenama tambahan yang boleh anda dapat dengan mendayakan Brave Rewards.";
+"ntp.imageTypeSelectionDescription" = "'Tajaan' ialah latar belakang jenama tambahan yang boleh anda dapat dengan mendayakan Asil Browser Rewards.";
 
 /* No comment provided by engineer. */
-"ntp.learnMoreAboutRewards" = "Ketahui lebih lanjut tentang Brave Rewards";
+"ntp.learnMoreAboutRewards" = "Ketahui lebih lanjut tentang Asil Browser Rewards";
 
 /* No comment provided by engineer. */
 "ntp.learnMoreAboutSI" = "Ketahui lebih lanjut tentang imej tajaan";
@@ -1114,17 +1114,17 @@
 /* The placeholder says 'Terms of Service'. So full sentence goes like: 'By turning Rewards, you agree to the Terms of Service'. */
 "ntp.turnRewardsTos" = "Dengan menghidupkan Ganjaran, anda bersetuju dengan %@.";
 
-/* Message when opting into brave Ads when region becomes available */
+/* Message when opting into Asil Browser Ads when region becomes available */
 "OBAdsOptInMessage" = "Dapatkan token dan beri ganjaran kepada pencipta untuk kandungan hebat sambil anda menyemak lalu.";
 
-/* Message when opting into brave Ads when region becomes available */
+/* Message when opting into Asil Browser Ads when region becomes available */
 "OBAdsOptInMessageJapan" = "Dapatkan mata dan beri ganjaran kepada pencipta untuk kandungan hebat sambil anda menyemak lalu.";
 
-/* Title when opting into brave Ads when region becomes available */
-"OBAdsOptInTitle" = "Iklan Brave tersedia!";
+/* Title when opting into Asil Browser Ads when region becomes available */
+"OBAdsOptInTitle" = "Iklan Asil Browser tersedia!";
 
 /* Title for ads onboarding screen */
-"OBAdsTitle" = "Brave akan menunjukkan iklan pertama anda dalam";
+"OBAdsTitle" = "Asil Browser akan menunjukkan iklan pertama anda dalam";
 
 /* Title for when the user completes onboarding */
 "OBCompleteTitle" = "Sekarang anda sudah bersedia untuk pergi.";
@@ -1144,14 +1144,14 @@
 /* Button to finish onboarding and start using the app. */
 "OBFinishButton" = "Mulakan pelayaran";
 
-/* Button to join Brave Rewards. */
+/* Button to join Asil Browser Rewards. */
 "OBJoinButton" = "Sertai";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentClipboardPermission" = "Benarkan Brave untuk menyemak papan klip saya untuk kod rujukan yang sepadan";
+"OBPrivacyConsentClipboardPermission" = "Benarkan Asil Browser untuk menyemak papan klip saya untuk kod rujukan yang sepadan";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentDetail" = "Anda mungkin telah memuat turun Brave untuk menyokong perujuk anda. Untuk mengesan perujuk anda, Brave melakukan pemeriksaan satu kali pada papan klip anda untuk mengetahui kod rujukan yang sepadan. Pemeriksaan ini terhad kepada kod sahaja dan tidak ada data peribadi lain yang akan dihantar. Sekiranya anda memilih keluar, perujuk anda tidak akan menerima ganjaran daripada Brave.";
+"OBPrivacyConsentDetail" = "Anda mungkin telah memuat turun Asil Browser untuk menyokong perujuk anda. Untuk mengesan perujuk anda, Asil Browser melakukan pemeriksaan satu kali pada papan klip anda untuk mengetahui kod rujukan yang sepadan. Pemeriksaan ini terhad kepada kod sahaja dan tidak ada data peribadi lain yang akan dihantar. Sekiranya anda memilih keluar, perujuk anda tidak akan menerima ganjaran daripada Asil Browser.";
 
 /* No comment provided by engineer. */
 "OBPrivacyConsentNoButton" = "Jangan benarkan semakan ini";
@@ -1172,10 +1172,10 @@
 "OBRewardsAgreementDetailsAnd" = "dan";
 
 /* Title for rewards agreement onboarding screen */
-"OBRewardsAgreementTitle" = "Brave Rewards";
+"OBRewardsAgreementTitle" = "Asil Browser Rewards";
 
 /* Detail text for rewards onboarding screen */
-"OBRewardsDetail" = "Langkah memilih untuk menerima paparan Brave Private Ads dapat menyokong penerbit dan pencipta kandungan bagi setiap iklan yang dipaparkan.";
+"OBRewardsDetail" = "Langkah memilih untuk menerima paparan Asil Browser Private Ads dapat menyokong penerbit dan pencipta kandungan bagi setiap iklan yang dipaparkan.";
 
 /* Detail text for rewards onboarding screen */
 "OBRewardsDetailInAdRegion" = "Dapatkan token dan beri ganjaran kepada pencipta untuk kandungan hebat sambil anda menyemak lalu.";
@@ -1184,7 +1184,7 @@
 "OBRewardsPrivacyPolicyDetailLink" = "Dasar Privasi";
 
 /* Title for rewards onboarding screen */
-"OBRewardsTitle" = "Brave Rewards";
+"OBRewardsTitle" = "Asil Browser Rewards";
 
 /* Save button to save current selection */
 "OBSaveButton" = "Simpan";
@@ -1193,7 +1193,7 @@
 "OBSearchEngineDetail" = "Pilih enjin carian lalai anda";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Selamat datang ke Pelayar Brave";
+"OBSearchEngineTitle" = "Selamat datang ke Pelayar Asil Browser";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "Sekat penjejak yang menceroboh privasi agar anda boleh melayari internet dengan tenang tanpa diikuti.";
@@ -1201,20 +1201,20 @@
 /* Title for shields onboarding screen */
 "OBShieldsTitle" = "Menahan Pelindung";
 
-/* Button to show the Brave Rewards Ads. */
+/* Button to show the Asil Browser Rewards Ads. */
 "OBShowMeButton" = "Tunjukkan Saya";
 
-/* Button to show Brave Rewards. */
+/* Button to show Asil Browser Rewards. */
 "OBTurnOnButton" = "Mula";
 
 /* The description text shown when there is big tech tracker among trackers. Example usage: Google, Amazon and 32 other trackers blocked */
 "onboarding.blockedAdsOnboardingBigTechInformationText" = "%1$@ dan %2$lld iklan lain & penjejak disekat";
 
-/* The footnote indicating what Brave shields is blocking */
-"onboarding.blockedAdsOnboardingFootnoteText" = "Lihat semua perkara kurang baik yang disekat oleh Brave, pada setiap halaman, dengan Shields.";
+/* The footnote indicating what Asil Browser shields is blocking */
+"onboarding.blockedAdsOnboardingFootnoteText" = "Lihat semua perkara kurang baik yang disekat oleh Asil Browser, pada setiap halaman, dengan Shields.";
 
 /* The text describing user where they should press in order to open Shield panel */
-"onboarding.blockedAdsOnboardingInstructionsText" = "Ketik untuk melihat Brave Shields";
+"onboarding.blockedAdsOnboardingInstructionsText" = "Ketik untuk melihat Asil Browser Shields";
 
 /* The description text shown when there is no big tech tracker among trackers. Example usage: 31 Ads & trackers blocked. The number here is presented separately so it is not in translation. */
 "onboarding.blockedAdsOnboardingNoBigTechInformationText" = "Iklan & penjejak disekat";
@@ -1229,13 +1229,13 @@
 "onboarding.ntpOnboardingPopOverTrackerDescription" = "Dengan menyekat penjejak & iklan, laman web menggunakan kurang data dan memuat dengan lebih pantas.";
 
 /* Description for the Omnibox (URL Bar) pop-over that describes faster load times. */
-"onboarding.omniboxOnboardingPopOverDescription" = "Lihat perbezaan Brave:\nTiada iklan. Tiada penjejak. Muatan halaman yang lebih cepat.";
+"onboarding.omniboxOnboardingPopOverDescription" = "Lihat perbezaan Asil Browser:\nTiada iklan. Tiada penjejak. Muatan halaman yang lebih cepat.";
 
 /* Title for the Omnibox (URL Bar) pop-over that describes faster load times. */
 "onboarding.omniboxOnboardingPopOverTitle" = "Taip nama laman web atau URL";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "Selamat Datang ke Brave";
+"onboarding.welcomeScreenTitle" = "Selamat Datang ke Asil Browser";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "Teruskan";
@@ -1249,8 +1249,8 @@
 /* Context menu item for opening all folder bookmarks */
 "OpenAllBookmarks" = "Buka Semua (%i)";
 
-/* Button title for opening the Brave Rewards panel to settings */
-"OpenBraveRewardsSettings" = "Buka Tetapan Brave Rewards";
+/* Button title for opening the Asil Browser Rewards panel to settings */
+"OpenBraveRewardsSettings" = "Buka Tetapan Asil Browser Rewards";
 
 /* Error description when there is an error while navigating to Files App */
 "OpenDownloadsFolderErrorDescription" = "Ralat tidak diketahui telah berlaku semasa membuka folder Downloads dalam apl Files.";
@@ -1295,13 +1295,13 @@
 "opentabs.noSyncChainPlaceHolderViewDescription" = "Untuk bermula, sediakan rantaian penyegerakan dan togol \"Buka Tab\" dalam Tetapan Penyegerakan.";
 
 /* The additional description of the view describing tab syncing should be enabled. */
-"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Urus perkara yang Brave segerakkan dalam Tetapan.";
+"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Urus perkara yang Asil Browser segerakkan dalam Tetapan.";
 
 /* The description of the view describing no other sessions are active in sync. */
 "opentabs.noSyncSessionPlaceHolderViewDescription" = "Tiada sesi aktif untuk ditunjukkan daripada peranti anda yang lain.";
 
 /* The title of the view showing no synced sessions */
-"opentabs.noSyncSessionPlaceHolderViewTitle" = "Ruang ini menunjukkan tab Brave yang dibuka dalam peranti lain";
+"opentabs.noSyncSessionPlaceHolderViewTitle" = "Ruang ini menunjukkan tab Asil Browser yang dibuka dalam peranti lain";
 
 /* The title for the action to hide open session with all tabs */
 "opentabs.openSessionHideAllActionTitle" = "Sorok sementara";
@@ -1354,35 +1354,35 @@
 /* Button title to that opens a website. */
 "OpenWebsite" = "Buka Laman Web";
 
-/* The subtitle description of menu item Brave News */
+/* The subtitle description of menu item Asil Browser News */
 "optionsMenu.braveNewsItemDescription" = "Kisah teratas hari ini dalam suapan berita peribadi";
 
-/* Brave News Item Menu title */
+/* Asil Browser News Item Menu title */
 "optionsMenu.braveNewsItemTitle" = "Berita";
 
-/* The subtitle description of menu item Brave Playlist */
+/* The subtitle description of menu item Asil Browser Playlist */
 "optionsMenu.bravePlaylistItemDescription" = "Simpan senarai main luar talian untuk sebarang video/strim";
 
-/* Brave News Item Menu title */
+/* Asil Browser News Item Menu title */
 "optionsMenu.bravePlaylistItemTitle" = "Senarai Main";
 
-/* The subtitle description of menu item Brave Talk */
+/* The subtitle description of menu item Asil Browser Talk */
 "optionsMenu.braveTalkItemDescription" = "Panggilan video peribadi, terus daripada pelayar anda";
 
-/* Brave Talk Item Menu title */
+/* Asil Browser Talk Item Menu title */
 "optionsMenu.braveTalkItemTitle" = "Cakap";
 
-/* The subtitle description of menu item Brave VPN */
+/* The subtitle description of menu item Asil Browser VPN */
 "optionsMenu.braveVPNItemDescription" = "Lindungi seluruh peranti anda dalam talian";
 
-/* Brave VPN Item Menu title */
+/* Asil Browser VPN Item Menu title */
 "optionsMenu.braveVPNItemTitle" = "VPN";
 
-/* The subtitle description of menu item Brave Wallet */
+/* The subtitle description of menu item Asil Browser Wallet */
 "optionsMenu.braveWalletItemDescription" = "Dompet kripto yang selamat, tidak memerlukan sambungan";
 
 /* Privacy Features Section title */
-"optionsMenu.menuSectionTitle" = "Ciri Brave";
+"optionsMenu.menuSectionTitle" = "Ciri Asil Browser";
 
 /* Section name for other privacy settings */
 "OtherPrivacySettingsSection" = "Tetapan Privasi Lain";
@@ -1390,10 +1390,10 @@
 /* Section name for other settings. */
 "OtherSettingsSection" = "Tetapan Lain";
 
-/* A subtitle shown on the setting that toggles analytics on Brave. */
-"p3a.settingSubtitle" = "Maklumat P3A tanpa nama membantu Brave menganggarkan penggunaan keseluruhan, dan memastikan kami meningkatkan ciri popular.";
+/* A subtitle shown on the setting that toggles analytics on Asil Browser. */
+"p3a.settingSubtitle" = "Maklumat P3A tanpa nama membantu Asil Browser menganggarkan penggunaan keseluruhan, dan memastikan kami meningkatkan ciri popular.";
 
-/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Brave. */
+/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
 "p3a.settingTitle" = "Benarkan Analitis Produk Pengekalan Privasi (P3A)";
 
 /* Title for the section for the global/default zoom level */
@@ -1439,7 +1439,7 @@
 "playList.addToPlayListAlertDescription" = "Adakah anda mahu menambah video ini ke senarai main anda?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Tambah ke Senarai Main Brave";
+"playList.addToPlayListAlertTitle" = "Tambah ke Senarai Main Asil Browser";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "Pilihan Main Semula";
@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "Tetapan";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Senarai Main Brave";
+"playlist.carplayTitle" = "Senarai Main Asil Browser";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Padamkan Cache Luar Talian";
@@ -1478,7 +1478,7 @@
 "playList.loadResourcesErrorAlertDescription" = "Terdapat masalah memuatkan sumber!";
 
 /* Description footer for playlist menu badge option */
-"playlist.menuBadgeOptionFooterText" = "Apabila didayakan, lencana akan dipaparkan pada ikon menu utama, menunjukkan bahawa media pada halaman mungkin ditambahkan pada Senarai Main Brave.";
+"playlist.menuBadgeOptionFooterText" = "Apabila didayakan, lencana akan dipaparkan pada ikon menu utama, menunjukkan bahawa media pada halaman mungkin ditambahkan pada Senarai Main Asil Browser.";
 
 /* Title for playlist menu badge option */
 "playlist.menuBadgeOptionTitle" = "Tunjukkan Lencana Pemberitahuan Menu";
@@ -1487,7 +1487,7 @@
 "playlist.movePlaylistShareActionMenuTitle" = "Alih...";
 
 /* Detail Text when there are no items in the playlist */
-"playList.noItemLabelDetailLabel" = "Anda boleh menambah item ke Senarai Main Brave anda dalam penyemak imbas";
+"playList.noItemLabelDetailLabel" = "Anda boleh menambah item ke Senarai Main Asil Browser anda dalam penyemak imbas";
 
 /* Text when there are no items in the playlist */
 "playList.noItemLabelTitle" = "Tiada Item Tersedia";
@@ -1565,7 +1565,7 @@
 "playList.playListSettingTitle" = "Senarai Main";
 
 /* Body for the error message that shows when a playlist folder already exists */
-"playList.playlistSharedFolderAlreadyExistsBody" = "Folder ini sudah sedia ada dalam Senarai Main Brave anda";
+"playList.playlistSharedFolderAlreadyExistsBody" = "Folder ini sudah sedia ada dalam Senarai Main Asil Browser anda";
 
 /* Title for the error message that shows when a playlist folder already exists */
 "playList.playlistSharedFolderAlreadyExistsTitle" = "Maaf";
@@ -1601,16 +1601,16 @@
 "playlist.playlistWebCompatibilityTitle" = "Keserasian Web";
 
 /* Body of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddBody" = "Senarai Main Brave menyokong mod Main Semula Luar Talian, Gambar dalam gambar, main semula berterusan dan ulang.";
+"playlist.popoverAddBody" = "Senarai Main Asil Browser menyokong mod Main Semula Luar Talian, Gambar dalam gambar, main semula berterusan dan ulang.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Media ini berada dalam Senarai Main Brave anda";
+"playlist.popoverAddedTitle" = "Media ini berada dalam Senarai Main Asil Browser anda";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddTitle" = "Adakah anda mahu menambahkan media ini pada Senarai Main Brave?";
+"playlist.popoverAddTitle" = "Adakah anda mahu menambahkan media ini pada Senarai Main Asil Browser?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Buka Dalam Senarai Main Brave";
+"playlist.popoverOpenInBravePlaylist" = "Buka Dalam Senarai Main Asil Browser";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Alih Keluar";
@@ -1652,7 +1652,7 @@
 "playlist.sharePlaylistActionDetailsTitle" = "Anda boleh membuka item semasa dalam Tab Baharu, atau berkongsinya melalui Menu Kongsi Sistem";
 
 /* Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
-"playlist.sharePlaylistActionTitle" = "Menu Senarai Main Brave";
+"playlist.sharePlaylistActionTitle" = "Menu Senarai Main Asil Browser";
 
 /* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
 "playlist.sharePlaylistOpenInNewPrivateTabTitle" = "Buka Dalam Tab Peribadi";
@@ -1667,19 +1667,19 @@
 "playList.sorryAlertTitle" = "Maaf";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Ditambah ke Senarai Main Brave";
+"playList.toastAddedToPlaylistTitle" = "Ditambah ke Senarai Main Asil Browser";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "Buka";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Tambah ke Senarai Main Brave";
+"playList.toastAddToPlaylistTitle" = "Tambah ke Senarai Main Asil Browser";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
-"playList.toastExitingItemPlaylistTitle" = "Lihat dalam Senarai Main Brave";
+"playList.toastExitingItemPlaylistTitle" = "Lihat dalam Senarai Main Asil Browser";
 
 /* Footer for option to disable URL-Bar button */
-"playlist.urlBarButtonOptionFooter" = "Menambah butang senarai main (nampak seperti 4 baris dengan simbol +) di sebelah bar alamat di penyemak imbas Brave. Butang ini memberi anda akses pantas untuk membuka Senarai Main, atau menambah atau mengalih keluar media.";
+"playlist.urlBarButtonOptionFooter" = "Menambah butang senarai main (nampak seperti 4 baris dengan simbol +) di sebelah bar alamat di penyemak imbas Asil Browser. Butang ini memberi anda akses pantas untuk membuka Senarai Main, atau menambah atau mengalih keluar media.";
 
 /* Title for option to disable URL-Bar button */
 "playlist.urlBarButtonOptionTitle" = "Dayakan butang akses pantas";
@@ -1708,7 +1708,7 @@
 /* The title of the screen where the user will move an item from one folder to another folder. */
 "playlistFolders.moveFolderScreenTitle" = "Alih";
 
-/* %@ Should NOT be localized. It is a placeholder. Example: Brave Folder and 1 more item. */
+/* %@ Should NOT be localized. It is a placeholder. Example: Asil Browser Folder and 1 more item. */
 "playlistFolders.moveItemDescription" = "%@ dan 1 lagi item";
 
 /* %lld is a placeholder and should not be localized. Sometimes items can have no name. So this is a generic title to use */
@@ -1717,7 +1717,7 @@
 /* Sometimes an item can have no name. So this is a generic title to use */
 "playlistFolders.moveItemWithNoNameTitle" = "1 item";
 
-/* %@ and %lld Should NOT be localized. They are placeholders. Example: Brave Folder and 3 more items. Music and 2 more items. */
+/* %@ and %lld Should NOT be localized. They are placeholders. Example: Asil Browser Folder and 3 more items. Music and 2 more items. */
 "playlistFolders.moveMultipleItemDescription" = "%1$@ dan %2$lld lagi item";
 
 /* The title of the button to create a new folder */
@@ -1751,7 +1751,7 @@
 "playlistFolders.untitledFolderTitle" = "Folder Tiada Tajuk";
 
 /* Accessibility Title for the button that adds the playlist to the database. */
-"playlistFolderSharing.addButtonAccessibilityTitle" = "Butang Tambahkan pada Senarai Main Brave";
+"playlistFolderSharing.addButtonAccessibilityTitle" = "Butang Tambahkan pada Senarai Main Asil Browser";
 
 /* Title for the button that adds the playlist to the database. */
 "playlistFolderSharing.addButtonTitle" = "Tambah";
@@ -1795,7 +1795,7 @@
 /* Description for closing a popover menu that is displayed. */
 "PopoverDefaultClose" = "Tutup Menu Konteks";
 
-/* Description for closing the `Brave Shields` popover menu that is displayed. */
+/* Description for closing the `Asil Browser Shields` popover menu that is displayed. */
 "PopoverShieldsMenuClose" = "Tutup Menu Shields";
 
 /* Label for preview action on Tab Tray Tab to add current tab to Bookmarks */
@@ -1819,7 +1819,7 @@
 /* Header text, under it we show items blocked by our ad blocker. 'All  time' sentence context is like 'All time items blocked by our ad blocker. */
 "privacyHub.allTimeListsHeader" = "Sepanjang masa";
 
-/* Title of a section to show total count of trackers blocked by Brave */
+/* Title of a section to show total count of trackers blocked by Asil Browser */
 "privacyHub.allTimeListsTrackersView" = "Penjejak & iklan";
 
 /* Title of a section to show websites containing highest amount of trackers */
@@ -1843,10 +1843,10 @@
 /* Title under which we display a website on which there's the highest number of trackers or ads. */
 "privacyHub.allTimeWebsiteTitle" = "Laman web";
 
-/* Text for a button to display a list of all alerts caught by the Brave VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
+/* Text for a button to display a list of all alerts caught by the Asil Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
 "privacyHub.allVPNAlertsButtonText" = "Semua makluman";
 
-/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Brave Shields', 'Blocked by BraveVPN */
+/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Asil Browser Shields', 'Blocked by BraveVPN */
 "privacyHub.blockedBy" = "Disekat oleh";
 
 /* It says that a ad or tracker was blocked. Think of it in context of 'A tracker X was blocked' */
@@ -1864,8 +1864,8 @@
 /* Header text, under it we display blocked items from last week */
 "privacyHub.lastWeekHeader" = "Minggu lepas";
 
-/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Brave Shields on 42 sites' */
-"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** telah disekat oleh Brave Shields pada tapak **%2$lld**";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Asil Browser Shields on 42 sites' */
+"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** telah disekat oleh Asil Browser Shields pada tapak **%2$lld**";
 
 /* Title under which we display a tracker which was most frequently detected by our ad blocking mechanism. */
 "privacyHub.mostFrequentTrackerAndAdTitle" = "Penjejak & Iklan Paling Kerap";
@@ -1883,7 +1883,7 @@
 "privacyHub.notificationCalloutButtonText" = "Hidupkan pemberitahuan";
 
 /* Message of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
-"privacyHub.notificationMessage" = "Ringkasan tentang cara Brave melindungi anda dalam talian pada minggu ini.";
+"privacyHub.notificationMessage" = "Ringkasan tentang cara Asil Browser melindungi anda dalam talian pada minggu ini.";
 
 /* Title of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
 "privacyHub.notificationTitle" = "Laporan Privasi Mingguan";
@@ -1897,7 +1897,7 @@
 /* Text of a disclaimer that explains how the data for generating privacy reprots is stored. */
 "privacyHub.privacyReportsDisclaimer" = "Data Hab Privasi disimpan secara setempat dan tidak akan dihantar ke mana-mana.";
 
-/* Title of main privacy hub screen. This screen shows various stats caught by Brave's ad blockers. */
+/* Title of main privacy hub screen. This screen shows various stats caught by Asil Browser's ad blockers. */
 "privacyHub.privacyReportsTitle" = "Hab Privasi";
 
 /* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which website had the most tracker per visit, example usage: 'example.com had an average of 10 trackers & ads blocked per visit ' */
@@ -1906,22 +1906,22 @@
 /* Title of a website that contained the most trackers per visit. */
 "privacyHub.riskiestWebsiteTitle" = "Tapak dengan penjejak terbanyak";
 
-/* This text explains a setting that lets Brave monitor blocked network requests */
+/* This text explains a setting that lets Asil Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsFooter" = "Hab Privasi memaparkan jumlah laman yang disekat oleh Shields. Tetapan tidak akan mempengaruhi bilangan Shields pada halaman tab baharu. Data Shields tidak dikira dalam tetingkap peribadi.";
 
-/* Title of a setting that lets Brave monitor blocked network requests */
+/* Title of a setting that lets Asil Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsTitle" = "Paparkan Data Shields";
 
-/* This text explains a setting that lets Brave monitor blocked network requests captured by Brave VPN */
+/* This text explains a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
 "privacyHub.settingsEnableVPNAlertsFooter" = "Tetapan hanya dikenakan jika anda sudah membeli langganan VPN.";
 
-/* Title of a setting that lets Brave monitor blocked network requests captured by Brave VPN */
+/* Title of a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
 "privacyHub.settingsEnableVPNAlertsTitle" = "Paparkan Makluman VPN";
 
 /* This text explains what the button to clear datain the Privacy Hub is for. */
 "privacyHub.settingsSlearDataFooter" = "Menetapkan semula kiraan semua laman yang telah disekat oleh Shields.";
 
-/* Button that lets user clear all blocked requests and vpn alerts data that Brave captured for them. */
+/* Button that lets user clear all blocked requests and vpn alerts data that Asil Browser captured for them. */
 "privacyHub.settingsSlearDataTitle" = "Kosongkan Data Shields";
 
 /* This label says shields, as a source of by what a resource was blocked. Think of it in context of 'Blocked by Shields' */
@@ -1946,15 +1946,15 @@
 "privacyHub.vpnAlertRegularTrackerTypeSingular" = "Penjejak atau Iklan";
 
 /* Section title, this section displays vpn alerts: items which the vpn managed to block on users behalf. */
-"privacyHub.vpnAlertsHeader" = "Brave Firewall + Makluman VPN";
+"privacyHub.vpnAlertsHeader" = "Asil Browser Firewall + Makluman VPN";
 
-/* This label says about Brave VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
+/* This label says about Asil Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
 "privacyHub.vpnLabel" = "Firewall + VPN";
 
 /* It shows a total count of items blocked by our VPN shields */
 "privacyHub.vpvnAlertsTotalCount" = "Jumlah kiraan";
 
-/* Show Brave Browser Privacy Policy page from the Privacy section in the settings. */
+/* Show Asil Browser Browser Privacy Policy page from the Privacy section in the settings. */
 "PrivacyPolicy" = "Dasar Privasi";
 
 /* Private button title */
@@ -1970,10 +1970,10 @@
 "PrivateBrowsingOnlyWarning" = "Mod Penyemakan Imbas Peribadi Sahaja akan menutup semua tab semasa anda dan mengelog anda keluar daripada semua tapak.";
 
 /* Private tab details */
-"PrivateTabBody" = "Tab Peribadi tidak disimpan di dalam Brave, tetapi ia tidak menjadikan anda tanpa nama dalam talian. Tapak yang anda lawati dalam tab peribadi tidak akan muncul dalam sejarah anda dan kukinya sentiasa hilang apabila anda menutupnya — tidak akan ada sebarang jejak yang tinggal di dalam Brave. Walau bagaimanapun, muat turun akan disimpan.\nPembawa mudah alih anda (atau pemilik rangkaian Wi-Fi atau VPN yang anda disambungkan) boleh melihat tapak mana yang anda lawati dan tapak tersebut akan mengetahui alamat IP awam anda, walaupun di dalam Tab Peribadi.";
+"PrivateTabBody" = "Tab Peribadi tidak disimpan di dalam Asil Browser, tetapi ia tidak menjadikan anda tanpa nama dalam talian. Tapak yang anda lawati dalam tab peribadi tidak akan muncul dalam sejarah anda dan kukinya sentiasa hilang apabila anda menutupnya — tidak akan ada sebarang jejak yang tinggal di dalam Asil Browser. Walau bagaimanapun, muat turun akan disimpan.\nPembawa mudah alih anda (atau pemilik rangkaian Wi-Fi atau VPN yang anda disambungkan) boleh melihat tapak mana yang anda lawati dan tapak tersebut akan mengetahui alamat IP awam anda, walaupun di dalam Tab Peribadi.";
 
 /* Private tab detail text */
-"PrivateTabDetails" = "Menggunakan Tab Peribadi hanya mengubah tindakan Brave pada peranti anda, ia tidak mengubah tingkah laku orang lain.\n\nTapak sentiasa mengetahui alamat IP anda apabila anda melawatnya. Dari sini, ia sering dapat meneka secara kasar di mana anda berada — biasanya bandar anda. Kadangkala tekaan lokasi boleh jauh lebih spesifik. Tapak juga mengetahui semua yang anda sampaikan secara khusus, seperti istilah carian. Sekiranya anda log masuk ke sesuatu tapak, ia akan mengetahui bahawa anda pemilik akaun tersebut. Anda akan masih akan dilog keluar apabila anda menutup Tab Peribadi kerana Brave akan membuang kuki yang membuatkan anda kekal dilog masuk.\n\nSesiapa yang menyambungkan anda ke Internet (ISP anda) boleh melihat semua aktiviti rangkaian anda. Selalunya, ini adalah pembawa mudah alih anda. Sekiranya anda disambungkan ke rangkaian Wi-Fi, ini adalah pemilik rangkaian tersebut, dan jika anda menggunakan VPN, maka ia siapa saja yang menjalankan VPN tersebut. ISP anda dapat melihat tapak mana yang anda lawati semasa anda mengunjunginya. Sekiranya tapak tersebut menggunakan HTTPS, ia tidak boleh membuat lebih daripada sekadar tekaan bijak mengenai apa yang anda lakukan di tapak tersebut. Tetapi jika tapak hanya menggunakan HTTP, ISP anda dapat melihat semuanya: istilah carian anda, halaman mana yang anda baca, dan pautan mana yang anda ikuti.\n\nSekiranya majikan menguruskan peranti anda, mereka mungkin juga memantau apa yang anda lakukan dengannya. Menggunakan Tab Peribadi mungkin tidak akan menghalang mereka untuk mengetahui tapak mana yang telah anda lawati. Orang lain yang mempunyai akses ke peranti anda juga boleh memasang perisian yang memantau aktiviti anda, dan Tab Peribadi tidak akan melindungi anda daripada ini juga.";
+"PrivateTabDetails" = "Menggunakan Tab Peribadi hanya mengubah tindakan Asil Browser pada peranti anda, ia tidak mengubah tingkah laku orang lain.\n\nTapak sentiasa mengetahui alamat IP anda apabila anda melawatnya. Dari sini, ia sering dapat meneka secara kasar di mana anda berada — biasanya bandar anda. Kadangkala tekaan lokasi boleh jauh lebih spesifik. Tapak juga mengetahui semua yang anda sampaikan secara khusus, seperti istilah carian. Sekiranya anda log masuk ke sesuatu tapak, ia akan mengetahui bahawa anda pemilik akaun tersebut. Anda akan masih akan dilog keluar apabila anda menutup Tab Peribadi kerana Asil Browser akan membuang kuki yang membuatkan anda kekal dilog masuk.\n\nSesiapa yang menyambungkan anda ke Internet (ISP anda) boleh melihat semua aktiviti rangkaian anda. Selalunya, ini adalah pembawa mudah alih anda. Sekiranya anda disambungkan ke rangkaian Wi-Fi, ini adalah pemilik rangkaian tersebut, dan jika anda menggunakan VPN, maka ia siapa saja yang menjalankan VPN tersebut. ISP anda dapat melihat tapak mana yang anda lawati semasa anda mengunjunginya. Sekiranya tapak tersebut menggunakan HTTPS, ia tidak boleh membuat lebih daripada sekadar tekaan bijak mengenai apa yang anda lakukan di tapak tersebut. Tetapi jika tapak hanya menggunakan HTTP, ISP anda dapat melihat semuanya: istilah carian anda, halaman mana yang anda baca, dan pautan mana yang anda ikuti.\n\nSekiranya majikan menguruskan peranti anda, mereka mungkin juga memantau apa yang anda lakukan dengannya. Menggunakan Tab Peribadi mungkin tidak akan menghalang mereka untuk mengetahui tapak mana yang telah anda lawati. Orang lain yang mempunyai akses ke peranti anda juga boleh memasang perisian yang memantau aktiviti anda, dan Tab Peribadi tidak akan melindungi anda daripada ini juga.";
 
 /* Private tab information link */
 "PrivateTabLink" = "Ketahui tentang Tab Peribadi.";
@@ -1987,8 +1987,8 @@
 /* Title for quick-search engines settings section. */
 "QuickSearchEngines" = "Enjin Carian Pantas";
 
-/* Open the App Store to rate Brave. */
-"RateBrave" = "Berikan penarafan kepada Brave";
+/* Open the App Store to rate Asil Browser. */
+"RateBrave" = "Berikan penarafan kepada Asil Browser";
 
 /* Accessibility label for button increasing font size in display settings of reader mode */
 "ReaderModeBiggerFontButtonAccessibilityLabel" = "Tingkatkan saiz teks";
@@ -2017,13 +2017,13 @@
 /* Accessibility hint for the font type buttons in reader mode display settings */
 "ReaderModeFontTypeButtonAccessibilityHint" = "Mengubah jenis fon.";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Brave reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModeLoadingContentDisplayText" = "Memuatkan kandungan...";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Brave reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModeLoadOriginalLinkText" = "Muatkan halaman asal";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Brave reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModePageCantShowDisplayText" = "Halaman ini tidak dapat dipaparkan dalam Paparan Pembaca.";
 
 /* Title of a bar that show up when you enter reader mode. */
@@ -2108,10 +2108,10 @@
 "ReportABug" = "Laporkan Pepijat";
 
 /* First part of the report a broken site copy. After the colon is a new line and then a website address */
-"ReportBrokenSiteBody1" = "Beritahu pembangun Brave bahawa tapak ini tidak berfungsi dengan betul dengan Shields:";
+"ReportBrokenSiteBody1" = "Beritahu pembangun Asil Browser bahawa tapak ini tidak berfungsi dengan betul dengan Shields:";
 
 /* No comment provided by engineer. */
-"ReportBrokenSiteBody2" = "Nota: Alamat tapak ini akan diserahkan bersama nombor versi Brave anda dan alamat IP anda (yang tidak akan disimpan).";
+"ReportBrokenSiteBody2" = "Nota: Alamat tapak ini akan diserahkan bersama nombor versi Asil Browser anda dan alamat IP anda (yang tidak akan disimpan).";
 
 /* No comment provided by engineer. */
 "ReportBrokenSubmitButtonTitle" = "Serah";
@@ -2129,33 +2129,33 @@
 "RestoreTabNegativeButtonTitle" = "Tidak";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Nampaknya Brave telah rosak sebelumnya. Adakah anda ingin memulihkan tab anda?";
+"RestoreTabOnCrashAlertMessage" = "Nampaknya Asil Browser telah rosak sebelumnya. Adakah anda ingin memulihkan tab anda?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "Aduh, ini memalukan.";
 
-/* Body for Brave Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInBody" = "Dengan Brave Rewards, anda boleh melihat iklan yang menjaga privasi daripada rangkaian Brave Ads. Tiada penjejak. Tiada kelewatan. Data anda selamat sepenuhnya.";
+/* Body for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInBody" = "Dengan Asil Browser Rewards, anda boleh melihat iklan yang menjaga privasi daripada rangkaian Asil Browser Ads. Tiada penjejak. Tiada kelewatan. Data anda selamat sepenuhnya.";
 
-/* Title for Brave Talk rewards opt-in screen button */
+/* Title for Asil Browser Talk rewards opt-in screen button */
 "rewards.braveTalkRewardsOptInButtonTitle" = "Hidupkan Rewards";
 
-/* Body for successful Brave Talk rewards opt-in */
-"rewards.braveTalkRewardsOptInSuccessBody" = "Klik di mana sahaja di skrin untuk meneruskan ke Brave Talk.";
+/* Body for successful Asil Browser Talk rewards opt-in */
+"rewards.braveTalkRewardsOptInSuccessBody" = "Klik di mana sahaja di skrin untuk meneruskan ke Asil Browser Talk.";
 
-/* Title for successful Brave Talk rewards opt-in */
+/* Title for successful Asil Browser Talk rewards opt-in */
 "rewards.braveTalkRewardsOptInSuccessTitle" = "Anda kini boleh memulakan panggilan percuma";
 
-/* Title for Brave Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInTitle" = "Untuk memulakan panggilan percuma, hidupkan Brave Rewards";
+/* Title for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInTitle" = "Untuk memulakan panggilan percuma, hidupkan Asil Browser Rewards";
 
-/* Displayed when Brave Rewards is disabled */
+/* Displayed when Asil Browser Rewards is disabled */
 "rewards.disabledBody" = "Hidupkan untuk membantu menyokong pencipta kandungan";
 
 /* Displayed in the status container when rewards is disabled */
-"rewards.disabledStatusBody" = "Menggunakan Brave Rewards membantu menyokong pencipta kandungan sambil anda menyemak lalu.";
+"rewards.disabledStatusBody" = "Menggunakan Asil Browser Rewards membantu menyokong pencipta kandungan sambil anda menyemak lalu.";
 
-/* Displayed when Brave Rewards is enabled */
+/* Displayed when Asil Browser Rewards is enabled */
 "rewards.enabledBody" = "Anda membantu menyokong pencipta kandungan";
 
 /* Displayed in the status container when rewards is enabled but you're not currently supporting any publishers (0 AC count) */
@@ -2180,7 +2180,7 @@
 "rewards.legacyWalletTransferStatusButtonPendingTitle" = "Status pemindahan dompet lama anda belum selesai";
 
 /* No comment provided by engineer. */
-"rewards.legacyWalletTransferStatusCompletedBody" = "Pemindahan dompet legasi anda selesai! Baki anda yang sedia ada mungkin masih memerlukan beberapa minit untuk muncul pada dompet Brave Rewards desktop anda.";
+"rewards.legacyWalletTransferStatusCompletedBody" = "Pemindahan dompet legasi anda selesai! Baki anda yang sedia ada mungkin masih memerlukan beberapa minit untuk muncul pada dompet Asil Browser Rewards desktop anda.";
 
 /* Title shown above body of text explaining that their transfer is completed */
 "rewards.legacyWalletTransferStatusCompletedTitle" = "Pemindahan Selesai!";
@@ -2231,13 +2231,13 @@
 "rewards.optInDisclaimer" = "Dengan mengklik, anda bersetuju dengan %1$@ dan %2$@. Nyahdayakan bila-bila masa dalam Tetapan.";
 
 /* No comment provided by engineer. */
-"rewards.settingsFooterMessage" = "Pembayaran Brave Rewards tidak tersedia buat sementara waktu pada peranti ini. Pindahkan dana dompet sedia ada anda ke dompet desktop untuk menyimpan token anda.";
+"rewards.settingsFooterMessage" = "Pembayaran Asil Browser Rewards tidak tersedia buat sementara waktu pada peranti ini. Pindahkan dana dompet sedia ada anda ke dompet desktop untuk menyimpan token anda.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleMessage" = "Sokong pencipta dan penerbit kandungan secara automatik dengan mendayakan Brave Private Ads. Brave Private Ads adalah iklan yang menghormati privasi yang memberikan kembali kepada pencipta kandungan.";
+"rewards.settingsToggleMessage" = "Sokong pencipta dan penerbit kandungan secara automatik dengan mendayakan Asil Browser Private Ads. Asil Browser Private Ads adalah iklan yang menghormati privasi yang memberikan kembali kepada pencipta kandungan.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleTitle" = "Dayakan Brave Rewards";
+"rewards.settingsToggleTitle" = "Dayakan Asil Browser Rewards";
 
 /* Displayed under verified publishers */
 "rewards.supportingPublisher" = "Anda membantu menyokong pencipta kandungan seperti yang ini.";
@@ -2252,19 +2252,19 @@
 "rewards.unverifiedPublisher" = "Pencipta ini belum mengesahkan dan tidak akan dimasukakn dalam sokongan pencipta";
 
 /* A confirmation message shown to the user after completing a wallet transfer successfully */
-"rewards.walletTransferCompleteBody" = "Pemindahan anda telah dimulakan. Apa-apa baki BAT yang sedia ada mungkin mengambil masa beberapa minit untuk muncul dalam dompet Brave Rewards pada desktop anda. Semak ringkasan Ganjaran anda pada Desktop untuk mengetahui butiran apabila pemindahan telah selesai.\n\nAnda boleh menutup tetingkap ini dan terus menggunakan Brave semasa pemindahan anda masih dijalankan. ";
+"rewards.walletTransferCompleteBody" = "Pemindahan anda telah dimulakan. Apa-apa baki BAT yang sedia ada mungkin mengambil masa beberapa minit untuk muncul dalam dompet Asil Browser Rewards pada desktop anda. Semak ringkasan Ganjaran anda pada Desktop untuk mengetahui butiran apabila pemindahan telah selesai.\n\nAnda boleh menutup tetingkap ini dan terus menggunakan Asil Browser semasa pemindahan anda masih dijalankan. ";
 
 /* Title shown above the confirmation message after completing a wallet transfer successfully */
 "rewards.walletTransferCompleteTitle" = "Pemindahan baki telah dimulakan";
 
 /* Message on the alert presented if wallet transfer fails */
-"rewards.walletTransferFailureAlertMessage" = "Pelayan Brave Rewards tidak bertindak balas. Sila cuba lagi kemudian.";
+"rewards.walletTransferFailureAlertMessage" = "Pelayan Asil Browser Rewards tidak bertindak balas. Sila cuba lagi kemudian.";
 
 /* Title on the alert presented if wallet transfer fails */
 "rewards.walletTransferFailureAlertTitle" = "Ralat Sambungan";
 
 /* Describes the steps for using wallet transfer */
-"rewards.walletTransferStepsBody" = "Baki token Brave Rewards anda boleh dipindahkan ke dompet desktop Brave Rewards sedia ada, sekali.\n\n1. Buka Pelayar Brave pada desktop anda\n2. Navigasi ke brave://rewards\n3. Klik “Kod QR”\n4. Imbas Kod QR menggunakan peranti anda";
+"rewards.walletTransferStepsBody" = "Baki token Asil Browser Rewards anda boleh dipindahkan ke dompet desktop Asil Browser Rewards sedia ada, sekali.\n\n1. Buka Pelayar Asil Browser pada desktop anda\n2. Navigasi ke Asil Browser://rewards\n3. Klik “Kod QR”\n4. Imbas Kod QR menggunakan peranti anda";
 
 /* Title above the steps to use wallet transfer */
 "rewards.walletTransferStepsTitle" = "Imbas Kod Pemindahan Sekali Sahaja";
@@ -2297,7 +2297,7 @@
 "RewardsInternalsContributionAmount" = "Jumlah sumbangan";
 
 /* No comment provided by engineer. */
-"RewardsInternalsContributionProcessorBraveTokens" = "Token Brave";
+"RewardsInternalsContributionProcessorBraveTokens" = "Token Asil Browser";
 
 /* No comment provided by engineer. */
 "RewardsInternalsContributionProcessorNone" = "Tiada";
@@ -2449,7 +2449,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsShare" = "Kongsi";
 
-/* 'Rewards' as in 'Brave Rewards' */
+/* 'Rewards' as in 'Asil Browser Rewards' */
 "RewardsInternalsShareInternalsTitle" = "Kongsi Dalaman Ganjaran";
 
 /* No comment provided by engineer. */
@@ -2467,7 +2467,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsSupported" = "Disokong";
 
-/* 'Rewards' as in 'Brave Rewards' */
+/* 'Rewards' as in 'Asil Browser Rewards' */
 "RewardsInternalsTitle" = "Dalaman Ganjaran";
 
 /* No comment provided by engineer. */
@@ -2582,24 +2582,24 @@
 "SearchSuggestionsSectionHeader" = "Cadangan Carian";
 
 /* Title of an action that allows user to perform a one-click web search for selected text */
-"SearchWithBrave" = "Buat carian melalui Brave";
+"SearchWithBrave" = "Buat carian melalui Asil Browser";
 
 /* Settings security section title */
 "Security" = "Sekuriti";
 
 /* Message displayed in the crash dialog above the buttons used to select when sending reports */
-"SendCrashReportAlertMessage" = "Hantar laporan rosak supaya Brave boleh menyelesaikan masalah?";
+"SendCrashReportAlertMessage" = "Hantar laporan rosak supaya Asil Browser boleh menyelesaikan masalah?";
 
 /* Title for prompt displayed to user after the app crashes */
-"SendCrashReportAlertTitle" = "Aduh! Brave rosak";
+"SendCrashReportAlertTitle" = "Aduh! Asil Browser rosak";
 
 /* Used as a button label for crash dialog prompt */
 "SendReportButtonTitle" = "Hantar Laporan";
 
 /* No comment provided by engineer. */
-"setDefaultBrowserCalloutTitle" = "Brave kini boleh ditetapkan sebagai penyemak imbas lalai anda di iOS. Ketik di sini untuk membuka tetapan.";
+"setDefaultBrowserCalloutTitle" = "Asil Browser kini boleh ditetapkan sebagai penyemak imbas lalai anda di iOS. Ketik di sini untuk membuka tetapan.";
 
-/* Settings item to set the Brave as a default browser on the iOS device. */
+/* Settings item to set the Asil Browser as a default browser on the iOS device. */
 "setDefaultBrowserSettingsCell" = "Tetapkan sebagai Penyemak Imbas Lalai";
 
 /* No comment provided by engineer. */
@@ -2621,7 +2621,7 @@
 "settings.autocloseTabsSetting" = "Tutup Tab";
 
 /* Description of autoclose tabs feature. */
-"settings.autocloseTabsSettingFooter" = "Benarkan Brave menutup tab secara automatik yang belum dilihat baru-baru ini.";
+"settings.autocloseTabsSettingFooter" = "Benarkan Asil Browser menutup tab secara automatik yang belum dilihat baru-baru ini.";
 
 /* Error message that is shown in settings when there was a problem loading */
 "SettingsContentLoadErrorMessage" = "Tidak dapat memuat halaman.";
@@ -2681,7 +2681,7 @@
 "shieldEducation.shareTheNewsTitle" = "Kongsi berita";
 
 /* Subtitle for Shield Education Tracker Ad Warning */
-"shieldEducation.trackerAdWarningSubTitle" = "Brave Shields baru sahaja melindungi privasi dalam talian anda. ";
+"shieldEducation.trackerAdWarningSubTitle" = "Asil Browser Shields baru sahaja melindungi privasi dalam talian anda. ";
 
 /* Subtitle for Shield Education Tracker Count Share */
 "shieldEducation.trackerCountShareSubtitle" = "Tahniah. Anda agak istimewa.";
@@ -2696,13 +2696,13 @@
 "shieldEducation.videoAdBlockTitle" = "Iklan disekat apabila menonton video pada laman web ini. ";
 
 /* Section title for adbblock, tracking protection, HTTPS-E, and cookies */
-"ShieldsDefaults" = "Lalai Global Brave Shields";
+"ShieldsDefaults" = "Lalai Global Asil Browser Shields";
 
 /* Section footer for global shields defaults */
 "ShieldsDefaultsFooter" = "Ini adalah tetapan Shields lalai untuk tapak baharu. Mengubah ini tidak akan menjejaskan tetapan setiap tapak sedia ada anda.";
 
 /* No comment provided by engineer. */
-"ShieldsDownDisclaimer" = "Anda melayari laman web ini tanpa perlindungan privasi Brave. Adakah ia tidak berfungsi dengan betul dengan Pelindung atas?";
+"ShieldsDownDisclaimer" = "Anda melayari laman web ini tanpa perlindungan privasi Asil Browser. Adakah ia tidak berfungsi dengan betul dengan Pelindung atas?";
 
 /* shields overview message */
 "ShieldsOverview" = "Perisai Tapak membenarkan anda mengawal bila iklan dan penjejak disekat untuk setiap tapak yang anda lawati. Jika anda suka melihat iklan di sesuatu tapak khusus, anda boleh mendayakannya di sini.";
@@ -2732,7 +2732,7 @@
 "ShortcutItemTitleQRCode" = "Imbas Kod QR";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeBraveNewsDescription" = "Buka Brave News dan Semak Cerita Teratas Hari Ini";
+"shortcuts.activityTypeBraveNewsDescription" = "Buka Asil Browser News dan Semak Cerita Teratas Hari Ini";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeClearHistoryDescription" = "Buka Pelayar dalam Tab Baharu dan Padam Semua Data Sejarah Pelayar Peribadi";
@@ -2741,7 +2741,7 @@
 "shortcuts.activityTypeClearHistorySuggestedPhrase" = "Kosongkan Sejarah Pelayar";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeClearHistoryTitle" = "Kosongkan Sejarah Semakan Imbas Brave";
+"shortcuts.activityTypeClearHistoryTitle" = "Kosongkan Sejarah Semakan Imbas Asil Browser";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeEnableVPNDescription" = "Buka Pelayar dalam Tab Baharu dan Dayakan VPN";
@@ -2750,7 +2750,7 @@
 "shortcuts.activityTypeEnableVPNSuggestedPhrase" = "Dayakan VPN";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeEnableVPNTitle" = "Buka Pelayar Brave dan Dayakan VPN";
+"shortcuts.activityTypeEnableVPNTitle" = "Buka Pelayar Asil Browser dan Dayakan VPN";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeNewPrivateTabSuggestedPhrase" = "Buka Tab Peribadi Baharu";
@@ -2765,10 +2765,10 @@
 "shortcuts.activityTypeNewTabTitle" = "Buka Tab Pelayar Baharu";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveNewsTitle" = "Buka Brave News";
+"shortcuts.activityTypeOpenBraveNewsTitle" = "Buka Asil Browser News";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Buka Brave News";
+"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Buka Asil Browser News";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeOpenPlaylistDescription" = "Mula Bermain Video anda dalam Senarai Main";
@@ -2780,7 +2780,7 @@
 "shortcuts.activityTypeOpenPlaylistTitle" = "Buka Senarai Main";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeTabDescription" = "Mula Mencari di Web dengan Selamat dengan Brave";
+"shortcuts.activityTypeTabDescription" = "Mula Mencari di Web dengan Selamat dengan Asil Browser";
 
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenBookmarkSuggestedPhrase" = "Buka Laman Web Penanda Buku";
@@ -2791,8 +2791,8 @@
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenWebsiteSuggestedPhrase" = "Buka Laman Web";
 
-/* Description for opening Brave Settings for altering Siri shortcut. */
-"shortcuts.shortcutOpenApplicationSettingsDescription" = "Pilihan ini akan membuka Tetapan Brave. Untuk mengubah pelbagai pilihan Siri, pilih item menu 'Siri & Cari' dan sesuaikan pilihan anda.";
+/* Description for opening Asil Browser Settings for altering Siri shortcut. */
+"shortcuts.shortcutOpenApplicationSettingsDescription" = "Pilihan ini akan membuka Tetapan Asil Browser. Untuk mengubah pelbagai pilihan Siri, pilih item menu 'Siri & Cari' dan sesuaikan pilihan anda.";
 
 /* Button title that open application settings */
 "shortcuts.shortcutOpenApplicationSettingsTitle" = "Buka Tetapan";
@@ -2804,16 +2804,16 @@
 "shortcuts.shortcutSettingsClearBrowserHistoryTitle" = "Kosongkan Sejarah Pelayar";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsEnableVPNDescription" = "Gunakan Pintasan untuk mendayakan Brave VPN melalui Siri - Pembantu Suara";
+"shortcuts.shortcutSettingsEnableVPNDescription" = "Gunakan Pintasan untuk mendayakan Asil Browser VPN melalui Siri - Pembantu Suara";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsEnableVPNTitle" = "Dayakan VPN";
 
-/* Description of Open Brave News Siri Shortcut in Settings Screen */
-"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Gunakan Pintasan untuk membuka tab baharu & memaparkan Suapan Berita Brave melalui Siri - Pembantu Suara";
+/* Description of Open Asil Browser News Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Gunakan Pintasan untuk membuka tab baharu & memaparkan Suapan Berita Asil Browser melalui Siri - Pembantu Suara";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Buka Brave News";
+"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Buka Asil Browser News";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsOpenNewPrivateTabDescription" = "Gunakan Pintasan untuk membuka tab peribadi baharu melalui Siri - Pembantu Suara";
@@ -2867,19 +2867,19 @@
 "ShowTabsBar" = "Bar Tab";
 
 /* No comment provided by engineer. */
-"SiteReportedBody" = "Terima kasih kerana memberitahu pembangun Brave bahawa ada sesuatu yang tidak kena dengan tapak ini. Kami akan melakukan yang terbaik untuk memperbaikinya!";
+"SiteReportedBody" = "Terima kasih kerana memberitahu pembangun Asil Browser bahawa ada sesuatu yang tidak kena dengan tapak ini. Kami akan melakukan yang terbaik untuk memperbaikinya!";
 
 /* No comment provided by engineer. */
 "SiteReportedTitle" = "Terima Kasih";
 
-/* Brave panel topmost title */
+/* Asil Browser panel topmost title */
 "SiteShieldSettings" = "Perisai";
 
 /* Title used when in warning pop-over when domain specific data save appears */
-"socialSharing.domainSpecificDataSavedTitle" = "Setiap hari saya menjimatkan data dengan melayari web menggunakan Brave.";
+"socialSharing.domainSpecificDataSavedTitle" = "Setiap hari saya menjimatkan data dengan melayari web menggunakan Asil Browser.";
 
-/* Text used for social sharing together with Brave Shield values */
-"socialSharing.shareDescriptionTitle" = "Setiap hari saya menjimatkan data dengan melayari web menggunakan Brave.";
+/* Text used for social sharing together with Asil Browser Shield values */
+"socialSharing.shareDescriptionTitle" = "Setiap hari saya menjimatkan data dengan melayari web menggunakan Asil Browser.";
 
 /* Open search section of settings */
 "StandardTabSearch" = "Tab Standard";
@@ -2911,8 +2911,8 @@
 /* Title for Sync Settings Toggle Header */
 "sync.syncSettingsTitle" = "Tetapan Penyegerakan";
 
-/* Text that informs a user about Brave Sync service deprecation. */
-"sync.syncV1DeprecationText" = "Brave Sync baharu akan tiba dan akan mempengaruhi persediaan anda. Bersedia untuk naik taraf.";
+/* Text that informs a user about Asil Browser Sync service deprecation. */
+"sync.syncV1DeprecationText" = "Asil Browser Sync baharu akan tiba dan akan mempengaruhi persediaan anda. Bersedia untuk naik taraf.";
 
 /* Message for popup when the bookmark migration fails */
 "sync.v2MigrationErrorMessage" = "Gagal memindahkan penanda buku. Sila cuba lagi kemudian.";
@@ -2927,7 +2927,7 @@
 "sync.v2MigrationInterstitialTitle" = "Pemindahan penanda buku";
 
 /* Message for popup to inform the user that bookmarks migration is required for sync */
-"sync.v2MigrationMessage" = "Untuk menggunakan Brave Sync, penanda buku yang ada mesti dipindahkan untuk menggunakan sistem baharu. Operasi ini tidak akan memadam penanda buku anda.";
+"sync.v2MigrationMessage" = "Untuk menggunakan Asil Browser Sync, penanda buku yang ada mesti dipindahkan untuk menggunakan sistem baharu. Operasi ini tidak akan memadam penanda buku anda.";
 
 /* Button to perform bookmarks migration in order to support sync */
 "sync.v2MigrationOKButton" = "Pindah";
@@ -2969,7 +2969,7 @@
 "SyncComputerDevice" = "Komputer";
 
 /* Sync Error Description */
-"syncDeprecatedVersionError" = "Kod segerak ini dijana oleh versi Brave yang sudah lapuk pada peranti lain. Sila kemas kini Brave pada semua peranti yang disegerakkan dan cuba lagi.";
+"syncDeprecatedVersionError" = "Kod segerak ini dijana oleh versi Asil Browser yang sudah lapuk pada peranti lain. Sila kemas kini Asil Browser pada semua peranti yang disegerakkan dan cuba lagi.";
 
 /* Sync you browser settings across devices. */
 "SyncDevices" = "Peranti & Tetapan";
@@ -2990,10 +2990,10 @@
 "SyncInitErrorTitle" = "Ralat Komunikasi Segerak";
 
 /* Default name for a device */
-"syncJoinChainCameraWarning" = "Langkah ini akan mengongsikan data Brave anda, termasuk kemungkinan kata laluan anda, dengan peranti yang menjana kod QR ini. Sila semak sekali lagi sama ada kod QR ini dijana oleh peranti milik anda. Betulkah anda mahu mengambil langkah ini?";
+"syncJoinChainCameraWarning" = "Langkah ini akan mengongsikan data Asil Browser anda, termasuk kemungkinan kata laluan anda, dengan peranti yang menjana kod QR ini. Sila semak sekali lagi sama ada kod QR ini dijana oleh peranti milik anda. Betulkah anda mahu mengambil langkah ini?";
 
 /* Default name for a device */
-"syncJoinChainCodewordsWarning" = "Langkah ini akan mengongsikan data Brave anda, termasuk kemungkinan kata laluan anda, dengan peranti yang menjana kata kod ini. Sila semak sekali lagi sama ada kata kod ini dijana oleh peranti milik anda. Betulkah anda mahu mengambil langkah ini?";
+"syncJoinChainCodewordsWarning" = "Langkah ini akan mengongsikan data Asil Browser anda, termasuk kemungkinan kata laluan anda, dengan peranti yang menjana kata kod ini. Sila semak sekali lagi sama ada kata kod ini dijana oleh peranti milik anda. Betulkah anda mahu mengambil langkah ini?";
 
 /* Title for pairing sync device */
 "syncJoinChainWarningTitle" = "Amaran";
@@ -3017,7 +3017,7 @@
 "SyncRemoveDeviceDefaultName" = "Peranti";
 
 /* Message for removing last device from Sync */
-"SyncRemoveLastDeviceMessage" = "Data yang kini disegerakkan akan disimpan, namun semua data dalam cache Segerak Brave akan dipadamkan. Anda perlu memulakan rantaian penyegerakan baru untuk menyegerakkan semula data peranti.";
+"SyncRemoveLastDeviceMessage" = "Data yang kini disegerakkan akan disimpan, namun semua data dalam cache Segerak Asil Browser akan dipadamkan. Anda perlu memulakan rantaian penyegerakan baru untuk menyegerakkan semula data peranti.";
 
 /* Button name for removing last device from Sync */
 "SyncRemoveLastDeviceRemoveButtonName" = "Padamkan Rantaian Penyegerakan";
@@ -3056,7 +3056,7 @@
 "SyncToDevice" = "Segerakkan kepada peranti";
 
 /* Sync to existing device description */
-"SyncToDeviceDescription" = "Dengan menggunakan peranti disegerakkan yang sedia ada, buka Tetapan Brave dan navigasi kepada Tetapan -> Penyegerakan. Pilih \"Tambah Peranti\" dan imbas kod yang dipaparkan pada skrin.";
+"SyncToDeviceDescription" = "Dengan menggunakan peranti disegerakkan yang sedia ada, buka Tetapan Asil Browser dan navigasi kepada Tetapan -> Penyegerakan. Pilih \"Tambah Peranti\" dan imbas kod yang dipaparkan pada skrin.";
 
 /* Description on popup when setting up a sync group fails */
 "SyncUnableCreateGroup" = "Tidak dapat menyegerakkan peranti ini";
@@ -3154,14 +3154,14 @@
 /* No comment provided by engineer. */
 "TermsOfService" = "Terma Perkhidmatan";
 
-/* Show Brave Browser TOS page from the Privacy section in the settings. */
+/* Show Asil Browser Browser TOS page from the Privacy section in the settings. */
 "TermsOfUse" = "Terma Penggunaan";
 
 /* Text for button to share referral's QR code. */
 "themeQRCodeShareButton" = "Kongsi...";
 
 /* Title for QR popup encouraging users to share the code with their friends. */
-"themeQRCodeShareTitle" = "Kongsi Brave dengan rakan anda!";
+"themeQRCodeShareTitle" = "Kongsi Asil Browser dengan rakan anda!";
 
 /* Selection to automatically color/style the user interface. */
 "ThemesAutomaticOption" = "Automatik";
@@ -3203,13 +3203,13 @@
 "today.addSourceNoFeedsFoundMessage" = "Maaf, alamat suapan tersebut tidak mempunyai sebarang kandungan.";
 
 /* The action title displayed in the iOS share menu */
-"today.addSourceShareTitle" = "Tambahkan Sumber Pada Brave News";
+"today.addSourceShareTitle" = "Tambahkan Sumber Pada Asil Browser News";
 
 /* A header title shown above a button that will allow the user to fetch RSS feeds for a website they have typed in */
 "today.availableRSSFeedsHeaderTitle" = "Suapan RSS Yang Tersedia";
 
 /* The name of the feature */
-"today.braveToday" = "Brave News";
+"today.braveToday" = "Asil Browser News";
 
 /* Shown below 'Channels' explaining what will be shown when tapping on it. */
 "today.channelsButtonSubtitle" = "Ikuti topik yang menaik minat anda";
@@ -3229,13 +3229,13 @@
 /* No comment provided by engineer. */
 "today.deals" = "Perjanjian";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
-"today.disabledAlertBody" = "Brave News akan berhenti menunjukkan kandungan daripada %@";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+"today.disabledAlertBody" = "Asil Browser News akan berhenti menunjukkan kandungan daripada %@";
 
 /* No comment provided by engineer. */
 "today.disabledAlertTitle" = "Dinyahaktif";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
 "today.disablePublisherContent" = "Sembunyikan kandungan daripada %@";
 
 /* No comment provided by engineer. */
@@ -3244,11 +3244,11 @@
 /* No comment provided by engineer. */
 "today.emptyFeedTitle" = "Tiada artikel untuk ditunjukkan";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
 "today.enablePublisherContent" = "Benarkan kandungan daripada %@";
 
 /* No comment provided by engineer. */
-"today.errorGeneralBody" = "Brave News sedang mengalami beberapa isu. Cuba lagi.";
+"today.errorGeneralBody" = "Asil Browser News sedang mengalami beberapa isu. Cuba lagi.";
 
 /* No comment provided by engineer. */
 "today.errorGeneralTitle" = "Alamak…";
@@ -3265,7 +3265,7 @@
 /* A toggle title shown next to a source or channel that the user can follow. When tapped switches to 'Unfollow' */
 "today.followToggleTitle" = "Ikuti";
 
-/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://brave.com'. */
+/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Asil Browser.com'. */
 "today.getFeedsFromSiteButtonTitle" = "Dapatkan suapan daripada";
 
 /* \"OPML\" is a file extension that contains a list of rss feeds. */
@@ -3274,20 +3274,20 @@
 /* The header above the list of insecure sources */
 "today.insecureSourcesHeader" = "Sumber Tidak Selamat - Tambah atas risiko anda sendiri";
 
-/* Shown above a button that turns on the \"Brave News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "Ikuti sumber kegemaran anda dalam suapan tunggal. Hanya buka tab dalam Brave, tatal ke bawah dan... lihatlah!\nBrave News disokong iklan dengan iklan peribadi dan tanpa nama.";
+/* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
+"today.introCardBody" = "Ikuti sumber kegemaran anda dalam suapan tunggal. Hanya buka tab dalam Asil Browser, tatal ke bawah dan... lihatlah!\nBrave News disokong iklan dengan iklan peribadi dan tanpa nama.";
 
-/* Shown above a button that turns on the \"Brave News\" product in the app. */
-"today.introCardTitle" = "Hidupkan Berita Brave dan sentiasa ikuti kisah terkini";
+/* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
+"today.introCardTitle" = "Hidupkan Berita Asil Browser dan sentiasa ikuti kisah terkini";
 
 /* No comment provided by engineer. */
-"today.isEnabledToggleLabel" = "Tunjukkan Brave News";
+"today.isEnabledToggleLabel" = "Tunjukkan Asil Browser News";
 
 /* No comment provided by engineer. */
 "today.learnMoreTitle" = "Ketahui lebih lanjut mengenai data anda";
 
-/* 'Brave Offers' is a product name */
-"today.moreBraveOffers" = "Lebih Banyak Tawaran Brave";
+/* 'Asil Browser Offers' is a product name */
+"today.moreBraveOffers" = "Lebih Banyak Tawaran Asil Browser";
 
 /* No comment provided by engineer. */
 "today.noInternet" = "Tiada Internet";
@@ -3335,7 +3335,7 @@
 "today.suggestedTitle" = "Dicadangkan";
 
 /* No comment provided by engineer. */
-"today.turnOnBraveToday" = "Hidupkan Brave News";
+"today.turnOnBraveToday" = "Hidupkan Asil Browser News";
 
 /* A toggle title shown next to a source or channel that the user can unfollow. When tapped switches to 'Follow' */
 "today.unfollowToggleTitle" = "Nyahikut";
@@ -3382,34 +3382,34 @@
 /* No comment provided by engineer. */
 "UserWalletGenericErrorTitle" = "Maaf, ada kesilapan berlaku";
 
-/* Version number of Brave shown in settings */
+/* Version number of Asil Browser shown in settings */
 "VersionTemplate" = "Versi %1$@ (%2$@)";
 
 /* Label that says where to view an item. '%@' is a placeholder and will include things like 'Instagram', 'unsplash'. The full label will look like 'View  on Instagram'. */
 "ViewOn" = "Lihat di %@";
 
-/* Button text to buy Brave VPN */
+/* Button text to buy Asil Browser VPN */
 "vpn.buyButton" = "Beli";
 
 /* Title for screen to buy the VPN. */
 "vpn.buyVPNTitle" = "Tembok Api Berani + VPN";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxBlockAds" = "Blok sambungan rangkaian yang tidak diingini";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxEncryption" = "Menggunakan terowong VPN disulitkan IKEv2 dengan selamat";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxFast" = "Menyokong kelajuan hingga 100 Mbps";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxGeoSelector" = "Pilih lokasi geo/negara anda";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxNoIPLog" = "Menyimpan anda tanpa nama dalam talian";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxNoSellout" = "Kami tidak pernah berkongsi atau menjual maklumat anda";
 
 /* AppStore Receipt field for customer support contact form. */
@@ -3422,7 +3422,7 @@
 "vpn.contactFormCarrier" = "Pembawa Selular";
 
 /* Text to tell user to not modify support info below email's body. */
-"vpn.contactFormDoNotEditText" = "Brave tidak menjejaki anda atau mengetahui cara anda menggunakan apl, oleh itu kami tidak tahu cara anda menyediakan VPN. Sila kongsikan maklumat tentang isu yang anda alami dan kami akan mencuba sedaya upaya kami untuk menyelesaikan isu secepat mungkin.";
+"vpn.contactFormDoNotEditText" = "Asil Browser tidak menjejaki anda atau mengetahui cara anda menggunakan apl, oleh itu kami tidak tahu cara anda menyediakan VPN. Sila kongsikan maklumat tentang isu yang anda alami dan kami akan mencuba sedaya upaya kami untuk menyelesaikan isu secepat mungkin.";
 
 /* Button name to send contact form. */
 "vpn.contactFormEmailNotConfiguredBody" = "Tidak dapat menghantar e-mel. Sila semak konfigurasi e-mel anda.";
@@ -3476,9 +3476,9 @@
 "vpn.contactFormTimezone" = "Zon Masa iOS";
 
 /* Title for contact form email. */
-"vpn.contactFormTitle" = "Brave Firewall + Isu VPN";
+"vpn.contactFormTitle" = "Asil Browser Firewall + Isu VPN";
 
-/* Button text to enable Brave VPN */
+/* Button text to enable Asil Browser VPN */
 "vpn.enableButton" = "Dayakan";
 
 /* Message for an alert when the VPN can't get prices from the App Store */
@@ -3497,13 +3497,13 @@
 "vpn.iapDisclaimer" = "Semua langganan diperbaharui secara automatik tetapi boleh dibatalkan sebelum pembaharuan.";
 
 /* Text explaining how the VPN works. */
-"vpn.installProfileBody" = "Profil ini membolehkan VPN menyambung secara automatik dan memastikan rafik selamat merentas peranti anda sepanjang masa. Sambungan VPN ini akan disulitkan dan dihalakan melalui dinding api pintar Brave untuk menyekat sambungan yang berpotensi berbahaya dan invasif.";
+"vpn.installProfileBody" = "Profil ini membolehkan VPN menyambung secara automatik dan memastikan rafik selamat merentas peranti anda sepanjang masa. Sambungan VPN ini akan disulitkan dan dihalakan melalui dinding api pintar Asil Browser untuk menyekat sambungan yang berpotensi berbahaya dan invasif.";
 
 /* Text for 'install vpn profile' button */
 "vpn.installProfileButtonText" = "Pasang Profil VPN";
 
 /* No comment provided by engineer. */
-"vpn.installProfileTitle" = "Brave kini akan memasang profil VPN.";
+"vpn.installProfileTitle" = "Asil Browser kini akan memasang profil VPN.";
 
 /* Popup that shows after user installs the vpn for the first time. */
 "vpn.installSuccessPopup" = "VPN kini didayakan";
@@ -3511,7 +3511,7 @@
 /* Title for screen to install the VPN. */
 "vpn.installTitle" = "Pasang VPN";
 
-/* Button text to try free Brave VPN */
+/* Button text to try free Asil Browser VPN */
 "vpn.learnMore" = "Cuba secara PERCUMA";
 
 /* Used in context: 'Monthly subscription, (it) renews monthly' */
@@ -3523,10 +3523,10 @@
 /* Text to show user when their vpn plan has expired */
 "vpn.planExpired" = "Tamat Tempoh";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.popupCheckmark247Support" = "sokongan 24/7";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.popupCheckmarkSecureConnections" = "Melindungi semua sambungan";
 
 /* It is used in context: 'Powered by BRAND_NAME' */
@@ -3575,10 +3575,10 @@
 "vpn.settingsFAQ" = "Sokongan VPN";
 
 /* Button to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceipt" = "Pautkan pembelian ke akaun Brave anda";
+"vpn.settingsLinkReceipt" = "Pautkan pembelian ke akaun Asil Browser anda";
 
 /* Footer text to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceiptFooter" = "Pautkan pembelian App Store anda ke akaun Brave anda untuk menggunakan VPN Brave pada peranti lain.";
+"vpn.settingsLinkReceiptFooter" = "Pautkan pembelian App Store anda ke akaun Asil Browser anda untuk menggunakan VPN Asil Browser pada peranti lain.";
 
 /* Button to manage your VPN subscription */
 "vpn.settingsManageSubscription" = "Urus Langganan";
@@ -3614,10 +3614,10 @@
 "vpn.settingsVPNExpired" = "Tamat Tempoh";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationBody" = "Walaupun di latar belakang, Brave akan terus melindungi anda.";
+"vpn.vpnBackgroundNotificationBody" = "Walaupun di latar belakang, Asil Browser akan terus melindungi anda.";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationTitle" = "Brave Firewall + VPN adalah DIHIDUPKAN";
+"vpn.vpnBackgroundNotificationTitle" = "Asil Browser Firewall + VPN adalah DIHIDUPKAN";
 
 /* Message for an alert when the VPN can't be configured. */
 "vpn.vpnConfigGenericErrorBody" = "Terdapat masalah semasa memulakan VPN. Sila cuba lagi atau cuba tetapkan semula konfigurasi di halaman tetapan VPN.";
@@ -3626,7 +3626,7 @@
 "vpn.vpnConfigGenericErrorTitle" = "Ralat";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
-"vpn.vpnConfigPermissionDeniedErrorBody" = "Brave Firewall + VPN memerlukan profil VPN untuk dipasang pada peranti anda untuk berfungsi.";
+"vpn.vpnConfigPermissionDeniedErrorBody" = "Asil Browser Firewall + VPN memerlukan profil VPN untuk dipasang pada peranti anda untuk berfungsi.";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
 "vpn.vpnConfigPermissionDeniedErrorTitle" = "Kebenaran ditolak";
@@ -3638,10 +3638,10 @@
 "vpn.vpnErrorPurchaseFailedTitle" = "Ralat";
 
 /* Disclaimer for user purchasing the VPN plan. */
-"vpn.vpnIAPBoilerPlate" = "Langganan akan dikenakan bayaran melalui akaun iTunes anda.\n\nSebarang bahagian percubaan percuma yang tidak digunakan, jika ditawarkan, akan dibatalkan semasa anda membeli langganan.\n\nLangganan anda akan diperbaharui secara automatik melainkan dibatalkan sekurang-kurangnya 24 jam sebelum akhir tempoh semasa.\n\nAnda boleh menguruskan langganan anda dalam Tetapan.\n\nDengan menggunakan Brave, anda bersetuju dengan Terma Penggunaan dan Dasar Privasi.";
+"vpn.vpnIAPBoilerPlate" = "Langganan akan dikenakan bayaran melalui akaun iTunes anda.\n\nSebarang bahagian percubaan percuma yang tidak digunakan, jika ditawarkan, akan dibatalkan semasa anda membeli langganan.\n\nLangganan anda akan diperbaharui secara automatik melainkan dibatalkan sekurang-kurangnya 24 jam sebelum akhir tempoh semasa.\n\nAnda boleh menguruskan langganan anda dalam Tetapan.\n\nDengan menggunakan Asil Browser, anda bersetuju dengan Terma Penggunaan dan Dasar Privasi.";
 
 /* Message for alert to reset vpn configuration */
-"vpn.vpnResetAlertBody" = "Ini akan menetapkan semula konfigurasi Brave Firewall + VPN anda dan memperbaiki sebarang kesalahan. Proses ini mungkin mengambil masa sebentar.";
+"vpn.vpnResetAlertBody" = "Ini akan menetapkan semula konfigurasi Asil Browser Firewall + VPN anda dan memperbaiki sebarang kesalahan. Proses ini mungkin mengambil masa sebentar.";
 
 /* Title for alert to reset vpn configuration */
 "vpn.vpnResetAlertTitle" = "Set semula konfigurasi";
@@ -3707,18 +3707,18 @@
 "widgets.favoritesWidgetTitle" = "Kegemaran";
 
 /* This shows when you add a widget but have no favorites added in your app */
-"widgets.noFavoritesFound" = "Sila buka Brave untuk melihat kegemaran anda di sini";
+"widgets.noFavoritesFound" = "Sila buka Asil Browser untuk melihat kegemaran anda di sini";
 
 /* Description for the search option on the 'shortcuts' widget. */
 "widgets.searchShortcutTitle" = "Carian";
 
-/* Description for Brave Shields widget on 'add widget' screen. */
-"widgets.shieldStatsDescription" = "Ringkasan tentang cara Brave menjimatkan masa anda dan melindungi anda dalam talian.";
+/* Description for Asil Browser Shields widget on 'add widget' screen. */
+"widgets.shieldStatsDescription" = "Ringkasan tentang cara Asil Browser menjimatkan masa anda dan melindungi anda dalam talian.";
 
-/* Title for Brave Shields widget on 'add widget' screen. */
+/* Title for Asil Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsTitle" = "Statistik Privasi";
 
-/* Title of Brave Shields widget shown above stat numbers. */
+/* Title of Asil Browser Shields widget shown above stat numbers. */
 "widgets.shieldStatsWidgetTitle" = "Statistik Privasi";
 
 /* Button to the browser and enter URL or make a search query there. */
@@ -3734,19 +3734,19 @@
 "widgets.shortcutsPrivateTabButton" = "Tab Peribadi";
 
 /* Description for shortcuts widget on 'add widget' screen. */
-"widgets.shortcutsWidgetDescription" = "Capaian cepat untuk membuat carian melalui web atau membuka halaman web dalam Brave.";
+"widgets.shortcutsWidgetDescription" = "Capaian cepat untuk membuat carian melalui web atau membuka halaman web dalam Asil Browser.";
 
 /* Title for shortcuts widget on 'add widget' screen. */
 "widgets.shortcutsWidgetTitle" = "Pintasan";
 
-/* Description for Brave Shields single stat widget on 'add widget' screen. */
-"widgets.singleStatDescription" = "Ringkasan tentang cara Brave telah melindungi anda dalam talian.";
+/* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
+"widgets.singleStatDescription" = "Ringkasan tentang cara Asil Browser telah melindungi anda dalam talian.";
 
-/* Title for Brave Shields single stat widget on 'add widget' screen. */
+/* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatTitle" = "Statistik Privasi";
 
-/* Description for the Brave Wallet option on the 'shortcuts' widget. */
-"widgets.walletShortcutTitle" = "Brave Wallet";
+/* Description for the Asil Browser Wallet option on the 'shortcuts' widget. */
+"widgets.walletShortcutTitle" = "Asil Browser Wallet";
 
 /* Title of the settings for widgets part */
 "widgets.widgetTitle" = "Widget";

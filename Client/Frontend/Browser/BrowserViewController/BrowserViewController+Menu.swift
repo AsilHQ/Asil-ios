@@ -115,7 +115,7 @@ extension BrowserViewController {
         }
       }
 
-      if isShownOnWebPage {
+      /*if isShownOnWebPage {
         MenuItemFactory.button(for: .wallet()) {[weak self] in
           self?.presentWallet()
         }
@@ -123,7 +123,7 @@ extension BrowserViewController {
           guard let self = self else { return }
           self.presentPlaylistController()
         }
-      }
+      }*/
       MenuItemFactory.button(for: .settings) { [unowned self, unowned menuController] in
         let isPrivateMode = PrivateBrowsingManager.shared.isPrivateBrowsing
         let keyringService = BraveWallet.KeyringServiceFactory.get(privateMode: isPrivateMode)
@@ -209,7 +209,7 @@ extension BrowserViewController {
       VStack(alignment: .leading, spacing: 0) {
         MenuTabDetailsView(tab: browserViewController.tabManager.selectedTab, url: tabURL)
         VStack(spacing: 0) {
-          if let activity = playlistActivity, activity.enabled, let item = activity.item {
+          /*if let activity = playlistActivity, activity.enabled, let item = activity.item {
             PlaylistMenuButton(isAdded: isPlaylistItemAdded) {
               if !isPlaylistItemAdded {
                 // Add to playlist
@@ -234,7 +234,7 @@ extension BrowserViewController {
               }
             }
             .animation(.default, value: playlistItemAdded)
-          }
+          }*/
           MenuItemButton(icon: UIImage(named: "nav-share", in: .module, compatibleWith: nil)!.template, title: Strings.shareWithMenuItem) {
             browserViewController.dismiss(animated: true)
             browserViewController.tabToolbarDidPressShare()

@@ -748,7 +748,7 @@ public class BrowserViewController: UIViewController {
 
   @objc func vpnConfigChanged() {
     // Load latest changes to the vpn.
-    NEVPNManager.shared().loadFromPreferences { _ in }
+    //NEVPNManager.shared().loadFromPreferences { _ in }
   }
 
   @objc func appDidBecomeActiveNotification() {
@@ -900,7 +900,7 @@ public class BrowserViewController: UIViewController {
     doSyncMigration()
 
     if #available(iOS 14, *), !Preferences.DefaultBrowserIntro.defaultBrowserNotificationScheduled.value {
-      scheduleDefaultBrowserNotification()
+      // scheduleDefaultBrowserNotification()
     }
 
     privateModeCancellable = PrivateBrowsingManager.shared
@@ -1153,9 +1153,9 @@ public class BrowserViewController: UIViewController {
     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
       self.presentP3AScreenCallout()
       self.presentBottomBarCallout()
-      self.presentVPNAlertCallout()
-      self.presentDefaultBrowserScreenCallout()
-      self.presentBraveRewardsScreenCallout()
+      //self.presentVPNAlertCallout()
+      //self.presentDefaultBrowserScreenCallout()
+      //self.presentBraveRewardsScreenCallout()
       self.presentCookieNotificationBlockingCalloutIfNeeded()
     }
 

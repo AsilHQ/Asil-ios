@@ -26,7 +26,7 @@ class CreatePDFActivity: UIActivity {
   }
 
   override var activityImage: UIImage? {
-    UIImage(systemName: "doc", withConfiguration: UIImage.SymbolConfiguration(scale: .large))
+    UIImage(named: "create_pdf", in: .module, compatibleWith: nil)!
   }
 
   override func perform() {

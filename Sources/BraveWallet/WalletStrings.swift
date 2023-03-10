@@ -1,4 +1,4 @@
-// Copyright 2021 The Brave Authors. All rights reserved.
+// Copyright 2021 The Asil Browser Authors. All rights reserved.
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -12,15 +12,15 @@ extension Strings {
       "wallet.module",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Brave Wallet",
-      comment: "The title shown on the wallet settings page, and the value shown when selecting the default wallet as Brave Wallet in wallet settings."
+      value: "Asil Browser Wallet",
+      comment: "The title shown on the wallet settings page, and the value shown when selecting the default wallet as Asil Browser Wallet in wallet settings."
     )
     public static let wallet = NSLocalizedString(
       "wallet.wallet",
       tableName: "BraveWallet",
       bundle: .module,
       value: "Wallet",
-      comment: "The title shown on the menu to access Brave Wallet"
+      comment: "The title shown on the menu to access Asil Browser Wallet"
     )
     public static let otherWalletActionsAccessibilityTitle = NSLocalizedString(
       "wallet.otherWalletActionsAccessibilityTitle",
@@ -398,13 +398,13 @@ extension Strings {
       tableName: "BraveWallet",
       bundle: .module,
       value: "Restore",
-      comment: "The button title for showing the restore wallet screen. As in to use your recovery phrase to bring a wallet into Brave"
+      comment: "The button title for showing the restore wallet screen. As in to use your recovery phrase to bring a wallet into Asil Browser"
     )
     public static let cryptoTitle = NSLocalizedString(
       "wallet.cryptoTitle",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Brave Wallet",
+      value: "Asil Browser Wallet",
       comment: "The title of the crypto tab"
     )
     public static let backupWalletWarningMessage = NSLocalizedString(
@@ -544,14 +544,14 @@ extension Strings {
       "wallet.setupCryptoTitle",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Welcome to the new Brave Wallet",
+      value: "Welcome to the new Asil Browser Wallet",
       comment: "The title displayed on the 'setup crypto' onboarding screen"
     )
     public static let setupCryptoSubtitle = NSLocalizedString(
       "wallet.setupCryptoSubtitle",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Hold crypto assets in your custody and track portfolio performance. All right from the Brave privacy browser.",
+      value: "Hold crypto assets in your custody and track portfolio performance. All right from the Asil Browser privacy browser.",
       comment: "The subtitle displayed on the 'setup crypto' onboarding screen"
     )
     public static let setupCryptoButtonTitle = NSLocalizedString(
@@ -649,7 +649,7 @@ extension Strings {
       "wallet.restoreWalletSubtitle",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Enter your recovery phrase to restore your Brave wallet crypto account.",
+      value: "Enter your recovery phrase to restore your Asil Browser wallet crypto account.",
       comment: "The subtitle on the restore wallet screen."
     )
     public static let restoreWalletPhrasePlaceholder = NSLocalizedString(
@@ -663,8 +663,8 @@ extension Strings {
       "wallet.restoreWalletImportFromLegacyBraveWallet",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Import from legacy Brave crypto wallets?",
-      comment: "A toggle label to ask the user if their 24-word phrase is a legacy Brave crypto wallet"
+      value: "Import from legacy Asil Browser crypto wallets?",
+      comment: "A toggle label to ask the user if their 24-word phrase is a legacy Asil Browser crypto wallet"
     )
     public static let restoreWalletShowRecoveryPhrase = NSLocalizedString(
       "wallet.restoreWalletShowRecoveryPhrase",
@@ -719,7 +719,7 @@ extension Strings {
       "wallet.settingsResetWalletAlertTitle",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Are you sure you want to reset Brave Wallet?",
+      value: "Are you sure you want to reset Asil Browser Wallet?",
       comment: "The title the confirmation dialog when resetting the wallet. As in to erase the users wallet from the device"
     )
     public static let settingsResetWalletAlertMessage = NSLocalizedString(
@@ -901,7 +901,7 @@ extension Strings {
       "wallet.biometricsSetupTitle",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Unlock Brave Wallet with your Face ID, Touch ID, or password.",
+      value: "Unlock Asil Browser Wallet with your Face ID, Touch ID, or password.",
       comment: "The title shown when a user is asked if they would like to setup biometric unlock"
     )
     public static let biometricsSetupEnableButtonTitle = NSLocalizedString(
@@ -929,7 +929,7 @@ extension Strings {
       "wallet.autoLockFooter",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "The number of minutes to wait until the Brave Wallet is automatically locked",
+      value: "The number of minutes to wait until the Asil Browser Wallet is automatically locked",
       comment: "The footer beneath the auto-lock title and interval duration"
     )
     public static let enterAmount = NSLocalizedString(
@@ -1013,7 +1013,7 @@ extension Strings {
       "wallet.swapCryptoUnsupportNetworkBody",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Brave doesn't currently support swap on the %@. Please switch to a supported chain.",
+      value: "Asil Browser doesn't currently support swap on the %@. Please switch to a supported chain.",
       comment: "The description of where user will see once a test network has been picked in swap screen. '%@' will be replaced with a network such as 'Rinkeby Test Network' or 'Ropsten Test Network'"
     )
     public static let swapCryptoSlippageTitle = NSLocalizedString(
@@ -1671,7 +1671,7 @@ extension Strings {
       "wallet.swapDexAggrigatorNote",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Brave uses 0x as a DEX aggregator.",
+      value: "Asil Browser uses 0x as a DEX aggregator.",
       comment: "A disclaimer note shown on the Swap screen. '0x' is a company name. 'DEX aggregator' is a type of blockchain-based service (decentralized exchange)"
     )
     public static let swapDexAggrigatorDisclaimer = NSLocalizedString(
@@ -1679,7 +1679,7 @@ extension Strings {
       tableName: "BraveWallet",
       bundle: .module,
       value: "0x will process the Ethereum address and IP address to fulfill a transaction (including getting quotes). 0x will ONLY use this data for the purposes of processing transactions.",
-      comment: "A longer disclaimer about the DEX aggrigator used by Brave for swap transactions. '0x' is a company name. 'DEX aggregator' is a type of blockchain-based service (decentralized exchange). 'ONLY' is emphasized to show importance of 0x's data usage."
+      comment: "A longer disclaimer about the DEX aggrigator used by Asil Browser for swap transactions. '0x' is a company name. 'DEX aggregator' is a type of blockchain-based service (decentralized exchange). 'ONLY' is emphasized to show importance of 0x's data usage."
     )
     public static let chartAxisDateLabel = NSLocalizedString(
       "wallet.chartAxisDateLabel",
@@ -1706,8 +1706,8 @@ extension Strings {
       "wallet.braveSwapFeeDisclaimer",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Quote includes a %@ Brave fee.",
-      comment: "A disclaimer that appears at the bottom of an swap screen which discloses the fixed Brave fee included in the swap quotes. '%@' will be replaced by a percentage. For example: 'Quote includes a 0.875% Brave fee'"
+      value: "Quote includes a %@ Asil Browser fee.",
+      comment: "A disclaimer that appears at the bottom of an swap screen which discloses the fixed Asil Browser fee included in the swap quotes. '%@' will be replaced by a percentage. For example: 'Quote includes a 0.875% Asil Browser fee'"
     )
     public static let screenshotDetectedTitle = NSLocalizedString(
       "wallet.screenshotDetectedTitle",
@@ -1720,14 +1720,14 @@ extension Strings {
       "wallet.recoveryPhraseScreenshotDetectedMessage",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Warning: A screenshot of your recovery phrase may get backed up to a cloud file service, and be readable by any application with photos access. Brave recommends that you not save this screenshot, and delete it as soon as possible.",
+      value: "Warning: A screenshot of your recovery phrase may get backed up to a cloud file service, and be readable by any application with photos access. Asil Browser recommends that you not save this screenshot, and delete it as soon as possible.",
       comment: "The message displayed when the user takes a screenshot of their recovery phrase"
     )
     public static let privateKeyScreenshotDetectedMessage = NSLocalizedString(
       "wallet.privateKeyScreenshotDetectedMessage",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Warning: A screenshot of your private key may get backed up to a cloud file service, and be readable by any application with photos access. Brave recommends that you not save this screenshot, and delete it as soon as possible.",
+      value: "Warning: A screenshot of your private key may get backed up to a cloud file service, and be readable by any application with photos access. Asil Browser recommends that you not save this screenshot, and delete it as soon as possible.",
       comment: "The message displayed when the user takes a screenshot of their private key"
     )
     public static let sendWarningAddressIsOwn = NSLocalizedString(
@@ -2189,15 +2189,15 @@ extension Strings {
       "wallet.dappsConnectionNotificationTitle",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "This page wants to interact with Brave Wallet",
-      comment: "The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Brave Wallet."
+      value: "This page wants to interact with Asil Browser Wallet",
+      comment: "The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Asil Browser Wallet."
     )
     public static let dappsConnectionNotificationOriginTitle = NSLocalizedString(
       "wallet.dappsConnectionNotificationOriginTitle",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "%@ wants to interact with Brave Wallet",
-      comment: "The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Brave Wallet. The '%@' will be the site attempting to connect. For example: \"app.uniswap.org wants to interact with Brave Wallet\""
+      value: "%@ wants to interact with Asil Browser Wallet",
+      comment: "The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Asil Browser Wallet. The '%@' will be the site attempting to connect. For example: \"app.uniswap.org wants to interact with Asil Browser Wallet\""
     )
     public static let editPermissionsTitle = NSLocalizedString(
       "wallet.editPermissionsTitle",
@@ -2252,7 +2252,7 @@ extension Strings {
       "wallet.newSiteConnectMessage",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Connect to Brave Wallet",
+      value: "Connect to Asil Browser Wallet",
       comment: "The message displayed below the dapp's origin url in new site connection screen."
     )
     public static let newSiteConnectFooter = NSLocalizedString(
@@ -2350,7 +2350,7 @@ extension Strings {
       "wallet.addNetworkDescription",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "This will allow this network to be used within Brave Wallet.",
+      value: "This will allow this network to be used within Asil Browser Wallet.",
       comment: "The description of the view shown over a dapps website that describes what adding a new network will do."
     )
     public static let approveNetworkButtonTitle = NSLocalizedString(
@@ -2554,7 +2554,7 @@ extension Strings {
       tableName: "BraveWallet",
       bundle: .module,
       value: "Connections",
-      comment: "The navigation title of the screen for users to edit dapps site connection with users' Brave Wallet accounts."
+      comment: "The navigation title of the screen for users to edit dapps site connection with users' Asil Browser Wallet accounts."
     )
     public static let editSiteConnectionConnectedAccount = NSLocalizedString(
       "wallet.editSiteConnectionConnectedAccount",
@@ -2700,7 +2700,7 @@ extension Strings {
       "wallet.decryptMessageScreenshotDetectedMessage",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Warning: A screenshot of your message may get backed up to a cloud file service, and be readable by any application with photos access. Brave recommends that you not save this screenshot, and delete it as soon as possible.",
+      value: "Warning: A screenshot of your message may get backed up to a cloud file service, and be readable by any application with photos access. Asil Browser recommends that you not save this screenshot, and delete it as soon as possible.",
       comment: "The message displayed when the user takes a screenshot of their dapp decrypt request."
     )
     public static let coinTypeEthereum = NSLocalizedString(
@@ -2799,7 +2799,7 @@ extension Strings {
       tableName: "BraveWallet",
       bundle: .module,
       value: "Buy not supported for selected network",
-      comment: "A placeholder in Buy Screen, when user switched to a network that Brave currently doesn't support token purchasing."
+      comment: "A placeholder in Buy Screen, when user switched to a network that Asil Browser currently doesn't support token purchasing."
     )
     public static let auroraBridgeAlertTitle = NSLocalizedString(
       "wallet.auroraBridgeAlertTitle",
@@ -2889,7 +2889,7 @@ extension Strings {
       "wallet.dappsSettingsConnectedSitesSectionEmpty",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "DApps you connect to Brave Wallet will appear here",
+      value: "DApps you connect to Asil Browser Wallet will appear here",
       comment: "A message that will be displayed under the section header when there is no dapps have been granted wallet connection."
     )
     public static let signTransactionTitle = NSLocalizedString(
@@ -3281,8 +3281,8 @@ extension Strings {
       "wallet.solanaSignTransactionWarning",
       tableName: "BraveWallet",
       bundle: .module,
-      value: "Note that Brave can’t verify what will happen if you sign. A signature could authorize nearly any operation in your account or on your behalf, including (but not limited to) giving total control of your account and crypto assets to the site making the request. Only sign if you’re sure you want to take this action, and trust the requesting site.",
-      comment: "The warning message to let users understand the risk of using Brave Wallet to sign any transaction."
+      value: "Note that Asil Browser can’t verify what will happen if you sign. A signature could authorize nearly any operation in your account or on your behalf, including (but not limited to) giving total control of your account and crypto assets to the site making the request. Only sign if you’re sure you want to take this action, and trust the requesting site.",
+      comment: "The warning message to let users understand the risk of using Asil Browser Wallet to sign any transaction."
     )
     public static let solanaSignTransactionDetails = NSLocalizedString(
       "wallet.solanaSignTransactionDetails",
