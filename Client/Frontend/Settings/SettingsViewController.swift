@@ -122,8 +122,8 @@ class SettingsViewController: TableViewController {
   // Do not use `sections` directly to access sections/rows. Use DataSource.sections instead.
   private var sections: [Static.Section] {
     var list = [
-      defaultBrowserSection,
-      featuresSection,
+      //defaultBrowserSection,
+      //featuresSection,
       generalSection,
       displaySection,
       tabsSection,
@@ -146,7 +146,7 @@ class SettingsViewController: TableViewController {
     }()
 
     if shouldShowVPNSection {
-      list.insert(enableBraveVPNSection, at: 0)
+      //list.insert(enableBraveVPNSection, at: 0)
     }
 
     if let debugSection = debugSection {
@@ -281,7 +281,7 @@ class SettingsViewController: TableViewController {
             let viewController = SearchSettingsTableViewController(profile: self.profile)
             self.navigationController?.pushViewController(viewController, animated: true)
           }, image: UIImage(named: "settings-search", in: .module, compatibleWith: nil)!.template, accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self),
-        Row(
+        /*Row(
           text: Strings.sync,
           selection: { [unowned self] in
             if syncAPI.isInSyncGroup {
@@ -297,7 +297,7 @@ class SettingsViewController: TableViewController {
             }
           }, image: UIImage(named: "settings-sync", in: .module, compatibleWith: nil)!.template, accessory: .disclosureIndicator,
           cellClass: MultilineValue1Cell.self),
-        .boolRow(title: Strings.bookmarksLastVisitedFolderTitle, option: Preferences.General.showLastVisitedBookmarksFolder, image: UIImage(named: "menu_folder_open", in: .module, compatibleWith: nil)!.template),
+        .boolRow(title: Strings.bookmarksLastVisitedFolderTitle, option: Preferences.General.showLastVisitedBookmarksFolder, image: UIImage(named: "menu_folder_open", in: .module, compatibleWith: nil)!.template),*/
         Row(
           text: Strings.Shortcuts.shortcutSettingsTitle,
           selection: { [unowned self] in
@@ -472,10 +472,10 @@ class SettingsViewController: TableViewController {
         title: Strings.showBookmarkButtonInTopToolbar,
         option: Preferences.General.showBookmarkToolbarShortcut,
         image: UIImage(named: "settings-bookmarks-shortcut", in: .module, compatibleWith: nil)!.template),
-      .boolRow(
+      /*.boolRow(
         title: Strings.hideRewardsIcon,
         option: Preferences.Rewards.hideRewardsIcon,
-        image: UIImage(named: "settings-rewards-icon", in: .module, compatibleWith: nil)!.template),
+        image: UIImage(named: "settings-rewards-icon", in: .module, compatibleWith: nil)!.template),*/
     ])
 
     return display
@@ -554,7 +554,8 @@ class SettingsViewController: TableViewController {
             self.dismiss(animated: true)
           },
           image: UIImage(named: "settings-report-bug", in: .module, compatibleWith: nil)!.template,
-          cellClass: MultilineValue1Cell.self),
+          cellClass: MultilineValue1Cell.self)
+        /*
         Row(
           text: Strings.rateBrave,
           selection: { [unowned self] in
@@ -565,7 +566,7 @@ class SettingsViewController: TableViewController {
             self.dismiss(animated: true)
           },
           image: UIImage(named: "settings-rate", in: .module, compatibleWith: nil)!.template,
-          cellClass: MultilineValue1Cell.self),
+          cellClass: MultilineValue1Cell.self),*/
       ]
     )
   }()

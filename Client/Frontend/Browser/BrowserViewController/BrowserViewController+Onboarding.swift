@@ -79,7 +79,7 @@ extension BrowserViewController {
       topToolbar.locationView.urlTextField.frame,
       from: topToolbar.locationView).insetBy(dx: -7.0, dy: -1.0)
     
-    // Present the popover
+    /* Present the popover
     let controller = WelcomeOmniBoxOnboardingController()
     controller.setText(
       title: Strings.Onboarding.omniboxOnboardingPopOverTitle,
@@ -100,7 +100,7 @@ extension BrowserViewController {
           self.topToolbar.tabLocationViewDidTapLocation(self.topToolbar.locationView)
         }
       }
-    )
+    )*/
   }
 
   private func showPrivacyReportsOnboardingIfNeeded() {
@@ -274,7 +274,7 @@ extension BrowserViewController {
         guard let self = self else { return }
 
         if self.shouldShowPlaylistOnboardingThisSession {
-          self.showPlaylistOnboarding(tab: self.tabManager.selectedTab)
+          // self.showPlaylistOnboarding(tab: self.tabManager.selectedTab)
         }
       }
     }

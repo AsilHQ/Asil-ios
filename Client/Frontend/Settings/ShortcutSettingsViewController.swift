@@ -66,7 +66,7 @@ class ShortcutSettingsViewController: TableViewController {
         footer: .title(Strings.Shortcuts.shortcutSettingsClearBrowserHistoryDescription))
     )
 
-    dataSource.sections.append(
+    /*dataSource.sections.append(
       Section(
         rows: [
           Row(
@@ -76,9 +76,9 @@ class ShortcutSettingsViewController: TableViewController {
             }, accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self)
         ],
         footer: .title(Strings.Shortcuts.shortcutSettingsEnableVPNDescription))
-    )
+    )*/
 
-    dataSource.sections.append(
+    /*dataSource.sections.append(
       Section(
         rows: [
           Row(
@@ -88,9 +88,9 @@ class ShortcutSettingsViewController: TableViewController {
             }, accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self)
         ],
         footer: .title(Strings.Shortcuts.shortcutSettingsOpenBraveNewsDescription))
-    )
+    )*/
 
-    dataSource.sections.append(
+    /*dataSource.sections.append(
       Section(
         rows: [
           Row(
@@ -100,7 +100,7 @@ class ShortcutSettingsViewController: TableViewController {
             }, accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self)
         ],
         footer: .title(Strings.Shortcuts.shortcutSettingsOpenPlaylistDescription))
-    )
+    )*/
 
     dataSource.sections.append(
       Section(

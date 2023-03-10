@@ -47,10 +47,10 @@
 "e13lS3-crhbMy" = "Показать результаты по запросу «Закладки»?";
 
 /* (No Comment) */
-"e13lS3-FGO5qW" = "Показать результаты по запросу «Brave Плейлист»?";
+"e13lS3-FGO5qW" = "Показать результаты по запросу «Asil Browser Плейлист»?";
 
 /* (No Comment) */
-"e13lS3-jXiFQY" = "Показать результаты по запросу «Brave Кошелек»?";
+"e13lS3-jXiFQY" = "Показать результаты по запросу «Asil Browser Кошелек»?";
 
 /* (No Comment) */
 "e13lS3-nthxSL" = "Показать результаты по запросу «Скачанные файлы»?";
@@ -71,7 +71,7 @@
 "EUS9FL" = "Ярлык для виджета";
 
 /* (No Comment) */
-"FGO5qW" = "Плейлист Brave";
+"FGO5qW" = "Плейлист Asil Browser";
 
 /* (No Comment) */
 "gpCwrM" = "Настройки показателей";
@@ -86,7 +86,7 @@
 "joEZJM" = "№ 2";
 
 /* (No Comment) */
-"jXiFQY" = "Brave Кошелек";
+"jXiFQY" = "Asil Browser Кошелек";
 
 /* (No Comment) */
 "L1fziM-0W40Cl" = "Результатов по запросу «Новая вкладка»: ${count}.";
@@ -95,10 +95,10 @@
 "L1fziM-crhbMy" = "Результатов по запросу «Закладки»: ${count}.";
 
 /* (No Comment) */
-"L1fziM-FGO5qW" = "Результатов по запросу «Brave Плейлист»: ${count}.";
+"L1fziM-FGO5qW" = "Результатов по запросу «Asil Browser Плейлист»: ${count}.";
 
 /* (No Comment) */
-"L1fziM-jXiFQY" = "Результатов по запросу «Brave Кошелек»: ${count}.";
+"L1fziM-jXiFQY" = "Результатов по запросу «Asil Browser Кошелек»: ${count}.";
 
 /* (No Comment) */
 "L1fziM-nthxSL" = "Результатов по запросу «Скачанные файлы»: ${count}.";
@@ -131,10 +131,10 @@
 "r2EI05-crhbMy" = "Показать результаты по запросу «Закладки»?";
 
 /* (No Comment) */
-"r2EI05-FGO5qW" = "Показать результаты по запросу «Brave Плейлист»?";
+"r2EI05-FGO5qW" = "Показать результаты по запросу «Asil Browser Плейлист»?";
 
 /* (No Comment) */
-"r2EI05-jXiFQY" = "Показать результаты по запросу «Brave Кошелек»?";
+"r2EI05-jXiFQY" = "Показать результаты по запросу «Asil Browser Кошелек»?";
 
 /* (No Comment) */
 "r2EI05-nthxSL" = "Показать результаты по запросу «Скачанные файлы»?";
@@ -167,10 +167,10 @@
 "tNCrcE-crhbMy" = "Результатов по запросу «Закладки»: ${count}.";
 
 /* (No Comment) */
-"tNCrcE-FGO5qW" = "Результатов по запросу «Brave Плейлист»: ${count}.";
+"tNCrcE-FGO5qW" = "Результатов по запросу «Asil Browser Плейлист»: ${count}.";
 
 /* (No Comment) */
-"tNCrcE-jXiFQY" = "Результатов по запросу «Brave Кошелек»: ${count}.";
+"tNCrcE-jXiFQY" = "Результатов по запросу «Asil Browser Кошелек»: ${count}.";
 
 /* (No Comment) */
 "tNCrcE-nthxSL" = "Результатов по запросу «Скачанные файлы»: ${count}.";
@@ -197,10 +197,10 @@
 "TxuMja-crhbMy" = "Результатов по запросу «Закладки»: ${count}.";
 
 /* (No Comment) */
-"TxuMja-FGO5qW" = "Результатов по запросу «Brave Плейлист»: ${count}.";
+"TxuMja-FGO5qW" = "Результатов по запросу «Asil Browser Плейлист»: ${count}.";
 
 /* (No Comment) */
-"TxuMja-jXiFQY" = "Результатов по запросу «Brave Кошелек»: ${count}.";
+"TxuMja-jXiFQY" = "Результатов по запросу «Asil Browser Кошелек»: ${count}.";
 
 /* (No Comment) */
 "TxuMja-nthxSL" = "Результатов по запросу «Скачанные файлы»: ${count}.";
@@ -245,10 +245,10 @@
 "YQiQuz-crhbMy" = "Показать результаты по запросу «Закладки»?";
 
 /* (No Comment) */
-"YQiQuz-FGO5qW" = "Показать результаты по запросу «Brave Плейлист»?";
+"YQiQuz-FGO5qW" = "Показать результаты по запросу «Asil Browser Плейлист»?";
 
 /* (No Comment) */
-"YQiQuz-jXiFQY" = "Показать результаты по запросу «Brave Кошелек»?";
+"YQiQuz-jXiFQY" = "Показать результаты по запросу «Asil Browser Кошелек»?";
 
 /* (No Comment) */
 "YQiQuz-nthxSL" = "Показать результаты по запросу «Скачанные файлы»?";

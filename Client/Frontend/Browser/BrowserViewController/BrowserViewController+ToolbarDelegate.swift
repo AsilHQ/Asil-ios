@@ -342,7 +342,7 @@ extension BrowserViewController: TopToolbarDelegate {
   }
 
   func topToolbarDidTapBraveRewardsButton(_ topToolbar: TopToolbarView) {
-    showBraveRewardsPanel()
+    //showBraveRewardsPanel()
   }
 
   func topToolbarDidLongPressBraveRewardsButton(_ topToolbar: TopToolbarView) {
@@ -607,11 +607,11 @@ extension BrowserViewController: ToolbarDelegate {
       content: { menuController in
         let isShownOnWebPage = selectedTabURL != nil
         VStack(spacing: 6) {
-          if isShownOnWebPage {
+          /*if isShownOnWebPage {
             featuresMenuSection(menuController)
           } else {
             privacyFeaturesMenuSection(menuController)
-          }
+          }*/
           Divider()
           destinationMenuSection(menuController, isShownOnWebPage: isShownOnWebPage)
           if let tabURL = selectedTabURL {

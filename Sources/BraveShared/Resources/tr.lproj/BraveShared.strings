@@ -1,17 +1,17 @@
 /* About settings section title */
 "About" = "Hakkında";
 
-/* The title of the screen explaining Brave Shields */
-"AboutBraveShields" = "Brave Kalkanları Hakkında";
+/* The title of the screen explaining Asil Browser Shields */
+"AboutBraveShields" = "Asil Browser Kalkanları Hakkında";
 
-/* The body of the screen explaining Brave Shields */
+/* The body of the screen explaining Asil Browser Shields */
 "AboutBraveShieldsBody" = "Siteler genellikle sizi ve cihazınızı tanımlamaya çalışan çerezler ve komut dosyaları içerir. Kim olduğunuzu öğrenmek ve sizi web'de takip etmek ve her sitede ne yaptığınızı izlemek istiyorlar.\n\nBrave, takip edilmeden gezinebilmeniz için bunları engeller.";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "Bu, görüntüyü Film Rulonuza kaydetmenizi sağlar.";
 
 /* See http://mzl.la/1G7uHo7 */
-"AccessPhotoDeniedAlertTitle" = "Brave Fotoğraflarınıza erişmek istiyor";
+"AccessPhotoDeniedAlertTitle" = "Asil Browser Fotoğraflarınıza erişmek istiyor";
 
 /* Button to add a bookmark */
 "AddBookmark" = "Yer İşareti Ekle";
@@ -52,8 +52,8 @@
 /* Label for the Face ID/Passcode item in Settings */
 "AuthenticationFaceIDPasscodeSetting" = "Yüz Kimliği ve Parola";
 
-/* Touch ID or PIN entry prompt subtitle when accessing Brave with the Browser Lock feature enabled */
-"AuthenticationLoginsTouchReason" = "Bu işlem, Brave erişiminizin kimliğini doğrular";
+/* Touch ID or PIN entry prompt subtitle when accessing Asil Browser with the Browser Lock feature enabled */
+"AuthenticationLoginsTouchReason" = "Bu işlem, Asil Browser erişiminizin kimliğini doğrular";
 
 /* Label for the Passcode item in Settings */
 "AuthenticationPasscode" = "Geçiş kodu";
@@ -116,7 +116,7 @@
 "BlockCookieConsentNotices" = "Çerez Onay Bildirimlerini Engelle";
 
 /* A description for a popup that notifies the user that we can block cookie consent notices */
-"BlockCookieConsentNoticesPopupDescription" = "Brave, üçüncü taraf çerezlerini zaten engelliyor. Çerez onay bildirimlerini de engelleyebiliriz.";
+"BlockCookieConsentNoticesPopupDescription" = "Asil Browser, üçüncü taraf çerezlerini zaten engelliyor. Çerez onay bildirimlerini de engelleyebiliriz.";
 
 /* A title for a popup that notifies the user that we can block cookie consent notices */
 "BlockCookieConsentNoticesPopupTitle" = "Çerez onay bildirimlerinden bıktınız mı?";
@@ -130,7 +130,7 @@
 /* A title for setting which blocks 'switch to app' popups */
 "blockMobileAnnoyances" = "\"Uygulamaya Git\" Bildirimlerini engelle";
 
-/* Brave panel individual toggle title */
+/* Asil Browser panel individual toggle title */
 "BlockPhishing" = "Kimlik Avını Engelle";
 
 /* No comment provided by engineer. */
@@ -175,38 +175,38 @@
 /* Placeholder text for adding or editing a bookmark */
 "BookmarkUrlPlaceholderText" = "Adres";
 
-/* Button to show the brave panel */
-"BravePanel" = "Brave Paneli";
+/* Button to show the Asil Browser panel */
+"BravePanel" = "Asil Browser Paneli";
 
 /* No comment provided by engineer. */
-"BraveRewardsAdNotificationTitle" = "Brave Ödülleri";
+"BraveRewardsAdNotificationTitle" = "Asil Browser Ödülleri";
 
 /* No comment provided by engineer. */
 "BraveRewardsOpen" = "Aç";
 
-/* Brave Rewards settings title */
-"BraveRewardsTitle" = "Brave Ödülleri";
+/* Asil Browser Rewards settings title */
+"BraveRewardsTitle" = "Asil Browser Ödülleri";
 
-/* Brave Search Banner Promotion description content in Search Suggestions */
-"braveSearchPromotion.bannerDescription" = "Brave Arama sizi, sorgularınızı veya tıklamalarınızı takip etmez.";
+/* Asil Browser Search Banner Promotion description content in Search Suggestions */
+"braveSearchPromotion.bannerDescription" = "Asil Browser Arama sizi, sorgularınızı veya tıklamalarınızı takip etmez.";
 
-/* Brave Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
+/* Asil Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
 "braveSearchPromotion.bannerMaybeLaterButtonTitle" = "Belki daha sonra";
 
-/* Brave Search Banner Promotion title in Search Suggestions */
+/* Asil Browser Search Banner Promotion title in Search Suggestions */
 "braveSearchPromotion.bannerTitle" = "Bağımsız aramayı daha iyi bir güvenlikle destekleyin";
 
-/* Brave Search Banner Promotion title for try button in Search Suggestions */
-"braveSearchPromotion.bannerTryButtonTitle" = "Brave ile Aramayı Deneyin";
+/* Asil Browser Search Banner Promotion title for try button in Search Suggestions */
+"braveSearchPromotion.bannerTryButtonTitle" = "Asil Browser ile Aramayı Deneyin";
 
-/* Brave Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
+/* Asil Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
 "braveSearchPromotion.braveSearchPromotionBannerDismissButtonTitle" = "Dismiss";
 
 /* No comment provided by engineer. */
 "BraveShieldsAdvancedControls" = "Gelişmiş denetimler";
 
 /* No comment provided by engineer. */
-"BraveShieldsAndPrivacy" = "Brave Kalkanları ve Gizlilik";
+"BraveShieldsAndPrivacy" = "Asil Browser Kalkanları ve Gizlilik";
 
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "Reklamlar ve diğer ürpertici şeyler engellendi";
@@ -223,17 +223,17 @@
 /* No comment provided by engineer. */
 "BraveShieldsSiteBroken" = "Bu site bozuk görünüyorsa, Kalkanları indirerek deneyin";
 
-/* Context: 'Brave Shields Up' or 'Brave Shields Down' */
-"BraveShieldsStatusTitle" = "Brave Kalkanları";
+/* Context: 'Asil Browser Shields Up' or 'Asil Browser Shields Down' */
+"BraveShieldsStatusTitle" = "Asil Browser Kalkanları";
 
-/* Context: The 'Down' in 'Brave Shields Down' */
+/* Context: The 'Down' in 'Asil Browser Shields Down' */
 "BraveShieldsStatusValueDown" = "Aşağı";
 
-/* Context: The 'Up' in 'Brave Shields Up' */
+/* Context: The 'Up' in 'Asil Browser Shields Up' */
 "BraveShieldsStatusValueUp" = "Yukarı";
 
 /* The accessibility hint spoken when focused on the main shields toggle */
-"BraveShieldsToggleHint" = "Brave Kalkanları'nı değiştirmek için iki kez dokunun";
+"BraveShieldsToggleHint" = "Asil Browser Kalkanları'nı değiştirmek için iki kez dokunun";
 
 /* Sync page title */
 "BraveSync" = "Eşitle";
@@ -242,16 +242,16 @@
 "BraveSyncInternalsTitle" = "Senkronizasyon Hata Ayıklama";
 
 /* Sync settings welcome */
-"BraveSyncWelcome" = "Başlamak için, senkronize etmeyi planladığınız tüm cihazlarda Brave'in yüklü olması gerekir. Bunları birbirine zincirlemek için, tüm cihazlarınızı güvenli bir şekilde birbirine bağlarken kullanacağınız bir eşitleme zinciri başlatın.";
+"BraveSyncWelcome" = "Başlamak için, senkronize etmeyi planladığınız tüm cihazlarda Asil Browser'ın yüklü olması gerekir. Bunları birbirine zincirlemek için, tüm cihazlarınızı güvenli bir şekilde birbirine bağlarken kullanacağınız bir eşitleme zinciri başlatın.";
 
 /* The name of the feature */
-"bravetalk.braveTalkTitle" = "Brave Sohbet";
+"bravetalk.braveTalkTitle" = "Asil Browser Sohbet";
 
 /* Setting to enable the browser lock privacy feature */
 "BrowserLock" = "Tarayıcı Kilidi";
 
 /* No comment provided by engineer. */
-"BrowserLockDescription" = "Touch ID, Face ID veya sistem geçiş koduyla Brave'in kilidini açın.";
+"BrowserLockDescription" = "Touch ID, Face ID veya sistem geçiş koduyla Asil Browser'ın kilidini açın.";
 
 /* A button title for the action to move to the next step of the browser lock migration process. */
 "browserLockMigrationContinueButtonTitle" = "Devam et";
@@ -260,10 +260,10 @@
 "browserLockMigrationNoPasscodeSetup" = "ID veya geçiş kodu ayarlamadınız mı? Ayarlar'ı açın, ardından \"%@\" öğesine dokunun";
 
 /* Subtitle on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationSubtitle" = "Brave Geçiş Kodlarını basitleştirdik. Artık Brave'e telefonunuzda kullandığınız aynı ID veya geçiş koduyla erişebilirsiniz.";
+"browserLockMigrationSubtitle" = "Asil Browser Geçiş Kodlarını basitleştirdik. Artık Asil Browser'e telefonunuzda kullandığınız aynı ID veya geçiş koduyla erişebilirsiniz.";
 
 /* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationTitle" = "Apple Face ID, Touch ID veya geçiş kodunuzla Brave'i açın";
+"browserLockMigrationTitle" = "Apple Face ID, Touch ID veya geçiş kodunuzla Asil Browser'ı açın";
 
 /* Settings item for clearing browsing history */
 "BrowsingHistory" = "Arama Geçmişi";
@@ -272,7 +272,7 @@
 "Cache" = "Önbellek";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Brave varsayılan olarak ayarlandığında, tıkladığınız her bağlantı Brave'in gizlilik korumasıyla açılır.";
+"callout.defaultBrowserCalloutDescription" = "Asil Browser varsayılan olarak ayarlandığında, tıkladığınız her bağlantı Asil Browser'ın gizlilik korumasıyla açılır.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Varsayılan tarayıcı olarak ayarla";
@@ -287,13 +287,13 @@
 "callout.defaultBrowserTitle" = "Güvenlik. Artık Çok Kolay.";
 
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "Bu şekilde en sık hangi Brave özelliklerinin kullanıldığını öğrenmemize yardımcı olabilirsiniz. Bu tercihi Brave Ayarları altındaki \"Brave Kalkanları ve Gizlilik\"ten istediğiniz zaman değiştirebilirsiniz.";
+"callout.p3aCalloutDescription" = "Bu şekilde en sık hangi Asil Browser özelliklerinin kullanıldığını öğrenmemize yardımcı olabilirsiniz. Bu tercihi Asil Browser Ayarları altındaki \"Asil Browser Kalkanları ve Gizlilik\"ten istediğiniz zaman değiştirebilirsiniz.";
 
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "Gizlilik Korumalı Ürün Analizlerimiz (P3A) hakkında daha fazlasını öğrenin.";
 
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutTitle" = "Brave'i daha iyi hale getirmeye yardım edin.";
+"callout.p3aCalloutTitle" = "Asil Browser'ı daha iyi hale getirmeye yardım edin.";
 
 /* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
 "callout.p3aCalloutToggleTitle" = "Anonim, gizli ürün içgörüleri paylaşın.";
@@ -308,7 +308,7 @@
 "callout.playlistOnboardingViewTitle" = "Videoyu Oynatma Listesine ekle...";
 
 /* Subtitle - Description for Privacy Everywhere Full Screen Callout */
-"callout.privacyEverywhereCalloutDescription" = "Bilgisayarınızda veya tabletinizde Brave'in gizliliğinin keyfini çıkarın, cihazlarınız arasında yer işaretlerinizi ve eklentilerinizi senkronize edin.";
+"callout.privacyEverywhereCalloutDescription" = "Bilgisayarınızda veya tabletinizde Asil Browser'ın gizliliğinin keyfini çıkarın, cihazlarınız arasında yer işaretlerinizi ve eklentilerinizi senkronize edin.";
 
 /* Title for button in Default Browser Full Screen Callout */
 "callout.privacyEverywhereCalloutPrimaryButtonTitle" = "Şimdi senkronize et";
@@ -349,7 +349,7 @@
 /* Title indicating whether or not a private key can be used to derive some data from another piece of data. IE: Use one key to generate another */
 "certificateViewer.deriveTitle" = "Türetme";
 
-/* Title of the section for the Domain Component such as: DNS or brave.com or a website's domain. */
+/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
 "certificateViewer.domainComponentTitle" = "Etki Alanı Bileşeni";
 
 /* Title of the section indication which 'Encryption' algorithm was used. */
@@ -388,7 +388,7 @@
 /* Title of the section for Department of the Company. Example: Human Resources. */
 "certificateViewer.organizationalUnitTitle" = "Organizasyonel Birim";
 
-/* Title of the section for Name of the Company. Example: Brave Inc. */
+/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
 "certificateViewer.organizationTitle" = "Organizasyon";
 
 /* Title indicating 'Parameters' or Input passed to a function/algorithm. */
@@ -599,25 +599,25 @@
 "defaultBrowserCallout.introOpenSettingsButtonText" = "Ayarları Aç";
 
 /* Primary text on default browser popup screen */
-"defaultBrowserCallout.introPrimaryText" = "Gizliliğinizi korumak için Brave ile tüm bağlantıları açın";
+"defaultBrowserCallout.introPrimaryText" = "Gizliliğinizi korumak için Asil Browser ile tüm bağlantıları açın";
 
 /* Secondary text on default browser popup. */
-"defaultBrowserCallout.introSecondaryText" = "Brave Kalkanları, izleyicileri ve reklamları engeller, veri kurtarır ve ziyaret ettiğiniz her sitede size zaman kazandırır";
+"defaultBrowserCallout.introSecondaryText" = "Asil Browser Kalkanları, izleyicileri ve reklamları engeller, veri kurtarır ve ziyaret ettiğiniz her sitede size zaman kazandırır";
 
 /* Tertiary text on default browser popup screen */
-"defaultBrowserCallout.introTertiaryText" = "Ayarlar'ı açın, Varsayılan Tarayıcı Uygulaması'nı dokunun ve Brave'i seçin.";
+"defaultBrowserCallout.introTertiaryText" = "Ayarlar'ı açın, Varsayılan Tarayıcı Uygulaması'nı dokunun ve Asil Browser'ı seçin.";
 
-/* Notification body to promote setting Brave app as default browser */
-"defaultBrowserCallout.notificationBody" = "iOS %@ için optimize edilmiştir. Brave'i bugün varsayılan tarayıcınız yapın.";
+/* Notification body to promote setting Asil Browser app as default browser */
+"defaultBrowserCallout.notificationBody" = "iOS %@ için optimize edilmiştir. Asil Browser'ı bugün varsayılan tarayıcınız yapın.";
 
-/* Notification title to promote setting Brave app as default browser */
-"defaultBrowserCallout.notificationTitle" = "Brave Web Tarayıcısı";
+/* Notification title to promote setting Asil Browser app as default browser */
+"defaultBrowserCallout.notificationTitle" = "Asil Browser Web Tarayıcısı";
 
 /* No comment provided by engineer. */
 "defaultBrowserCalloutCloseAccesabilityLabel" = "Varsayılan tarayıcı belirtecini kapat";
 
-/* Name for default Brave theme. */
-"defaultThemeName" = "Varsayılan Brave";
+/* Name for default Asil Browser theme. */
+"defaultThemeName" = "Varsayılan Asil Browser";
 
 /* No comment provided by engineer. */
 "Delete" = "Sil";
@@ -772,10 +772,10 @@
 /* Allow link to switch apps? */
 "ExternalAppURLAlertTitle" = "Bağlantının uygulamaları değiştirmesine izin verilsin mi?";
 
-/* Allow Brave to open the external app URL */
+/* Allow Asil Browser to open the external app URL */
 "ExternalAppURLAllow" = "İzin Ver";
 
-/* Don't allow Brave to open the external app URL */
+/* Don't allow Asil Browser to open the external app URL */
 "ExternalAppURLDontAllow" = "İzin Verme";
 
 /* Footer text when user selects to save to favorites when editing a bookmark */
@@ -854,10 +854,10 @@
 "HideLinkPreviewsActionTitle" = "Bağlantı Önizlemelerini Gizle";
 
 /* Hides the rewards icon */
-"HideRewardsIcon" = "Brave Ödülleri Simgesini Gizle";
+"HideRewardsIcon" = "Asil Browser Ödülleri Simgesini Gizle";
 
 /* Hide the rewards icon explination. */
-"HideRewardsIconSubtitle" = "Brave Ödülleri etkinleştirilmediğinde Brave Ödülleri simgesini gizler";
+"HideRewardsIconSubtitle" = "Asil Browser Ödülleri etkinleştirilmediğinde Asil Browser Ödülleri simgesini gizler";
 
 /* Title for history menu item */
 "HistortMenuItem" = "Geçmiş";
@@ -995,13 +995,13 @@
 "MonthlyAdsClaimNotificationBody" = "Ücretsiz jetonlarınızı talep etmek için dokunun.";
 
 /* The title of the notification that goes out monthly to users who can claim an ads grant */
-"MonthlyAdsClaimNotificationTitle" = "Brave Ödülleri 💵🎁";
+"MonthlyAdsClaimNotificationTitle" = "Asil Browser Ödülleri 💵🎁";
 
 /* No comment provided by engineer. */
 "MyFirstAdBody" = "Daha fazla bilgi edinmek için buraya dokunun.";
 
 /* No comment provided by engineer. */
-"MyFirstAdTitle" = "Bu senin ilk Brave reklamın.";
+"MyFirstAdTitle" = "Bu senin ilk Asil Browser reklamın.";
 
 /* Bookmark title / Device name */
 "Name" = "Ad";
@@ -1063,14 +1063,14 @@
 /* Setting title for option to automatically redirect a url to another url */
 "nprRedirectFooter" = "NPR bağlantıları otomatik olarak metin tabanlı sürümlerine (text.npr.org adresindeki) yönlendirir.";
 
-/* Bookmark title for Brave Support */
-"ntp.braveSupportFavoriteTitle" = "Brave Destek";
+/* Bookmark title for Asil Browser Support */
+"ntp.braveSupportFavoriteTitle" = "Asil Browser Destek";
 
 /* No comment provided by engineer. */
 "ntp.claimRewards" = "Talep Belirteçleri";
 
-/* Placeholder example: 'You earned 42 BAT by browsing with Brave.' */
-"ntp.earningsReport" = "Brave ile gezinti yaparak %@ kazandınız.";
+/* Placeholder example: 'You earned 42 BAT by browsing with Asil Browser.' */
+"ntp.earningsReport" = "Asil Browser ile gezinti yaparak %@ kazandınız.";
 
 /* The context is to praise the user that they did a good job, to keep it up. It is used in full sentence like: 'Way to go! You earned 40 BAT last month.' */
 "ntp.goodJob" = "Tebrikler!";
@@ -1079,10 +1079,10 @@
 "ntp.hideSponsoredImages" = "Sponsorlu resimleri gizle";
 
 /* The text description of image type which is being used NTP */
-"ntp.imageTypeSelectionDescription" = "\"Sponsorlular\", Brave Ödülleri etkinleştirildiğinde elde edebileceğiniz ek markalı arka planlardır.";
+"ntp.imageTypeSelectionDescription" = "\"Sponsorlular\", Asil Browser Ödülleri etkinleştirildiğinde elde edebileceğiniz ek markalı arka planlardır.";
 
 /* No comment provided by engineer. */
-"ntp.learnMoreAboutRewards" = "Brave Rewards hakkında daha fazla bilgi edinin";
+"ntp.learnMoreAboutRewards" = "Asil Browser Rewards hakkında daha fazla bilgi edinin";
 
 /* No comment provided by engineer. */
 "ntp.learnMoreAboutSI" = "Sponsorlu resimler hakkında daha fazla bilgi edinin";
@@ -1114,17 +1114,17 @@
 /* The placeholder says 'Terms of Service'. So full sentence goes like: 'By turning Rewards, you agree to the Terms of Service'. */
 "ntp.turnRewardsTos" = "Ödülleri açarak %@'nı kabul ediyorsunuz.";
 
-/* Message when opting into brave Ads when region becomes available */
+/* Message when opting into Asil Browser Ads when region becomes available */
 "OBAdsOptInMessage" = "Göz atarken harika içerikler için jetonlar kazanın ve içerik üreticilerini ödüllendirin.";
 
-/* Message when opting into brave Ads when region becomes available */
+/* Message when opting into Asil Browser Ads when region becomes available */
 "OBAdsOptInMessageJapan" = "Göz atarken harika içerikler için puan kazanın ve içerik üreticilerini ödüllendirin.";
 
-/* Title when opting into brave Ads when region becomes available */
-"OBAdsOptInTitle" = "Brave Ads geldi!";
+/* Title when opting into Asil Browser Ads when region becomes available */
+"OBAdsOptInTitle" = "Asil Browser Ads geldi!";
 
 /* Title for ads onboarding screen */
-"OBAdsTitle" = "Brave ilk reklamınızı";
+"OBAdsTitle" = "Asil Browser ilk reklamınızı";
 
 /* Title for when the user completes onboarding */
 "OBCompleteTitle" = "Şimdi gitmeye hazırsın.";
@@ -1144,14 +1144,14 @@
 /* Button to finish onboarding and start using the app. */
 "OBFinishButton" = "Göz atmaya başla";
 
-/* Button to join Brave Rewards. */
+/* Button to join Asil Browser Rewards. */
 "OBJoinButton" = "birleştirmek";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentClipboardPermission" = "Brave'in panomda eşleşen bir başvuru kodu olup olmadığını denetlemesine izin ver";
+"OBPrivacyConsentClipboardPermission" = "Asil Browser'ın panomda eşleşen bir başvuru kodu olup olmadığını denetlemesine izin ver";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentDetail" = "Brave'i sizi yönlendiren kişiyi desteklemek için indirmiş olabilirsiniz. Sizi yönlendiren kişiyi algılamak için Brave, panonuzda bir kerelik eşleşen başvuru kodu denetimi gerçekleştirir. Bu kontrol yalnızca kodla sınırlıdır ve başka hiçbir kişisel veri iletilmeyecektir.  Eğer vazgeçerseniz, sizi yönlendiren kişi Brave'den ödül almaz.";
+"OBPrivacyConsentDetail" = "Asil Browser'ı sizi yönlendiren kişiyi desteklemek için indirmiş olabilirsiniz. Sizi yönlendiren kişiyi algılamak için Asil Browser, panonuzda bir kerelik eşleşen başvuru kodu denetimi gerçekleştirir. Bu kontrol yalnızca kodla sınırlıdır ve başka hiçbir kişisel veri iletilmeyecektir.  Eğer vazgeçerseniz, sizi yönlendiren kişi Asil Browser'den ödül almaz.";
 
 /* No comment provided by engineer. */
 "OBPrivacyConsentNoButton" = "Bu denetime izin verme";
@@ -1172,10 +1172,10 @@
 "OBRewardsAgreementDetailsAnd" = "ve";
 
 /* Title for rewards agreement onboarding screen */
-"OBRewardsAgreementTitle" = "Brave Ödülleri";
+"OBRewardsAgreementTitle" = "Asil Browser Ödülleri";
 
 /* Detail text for rewards onboarding screen */
-"OBRewardsDetail" = "Brave Özel Reklamlara abone olmak, görüntülenen her reklamla birlikte yayıncıları ve içerik üreticilerini destekler.";
+"OBRewardsDetail" = "Asil Browser Özel Reklamlara abone olmak, görüntülenen her reklamla birlikte yayıncıları ve içerik üreticilerini destekler.";
 
 /* Detail text for rewards onboarding screen */
 "OBRewardsDetailInAdRegion" = "Göz atarken harika içerikler için jetonlar kazanın ve içerik üreticilerini ödüllendirin.";
@@ -1184,7 +1184,7 @@
 "OBRewardsPrivacyPolicyDetailLink" = "Gizlilik Politikası";
 
 /* Title for rewards onboarding screen */
-"OBRewardsTitle" = "Brave Ödülleri";
+"OBRewardsTitle" = "Asil Browser Ödülleri";
 
 /* Save button to save current selection */
 "OBSaveButton" = "Kaydet";
@@ -1193,28 +1193,28 @@
 "OBSearchEngineDetail" = "Varsayılan arama motorunuzu seçin";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Brave Tarayıcı'ya Hoş Geldiniz";
+"OBSearchEngineTitle" = "Asil Tarayıcı'ya Hoş Geldiniz";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "Web'de takip edilmeden gezinebilmek için gizliliği ihlal eden izleyicileri engelleyin";
 
 /* Title for shields onboarding screen */
-"OBShieldsTitle" = "Brave Kalkanları";
+"OBShieldsTitle" = "Asil Browser Kalkanları";
 
-/* Button to show the Brave Rewards Ads. */
+/* Button to show the Asil Browser Rewards Ads. */
 "OBShowMeButton" = "Göster";
 
-/* Button to show Brave Rewards. */
+/* Button to show Asil Browser Rewards. */
 "OBTurnOnButton" = "Başlamak";
 
 /* The description text shown when there is big tech tracker among trackers. Example usage: Google, Amazon and 32 other trackers blocked */
 "onboarding.blockedAdsOnboardingBigTechInformationText" = "%1$@ ve %2$lld ile diğer reklamlar ve izleyiciler engellendi";
 
-/* The footnote indicating what Brave shields is blocking */
-"onboarding.blockedAdsOnboardingFootnoteText" = "Shields ile Brave'in her sayfada engellediği tüm zararlı içerikleri görün";
+/* The footnote indicating what Asil Browser shields is blocking */
+"onboarding.blockedAdsOnboardingFootnoteText" = "Shields ile Asil Browser'ın her sayfada engellediği tüm zararlı içerikleri görün";
 
 /* The text describing user where they should press in order to open Shield panel */
-"onboarding.blockedAdsOnboardingInstructionsText" = "Brave Shields'ı görmek için dokunun";
+"onboarding.blockedAdsOnboardingInstructionsText" = "Asil Browser Shields'ı görmek için dokunun";
 
 /* The description text shown when there is no big tech tracker among trackers. Example usage: 31 Ads & trackers blocked. The number here is presented separately so it is not in translation. */
 "onboarding.blockedAdsOnboardingNoBigTechInformationText" = "Reklamlar ve izleyiciler engellendi";
@@ -1229,13 +1229,13 @@
 "onboarding.ntpOnboardingPopOverTrackerDescription" = "İzleyiciler ve reklamlar engellendiğinde, web siteleri daha az veri kullanır ve çok daha hızlı yüklenir.";
 
 /* Description for the Omnibox (URL Bar) pop-over that describes faster load times. */
-"onboarding.omniboxOnboardingPopOverDescription" = "Brave'in farkını görün\nReklam yok. İzleyici yok. Çok daha hızlı yüklenen sayfalar.";
+"onboarding.omniboxOnboardingPopOverDescription" = "Asil Browser'ın farkını görün\nReklam yok. İzleyici yok. Çok daha hızlı yüklenen sayfalar.";
 
 /* Title for the Omnibox (URL Bar) pop-over that describes faster load times. */
 "onboarding.omniboxOnboardingPopOverTitle" = "Bir web sitesi adı veya URL yazın";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "Brave'e hoş geldiniz";
+"onboarding.welcomeScreenTitle" = "Asil Browser'a hoş geldiniz";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "Devam et";
@@ -1249,8 +1249,8 @@
 /* Context menu item for opening all folder bookmarks */
 "OpenAllBookmarks" = "Tümünü Aç (%i)";
 
-/* Button title for opening the Brave Rewards panel to settings */
-"OpenBraveRewardsSettings" = "Brave Ödülleri Ayarlarını Aç";
+/* Button title for opening the Asil Browser Rewards panel to settings */
+"OpenBraveRewardsSettings" = "Asil Browser Ödülleri Ayarlarını Aç";
 
 /* Error description when there is an error while navigating to Files App */
 "OpenDownloadsFolderErrorDescription" = "Dosyalar uygulamasında İndirilenler klasörü açılırken bilinmeyen bir hata oluştu.";
@@ -1295,13 +1295,13 @@
 "opentabs.noSyncChainPlaceHolderViewDescription" = "Başlamak için bir senkronizasyon zinciri ayarlayın ve Senkronizasyon Ayarlarından \"Sekmeleri Aç\"a geçin.";
 
 /* The additional description of the view describing tab syncing should be enabled. */
-"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Brave'in Ayarlardaki senkronizasyonlarını yönetin.";
+"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Asil Browser'ın Ayarlardaki senkronizasyonlarını yönetin.";
 
 /* The description of the view describing no other sessions are active in sync. */
 "opentabs.noSyncSessionPlaceHolderViewDescription" = "Diğer cihazlarınızdan gösterilecek etkin bir oturum bulunmuyor.";
 
 /* The title of the view showing no synced sessions */
-"opentabs.noSyncSessionPlaceHolderViewTitle" = "Bu alan, diğer cihazlarda açık olan Brave sekmelerini gösterir";
+"opentabs.noSyncSessionPlaceHolderViewTitle" = "Bu alan, diğer cihazlarda açık olan Asil Browser sekmelerini gösterir";
 
 /* The title for the action to hide open session with all tabs */
 "opentabs.openSessionHideAllActionTitle" = "Şimdilik gizle";
@@ -1354,35 +1354,35 @@
 /* Button title to that opens a website. */
 "OpenWebsite" = "Web Sitesi Aç";
 
-/* The subtitle description of menu item Brave News */
+/* The subtitle description of menu item Asil Browser News */
 "optionsMenu.braveNewsItemDescription" = "Günün en iyi hikayeleri özel bir haber akışında";
 
-/* Brave News Item Menu title */
+/* Asil Browser News Item Menu title */
 "optionsMenu.braveNewsItemTitle" = "Haberler";
 
-/* The subtitle description of menu item Brave Playlist */
+/* The subtitle description of menu item Asil Browser Playlist */
 "optionsMenu.bravePlaylistItemDescription" = "Tüm videolar/akışlar için çevrimdışı bir oynatma listesi tutun";
 
-/* Brave News Item Menu title */
+/* Asil Browser News Item Menu title */
 "optionsMenu.bravePlaylistItemTitle" = "Oynatma listesi";
 
-/* The subtitle description of menu item Brave Talk */
+/* The subtitle description of menu item Asil Browser Talk */
 "optionsMenu.braveTalkItemDescription" = "Özel görüntülü aramalar, doğrudan tarayıcınızın içinde";
 
-/* Brave Talk Item Menu title */
+/* Asil Browser Talk Item Menu title */
 "optionsMenu.braveTalkItemTitle" = "Sohbet";
 
-/* The subtitle description of menu item Brave VPN */
+/* The subtitle description of menu item Asil Browser VPN */
 "optionsMenu.braveVPNItemDescription" = "Çevrimiçi ortamda tüm cihazınızı koruyun";
 
-/* Brave VPN Item Menu title */
+/* Asil Browser VPN Item Menu title */
 "optionsMenu.braveVPNItemTitle" = "VPN";
 
-/* The subtitle description of menu item Brave Wallet */
+/* The subtitle description of menu item Asil Browser Wallet */
 "optionsMenu.braveWalletItemDescription" = "Güvenli kripto cüzdanı, eklenti gerektirmez";
 
 /* Privacy Features Section title */
-"optionsMenu.menuSectionTitle" = "Brave Özellikleri";
+"optionsMenu.menuSectionTitle" = "Asil Browser Özellikleri";
 
 /* Section name for other privacy settings */
 "OtherPrivacySettingsSection" = "Diğer Gizlilik Ayarları";
@@ -1390,10 +1390,10 @@
 /* Section name for other settings. */
 "OtherSettingsSection" = "Diğer Ayarlar";
 
-/* A subtitle shown on the setting that toggles analytics on Brave. */
-"p3a.settingSubtitle" = "Anonimleştirilmiş P3A bilgisi, Brave'in genel kullanımı tahmin etmesine yardımcı olur ve popüler özellikleri geliştirmeye devam etmemizi garanti eder.";
+/* A subtitle shown on the setting that toggles analytics on Asil Browser. */
+"p3a.settingSubtitle" = "Anonimleştirilmiş P3A bilgisi, Asil Browser'ın genel kullanımı tahmin etmesine yardımcı olur ve popüler özellikleri geliştirmeye devam etmemizi garanti eder.";
 
-/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Brave. */
+/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
 "p3a.settingTitle" = "Gizlilik Korumalı Ürün Analizine İzin Ver (P3A)";
 
 /* Title for the section for the global/default zoom level */
@@ -1439,7 +1439,7 @@
 "playList.addToPlayListAlertDescription" = "Bu videoyu oynatma listenize eklemek ister misiniz?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Brave Oynatma Listesine Ekle";
+"playList.addToPlayListAlertTitle" = "Asil Browser Oynatma Listesine Ekle";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "Oynatma Seçenekleri";
@@ -1460,7 +1460,7 @@
 "playlist.carplaySettingsSectionTitle" = "Ayarlar";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Brave Oynatma Listesi";
+"playlist.carplayTitle" = "Asil Browser Oynatma Listesi";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Çevrimdışı Önbelleği Sil";
@@ -1478,7 +1478,7 @@
 "playList.loadResourcesErrorAlertDescription" = "Kaynak yüklenirken bir sorun meydana geldi!";
 
 /* Description footer for playlist menu badge option */
-"playlist.menuBadgeOptionFooterText" = "Etkinleştirildiğinde ana menü ikonu üzerinde sayfadaki medyanın Brave Oynatma Listesi'ne eklenebileceğini belirten bir rozet gösterilir.";
+"playlist.menuBadgeOptionFooterText" = "Etkinleştirildiğinde ana menü ikonu üzerinde sayfadaki medyanın Asil Browser Oynatma Listesi'ne eklenebileceğini belirten bir rozet gösterilir.";
 
 /* Title for playlist menu badge option */
 "playlist.menuBadgeOptionTitle" = "Menü Bildirim Rozetini Göster";
@@ -1487,7 +1487,7 @@
 "playlist.movePlaylistShareActionMenuTitle" = "Öğeyi taşı...";
 
 /* Detail Text when there are no items in the playlist */
-"playList.noItemLabelDetailLabel" = "Tarayıcı içinde Brave Oynatma Listenize öğe ekleyebilirsiniz";
+"playList.noItemLabelDetailLabel" = "Tarayıcı içinde Asil Browser Oynatma Listenize öğe ekleyebilirsiniz";
 
 /* Text when there are no items in the playlist */
 "playList.noItemLabelTitle" = "Kullanılabilir Öğe Yok";
@@ -1565,7 +1565,7 @@
 "playList.playListSettingTitle" = "Oynatma listesi";
 
 /* Body for the error message that shows when a playlist folder already exists */
-"playList.playlistSharedFolderAlreadyExistsBody" = "Bu dosya zaten Brave Oynatma Listenizde mevcut";
+"playList.playlistSharedFolderAlreadyExistsBody" = "Bu dosya zaten Asil Browser Oynatma Listenizde mevcut";
 
 /* Title for the error message that shows when a playlist folder already exists */
 "playList.playlistSharedFolderAlreadyExistsTitle" = "Özür dileriz";
@@ -1601,16 +1601,16 @@
 "playlist.playlistWebCompatibilityTitle" = "Web Uyumluluğu";
 
 /* Body of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddBody" = "Brave Oynatma Listeleri Çevrimdışı Yeniden Oynatma, Resim İçinde Resim, devamlı yeniden oynatma ve tekrarlama modlarını destekler.";
+"playlist.popoverAddBody" = "Asil Browser Oynatma Listeleri Çevrimdışı Yeniden Oynatma, Resim İçinde Resim, devamlı yeniden oynatma ve tekrarlama modlarını destekler.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Bu medya Brave Oynatma Listeniz'de";
+"playlist.popoverAddedTitle" = "Bu medya Asil Browser Oynatma Listeniz'de";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddTitle" = "Bu medyayı Brave Oynatma Listeniz'e eklemek ister misiniz?";
+"playlist.popoverAddTitle" = "Bu medyayı Asil Browser Oynatma Listeniz'e eklemek ister misiniz?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Brave Oynatma Listesi'nde Aç";
+"playlist.popoverOpenInBravePlaylist" = "Asil Browser Oynatma Listesi'nde Aç";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Kaldır";
@@ -1652,7 +1652,7 @@
 "playlist.sharePlaylistActionDetailsTitle" = "Mevcut öğeyi Yeni Sekmede açabilir ya da Sistem Paylaşımı Menüsü aracılığıyla paylaşabilirsiniz";
 
 /* Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
-"playlist.sharePlaylistActionTitle" = "Brave Oynatma Listesi Menüsü";
+"playlist.sharePlaylistActionTitle" = "Asil Browser Oynatma Listesi Menüsü";
 
 /* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
 "playlist.sharePlaylistOpenInNewPrivateTabTitle" = "Gizli Sekmede Aç";
@@ -1667,19 +1667,19 @@
 "playList.sorryAlertTitle" = "Özür dileriz";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Brave Oynatma Listesine Eklendi";
+"playList.toastAddedToPlaylistTitle" = "Asil Browser Oynatma Listesine Eklendi";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "Aç";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Brave Oynatma Listesine Ekle";
+"playList.toastAddToPlaylistTitle" = "Asil Browser Oynatma Listesine Ekle";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
-"playList.toastExitingItemPlaylistTitle" = "Brave Oynatma Listesinde Görüntüle";
+"playList.toastExitingItemPlaylistTitle" = "Asil Browser Oynatma Listesinde Görüntüle";
 
 /* Footer for option to disable URL-Bar button */
-"playlist.urlBarButtonOptionFooter" = "Brave tarayıcıda adres çubuğunun yanına bir oynatma listesi düğmesi ekler (+ sembolüyle 4 çizgi olarak görünür). Bu düğme, Oynatma Listesini açmak, medya eklemek ya da kaldırmak için hızlı erişim sağlar.";
+"playlist.urlBarButtonOptionFooter" = "Asil Browser tarayıcıda adres çubuğunun yanına bir oynatma listesi düğmesi ekler (+ sembolüyle 4 çizgi olarak görünür). Bu düğme, Oynatma Listesini açmak, medya eklemek ya da kaldırmak için hızlı erişim sağlar.";
 
 /* Title for option to disable URL-Bar button */
 "playlist.urlBarButtonOptionTitle" = "Hızlı erişim düğmesini etkinleştir";
@@ -1708,7 +1708,7 @@
 /* The title of the screen where the user will move an item from one folder to another folder. */
 "playlistFolders.moveFolderScreenTitle" = "Taşı";
 
-/* %@ Should NOT be localized. It is a placeholder. Example: Brave Folder and 1 more item. */
+/* %@ Should NOT be localized. It is a placeholder. Example: Asil Browser Folder and 1 more item. */
 "playlistFolders.moveItemDescription" = "%@ ve 1 öğe daha";
 
 /* %lld is a placeholder and should not be localized. Sometimes items can have no name. So this is a generic title to use */
@@ -1717,7 +1717,7 @@
 /* Sometimes an item can have no name. So this is a generic title to use */
 "playlistFolders.moveItemWithNoNameTitle" = "1 öğe";
 
-/* %@ and %lld Should NOT be localized. They are placeholders. Example: Brave Folder and 3 more items. Music and 2 more items. */
+/* %@ and %lld Should NOT be localized. They are placeholders. Example: Asil Browser Folder and 3 more items. Music and 2 more items. */
 "playlistFolders.moveMultipleItemDescription" = "%1$@ ve %2$lld öğe daha";
 
 /* The title of the button to create a new folder */
@@ -1751,7 +1751,7 @@
 "playlistFolders.untitledFolderTitle" = "Başlıksız Klasör";
 
 /* Accessibility Title for the button that adds the playlist to the database. */
-"playlistFolderSharing.addButtonAccessibilityTitle" = "Brave Oynatma Listesi Düğmesine Ekle";
+"playlistFolderSharing.addButtonAccessibilityTitle" = "Asil Browser Oynatma Listesi Düğmesine Ekle";
 
 /* Title for the button that adds the playlist to the database. */
 "playlistFolderSharing.addButtonTitle" = "Ekle";
@@ -1795,7 +1795,7 @@
 /* Description for closing a popover menu that is displayed. */
 "PopoverDefaultClose" = "Bağlam Menüsünü Kapat";
 
-/* Description for closing the `Brave Shields` popover menu that is displayed. */
+/* Description for closing the `Asil Browser Shields` popover menu that is displayed. */
 "PopoverShieldsMenuClose" = "Kalkanlar Menüsünü Kapat";
 
 /* Label for preview action on Tab Tray Tab to add current tab to Bookmarks */
@@ -1819,7 +1819,7 @@
 /* Header text, under it we show items blocked by our ad blocker. 'All  time' sentence context is like 'All time items blocked by our ad blocker. */
 "privacyHub.allTimeListsHeader" = "Tüm zamanlar";
 
-/* Title of a section to show total count of trackers blocked by Brave */
+/* Title of a section to show total count of trackers blocked by Asil Browser */
 "privacyHub.allTimeListsTrackersView" = "İzleyiciler ve reklamlar";
 
 /* Title of a section to show websites containing highest amount of trackers */
@@ -1843,10 +1843,10 @@
 /* Title under which we display a website on which there's the highest number of trackers or ads. */
 "privacyHub.allTimeWebsiteTitle" = "Web sitesi";
 
-/* Text for a button to display a list of all alerts caught by the Brave VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
+/* Text for a button to display a list of all alerts caught by the Asil Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
 "privacyHub.allVPNAlertsButtonText" = "Tüm uyarılar";
 
-/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Brave Shields', 'Blocked by BraveVPN */
+/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Asil Browser Shields', 'Blocked by BraveVPN */
 "privacyHub.blockedBy" = "Engelleyen:";
 
 /* It says that a ad or tracker was blocked. Think of it in context of 'A tracker X was blocked' */
@@ -1864,8 +1864,8 @@
 /* Header text, under it we display blocked items from last week */
 "privacyHub.lastWeekHeader" = "Geçen hafta";
 
-/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Brave Shields on 42 sites' */
-"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@**, Brave Kalkanları tarafından **%2$lld** sitede engellendi";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Asil Browser Shields on 42 sites' */
+"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@**, Asil Browser Kalkanları tarafından **%2$lld** sitede engellendi";
 
 /* Title under which we display a tracker which was most frequently detected by our ad blocking mechanism. */
 "privacyHub.mostFrequentTrackerAndAdTitle" = "En Sık Saptanan İzleyici ve Reklam";
@@ -1883,7 +1883,7 @@
 "privacyHub.notificationCalloutButtonText" = "Bildirimleri aç";
 
 /* Message of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
-"privacyHub.notificationMessage" = "Brave'in sizi bu hafta çevrimiçi olarak nasıl koruduğunun bir özeti.";
+"privacyHub.notificationMessage" = "Asil Browser'ın sizi bu hafta çevrimiçi olarak nasıl koruduğunun bir özeti.";
 
 /* Title of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
 "privacyHub.notificationTitle" = "Haftalık Gizlilik Raporu";
@@ -1897,7 +1897,7 @@
 /* Text of a disclaimer that explains how the data for generating privacy reprots is stored. */
 "privacyHub.privacyReportsDisclaimer" = "Gizlilik Bilgisi verileri yerel olarak saklanır ve hiçbir yere gönderilmez.";
 
-/* Title of main privacy hub screen. This screen shows various stats caught by Brave's ad blockers. */
+/* Title of main privacy hub screen. This screen shows various stats caught by Asil Browser's ad blockers. */
 "privacyHub.privacyReportsTitle" = "Gizlilik Merkezi";
 
 /* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which website had the most tracker per visit, example usage: 'example.com had an average of 10 trackers & ads blocked per visit ' */
@@ -1906,22 +1906,22 @@
 /* Title of a website that contained the most trackers per visit. */
 "privacyHub.riskiestWebsiteTitle" = "En çok izleyiciye sahip site";
 
-/* This text explains a setting that lets Brave monitor blocked network requests */
+/* This text explains a setting that lets Asil Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsFooter" = "Gizlilik Merkezi, Kalkanlar tarafından engellenenlerin sayısını gösterir. Ayar, yeni sekme sayfasındaki Kalkanlar sayacını etkilemez. Kalkanlar verileri özel pencerelerde sayılmaz.";
 
-/* Title of a setting that lets Brave monitor blocked network requests */
+/* Title of a setting that lets Asil Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsTitle" = "Kalkanlar Verilerini Göster";
 
-/* This text explains a setting that lets Brave monitor blocked network requests captured by Brave VPN */
+/* This text explains a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
 "privacyHub.settingsEnableVPNAlertsFooter" = "Bu ayar sadece VPN aboneliği satın aldıysanız geçerlidir.";
 
-/* Title of a setting that lets Brave monitor blocked network requests captured by Brave VPN */
+/* Title of a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
 "privacyHub.settingsEnableVPNAlertsTitle" = "VPN Uyarılarını Göster";
 
 /* This text explains what the button to clear datain the Privacy Hub is for. */
 "privacyHub.settingsSlearDataFooter" = "Kalkanların engellediği her şeyin sayısını sıfırlar.";
 
-/* Button that lets user clear all blocked requests and vpn alerts data that Brave captured for them. */
+/* Button that lets user clear all blocked requests and vpn alerts data that Asil Browser captured for them. */
 "privacyHub.settingsSlearDataTitle" = "Kalkanlar Verilerini Temizle";
 
 /* This label says shields, as a source of by what a resource was blocked. Think of it in context of 'Blocked by Shields' */
@@ -1946,15 +1946,15 @@
 "privacyHub.vpnAlertRegularTrackerTypeSingular" = "İzleyici veya Reklam";
 
 /* Section title, this section displays vpn alerts: items which the vpn managed to block on users behalf. */
-"privacyHub.vpnAlertsHeader" = "Brave Güvenlik Duvarı + VPN Uyarıları";
+"privacyHub.vpnAlertsHeader" = "Asil Browser Güvenlik Duvarı + VPN Uyarıları";
 
-/* This label says about Brave VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
+/* This label says about Asil Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
 "privacyHub.vpnLabel" = "Güvenlik Duvarı + VPN";
 
 /* It shows a total count of items blocked by our VPN shields */
 "privacyHub.vpvnAlertsTotalCount" = "Toplam sayı";
 
-/* Show Brave Browser Privacy Policy page from the Privacy section in the settings. */
+/* Show Asil Browser Browser Privacy Policy page from the Privacy section in the settings. */
 "PrivacyPolicy" = "Gizlilik Politikası";
 
 /* Private button title */
@@ -1970,10 +1970,10 @@
 "PrivateBrowsingOnlyWarning" = "Yalnızca Gizli Tarama modu tüm mevcut sekmelerinizi ve tüm sitelerdeki oturumlarınızı kapatır.";
 
 /* Private tab details */
-"PrivateTabBody" = "Gizli Sekmeler Brave'e kaydedilmez, ancak bu sizi internette anonim hale getirmez. Gizli bir sekmede ziyaret ettiğiniz siteler geçmişinizde gösterilmez ve bunları kapattığınızda çerezleri her zaman kaybolur - Brave'de bunlardan hiçbir iz kalmaz. Ancak, indirmeler kaydedilir.\nMobil operatörünüz (veya bağlı olduğunuz Wi-Fi ağının veya VPN'in sahibi) hangi siteleri ziyaret ettiğinizi görebilir ve bu siteler Gizli Sekmelerde bile herkese açık IP adresinizi öğrenir.";
+"PrivateTabBody" = "Gizli Sekmeler Asil Browser'e kaydedilmez, ancak bu sizi internette anonim hale getirmez. Gizli bir sekmede ziyaret ettiğiniz siteler geçmişinizde gösterilmez ve bunları kapattığınızda çerezleri her zaman kaybolur - Asil Browser'de bunlardan hiçbir iz kalmaz. Ancak, indirmeler kaydedilir.\nMobil operatörünüz (veya bağlı olduğunuz Wi-Fi ağının veya VPN'in sahibi) hangi siteleri ziyaret ettiğinizi görebilir ve bu siteler Gizli Sekmelerde bile herkese açık IP adresinizi öğrenir.";
 
 /* Private tab detail text */
-"PrivateTabDetails" = "Gizli Sekmeleri kullanmak yalnızca Brave'in cihazınızda yaptıklarını değiştirir, başka hiç kimsenin davranışını değiştirmez.\n\nSiteler IP adresinizi onları her ziyaret ettiğinizde öğrenir. Bundan genellikle nerede olduğunuzu, tipik olarak bulunduğunuz şehri tahmin edebilir. Bazen bu konum tahmini çok daha spesifik olabilir. Siteler ayrıca arama terimleri gibi özel olarak onlara ilettiğiniz her şeyi bilir. Bir siteye giriş yaptığınızda, söz konusu hesabın sahibi olduğunuzu anlarlar. Gizli Sekmeleri kapattığınızda yine de oturumunuz kapatılacaktır, çünkü Brave oturumunuzun açık kalmasını sağlayan çerezi silecektir.\n\nSizi internete bağlayan taraf (İSS'niz) tüm ağ etkinliğinizi görebilir. Genellikle, bu mobil operatörünüzdür. Bir Wi-Fi ağına bağlıysanız, bu ağın sahibidir ve bir VPN kullanıyorsanız, o VPN'i işleten taraftır. İSS'niz hangi siteleri ziyaret ettiğinizi siz siteleri ziyaret ederken görebilir. Bu siteler HTTPS kullanıyorsa, bu sitelerde ne yaptığınız hakkında bilgiye dayalı bir tahminden daha fazlasını yapamazlar. Ancak bir site yalnızca HTTP kullanıyorsa İSS'niz her şeyi görebilir: arama terimleriniz, hangi sayfaları okuduğunuz ve hangi bağlantıları takip ettiğiniz.\n\nCihazınızı bir işveren yönetiyorsa, o da cihazınızla ne yaptığınızı takip edebilir. Gizli Sekmeleri kullanmak muhtemelen hangi siteleri ziyaret ettiğinizi bilmelerini engellemez. Cihazınıza erişimi olan başka biri de etkinliğinizi izleyen bir yazılım yüklemiş olabilir ve Gizli Sekmeler sizi bundan korumaz.";
+"PrivateTabDetails" = "Gizli Sekmeleri kullanmak yalnızca Asil Browser'ın cihazınızda yaptıklarını değiştirir, başka hiç kimsenin davranışını değiştirmez.\n\nSiteler IP adresinizi onları her ziyaret ettiğinizde öğrenir. Bundan genellikle nerede olduğunuzu, tipik olarak bulunduğunuz şehri tahmin edebilir. Bazen bu konum tahmini çok daha spesifik olabilir. Siteler ayrıca arama terimleri gibi özel olarak onlara ilettiğiniz her şeyi bilir. Bir siteye giriş yaptığınızda, söz konusu hesabın sahibi olduğunuzu anlarlar. Gizli Sekmeleri kapattığınızda yine de oturumunuz kapatılacaktır, çünkü Asil Browser oturumunuzun açık kalmasını sağlayan çerezi silecektir.\n\nSizi internete bağlayan taraf (İSS'niz) tüm ağ etkinliğinizi görebilir. Genellikle, bu mobil operatörünüzdür. Bir Wi-Fi ağına bağlıysanız, bu ağın sahibidir ve bir VPN kullanıyorsanız, o VPN'i işleten taraftır. İSS'niz hangi siteleri ziyaret ettiğinizi siz siteleri ziyaret ederken görebilir. Bu siteler HTTPS kullanıyorsa, bu sitelerde ne yaptığınız hakkında bilgiye dayalı bir tahminden daha fazlasını yapamazlar. Ancak bir site yalnızca HTTP kullanıyorsa İSS'niz her şeyi görebilir: arama terimleriniz, hangi sayfaları okuduğunuz ve hangi bağlantıları takip ettiğiniz.\n\nCihazınızı bir işveren yönetiyorsa, o da cihazınızla ne yaptığınızı takip edebilir. Gizli Sekmeleri kullanmak muhtemelen hangi siteleri ziyaret ettiğinizi bilmelerini engellemez. Cihazınıza erişimi olan başka biri de etkinliğinizi izleyen bir yazılım yüklemiş olabilir ve Gizli Sekmeler sizi bundan korumaz.";
 
 /* Private tab information link */
 "PrivateTabLink" = "Gizli Sekmeler hakkında bilgi edinin.";
@@ -1987,8 +1987,8 @@
 /* Title for quick-search engines settings section. */
 "QuickSearchEngines" = "Hızlı Arama Motorları";
 
-/* Open the App Store to rate Brave. */
-"RateBrave" = "Brave'i Değerlendirin";
+/* Open the App Store to rate Asil Browser. */
+"RateBrave" = "Asil Browser'ı Değerlendirin";
 
 /* Accessibility label for button increasing font size in display settings of reader mode */
 "ReaderModeBiggerFontButtonAccessibilityLabel" = "Metin boyutunu büyüt";
@@ -2017,13 +2017,13 @@
 /* Accessibility hint for the font type buttons in reader mode display settings */
 "ReaderModeFontTypeButtonAccessibilityHint" = "Yazı tipi türünü değiştirir.";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Brave reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModeLoadingContentDisplayText" = "İçerik yükleniyor...";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Brave reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModeLoadOriginalLinkText" = "Özgün sayfayı yükle";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Brave reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
 "ReaderModePageCantShowDisplayText" = "Sayfa Okuyucu Görünümü'nde görüntülenemedi.";
 
 /* Title of a bar that show up when you enter reader mode. */
@@ -2108,10 +2108,10 @@
 "ReportABug" = "Hata Bildirme";
 
 /* First part of the report a broken site copy. After the colon is a new line and then a website address */
-"ReportBrokenSiteBody1" = "Brave'in geliştiricilerine bu sitenin Kalkanlar ile düzgün çalışmadığını bildirin:";
+"ReportBrokenSiteBody1" = "Asil Browser'ın geliştiricilerine bu sitenin Kalkanlar ile düzgün çalışmadığını bildirin:";
 
 /* No comment provided by engineer. */
-"ReportBrokenSiteBody2" = "Not: Bu site adresi Brave sürüm numaranız ve IP adresinizle birlikte gönderilecektir (bu veri depolanmayacaktır).";
+"ReportBrokenSiteBody2" = "Not: Bu site adresi Asil Browser sürüm numaranız ve IP adresinizle birlikte gönderilecektir (bu veri depolanmayacaktır).";
 
 /* No comment provided by engineer. */
 "ReportBrokenSubmitButtonTitle" = "Gönder";
@@ -2129,33 +2129,33 @@
 "RestoreTabNegativeButtonTitle" = "Hayır";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Görünüşe göre Brave çökmüş. Sekmelerinizi geri yüklemek ister misiniz?";
+"RestoreTabOnCrashAlertMessage" = "Görünüşe göre Asil Browser çökmüş. Sekmelerinizi geri yüklemek ister misiniz?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "Şey, bu utanç verici.";
 
-/* Body for Brave Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInBody" = "Brave Rewards ile Brave Ads ağından gizlilik korumalı reklamları görüntüleyebilirsiniz. İzleyici yok. Yavaşlama yok. Üstelik verileriniz tamamen güvende kalır.";
+/* Body for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInBody" = "Asil Browser Rewards ile Asil Browser Ads ağından gizlilik korumalı reklamları görüntüleyebilirsiniz. İzleyici yok. Yavaşlama yok. Üstelik verileriniz tamamen güvende kalır.";
 
-/* Title for Brave Talk rewards opt-in screen button */
+/* Title for Asil Browser Talk rewards opt-in screen button */
 "rewards.braveTalkRewardsOptInButtonTitle" = "Rewards'u aç";
 
-/* Body for successful Brave Talk rewards opt-in */
-"rewards.braveTalkRewardsOptInSuccessBody" = "Brave Sohbet'e devam etmek için ekranda herhangi bir yere tıklayın.";
+/* Body for successful Asil Browser Talk rewards opt-in */
+"rewards.braveTalkRewardsOptInSuccessBody" = "Asil Browser Sohbet'e devam etmek için ekranda herhangi bir yere tıklayın.";
 
-/* Title for successful Brave Talk rewards opt-in */
+/* Title for successful Asil Browser Talk rewards opt-in */
 "rewards.braveTalkRewardsOptInSuccessTitle" = "Şimdi ücretsiz bir arama başlatabilirsiniz";
 
-/* Title for Brave Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInTitle" = "Ücretsiz arama başlatmak için Brave Rewards'u açın";
+/* Title for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInTitle" = "Ücretsiz arama başlatmak için Asil Browser Rewards'u açın";
 
-/* Displayed when Brave Rewards is disabled */
+/* Displayed when Asil Browser Rewards is disabled */
 "rewards.disabledBody" = "İçerik oluşturucuları desteklemeye yardımcı olmak için açın";
 
 /* Displayed in the status container when rewards is disabled */
-"rewards.disabledStatusBody" = "Brave Ödülleri'ni kullanmak, gezinirken içerik oluşturucuları desteklemeye yardımcı olur.";
+"rewards.disabledStatusBody" = "Asil Browser Ödülleri'ni kullanmak, gezinirken içerik oluşturucuları desteklemeye yardımcı olur.";
 
-/* Displayed when Brave Rewards is enabled */
+/* Displayed when Asil Browser Rewards is enabled */
 "rewards.enabledBody" = "İçerik oluşturucuları desteklemeye yardımcı oluyorsunuz";
 
 /* Displayed in the status container when rewards is enabled but you're not currently supporting any publishers (0 AC count) */
@@ -2180,7 +2180,7 @@
 "rewards.legacyWalletTransferStatusButtonPendingTitle" = "Eski cüzdan aktarım durumunuz beklemede";
 
 /* No comment provided by engineer. */
-"rewards.legacyWalletTransferStatusCompletedBody" = "Eski cüzdan aktarımınız bitti! Mevcut bakiyenizin masaüstü Brave Ödülleri cüzdanınızda görünmesi birkaç dakika sürebilir.";
+"rewards.legacyWalletTransferStatusCompletedBody" = "Eski cüzdan aktarımınız bitti! Mevcut bakiyenizin masaüstü Asil Browser Ödülleri cüzdanınızda görünmesi birkaç dakika sürebilir.";
 
 /* Title shown above body of text explaining that their transfer is completed */
 "rewards.legacyWalletTransferStatusCompletedTitle" = "Aktarım Tamamlandı!";
@@ -2231,13 +2231,13 @@
 "rewards.optInDisclaimer" = "Tıkladığınızda %1$@ ve %2$@ içeriğini kabul etmiş olursunuz. Dilediğiniz zaman Ayarlar bölümünden devre dışı bırakın.";
 
 /* No comment provided by engineer. */
-"rewards.settingsFooterMessage" = "Brave Ödülleri ödemeleri bu cihazda geçici olarak kullanılamaz. Jetonlarınızı korumak için mevcut cüzdan paralarınızı bir masaüstü cüzdanına aktarın.";
+"rewards.settingsFooterMessage" = "Asil Browser Ödülleri ödemeleri bu cihazda geçici olarak kullanılamaz. Jetonlarınızı korumak için mevcut cüzdan paralarınızı bir masaüstü cüzdanına aktarın.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleMessage" = "Brave Özel Reklamları'ni etkinleştirerek içerik oluşturucuları ve yayıncıları otomatik olarak destekleyin. Brave Özel Reklamları, içerik oluşturuculara geri veren gizliliğe saygılı reklamlardır.";
+"rewards.settingsToggleMessage" = "Asil Browser Özel Reklamları'ni etkinleştirerek içerik oluşturucuları ve yayıncıları otomatik olarak destekleyin. Asil Browser Özel Reklamları, içerik oluşturuculara geri veren gizliliğe saygılı reklamlardır.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleTitle" = "Brave Ödülleri'ni Etkinleştir";
+"rewards.settingsToggleTitle" = "Asil Browser Ödülleri'ni Etkinleştir";
 
 /* Displayed under verified publishers */
 "rewards.supportingPublisher" = "Bunun gibi içerik oluşturucuları desteklemeye yardımcı oluyorsunuz.";
@@ -2252,19 +2252,19 @@
 "rewards.unverifiedPublisher" = "Bu içerik üretici, içerik üretici desteğini doğrulamadı ve desteğe dahil edilmeyecek";
 
 /* A confirmation message shown to the user after completing a wallet transfer successfully */
-"rewards.walletTransferCompleteBody" = "Aktarımınız başlatıldı. Mevcut herhangi bir BAT bakiyenin masaüstü Brave Ödülleri cüzdanınızda görünmesi birkaç dakika sürebilir. Aktarım tamamlandığında ayrıntılar için Masaüstü'ndeki Ödül özetinizi kontrol edin.\n\nBu pencereyi kapatabilir ve aktarımınız gerçekleştirilirken Brave'i kullanmaya devam edebilirsiniz.";
+"rewards.walletTransferCompleteBody" = "Aktarımınız başlatıldı. Mevcut herhangi bir BAT bakiyenin masaüstü Asil Browser Ödülleri cüzdanınızda görünmesi birkaç dakika sürebilir. Aktarım tamamlandığında ayrıntılar için Masaüstü'ndeki Ödül özetinizi kontrol edin.\n\nBu pencereyi kapatabilir ve aktarımınız gerçekleştirilirken Asil Browser'ı kullanmaya devam edebilirsiniz.";
 
 /* Title shown above the confirmation message after completing a wallet transfer successfully */
 "rewards.walletTransferCompleteTitle" = "Bakiye aktarımı başlatıldı";
 
 /* Message on the alert presented if wallet transfer fails */
-"rewards.walletTransferFailureAlertMessage" = "Brave Ödülleri sunucusu yanıt vermedi. Lütfen birazdan yeniden deneyin.";
+"rewards.walletTransferFailureAlertMessage" = "Asil Browser Ödülleri sunucusu yanıt vermedi. Lütfen birazdan yeniden deneyin.";
 
 /* Title on the alert presented if wallet transfer fails */
 "rewards.walletTransferFailureAlertTitle" = "Bağlantı Hatası";
 
 /* Describes the steps for using wallet transfer */
-"rewards.walletTransferStepsBody" = "Brave Ödülleri jeton bakiyeniz mevcut bir Brave Ödülleri masaüstü cüzdanına bir kere aktarılabilir.\n\n1. Masaüstünüzde Brave Tarayıcıyı Açın\n2. brave://rewards'a gidin\n3. \"QR Kodu\" na tıklayın\n4. QR Kodunu cihazınızla tarayın";
+"rewards.walletTransferStepsBody" = "Asil Browser Ödülleri jeton bakiyeniz mevcut bir Asil Browser Ödülleri masaüstü cüzdanına bir kere aktarılabilir.\n\n1. Masaüstünüzde Asil Browser Tarayıcıyı Açın\n2. Asil Browser://rewards'a gidin\n3. \"QR Kodu\" na tıklayın\n4. QR Kodunu cihazınızla tarayın";
 
 /* Title above the steps to use wallet transfer */
 "rewards.walletTransferStepsTitle" = "Tek Seferlik Aktarım Kodunu Tara";
@@ -2297,7 +2297,7 @@
 "RewardsInternalsContributionAmount" = "Katkı tutarı";
 
 /* No comment provided by engineer. */
-"RewardsInternalsContributionProcessorBraveTokens" = "Brave Jetonları";
+"RewardsInternalsContributionProcessorBraveTokens" = "Asil Browser Jetonları";
 
 /* No comment provided by engineer. */
 "RewardsInternalsContributionProcessorNone" = "Hiçbiri";
@@ -2449,7 +2449,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsShare" = "Paylaş";
 
-/* 'Rewards' as in 'Brave Rewards' */
+/* 'Rewards' as in 'Asil Browser Rewards' */
 "RewardsInternalsShareInternalsTitle" = "Dahili Ödülleri Paylaş";
 
 /* No comment provided by engineer. */
@@ -2467,7 +2467,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsSupported" = "Desteklenen";
 
-/* 'Rewards' as in 'Brave Rewards' */
+/* 'Rewards' as in 'Asil Browser Rewards' */
 "RewardsInternalsTitle" = "Dahili Ödüller";
 
 /* No comment provided by engineer. */
@@ -2582,24 +2582,24 @@
 "SearchSuggestionsSectionHeader" = "Arama Önerileri";
 
 /* Title of an action that allows user to perform a one-click web search for selected text */
-"SearchWithBrave" = "Brave ile Ara";
+"SearchWithBrave" = "Asil Browser ile Ara";
 
 /* Settings security section title */
 "Security" = "Güvenlik";
 
 /* Message displayed in the crash dialog above the buttons used to select when sending reports */
-"SendCrashReportAlertMessage" = "Brave'in sorunu çözebilmesi için bir çökme raporu göndermek ister misiniz?";
+"SendCrashReportAlertMessage" = "Asil Browser'ın sorunu çözebilmesi için bir çökme raporu göndermek ister misiniz?";
 
 /* Title for prompt displayed to user after the app crashes */
-"SendCrashReportAlertTitle" = "Hop! Brave çöktü!";
+"SendCrashReportAlertTitle" = "Hop! Asil Browser çöktü!";
 
 /* Used as a button label for crash dialog prompt */
 "SendReportButtonTitle" = "Rapor Gönder";
 
 /* No comment provided by engineer. */
-"setDefaultBrowserCalloutTitle" = "Brave artık iOS'ta varsayılan tarayıcınız olarak ayarlanabilir. Ayarları açmak için buraya dokunun.";
+"setDefaultBrowserCalloutTitle" = "Asil Browser artık iOS'ta varsayılan tarayıcınız olarak ayarlanabilir. Ayarları açmak için buraya dokunun.";
 
-/* Settings item to set the Brave as a default browser on the iOS device. */
+/* Settings item to set the Asil Browser as a default browser on the iOS device. */
 "setDefaultBrowserSettingsCell" = "Varsayılan Tarayıcı Olarak Ayarla";
 
 /* No comment provided by engineer. */
@@ -2621,7 +2621,7 @@
 "settings.autocloseTabsSetting" = "Sekmeleri Kapat";
 
 /* Description of autoclose tabs feature. */
-"settings.autocloseTabsSettingFooter" = "Brave'in yakın zamanda görüntülenmeyen sekmeleri otomatik olarak kapatmasına izin ver.";
+"settings.autocloseTabsSettingFooter" = "Asil Browser'ın yakın zamanda görüntülenmeyen sekmeleri otomatik olarak kapatmasına izin ver.";
 
 /* Error message that is shown in settings when there was a problem loading */
 "SettingsContentLoadErrorMessage" = "Sayfa yüklenemedi.";
@@ -2681,7 +2681,7 @@
 "shieldEducation.shareTheNewsTitle" = "Haberi paylaşın";
 
 /* Subtitle for Shield Education Tracker Ad Warning */
-"shieldEducation.trackerAdWarningSubTitle" = "Brave Kalkanları çevrimiçi gizliliğinizi korudu.";
+"shieldEducation.trackerAdWarningSubTitle" = "Asil Browser Kalkanları çevrimiçi gizliliğinizi korudu.";
 
 /* Subtitle for Shield Education Tracker Count Share */
 "shieldEducation.trackerCountShareSubtitle" = "Tebrikler. Çok özelsin.";
@@ -2696,13 +2696,13 @@
 "shieldEducation.videoAdBlockTitle" = "Bu web sitesinde video izlerken reklamlar engellenir.";
 
 /* Section title for adbblock, tracking protection, HTTPS-E, and cookies */
-"ShieldsDefaults" = "Brave Kalkanları Küresel Varsayılanları";
+"ShieldsDefaults" = "Asil Browser Kalkanları Küresel Varsayılanları";
 
 /* Section footer for global shields defaults */
 "ShieldsDefaultsFooter" = "Bunlar, yeni siteler için varsayılan Kalkan ayarlarıdır. Bunları değiştirmek mevcut site başına ayarlarınızı etkilemez.";
 
 /* No comment provided by engineer. */
-"ShieldsDownDisclaimer" = "Brave'in gizlilik koruması olmadan bu siteye göz atıyorsunuz. Kalkanlar açıkken düzgün çalışmıyor mu?";
+"ShieldsDownDisclaimer" = "Asil Browser'ın gizlilik koruması olmadan bu siteye göz atıyorsunuz. Kalkanlar açıkken düzgün çalışmıyor mu?";
 
 /* shields overview message */
 "ShieldsOverview" = "Site Kalkanları, ziyaret ettiğiniz her site için reklamların ve izleyicilerin ne zaman engellendiğini kontrol etmenizi sağlar. Reklamları belirli bir sitede görmeyi tercih ediyorsanız, reklamları burada etkinleştirebilirsiniz.";
@@ -2732,7 +2732,7 @@
 "ShortcutItemTitleQRCode" = "QR Kodunu Tara";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeBraveNewsDescription" = "Brave News'i Aç ve Bugünün En İyi Hikayelerine Göz At";
+"shortcuts.activityTypeBraveNewsDescription" = "Asil Browser News'i Aç ve Bugünün En İyi Hikayelerine Göz At";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeClearHistoryDescription" = "Tarayıcıyı Yeni Sekmede Aç ve Tüm Gizli Tarayıcı Geçmiş Verilerini Sil";
@@ -2741,7 +2741,7 @@
 "shortcuts.activityTypeClearHistorySuggestedPhrase" = "Tarayıcı Geçmişini Temizle";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeClearHistoryTitle" = "Brave Tarayıcı Geçmişini Temizle";
+"shortcuts.activityTypeClearHistoryTitle" = "Asil Browser Tarayıcı Geçmişini Temizle";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeEnableVPNDescription" = "Tarayıcıyı Yeni Sekmede Aç ve VPN'i Etkinleştir";
@@ -2750,7 +2750,7 @@
 "shortcuts.activityTypeEnableVPNSuggestedPhrase" = "VPN'i Etkinleştir";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeEnableVPNTitle" = "Brave Tarayıcıyı Aç ve VPN'i Etkinleştir";
+"shortcuts.activityTypeEnableVPNTitle" = "Asil Browser Tarayıcıyı Aç ve VPN'i Etkinleştir";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeNewPrivateTabSuggestedPhrase" = "Yeni Gizli Sekme Aç";
@@ -2765,10 +2765,10 @@
 "shortcuts.activityTypeNewTabTitle" = "Yeni Tarayıcı Sekmesi Aç";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveNewsTitle" = "Brave News'i Aç";
+"shortcuts.activityTypeOpenBraveNewsTitle" = "Asil Browser News'i Aç";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Brave News'i Aç";
+"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Asil Browser News'i Aç";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeOpenPlaylistDescription" = "Videolarınızı Oynatma Listesinde Oynatmaya Başlayın";
@@ -2780,7 +2780,7 @@
 "shortcuts.activityTypeOpenPlaylistTitle" = "Oynatma Listesi Aç";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeTabDescription" = "Brave ile Web'de Güvenle Arama Yapmaya Başlayın";
+"shortcuts.activityTypeTabDescription" = "Asil Browser ile Web'de Güvenle Arama Yapmaya Başlayın";
 
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenBookmarkSuggestedPhrase" = "Yer İşareti Web Sitesini Aç";
@@ -2791,8 +2791,8 @@
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenWebsiteSuggestedPhrase" = "Web Sitesi Aç";
 
-/* Description for opening Brave Settings for altering Siri shortcut. */
-"shortcuts.shortcutOpenApplicationSettingsDescription" = "Bu seçenek, Brave Ayarlarını açacaktır. Çeşitli Siri seçeneklerini değiştirmek için lütfen \"Siri ve Arama\" menü öğesini seçin ve seçimlerinizi özelleştirin.";
+/* Description for opening Asil Browser Settings for altering Siri shortcut. */
+"shortcuts.shortcutOpenApplicationSettingsDescription" = "Bu seçenek, Asil Browser Ayarlarını açacaktır. Çeşitli Siri seçeneklerini değiştirmek için lütfen \"Siri ve Arama\" menü öğesini seçin ve seçimlerinizi özelleştirin.";
 
 /* Button title that open application settings */
 "shortcuts.shortcutOpenApplicationSettingsTitle" = "Ayarları Aç";
@@ -2804,16 +2804,16 @@
 "shortcuts.shortcutSettingsClearBrowserHistoryTitle" = "Tarayıcı Geçmişini Temizle";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsEnableVPNDescription" = "Siri - Sesli Yardımcı ile Brave VPN'i etkinleştirmek için Kestirmeler'i kullanın";
+"shortcuts.shortcutSettingsEnableVPNDescription" = "Siri - Sesli Yardımcı ile Asil Browser VPN'i etkinleştirmek için Kestirmeler'i kullanın";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsEnableVPNTitle" = "VPN'i Etkinleştir";
 
-/* Description of Open Brave News Siri Shortcut in Settings Screen */
-"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Yeni bir sekme açmak ve Siri - Voice Assistant aracılığıyla Brave News Kaynağını göstermek için Kısayolları kullanın";
+/* Description of Open Asil Browser News Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Yeni bir sekme açmak ve Siri - Voice Assistant aracılığıyla Asil Browser News Kaynağını göstermek için Kısayolları kullanın";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Brave News'i Aç";
+"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Asil Browser News'i Aç";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsOpenNewPrivateTabDescription" = "Siri - Sesli Yardımcı ile yeni bir gizli sekme açmak için Kestirmeler'i kullanın";
@@ -2867,19 +2867,19 @@
 "ShowTabsBar" = "Sekme Çubuğu";
 
 /* No comment provided by engineer. */
-"SiteReportedBody" = "Brave'in geliştiricilerine bu sitede bir sorun olduğunu bildirin. Düzeltmek için elimizden geleni yapacağız!";
+"SiteReportedBody" = "Asil Browser'ın geliştiricilerine bu sitede bir sorun olduğunu bildirin. Düzeltmek için elimizden geleni yapacağız!";
 
 /* No comment provided by engineer. */
 "SiteReportedTitle" = "Teşekkürler";
 
-/* Brave panel topmost title */
+/* Asil Browser panel topmost title */
 "SiteShieldSettings" = "Kalkanlar";
 
 /* Title used when in warning pop-over when domain specific data save appears */
-"socialSharing.domainSpecificDataSavedTitle" = "Her gün Brave ile web'de gezinerek veriden tasarruf ediyorum.";
+"socialSharing.domainSpecificDataSavedTitle" = "Her gün Asil Browser ile web'de gezinerek veriden tasarruf ediyorum.";
 
-/* Text used for social sharing together with Brave Shield values */
-"socialSharing.shareDescriptionTitle" = "Her gün Brave ile web'de gezinerek veriden tasarruf ediyorum.";
+/* Text used for social sharing together with Asil Browser Shield values */
+"socialSharing.shareDescriptionTitle" = "Her gün Asil Browser ile web'de gezinerek veriden tasarruf ediyorum.";
 
 /* Open search section of settings */
 "StandardTabSearch" = "Standart Sekme";
@@ -2911,8 +2911,8 @@
 /* Title for Sync Settings Toggle Header */
 "sync.syncSettingsTitle" = "Senkronizasyon Ayarları";
 
-/* Text that informs a user about Brave Sync service deprecation. */
-"sync.syncV1DeprecationText" = "Yeni bir Brave Eşitlemesi geliyor ve kurulumunuzu etkileyecek. Yükseltme için hazır olun.";
+/* Text that informs a user about Asil Browser Sync service deprecation. */
+"sync.syncV1DeprecationText" = "Yeni bir Asil Browser Eşitlemesi geliyor ve kurulumunuzu etkileyecek. Yükseltme için hazır olun.";
 
 /* Message for popup when the bookmark migration fails */
 "sync.v2MigrationErrorMessage" = "Yer işaretleri aktarılamadı. Lütfen daha sonra yeniden deneyin.";
@@ -2927,7 +2927,7 @@
 "sync.v2MigrationInterstitialTitle" = "Yer işaretleri aktarımı";
 
 /* Message for popup to inform the user that bookmarks migration is required for sync */
-"sync.v2MigrationMessage" = "Brave Sync'i kullanmak istiyorsanız mevcut yer işaretlerinizin yeni sistemi kullanmak için aktarılması gerekir. Bu işlem yer işaretlerinizi silmez.";
+"sync.v2MigrationMessage" = "Asil Browser Sync'i kullanmak istiyorsanız mevcut yer işaretlerinizin yeni sistemi kullanmak için aktarılması gerekir. Bu işlem yer işaretlerinizi silmez.";
 
 /* Button to perform bookmarks migration in order to support sync */
 "sync.v2MigrationOKButton" = "Aktar";
@@ -2969,7 +2969,7 @@
 "SyncComputerDevice" = "Bilgisayar";
 
 /* Sync Error Description */
-"syncDeprecatedVersionError" = "Bu senkronizasyon kodu, başka bir cihazda Brave'in eski bir sürümü tarafından oluşturuldu. Lütfen Brave'i tüm senkronize edilmiş cihazlarda güncelleyin ve tekrar deneyin.";
+"syncDeprecatedVersionError" = "Bu senkronizasyon kodu, başka bir cihazda Asil Browser'ın eski bir sürümü tarafından oluşturuldu. Lütfen Asil Browser'ı tüm senkronize edilmiş cihazlarda güncelleyin ve tekrar deneyin.";
 
 /* Sync you browser settings across devices. */
 "SyncDevices" = "Aygıtlar ve Ayarlar";
@@ -2990,10 +2990,10 @@
 "SyncInitErrorTitle" = "Eşitleme iletişim hatası";
 
 /* Default name for a device */
-"syncJoinChainCameraWarning" = "Bu işlem, potansiyel olarak şifrelerinizi de içeren Brave verilerinizi bu QR kodunu oluşturmuş olan cihazla paylaşacaktır. Lütfen bu QR kodunun size ait bir cihaz tarafından oluşturulduğundan emin olun. Bunu yapmak istediğinizden emin misiniz?";
+"syncJoinChainCameraWarning" = "Bu işlem, potansiyel olarak şifrelerinizi de içeren Asil Browser verilerinizi bu QR kodunu oluşturmuş olan cihazla paylaşacaktır. Lütfen bu QR kodunun size ait bir cihaz tarafından oluşturulduğundan emin olun. Bunu yapmak istediğinizden emin misiniz?";
 
 /* Default name for a device */
-"syncJoinChainCodewordsWarning" = "Bu işlem, potansiyel olarak şifrelerinizi de içeren Brave verilerinizi bu kod kelimelerini oluşturmuş olan cihazla paylaşacaktır. Lütfen bu kod kelimelerinin size ait bir cihaz tarafından oluşturulduğundan emin olun. Bunu yapmak istediğinizden emin misiniz?";
+"syncJoinChainCodewordsWarning" = "Bu işlem, potansiyel olarak şifrelerinizi de içeren Asil Browser verilerinizi bu kod kelimelerini oluşturmuş olan cihazla paylaşacaktır. Lütfen bu kod kelimelerinin size ait bir cihaz tarafından oluşturulduğundan emin olun. Bunu yapmak istediğinizden emin misiniz?";
 
 /* Title for pairing sync device */
 "syncJoinChainWarningTitle" = "Uyarı";
@@ -3017,7 +3017,7 @@
 "SyncRemoveDeviceDefaultName" = "aygıt";
 
 /* Message for removing last device from Sync */
-"SyncRemoveLastDeviceMessage" = "Şu anda eşitlenen veriler korunur, ancak Brave's Sync önbelleğinde bulunan tüm veriler silinir. Cihaz verilerini yeniden eşitlemek için yeni bir eşitleme zinciri başlatmanız gerekir.";
+"SyncRemoveLastDeviceMessage" = "Şu anda eşitlenen veriler korunur, ancak Asil Browser's Sync önbelleğinde bulunan tüm veriler silinir. Cihaz verilerini yeniden eşitlemek için yeni bir eşitleme zinciri başlatmanız gerekir.";
 
 /* Button name for removing last device from Sync */
 "SyncRemoveLastDeviceRemoveButtonName" = "Eşitleme Zincirini Sil";
@@ -3056,7 +3056,7 @@
 "SyncToDevice" = "Aygıtla eşitle";
 
 /* Sync to existing device description */
-"SyncToDeviceDescription" = "Mevcut eşitlenmiş cihazı kullanarak Brave Ayarlarını açın ve Ayarlar -> Eşitleme'ye gidin. \"Cihaz Ekle\"yi seçin ve ekranda görüntülenen kodu tarayın.";
+"SyncToDeviceDescription" = "Mevcut eşitlenmiş cihazı kullanarak Asil Browser Ayarlarını açın ve Ayarlar -> Eşitleme'ye gidin. \"Cihaz Ekle\"yi seçin ve ekranda görüntülenen kodu tarayın.";
 
 /* Description on popup when setting up a sync group fails */
 "SyncUnableCreateGroup" = "Bu cihaz senkronize edilemiyor";
@@ -3154,14 +3154,14 @@
 /* No comment provided by engineer. */
 "TermsOfService" = "Hizmet Şartları";
 
-/* Show Brave Browser TOS page from the Privacy section in the settings. */
+/* Show Asil Browser Browser TOS page from the Privacy section in the settings. */
 "TermsOfUse" = "Kullanım Koşulları";
 
 /* Text for button to share referral's QR code. */
 "themeQRCodeShareButton" = "Paylaş...";
 
 /* Title for QR popup encouraging users to share the code with their friends. */
-"themeQRCodeShareTitle" = "Brave'i arkadaşlarınızla paylaşın!";
+"themeQRCodeShareTitle" = "Asil Browser'ı arkadaşlarınızla paylaşın!";
 
 /* Selection to automatically color/style the user interface. */
 "ThemesAutomaticOption" = "Otomatik";
@@ -3203,13 +3203,13 @@
 "today.addSourceNoFeedsFoundMessage" = "Üzgünüz, bu özet akışı adresinin içeriği yok.";
 
 /* The action title displayed in the iOS share menu */
-"today.addSourceShareTitle" = "Brave News'e Kaynak Ekle";
+"today.addSourceShareTitle" = "Asil Browser News'e Kaynak Ekle";
 
 /* A header title shown above a button that will allow the user to fetch RSS feeds for a website they have typed in */
 "today.availableRSSFeedsHeaderTitle" = "Mevcut RSS Akışı";
 
 /* The name of the feature */
-"today.braveToday" = "Brave News";
+"today.braveToday" = "Asil Browser News";
 
 /* Shown below 'Channels' explaining what will be shown when tapping on it. */
 "today.channelsButtonSubtitle" = "İlginizi çeken konuları takip edin";
@@ -3229,13 +3229,13 @@
 /* No comment provided by engineer. */
 "today.deals" = "Fırsatlar";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
-"today.disabledAlertBody" = "Brave News, %@ kaynağından içerik göstermeyi durduracak";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+"today.disabledAlertBody" = "Asil Browser News, %@ kaynağından içerik göstermeyi durduracak";
 
 /* No comment provided by engineer. */
 "today.disabledAlertTitle" = "Devre Dışı";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
 "today.disablePublisherContent" = "%@ öğesinden içeriği gizle";
 
 /* No comment provided by engineer. */
@@ -3244,11 +3244,11 @@
 /* No comment provided by engineer. */
 "today.emptyFeedTitle" = "Gösterilecek makale yok";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Brave Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
 "today.enablePublisherContent" = "%@ öğesinden gelen içeriği etkinleştir";
 
 /* No comment provided by engineer. */
-"today.errorGeneralBody" = "Brave News bazı sorunlar yaşıyor. Yeniden deneyin.";
+"today.errorGeneralBody" = "Asil Browser News bazı sorunlar yaşıyor. Yeniden deneyin.";
 
 /* No comment provided by engineer. */
 "today.errorGeneralTitle" = "Hop...";
@@ -3265,7 +3265,7 @@
 /* A toggle title shown next to a source or channel that the user can follow. When tapped switches to 'Unfollow' */
 "today.followToggleTitle" = "Takip Et";
 
-/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://brave.com'. */
+/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Asil Browser.com'. */
 "today.getFeedsFromSiteButtonTitle" = "Şuradan akış alın:";
 
 /* \"OPML\" is a file extension that contains a list of rss feeds. */
@@ -3274,20 +3274,20 @@
 /* The header above the list of insecure sources */
 "today.insecureSourcesHeader" = "Güvensiz Kaynaklar - Riski göze alıyorsanız ekleyin";
 
-/* Shown above a button that turns on the \"Brave News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "Favori kaynaklarınızı tek akıştan takip edin. Sadece Brave'de bir sekme açın, aşağı kaydırın ve... işte oldu!\nBrave News özel, anonim reklamlarla desteklenir.";
+/* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
+"today.introCardBody" = "Favori kaynaklarınızı tek akıştan takip edin. Sadece Asil Browser'de bir sekme açın, aşağı kaydırın ve... işte oldu!\nBrave News özel, anonim reklamlarla desteklenir.";
 
-/* Shown above a button that turns on the \"Brave News\" product in the app. */
-"today.introCardTitle" = "Brave News'i açın ve hiçbir haberi kaçırmayın";
+/* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
+"today.introCardTitle" = "Asil Browser News'i açın ve hiçbir haberi kaçırmayın";
 
 /* No comment provided by engineer. */
-"today.isEnabledToggleLabel" = "Brave News'i Göster";
+"today.isEnabledToggleLabel" = "Asil Browser News'i Göster";
 
 /* No comment provided by engineer. */
 "today.learnMoreTitle" = "Verileriniz hakkında daha fazla bilgi edinin";
 
-/* 'Brave Offers' is a product name */
-"today.moreBraveOffers" = "Daha Fazla Brave Teklifi";
+/* 'Asil Browser Offers' is a product name */
+"today.moreBraveOffers" = "Daha Fazla Asil Browser Teklifi";
 
 /* No comment provided by engineer. */
 "today.noInternet" = "İnternet Yok";
@@ -3335,7 +3335,7 @@
 "today.suggestedTitle" = "Önerilen";
 
 /* No comment provided by engineer. */
-"today.turnOnBraveToday" = "Brave News'i aç";
+"today.turnOnBraveToday" = "Asil Browser News'i aç";
 
 /* A toggle title shown next to a source or channel that the user can unfollow. When tapped switches to 'Follow' */
 "today.unfollowToggleTitle" = "Takipten Çık";
@@ -3382,34 +3382,34 @@
 /* No comment provided by engineer. */
 "UserWalletGenericErrorTitle" = "Üzgünüz, bir sorun oluştu";
 
-/* Version number of Brave shown in settings */
+/* Version number of Asil Browser shown in settings */
 "VersionTemplate" = "Sürüm %1$@ ( %2$@)";
 
 /* Label that says where to view an item. '%@' is a placeholder and will include things like 'Instagram', 'unsplash'. The full label will look like 'View  on Instagram'. */
 "ViewOn" = "% üzerinde görüntüle @";
 
-/* Button text to buy Brave VPN */
+/* Button text to buy Asil Browser VPN */
 "vpn.buyButton" = "Satın Al";
 
 /* Title for screen to buy the VPN. */
-"vpn.buyVPNTitle" = "Brave Güvenlik Duvarı + VPN";
+"vpn.buyVPNTitle" = "Asil Browser Güvenlik Duvarı + VPN";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxBlockAds" = "İstenmeyen ağ bağlantılarını engeller";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxEncryption" = "IKEv2 güvenli şifreli VPN tünelini kullanır";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxFast" = "100 Mbps'ye kadar hızları destekler";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxGeoSelector" = "Coğrafi/ülke konumunuzu seçin";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxNoIPLog" = "Çevrimiçi anonim kalmanızı sağlar";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.checkboxNoSellout" = "Bilgilerinizi asla paylaşmayız veya satmayız";
 
 /* AppStore Receipt field for customer support contact form. */
@@ -3422,7 +3422,7 @@
 "vpn.contactFormCarrier" = "Hücresel Taşıyıcı";
 
 /* Text to tell user to not modify support info below email's body. */
-"vpn.contactFormDoNotEditText" = "Brave sizi takip etmediği veya uygulamanızı nasıl kullandığınızı bilmediği için VPN'İ nasıl kurduğunuzu bilemeyiz. Lütfen yaşadığınız sorunu paylaşın, en kısa süre içinde çözmeye çalışacağız.";
+"vpn.contactFormDoNotEditText" = "Asil Browser sizi takip etmediği veya uygulamanızı nasıl kullandığınızı bilmediği için VPN'İ nasıl kurduğunuzu bilemeyiz. Lütfen yaşadığınız sorunu paylaşın, en kısa süre içinde çözmeye çalışacağız.";
 
 /* Button name to send contact form. */
 "vpn.contactFormEmailNotConfiguredBody" = "E-posta gönderilemiyor. Lütfen e-posta yapılandırmanızı kontrol edin.";
@@ -3476,9 +3476,9 @@
 "vpn.contactFormTimezone" = "iOS Saat Dilimi";
 
 /* Title for contact form email. */
-"vpn.contactFormTitle" = "Brave Güvenlik Duvarı + VPN Sorunu";
+"vpn.contactFormTitle" = "Asil Browser Güvenlik Duvarı + VPN Sorunu";
 
-/* Button text to enable Brave VPN */
+/* Button text to enable Asil Browser VPN */
 "vpn.enableButton" = "Etkinleştir";
 
 /* Message for an alert when the VPN can't get prices from the App Store */
@@ -3497,13 +3497,13 @@
 "vpn.iapDisclaimer" = "Tüm abonelikler otomatik olarak yenilenir, ancak yenilemeden önce iptal edilebilir.";
 
 /* Text explaining how the VPN works. */
-"vpn.installProfileBody" = "Bu profil, VPN'in cihazınızdaki trafiği her zaman otomatik olarak bağlamasını ve güvenli hale almasını sağlar. Bu VPN bağlantısı, zararlı ve istilacı olabilecek bağlantıları engellemek için Brave'in akıllı güvenlik duvarı üzerinden şifrelenecek ve yönlendirilecektir.";
+"vpn.installProfileBody" = "Bu profil, VPN'in cihazınızdaki trafiği her zaman otomatik olarak bağlamasını ve güvenli hale almasını sağlar. Bu VPN bağlantısı, zararlı ve istilacı olabilecek bağlantıları engellemek için Asil Browser'ın akıllı güvenlik duvarı üzerinden şifrelenecek ve yönlendirilecektir.";
 
 /* Text for 'install vpn profile' button */
 "vpn.installProfileButtonText" = "VPN Profili Yükle";
 
 /* No comment provided by engineer. */
-"vpn.installProfileTitle" = "Brave şimdi bir VPN profili yükleyecek.";
+"vpn.installProfileTitle" = "Asil Browser şimdi bir VPN profili yükleyecek.";
 
 /* Popup that shows after user installs the vpn for the first time. */
 "vpn.installSuccessPopup" = "VPN artık etkin";
@@ -3511,7 +3511,7 @@
 /* Title for screen to install the VPN. */
 "vpn.installTitle" = "VPN yükle";
 
-/* Button text to try free Brave VPN */
+/* Button text to try free Asil Browser VPN */
 "vpn.learnMore" = "ÜCRETSİz deneyin";
 
 /* Used in context: 'Monthly subscription, (it) renews monthly' */
@@ -3523,10 +3523,10 @@
 /* Text to show user when their vpn plan has expired */
 "vpn.planExpired" = "Süresi Dolmuş";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.popupCheckmark247Support" = "7/24 destek";
 
-/* Text for a checkbox to present the user benefits for using Brave VPN */
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
 "vpn.popupCheckmarkSecureConnections" = "Tüm bağlantıların güvenliğini sağlama";
 
 /* It is used in context: 'Powered by BRAND_NAME' */
@@ -3575,10 +3575,10 @@
 "vpn.settingsFAQ" = "VPN Desteği";
 
 /* Button to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceipt" = "Satın alımı Brave hesabınıza bağlayın";
+"vpn.settingsLinkReceipt" = "Satın alımı Asil Browser hesabınıza bağlayın";
 
 /* Footer text to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceiptFooter" = "Brave VPN'i ve diğer cihazlarda kullanmak için App Store satın alımınızı Brave hesabınıza bağlayın";
+"vpn.settingsLinkReceiptFooter" = "Asil Browser VPN'i ve diğer cihazlarda kullanmak için App Store satın alımınızı Asil Browser hesabınıza bağlayın";
 
 /* Button to manage your VPN subscription */
 "vpn.settingsManageSubscription" = "Aboneliği Yönet";
@@ -3614,10 +3614,10 @@
 "vpn.settingsVPNExpired" = "Süresi Dolmuş";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationBody" = "Arka planda bile Brave seni korumaya devam edecek.";
+"vpn.vpnBackgroundNotificationBody" = "Arka planda bile Asil Browser seni korumaya devam edecek.";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationTitle" = "Brave Güvenlik Duvarı + VPN Açık";
+"vpn.vpnBackgroundNotificationTitle" = "Asil Browser Güvenlik Duvarı + VPN Açık";
 
 /* Message for an alert when the VPN can't be configured. */
 "vpn.vpnConfigGenericErrorBody" = "VPN başlatilirken bir sorun meydana geldi. Lütfen yeniden deneyin veya VPN ayarları sayfasında yapılandırmayı sıfırlamayı deneyin.";
@@ -3626,7 +3626,7 @@
 "vpn.vpnConfigGenericErrorTitle" = "Hata";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
-"vpn.vpnConfigPermissionDeniedErrorBody" = "Brave Güvenlik Duvarı + VPN'in çalışması için cihazınıza bir VPN profilinin yüklenmesi gerekir. ";
+"vpn.vpnConfigPermissionDeniedErrorBody" = "Asil Browser Güvenlik Duvarı + VPN'in çalışması için cihazınıza bir VPN profilinin yüklenmesi gerekir. ";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
 "vpn.vpnConfigPermissionDeniedErrorTitle" = "İzin reddedildi";
@@ -3641,7 +3641,7 @@
 "vpn.vpnIAPBoilerPlate" = "Abonelikler iTunes hesabınız üzerinden ücretlendirilir.\n\nÜcretsiz deneme sürümünün kullanılmayan herhangi bir kısmı, teklif edilirse, bir abonelik satın ettiğinizde kaybedilir.\n\nGeçerli dönemin bitiminden en az 24 saat önce iptal edilmediği sürece aboneliğiniz otomatik olarak yenilenir.\n\nAboneliklerinizi Ayarlar'dan yönetebilirsiniz.\n\nBrave'i kullanarak Kullanım Koşullarını ve Gizlilik Politikasını kabul etmiş olursunuz.";
 
 /* Message for alert to reset vpn configuration */
-"vpn.vpnResetAlertBody" = "Bu, Brave Güvenlik Duvarı + VPN yapılandırmanızı sıfırlar ve hataları düzeltir. Bu işlem bir dakika sürebilir.";
+"vpn.vpnResetAlertBody" = "Bu, Asil Browser Güvenlik Duvarı + VPN yapılandırmanızı sıfırlar ve hataları düzeltir. Bu işlem bir dakika sürebilir.";
 
 /* Title for alert to reset vpn configuration */
 "vpn.vpnResetAlertTitle" = "Yapılandırmayı sıfırla";
@@ -3707,18 +3707,18 @@
 "widgets.favoritesWidgetTitle" = "Favoriler";
 
 /* This shows when you add a widget but have no favorites added in your app */
-"widgets.noFavoritesFound" = "Lütfen favorilerinizi burada görüntülemek için Brave'i açın";
+"widgets.noFavoritesFound" = "Lütfen favorilerinizi burada görüntülemek için Asil Browser'ı açın";
 
 /* Description for the search option on the 'shortcuts' widget. */
 "widgets.searchShortcutTitle" = "Ara";
 
-/* Description for Brave Shields widget on 'add widget' screen. */
-"widgets.shieldStatsDescription" = "Brave'in size nasıl zaman kazandırdığı ve çevrimiçi dünyada sizi nasıl koruduğuna dair bir özet.";
+/* Description for Asil Browser Shields widget on 'add widget' screen. */
+"widgets.shieldStatsDescription" = "Asil Browser'ın size nasıl zaman kazandırdığı ve çevrimiçi dünyada sizi nasıl koruduğuna dair bir özet.";
 
-/* Title for Brave Shields widget on 'add widget' screen. */
+/* Title for Asil Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsTitle" = "Gizlilik İstatistikleri";
 
-/* Title of Brave Shields widget shown above stat numbers. */
+/* Title of Asil Browser Shields widget shown above stat numbers. */
 "widgets.shieldStatsWidgetTitle" = "Gizlilik İstatistikleri";
 
 /* Button to the browser and enter URL or make a search query there. */
@@ -3734,19 +3734,19 @@
 "widgets.shortcutsPrivateTabButton" = "Gizli Sekme";
 
 /* Description for shortcuts widget on 'add widget' screen. */
-"widgets.shortcutsWidgetDescription" = "Web'de arama yapmak veya Brave'de web sayfaları açmak için hızlı erişim.";
+"widgets.shortcutsWidgetDescription" = "Web'de arama yapmak veya Asil Browser'de web sayfaları açmak için hızlı erişim.";
 
 /* Title for shortcuts widget on 'add widget' screen. */
 "widgets.shortcutsWidgetTitle" = "Kısayollar";
 
-/* Description for Brave Shields single stat widget on 'add widget' screen. */
-"widgets.singleStatDescription" = "Brave'in sizi çevrimiçi dünyada nasıl koruduğunun özeti.";
+/* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
+"widgets.singleStatDescription" = "Asil Browser'ın sizi çevrimiçi dünyada nasıl koruduğunun özeti.";
 
-/* Title for Brave Shields single stat widget on 'add widget' screen. */
+/* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatTitle" = "Gizlilik İstatistiği";
 
-/* Description for the Brave Wallet option on the 'shortcuts' widget. */
-"widgets.walletShortcutTitle" = "Brave Cüzdanı";
+/* Description for the Asil Browser Wallet option on the 'shortcuts' widget. */
+"widgets.walletShortcutTitle" = "Asil Browser Cüzdanı";
 
 /* Title of the settings for widgets part */
 "widgets.widgetTitle" = "Widget'lar";

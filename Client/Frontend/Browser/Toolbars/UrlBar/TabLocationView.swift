@@ -254,7 +254,7 @@ class TabLocationView: UIView {
     addGestureRecognizer(longPressRecognizer)
     addGestureRecognizer(tapRecognizer)
     
-    let optionSubviews = [readerModeButton, walletButton, playlistButton, reloadButton, separatorLine, shieldsButton, rewardsButton]
+    let optionSubviews = [readerModeButton, walletButton, reloadButton, separatorLine, shieldsButton, rewardsButton]
     optionSubviews.forEach {
       ($0 as? UIButton)?.contentEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
       $0.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)

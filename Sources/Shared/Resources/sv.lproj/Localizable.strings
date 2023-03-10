@@ -131,7 +131,7 @@
 "ScanQRCodeInvalidDataErrorMessage" = "Ogiltiga data";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCodePermissionErrorMessage" = "Ge Brave tillgång till din enhets kamera i ”Inställningar” -> ”Integritet” -> ”Kamera”.";
+"ScanQRCodePermissionErrorMessage" = "Ge Asil Browser tillgång till din enhets kamera i ”Inställningar” -> ”Integritet” -> ”Kamera”.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCodeViewTitle" = "Skanna QR-kod";
@@ -154,8 +154,8 @@
 /* Label to display in the Discoverability overlay for keyboard shortcuts */
 "ShowPreviousTabTitle" = "Visa föregående flik";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Brave Shields */
-"showShieldsTitle" = "Öppna Brave Shields";
+/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Asil Browser Shields */
+"showShieldsTitle" = "Öppna Asil Browser Shields";
 
 /* Hardware shortcut to open the tab tray from a tab. Shown in the Discoverability overlay when the hardware Command Key is held down. */
 "ShowTabTrayFromTabKeyCodeTitle" = "Visa alla flikar";
@@ -181,8 +181,8 @@
 /* Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet. */
 "UnableToAddPassErrorTitle" = "Det gick inte att lägga till pass";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Brave, or any external app. */
-"UnableToOpenURLError" = "Brave kan inte öppna sidan eftersom den har en ogiltig adress.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by Asil Browser, or any external app. */
+"UnableToOpenURLError" = "Asil Browser kan inte öppna sidan eftersom den har en ogiltig adress.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "UnableToOpenURLErrorTitle" = "Kan inte öppna sida";

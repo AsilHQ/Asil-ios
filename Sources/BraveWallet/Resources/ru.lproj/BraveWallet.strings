@@ -71,7 +71,7 @@
 "wallet.addCustomTokenTitle" = "Token";
 
 /* The description of the view shown over a dapps website that describes what adding a new network will do. */
-"wallet.addNetworkDescription" = "Так вы сможете использовать эту сеть в Brave Кошельке.";
+"wallet.addNetworkDescription" = "Так вы сможете использовать эту сеть в Asil Browser Кошельке.";
 
 /* The subtitle of the view shown over a dapps website that requests permission from the user to add a new network. */
 "wallet.addNetworkSubtitle" = "Разрешить этому сайту добавить сеть?";
@@ -131,7 +131,7 @@
 "wallet.auroraPopupDontShowAgain" = "Не показывать снова";
 
 /* The footer beneath the auto-lock title and interval duration */
-"wallet.autoLockFooter" = "Через сколько минут кошелек Brave автоматически блокируется.";
+"wallet.autoLockFooter" = "Через сколько минут кошелек Asil Browser автоматически блокируется.";
 
 /* The title that appears before an auto-lock interval. Example: Automatically lock after 5 minutes */
 "wallet.autoLockTitle" = "Автоматическая блокировка через";
@@ -182,10 +182,10 @@
 "wallet.biometricsSetupErrorTitle" = "Не удалось включить распознавание с помощью биометрических данных";
 
 /* The title shown when a user is asked if they would like to setup biometric unlock */
-"wallet.biometricsSetupTitle" = "Используйте Face ID, Touch ID или пароль для доступа к кошельку Brave";
+"wallet.biometricsSetupTitle" = "Используйте Face ID, Touch ID или пароль для доступа к кошельку Asil Browser";
 
-/* A disclaimer that appears at the bottom of an swap screen which discloses the fixed Brave fee included in the swap quotes. '%@' will be replaced by a percentage. For example: 'Quote includes a 0.875% Brave fee' */
-"wallet.braveSwapFeeDisclaimer" = "Цена включает комиссию Brave в размере %@.";
+/* A disclaimer that appears at the bottom of an swap screen which discloses the fixed Asil Browser fee included in the swap quotes. '%@' will be replaced by a percentage. For example: 'Quote includes a 0.875% Asil Browser fee' */
+"wallet.braveSwapFeeDisclaimer" = "Цена включает комиссию Asil Browser в размере %@.";
 
 /* As in buying cryptocurrency */
 "wallet.buy" = "Купить";
@@ -290,7 +290,7 @@
 "wallet.createWalletTitle" = "Защитите криптоактивы с помощью пароля";
 
 /* The title of the crypto tab */
-"wallet.cryptoTitle" = "Brave Кошелек";
+"wallet.cryptoTitle" = "Asil Browser Кошелек";
 
 /* The title above the input fields for users to input network block explorer urls in Custom Network Details Screen. */
 "wallet.customNetworkBlockExplorerUrlsTitle" = "URL блок-проводников";
@@ -361,14 +361,14 @@
 /* The title displayed on the add custom token screen */
 "wallet.customTokenTitle" = "Пользовательский";
 
-/* The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Brave Wallet. The '%@' will be the site attempting to connect. For example: \"app.uniswap.org wants to interact with Brave Wallet\" */
-"wallet.dappsConnectionNotificationOriginTitle" = "%@ запрашивает доступ к Brave Кошельку";
+/* The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Asil Browser Wallet. The '%@' will be the site attempting to connect. For example: \"app.uniswap.org wants to interact with Asil Browser Wallet\" */
+"wallet.dappsConnectionNotificationOriginTitle" = "%@ запрашивает доступ к Asil Browser Кошельку";
 
-/* The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Brave Wallet. */
-"wallet.dappsConnectionNotificationTitle" = "С этой страницы запрашивается доступ к Brave Кошельку";
+/* The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Asil Browser Wallet. */
+"wallet.dappsConnectionNotificationTitle" = "С этой страницы запрашивается доступ к Asil Browser Кошельку";
 
 /* A message that will be displayed under the section header when there is no dapps have been granted wallet connection. */
-"wallet.dappsSettingsConnectedSitesSectionEmpty" = "Здесь будут показаны все приложения DApp, подключенные к Brave Кошельку.";
+"wallet.dappsSettingsConnectedSitesSectionEmpty" = "Здесь будут показаны все приложения DApp, подключенные к Asil Browser Кошельку.";
 
 /* The title of the section that will list all the permitted dapp connections */
 "wallet.dappsSettingsConnectedSitesSectionTitle" = "Подключенные приложения DApp";
@@ -529,7 +529,7 @@
 /* The amount of current permitted wallet accounts to the dapp site. It is displayed below the origin url of the dapp site in edit site connection screen. '%lld' refers to a number, %@ is `account` for singular and `accounts` for plural (for example \"1 account connected\" or \"2 accounts connected\") */
 "wallet.editSiteConnectionConnectedAccount" = "Подключено: %1$lld %2$@";
 
-/* The navigation title of the screen for users to edit dapps site connection with users' Brave Wallet accounts. */
+/* The navigation title of the screen for users to edit dapps site connection with users' Asil Browser Wallet accounts. */
 "wallet.editSiteConnectionScreenTitle" = "Подключения";
 
 /* The error alert body when something is wrong when users try to edit transaction gas fee, priority fee, nonce value or allowance value. */
@@ -607,7 +607,7 @@
 /* The title of the button to approve a encryption public key request from a dapps website. */
 "wallet.getEncryptionPublicKeyRequestApprove" = "Предоставить";
 
-/* The text shown beside the URL origin of a get public encryption key request from a dapp site. Ex 'https://brave.com is requesting your wallets public encryption key. If you consent to providing this key, the site will be able to compose encrypted messages to you.' */
+/* The text shown beside the URL origin of a get public encryption key request from a dapp site. Ex 'https://Asil Browser.com is requesting your wallets public encryption key. If you consent to providing this key, the site will be able to compose encrypted messages to you.' */
 "wallet.getEncryptionPublicKeyRequestMessage" = "запрашивает открытый ключ шифрования вашего кошелька. Если вы дадите согласие, этот сайт сможет отправлять вам зашифрованные сообщения.";
 
 /* A subtitle of the view shown over a dapps website that requests the users public encryption key. */
@@ -700,8 +700,8 @@
 /* The title of the edit gas fee screen for EIP-1559 transactions */
 "wallet.maxPriorityFeeTitle" = "Максимальная комиссия за приоритет";
 
-/* The title shown on the wallet settings page, and the value shown when selecting the default wallet as Brave Wallet in wallet settings. */
-"wallet.module" = "Brave Кошелек";
+/* The title shown on the wallet settings page, and the value shown when selecting the default wallet as Asil Browser Wallet in wallet settings. */
+"wallet.module" = "Asil Browser Кошелек";
 
 /* The title displayed on the view to filter by a network / all networks. */
 "wallet.networkFilterTitle" = "Фильтр для выбора сети";
@@ -715,7 +715,7 @@
 /* The title for the label that is shown above the name of the network on a request to switch networks or add a new network from a dapps website. */
 "wallet.networkNameTitle" = "Сетевое имя";
 
-/* A placeholder in Buy Screen, when user switched to a network that Brave currently doesn't support buy token with Wyre. */
+/* A placeholder in Buy Screen, when user switched to a network that Asil Browser currently doesn't support buy token with Wyre. */
 "wallet.networkNotSupportedForBuyToken" = "Покупки в этой сети недоступны";
 
 /* The title of the section for secondary networks in the network selection view. */
@@ -737,7 +737,7 @@
 "wallet.newSiteConnectFooter" = "Подключайтесь только к надежным сайтам.";
 
 /* The message displayed below the dapp's origin url in new site connection screen. */
-"wallet.newSiteConnectMessage" = "Подключите Brave Кошелек";
+"wallet.newSiteConnectMessage" = "Подключите Asil Browser Кошелек";
 
 /* The transaction edit error alert button which will dismiss the alert. */
 "wallet.newSiteConnectScreenTitle" = "Подключиться";
@@ -821,7 +821,7 @@
 "wallet.primaryCryptoAccountsTitle" = "Основные криптовалютные счета";
 
 /* The message displayed when the user takes a screenshot of their private key */
-"wallet.privateKeyScreenshotDetectedMessage" = "Внимание! Копия скриншота могла сохраниться в облачном сервисе. В этом случае ваш секретный ключ сможет узнать любой с помощью приложения для просмотра фото. Brave рекомендует удалить скриншот как можно скорее.";
+"wallet.privateKeyScreenshotDetectedMessage" = "Внимание! Копия скриншота могла сохраниться в облачном сервисе. В этом случае ваш секретный ключ сможет узнать любой с помощью приложения для просмотра фото. Asil Browser рекомендует удалить скриншот как можно скорее.";
 
 /* The button title for users to click. It will redirect user to that specific provider website. '%@' will be replaced provider's short name. For example, Buy with Ramp'. */
 "wallet.providerSelectionButtonTitle" = "Оплатить с помощью %@";
@@ -845,7 +845,7 @@
 "wallet.rampNetworkProviderShortName" = "Ramp";
 
 /* The message displayed when the user takes a screenshot of their recovery phrase */
-"wallet.recoveryPhraseScreenshotDetectedMessage" = "Внимание! Копия скриншота могла сохраниться в облачном сервисе. В этом случае вашу секретную фразу сможет узнать любой с помощью приложения для просмотра фото. Brave рекомендует удалить скриншот как можно скорее.";
+"wallet.recoveryPhraseScreenshotDetectedMessage" = "Внимание! Копия скриншота могла сохраниться в облачном сервисе. В этом случае вашу секретную фразу сможет узнать любой с помощью приложения для просмотра фото. Asil Browser рекомендует удалить скриншот как можно скорее.";
 
 /* A description for a refresh icon that when pressed receives a new snap quote for the currently swap assets */
 "wallet.refreshMarketPriceLabel" = "Обновить рыночную цену";
@@ -877,11 +877,11 @@
 /* The title that will be displayed when long-pressing the back button in the navigation bar. As to gain access to your assets from a different device */
 "wallet.restoreWalletBackButtonTitle" = "Восстановить кошелек";
 
-/* The button title for showing the restore wallet screen. As in to use your recovery phrase to bring a wallet into Brave */
+/* The button title for showing the restore wallet screen. As in to use your recovery phrase to bring a wallet into Asil Browser */
 "wallet.restoreWalletButtonTitle" = "Восстановить";
 
-/* A toggle label to ask the user if their 24-word phrase is a legacy Brave crypto wallet */
-"wallet.restoreWalletImportFromLegacyBraveWallet" = "Импортировать из устаревших криптокошельков Brave?";
+/* A toggle label to ask the user if their 24-word phrase is a legacy Asil Browser crypto wallet */
+"wallet.restoreWalletImportFromLegacyBraveWallet" = "Импортировать из устаревших криптокошельков Asil Browser?";
 
 /* A title displayed above 2 text fields for entering a new wallet password */
 "wallet.restoreWalletNewPasswordTitle" = "Новый пароль";
@@ -896,7 +896,7 @@
 "wallet.restoreWalletShowRecoveryPhrase" = "Показать секретную фразу";
 
 /* The subtitle on the restore wallet screen. */
-"wallet.restoreWalletSubtitle" = "Чтобы восстановить доступ к криптовалютному счету кошелька Brave, введите секретную фразу.";
+"wallet.restoreWalletSubtitle" = "Чтобы восстановить доступ к криптовалютному счету кошелька Asil Browser, введите секретную фразу.";
 
 /* The title on the restore wallet screen. */
 "wallet.restoreWalletTitle" = "Восстановление криптовалютного счета";
@@ -1022,7 +1022,7 @@
 "wallet.settingsResetWalletAlertMessage" = "Это действие нельзя отменить. Восстановить доступ к криптоактивам можно будет только с помощью секретной фразы.";
 
 /* The title the confirmation dialog when resetting the wallet. As in to erase the users wallet from the device */
-"wallet.settingsResetWalletAlertTitle" = "Вы уверены, что хотите сбросить кошелек Brave?";
+"wallet.settingsResetWalletAlertTitle" = "Вы уверены, что хотите сбросить кошелек Asil Browser?";
 
 /* The title that will be displayed when long-pressing the back button in the navigation bar. As in the first step of an onboarding process is to welcome a user. */
 "wallet.setupCryptoButtonBackButtonTitle" = "Приветствие";
@@ -1031,10 +1031,10 @@
 "wallet.setupCryptoButtonTitle" = "Начать";
 
 /* The subtitle displayed on the 'setup crypto' onboarding screen */
-"wallet.setupCryptoSubtitle" = "Храните криптоактивы в кошельке и следите за доходностью портфелей прямо в браузере Brave.";
+"wallet.setupCryptoSubtitle" = "Храните криптоактивы в кошельке и следите за доходностью портфелей прямо в браузере Asil Browser.";
 
 /* The title displayed on the 'setup crypto' onboarding screen */
-"wallet.setupCryptoTitle" = "Добро пожаловать в новый кошелек Brave!";
+"wallet.setupCryptoTitle" = "Добро пожаловать в новый кошелек Asil Browser!";
 
 /* A button title that will make a private key visible on the screen */
 "wallet.showPrivateKeyButtonTitle" = "Показать закрытый ключ";
@@ -1171,8 +1171,8 @@
 /* The title on top of a separater, and the transaction details will be displayed below the separater. */
 "wallet.solanaSignTransactionDetails" = "Сведения";
 
-/* The warning message to let users understand the risk of using Brave Wallet to sign any transaction. */
-"wallet.solanaSignTransactionWarning" = "Brave не несет ответственности за то, что произойдет, если вы поставите подпись. С ее помощью можно разрешить практически любую операцию в вашем аккаунте или от вашего имени. Например, можно получить полный доступ к аккаунту и криптоактивам по запросу с сайта. Ставьте подпись, только если вы уверены, что это необходимо, и если вы доверяете сайту, с которого пришел запрос.";
+/* The warning message to let users understand the risk of using Asil Browser Wallet to sign any transaction. */
+"wallet.solanaSignTransactionWarning" = "Asil Browser не несет ответственности за то, что произойдет, если вы поставите подпись. С ее помощью можно разрешить практически любую операцию в вашем аккаунте или от вашего имени. Например, можно получить полный доступ к аккаунту и криптоактивам по запросу с сайта. Ставьте подпись, только если вы уверены, что это необходимо, и если вы доверяете сайту, с которого пришел запрос.";
 
 /* The title displayed above the Token Program Sync Native instruction type for Solana Instruction details. */
 "wallet.solanaSyncNativeInstructionName" = "Sync Native";
@@ -1229,7 +1229,7 @@
 "wallet.swapCryptoToTitle" = "Куда:";
 
 /* The description of where user will see once a test network has been picked in swap screen. '%@' will be replaced with a network such as 'Rinkeby Test Network' or 'Ropsten Test Network' */
-"wallet.swapCryptoUnsupportNetworkBody" = "Сейчас в Brave не поддерживается своп в сети %@. Выберите другую цепочку.";
+"wallet.swapCryptoUnsupportNetworkBody" = "Сейчас в Asil Browser не поддерживается своп в сети %@. Выберите другую цепочку.";
 
 /* The title below account picker when user has selected a test network to swap cryptos */
 "wallet.swapCryptoUnsupportNetworkTitle" = "Цепочка не поддерживается";
@@ -1237,11 +1237,11 @@
 /* The description of a swap button on the buy/send/swap modal */
 "wallet.swapDescription" = "Своп токенов и активов.";
 
-/* A longer disclaimer about the DEX aggrigator used by Brave for swap transactions. '0x' is a company name. 'DEX aggregator' is a type of blockchain-based service (decentralized exchange). 'ONLY' is emphasized to show importance of 0x's data usage. */
+/* A longer disclaimer about the DEX aggrigator used by Asil Browser for swap transactions. '0x' is a company name. 'DEX aggregator' is a type of blockchain-based service (decentralized exchange). 'ONLY' is emphasized to show importance of 0x's data usage. */
 "wallet.swapDexAggrigatorDisclaimer" = "0x обрабатывает Ethereum-адрес и IP-адрес ТОЛЬКО для выполнения транзакций (включая получение расценок).";
 
 /* A disclaimer note shown on the Swap screen. '0x' is a company name. 'DEX aggregator' is a type of blockchain-based service (decentralized exchange) */
-"wallet.swapDexAggrigatorNote" = "Brave использует 0x в качестве агрегатора DEX.";
+"wallet.swapDexAggrigatorNote" = "Asil Browser использует 0x в качестве агрегатора DEX.";
 
 /* The 'Limit' order type. Limit orders only execute when the price requirements are met */
 "wallet.swapLimitOrderType" = "Лимит";
@@ -1402,8 +1402,8 @@
 /* A button title to view a given transaction on the block explorer for the current network/chain. */
 "wallet.viewOnBlockExplorer" = "Показать в блок-проводнике";
 
-/* The title shown on the menu to access Brave Wallet */
-"wallet.wallet" = "Brave Кошелек";
+/* The title shown on the menu to access Asil Browser Wallet */
+"wallet.wallet" = "Asil Browser Кошелек";
 
 /* The label read out when a user is using VoiceOver and highlights the two-arrow button on the wallet panel top left corner. */
 "wallet.walletFullScreenAccessibilityTitle" = "Развернуть кошелек на весь экран";
