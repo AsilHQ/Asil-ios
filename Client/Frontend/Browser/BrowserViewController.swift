@@ -748,7 +748,7 @@ public class BrowserViewController: UIViewController {
 
   @objc func vpnConfigChanged() {
     // Load latest changes to the vpn.
-    NEVPNManager.shared().loadFromPreferences { _ in }
+    //NEVPNManager.shared().loadFromPreferences { _ in }
   }
 
   @objc func appDidBecomeActiveNotification() {

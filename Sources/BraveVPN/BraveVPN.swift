@@ -39,11 +39,11 @@ public class BraveVPN {
       GRDVPNHelper.clearVpnConfiguration()
       clearCredentials()
 
-      NEVPNManager.shared().removeFromPreferences { error in
+      /*NEVPNManager.shared().removeFromPreferences { error in
         if let error = error {
           logAndStoreError("Remove vpn error: \(error.localizedDescription)")
         }
-      }
+      }*/
     }
     
     if let customCredential = customCredential {
