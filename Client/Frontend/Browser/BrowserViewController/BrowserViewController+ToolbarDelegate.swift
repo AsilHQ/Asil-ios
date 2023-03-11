@@ -364,6 +364,10 @@ extension BrowserViewController: TopToolbarDelegate {
     presentWalletPanel(from: selectedTab.getOrigin(), with: selectedTab.tabDappStore)
   }
     
+  func topToolbarDidTapShareButton(_ urlBar: TopToolbarView) {
+    self.tabToolbarDidPressShare()
+  }
+    
   private func hideSearchController() {
     if let searchController = searchController {
       searchController.willMove(toParent: nil)
