@@ -9,9 +9,10 @@ import UIKit
 import BraveCore
 import Introspect
 import BraveUI
+import BraveShared
 
 public struct YoutubeFiltrationView: View {
-    
+    @ObservedObject private var token = Preferences.YoutubeFiltration.token
     // in iOS 15, PresentationMode will be available in SwiftUI hosted by UIHostingController
     // but for now we'll have to manage this ourselves
     var dismissAction: (() -> Void)?
@@ -22,7 +23,11 @@ public struct YoutubeFiltrationView: View {
     }
     
     private var visibleScreen: VisibleScreen {
-        return .profile
+        if Preferences.YoutubeFiltration.token.value == "" {
+            return .onboarding
+        } else {
+            return .profile
+        }
     }
     
     @ToolbarContentBuilder
@@ -43,14 +48,14 @@ public struct YoutubeFiltrationView: View {
             switch visibleScreen {
             case .profile:
                 UIKitNavigationView {
-                    YoutubeFiltrationProfileView()
+                    YoutubeFiltrationProfileView(dismissAction: dismissAction)
                     .toolbar {
                       dismissButtonToolbarContents
                     }
                 }
                 .transition(.move(edge: .bottom))
             case .onboarding:
-                Text("")
+                Text("Explore this feature after signing to Youtube")
             }
         }
     }

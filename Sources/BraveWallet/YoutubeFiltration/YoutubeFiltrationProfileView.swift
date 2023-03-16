@@ -4,15 +4,15 @@
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import SwiftUI
+import BraveShared
 
 struct YoutubeFiltrationProfileView: View {
     let genders = ["Male", "Female", "Non-Binary"]
     let religionStatus = ["Practicing Muslim", "B", "C"]
-    @State private var name = "Max Watson"
-    @State private var genderSelection = 0
-    @State private var religionSelection = 0
-    @State private var preferredLanguage = ""
+    @State private var genderSelection: Int = Preferences.YoutubeFiltration.gender.value ?? 0
+    @State private var religionSelection: Int = Preferences.YoutubeFiltration.religionStatus.value ?? 0
     @State private var profilePicture: UIImage?
+    var dismissAction: (() -> Void)?
     
     var body: some View {
         VStack {
@@ -24,12 +24,12 @@ struct YoutubeFiltrationProfileView: View {
             
             Form {
                 Section(header: Text("Name")) {
-                    TextEditor(text: $name)
+                    Text(Preferences.YoutubeFiltration.username.value ?? "")
                 }
                 
                 Section(header: Text("Connected Account")) {
                     HStack {
-                        Text("cem@gmail.com")
+                        Text(Preferences.YoutubeFiltration.email.value ?? "")
                         
                         Spacer()
                         
@@ -41,7 +41,7 @@ struct YoutubeFiltrationProfileView: View {
                     }
                 }
                 
-                Section(header: Text("Preference")) {
+                Section(header: Text("Preferences")) {
                     Picker(selection: $genderSelection, label: Text("Gender")) {
                         ForEach(genders.indices, id: \.self) { index in
                             Text(genders[index]).tag(index)
@@ -58,6 +58,15 @@ struct YoutubeFiltrationProfileView: View {
         }
         .navigationTitle(Strings.YoutubeFiltration.youtubeFiltrationTitle)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            Button {
+                Preferences.YoutubeFiltration.gender.value = genderSelection
+                Preferences.YoutubeFiltration.religionStatus.value = religionSelection
+                dismissAction?()
+            } label: {
+                Text("Save")
+            }
+        }
     }
 }
 
