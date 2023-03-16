@@ -14,6 +14,7 @@ class MenuItemFactory {
     case settings
     case talk
     case wallet(subtitle: String? = nil)
+    case youtubeFiltration
     
     var icon: UIImage {
       switch self {
@@ -32,6 +33,8 @@ class MenuItemFactory {
         case .talk:
           return UIImage(named: "menu-brave-talk", in: .module, compatibleWith: nil)!.template
         case .wallet(_):
+          return UIImage(named: "menu-crypto", in: .module, compatibleWith: nil)!.template
+        case .youtubeFiltration:
           return UIImage(named: "menu-crypto", in: .module, compatibleWith: nil)!.template
       }
     }
@@ -54,6 +57,8 @@ class MenuItemFactory {
         return Strings.OptionsMenu.braveTalkItemTitle
       case .wallet:
         return Strings.Wallet.wallet
+      case .youtubeFiltration:
+        return Strings.youtubeFiltrationItem
       }
     }
     

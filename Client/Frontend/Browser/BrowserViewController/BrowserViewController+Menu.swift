@@ -38,50 +38,9 @@ extension BrowserViewController {
         .foregroundColor(Color(.braveLabel))
         .padding(.horizontal, 14)
         .padding(.bottom, 5)
-
-      VPNMenuButton(
-        vpnProductInfo: self.vpnProductInfo,
-        description: Strings.OptionsMenu.braveVPNItemDescription,
-        displayVPNDestination: { [unowned self] vc in
-          (self.presentedViewController as? MenuViewController)?
-            .pushInnerMenu(vc)
-        },
-        enableInstalledVPN: { [unowned menuController] in
-          /// Donate Enable VPN Activity for suggestions
-          let enableVPNActivity = ActivityShortcutManager.shared.createShortcutActivity(type: .enableBraveVPN)
-          menuController.userActivity = enableVPNActivity
-          enableVPNActivity.becomeCurrent()
-        }
-      )
-
-      MenuItemFactory.button(for: .playlist(subtitle: Strings.OptionsMenu.bravePlaylistItemDescription)) { [weak self] in
-        guard let self = self else { return }
-        self.presentPlaylistController()
-      }
-
-      // Add Brave Talk and News options only in normal browsing
-      if !PrivateBrowsingManager.shared.isPrivateBrowsing {
-        // Show Brave News if it is first launch and after first launch If the new is enabled
-        if Preferences.General.isFirstLaunch.value || (!Preferences.General.isFirstLaunch.value && Preferences.BraveNews.isEnabled.value) {
-          MenuItemFactory.button(for: .news) { [weak self] in
-            guard let self = self, let newTabPageController = self.tabManager.selectedTab?.newTabPageViewController else {
-              return
-            }
-
-            self.popToBVC()
-            newTabPageController.scrollToBraveNews()
-          }
-        }
-        MenuItemFactory.button(for: .talk) {
-          guard let url = URL(string: "https://talk.brave.com/") else { return }
-
-          self.popToBVC()
-          self.finishEditingAndSubmit(url, visitType: .typed)
-        }
-      }
       
-      MenuItemFactory.button(for: .wallet(subtitle: Strings.OptionsMenu.braveWalletItemDescription)) { [unowned self] in
-        self.presentWallet()
+      MenuItemFactory.button(for: .youtubeFiltration) { [unowned self] in
+          presentYoutubeFiltrationSettingsView()
       }
     }
     .fixedSize(horizontal: false, vertical: true)
@@ -167,6 +126,13 @@ extension BrowserViewController {
     self.dismiss(animated: true) {
       self.present(vc, animated: true)
     }
+  }
+    
+  func presentYoutubeFiltrationSettingsView() {
+      let vc = YoutubeFiltrationViewController()
+      self.dismiss(animated: true) {
+        self.present(vc, animated: true)
+      }
   }
 
   private func presentPlaylistController() {

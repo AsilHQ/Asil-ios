@@ -611,6 +611,7 @@ extension BrowserViewController: ToolbarDelegate {
       content: { menuController in
         let isShownOnWebPage = selectedTabURL != nil
         VStack(spacing: 6) {
+          privacyFeaturesMenuSection(menuController)
           /*if isShownOnWebPage {
             featuresMenuSection(menuController)
           } else {
