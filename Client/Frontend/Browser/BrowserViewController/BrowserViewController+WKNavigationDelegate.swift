@@ -642,6 +642,8 @@ extension BrowserViewController: WKNavigationDelegate {
       if tab.walletEthProvider != nil {
         tab.emitEthereumEvent(.connect)
       }
+        
+      YoutubeFiltrationManager.shared.getUserInformationsFromYoutube(view: self.view, webView: webView)
     }
 
     // Added this method to determine long press menu actions better
