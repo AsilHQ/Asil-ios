@@ -673,7 +673,7 @@ extension TopToolbarView: TabLocationViewDelegate {
     // Make sure to use the result from topToolbarDisplayTextForURL as it is responsible for extracting out search terms when on a search page
     if let text = locationText, let url = NSURL(idnString: text) as? URL {
       // When the user is entering text into the URL bar, we must show the entire URL, omitting NOTHING (not even the scheme, or www), and un-escaping NOTHING!
-      overlayText = URLFormatter.formatURL(url.absoluteString, formatTypes: [], unescapeOptions: [])
+      overlayText = URLFormatter.formatURL(url.absoluteString)
     }
     enterOverlayMode(overlayText, pasted: false, search: isSearchQuery)
   }

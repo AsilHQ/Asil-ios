@@ -1328,7 +1328,7 @@ extension Strings {
     public static let siteBroken = NSLocalizedString("BraveShieldsSiteBroken", tableName: "BraveShared", bundle: .module, value: "If this site appears broken, try Shields down", comment: "")
     public static let advancedControls = NSLocalizedString("BraveShieldsAdvancedControls", tableName: "BraveShared", bundle: .module, value: "Advanced controls", comment: "")
     public static let aboutBraveShieldsTitle = NSLocalizedString("AboutBraveShields", tableName: "BraveShared", bundle: .module, value: "About Asil Browser Shields", comment: "The title of the screen explaining Asil Browser Shields")
-    public static let aboutBraveShieldsBody = NSLocalizedString("AboutBraveShieldsBody", tableName: "BraveShared", bundle: .module, value: "Sites often include cookies and scripts which try to identify you and your device. They want to work out who you are and follow you across the web — tracking what you do on every site.\n\nBrave blocks these things so that you can browse without being followed around.", comment: "The body of the screen explaining Asil Browser Shields")
+    public static let aboutBraveShieldsBody = NSLocalizedString("AboutBraveShieldsBody", tableName: "BraveShared", bundle: .module, value: "Sites often include cookies and scripts which try to identify you and your device. They want to work out who you are and follow you across the web — tracking what you do on every site.\n\nAsil Browser blocks these things so that you can browse without being followed around.", comment: "The body of the screen explaining Asil Browser Shields")
     public static let shieldsDownDisclaimer = NSLocalizedString("ShieldsDownDisclaimer", tableName: "BraveShared", bundle: .module, value: "You're browsing this site without Asil Browser's privacy protections. Does it not work right with Shields up?", comment: "")
     public static let reportABrokenSite = NSLocalizedString("ReportABrokenSite", tableName: "BraveShared", bundle: .module, value: "Report a broken site", comment: "")
     public static let reportBrokenSiteBody1 = NSLocalizedString("ReportBrokenSiteBody1", tableName: "BraveShared", bundle: .module, value: "Let Asil Browser's developers know that this site doesn't work properly with Shields:", comment: "First part of the report a broken site copy. After the colon is a new line and then a website address")
@@ -3294,7 +3294,7 @@ extension Strings {
       comment: "Shown above a button that turns on the \"Asil Browser News\" product in the app."
     )
     public static let introCardBody = NSLocalizedString("today.introCardBody", tableName: "BraveShared", bundle: .module,
-      value: "Follow your favorite sources, in a single feed. Just open a tab in Asil Browser, scroll down, and… voila!\nBrave News is ad-supported with private, anonymized ads.",
+      value: "Follow your favorite sources, in a single feed. Just open a tab in Asil Browser, scroll down, and… voila!\nAsilBrowser News is ad-supported with private, anonymized ads.",
       comment: "Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs."
     )
     public static let refresh = NSLocalizedString("today.refresh", tableName: "BraveShared", bundle: .module,
