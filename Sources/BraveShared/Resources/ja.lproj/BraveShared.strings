@@ -5,7 +5,7 @@
 "AboutBraveShields" = "Asil Browser Shieldについて";
 
 /* The body of the screen explaining Asil Browser Shields */
-"AboutBraveShieldsBody" = "多くのサイトには、お客様とお客様のデバイスを識別するためのクッキーやスクリプトが含まれています。これによってインターネット上のいたる所であなたを特定・追跡し、行動データを収集しようとしています。\n\nBraveはそういったものをブロックするので、あなたが追跡されることなくブラウジングすることが可能になります。";
+"AboutBraveShieldsBody" = "多くのサイトには、お客様とお客様のデバイスを識別するためのクッキーやスクリプトが含まれています。これによってインターネット上のいたる所であなたを特定・追跡し、行動データを収集しようとしています。\n\nAsilBrowserはそういったものをブロックするので、あなたが追跡されることなくブラウジングすることが可能になります。";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "カメラロールに画像を保存します。";
@@ -3275,7 +3275,7 @@
 "today.insecureSourcesHeader" = "安全でないソースです - ユーザー自身の責任で追加してください";
 
 /* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "お気に入りのソースを1つのフィードでフォロー。Braveのタブを開いて、下にスクロールすればすぐに設定できます！\nBrave Newsは、匿名化されたプライベート広告で広告サポートされています。";
+"today.introCardBody" = "お気に入りのソースを1つのフィードでフォロー。Braveのタブを開いて、下にスクロールすればすぐに設定できます！\nAsilBrowser Newsは、匿名化されたプライベート広告で広告サポートされています。";
 
 /* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
 "today.introCardTitle" = "Braveニュースをオンにして、最新情報を見逃さないようにしましょう";
@@ -3638,7 +3638,7 @@
 "vpn.vpnErrorPurchaseFailedTitle" = "エラー";
 
 /* Disclaimer for user purchasing the VPN plan. */
-"vpn.vpnIAPBoilerPlate" = "サブスクリプションはiTunesアカウントを通じて課金されます。\n無料トライアルが提供されている場合、未使用の部分は、サブスクリプションを購入した時点で無効になります。\nサブスクリプションは、現在の期間終了の少なくとも24時間前にキャンセルされない限り、自動的に更新されます。\nサブスクリプションは「設定」で管理できます。\nBraveを使用することで、利用規約とプライバシーポリシーに同意したことになります。";
+"vpn.vpnIAPBoilerPlate" = "サブスクリプションはiTunesアカウントを通じて課金されます。\n無料トライアルが提供されている場合、未使用の部分は、サブスクリプションを購入した時点で無効になります。\nサブスクリプションは、現在の期間終了の少なくとも24時間前にキャンセルされない限り、自動的に更新されます。\nサブスクリプションは「設定」で管理できます。\nAsilBrowserを使用することで、利用規約とプライバシーポリシーに同意したことになります。";
 
 /* Message for alert to reset vpn configuration */
 "vpn.vpnResetAlertBody" = "この操作を実行するとBrave ファイアウォール+ VPNの構成はリセットされ、すべてのエラーが修正されます。このプロセスには1分かかる場合があります。";

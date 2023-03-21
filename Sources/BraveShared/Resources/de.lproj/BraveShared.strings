@@ -5,7 +5,7 @@
 "AboutBraveShields" = "Über Asil Browser Shields";
 
 /* The body of the screen explaining Asil Browser Shields */
-"AboutBraveShieldsBody" = "Websites nutzen häufig Cookies und Skripte, mit denen man Sie und Ihr Gerät erkennen kann. Das Ziel ist dabei, Ihre Identität zu ermitteln und Ihre Aktivitäten im Internet auf jeder der von Ihnen besuchten Websites zu verfolgen.\n\nBrave blockiert dieses Tracking, damit Sie surfen können, ohne im Web beobachtet zu werden.";
+"AboutBraveShieldsBody" = "Websites nutzen häufig Cookies und Skripte, mit denen man Sie und Ihr Gerät erkennen kann. Das Ziel ist dabei, Ihre Identität zu ermitteln und Ihre Aktivitäten im Internet auf jeder der von Ihnen besuchten Websites zu verfolgen.\n\nAsil Browser blockiert dieses Tracking, damit Sie surfen können, ohne im Web beobachtet zu werden.";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "Ermöglicht es Ihnen, das Bild in Ihrer Galerie zu speichern.";
@@ -3275,7 +3275,7 @@
 "today.insecureSourcesHeader" = "Unsichere Quellen - Hinzufügen auf eigenes Risiko";
 
 /* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "Folgen Sie Ihren Lieblingsquellen in einem einzigen Feed. Öffnen Sie einfach einen Tab in Asil Browser, scrollen Sie nach unten und … voila!\nBrave News wird werbefinanziert mit privaten, anonymisierten Anzeigen.";
+"today.introCardBody" = "Folgen Sie Ihren Lieblingsquellen in einem einzigen Feed. Öffnen Sie einfach einen Tab in Asil Browser, scrollen Sie nach unten und … voila!\nAsilBrowser News wird werbefinanziert mit privaten, anonymisierten Anzeigen.";
 
 /* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
 "today.introCardTitle" = "Aktivieren Sie die Asil Browser-Nachrichten, um keine Storys zu verpassen";
