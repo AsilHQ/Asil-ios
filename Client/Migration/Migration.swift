@@ -49,7 +49,7 @@ public class Migration {
         Preferences.General.tabBarVisibility.value = TabBarVisibility.landscapeOnly.rawValue
       }
       // Default url bar location for new users is bottom
-      Preferences.General.isUsingBottomBar.value = true
+      Preferences.General.isUsingBottomBar.value = false
       Preferences.Playlist.firstLoadAutoPlay.value = true
     }
 
