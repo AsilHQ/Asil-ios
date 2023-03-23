@@ -98,7 +98,7 @@ public class WelcomeViewController: UIViewController {
       }
       
       DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-        self.animateToP3aState()
+        self.animateToDefaultBrowserState()
       }
     case .settings:
       calloutView.animateTitleViewVisibility(alpha: 1.0, duration: 1.5)
