@@ -900,7 +900,7 @@ public class BrowserViewController: UIViewController {
     doSyncMigration()
 
     if #available(iOS 14, *), !Preferences.DefaultBrowserIntro.defaultBrowserNotificationScheduled.value {
-      // scheduleDefaultBrowserNotification()
+      scheduleDefaultBrowserNotification()
     }
 
     privateModeCancellable = PrivateBrowsingManager.shared
