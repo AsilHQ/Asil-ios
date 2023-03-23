@@ -23,7 +23,7 @@ public struct YoutubeFiltrationView: View {
     }
     
     private var visibleScreen: VisibleScreen {
-        if Preferences.YoutubeFiltration.token.value == "" {
+        if Preferences.YoutubeFiltration.token.value == nil || Preferences.YoutubeFiltration.token.value == "" {
             return .onboarding
         } else {
             return .profile
