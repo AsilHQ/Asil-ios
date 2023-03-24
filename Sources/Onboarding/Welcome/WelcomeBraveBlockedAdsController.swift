@@ -99,7 +99,8 @@ public class WelcomeBraveBlockedAdsController: UIViewController, PopoverContentC
     super.viewDidLoad()
 
     informationStackView.addBackground(color: .black.withAlphaComponent(0.1), cornerRadius: 6.0)
-    footNoteStackView.addBackground(color: .black.withAlphaCom#imageLiteral(resourceName: "Screen Shot 2023-03-24 at 10.30.19.png")ponent(0.1), cornerRadius: 6.0)
+    footNoteStackView.addBackground(color: .black.withAlphaComponent(0.1), cornerRadius: 6.0)
+
 
     let viewBG = UIView()
     viewBG.backgroundColor = UIColor.init(colorString: "#3161F1")
