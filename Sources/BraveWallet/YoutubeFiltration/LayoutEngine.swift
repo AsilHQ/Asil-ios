@@ -52,6 +52,8 @@ public typealias LayoutEngine = URLBrowser & JavaScriptEvaluator
 let JavascriptErrorHandler = "erikError"
 let JavascriptEndHandler = "erikEnd"
 let JavascriptEmailHandler = "emailHandler"
+let JavascriptLogHandler = "logHandler"
+
 
 // Protocole which define a navigate boolean
 // Useful to know if currently in navigation processs
@@ -152,6 +154,7 @@ open class WebKitLayoutEngine: NSObject, LayoutEngine {
         self.webView.configuration.userContentController.add(self, name: JavascriptErrorHandler)
         self.webView.configuration.userContentController.add(self, name: JavascriptEndHandler)
         self.webView.configuration.userContentController.add(self, name: JavascriptEmailHandler)
+        self.webView.configuration.userContentController.add(self, name: JavascriptLogHandler)
         if self.webView.navigationDelegate == nil {
             let delegate = LayoutEngineNavigationDelegate()
             self.webView.navigationDelegate = delegate
@@ -384,20 +387,21 @@ extension DispatchQueue {
 
 }
 
-
 extension WebKitLayoutEngine: WKScriptMessageHandler {
     public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         
         if message.name == JavascriptErrorHandler {
-            if let dico = message.body as? [String: String], let key = dico["key"]{
+            if let dico = message.body as? [String: String], let key = dico["key"] {
                 self.setbox(key, object: message.body as AnyObject)
             }
         } else if message.name == JavascriptEndHandler {
-            if let dico = message.body as? [String: String], let key = dico["key"]{
+            if let dico = message.body as? [String: String], let key = dico["key"] {
                 self.signal(key)
             }
         } else if message.name == JavascriptEmailHandler, let message = message.body as? Dictionary<String, Any> {
             YoutubeFiltrationManager.shared.saveYoutubeInformations(dict: message)
+        } else if message.name == JavascriptLogHandler, let message = message.body as? String {
+            print(message)
         }
     }
 }
@@ -409,7 +413,7 @@ extension WebKitLayoutEngine: Semaphorable {}
 
 protocol Semaphorable: AnyObject {}
 
-class SemaphoreBox  {
+class SemaphoreBox {
     let semaphore = DispatchSemaphore(value: 0)
     var object: AnyObject?
 }
@@ -422,7 +426,7 @@ private struct SemaphorableKeys {
 extension Semaphorable {
     
     func expect(_ key: SemaphorableKey) {
-        if (self.semaphores[key] != nil) {
+        if self.semaphores[key] != nil {
             return /// XXX throw?
         }
         self.semaphores[key] = SemaphoreBox()
@@ -459,7 +463,7 @@ extension Semaphorable {
     
     var semaphores: [SemaphorableKey: SemaphoreBox] {
         get {
-            if let semaphores = SemaphorableKeys.semaphores, let o = objc_getAssociatedObject(self, semaphores) as? [SemaphorableKey: SemaphoreBox]  {
+            if let semaphores = SemaphorableKeys.semaphores, let o = objc_getAssociatedObject(self, semaphores) as? [SemaphorableKey: SemaphoreBox] {
                 return o
             } else {
                 let obj = [SemaphorableKey: SemaphoreBox]()
@@ -477,6 +481,5 @@ extension Semaphorable {
            
         }
     }
-
 
 }

@@ -49,6 +49,7 @@ public class YoutubeFiltrationManager {
             let erik = Erik(webView: hiddenView)
             erik.visit(url: URL(string: "https://m.youtube.com")!) { object, error in
                 self.getEmail(erik: erik)
+                self.filter(webView: webView)
             }
         } else {
             print("Youtube Filtration: User is not on a YouTube page")
@@ -70,10 +71,26 @@ public class YoutubeFiltrationManager {
                     }
                 }
             } else {
-                print("Youtube Filtration: Already signed-in")
+                print("Youtube Filtration: Already signed-in \(Preferences.YoutubeFiltration.token.value ?? "non-Toke")")
             }
         } else {
             print("Youtube Filtration: Anonymous user")
+        }
+    }
+    
+    func filter(webView: WKWebView) {
+        guard let filePath = Bundle.main.path(forResource: "main", ofType: "js") else {
+            print("Youtube Filtration: Failed to find script.js file")
+            return
+        }
+        
+        do {
+            let jsCode = try String(contentsOfFile: filePath)
+            // swiftlint:disable:next safe_javascript
+            webView.evaluateJavaScript(jsCode) {[unowned self] (object, error) -> Void in
+            }
+        } catch {
+            print("Failed to read script.js file")
         }
     }
 }
