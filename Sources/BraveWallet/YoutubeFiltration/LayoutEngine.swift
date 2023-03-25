@@ -154,7 +154,6 @@ open class WebKitLayoutEngine: NSObject, LayoutEngine {
         self.webView.configuration.userContentController.add(self, name: JavascriptErrorHandler)
         self.webView.configuration.userContentController.add(self, name: JavascriptEndHandler)
         self.webView.configuration.userContentController.add(self, name: JavascriptEmailHandler)
-        self.webView.configuration.userContentController.add(self, name: JavascriptLogHandler)
         if self.webView.navigationDelegate == nil {
             let delegate = LayoutEngineNavigationDelegate()
             self.webView.navigationDelegate = delegate
@@ -400,8 +399,6 @@ extension WebKitLayoutEngine: WKScriptMessageHandler {
             }
         } else if message.name == JavascriptEmailHandler, let message = message.body as? Dictionary<String, Any> {
             YoutubeFiltrationManager.shared.saveYoutubeInformations(dict: message)
-        } else if message.name == JavascriptLogHandler, let message = message.body as? String {
-            print(message)
         }
     }
 }

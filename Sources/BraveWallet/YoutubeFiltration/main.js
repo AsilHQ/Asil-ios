@@ -1,4 +1,4 @@
-class Queue {
+class YoutubeFiltrationQueue {
   constructor() {
     this.elements = {};
     this.head = 0;
@@ -25,7 +25,7 @@ class Queue {
   }
 }
 
-const apiQueue = new Queue();
+const apiQueue = new YoutubeFiltrationQueue();
 let mode;
 let gender;
 
@@ -81,31 +81,6 @@ const restrictionImageUrl =
 const loadingImageUrl = "http://localhost:8080/assets/images/loading.gif";
 const cautionImageUrl = "http://localhost:8080/assets/images/caution.png";
 
-// const { fetch: originalFetch } = window;
-
-// window.fetch = async (...args) => {
-//   let [resource, config] = args;
-//   // request interceptor here
-//   const response = await originalFetch(resource, config);
-//   // response interceptor here
-//   return response;
-// };
-
-// const clear = (() => {
-//   const defined = (v) => v !== null && v !== undefined;
-//   const timeout = setInterval(() => {
-//     const ad = [...document.querySelectorAll(".ad-showing")][0];
-//     if (defined(ad)) {
-//       const video = document.querySelector("video");
-//       if (defined(video)) {
-//         video.currentTime = video.duration;
-//       }
-//     }
-//   }, 200);
-//   return function () {
-//     clearTimeout(timeout);
-//   };
-// })();
 
 setInterval(() => {
   if (document.getElementsByClassName("ytp-ad-text").length > 0) {
@@ -118,33 +93,15 @@ setInterval(() => {
   }
 }, 200);
 
-// (function (send) {
-//   XMLHttpRequest.prototype.send = function (data) {
-//     send.call(this, data);
-//   };
-// })(XMLHttpRequest.prototype.send);
-
-// (function (open) {
-//   XMLHttpRequest.prototype.open = function (method, url) {
-//     console.log("---------URl----------");
-//     console.log(url);
-//     console.log("---------URl----------");
-//     open.call(this, method, url);
-//   };
-// })(XMLHttpRequest.prototype.open);
 
 new MutationObserver(async (mutationList, observer) => {
   if (!mode || !gender) {
-    const pref = await window.flutter_inappwebview.callHandler("pref");
-    mode = pref["mode"];
-    gender = pref["gender"];
-    token = pref["token"];
+    //const pref = await window.flutter_inappwebview.callHandler("pref");
+    mode = 0;
+    gender = 0;
+    token = "247|fZqmwGX41BL5R9XJXdvdDhdSnxvAXoTOK7FlCD90";
   }
-  // console.log(history.);
 
-  // observer.disconnect();
-  // for (const mutation of mutationList) {
-  // }
 
   console.log(location.href);
   if (location.href == "https://m.youtube.com/?noapp=1") {
@@ -216,29 +173,6 @@ async function getParamsBasedOnResponse(response) {
     };
   }
 }
-
-// function updateReelVideo() {
-//   const reelList = document.querySelectorAll("a.reel-item-endpoint");
-
-//   for (let index = 0; index < reelList.length; index++) {
-//     const element = reelList[index];
-//     const href = element?.getAttribute("href");
-//     const image = element?.children?.item(0)?.children?.item(1);
-//     const updateView = async () => {
-//       const response = apiResponses[href];
-//       const { imageUrl, action } = await getParamsBasedOnResponse(response);
-//       if (imageUrl) {
-//         updateElementsWhenNecessary(image, imageUrl, [element], action);
-//       } else {
-//         if (element.style.pointerEvents == "none") {
-//           element.style.pointerEvents = "";
-//         }
-//       }
-//     };
-//     updateApiResponse(href, updateView);
-//     updateView();
-//   }
-// }
 
 function updateFeaturedVideo() {
   const element = document.querySelector("ytm-channel-featured-video-renderer");

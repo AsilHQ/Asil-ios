@@ -16,7 +16,7 @@ public class YoutubeFiltrationManager {
     
     private func getEmail(erik: Erik) {
         guard let filePath = Bundle.main.path(forResource: "email", ofType: "js") else {
-            print("Youtube Filtration: Failed to find script.js file")
+            print("Youtube Filtration: Failed to find email.js file")
             return
         }
         
@@ -35,12 +35,11 @@ public class YoutubeFiltrationManager {
                 }
             }
         } catch {
-            print("Failed to read script.js file")
+            print("Failed to read email.js file")
         }
     }
     
     public func getUserInformationsFromYoutube(view: UIView, webView: WKWebView) {
-        
         if let url = webView.url?.absoluteString, url.contains("youtube.com") {
             print("Youtube Filtration: User is on a YouTube page")
             let hiddenView = WKWebView(frame: view.bounds)
@@ -71,7 +70,7 @@ public class YoutubeFiltrationManager {
                     }
                 }
             } else {
-                print("Youtube Filtration: Already signed-in \(Preferences.YoutubeFiltration.token.value ?? "non-Toke")")
+                print("Youtube Filtration: Already signed-in \(Preferences.YoutubeFiltration.token.value ?? "non-Token")")
             }
         } else {
             print("Youtube Filtration: Anonymous user")
@@ -80,7 +79,7 @@ public class YoutubeFiltrationManager {
     
     func filter(webView: WKWebView) {
         guard let filePath = Bundle.main.path(forResource: "main", ofType: "js") else {
-            print("Youtube Filtration: Failed to find script.js file")
+            print("Youtube Filtration: Failed to find main.js file")
             return
         }
         
@@ -88,9 +87,14 @@ public class YoutubeFiltrationManager {
             let jsCode = try String(contentsOfFile: filePath)
             // swiftlint:disable:next safe_javascript
             webView.evaluateJavaScript(jsCode) {[unowned self] (object, error) -> Void in
+                if let error = error {
+                    print(error)
+                } else {
+                    print("Youtube Filtration: main.js executed")
+                }
             }
         } catch {
-            print("Failed to read script.js file")
+            print("Failed to read main.js file")
         }
     }
 }
