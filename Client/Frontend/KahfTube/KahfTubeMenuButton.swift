@@ -23,14 +23,7 @@ struct KahfTubeMenuButton: View {
         .labelsHidden()
         .toggleStyle(SwitchToggleStyle(tint: .accentColor))
         .onChange(of: kafhTubeIsOn.value) { value in
-            if kafhTubeIsOn.value == false {
-                Preferences.KahfTube.token.value = nil
-                Preferences.KahfTube.email.value = ""
-                Preferences.KahfTube.username.value = ""
-                Preferences.KahfTube.imageURL.value = ""
-                Preferences.KahfTube.gender.value = 0
-                Preferences.KahfTube.mode.value = 0
-            }
+            KahfTubeManager.shared.reload()
         }
     }
     .padding(.trailing, 14)

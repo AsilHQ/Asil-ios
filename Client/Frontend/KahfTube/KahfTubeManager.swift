@@ -11,6 +11,7 @@ import BraveShared
 public class KahfTubeManager {
     public static var shared = KahfTubeManager()
     private let webRepository = KahfTubeWebRepository()
+    private static var webView: WKWebView?
     
     private func getEmail(erik: Erik) {
         guard let filePath = Bundle.main.path(forResource: "email", ofType: "js") else {
@@ -38,6 +39,7 @@ public class KahfTubeManager {
     }
     
     public func startKahfTube(view: UIView, webView: WKWebView, vc: UIViewController) {
+        KahfTubeManager.webView = webView
         if let url = webView.url?.absoluteString, url.contains("youtube.com") {
             print("Kahf Tube: User is on a YouTube page")
             if Preferences.KahfTube.isOn.value {
@@ -106,7 +108,6 @@ public class KahfTubeManager {
                 let jsCode1 = """
                         new MutationObserver(async (mutationList, observer) => {
                           if (!mode || !gender) {
-                            //const pref = await window.flutter_inappwebview.callHandler("pref");
                             mode = "\(Preferences.KahfTube.mode.value ?? 0)";
                             gender = "\(Preferences.KahfTube.gender.value ?? 0)";
                             token = "\(token)";
@@ -155,5 +156,9 @@ public class KahfTubeManager {
         } catch {
             print("Kahf Tube: Failed to read main.js file")
         }
+    }
+    
+    public func reload() {
+        DispatchQueue.main.async {KahfTubeManager.webView?.reload()}
     }
 }
