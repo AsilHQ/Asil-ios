@@ -70,26 +70,29 @@ public class KahfTubeManager {
         let erik = Erik(webView: hiddenView)
         erik.visit(url: URL(string: "https://m.youtube.com")!) { object, error in
             self.getEmail(erik: erik)
-            self.filter(webView: webView)
         }
     }
     
     func saveYoutubeInformations(dict: [String: Any]) {
         if let email = dict["email"] as? String, let name = dict["name"] as? String, let imgSrc = dict["imgSrc"] as? String {
             if email != Preferences.KahfTube.email.value || Preferences.KahfTube.token.value == nil || Preferences.KahfTube.token.value == "" {
-                print("Kahf Tube: Successfully signed-in")
                 webRepository.authSession(email: email, name: name) { dict, error in
                     if let dict = dict, let token = dict["token"] {
                         Preferences.KahfTube.email.value = email
                         Preferences.KahfTube.username.value = name
                         Preferences.KahfTube.imageURL.value = imgSrc
                         Preferences.KahfTube.token.value = token
+                        print("Kahf Tube: Successfully signed-in")
+                        DispatchQueue.main.async {
+                            KahfTubeManager.webView?.load(URLRequest(url: URL(string: "https://m.youtube.com/")!))
+                        }
                     } else {
                         print("Kahf Tube: Auth failed")
                     }
                 }
             } else {
                 print("Kahf Tube: Already signed-in \(Preferences.KahfTube.token.value ?? "non-Token")")
+                self.filter(webView: KahfTubeManager.webView!)
             }
         } else {
             print("Kahf Tube: Anonymous user")
@@ -108,8 +111,8 @@ public class KahfTubeManager {
                 let jsCode1 = """
                         new MutationObserver(async (mutationList, observer) => {
                           if (!mode || !gender) {
-                            mode = "\(Preferences.KahfTube.mode.value ?? 0)";
-                            gender = "\(Preferences.KahfTube.gender.value ?? 0)";
+                            mode = \(Preferences.KahfTube.mode.value ?? 0);
+                            gender = \(Preferences.KahfTube.gender.value ?? 0);
                             token = "\(token)";
                           }
 
