@@ -30,7 +30,7 @@ public class KahfTubeManager {
                         print("\(error)")
                     }
                 } else {
-                    print("Kahf Tube: Script worked successfully")
+                    print("Kahf Tube: email.js worked successfully")
                 }
             }
         } catch {
@@ -141,11 +141,11 @@ public class KahfTubeManager {
                """
                 webView.evaluateSafeJavaScript(functionName: jsCode1, contentWorld: .page, asFunction: false) { object, error in
                     if let error = error {
-                        print(error)
+                        print("Kahf Tube: \(error)")
                     } else {
                         webView.evaluateSafeJavaScript(functionName: jsCode, contentWorld: .page, asFunction: false) {(object, error) -> Void in
                             if let error = error {
-                                print(error)
+                                print("Kahf Tube: \(error)")
                             } else {
                                 print("Kahf Tube: main.js executed")
                             }
@@ -159,6 +159,9 @@ public class KahfTubeManager {
     }
     
     public func reload() {
-        DispatchQueue.main.async {KahfTubeManager.webView?.reload()}
+        DispatchQueue.main.async {
+            KahfTubeManager.webView?.reload()
+            print("Kahf Tube: Reload ----------------------------------------------------------------")
+        }
     }
 }
