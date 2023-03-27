@@ -7,13 +7,13 @@ import Foundation
 @_exported import Strings
 
 extension Strings {
-    public struct YoutubeFiltration {
-        public static let youtubeFiltrationTitle = NSLocalizedString(
-            "youtubeFiltration.module",
-            tableName: "YoutubeFiltration",
+    public struct KahfTube {
+        public static let kahfTubeTitle = NSLocalizedString(
+            "kahfTube.module",
+            tableName: "KahfTube",
             bundle: .module,
-            value: "Youtube Filtration",
-            comment: "The title shown on the Youtube Filtration settings page"
+            value: "Kahf Tube",
+            comment: "The title shown on the Kahf Tube settings page"
         )
     }
 }

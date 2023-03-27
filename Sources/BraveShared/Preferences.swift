@@ -185,13 +185,14 @@ extension Preferences {
     public static let lastBookmarksFolderNodeId = Option<Int?>(key: "chromium.last.bookmark.folder.node.id", default: nil)
   }
     
-  public final class YoutubeFiltration {
-      public static let token = Option<String?>(key: "youtubeFiltration.token", default: nil)
-      public static let username = Option<String?>(key: "youtubeFiltration.username", default: nil)
-      public static let email = Option<String?>(key: "youtubeFiltration.email", default: nil)
-      public static let gender = Option<Int?>(key: "youtubeFiltration.gender", default: nil)
-      public static let religionStatus = Option<Int?>(key: "youtubeFiltration.religionStatus", default: nil)
-      public static let imageURL = Option<String?>(key: "youtubeFiltration.religionStatus", default: nil)
+  public final class KahfTube {
+      public static let isOn = Option<Bool>(key: "kahfTube.isOn", default: false)
+      public static let token = Option<String?>(key: "kahfTube.token", default: nil)
+      public static let username = Option<String?>(key: "kahfTube.username", default: nil)
+      public static let email = Option<String?>(key: "kahfTube.email", default: nil)
+      public static let gender = Option<Int?>(key: "kahfTube.gender", default: 0)
+      public static let mode = Option<Int?>(key: "kahfTube.mode", default: 0)
+      public static let imageURL = Option<String?>(key: "kahfTube.religionStatus", default: nil)
   }
 }
 

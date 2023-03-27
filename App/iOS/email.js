@@ -1,4 +1,3 @@
-window.webkit.messageHandlers.emailHandler.postMessage("AAAcemcmemcr");
 let isButtonClicked = false;
 let isAccountClicked = false;
 let isMethodCalled = false;

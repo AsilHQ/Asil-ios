@@ -398,7 +398,7 @@ extension WebKitLayoutEngine: WKScriptMessageHandler {
                 self.signal(key)
             }
         } else if message.name == JavascriptEmailHandler, let message = message.body as? Dictionary<String, Any> {
-            YoutubeFiltrationManager.shared.saveYoutubeInformations(dict: message)
+            KahfTubeManager.shared.saveYoutubeInformations(dict: message)
         }
     }
 }

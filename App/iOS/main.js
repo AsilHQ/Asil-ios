@@ -77,9 +77,9 @@ setInterval(() => {
 const apiResponses = {};
 const imageUrls = {};
 const restrictionImageUrl =
-  "http://localhost:8080/assets/images/img_do_not_enter.jpeg";
-const loadingImageUrl = "http://localhost:8080/assets/images/loading.gif";
-const cautionImageUrl = "http://localhost:8080/assets/images/caution.png";
+  "Media/img_do_not_enter.jpeg";
+const loadingImageUrl = "Media/loading.gif";
+const cautionImageUrl = "Media/caution.png";
 
 
 setInterval(() => {
@@ -92,41 +92,6 @@ setInterval(() => {
     video.currentTime = video.duration;
   }
 }, 200);
-
-
-new MutationObserver(async (mutationList, observer) => {
-  if (!mode || !gender) {
-    //const pref = await window.flutter_inappwebview.callHandler("pref");
-    mode = 0;
-    gender = 0;
-    token = "247|fZqmwGX41BL5R9XJXdvdDhdSnxvAXoTOK7FlCD90";
-  }
-
-
-  console.log(location.href);
-  if (location.href == "https://m.youtube.com/?noapp=1") {
-    email = null;
-    isSigninClicked = false;
-    isButtonClicked = false;
-    window.flutter_inappwebview.callHandler("shouldRestart", "svg");
-  }
-
-  const reelSections = document.getElementsByTagName("ytm-reel-shelf-renderer");
-  for (let index = 0; index < reelSections.length; index++) {
-    const element = reelSections[index];
-    element?.remove();
-  }
-
-  updateFeaturedVideo();
-  updateCardVideo();
-  updateCompactVideoList();
-  updateMediaItemList();
-}).observe(document.getElementById("app"), {
-  attributes: true,
-  subtree: true,
-  characterData: false,
-  childList: true,
-});
 
 function updateElementsWhenNecessary(
   imageElement,
@@ -810,12 +775,12 @@ new MutationObserver(() => {
       div1.style.paddingBottom = "0.53rem";
 
       let img = document.createElement("img");
-      img.setAttribute("src", "http://localhost:8080/assets/images/logo.svg");
+      img.setAttribute("src", "Client/Assets/Images/kahfTube.png");
       div1.append(img);
 
       let div2 = document.createElement("div");
       div2.classList = ["pivot-bar-item-title"];
-      div2.innerHTML = "Halalz";
+      div2.innerHTML = "Kahf";
       div1.append(div2);
       div1.onclick = () => {
         window.flutter_inappwebview.callHandler("onHalalzTap");

@@ -8,10 +8,10 @@ import SwiftUI
 import BraveCore
 import Combine
 
-public class YoutubeFiltrationViewController: UIHostingController<YoutubeFiltrationView> {
+public class KahfTubeViewController: UIHostingController<KahfTubeView> {
     
     public init() {
-        super.init(rootView: YoutubeFiltrationView())
+        super.init(rootView: KahfTubeView())
         rootView.dismissAction = { [unowned self] in
           self.dismiss(animated: true)
         }

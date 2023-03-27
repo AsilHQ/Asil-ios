@@ -11,8 +11,8 @@ import Introspect
 import BraveUI
 import BraveShared
 
-public struct YoutubeFiltrationView: View {
-    @ObservedObject private var token = Preferences.YoutubeFiltration.token
+public struct KahfTubeView: View {
+    @ObservedObject private var token = Preferences.KahfTube.token
     // in iOS 15, PresentationMode will be available in SwiftUI hosted by UIHostingController
     // but for now we'll have to manage this ourselves
     var dismissAction: (() -> Void)?
@@ -23,7 +23,7 @@ public struct YoutubeFiltrationView: View {
     }
     
     private var visibleScreen: VisibleScreen {
-        if Preferences.YoutubeFiltration.token.value == nil || Preferences.YoutubeFiltration.token.value == "" {
+        if Preferences.KahfTube.token.value == nil || Preferences.KahfTube.token.value == "" {
             return .onboarding
         } else {
             return .profile
@@ -48,7 +48,7 @@ public struct YoutubeFiltrationView: View {
             switch visibleScreen {
             case .profile:
                 UIKitNavigationView {
-                    YoutubeFiltrationProfileView(dismissAction: dismissAction)
+                    KahfTubeProfileView(dismissAction: dismissAction)
                     .toolbar {
                       dismissButtonToolbarContents
                     }
@@ -64,7 +64,7 @@ public struct YoutubeFiltrationView: View {
 #if DEBUG
 struct YoutubeFiltrationView_Previews: PreviewProvider {
     static var previews: some View {
-        YoutubeFiltrationView()
+        KahfTubeView()
     }
 }
 #endif

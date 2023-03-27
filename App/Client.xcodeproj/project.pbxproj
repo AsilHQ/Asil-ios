@@ -39,8 +39,8 @@
 		2F6931B7260CFB3700ECEB38 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6931B6260CFB3700ECEB38 /* IntentHandler.swift */; };
 		2F6931BB260CFB3700ECEB38 /* BrowserIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F6931B4260CFB3700ECEB38 /* BrowserIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		441A6360272445F9001492C3 /* StatDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441A635F272444DE001492C3 /* StatDataModel.swift */; };
-		4E35DDE429C9F7A2004087DE /* email.js in Resources */ = {isa = PBXBuildFile; fileRef = 4E35DDE329C9F7A2004087DE /* email.js */; };
-		4E97604229CD77BE00F32E83 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 4E97604129CD77BE00F32E83 /* main.js */; };
+		4E2DEAC329D1C83300219024 /* email.js in Resources */ = {isa = PBXBuildFile; fileRef = 4E2DEAC129D1C7C300219024 /* email.js */; };
+		4E79F82429D1C8FB005B6A2D /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 4E79F82329D1C8FB005B6A2D /* main.js */; };
 		4EB430F829C9E5BB00290375 /* Kanna in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB430F729C9E5BB00290375 /* Kanna */; };
 		5E8CD8E123D5E3DA00548FC0 /* libarchive.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8CD8E023D5E3D100548FC0 /* libarchive.2.tbd */; };
 		5EE5918123A290E000E8E8DE /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F926647A234D4EF400359492 /* CoreNFC.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -210,8 +210,8 @@
 		445ABC2327319C270089710D /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/BraveWidgets.strings; sourceTree = "<group>"; };
 		445ABC2527319C290089710D /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/BraveWidgets.strings; sourceTree = "<group>"; };
 		4484BAF02654227A0099A205 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4E35DDE329C9F7A2004087DE /* email.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = email.js; path = ../Sources/BraveWallet/YoutubeFiltration/email.js; sourceTree = "<group>"; };
-		4E97604129CD77BE00F32E83 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = main.js; path = ../Sources/BraveWallet/YoutubeFiltration/main.js; sourceTree = "<group>"; };
+		4E2DEAC129D1C7C300219024 /* email.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = email.js; sourceTree = "<group>"; };
+		4E79F82329D1C8FB005B6A2D /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		5929A9F121B6AEF7005ECF8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59B6912221B695A400E9388E /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59B6914221B695C200E9388E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -376,6 +376,8 @@
 		270ECFC9283824F00089B8B7 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4E79F82329D1C8FB005B6A2D /* main.js */,
+				4E2DEAC129D1C7C300219024 /* email.js */,
 				27D67619282DA10700BCE16E /* Icons.xcassets */,
 				F84B22431A09165600AAB793 /* Info.plist */,
 				27FA21902838018E00FA2C45 /* InfoPlist.strings */,
@@ -491,8 +493,6 @@
 		F84B21B51A090F8100AAB793 = {
 			isa = PBXGroup;
 			children = (
-				4E97604129CD77BE00F32E83 /* main.js */,
-				4E35DDE329C9F7A2004087DE /* email.js */,
 				270ECFC628381E270089B8B7 /* brave-ios */,
 				27D67621282DAD3700BCE16E /* BrowserIntents.intentdefinition */,
 				0A60A1882358AF9E00953CA8 /* Brave.xctestplan */,
@@ -755,11 +755,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E97604229CD77BE00F32E83 /* main.js in Resources */,
-				4E35DDE429C9F7A2004087DE /* email.js in Resources */,
 				0A5E04F923FEADA800E5A3E9 /* LaunchScreen.storyboard in Resources */,
 				27FA21A42838019000FA2C45 /* InfoPlist.strings in Resources */,
 				0A5E04FB23FEB53700E5A3E9 /* LaunchScreen.xcassets in Resources */,
+				4E2DEAC329D1C83300219024 /* email.js in Resources */,
+				4E79F82429D1C8FB005B6A2D /* main.js in Resources */,
 				27D6761A282DA10700BCE16E /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

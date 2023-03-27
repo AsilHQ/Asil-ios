@@ -6,38 +6,38 @@
 import SwiftUI
 import BraveShared
 
-struct YoutubeFiltrationProfileView: View {
-    let genders = ["Male", "Female", "Non-Binary"]
-    let religionStatus = ["Practicing Muslim", "B", "C"]
-    @State private var genderSelection: Int = Preferences.YoutubeFiltration.gender.value ?? 0
-    @State private var religionSelection: Int = Preferences.YoutubeFiltration.religionStatus.value ?? 0
-    @State private var profilePicture: UIImage?
+struct KahfTubeProfileView: View {
+    let genders = ["Male", "Female", "Child"]
+    let religionStatus = ["Practicing Muslim", "Liberal Muslim", "Moderate Muslim"]
+    @State private var genderSelection: Int = Preferences.KahfTube.gender.value ?? 0
+    @State private var religionSelection: Int = Preferences.KahfTube.mode.value ?? 0
+    @State private var profileImageUrl: String = Preferences.KahfTube.imageURL.value ?? ""
     var dismissAction: (() -> Void)?
     
     var body: some View {
         VStack {
-            Circle()
-            .frame(width: 100.0, height: 100.0)
-            .overlay(RoundedRectangle(cornerRadius: 50.0)
-            .strokeBorder(Color.black, style: StrokeStyle(lineWidth: 0.5)))
-            .padding(.vertical, 30)
+            if #available(iOS 15.0, *) {
+                AsyncImage(url: URL(string: profileImageUrl))
+                    .clipShape(Circle())
+                    .padding(.vertical, 30)
+            } else {
+                Circle()
+                .frame(width: 100.0, height: 100.0)
+                .overlay(RoundedRectangle(cornerRadius: 50.0)
+                .strokeBorder(Color.black, style: StrokeStyle(lineWidth: 0.5)))
+                .padding(.vertical, 30)
+            }
             
             Form {
                 Section(header: Text("Name")) {
-                    Text(Preferences.YoutubeFiltration.username.value ?? "")
+                    Text(Preferences.KahfTube.username.value ?? "")
                 }
                 
                 Section(header: Text("Connected Account")) {
                     HStack {
-                        Text(Preferences.YoutubeFiltration.email.value ?? "")
+                        Text(Preferences.KahfTube.email.value ?? "")
                         
                         Spacer()
-                        
-                        Button {
-                            
-                        } label: {
-                            Text("Change")
-                        }
                     }
                 }
                 
@@ -56,12 +56,12 @@ struct YoutubeFiltrationProfileView: View {
                 }
             }
         }
-        .navigationTitle(Strings.YoutubeFiltration.youtubeFiltrationTitle)
+        .navigationTitle(Strings.KahfTube.kahfTubeTitle)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             Button {
-                Preferences.YoutubeFiltration.gender.value = genderSelection
-                Preferences.YoutubeFiltration.religionStatus.value = religionSelection
+                Preferences.KahfTube.gender.value = genderSelection
+                Preferences.KahfTube.mode.value = religionSelection
                 dismissAction?()
             } label: {
                 Text("Save")
@@ -73,7 +73,7 @@ struct YoutubeFiltrationProfileView: View {
 #if DEBUG
 struct YoutubeFiltrationProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        YoutubeFiltrationProfileView()
+        KahfTubeProfileView()
     }
 }
 #endif

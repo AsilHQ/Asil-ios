@@ -39,9 +39,7 @@ extension BrowserViewController {
         .padding(.horizontal, 14)
         .padding(.bottom, 5)
       
-      MenuItemFactory.button(for: .youtubeFiltration) { [unowned self] in
-          presentYoutubeFiltrationSettingsView()
-      }
+        KahfTubeMenuButton(dismiss: presentYoutubeFiltrationSettingsView)
     }
     .fixedSize(horizontal: false, vertical: true)
     .padding(.top, 10)
@@ -129,7 +127,7 @@ extension BrowserViewController {
   }
     
   func presentYoutubeFiltrationSettingsView() {
-      let vc = YoutubeFiltrationViewController()
+      let vc = KahfTubeViewController()
       self.dismiss(animated: true) {
         self.present(vc, animated: true)
       }

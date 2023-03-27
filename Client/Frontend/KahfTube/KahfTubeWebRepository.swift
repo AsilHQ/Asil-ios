@@ -1,15 +1,13 @@
-//
-//  YoutubeFiltrationWebRepository.swift
-//  
-//
-//  Created by Cem Sertkaya on 23.03.2023.
-//
+// Copyright 2023 The Asil Browser Authors. All rights reserved.
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import Foundation
 
-public class YoutubeFiltrationWebRepository {
+public class KahfTubeWebRepository {
     
-    public static var shared = YoutubeFiltrationWebRepository()
+    public static var shared = KahfTubeWebRepository()
     
     func authSession(email: String, name: String, completion: @escaping ([String: String]?, Error?) -> Void) {
         register(email: email, name: name) { dict, error in
