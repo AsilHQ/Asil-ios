@@ -190,8 +190,8 @@ extension Preferences {
       public static let token = Option<String?>(key: "kahfTube.token", default: nil)
       public static let username = Option<String?>(key: "kahfTube.username", default: nil)
       public static let email = Option<String?>(key: "kahfTube.email", default: nil)
-      public static let gender = Option<Int?>(key: "kahfTube.gender", default: 0)
-      public static let mode = Option<Int?>(key: "kahfTube.mode", default: 0)
+      public static let gender = Option<Int?>(key: "kahfTube.gender", default: nil)
+      public static let mode = Option<Int?>(key: "kahfTube.mode", default: nil)
       public static let imageURL = Option<String?>(key: "kahfTube.religionStatus", default: nil)
   }
 }

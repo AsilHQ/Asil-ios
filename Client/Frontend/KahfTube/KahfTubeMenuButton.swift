@@ -19,9 +19,9 @@ struct KahfTubeMenuButton: View {
     HStack {
       MenuItemFactory.button(for: .kafhTube, completion: dismiss)
       Spacer()
-      Toggle("", isOn: $kafhTubeIsOn.value)
+        Toggle("", isOn: $kafhTubeIsOn.value)
         .labelsHidden()
-        .toggleStyle(SwitchToggleStyle(tint: .accentColor))
+        .toggleStyle(SwitchToggleStyle(tint: Color(UIColor(colorString: "#A242FF"))))
         .onChange(of: kafhTubeIsOn.value) { value in
             KahfTubeManager.shared.reload()
         }

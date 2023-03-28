@@ -766,27 +766,6 @@ new MutationObserver(() => {
     if (element?.innerText.includes("Shorts")) {
       element?.remove();
 
-      let div1 = document.createElement("div");
-
-      div1.setAttribute("role", "tab"),
-        div1.setAttribute("aria-selected", false),
-        (div1.classList = ["pivot-bar-item-tab pivot-library"]);
-      div1.style.paddingTop = "0.53rem";
-      div1.style.paddingBottom = "0.53rem";
-
-      let img = document.createElement("img");
-      img.setAttribute("src", "Client/Assets/Images/kahfTube.png");
-      div1.append(img);
-
-      let div2 = document.createElement("div");
-      div2.classList = ["pivot-bar-item-title"];
-      div2.innerHTML = "Kahf";
-      div1.append(div2);
-      div1.onclick = () => {
-        window.flutter_inappwebview.callHandler("onHalalzTap");
-      };
-      const tabContainer = document.querySelector("ytm-pivot-bar-renderer");
-      tabContainer.append(div1);
     }
   }
 

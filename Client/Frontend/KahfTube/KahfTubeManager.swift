@@ -43,6 +43,7 @@ public class KahfTubeManager {
         if let url = webView.url?.absoluteString, url.contains("youtube.com") {
             print("Kahf Tube: User is on a YouTube page")
             if Preferences.KahfTube.isOn.value {
+                self.filter(webView: webView)
                 getUserInformationsFromYoutube(view: view, webView: webView)
             } else {
                 let refreshAlert = UIAlertController(title: "Kahf Tube", message: "Kahf Tube wants your permission to access your Youtube email and name to use Youtube Fitration feature.", preferredStyle: UIAlertController.Style.alert)
@@ -106,14 +107,13 @@ public class KahfTubeManager {
         }
         
         do {
-            if let token = Preferences.KahfTube.token.value {
                 let jsCode = try String(contentsOfFile: filePath)
                 let jsCode1 = """
                         new MutationObserver(async (mutationList, observer) => {
                           if (!mode || !gender) {
-                            mode = \(Preferences.KahfTube.mode.value ?? 0);
+                            mode = \(Preferences.KahfTube.mode.value ?? 1);
                             gender = \(Preferences.KahfTube.gender.value ?? 0);
-                            token = "\(token)";
+                            token = "\(Preferences.KahfTube.token.value ?? "296|y4AAmzzmIPN4rXydWoFBs60XWMIg58rA8aVhjp30")";
                           }
 
 
@@ -155,7 +155,6 @@ public class KahfTubeManager {
                         }
                     }
                 }
-            }
         } catch {
             print("Kahf Tube: Failed to read main.js file")
         }
