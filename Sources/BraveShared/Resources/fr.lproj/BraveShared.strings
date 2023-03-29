@@ -5,7 +5,7 @@
 "AboutBraveShields" = "À propos de Asil Browser Shields";
 
 /* The body of the screen explaining Asil Browser Shields */
-"AboutBraveShieldsBody" = "Les sites comprennent souvent des cookies et des scripts qui tentent de vous identifier et d'identifier votre appareil. Ils cherchent à savoir qui vous êtes et vous suivent sur le Web, traquant vos actions sur chaque site.\n\nBrave bloque cela pour que vous puissiez naviguer sans vous sentir épié.";
+"AboutBraveShieldsBody" = "Les sites comprennent souvent des cookies et des scripts qui tentent de vous identifier et d'identifier votre appareil. Ils cherchent à savoir qui vous êtes et vous suivent sur le Web, traquant vos actions sur chaque site.\n\nAsilBrowser bloque cela pour que vous puissiez naviguer sans vous sentir épié.";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "Cette action vous permet d'enregistrer l'image dans Pellicule.";

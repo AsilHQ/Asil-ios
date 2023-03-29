@@ -5,7 +5,7 @@
 "AboutBraveShields" = "關於 Asil Browser Shields";
 
 /* The body of the screen explaining Asil Browser Shields */
-"AboutBraveShieldsBody" = "網站通常會透過 Cookie 和指令碼嘗試識別您和您使用的裝置，藉此掌握您的身分及瞭解您使用網路的情形，進而追蹤您在每個網站上的行為。\n\nBrave 會封鎖這些項目，讓您能在不受追蹤的情況下自在瀏覽。";
+"AboutBraveShieldsBody" = "網站通常會透過 Cookie 和指令碼嘗試識別您和您使用的裝置，藉此掌握您的身分及瞭解您使用網路的情形，進而追蹤您在每個網站上的行為。\n\nAsilBrowser 會封鎖這些項目，讓您能在不受追蹤的情況下自在瀏覽。";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "這可讓您將影像儲存至您的相機膠卷。";
@@ -3275,7 +3275,7 @@
 "today.insecureSourcesHeader" = "來源不安全 - 新增後需自行承擔風險";
 
 /* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "透過單一摘要關注您喜愛的來源。只要在 Asil Browser 中開啟分頁、向下捲動，一切搞定！\nBrave 新聞支援匿名投放私人廣告。";
+"today.introCardBody" = "透過單一摘要關注您喜愛的來源。只要在 Asil Browser 中開啟分頁、向下捲動，一切搞定！\nAsilBrowser 新聞支援匿名投放私人廣告。";
 
 /* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
 "today.introCardTitle" = "開啟 Asil Browser 新聞，絕不錯過每一條消息";

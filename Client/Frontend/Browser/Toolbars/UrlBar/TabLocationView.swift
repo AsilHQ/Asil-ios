@@ -24,6 +24,7 @@ protocol TabLocationViewDelegate {
   func tabLocationViewDidTapRewardsButton(_ urlBar: TabLocationView)
   func tabLocationViewDidLongPressRewardsButton(_ urlBar: TabLocationView)
   func tabLocationViewDidTapWalletButton(_ urlBar: TabLocationView)
+  func topToolbarDidTapShareButton(_ urlBar: TabLocationView)
   
   /// - returns: whether the long-press was handled by the delegate; i.e. return `false` when the conditions for even starting handling long-press were not satisfied
   @discardableResult func tabLocationViewDidLongPressReaderMode(_ tabLocationView: TabLocationView) -> Bool
@@ -237,6 +238,15 @@ class TabLocationView: UIView {
     $0.isLayoutMarginsRelativeArrangement = true
     $0.insetsLayoutMarginsFromSafeArea = false
   }
+    
+  lazy var shareButton = ToolbarButton(top: true).then {
+      $0.accessibilityIdentifier = "TabToolbar.shareButton"
+      $0.isAccessibilityElement = true
+      $0.accessibilityLabel = Strings.tabToolbarShareButtonAccessibilityLabel
+      $0.setImage(UIImage(named: "nav-share", in: .module, compatibleWith: nil), for: .normal)
+      $0.tintColor = .braveLabel
+      $0.addTarget(self, action: #selector(didClickShareButton), for: .touchUpInside)
+  }
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -254,7 +264,7 @@ class TabLocationView: UIView {
     addGestureRecognizer(longPressRecognizer)
     addGestureRecognizer(tapRecognizer)
     
-    let optionSubviews = [readerModeButton, walletButton, reloadButton, separatorLine, shieldsButton, rewardsButton]
+    let optionSubviews = [readerModeButton, walletButton, shareButton, separatorLine, shieldsButton, rewardsButton]
     optionSubviews.forEach {
       ($0 as? UIButton)?.contentEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
       $0.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
@@ -413,6 +423,10 @@ class TabLocationView: UIView {
   @objc func tappedWalletButton() {
     delegate?.tabLocationViewDidTapWalletButton(self)
   }
+
+  @objc func didClickShareButton() {
+    delegate?.topToolbarDidTapShareButton(self)
+  }
   
   fileprivate func updateTextWithURL() {
     (urlTextField as? DisplayTextField)?.hostString = url?.withoutWWW.host ?? ""
@@ -425,7 +439,7 @@ class TabLocationView: UIView {
     // --
     // The requirement to remove scheme comes from Desktop. Also we do not remove the path like in other browsers either.
     // Therefore, we follow Brave Desktop instead of Chrome or Safari iOS
-    urlTextField.text = URLFormatter.formatURL(url?.withoutWWW.absoluteString ?? "", formatTypes: [.omitDefaults], unescapeOptions: []).removeSchemeFromURLString(url?.scheme)
+    urlTextField.text = URLFormatter.formatURL(url?.withoutWWW.absoluteString ?? "").removeSchemeFromURLString(url?.scheme)
   }
 }
 

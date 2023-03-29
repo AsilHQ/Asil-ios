@@ -5,7 +5,7 @@
 "AboutBraveShields" = "О щитах Asil Browser";
 
 /* The body of the screen explaining Asil Browser Shields */
-"AboutBraveShieldsBody" = "Чтобы распознавать пользователей и их устройства, сайты используют файлы cookie и скрипты. Это значит, что действия в Интернете могут отслеживаться.\n\nBrave защищает вашу конфиденциальность, поэтому блокирует скрипты и файлы cookie.";
+"AboutBraveShieldsBody" = "Чтобы распознавать пользователей и их устройства, сайты используют файлы cookie и скрипты. Это значит, что действия в Интернете могут отслеживаться.\n\nAsilBrowser защищает вашу конфиденциальность, поэтому блокирует скрипты и файлы cookie.";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "Это позволяет сохранять изображения в фотогалерее Camera Roll.";

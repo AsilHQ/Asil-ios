@@ -5,7 +5,7 @@
 "AboutBraveShields" = "Om Asil Browser-skjold";
 
 /* The body of the screen explaining Asil Browser Shields */
-"AboutBraveShieldsBody" = "Nettsteder inkluderer ofte informasjonskapsler og skript som prøver å identifisere deg og enheten din. De vil finne ut hvem du er og følge deg på nettet – spore hva du gjør på hvert nettsted.\n\nBrave blokkerer disse tingene slik at du kan surfe uten å bli forfulgt.";
+"AboutBraveShieldsBody" = "Nettsteder inkluderer ofte informasjonskapsler og skript som prøver å identifisere deg og enheten din. De vil finne ut hvem du er og følge deg på nettet – spore hva du gjør på hvert nettsted.\n\nAsilBrowser blokkerer disse tingene slik at du kan surfe uten å bli forfulgt.";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "Dette lar deg lagre bilder til kamerarullen.";
@@ -3275,7 +3275,7 @@
 "today.insecureSourcesHeader" = "Usikre kilder – legg til på egen risiko";
 
 /* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "Følg de mest interessante kildene direkte i din egen feed. Bare åpne en fane i Asil Browser, rull ned, og – voilà!\nBrave News er en annonsestøttet tjeneste med private og anonymiserte annonser.";
+"today.introCardBody" = "Følg de mest interessante kildene direkte i din egen feed. Bare åpne en fane i Asil Browser, rull ned, og – voilà!\nAsilBrowser News er en annonsestøttet tjeneste med private og anonymiserte annonser.";
 
 /* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
 "today.introCardTitle" = "Slå på Asil Browser News, og gå aldri glipp av de mest interessante nyhetene igjen!";

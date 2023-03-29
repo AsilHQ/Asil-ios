@@ -30,7 +30,7 @@ public class WelcomeBraveBlockedAdsController: UIViewController, PopoverContentC
 
   private let braveIconView = UIImageView().then {
     $0.contentMode = .scaleAspectFit
-    $0.image = UIImage(named: "welcome-view-ntp-logo", in: .module, compatibleWith: nil)
+    $0.image = UIImage(named: "welcome-view-icon", in: .module, compatibleWith: nil)
     $0.snp.makeConstraints {
       $0.size.equalTo(40)
     }
@@ -101,12 +101,15 @@ public class WelcomeBraveBlockedAdsController: UIViewController, PopoverContentC
     informationStackView.addBackground(color: .black.withAlphaComponent(0.1), cornerRadius: 6.0)
     footNoteStackView.addBackground(color: .black.withAlphaComponent(0.1), cornerRadius: 6.0)
 
-    view.addSubview(gradientView)
-    gradientView.snp.makeConstraints {
+
+    let viewBG = UIView()
+    viewBG.backgroundColor = UIColor.init(colorString: "#3161F1")
+    view.addSubview(viewBG)
+    viewBG.snp.makeConstraints {
       $0.edges.equalToSuperview()
     }
     
-    gradientView.addSubview(contentStackView)
+    viewBG.addSubview(contentStackView)
     contentStackView.snp.makeConstraints {
       $0.edges.equalToSuperview()
     }
