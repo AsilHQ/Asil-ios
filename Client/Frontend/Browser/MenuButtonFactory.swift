@@ -35,7 +35,7 @@ class MenuItemFactory {
         case .wallet(_):
           return UIImage(named: "menu-crypto", in: .module, compatibleWith: nil)!.template
         case .kafhTube:
-          return UIImage(named: "kahfTube", in: .module, compatibleWith: nil)!
+          return UIImage(named: "menu-kahf-tube", in: .module, compatibleWith: nil)!
       }
     }
     

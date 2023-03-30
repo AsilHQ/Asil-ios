@@ -69,7 +69,7 @@ public class KahfTubeManager {
         hiddenView.isHidden = true
         view.addSubview(hiddenView)
         let erik = Erik(webView: hiddenView)
-        erik.visit(url: URL(string: "https://m.youtube.com")!) { object, error in
+        erik.visit(url: URL(string: "https://m.youtube.com/select_site")!) { object, error in
             self.getEmail(erik: erik)
         }
     }
