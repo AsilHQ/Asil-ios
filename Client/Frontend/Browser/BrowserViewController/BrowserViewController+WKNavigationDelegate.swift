@@ -642,6 +642,8 @@ extension BrowserViewController: WKNavigationDelegate {
       if tab.walletEthProvider != nil {
         tab.emitEthereumEvent(.connect)
       }
+        
+        KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
     }
 
     // Added this method to determine long press menu actions better

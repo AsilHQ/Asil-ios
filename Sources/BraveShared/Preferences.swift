@@ -184,6 +184,16 @@ extension Preferences {
     /// Node Id for last bookmark folder
     public static let lastBookmarksFolderNodeId = Option<Int?>(key: "chromium.last.bookmark.folder.node.id", default: nil)
   }
+    
+  public final class KahfTube {
+      public static let isOn = Option<Bool>(key: "kahfTube.isOn", default: false)
+      public static let token = Option<String?>(key: "kahfTube.token", default: nil)
+      public static let username = Option<String?>(key: "kahfTube.username", default: nil)
+      public static let email = Option<String?>(key: "kahfTube.email", default: nil)
+      public static let gender = Option<Int?>(key: "kahfTube.gender", default: nil)
+      public static let mode = Option<Int?>(key: "kahfTube.mode", default: nil)
+      public static let imageURL = Option<String?>(key: "kahfTube.religionStatus", default: nil)
+  }
 }
 
 extension Preferences {
