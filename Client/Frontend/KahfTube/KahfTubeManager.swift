@@ -10,33 +10,9 @@ import BraveShared
 
 public class KahfTubeManager {
     public static var shared = KahfTubeManager()
-    private let webRepository = KahfTubeWebRepository()
+    private let webRepository = KahfTubeWebRepository.shared
+    private let util = KahfTubeUtil.shared
     private static var webView: WKWebView?
-    
-    private func getEmail(erik: Erik) {
-        guard let filePath = Bundle.main.path(forResource: "email", ofType: "js") else {
-            print("Kahf Tube: Failed to find email.js file")
-            return
-        }
-        
-        do {
-            let jsCode = try String(contentsOfFile: filePath)
-            erik.evaluate(javaScript: jsCode) { (obj, err) -> Void in
-                if let error = err {
-                    switch error {
-                    case ErikError.javaScriptError(let message):
-                        print(message)
-                    default:
-                        print("\(error)")
-                    }
-                } else {
-                    print("Kahf Tube: email.js worked successfully")
-                }
-            }
-        } catch {
-            print("Kahf Tube: Failed to read email.js file")
-        }
-    }
     
     public func startKahfTube(view: UIView, webView: WKWebView, vc: UIViewController) {
         KahfTubeManager.webView = webView
@@ -65,7 +41,7 @@ public class KahfTubeManager {
     }
     
     func getUserInformationsFromYoutube(view: UIView, webView: WKWebView) {
-        let hiddenView = WKWebView(frame: view.bounds)
+        let hiddenView = WKWebView(frame: CGRect(width: view.bounds.width, height: view.bounds.height - 100))
         hiddenView.isHidden = true
         view.addSubview(hiddenView)
         let erik = Erik(webView: hiddenView)
@@ -93,7 +69,6 @@ public class KahfTubeManager {
                 }
             } else {
                 print("Kahf Tube: Already signed-in \(Preferences.KahfTube.token.value ?? "non-Token")")
-                self.filter(webView: KahfTubeManager.webView!)
             }
         } else {
             print("Kahf Tube: Anonymous user")
@@ -101,48 +76,9 @@ public class KahfTubeManager {
     }
     
     func filter(webView: WKWebView) {
-        guard let filePath = Bundle.main.path(forResource: "main", ofType: "js") else {
-            print("Kahf Tube: Failed to find main.js file")
-            return
-        }
-        
-        do {
-                let jsCode = try String(contentsOfFile: filePath)
-                let jsCode1 = """
-                        new MutationObserver(async (mutationList, observer) => {
-                          if (!mode || !gender) {
-                            mode = \(Preferences.KahfTube.mode.value ?? 1);
-                            gender = \(Preferences.KahfTube.gender.value ?? 0);
-                            token = "\(Preferences.KahfTube.token.value ?? "296|y4AAmzzmIPN4rXydWoFBs60XWMIg58rA8aVhjp30")";
-                          }
-
-
-                          console.log(location.href);
-                          if (location.href == "https://m.youtube.com/?noapp=1") {
-                            email = null;
-                            isSigninClicked = false;
-                            isButtonClicked = false;
-                            window.flutter_inappwebview.callHandler("shouldRestart", "svg");
-                          }
-
-                          const reelSections = document.getElementsByTagName("ytm-reel-shelf-renderer");
-                          for (let index = 0; index < reelSections.length; index++) {
-                            const element = reelSections[index];
-                            element?.remove();
-                          }
-
-                          updateFeaturedVideo();
-                          updateCardVideo();
-                          updateCompactVideoList();
-                          updateMediaItemList();
-                        }).observe(document.getElementById("app"), {
-                          attributes: true,
-                          subtree: true,
-                          characterData: false,
-                          childList: true,
-                        });
-               """
-                webView.evaluateSafeJavaScript(functionName: jsCode1, contentWorld: .page, asFunction: false) { object, error in
+        util.jsFileToCode(path: "main") { code in
+            if let jsCode = code {
+                webView.evaluateSafeJavaScript(functionName: KahfJSGenerator.shared.getFilterJS(), contentWorld: .page, asFunction: false) { object, error in
                     if let error = error {
                         print("Kahf Tube: \(error)")
                     } else {
@@ -155,8 +91,7 @@ public class KahfTubeManager {
                         }
                     }
                 }
-        } catch {
-            print("Kahf Tube: Failed to read main.js file")
+            }
         }
     }
     

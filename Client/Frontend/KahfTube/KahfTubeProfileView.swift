@@ -54,6 +54,14 @@ struct KahfTubeProfileView: View {
                         }
                     }
                 }
+                
+                Section() {
+                    Button {
+                        
+                    } label: {
+                        Text("Unsubscribe Haram Channels")
+                    }
+                }
             }
         }
         .navigationTitle(Strings.KahfTube.kahfTubeTitle)
