@@ -165,7 +165,7 @@ extension Erik: JavaScriptEvaluator {
 // MARK: Erik static
 extension Erik {
     // Shared instance used for static functions
-    public static let sharedInstance = Erik()
+    public static var sharedInstance = Erik()
     
     public static func visit(url: Foundation.URL, completionHandler: DocumentCompletionHandler?) {
         Erik.sharedInstance.visit(url: url, completionHandler: completionHandler)

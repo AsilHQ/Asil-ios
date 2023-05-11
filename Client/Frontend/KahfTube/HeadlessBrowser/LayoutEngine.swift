@@ -53,7 +53,7 @@ let JavascriptErrorHandler = "erikError"
 let JavascriptEndHandler = "erikEnd"
 let JavascriptEmailHandler = "emailHandler"
 let JavascriptLogHandler = "logHandler"
-let JavascriptHaramHandler = "getHaramChannel"
+let JavascriptUnsubscribeHandler = "getUnsubscribedChannelsHandler"
 let JavascriptGetChannelsHandler = "getChannelsHandler"
 
 // Protocole which define a navigate boolean
@@ -155,8 +155,9 @@ open class WebKitLayoutEngine: NSObject, LayoutEngine {
         self.webView.configuration.userContentController.add(self, name: JavascriptErrorHandler)
         self.webView.configuration.userContentController.add(self, name: JavascriptEndHandler)
         self.webView.configuration.userContentController.add(self, name: JavascriptEmailHandler)
-        self.webView.configuration.userContentController.add(self, name: JavascriptHaramHandler)
+        self.webView.configuration.userContentController.add(self, name: JavascriptUnsubscribeHandler)
         self.webView.configuration.userContentController.add(self, name: JavascriptGetChannelsHandler)
+        self.webView.configuration.userContentController.add(self, name: JavascriptLogHandler)
         if self.webView.navigationDelegate == nil {
             let delegate = LayoutEngineNavigationDelegate()
             self.webView.navigationDelegate = delegate
@@ -402,12 +403,12 @@ extension WebKitLayoutEngine: WKScriptMessageHandler {
             }
         } else if message.name == JavascriptEmailHandler, let message = message.body as? Dictionary<String, Any> {
             KahfTubeManager.shared.saveYoutubeInformations(dict: message)
-        } else if message.name == JavascriptHaramHandler, let message = message.body as? String {
-            print("Kahf Tube: HARAM")
+        } else if message.name == JavascriptUnsubscribeHandler, let message = message.body as? Dictionary<String, Any> {
+            print("Kahf Tube: \(message)")
         } else if message.name == JavascriptLogHandler, let message = message.body as? String {
             print("Kahf Tube: Log: \(message)")
         } else if message.name == JavascriptGetChannelsHandler, let message = message.body as? Dictionary<String, Any> {
-            print("Kahf Tube: LİST HARAM")
+            KahfTubeManager.shared.askUserToUnsubscribe(channels: message)
         }
     }
 }

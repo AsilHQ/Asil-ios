@@ -45,61 +45,42 @@ class KahfJSGenerator {
                 });
        """
     }
-    
-    func getChannelJS() -> String {
-        return """
-                new MutationObserver(async (mutationList, observer) => {
-                          if (!mode || !gender) {
-                            mode = \(Preferences.KahfTube.mode.value ?? 1);
-                            gender = \(Preferences.KahfTube.gender.value ?? 0);
-                            token = "\(Preferences.KahfTube.token.value ?? "296|y4AAmzzmIPN4rXydWoFBs60XWMIg58rA8aVhjp30")";
-                          }
-                          window.webkit.messageHandlers.logHandler.postMessage("getChannels");
-                          const channelList = document.querySelectorAll("div.compact-media-item");
-                          if (channelList.length) {
-                            length = channelList.length;
-                            for (let index = 0; index < channelList.length; index++) {
-                              const element = channelList[index];
-                              const metadata = element.querySelector(
-                                "a.compact-media-item-metadata-content"
-                              );
-                              const href = metadata.getAttribute("href");
-                              if (!channels[href]) {
-                                channels[href] = {
-                                  isUnsubscribed: false,
-                                  thumbnail: `https:${element.querySelector("img")?.lazyData}`,
-                                  name: metadata?.children?.item(0)?.textContent,
-                                  subscribers: metadata?.children?.item(1)?.children?.item(0)
-                                    ?.textContent,
-                                  videos: metadata?.children?.item(1)?.children?.item(1)?.textContent,
-                                  isHaram: false,
-                                };
-                              }
-                            }
-                            // console.log(JSON.stringify(channels));
-                          }
 
-                          const channelListOpt = document.querySelectorAll("a.channel-list-item-link");
-                          if (channelListOpt.length) {
-                            length = channelListOpt.length;
-                            for (let index = 0; index < channelListOpt.length; index++) {
-                              const element = channelListOpt[index];
-                              const href = element.getAttribute("href");
-                              if (!channels[href]) {
-                                channels[href] = {
-                                  isUnsubscribed: false,
-                                  thumbnail: `https:${element.querySelector("img")?.lazyData}`,
-                                  name: element?.children?.item(1)?.textContent,
-                                  isHaram: false,
-                                };
-                              }
-                            }
-                            // console.log(JSON.stringify(channels));
-                          }
-                        }).observe(document, {
-                          childList: true,
-                          subtree: true,
-                        });
-                """
+    func getChannelStarterJS() -> String {
+        return """
+         let mode = \(Preferences.KahfTube.mode.value ?? 1);
+         let gender = \(Preferences.KahfTube.gender.value ?? 0);
+         let token = "\(Preferences.KahfTube.token.value ?? "296|y4AAmzzmIPN4rXydWoFBs60XWMIg58rA8aVhjp30")";
+        """
+    }
+    
+    func getUnsubscribeStarterJS(haramChannel: Dictionary<String, Any>) -> String {
+        var string = ""
+        var newHaramChannel = haramChannel
+        do {
+            var dict = [String: Any]()
+            for channel in newHaramChannel {
+                if let channelInfo = channel.value as? [String: Any],
+                   let isHaram = channelInfo["isHaram"] as? Bool,
+                   let isUnsubscribed = channelInfo["isUnsubscribed"] as? Bool,
+                   let name = channelInfo["name"] as? String,
+                   let thumbnail = channelInfo["thumbnail"] as? String {
+                    dict[channel.key] = [
+                        "isHaram": isHaram,
+                        "isUnsubscribed": isUnsubscribed,
+                        "name": name,
+                        "thumbnail": thumbnail,
+                        "href": channel.key
+                    ]
+                }
+            }
+            let jsonData = try JSONSerialization.data(withJSONObject: dict, options: [])
+            if let jsonString = String(data: jsonData, encoding: .utf8) {
+                string = "let haramChannel = \(jsonString);"
+            }
+        } catch {
+            print(error)
+        }
+        return string
     }
 }

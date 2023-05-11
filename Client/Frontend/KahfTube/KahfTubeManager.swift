@@ -8,11 +8,15 @@ import UIKit
 import WebKit
 import BraveShared
 
-public class KahfTubeManager {
-    public static var shared = KahfTubeManager()
+public class KahfTubeManager: ObservableObject {
+    public static let shared = KahfTubeManager()
     private let webRepository = KahfTubeWebRepository.shared
     private let util = KahfTubeUtil.shared
     private static var webView: WKWebView?
+    @Published var haramChannels: [Channel] = [Channel]()
+    @Published var haramChannelsMap: Dictionary<String, Any> = Dictionary<String, Any>()
+    @Published var channelsFetched: Bool = false
+    
     
     public func startKahfTube(view: UIView, webView: WKWebView, vc: UIViewController) {
         KahfTubeManager.webView = webView
@@ -45,6 +49,7 @@ public class KahfTubeManager {
         hiddenView.isHidden = true
         view.addSubview(hiddenView)
         let erik = Erik(webView: hiddenView)
+        Erik.sharedInstance = erik
         erik.visit(url: URL(string: "https://m.youtube.com/select_site")!) { object, error in
             self.getEmail(erik: erik)
         }
@@ -75,7 +80,7 @@ public class KahfTubeManager {
         }
     }
     
-    func filter(webView: WKWebView) {
+    private func filter(webView: WKWebView) {
         util.jsFileToCode(path: "main") { code in
             if let jsCode = code {
                 webView.evaluateSafeJavaScript(functionName: KahfJSGenerator.shared.getFilterJS(), contentWorld: .page, asFunction: false) { object, error in
@@ -101,4 +106,94 @@ public class KahfTubeManager {
             print("Kahf Tube: Reload ----------------------------------------------------------------")
         }
     }
+    
+    private func getEmail(erik: Erik) {
+        util.jsFileToCode(path: "email") { code in
+            if let jsCode = code {
+                erik.evaluate(javaScript: jsCode) { (obj, err) -> Void in
+                    if let error = err {
+                        switch error {
+                        case ErikError.javaScriptError(let message):
+                            print(message)
+                        default:
+                            print("\(error)")
+                        }
+                    } else {
+                        print("Kahf Tube: email.js worked successfully")
+                    }
+                }
+            }
+        }
+    }
+    
+    // MARK: - Unsubscribe Funcs
+    func getHaramChannels() {
+        haramChannels.removeAll(keepingCapacity: false)
+        haramChannelsMap.removeAll(keepingCapacity: false)
+        Erik.visit(url: URL(string: "https://m.youtube.com/feed/channels")!) { object, error in
+            if let error = error {
+                print("Kahf Tube: \(error)")
+            } else {
+                self.util.jsFileToCode(path: "channel") { code in
+                    if let jsCode = code {
+                        Erik.evaluate(javaScript: KahfJSGenerator.shared.getChannelStarterJS() + jsCode) { object, error in
+                            if let error = error {
+                                print("Kahf Tube: \(error)")
+                            } else {
+                                print("Kahf Tube: channel.js worked successfully")
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    func askUserToUnsubscribe(channels: [String: Any]) {
+         haramChannels.removeAll(keepingCapacity: false)
+         haramChannelsMap.removeAll(keepingCapacity: false)
+         channels.forEach { pair in
+            if let value = pair.value as? [String: Any],
+               let isHaram = value["isHaram"] as? Bool, isHaram,
+               let name = value["name"] as? String, let thumbnail = value["thumbnail"] as? String {
+                haramChannels.append(Channel(name: name, thumbnail: thumbnail))
+                haramChannelsMap[pair.key] = pair.value
+            }
+        }
+        channelsFetched.toggle()
+    }
+    
+    func unsubscribe() {
+        Erik.visit(url: URL(string: "https://m.youtube.com/feed/channels")!) { object, error in
+            if let error = error {
+                print("Kahf Tube: \(error)")
+            } else {
+                self.util.jsFileToCode(path: "unsubscribe") { code in
+                    if let jsCode = code {
+                        Erik.evaluate(javaScript: KahfJSGenerator.shared.getUnsubscribeStarterJS(haramChannel: self.haramChannelsMap) + jsCode) { object, error in
+                            if let error = error {
+                                print("Kahf Tube: \(error)")
+                            } else {
+                                print("Kahf Tube: unsubscribe.js worked successfully")
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    func finishUnsubscribeSession() {
+        haramChannels.removeAll(keepingCapacity: false)
+        haramChannelsMap.removeAll(keepingCapacity: false)
+        channelsFetched.toggle()
+    }
+}
+
+struct Channel: Identifiable, Hashable, Encodable {
+    var id = UUID()
+    var name: String
+    var thumbnail: String
+    var isHaram: Bool?
+    var isUnsubscribed: Bool?
 }
