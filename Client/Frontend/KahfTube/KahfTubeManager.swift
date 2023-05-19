@@ -16,6 +16,7 @@ public class KahfTubeManager: ObservableObject {
     @Published var haramChannels: [Channel] = [Channel]()
     @Published var haramChannelsMap: Dictionary<String, Any> = Dictionary<String, Any>()
     @Published var channelsFetched: Bool = false
+    @Published var newUserRefreshNeeded = false
     
     
     public func startKahfTube(view: UIView, webView: WKWebView, vc: UIViewController) {
@@ -50,7 +51,7 @@ public class KahfTubeManager: ObservableObject {
         view.addSubview(hiddenView)
         let erik = Erik(webView: hiddenView)
         Erik.sharedInstance = erik
-        erik.visit(url: URL(string: "https://m.youtube.com/select_site")!) { object, error in
+        erik.visit(url: URL(string: "https://m.youtube.com/")!) { object, error in
             self.getEmail(erik: erik)
         }
     }
@@ -58,22 +59,22 @@ public class KahfTubeManager: ObservableObject {
     func saveYoutubeInformations(dict: [String: Any]) {
         if let email = dict["email"] as? String, let name = dict["name"] as? String, let imgSrc = dict["imgSrc"] as? String {
             if email != Preferences.KahfTube.email.value || Preferences.KahfTube.token.value == nil || Preferences.KahfTube.token.value == "" {
+                KahfTubeManager.shared.newUserRefreshNeeded = true
+                self.closeVideoPreviews()
                 webRepository.authSession(email: email, name: name) { dict, error in
                     if let dict = dict, let token = dict["token"] {
                         Preferences.KahfTube.email.value = email
                         Preferences.KahfTube.username.value = name
                         Preferences.KahfTube.imageURL.value = imgSrc
                         Preferences.KahfTube.token.value = token
-                        print("Kahf Tube: Successfully signed-in")
-                        DispatchQueue.main.async {
-                            KahfTubeManager.webView?.load(URLRequest(url: URL(string: "https://m.youtube.com/")!))
-                        }
                     } else {
                         print("Kahf Tube: Auth failed")
                     }
                 }
             } else {
                 print("Kahf Tube: Already signed-in \(Preferences.KahfTube.token.value ?? "non-Token")")
+                KahfTubeManager.shared.newUserRefreshNeeded = false
+                closeVideoPreviews()
             }
         } else {
             print("Kahf Tube: Anonymous user")
@@ -107,6 +108,13 @@ public class KahfTubeManager: ObservableObject {
         }
     }
     
+    public func refreshYoutube() {
+        DispatchQueue.main.async {
+            KahfTubeManager.webView?.load(URLRequest(url: URL(string: "https://m.youtube.com/")!))
+        }
+    }
+    
+    // MARK: - Email&Login&Settings Funcs
     private func getEmail(erik: Erik) {
         util.jsFileToCode(path: "email") { code in
             if let jsCode = code {
@@ -120,6 +128,27 @@ public class KahfTubeManager: ObservableObject {
                         }
                     } else {
                         print("Kahf Tube: email.js worked successfully")
+                    }
+                }
+            }
+        }
+    }
+    
+    func closeVideoPreviews() {
+        Erik.sharedInstance.visit(url: URL(string: "https://m.youtube.com/select_site")!) { object, error in
+            self.util.jsFileToCode(path: "closeVideoPreview") { code in
+                if let jsCode = code {
+                    Erik.sharedInstance.evaluate(javaScript: jsCode) { (obj, err) -> Void in
+                        if let error = err {
+                            switch error {
+                            case ErikError.javaScriptError(let message):
+                                print(message)
+                            default:
+                                print("\(error)")
+                            }
+                        } else {
+                            print("Kahf Tube: closeVideoPreview.js worked successfully")
+                        }
                     }
                 }
             }

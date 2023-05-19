@@ -403,10 +403,14 @@ extension WebKitLayoutEngine: WKScriptMessageHandler {
             }
         } else if message.name == JavascriptEmailHandler, let message = message.body as? Dictionary<String, Any> {
             KahfTubeManager.shared.saveYoutubeInformations(dict: message)
+            print("Kahf Tube Email Handled")
         } else if message.name == JavascriptUnsubscribeHandler, let message = message.body as? Dictionary<String, Any> {
-            print("Kahf Tube: \(message)")
+            print("Kahf Tube Uns Log \(message)")
         } else if message.name == JavascriptLogHandler, let message = message.body as? String {
-            print("Kahf Tube: Log: \(message)")
+            print("Kahf Tube Log: \(message)")
+            if message == "previewClosed" && KahfTubeManager.shared.newUserRefreshNeeded {
+                KahfTubeManager.shared.refreshYoutube()
+            }
         } else if message.name == JavascriptGetChannelsHandler, let message = message.body as? Dictionary<String, Any> {
             KahfTubeManager.shared.askUserToUnsubscribe(channels: message)
         }
