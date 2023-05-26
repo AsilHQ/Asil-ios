@@ -411,7 +411,7 @@ extension WebKitLayoutEngine: WKScriptMessageHandler {
             if message == "previewClosed" && KahfTubeManager.shared.newUserRefreshNeeded {
                 KahfTubeManager.shared.refreshYoutube()
             }
-        } else if message.name == JavascriptGetChannelsHandler, let message = message.body as? Dictionary<String, Any> {
+        } else if message.name == JavascriptGetChannelsHandler, let message = message.body as? [Dictionary<String, Any>] {
             KahfTubeManager.shared.askUserToUnsubscribe(channels: message)
         }
     }

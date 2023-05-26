@@ -14,10 +14,9 @@ public class KahfTubeManager: ObservableObject {
     private let util = KahfTubeUtil.shared
     private static var webView: WKWebView?
     @Published var haramChannels: [Channel] = [Channel]()
-    @Published var haramChannelsMap: Dictionary<String, Any> = Dictionary<String, Any>()
+    @Published var haramChannelsMap: [[String: Any]] = [[String: Any]]()
     @Published var channelsFetched: Bool = false
     @Published var newUserRefreshNeeded = false
-    
     
     public func startKahfTube(view: UIView, webView: WKWebView, vc: UIViewController) {
         KahfTubeManager.webView = webView
@@ -157,7 +156,6 @@ public class KahfTubeManager: ObservableObject {
     
     // MARK: - Unsubscribe Funcs
     func getHaramChannels() {
-        haramChannels.removeAll(keepingCapacity: false)
         haramChannelsMap.removeAll(keepingCapacity: false)
         Erik.visit(url: URL(string: "https://m.youtube.com/feed/channels")!) { object, error in
             if let error = error {
@@ -178,19 +176,20 @@ public class KahfTubeManager: ObservableObject {
         }
     }
     
-    func askUserToUnsubscribe(channels: [String: Any]) {
-         haramChannels.removeAll(keepingCapacity: false)
-         haramChannelsMap.removeAll(keepingCapacity: false)
-         channels.forEach { pair in
-            if let value = pair.value as? [String: Any],
-               let isHaram = value["isHaram"] as? Bool, isHaram,
-               let name = value["name"] as? String, let thumbnail = value["thumbnail"] as? String {
-                haramChannels.append(Channel(name: name, thumbnail: thumbnail))
-                haramChannelsMap[pair.key] = pair.value
-            }
-        }
-        channelsFetched.toggle()
-    }
+    func askUserToUnsubscribe(channels: [[String: Any]]) {
+        haramChannels.removeAll(keepingCapacity: false)
+        haramChannelsMap.removeAll(keepingCapacity: false)
+        channels.forEach { dict in
+              if let isHaram = dict["isHaram"] as? Bool, isHaram,
+              let name = dict["name"] as? String,
+              let thumbnail = dict["thumbnail"] as? String,
+              let isUnsubscribed = dict["isUnsubscribed"] as? Bool,
+              let id = dict["id"] as? String {
+                  haramChannels.append(Channel(id: id, name: name, thumbnail: thumbnail, isHaram: isHaram, isUnsubscribed: isUnsubscribed))
+              }
+       }
+       channelsFetched.toggle()
+   }
     
     func unsubscribe() {
         Erik.visit(url: URL(string: "https://m.youtube.com/feed/channels")!) { object, error in
@@ -213,16 +212,15 @@ public class KahfTubeManager: ObservableObject {
     }
     
     func finishUnsubscribeSession() {
-        haramChannels.removeAll(keepingCapacity: false)
         haramChannelsMap.removeAll(keepingCapacity: false)
         channelsFetched.toggle()
     }
 }
 
 struct Channel: Identifiable, Hashable, Encodable {
-    var id = UUID()
+    var id: String
     var name: String
     var thumbnail: String
-    var isHaram: Bool?
-    var isUnsubscribed: Bool?
+    var isHaram: Bool
+    var isUnsubscribed: Bool
 }

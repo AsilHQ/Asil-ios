@@ -54,27 +54,11 @@ class KahfJSGenerator {
         """
     }
     
-    func getUnsubscribeStarterJS(haramChannel: Dictionary<String, Any>) -> String {
+    func getUnsubscribeStarterJS(haramChannel: [[String: Any]]) -> String {
         var string = ""
         var newHaramChannel = haramChannel
         do {
-            var dict = [String: Any]()
-            for channel in newHaramChannel {
-                if let channelInfo = channel.value as? [String: Any],
-                   let isHaram = channelInfo["isHaram"] as? Bool,
-                   let isUnsubscribed = channelInfo["isUnsubscribed"] as? Bool,
-                   let name = channelInfo["name"] as? String,
-                   let thumbnail = channelInfo["thumbnail"] as? String {
-                    dict[channel.key] = [
-                        "isHaram": isHaram,
-                        "isUnsubscribed": isUnsubscribed,
-                        "name": name,
-                        "thumbnail": thumbnail,
-                        "href": channel.key
-                    ]
-                }
-            }
-            let jsonData = try JSONSerialization.data(withJSONObject: dict, options: [])
+            let jsonData = try JSONSerialization.data(withJSONObject: haramChannel, options: [])
             if let jsonString = String(data: jsonData, encoding: .utf8) {
                 string = "let haramChannel = \(jsonString);"
             }
