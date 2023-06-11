@@ -11,20 +11,34 @@ let isSubscriptionClicked = false;
 let isElementClicked = false;
 let channels = {};
 let length = 0;
+let allChannels = {};
+if (
+    ytInitialData.contents &&
+    ytInitialData.contents.singleColumnBrowseResultsRenderer &&
+    ytInitialData.contents.singleColumnBrowseResultsRenderer.tabs &&
+    ytInitialData.contents.singleColumnBrowseResultsRenderer.tabs[0].tabRenderer &&
+    ytInitialData.contents.singleColumnBrowseResultsRenderer.tabs[0].tabRenderer.content &&
+    ytInitialData.contents.singleColumnBrowseResultsRenderer.tabs[0].tabRenderer.content.sectionListRenderer &&
+    ytInitialData.contents.singleColumnBrowseResultsRenderer.tabs[0].tabRenderer.content.sectionListRenderer.contents
+) {
+  // `tabs` property exists in ytInitialData
+  const tabs = ytInitialData.contents.singleColumnBrowseResultsRenderer.tabs;
+  // Rest of your code
+  allChannels = tabs[0].tabRenderer.content.sectionListRenderer.contents[0].itemSectionRenderer.contents.map((e) => {
+    return {
+      id: e.channelListItemRenderer.channelId,
+      name: e.channelListItemRenderer.title.runs[0].text,
+      isUnsubscribed: false,
+      thumbnail: `https:${e.channelListItemRenderer.thumbnail.thumbnails[0].url}`,
+      isHaram: false,
+    };
+  });
+  // Rest of your code
+} else {
+  // `tabs` property doesn't exist in ytInitialData
+  window.webkit.messageHandlers.getChannelsHandler.postMessage(allChannels);
+}
 
-let allChannels =
-  ytInitialData.contents.singleColumnBrowseResultsRenderer.tabs[0].tabRenderer.content.sectionListRenderer.contents[0].itemSectionRenderer.contents.map(
-    (e) => {
-      return {
-        id: e.channelListItemRenderer.channelId,
-        name: e.channelListItemRenderer.title.runs[0].text,
-        isUnsubscribed: false,
-        thumbnail: `https:${e.channelListItemRenderer.thumbnail.thumbnails[0].url}`,
-        isHaram: false,
-      };
-    }
-  );
-allChannels = allChannels ?? [];
 function check_gender(response_gender, gender) {
   if (response_gender == 1) return true;
   if (response_gender == 4) return true; //Kids items are halal for both male and female.
@@ -76,7 +90,6 @@ function canSeee(responsee) {
   const response = await res.json();
   // console.log("------LOL-------");
   // console.log(JSON.stringify(response));
-  window.webkit.messageHandlers.logHandler.postMessage("hophop");
   for (const element of allChannels) {
     // console.log(href);
     window.webkit.messageHandlers.logHandler.postMessage(JSON.stringify(response));

@@ -176,23 +176,29 @@ public class KahfTubeManager: ObservableObject {
         }
     }
     
-    func askUserToUnsubscribe(channels: [[String: Any]]) {
+    func askUserToUnsubscribe(channels: [[String: Any]]? = nil) {
         haramChannels.removeAll(keepingCapacity: false)
         haramChannelsMap.removeAll(keepingCapacity: false)
-        channels.forEach { dict in
-              if let isHaram = dict["isHaram"] as? Bool, isHaram,
-              let name = dict["name"] as? String,
-              let thumbnail = dict["thumbnail"] as? String,
-              let isUnsubscribed = dict["isUnsubscribed"] as? Bool,
-              let id = dict["id"] as? String {
-                  haramChannels.append(Channel(id: id, name: name, thumbnail: thumbnail, isHaram: isHaram, isUnsubscribed: isUnsubscribed))
-              }
-       }
+        if let channels = channels {
+            channels.forEach { dict in
+                  if let isHaram = dict["isHaram"] as? Bool, isHaram,
+                  let name = dict["name"] as? String,
+                  let thumbnail = dict["thumbnail"] as? String,
+                  let isUnsubscribed = dict["isUnsubscribed"] as? Bool,
+                  let id = dict["id"] as? String {
+                      haramChannels.append(Channel(id: id, name: name, thumbnail: thumbnail, isHaram: isHaram, isUnsubscribed: isUnsubscribed))
+                  }
+           }
+           haramChannelsMap = channels
+        }
        channelsFetched.toggle()
    }
     
     func unsubscribe() {
-        Erik.visit(url: URL(string: "https://m.youtube.com/feed/channels")!) { object, error in
+        var urlRequest = URLRequest(url: URL(string: "https://www.youtube.com/")!)
+        urlRequest.addValue( UserAgent.desktop, forHTTPHeaderField: "User-Agent")
+        Erik.sharedInstance.layoutEngine.changeAgent(agentType: UserAgent.desktop)
+        Erik.load(urlRequest: urlRequest) {  object, error in
             if let error = error {
                 print("Kahf Tube: \(error)")
             } else {
@@ -203,6 +209,7 @@ public class KahfTubeManager: ObservableObject {
                                 print("Kahf Tube: \(error)")
                             } else {
                                 print("Kahf Tube: unsubscribe.js worked successfully")
+                                Erik.sharedInstance.layoutEngine.changeAgent(agentType: UserAgent.mobile)
                             }
                         }
                     }

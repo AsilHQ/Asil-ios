@@ -60,7 +60,7 @@ private extension KahfUnsubscribeView {
                                 }
                             }.padding(.trailing, 18)
                             
-                            Text(channel.name)
+                            Text(channel.name).foregroundColor(Color.black)
                             
                             Spacer()
                         }
@@ -81,7 +81,12 @@ private extension KahfUnsubscribeView {
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(UIColor(colorString: "#7B7B7B")), lineWidth: 1)).background(Color.white).padding(.trailing, 10)
                     
                     Button {
+                        isLoading = true
                         KahfTubeManager.shared.unsubscribe()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                            isLoading = false
+                            KahfTubeManager.shared.channelsFetched.toggle()
+                        }
                     } label: {
                         Spacer()
                         Text("Unsubscribe Now").foregroundColor(Color.white)
@@ -93,7 +98,7 @@ private extension KahfUnsubscribeView {
                 
             }.padding(.horizontal, 16)
         }.cornerRadius(5.0).padding(.horizontal, 20).cornerRadius(5.0).frame(maxHeight: 470).onAppear {
-            isLoading.toggle()
+            isLoading = false
         }
     }
     
@@ -106,8 +111,8 @@ private extension KahfUnsubscribeView {
                     .padding(.top, 62)
                     .padding(.bottom, 20)
                 
-                Text("No Haram Subscribed")
-                Text("Channel Found").padding(.bottom, 42)
+                Text("No Haram Subscribed").foregroundColor(Color.black)
+                Text("Channel Found").padding(.bottom, 42).foregroundColor(Color.black)
                 
                 Button {
                     KahfTubeManager.shared.finishUnsubscribeSession()
@@ -116,7 +121,7 @@ private extension KahfUnsubscribeView {
                 }.frame(width: 175, height: 50.0).background(Color(UIColor(colorString: "#A242FF"))).cornerRadius(10.0).padding(.bottom, 42)
             }.padding(.horizontal, 16)
         }.frame(maxHeight: 372.0).cornerRadius(5.0).padding(.horizontal, 20).cornerRadius(5.0).onAppear {
-            isLoading.toggle()
+            isLoading = false
         }
     }
 }

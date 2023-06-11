@@ -44,7 +44,7 @@ public protocol URLBrowser {
     var canGoBack: Bool { get }
     var canGoForward: Bool { get }
     func reload()
-    
+    func changeAgent(agentType: String)
     func clear()
 }
 public typealias LayoutEngine = URLBrowser & JavaScriptEvaluator
@@ -249,6 +249,12 @@ extension WebKitLayoutEngine {
     public func reload() {
         self.webView.reload()
     }
+    
+    public func changeAgent(agentType: String) {
+        DispatchQueue.main.async {
+            self.webView.customUserAgent = agentType
+        }
+    }
 
     public func currentContent(completionHandler: CompletionHandler?) {
         waitLoadingQueue.async { [unowned self] in
@@ -411,8 +417,12 @@ extension WebKitLayoutEngine: WKScriptMessageHandler {
             if message == "previewClosed" && KahfTubeManager.shared.newUserRefreshNeeded {
                 KahfTubeManager.shared.refreshYoutube()
             }
-        } else if message.name == JavascriptGetChannelsHandler, let message = message.body as? [Dictionary<String, Any>] {
-            KahfTubeManager.shared.askUserToUnsubscribe(channels: message)
+        } else if message.name == JavascriptGetChannelsHandler {
+            if let message = message.body as? [Dictionary<String, Any>] {
+                KahfTubeManager.shared.askUserToUnsubscribe(channels: message)
+            } else {
+                KahfTubeManager.shared.askUserToUnsubscribe()
+            }
         }
     }
 }

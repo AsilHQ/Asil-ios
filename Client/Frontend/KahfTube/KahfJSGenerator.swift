@@ -55,16 +55,16 @@ class KahfJSGenerator {
     }
     
     func getUnsubscribeStarterJS(haramChannel: [[String: Any]]) -> String {
-        var string = ""
-        var newHaramChannel = haramChannel
+        let newHaramChannel = haramChannel.map { data in
+            return data["id"] ?? ""
+        }
         do {
-            let jsonData = try JSONSerialization.data(withJSONObject: haramChannel, options: [])
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                string = "let haramChannel = \(jsonString);"
-            }
+            let jsonArrayString = newHaramChannel.map { "\"\($0)\"" }.joined(separator: ",")
+            let jsCommand = "var channel_ids = JSON.parse(decodeURIComponent('[\(jsonArrayString)]'));"
+            return jsCommand
         } catch {
             print(error)
+            return ""
         }
-        return string
     }
 }
