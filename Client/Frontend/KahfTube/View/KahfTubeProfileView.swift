@@ -96,7 +96,7 @@ struct KahfTubeProfileView: View {
 
 // MARK: - KahfTubeProfileView Content
 private extension KahfTubeProfileView {
-    func loadingView() -> some View { return AnyView(ProgressView().progressViewStyle(CircularProgressViewStyle())).foregroundColor(.gray)}
+    func loadingView() -> some View { return AnyView(ProgressView().progressViewStyle(CircularProgressViewStyle()))}
 }
 
 #if DEBUG

@@ -28,7 +28,8 @@ struct KahfUnsubscribeView: View {
 private extension KahfUnsubscribeView {
     var haramChannelsView: some View {
         ZStack {
-            Color.white
+            Color(.braveBackground)
+            
             VStack {
                 HStack {
                     Text("\(haramChannels.count) Haram Channels found")
@@ -47,20 +48,28 @@ private extension KahfUnsubscribeView {
                         HStack {
                             Group {
                                 if #available(iOS 15.0, *) {
-                                    AsyncImage(url: URL(string: channel.thumbnail))
-                                        .frame(width: 50.0, height: 50.0)
-                                        .clipShape(Circle())
-                                        .padding(.vertical, 10)
+                                    AsyncImage(url: URL(string: channel.thumbnail)) { image in
+                                        image
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 50.0, height: 50.0)
+                                            .clipShape(Circle())
+                                            .padding(.vertical, 10)
+                                    } placeholder: {
+                                        Circle()
+                                            .foregroundColor(Color(UIColor(colorString: "#A242FF")))
+                                            .frame(width: 50.0, height: 50.0)
+                                            .padding(.vertical, 10)
+                                    }
                                 } else {
                                     Circle()
-                                    .foregroundColor(Color(UIColor(colorString: "#A242FF")))
-                                    .frame(width: 50.0, height: 50.0)
-                                    .overlay(RoundedRectangle(cornerRadius: 50.0))
-                                    .padding(.vertical, 10)
+                                        .foregroundColor(Color(UIColor(colorString: "#A242FF")))
+                                        .frame(width: 50.0, height: 50.0)
+                                        .padding(.vertical, 10)
                                 }
                             }.padding(.trailing, 18)
                             
-                            Text(channel.name).foregroundColor(Color.black)
+                            Text(channel.name)
                             
                             Spacer()
                         }
@@ -77,8 +86,8 @@ private extension KahfUnsubscribeView {
                         Spacer()
                         Text("Refresh again").foregroundColor(Color(UIColor(colorString: "#7B7B7B")))
                         Spacer()
-                    }.frame(height: 50.0)
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(UIColor(colorString: "#7B7B7B")), lineWidth: 1)).background(Color.white).padding(.trailing, 10)
+                    }.frame(height: 50.0).background(Color.white).cornerRadius(10.0)
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(UIColor(colorString: "#7B7B7B")), lineWidth: 1)).padding(.trailing, 10)
                     
                     Button {
                         isLoading = true
@@ -104,15 +113,15 @@ private extension KahfUnsubscribeView {
     
     var haramChannelsNotFoundView: some View {
         ZStack {
-            Color.white
+            Color(.braveBackground)
             VStack {
                 Image("kahf-tubemoon-clear-fill", bundle: Bundle.module).foregroundColor(Color(UIColor(colorString: "#A242FF")))
                     .frame(width: 140.0, height: 140.0)
                     .padding(.top, 62)
                     .padding(.bottom, 20)
                 
-                Text("No Haram Subscribed").foregroundColor(Color.black)
-                Text("Channel Found").padding(.bottom, 42).foregroundColor(Color.black)
+                Text("No Haram Subscribed")
+                Text("Channel Found").padding(.bottom, 42)
                 
                 Button {
                     KahfTubeManager.shared.finishUnsubscribeSession()
