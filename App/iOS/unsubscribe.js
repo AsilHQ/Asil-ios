@@ -1,61 +1,93 @@
-let isSubscriptionClicked = false;
-let isBttonClicked = false;
+async function sha1(str) {
+  const buffer = new TextEncoder().encode(str);
+  return crypto.subtle.digest("SHA-1", buffer).then((hash) => {
+    return Array.from(new Uint8Array(hash))
+      .map((b) => b.toString(16).padStart(2, "0"))
+      .join("");
+  });
+}
 
-let timer;
-const valuesArray = Object.values(haramChannel);
-new MutationObserver(async (mutationList, observer) => {
-  if (valuesArray.length > 0) {
-    const lastObject = valuesArray[valuesArray.length - 1];
-    const lastObjectHref = lastObject.href
-    window.webkit.messageHandlers.logHandler.postMessage(lastObjectHref);
-    let foundChannel = document.querySelector(
-      `a.compact-media-item-metadata-content[href="${lastObjectHref}"]`
-    );
-    foundChannel =
-      foundChannel ??
-      document.querySelector(
-       `a.channel-list-item-link[href="${lastObjectHref}"]`
-      );
-    foundChannel?.click();
-    const button = document
-      .querySelector("ytm-subscribe-button-renderer")
-      ?.querySelector("button");
-
-    // const channelName = document.querySelector("h1.c4-tabbed-header-title");
-    if (button?.classList?.contains("yt-spec-button-shape-next--tonal")) {
-      if (!isBttonClicked) {
-        window.webkit.messageHandlers.logHandler.postMessage("LOL");
-        isBttonClicked = true;
-        button?.click();
-      }
+function getCookieValue(cookieName) {
+    var cookies = document.cookie.split(';');
+    
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim();
+        
+        if (cookie.indexOf(cookieName + '=') === 0) {
+            return cookie.substring(cookieName.length + 1);
+        }
     }
     
-    if (
-      isBttonClicked &&
-      button?.classList?.contains("yt-spec-button-shape-next--filled")
-    ) {
-      window.webkit.messageHandlers.logHandler.postMessage("-------- DONE ---------");
-      if (haramChannel[lastObject.href]["isUnsubscribed"] == false) {
-        haramChannel[lastObject.href]["isUnsubscribed"] = true;
-        isBttonClicked = false;
-        valuesArray.pop();
-        history.back();
-      }
-    }
+    return "";
+}
 
-    const unsubscribeButton = document
-      .querySelector("div.dialog-buttons")
-      ?.querySelectorAll("button")[1];
-    if (unsubscribeButton && !haramChannel[lastObject.href]["isUnsubscribeClicked"]) {
-      window.webkit.messageHandlers.logHandler.postMessage("GONE");
-      unsubscribeButton.click();
-      haramChannel[lastObject.href]["isUnsubscribeClicked"] = true;
-    }
-  } else {
-    window.webkit.messageHandlers.logHandler.postMessage("-------- COMPLETED ---------");
+/*async function get_sapisid() {
+  const cookie = await window.flutter_inappwebview.callHandler("getCookie");
+  return cookie || "";
+}*/
+
+async function generate_authorization_key() {
+  var sapisid = getCookieValue('SAPISID');
+  const date = Math.floor(new Date().getTime() / 1e3);
+  const key = await sha1(`${date} ${sapisid} https://www.youtube.com`);
+  return `SAPISIDHASH ${date}_${key}`;
+}
+
+async function unsubscribe_channel() {
+  const authorization = await generate_authorization_key();
+  const innertubeapikey = ytcfg.d().INNERTUBE_API_KEY;
+  const url = `https://www.youtube.com/youtubei/v1/subscription/unsubscribe?key=${innertubeapikey}&prettyPrint=false`;
+  const body = {
+      context: {
+        client: {
+          hl: "en",
+          deviceMake: "",
+          deviceModel: "",
+          clientName: "WEB",
+          clientVersion: "2.20230201.01.00",
+          osName: "X11",
+          osVersion: "",
+          originalUrl: `https://www.youtube.com/channel/${channel_ids[0]}`,
+          screenPixelDensity: 1,
+          platform: "DESKTOP",
+          clientFormFactor: "UNKNOWN_FORM_FACTOR",
+          browserName: "Chrome",
+          screenWidthPoints: window.innerWidth,
+          screenHeightPoints: window.innerHeight,
+          userInterfaceTheme: "USER_INTERFACE_THEME_LIGHT",
+          connectionType: "CONN_CELLULAR_4G",
+          mainAppWebInfo: {
+            graftUrl: `https://www.youtube.com/channel/${channel_ids[0]}`,
+            pwaInstallabilityStatus: "PWA_INSTALLABILITY_STATUS_CAN_BE_INSTALLED",
+            webDisplayMode: "WEB_DISPLAY_MODE_BROWSER",
+            isWebNativeShareAvailable: false,
+          },
+        },
+        user: { lockedSafetyMode: false },
+        request: {
+          useSsl: true,
+          internalExperimentFlags: [],
+          consistencyTokenJars: [],
+        },
+      },
+      channelIds: channel_ids,
+    };
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      authorization,
+      "Content-Type": "application/json",
+      "x-origin": "https://www.youtube.com",
+    },
+    body: JSON.stringify(body),
+  });
+  window.webkit.messageHandlers.logHandler.postMessage(JSON.stringify(body));
+  window.webkit.messageHandlers.logHandler.postMessage(JSON.stringify(navigator));
+  const res = await response.json();
+  window.webkit.messageHandlers.logHandler.postMessage(JSON.stringify(res));
+  if (!response.ok) {
     window.webkit.messageHandlers.getUnsubscribedChannelsHandler.postMessage(haramChannel);
   }
-}).observe(document, {
-  childList: true,
-  subtree: true,
-});
+  window.webkit.messageHandlers.getUnsubscribedChannelsHandler.postMessage(haramChannel);
+}
+unsubscribe_channel();
