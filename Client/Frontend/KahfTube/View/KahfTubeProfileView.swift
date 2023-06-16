@@ -51,7 +51,7 @@ struct KahfTubeProfileView: View {
                             }
                         }
                         
-                        Picker(selection: $genderSelection, label: Text("Religion Status")) {
+                        Picker(selection: $religionSelection, label: Text("Religion Status")) {
                             ForEach(religionStatus.indices, id: \.self) { index in
                                 Text(religionStatus[index]).tag(index)
                             }
