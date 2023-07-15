@@ -33,7 +33,6 @@ new MutationObserver(() => {
       if (!isMethodCalled) {
         isMethodCalled = true;
         const returnValues = { email, imgSrc, name };
-        window.webkit.messageHandlers.emailHandler.postMessage("returnValues");
         window.webkit.messageHandlers.emailHandler.postMessage(returnValues);
       }
     }
@@ -42,7 +41,11 @@ new MutationObserver(() => {
       isMethodCalled = true;
       const email = holder.children.item(1).textContent;
       const returnValues = { email };
-      window.webkit.messageHandlers.emailHandler.postMessage("returnValues");
+      window.webkit.messageHandlers.emailHandler.postMessage(returnValues);
+    }
+    else{
+      window.webkit.messageHandlers.logHandler.postMessage("noAccount");
+      const returnValues = { };
       window.webkit.messageHandlers.emailHandler.postMessage(returnValues);
     }
   }

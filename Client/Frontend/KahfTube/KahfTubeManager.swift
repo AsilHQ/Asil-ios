@@ -57,17 +57,14 @@ public class KahfTubeManager: ObservableObject {
     
     func saveYoutubeInformations(dict: [String: Any]) {
         if let email = dict["email"] as? String, let name = dict["name"] as? String, let imgSrc = dict["imgSrc"] as? String {
-            if email != Preferences.KahfTube.email.value || Preferences.KahfTube.token.value == nil || Preferences.KahfTube.token.value == "" {
+            if email != Preferences.KahfTube.email.value || Preferences.KahfTube.token.value == nil || Preferences.KahfTube.token.value == "" || Preferences.KahfTube.imageURL.value != imgSrc {
                 KahfTubeManager.shared.newUserRefreshNeeded = true
                 self.closeVideoPreviews()
                 webRepository.authSession(email: email, name: name) { dict, error in
                     if let dict = dict, let token = dict["token"] {
-                        Preferences.KahfTube.email.value = email
-                        Preferences.KahfTube.username.value = name
-                        Preferences.KahfTube.imageURL.value = imgSrc
-                        Preferences.KahfTube.token.value = token
+                        self.login(email: email, token: token, imgSrc: imgSrc, name: name)
                     } else {
-                        print("Kahf Tube: Auth failed")
+                        self.logout()
                     }
                 }
             } else {
@@ -76,6 +73,7 @@ public class KahfTubeManager: ObservableObject {
                 closeVideoPreviews()
             }
         } else {
+            logout()
             print("Kahf Tube: Anonymous user")
         }
     }
@@ -221,6 +219,20 @@ public class KahfTubeManager: ObservableObject {
     func finishUnsubscribeSession() {
         haramChannelsMap.removeAll(keepingCapacity: false)
         channelsFetched.toggle()
+    }
+    
+    func logout() {
+        Preferences.KahfTube.email.value = nil
+        Preferences.KahfTube.username.value = nil
+        Preferences.KahfTube.imageURL.value = nil
+        Preferences.KahfTube.token.value = nil
+    }
+    
+    func login(email: String, token: String, imgSrc: String, name: String) {
+        Preferences.KahfTube.email.value = email
+        Preferences.KahfTube.username.value = name
+        Preferences.KahfTube.imageURL.value = imgSrc
+        Preferences.KahfTube.token.value = token
     }
 }
 
