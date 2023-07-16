@@ -59,9 +59,12 @@ function check_mode(response_mode, mode) {
 }
 
 function can_see(response) {
+  const permissibleForValue = response.permissible_for?.value ?? 0; // Default value: 0
+  const practicingLevelValue = response.practicing_level?.value ?? 0; // Default value: 0
+  
   return (
-    check_gender(response.permissible_for.value, gender) &&
-    check_mode(response.practicing_level.value, mode)
+    check_gender(permissibleForValue, gender) &&
+    check_mode(practicingLevelValue, mode)
   );
 }
 
@@ -91,23 +94,26 @@ function canSeee(responsee) {
   // console.log("------LOL-------");
   // console.log(JSON.stringify(response));
   for (const element of allChannels) {
-    // console.log(href);
-    window.webkit.messageHandlers.logHandler.postMessage(JSON.stringify(response));
-    const fIndex = response.data?.findIndex((el) => element.id.includes(el.id));
-    if (fIndex > -1) {
-      if (response.data[fIndex] == 404) {
-        element["isHaram"] = false;
-      } else if (response.data[fIndex].is_halal) {
-        if (canSeee(response)) {
+    try {
+      const fIndex = response.data?.findIndex((el) => element.id.includes(el.id));
+      if (fIndex > -1) {
+        if (response.data[fIndex] == 404) {
+          element["isHaram"] = false;
+        } else if (response.data[fIndex].is_halal) {
+          if (canSeee(response)) {
+            element["isHaram"] = false;
+          } else {
+            element["isHaram"] = true;
+          }
+        } else if (response.data[fIndex] == "loading") {
           element["isHaram"] = false;
         } else {
           element["isHaram"] = true;
         }
-      } else if (response.data[fIndex] == "loading") {
-        element["isHaram"] = false;
-      } else {
-        element["isHaram"] = true;
       }
+    } catch (error) {
+      const errorString = error.toString();
+      window.webkit.messageHandlers.logHandler.postMessage(errorString);
     }
   }
   window.webkit.messageHandlers.getChannelsHandler.postMessage(allChannels);
