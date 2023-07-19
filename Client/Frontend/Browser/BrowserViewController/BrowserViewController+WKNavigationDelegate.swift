@@ -643,7 +643,7 @@ extension BrowserViewController: WKNavigationDelegate {
         tab.emitEthereumEvent(.connect)
       }
         
-        KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+      KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
     }
 
     // Added this method to determine long press menu actions better

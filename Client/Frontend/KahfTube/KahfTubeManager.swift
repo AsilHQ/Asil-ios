@@ -40,7 +40,17 @@ public class KahfTubeManager: ObservableObject {
                 vc.present(refreshAlert, animated: true, completion: nil)
             }
         } else {
-            print("Kahf Tube: User is not on a YouTube page")
+            util.jsFileToCode(path: "replace") { code in
+                if let jsCode = code {
+                    webView.evaluateSafeJavaScript(functionName: jsCode, contentWorld: .page, asFunction: false) {(object, error) -> Void in
+                        if let error = error {
+                            print("Kahf Tube: \(error)")
+                        } else {
+                            print("Kahf Tube: replace.js executed")
+                        }
+                    }
+                }
+            }
         }
     }
     
