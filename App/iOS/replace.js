@@ -1,96 +1,141 @@
-const apiUrl = 'https://api.safegaze.com/api/v1/analyze';
-let processedUrls = [];
-let processingUrls = [];
+async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/api/v1/analyze') {
+    const batchSize = 4;
 
-// Function to process a batch of images
-const processImagesBatch = async (imageBatch) => {
-  const batchUrls = imageBatch.map(img => img.dataset.src || img.src);
+    const imageElements = Array.from(document.getElementsByTagName('img')).filter(img => !img.src.endsWith('.svg'));
+    const lazyImageElements = Array.from(document.querySelectorAll('img[data-src]')).filter(img => !img.dataset.src.endsWith('.svg'));
 
-  // Filter out URLs that should not be processed
-  const urlsToProcess = batchUrls.filter(url => {
-    return !url.includes('.svg') &&
-      !processedUrls.includes(url) &&
-      !processingUrls.includes(url);
-  });
+    const allImages = [...imageElements, ...lazyImageElements];
 
-  if (urlsToProcess.length === 0) {
-    return;
-  }
-
-  processingUrls.push(...urlsToProcess);
-
-  const requestBody = {
-    media: urlsToProcess.map(url => ({
-      media_url: url,
-      media_type: 'image',
-      has_attachment: false,
-    })),
-  };
-
-  console.log('Sending Request:', requestBody);  // Log the request
-
-  // Apply blur to all images in the batch
-  imageBatch.forEach(img => img.style.filter = 'blur(5px)');
-
-  try {
-    const response = await fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(requestBody),
-    });
-
-    if (!response.ok) {
-      throw new Error('Request failed');
+    // Create batches of image URLs.
+    const batches = [];
+    for (let i = 0; i < allImages.length; i += batchSize) {
+        batches.push(allImages.slice(i, i + batchSize));
     }
 
-    const data = await response.json();
-    console.log('Received Response:', data);  // Log the response
+    for (const batch of batches) {
+        try {
+            // Create the request body.
+            const requestBody = {
+                media: batch.map(imgElement => ({
+                    media_url: imgElement.src || imgElement.dataset.src,
+                    media_type: 'image',
+                    has_attachment: false
+                }))
+            };
 
-    // Process each image in the batch
-    for (let i = 0; i < imageBatch.length; i++) {
-      const img = imageBatch[i];
-      const url = img.dataset.src || img.src;
-      const urlIndex = urlsToProcess.indexOf(url);
+            console.log('Sending request:', requestBody); // Log request body
 
-      if (urlIndex !== -1 && data.media[urlIndex].processed_media_url) {
-        img.src = "  https://idsb.tmgrup.com.tr/ly/uploads/images/2023/07/13/thumbs/800x531/282268.jpg?v=1689250351"
-        img.style.filter = '';  // Remove blur
-      }
+            // Send the request to the API.
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(requestBody)
+            });
+
+            // Check if response status is ok
+            if (!response.ok) {
+                console.error('HTTP error, status = ' + response.status);
+                continue;
+            }
+
+            // Extract the new URLs from the response.
+            const responseBody = await response.json();
+
+            console.log('Received response:', responseBody); // Log response body
+
+            if (responseBody.success) {
+                responseBody.media.forEach((media, index) => {
+                    if (media.success) {
+                        batch[index].src = "https://idsb.tmgrup.com.tr/ly/uploads/images/2023/07/13/thumbs/800x531/282268.jpg?v=1689250351";
+                        if (batch[index].dataset) { // Check if data-src exists before trying to set it
+                            batch[index].dataset.src = "https://idsb.tmgrup.com.tr/ly/uploads/images/2023/07/13/thumbs/800x531/282268.jpg?v=1689250351"
+                        }
+                    } else {
+                        console.error('API failed to process image:', media.errors);
+                    }
+                });
+            } else {
+                console.error('API request failed:', responseBody.errors);
+            }
+        } catch (error) {
+            console.error('Error occurred during API request:', error);
+        }
     }
-
-    processingUrls = processingUrls.filter(urlProcessing => !urlsToProcess.includes(urlProcessing));
-    processedUrls.push(...urlsToProcess);
-  } catch (error) {
-    console.error('Analyze request failed:', error);
-    console.error('Failed URLs:', urlsToProcess);
-  }
-};
-
-// Process initially visible images in batches of 4
-const initialImages = Array.from(document.getElementsByTagName('img'));
-for (let i = 0; i < initialImages.length; i += 4) {
-  const imageBatch = initialImages.slice(i, i + 4);
-  processImagesBatch(imageBatch);
 }
 
-// Observer for new images entering the viewport
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const img = entry.target;
-      observer.unobserve(img);
-      processImagesBatch([img]);  // Send each lazy-loaded image separately
-    }
-  });
-}, {rootMargin: '0px', threshold: 0.1});
+replaceImagesWithApiResults();
 
-// Scroll event listener for lazy-loaded images
-window.addEventListener('scroll', () => {
-  Array.from(document.getElementsByTagName('img')).forEach(img => {
-    if (img.getBoundingClientRect().top < window.innerHeight && img.getBoundingClientRect().bottom >= 0) {
-      observer.observe(img);
+
+async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/api/v1/analyze') {
+    const batchSize = 4;
+
+    const imageElements = Array.from(document.getElementsByTagName('img')).filter(img => {
+        const src = img.getAttribute('src');
+        return src ? !src.includes('.svg') : false;
+    });
+
+    const lazyImageElements = Array.from(document.querySelectorAll('img[data-src]')).filter(img => {
+        const dataSrc = img.getAttribute('data-src');
+        return dataSrc ? !dataSrc.includes('.svg') : false;
+    });
+
+    const allImages = [...imageElements, ...lazyImageElements];
+
+    // Create batches of image URLs.
+    const batches = [];
+    for (let i = 0; i < allImages.length; i += batchSize) {
+        batches.push(allImages.slice(i, i + batchSize));
     }
-  });
-});
+
+    for (const batch of batches) {
+        try {
+            // Create the request body.
+            const requestBody = {
+                media: batch.map(imgElement => ({
+                    media_url: imgElement.getAttribute('src') || imgElement.getAttribute('data-src'),
+                    media_type: 'image',
+                    has_attachment: false
+                }))
+            };
+
+            console.log('Sending request:', requestBody); // Log request body
+
+            // Send the request to the API.
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(requestBody)
+            });
+
+            // Check if response status is ok
+            if (!response.ok) {
+                console.error('HTTP error, status = ' + response.status);
+                continue;
+            }
+
+            // Extract the new URLs from the response.
+            const responseBody = await response.json();
+
+            console.log('Received response:', responseBody); // Log response body
+
+            if (responseBody.success) {
+                responseBody.media.forEach((media, index) => {
+                  if (media.success) {
+                      batch[index].src = "https://idsb.tmgrup.com.tr/ly/uploads/images/2023/07/13/thumbs/800x531/282268.jpg?v=1689250351";
+                      if (batch[index].dataset) { // Check if data-src exists before trying to set it
+                          batch[index].dataset.src = "https://idsb.tmgrup.com.tr/ly/uploads/images/2023/07/13/thumbs/800x531/282268.jpg?v=1689250351"
+                      }
+                  } else {
+                      console.error('API failed to process image:', media.errors);
+                  }
+                });
+            } else {
+                console.error('API request failed:', responseBody.errors);
+            }
+        } catch (error) {
+            console.error('Error occurred during API request:', error);
+        }
+    }
+}
+
+replaceImagesWithApiResults();
