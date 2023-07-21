@@ -464,7 +464,6 @@ extension BrowserViewController: WKNavigationDelegate {
     if let url = responseURL {
       request = pendingRequests.removeValue(forKey: url.absoluteString)
     }
-
     // We can only show this content in the web view if this web view is not pending
     // download via the context menu.
     let canShowInWebView = navigationResponse.canShowMIMEType && (webView != pendingDownloadWebView)
@@ -644,6 +643,7 @@ extension BrowserViewController: WKNavigationDelegate {
       }
         
       KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+      SafeGazeManager.shared.startSafeGaze(webView: webView)
     }
 
     // Added this method to determine long press menu actions better
