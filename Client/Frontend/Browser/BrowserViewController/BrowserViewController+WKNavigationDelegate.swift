@@ -643,7 +643,7 @@ extension BrowserViewController: WKNavigationDelegate {
       }
         
       KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
-      SafeGazeManager.shared.startSafeGaze(webView: webView)
+      SafegazeManager.shared.startSafegaze(webView: webView)
     }
 
     // Added this method to determine long press menu actions better

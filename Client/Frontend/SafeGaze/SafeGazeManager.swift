@@ -8,13 +8,13 @@ import UIKit
 import WebKit
 import BraveShared
 
-public class SafeGazeManager: ObservableObject {
-    public static let shared = SafeGazeManager()
+public class SafegazeManager: ObservableObject {
+    public static let shared = SafegazeManager()
     private let webRepository = KahfTubeWebRepository.shared
     private let util = KahfTubeUtil.shared
     private static var webView: WKWebView?
     
-    public func startSafeGaze(webView: WKWebView) {
+    public func startSafegaze(webView: WKWebView) {
         util.jsFileToCode(path: "replace") { code in
             if let jsCode = code {
                 webView.evaluateSafeJavaScript(functionName: jsCode, contentWorld: .page, asFunction: false) {(object, error) -> Void in
