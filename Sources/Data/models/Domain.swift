@@ -15,7 +15,7 @@ public final class Domain: NSManagedObject, CRUD {
   @NSManaged public var topsite: Bool  // not currently used. Should be used once proper frecency code is in.
   @NSManaged public var blockedFromTopSites: Bool  // don't show ever on top sites
   @NSManaged public var favicon: FaviconMO?
-
+  @NSManaged public var safegaze_allOff: NSNumber?
   @NSManaged public var shield_allOff: NSNumber?
   @NSManaged public var shield_adblockAndTp: NSNumber?
 
@@ -139,6 +139,7 @@ public final class Domain: NSManagedObject, CRUD {
         urlComponents.scheme = "https"
         guard let httpsUrl = urlComponents.url?.absoluteString else { continue }
         if let httpsDomain = Domain.first(where: NSPredicate(format: "url == %@", httpsUrl), context: context) {
+          httpsDomain.safegaze_allOff = domain.safegaze_allOff
           httpsDomain.shield_allOff = domain.shield_allOff
           httpsDomain.shield_adblockAndTp = domain.shield_adblockAndTp
           httpsDomain.shield_noScript = domain.shield_noScript
@@ -352,6 +353,7 @@ extension Domain {
           if let bms = $0.bookmarks, bms.count > 0 {
             // Clear visit count and clear the shield settings
             $0.visits = 0
+            $0.safegaze_allOff = nil
             $0.shield_allOff = nil
             $0.shield_adblockAndTp = nil
             $0.shield_noScript = nil
@@ -520,4 +522,36 @@ extension Domain {
       }
     }
   }
-}
+    
+  // MARK: Safegaze
+
+  public class func setSafegaze(
+      forUrl url: URL,
+      isOn: Bool, isPrivateBrowsing: Bool
+   ) {
+      let _context: WriteContext = isPrivateBrowsing ? .new(inMemory: true) : .new(inMemory: false)
+       setSafegazeInternal(forUrl: url, isOn: isOn, context: _context)
+  }
+    
+  class func setSafegazeInternal(forUrl url: URL, isOn: Bool, context: WriteContext = .new(inMemory: false)) {
+      DataController.perform(context: context) { context in
+        // Not saving here, save happens in `perform` method.
+        let domain = Domain.getOrCreateInternal(
+          url, context: context,
+          saveStrategy: .delayedPersistentStore)
+        domain.setSafegaze(isOn: isOn, context: context)
+      }
+   }
+
+   private func setSafegaze(
+      isOn: Bool?,
+      context: NSManagedObjectContext
+    ) {
+        safegaze_allOff = !(isOn ?? true) as NSNumber
+    }
+    
+    /// Whether or not a given shield should be enabled based on domain exceptions and the users global preference
+    @MainActor public func isSafegazeAllOff() -> Bool {
+        return self.safegaze_allOff?.boolValue ?? false
+    }
+   }

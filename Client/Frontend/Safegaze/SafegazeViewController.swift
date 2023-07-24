@@ -68,7 +68,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
     }
 
     if let domain = domain {
-      shieldsUpSwitch.isOn = !domain.isShieldExpected(.AllOff, considerAllShieldsOption: false)
+      shieldsUpSwitch.isOn = !domain.isSafegazeAllOff()
     } else {
       shieldsUpSwitch.isOn = true
     }
@@ -95,19 +95,6 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
     )
   }
 
-  private func updateBraveShieldState(shield: BraveShield, on: Bool, option: Preferences.Option<Bool>?) {
-    guard let url = url else { return }
-    let allOff = shield == .AllOff
-    // `.AllOff` uses inverse logic. Technically we set "all off" when the switch is OFF, unlike all the others
-    // If the new state is the same as the global preference, reset it to nil so future shield state queries
-    // respect the global preference rather than the overridden value. (Prevents toggling domain state from
-    // affecting future changes to the global pref)
-    let isOn = allOff ? !on : on
-    Domain.setBraveShield(
-      forUrl: url, shield: shield, isOn: isOn,
-      isPrivateBrowsing: PrivateBrowsingManager.shared.isPrivateBrowsing)
-  }
-
   private func updateGlobalShieldState(_ on: Bool, animated: Bool = false) {
     shieldsView.simpleShieldView.statusLabel.text = on ? Strings.Shields.statusValueUp.uppercased() : Strings.Shields.statusValueDown.uppercased()
 
@@ -122,7 +109,6 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
         partOneViews = [self.shieldsView.simpleShieldView.shieldsDownStackView]
         partTwoViews = [
           self.shieldsView.simpleShieldView.blockCountView,
-          self.shieldsView.simpleShieldView.footerLabel,
           // self.shieldsView.advancedControlsBar,
         ]
         if advancedControlsShowing {
@@ -131,7 +117,6 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
       } else {
         partOneViews = [
           self.shieldsView.simpleShieldView.blockCountView,
-          self.shieldsView.simpleShieldView.footerLabel,
           // self.shieldsView.advancedControlsBar,
         ]
         /*if advancedControlsShowing {
@@ -164,10 +149,8 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
         })
     } else {
       shieldsView.simpleShieldView.blockCountView.isHidden = !shieldsEnabled
-      shieldsView.simpleShieldView.footerLabel.isHidden = !shieldsEnabled
       shieldsView.simpleShieldView.shieldsDownStackView.isHidden = shieldsEnabled
       shieldsView.advancedControlsBar.isHidden = !shieldsEnabled
-
       updatePreferredContentSize()
     }
   }
@@ -247,9 +230,6 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
 
     shieldsView.advancedControlsBar.addTarget(self, action: #selector(tappedAdvancedControlsBar), for: .touchUpInside)
 
-    shieldsView.simpleShieldView.blockCountView.infoButton.addTarget(self, action: #selector(tappedAboutShieldsButton), for: .touchUpInside)
-    shieldsView.simpleShieldView.blockCountView.shareButton.addTarget(self, action: #selector(tappedShareShieldsButton), for: .touchUpInside)
-
     shieldsView.simpleShieldView.reportSiteButton.addTarget(self, action: #selector(tappedReportSiteButton), for: .touchUpInside)
     shieldsView.reportBrokenSiteView.cancelButton.addTarget(self, action: #selector(tappedCancelReportingButton), for: .touchUpInside)
     shieldsView.reportBrokenSiteView.submitButton.addTarget(self, action: #selector(tappedSubmitReportingButton), for: .touchUpInside)
@@ -270,7 +250,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
       toggle.valueToggled = { [weak self] on in
         guard let self = self else { return }
         // Localized / per domain toggles triggered here
-        self.updateBraveShieldState(shield: shield, on: on, option: option)
+        self.updateSafegazeState(on: on, option: option)
         // Wait a fraction of a second to allow DB write to complete otherwise it will not use the
         // updated shield settings when reloading the page
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
@@ -279,11 +259,22 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
       }
     }
   }
+    
+   private func updateSafegazeState(on: Bool, option: Preferences.Option<Bool>?) {
+      guard let url = url else { return }
+      // `.AllOff` uses inverse logic. Technically we set "all off" when the switch is OFF, unlike all the others
+      // If the new state is the same as the global preference, reset it to nil so future shield state queries
+      // respect the global preference rather than the overridden value. (Prevents toggling domain state from
+      // affecting future changes to the global pref)
+      Domain.setSafegaze(
+        forUrl: url, isOn: on,
+        isPrivateBrowsing: PrivateBrowsingManager.shared.isPrivateBrowsing)
+  }
 
   @objc private func shieldsOverrideSwitchValueChanged() {
     let isOn = shieldsUpSwitch.isOn
     self.updateGlobalShieldState(isOn, animated: true)
-    self.updateBraveShieldState(shield: .AllOff, on: isOn, option: nil)
+    self.updateSafegazeState(on: isOn, option: nil)
     // Wait a fraction of a second to allow DB write to complete otherwise it will not use the updated
     // shield settings when reloading the page
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {

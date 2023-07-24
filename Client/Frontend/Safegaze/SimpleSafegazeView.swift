@@ -41,13 +41,6 @@ class SimpleSafegazeView: UIView {
 
   let blockCountView = BlockCountView()
 
-  let footerLabel = UILabel().then {
-    $0.text = Strings.Shields.siteBroken
-    $0.font = .systemFont(ofSize: 13.0)
-    $0.textColor = UIColor(rgb: 0x868e96)
-    $0.numberOfLines = 0
-  }
-
   // Shields Down
 
   let shieldsDownStackView = UIStackView().then {
@@ -107,7 +100,6 @@ class SimpleSafegazeView: UIView {
         }),
       .customSpace(32),
       .view(blockCountView),
-      .view(footerLabel),
       .view(shieldsDownStackView)
     )
   }
@@ -167,30 +159,6 @@ extension SimpleSafegazeView {
       $0.textColor = .braveLabel
     }
 
-    let infoButton = BraveButton().then {
-      $0.setImage(UIImage(named: "shields-help", in: .module, compatibleWith: nil)!.template, for: .normal)
-      $0.hitTestSlop = UX.hitBoxEdgeInsets
-      $0.imageEdgeInsets = .zero
-      $0.titleEdgeInsets = .zero
-      $0.contentEdgeInsets = UIEdgeInsets(top: -2, left: 4, bottom: -3, right: 4)
-      $0.contentMode = .scaleAspectFit
-      $0.setContentCompressionResistancePriority(.required, for: .horizontal)
-      $0.accessibilityLabel = Strings.Shields.aboutBraveShieldsTitle
-      $0.tintColor = .bravePrimary
-    }
-
-    let shareButton = BraveButton().then {
-      $0.setImage(UIImage(sharedNamed: "shields-share")!.template, for: .normal)
-      $0.hitTestSlop = UX.hitBoxEdgeInsets
-      $0.imageEdgeInsets = .zero
-      $0.titleEdgeInsets = .zero
-      $0.contentEdgeInsets = UIEdgeInsets(top: -2, left: 4, bottom: -3, right: 4)
-      $0.contentMode = .scaleAspectFit
-      $0.setContentCompressionResistancePriority(.required, for: .horizontal)
-      $0.accessibilityLabel = Strings.share
-      $0.tintColor = .bravePrimary
-    }
-
     override init(frame: CGRect) {
       super.init(frame: frame)
 
@@ -204,23 +172,14 @@ extension SimpleSafegazeView {
 
       addSubview(contentStackView)
 
-      contentStackView.addStackViewItems(
-        .view(descriptionStackView)
-        // .view(infoStackView),
-        // .view(shareStackView)
-      )
+      contentStackView.addStackViewItems(.view(descriptionStackView))
 
       descriptionStackView.addStackViewItems(
         .view(countLabel),
         .view(descriptionLabel)
       )
 
-      //infoStackView.addArrangedSubview(infoButton)
-      //shareStackView.addArrangedSubview(shareButton)
-
-      contentStackView.snp.makeConstraints {
-        $0.edges.equalToSuperview()
-      }
+      contentStackView.snp.makeConstraints {$0.edges.equalToSuperview()}
     }
 
     override var accessibilityLabel: String? {
@@ -233,7 +192,6 @@ extension SimpleSafegazeView {
     }
 
     override func accessibilityActivate() -> Bool {
-      infoButton.sendActions(for: .touchUpInside)
       return true
     }
 
