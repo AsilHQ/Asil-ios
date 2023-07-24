@@ -4375,3 +4375,10 @@ extension Strings {
     comment: "An action (button title) that does not block cookie consent notices and dismisses the popup"
   )
 }
+
+extension Strings {
+    public struct Safegaze {
+        public static let shieldsLabel = "Safegaze"
+        
+    }
+}
