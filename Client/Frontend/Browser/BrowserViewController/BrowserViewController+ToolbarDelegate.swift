@@ -387,7 +387,7 @@ extension BrowserViewController: TopToolbarDelegate {
     }
     let container = PopoverNavigationController(rootViewController: shields)
     let popover = PopoverController(contentController: container, contentSizeBehavior: .preferredContentSize)
-    popover.present(from: topToolbar.locationView.shieldsButton, on: self)
+    popover.present(from: topToolbar.locationView.safegazeButton, on: self)
   }
 
   // TODO: This logic should be fully abstracted away and share logic from current MenuViewController

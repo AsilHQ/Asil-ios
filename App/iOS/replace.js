@@ -61,7 +61,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
       const spinner = container.querySelector('.spinner');
       if (spinner) {
         spinner.remove();
-        container.style.position = 'static'; // Reset container position to normal
       }
     });
   };
@@ -108,19 +107,19 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
       
       if (responseBody.success) {
         responseBody.media.forEach((media, index) => {
-          if (media.success) {
-            const processedMediaUrl = media.processed_media_url;
+          const processedMediaUrl = media.success ? media.processed_media_url : null;
+
+          if (processedMediaUrl !== null) {
             batch[index].src = processedMediaUrl;
-            if (batch[index].dataset) { // Check if data-src exists before trying to set it
+            if (batch[index].dataset) {
               batch[index].dataset.src = processedMediaUrl;
             }
-            // Mark the image as replaced by adding the data-replaced attribute
-            batch[index].setAttribute('data-replaced', 'true');
             // Remove blur effect from the individual image after it is replaced successfully
             unblurImages([batch[index]]);
-          } else {
-            console.error('API failed to process image:', media.errors);
           }
+          // Remove spinner and mark the image as replaced regardless of processed_media_url being null or not
+          removeSpinner(batch[index]);
+          batch[index].setAttribute('data-replaced', 'true');
         });
       } else {
         console.error('API request failed:', responseBody.errors);
@@ -170,6 +169,16 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
       allImages.push(...newImages);
     }
   });
+}
+
+function removeSpinner(element) {
+  // Replace this with your logic to remove the spinner element.
+  // For example:
+  // Assuming the spinner element has a class 'spinner':
+  const spinnerElement = element.querySelector('.spinner');
+  if (spinnerElement) {
+    spinnerElement.remove();
+  }
 }
 
 replaceImagesWithApiResults();
