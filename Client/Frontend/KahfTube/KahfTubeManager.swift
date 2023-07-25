@@ -20,25 +20,23 @@ public class KahfTubeManager: ObservableObject {
     
     public func startKahfTube(view: UIView, webView: WKWebView, vc: UIViewController) {
         KahfTubeManager.webView = webView
-        if let url = webView.url?.absoluteString, url.contains("youtube.com") {
-            print("Kahf Tube: User is on a YouTube page")
-            if Preferences.KahfTube.isOn.value {
-                self.filter(webView: webView)
-                getUserInformationsFromYoutube(view: view, webView: webView)
-            } else {
-                let refreshAlert = UIAlertController(title: "Kahf Tube", message: "Kahf Tube wants your permission to access your Youtube email and name to use Youtube Fitration feature.", preferredStyle: UIAlertController.Style.alert)
+        print("Kahf Tube: User is on a YouTube page")
+        if Preferences.KahfTube.isOn.value {
+            self.filter(webView: webView)
+            getUserInformationsFromYoutube(view: view, webView: webView)
+        } else {
+            let refreshAlert = UIAlertController(title: "Kahf Tube", message: "Kahf Tube wants your permission to access your Youtube email and name to use Youtube Fitration feature.", preferredStyle: UIAlertController.Style.alert)
 
-                refreshAlert.addAction(UIAlertAction(title: "Allow", style: .default, handler: { (action: UIAlertAction!) in
-                    Preferences.KahfTube.isOn.value = true
-                    self.getUserInformationsFromYoutube(view: view, webView: webView)
-                }))
+            refreshAlert.addAction(UIAlertAction(title: "Allow", style: .default, handler: { (action: UIAlertAction!) in
+                Preferences.KahfTube.isOn.value = true
+                self.getUserInformationsFromYoutube(view: view, webView: webView)
+            }))
 
-                refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
-                    Preferences.KahfTube.isOn.value = false
-                }))
-                
-                vc.present(refreshAlert, animated: true, completion: nil)
-            }
+            refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+                Preferences.KahfTube.isOn.value = false
+            }))
+            
+            vc.present(refreshAlert, animated: true, completion: nil)
         }
     }
     

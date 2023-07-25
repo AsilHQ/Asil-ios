@@ -641,13 +641,16 @@ extension BrowserViewController: WKNavigationDelegate {
       if tab.walletEthProvider != nil {
         tab.emitEthereumEvent(.connect)
       }
-        
-      KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+    
       if let url = webView.url {
-          let isPrivateBrowsing = PrivateBrowsingManager.shared.isPrivateBrowsing
-          let domain = Domain.getOrCreate(forUrl: url, persistent: !isPrivateBrowsing)
-          if !domain.isSafegazeAllOff() {
-              SafegazeManager.shared.startSafegaze(webView: webView)
+          if url.absoluteString.contains("youtube.com") {
+              KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+          } else {
+              let isPrivateBrowsing = PrivateBrowsingManager.shared.isPrivateBrowsing
+              let domain = Domain.getOrCreate(forUrl: url, persistent: !isPrivateBrowsing)
+              if !domain.isSafegazeAllOff() {
+                  SafegazeManager.shared.startSafegaze(webView: webView)
+              }
           }
       }
     }
