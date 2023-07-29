@@ -649,7 +649,9 @@ extension BrowserViewController: WKNavigationDelegate {
               let isPrivateBrowsing = PrivateBrowsingManager.shared.isPrivateBrowsing
               let domain = Domain.getOrCreate(forUrl: url, persistent: !isPrivateBrowsing)
               if !domain.isSafegazeAllOff() {
-                  SafegazeManager.shared.startSafegaze(webView: webView)
+                  if !url.absoluteString.contains("www.google.com") {
+                      SafegazeManager.shared.startSafegaze(webView: webView)
+                  }
               }
           }
       }
