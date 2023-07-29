@@ -28,16 +28,22 @@ document.head.appendChild(style);
 
 async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/api/v1/analyze') {
   const batchSize = 4;
-  const minImageSize = 30; // Minimum image size in pixels
+  const minImageSize = 40; // Minimum image size in pixels
+  
+  const hasMinRenderedSize = (element) => {
+    const rect = element.getBoundingClientRect();
+    return rect.width >= minImageSize && rect.height >= minImageSize;
+  };
+
   
   const imageElements = Array.from(document.getElementsByTagName('img')).filter(img => {
     const src = img.getAttribute('src');
-    return src ? (!src.includes('.svg') && img.naturalWidth >= minImageSize && img.naturalHeight >= minImageSize) : false;
+    return src ? (!src.includes('.svg') && hasMinRenderedSize(img)) : false;
   });
   
   const lazyImageElements = Array.from(document.querySelectorAll('img[data-src]')).filter(img => {
     const dataSrc = img.getAttribute('data-src');
-    return dataSrc ? (!dataSrc.includes('.svg') && img.naturalWidth >= minImageSize && img.naturalHeight >= minImageSize) : false;
+    return dataSrc ? (!dataSrc.includes('.svg') && hasMinRenderedSize(img)) : false;
   });
   
   const allImages = [...imageElements, ...lazyImageElements];
