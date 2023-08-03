@@ -552,6 +552,14 @@ extension Domain {
     
     /// Whether or not a given shield should be enabled based on domain exceptions and the users global preference
     @MainActor public func isSafegazeAllOff() -> Bool {
-        return self.safegaze_allOff?.boolValue ?? false
+        if let url = url {
+            if !url.contains("google.com") && !url.contains("youtube.com") {
+                return self.safegaze_allOff?.boolValue ?? false
+            } else {
+                return true
+            }
+        } else {
+            return true
+        }
     }
-   }
+}

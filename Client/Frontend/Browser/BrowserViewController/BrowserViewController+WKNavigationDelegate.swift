@@ -307,7 +307,7 @@ extension BrowserViewController: WKNavigationDelegate {
           .trackerProtectionStats: url.isWebPage(includeDataURIs: false) &&
                                    domainForMainFrame.isShieldExpected(.AdblockAndTp, considerAllShieldsOption: true),
           
-          .safegaze: true // url.isWebPage(includeDataURIs: false)// && !domainForMainFrame.isSafegazeAllOff()
+          .safegaze: url.isWebPage(includeDataURIs: false) && !domainForMainFrame.isSafegazeAllOff()
         ])
       }
       
@@ -647,14 +647,6 @@ extension BrowserViewController: WKNavigationDelegate {
       if let url = webView.url {
           if url.absoluteString.contains("youtube.com") {
               KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
-          } else {
-              let isPrivateBrowsing = PrivateBrowsingManager.shared.isPrivateBrowsing
-              let domain = Domain.getOrCreate(forUrl: url, persistent: !isPrivateBrowsing)
-              if !domain.isSafegazeAllOff() {
-                  if !url.absoluteString.contains("www.google.com") {
-                      SafegazeManager.shared.startSafegaze(webView: webView)
-                  }
-              }
           }
       }
     }
