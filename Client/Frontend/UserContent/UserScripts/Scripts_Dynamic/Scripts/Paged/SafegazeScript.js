@@ -1,4 +1,8 @@
-// Add your CSS styles here
+// Copyright 2022 The Brave Authors. All rights reserved.
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
 const css = `
 .spinner {
   position: absolute;
@@ -122,6 +126,17 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
             }
             // Remove blur effect from the individual image after it is replaced successfully
             unblurImages([batch[index]]);
+              window.__firefox__.execute(function($) {
+                let postMessage = $(function(message) {
+                  $.postNativeMessage('$<message_handler>', {
+                    "securityToken": SECURITY_TOKEN,
+                    "state": message
+                  });
+                });
+                
+                postMessage("replaced");
+              });
+
           }
           // Remove spinner and mark the image as replaced regardless of processed_media_url being null or not
           removeSpinner(batch[index]);

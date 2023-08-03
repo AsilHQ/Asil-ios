@@ -15,16 +15,6 @@ public class SafegazeManager: ObservableObject {
     private static var webView: WKWebView?
     
     public func startSafegaze(webView: WKWebView) {
-        util.jsFileToCode(path: "replace") { code in
-            if let jsCode = code {
-                webView.evaluateSafeJavaScript(functionName: jsCode, contentWorld: .page, asFunction: false) {(object, error) -> Void in
-                    if let error = error {
-                        print("Kahf Tube: \(error)")
-                    } else {
-                        print("Kahf Tube: replace.js executed")
-                    }
-                }
-            }
-        }
+        webView.configuration.userContentController.addUserScript(SafegazeContentScriptHandler.userScript ?? WKUserScript())
     }
 }

@@ -90,9 +90,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
   }
 
   private func updateShieldBlockStats() {
-    shieldsView.simpleShieldView.blockCountView.countLabel.text = String(
-      tab.contentBlocker.stats.adCount + tab.contentBlocker.stats.trackerCount + tab.contentBlocker.stats.httpsCount + tab.contentBlocker.stats.scriptCount + tab.contentBlocker.stats.fingerprintingCount
-    )
+    shieldsView.simpleShieldView.blockCountView.countLabel.text = String(tab.contentBlocker.stats.safegazeCount)
   }
 
   private func updateGlobalShieldState(_ on: Bool, animated: Bool = false) {

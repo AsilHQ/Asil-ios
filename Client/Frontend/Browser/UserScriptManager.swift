@@ -96,6 +96,7 @@ class UserScriptManager {
     case readyStateHelper
     case ethereumProvider
     case solanaProvider
+    case safegaze
     
     fileprivate var script: WKUserScript? {
       switch self {
@@ -109,7 +110,7 @@ class UserScriptManager {
       case .trackerProtectionStats: return ContentBlockerHelper.userScript
       case .ethereumProvider: return EthereumProviderScriptHandler.userScript
       case .solanaProvider: return SolanaProviderScriptHandler.userScript
-        
+      case .safegaze: return SafegazeContentScriptHandler.userScript
       // Always enabled scripts
       case .rewardsReporting: return RewardsReportingScriptHandler.userScript
       case .playlist: return PlaylistScriptHandler.userScript
@@ -156,6 +157,11 @@ class UserScriptManager {
       // this is because it needs to hook requests before RewardsReporting
       if scripts.contains(.requestBlocking), let script = self.dynamicScripts[.requestBlocking] {
         scripts.remove(.requestBlocking)
+        scriptController.addUserScript(script)
+      }
+        
+      if scripts.contains(.safegaze), let script = self.dynamicScripts[.safegaze] {
+        scripts.remove(.safegaze)
         scriptController.addUserScript(script)
       }
       

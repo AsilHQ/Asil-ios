@@ -305,7 +305,9 @@ extension BrowserViewController: WKNavigationDelegate {
           // The tracker protection script
           // This script will track what is blocked and increase stats
           .trackerProtectionStats: url.isWebPage(includeDataURIs: false) &&
-                                   domainForMainFrame.isShieldExpected(.AdblockAndTp, considerAllShieldsOption: true)
+                                   domainForMainFrame.isShieldExpected(.AdblockAndTp, considerAllShieldsOption: true),
+          
+          .safegaze: true // url.isWebPage(includeDataURIs: false)// && !domainForMainFrame.isSafegazeAllOff()
         ])
       }
       
