@@ -211,6 +211,12 @@
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "Рекламу й інші підозрілі елементи заблоковано";
 
+/* "The number of sinful acts avoided will be next to this" */
+"SafegazeBlockedCountLabel" = "Уникнуто гріховних вчинків";
+
+/* "The number of total sinful acts avoided will be next to this" */
+"SafegazeTotalBlockedCountLabel" = "Загалом %@ уникнуто гріховних вчинків з самого початку";
+
 /* What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel */
 "BraveShieldsBlockedInfoButtonAccessibilityLabel" = "Докладніше";
 

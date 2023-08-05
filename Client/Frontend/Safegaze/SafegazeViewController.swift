@@ -91,6 +91,13 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
 
   private func updateShieldBlockStats() {
     shieldsView.simpleShieldView.blockCountView.countLabel.text = String(tab.contentBlocker.stats.safegazeCount)
+    shieldsView.simpleShieldView.totalCountView.descriptionLabel.attributedText = {
+          let string = NSMutableAttributedString(
+            string: String(format: Strings.Shields.safegazeTotalCountLabel, String(BraveGlobalShieldStats.shared.safegazeCount)),
+            attributes: [.font: UIFont.systemFont(ofSize: 13.0)]
+          )
+          return string
+    }()
   }
 
   private func updateGlobalShieldState(_ on: Bool, animated: Bool = false) {
@@ -115,6 +122,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
       } else {
         partOneViews = [
           self.shieldsView.simpleShieldView.blockCountView,
+          self.shieldsView.simpleShieldView.totalCountView
           // self.shieldsView.advancedControlsBar,
         ]
         /*if advancedControlsShowing {
@@ -147,6 +155,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
         })
     } else {
       shieldsView.simpleShieldView.blockCountView.isHidden = !shieldsEnabled
+      shieldsView.simpleShieldView.totalCountView.isHidden = !shieldsEnabled
       shieldsView.simpleShieldView.shieldsDownStackView.isHidden = shieldsEnabled
       shieldsView.advancedControlsBar.isHidden = !shieldsEnabled
       updatePreferredContentSize()

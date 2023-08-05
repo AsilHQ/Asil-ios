@@ -57,6 +57,7 @@ class SafegazeContentScriptHandler: TabContentScript {
       return
     }
       
+    BraveGlobalShieldStats.shared.safegazeCount += 1
     tab.contentBlocker.stats = tab.contentBlocker.stats.adding(safegazeCount: 1)
   }
 }

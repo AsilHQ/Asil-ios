@@ -58,6 +58,13 @@ open class BraveGlobalShieldStats {
       postUpdateNotification()
     }
   }
+    
+  public var safegazeCount: Int = 0 {
+    didSet {
+        Preferences.BlockStats.safegazeCount.value = safegazeCount
+        postUpdateNotification()
+    }
+  }
 
   private func postUpdateNotification() {
     NotificationCenter.default.post(name: Notification.Name(rawValue: BraveGlobalShieldStats.didUpdateNotification), object: nil)
@@ -71,6 +78,7 @@ open class BraveGlobalShieldStats {
     scripts = Preferences.BlockStats.scriptsCount.value
     fpProtection = Preferences.BlockStats.fingerprintingCount.value
     safeBrowsing = Preferences.BlockStats.phishingCount.value
+    safegazeCount = Preferences.BlockStats.safegazeCount.value
   }
 
   fileprivate let millisecondsPerItem: Int = 50

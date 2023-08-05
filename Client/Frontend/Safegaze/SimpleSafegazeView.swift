@@ -40,6 +40,7 @@ class SimpleSafegazeView: UIView {
   }
 
   let blockCountView = BlockCountView()
+  let totalCountView = TotalBlockCountView()
 
   // Shields Down
 
@@ -100,7 +101,7 @@ class SimpleSafegazeView: UIView {
         }),
       .customSpace(32),
       .view(blockCountView),
-      .view(shieldsDownStackView)
+      .view(totalCountView)
     )
   }
 
@@ -145,7 +146,7 @@ extension SimpleSafegazeView {
     private lazy var descriptionLabel = ViewLabel().then {
       $0.attributedText = {
         let string = NSMutableAttributedString(
-          string: Strings.Shields.blockedCountLabel,
+          string: Strings.Shields.safegazeCountLabel,
           attributes: [.font: UIFont.systemFont(ofSize: 13.0)]
         )
         return string
@@ -158,6 +159,30 @@ extension SimpleSafegazeView {
       $0.isAccessibilityElement = false
       $0.textColor = .braveLabel
     }
+
+      let totalCount = UILabel().then {
+          $0.font = .systemFont(ofSize: 36)
+          $0.setContentHuggingPriority(.required, for: .horizontal)
+          $0.setContentCompressionResistancePriority(.required, for: .horizontal)
+          $0.textColor = .braveLabel
+      }
+      
+      private lazy var totalDescriptionLabel = ViewLabel().then {
+          $0.attributedText = {
+              let string = NSMutableAttributedString(
+                string: Strings.Shields.safegazeCountLabel,
+                attributes: [.font: UIFont.systemFont(ofSize: 13.0)]
+              )
+              return string
+          }()
+          $0.backgroundColor = .clear
+          if #unavailable(iOS 15.0) {
+              $0.setContentCompressionResistancePriority(.required, for: .horizontal)
+          }
+
+        $0.isAccessibilityElement = false
+        $0.textColor = .braveLabel
+      }
 
     override init(frame: CGRect) {
       super.init(frame: frame)
@@ -184,7 +209,7 @@ extension SimpleSafegazeView {
 
     override var accessibilityLabel: String? {
       get {
-        [countLabel.accessibilityLabel, Strings.Shields.blockedCountLabel]
+        [countLabel.accessibilityLabel, Strings.Shields.safegazeCountLabel]
           .compactMap { $0 }
           .joined(separator: " ")
       }
@@ -200,6 +225,94 @@ extension SimpleSafegazeView {
       fatalError()
     }
   }
+    
+    class TotalBlockCountView: UIView {
+        
+        private struct UX {
+          static let descriptionEdgeInset = UIEdgeInsets(top: 13, left: 16, bottom: 13, right: 16)
+          static let iconEdgeInset = UIEdgeInsets(top: 22, left: 14, bottom: 22, right: 14)
+          static let hitBoxEdgeInsets = UIEdgeInsets(equalInset: -10)
+          static let buttonEdgeInsets = UIEdgeInsets(top: -3, left: 4, bottom: -3, right: 4)
+        }
+
+        let contentStackView = UIStackView().then {
+          $0.spacing = 2
+        }
+
+        let descriptionStackView = ShieldsStackView(edgeInsets: UX.descriptionEdgeInset).then {
+          $0.spacing = 16
+        }
+
+        lazy var descriptionLabel = ViewLabel().then {
+          $0.attributedText = {
+            let string = NSMutableAttributedString(
+              string: String(format: Strings.Shields.safegazeTotalCountLabel, String(BraveGlobalShieldStats.shared.safegazeCount)),
+              attributes: [.font: UIFont.systemFont(ofSize: 13.0)]
+            )
+            return string
+          }()
+          $0.backgroundColor = .clear
+          if #unavailable(iOS 15.0) {
+            $0.setContentCompressionResistancePriority(.required, for: .horizontal)
+          }
+
+          $0.isAccessibilityElement = false
+          $0.textColor = .braveLabel
+        }
+
+          let totalCount = UILabel().then {
+              $0.font = .systemFont(ofSize: 36)
+              $0.setContentHuggingPriority(.required, for: .horizontal)
+              $0.setContentCompressionResistancePriority(.required, for: .horizontal)
+              $0.textColor = .braveLabel
+          }
+          
+          private lazy var totalDescriptionLabel = ViewLabel().then {
+              $0.attributedText = {
+                  let string = NSMutableAttributedString(
+                    string: Strings.Shields.safegazeTotalCountLabel,
+                    attributes: [.font: UIFont.systemFont(ofSize: 13.0)]
+                  )
+                  return string
+              }()
+              $0.backgroundColor = .clear
+              if #unavailable(iOS 15.0) {
+                  $0.setContentCompressionResistancePriority(.required, for: .horizontal)
+              }
+
+            $0.isAccessibilityElement = false
+            $0.textColor = .braveLabel
+          }
+
+        override init(frame: CGRect) {
+          super.init(frame: frame)
+
+          isAccessibilityElement = true
+          accessibilityTraits.insert(.button)
+          accessibilityHint = Strings.Shields.blockedInfoButtonAccessibilityLabel
+
+          descriptionStackView.addBackground(color: .secondaryBraveBackground, cornerRadius: 6.0)
+
+          addSubview(contentStackView)
+
+          contentStackView.addStackViewItems(.view(descriptionStackView))
+
+          descriptionStackView.addStackViewItems(
+            .view(descriptionLabel)
+          )
+
+          contentStackView.snp.makeConstraints {$0.edges.equalToSuperview()}
+        }
+
+        override func accessibilityActivate() -> Bool {
+          return true
+        }
+
+        @available(*, unavailable)
+        required init(coder: NSCoder) {
+          fatalError()
+        }
+      }
 }
 
 // MARK: - ShieldsStackView
