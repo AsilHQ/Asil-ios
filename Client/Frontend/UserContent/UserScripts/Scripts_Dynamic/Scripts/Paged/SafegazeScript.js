@@ -66,12 +66,15 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
   // Function to remove blur effect and spinner from images
   const unblurImages = (images) => {
     images.forEach(imgElement => {
-      imgElement.style.filter = 'none';
-      const container = imgElement.parentElement; // Get the container that holds the image and spinner
-      const spinner = container.querySelector('.spinner');
-      if (spinner) {
-        spinner.remove();
-      }
+        const container = imgElement.parentElement; // Get the container that holds the image and spinner
+        const spinner = container.querySelector('.spinner');
+        if (spinner) {
+          // Wait for the image to be fully loaded before removing the spinner
+          imgElement.onload = () => {
+            spinner.remove();
+            imgElement.style.filter = 'none';
+          };
+        }
     });
   };
   
@@ -193,9 +196,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
 }
 
 function removeSpinner(element) {
-  // Replace this with your logic to remove the spinner element.
-  // For example:
-  // Assuming the spinner element has a class 'spinner':
   const spinnerElement = element.querySelector('.spinner');
   if (spinnerElement) {
     spinnerElement.remove();
