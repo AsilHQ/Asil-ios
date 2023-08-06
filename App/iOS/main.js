@@ -486,7 +486,9 @@ function updateCautionView(
     if (imageElement.style.filter != "blur(1.1rem)") {
       imageElement.style.filter = "blur(1.1rem)";
     }
-    if (thumbnailElement.children.item(0).children.length <= 3) {
+    // Check if the caution element is already present in the thumbnailElement
+    const cautionElement = thumbnailElement.querySelector(".caution-element");
+    if (!cautionElement ) {
       thumbnailElement.children
         .item(0)
         .append(
@@ -500,6 +502,7 @@ function updateCautionView(
 
 function createCompactCautionElement() {
   const div1 = document.createElement("div");
+  div1.classList.add("caution-element");
   div1.style.position = "absolute";
   div1.style.display = "flex";
   div1.style.width = "100%";
@@ -538,6 +541,7 @@ function createCompactCautionElement() {
 
 function createLargeCautionElement() {
   const div1 = document.createElement("div");
+  div1.classList.add("caution-element");
   div1.style.position = "absolute";
   div1.style.display = "flex";
   div1.style.width = "100%";
