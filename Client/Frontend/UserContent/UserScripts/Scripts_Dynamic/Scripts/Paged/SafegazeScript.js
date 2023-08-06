@@ -141,8 +141,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
               });
 
           }
-          // Remove spinner and mark the image as replaced regardless of processed_media_url being null or not
-          removeSpinner(batch[index]);
           batch[index].setAttribute('data-replaced', 'true');
         });
       } else {
@@ -169,10 +167,11 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
   }
   
   // Scroll event listener
-  window.addEventListener('scroll', async () => {
+  const fetchNewImages = async () => {
     const newImages = Array.from(document.getElementsByTagName('img')).filter(img => {
       const src = img.getAttribute('src');
-      return src && !src.includes('.svg') && !allImages.includes(img) && img.naturalWidth >= minImageSize && img.naturalHeight >= minImageSize && !sentUrls.has(src) && !img.hasAttribute('data-replaced');
+      return src && !img.hasAttribute('data-replaced') && !src.includes('.svg')  && !sentUrls.has(src)
+        && !allImages.includes(img) && img.naturalWidth >= minImageSize && img.naturalHeight >= minImageSize;
     });
     
     if (newImages.length > 0) {
@@ -192,14 +191,10 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
       
       allImages.push(...newImages);
     }
-  });
-}
+  };
 
-function removeSpinner(element) {
-  const spinnerElement = element.querySelector('.spinner');
-  if (spinnerElement) {
-    spinnerElement.remove();
-  }
+  window.addEventListener('scroll', fetchNewImages);
+  setInterval(fetchNewImages, 500);
 }
 
 replaceImagesWithApiResults();
