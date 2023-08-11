@@ -211,6 +211,12 @@
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "封鎖廣告和其他討人厭的追蹤程式";
 
+/* "The number of sinful acts avoided will be next to this" */
+"SafegazeBlockedCountLabel" = "避免的罪惡行為";
+
+/* "The number of total sinful acts avoided will be next to this" */
+"SafegazeTotalBlockedCountLabel" = "從一開始就總共避免了%@個罪惡行為";
+
 /* What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel */
 "BraveShieldsBlockedInfoButtonAccessibilityLabel" = "深入了解";
 

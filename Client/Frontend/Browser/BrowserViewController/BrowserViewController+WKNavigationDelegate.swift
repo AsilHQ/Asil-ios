@@ -305,7 +305,9 @@ extension BrowserViewController: WKNavigationDelegate {
           // The tracker protection script
           // This script will track what is blocked and increase stats
           .trackerProtectionStats: url.isWebPage(includeDataURIs: false) &&
-                                   domainForMainFrame.isShieldExpected(.AdblockAndTp, considerAllShieldsOption: true)
+                                   domainForMainFrame.isShieldExpected(.AdblockAndTp, considerAllShieldsOption: true),
+          
+          .safegaze: url.isWebPage(includeDataURIs: false) && !domainForMainFrame.isSafegazeAllOff()
         ])
       }
       
@@ -464,7 +466,6 @@ extension BrowserViewController: WKNavigationDelegate {
     if let url = responseURL {
       request = pendingRequests.removeValue(forKey: url.absoluteString)
     }
-
     // We can only show this content in the web view if this web view is not pending
     // download via the context menu.
     let canShowInWebView = navigationResponse.canShowMIMEType && (webView != pendingDownloadWebView)
@@ -642,8 +643,12 @@ extension BrowserViewController: WKNavigationDelegate {
       if tab.walletEthProvider != nil {
         tab.emitEthereumEvent(.connect)
       }
-        
-        KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+    
+      if let url = webView.url {
+          if url.absoluteString.contains("youtube.com") {
+              KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+          }
+      }
     }
 
     // Added this method to determine long press menu actions better

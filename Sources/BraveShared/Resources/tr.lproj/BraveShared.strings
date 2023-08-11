@@ -211,6 +211,12 @@
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "Reklamlar ve diğer ürpertici şeyler engellendi";
 
+/* "The number of sinful acts avoided will be next to this" */
+"SafegazeBlockedCountLabel" = "Günah işlemeyi engellediniz";
+
+/* "The number of total sinful acts avoided will be next to this" */
+"SafegazeTotalBlockedCountLabel" = "Başlangıçtan beri toplam %@ günah işlemeyi engellediniz";
+
 /* What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel */
 "BraveShieldsBlockedInfoButtonAccessibilityLabel" = "Daha fazla bilgi edinin";
 

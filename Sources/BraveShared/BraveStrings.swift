@@ -1324,6 +1324,8 @@ extension Strings {
     public static let statusValueUp = NSLocalizedString("BraveShieldsStatusValueUp", tableName: "BraveShared", bundle: .module, value: "Up", comment: "Context: The 'Up' in 'Asil Browser Shields Up'")
     public static let statusValueDown = NSLocalizedString("BraveShieldsStatusValueDown", tableName: "BraveShared", bundle: .module, value: "Down", comment: "Context: The 'Down' in 'Asil Browser Shields Down'")
     public static let blockedCountLabel = NSLocalizedString("BraveShieldsBlockedCountLabel", tableName: "BraveShared", bundle: .module, value: "Ads and other creepy things blocked", comment: "The number of ads and trackers blocked will be next to this")
+    public static let safegazeCountLabel = NSLocalizedString("SafegazeBlockedCountLabel", tableName: "BraveShared", bundle: .module, value: "Sinful acts avoided", comment: "The number of sinful acts avoided will be next to this")
+    public static let safegazeTotalCountLabel = NSLocalizedString("SafegazeTotalBlockedCountLabel", tableName: "BraveShared", bundle: .module, value: "Total %@ Sinful acts avoided since beginning", comment: "The number of total sinful acts avoided will be next to this")
     public static let blockedInfoButtonAccessibilityLabel = NSLocalizedString("BraveShieldsBlockedInfoButtonAccessibilityLabel", tableName: "BraveShared", bundle: .module, value: "Learn more", comment: "What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel")
     public static let siteBroken = NSLocalizedString("BraveShieldsSiteBroken", tableName: "BraveShared", bundle: .module, value: "If this site appears broken, try Shields down", comment: "")
     public static let advancedControls = NSLocalizedString("BraveShieldsAdvancedControls", tableName: "BraveShared", bundle: .module, value: "Advanced controls", comment: "")
@@ -4374,4 +4376,11 @@ extension Strings {
     value: "No thanks",
     comment: "An action (button title) that does not block cookie consent notices and dismisses the popup"
   )
+}
+
+extension Strings {
+    public struct Safegaze {
+        public static let shieldsLabel = "Safegaze"
+        
+    }
 }

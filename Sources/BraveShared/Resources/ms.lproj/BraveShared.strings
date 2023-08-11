@@ -211,6 +211,12 @@
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "Iklan dan perkara menakutkan yang lain disekat";
 
+/* "The number of sinful acts avoided will be next to this" */
+"SafegazeBlockedCountLabel" = "Tindakan berdosa dielakkan";
+
+/* "The number of total sinful acts avoided will be next to this" */
+"SafegazeTotalBlockedCountLabel" =  "Jumlah %@ tindakan berdosa dielakkan sejak awal"
+
 /* What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel */
 "BraveShieldsBlockedInfoButtonAccessibilityLabel" = "Ketahui lebih lanjut";
 

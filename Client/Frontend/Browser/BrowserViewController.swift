@@ -2428,7 +2428,7 @@ extension BrowserViewController: TabDelegate {
       DeAmpScriptHandler(tab: tab),
       SiteStateListenerScriptHandler(tab: tab),
       CosmeticFiltersScriptHandler(tab: tab),
-      
+      tab.safegazeHandler,
       tab.contentBlocker,
       tab.requestBlockingContentHelper,
     ]

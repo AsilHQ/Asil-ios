@@ -44,7 +44,7 @@ public protocol URLBrowser {
     var canGoBack: Bool { get }
     var canGoForward: Bool { get }
     func reload()
-    
+    func changeAgent(agentType: String)
     func clear()
 }
 public typealias LayoutEngine = URLBrowser & JavaScriptEvaluator
@@ -53,7 +53,8 @@ let JavascriptErrorHandler = "erikError"
 let JavascriptEndHandler = "erikEnd"
 let JavascriptEmailHandler = "emailHandler"
 let JavascriptLogHandler = "logHandler"
-
+let JavascriptUnsubscribeHandler = "getUnsubscribedChannelsHandler"
+let JavascriptGetChannelsHandler = "getChannelsHandler"
 
 // Protocole which define a navigate boolean
 // Useful to know if currently in navigation processs
@@ -154,6 +155,9 @@ open class WebKitLayoutEngine: NSObject, LayoutEngine {
         self.webView.configuration.userContentController.add(self, name: JavascriptErrorHandler)
         self.webView.configuration.userContentController.add(self, name: JavascriptEndHandler)
         self.webView.configuration.userContentController.add(self, name: JavascriptEmailHandler)
+        self.webView.configuration.userContentController.add(self, name: JavascriptUnsubscribeHandler)
+        self.webView.configuration.userContentController.add(self, name: JavascriptGetChannelsHandler)
+        self.webView.configuration.userContentController.add(self, name: JavascriptLogHandler)
         if self.webView.navigationDelegate == nil {
             let delegate = LayoutEngineNavigationDelegate()
             self.webView.navigationDelegate = delegate
@@ -244,6 +248,12 @@ extension WebKitLayoutEngine {
 
     public func reload() {
         self.webView.reload()
+    }
+    
+    public func changeAgent(agentType: String) {
+        DispatchQueue.main.async {
+            self.webView.customUserAgent = agentType
+        }
     }
 
     public func currentContent(completionHandler: CompletionHandler?) {
@@ -399,6 +409,20 @@ extension WebKitLayoutEngine: WKScriptMessageHandler {
             }
         } else if message.name == JavascriptEmailHandler, let message = message.body as? Dictionary<String, Any> {
             KahfTubeManager.shared.saveYoutubeInformations(dict: message)
+            print("Kahf Tube Email Handled")
+        } else if message.name == JavascriptUnsubscribeHandler, let message = message.body as? Dictionary<String, Any> {
+            print("Kahf Tube Uns Log \(message)")
+        } else if message.name == JavascriptLogHandler, let message = message.body as? String {
+            print("Kahf Tube Log: \(message)")
+            if message == "previewClosed" && KahfTubeManager.shared.newUserRefreshNeeded {
+                KahfTubeManager.shared.refreshYoutube()
+            }
+        } else if message.name == JavascriptGetChannelsHandler {
+            if let message = message.body as? [Dictionary<String, Any>] {
+                KahfTubeManager.shared.askUserToUnsubscribe(channels: message)
+            } else {
+                KahfTubeManager.shared.askUserToUnsubscribe()
+            }
         }
     }
 }

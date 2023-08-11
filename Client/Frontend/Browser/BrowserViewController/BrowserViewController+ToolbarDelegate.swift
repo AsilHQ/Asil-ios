@@ -280,6 +280,10 @@ extension BrowserViewController: TopToolbarDelegate {
   func topToolbarDidTapBraveShieldsButton(_ topToolbar: TopToolbarView) {
     presentBraveShieldsViewController()
   }
+   
+  func topToolbarDidTapSafegazeButton(_ topToolbar: TopToolbarView) {
+    presentSafegazeViewController()
+  }
 
   func presentBraveShieldsViewController() {
     guard let selectedTab = tabManager.selectedTab, var url = selectedTab.url else { return }
@@ -333,6 +337,57 @@ extension BrowserViewController: TopToolbarDelegate {
     let container = PopoverNavigationController(rootViewController: shields)
     let popover = PopoverController(contentController: container, contentSizeBehavior: .preferredContentSize)
     popover.present(from: topToolbar.locationView.shieldsButton, on: self)
+  }
+    
+  func presentSafegazeViewController() {
+    guard let selectedTab = tabManager.selectedTab, var url = selectedTab.url else { return }
+    if let internalUrl = InternalURL(url), internalUrl.isErrorPage, let originalURL = internalUrl.originalURLFromErrorPage {
+        url = originalURL
+    }
+    
+    if url.isLocalUtility || InternalURL(url)?.isAboutURL == true || InternalURL(url)?.isAboutHomeURL == true {
+        return
+    }
+    
+    let shields = SafegazeViewController(tab: selectedTab)
+    shields.shieldsSettingsChanged = { [unowned self] _, shield in
+        // Reload this tab. This will also trigger an update of the brave icon in `TabLocationView` if
+        // the setting changed is the global `.AllOff` shield
+        self.tabManager.selectedTab?.reload()
+        
+        // Record P3A shield changes
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            // Record shields & FP related hisotgrams, wait a sec for CoreData to sync contexts
+            self.recordShieldsUpdateP3A(shield: shield)
+        }
+        
+        // In 1.6 we "reload" the whole web view state, dumping caches, etc. (reload():BraveWebView.swift:495)
+        // BRAVE TODO: Port over proper tab reloading with Shields
+    }
+    shields.showGlobalShieldsSettings = { [unowned self] vc in
+        vc.dismiss(animated: true) {
+            let shieldsAndPrivacy = BraveShieldsAndPrivacySettingsController(
+                profile: self.profile,
+                tabManager: self.tabManager,
+                feedDataSource: self.feedDataSource,
+                historyAPI: self.braveCore.historyAPI,
+                p3aUtilities: self.braveCore.p3aUtils
+            )
+            let container = SettingsNavigationController(rootViewController: shieldsAndPrivacy)
+            container.isModalInPresentation = true
+            container.modalPresentationStyle =
+            UIDevice.current.userInterfaceIdiom == .phone ? .pageSheet : .formSheet
+            shieldsAndPrivacy.navigationItem.rightBarButtonItem = .init(
+                barButtonSystemItem: .done,
+                target: container,
+                action: #selector(SettingsNavigationController.done)
+            )
+            self.present(container, animated: true)
+        }
+    }
+    let container = PopoverNavigationController(rootViewController: shields)
+    let popover = PopoverController(contentController: container, contentSizeBehavior: .preferredContentSize)
+    popover.present(from: topToolbar.locationView.safegazeButton, on: self)
   }
 
   // TODO: This logic should be fully abstracted away and share logic from current MenuViewController

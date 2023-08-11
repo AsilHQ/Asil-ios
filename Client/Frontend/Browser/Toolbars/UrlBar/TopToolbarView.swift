@@ -47,6 +47,7 @@ protocol TopToolbarDelegate: AnyObject {
   func topToolbarDidPressLockImageView(_ urlBar: TopToolbarView)
   func topToolbarDidTapWalletButton(_ urlBar: TopToolbarView)
   func topToolbarDidTapShareButton(_ urlBar: TopToolbarView)
+  func topToolbarDidTapSafegazeButton(_ topToolbar: TopToolbarView)
 }
 
 class TopToolbarView: UIView, ToolbarProtocol {
@@ -628,6 +629,10 @@ class TopToolbarView: UIView, ToolbarProtocol {
   @objc func didClickBraveShieldsButton() {
     delegate?.topToolbarDidTapBraveShieldsButton(self)
   }
+    
+  @objc func didClickSafegazeButton() {
+    delegate?.topToolbarDidTapSafegazeButton(self)
+  }
 
   @objc func topToolbarDidPressQrCodeButton() {
     leaveOverlayMode(didCancel: true)
@@ -652,6 +657,10 @@ extension TopToolbarView: PreferencesObserver {
 extension TopToolbarView: TabLocationViewDelegate {
   func tabLocationViewDidTapShieldsButton(_ urlBar: TabLocationView) {
     delegate?.topToolbarDidTapBraveShieldsButton(self)
+  }
+    
+  func tabLocationViewDidTapSafegazeButton(_ urlBar: TabLocationView) {
+      delegate?.topToolbarDidTapSafegazeButton(self)
   }
 
   func tabLocationViewDidTapRewardsButton(_ urlBar: TabLocationView) {

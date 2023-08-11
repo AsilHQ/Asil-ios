@@ -629,6 +629,7 @@ extension PlaylistWebLoader: WKNavigationDelegate {
 
         // Force adblocking on
         domainForShields.shield_allOff = 0
+        domainForShields.safegaze_allOff = 0
         domainForShields.shield_adblockAndTp = true
         
         // Load block lists

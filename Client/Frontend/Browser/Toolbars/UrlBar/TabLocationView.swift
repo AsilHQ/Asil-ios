@@ -25,6 +25,7 @@ protocol TabLocationViewDelegate {
   func tabLocationViewDidLongPressRewardsButton(_ urlBar: TabLocationView)
   func tabLocationViewDidTapWalletButton(_ urlBar: TabLocationView)
   func topToolbarDidTapShareButton(_ urlBar: TabLocationView)
+  func tabLocationViewDidTapSafegazeButton(_ tabLocationView: TabLocationView)
   
   /// - returns: whether the long-press was handled by the delegate; i.e. return `false` when the conditions for even starting handling long-press were not satisfied
   @discardableResult func tabLocationViewDidLongPressReaderMode(_ tabLocationView: TabLocationView) -> Bool
@@ -217,6 +218,17 @@ class TabLocationView: UIView {
     button.accessibilityIdentifier = "urlBar-shieldsButton"
     return button
   }()
+    
+  lazy var safegazeButton: ToolbarButton = {
+    let button = ToolbarButton(top: true)
+    button.setImage(UIImage(sharedNamed: "sg-logo-only")?.scale(toSize: CGSize(width: 20, height: 20)), for: .normal)
+    button.addTarget(self, action: #selector(didClickSafegazeButton), for: .touchUpInside)
+    button.imageView?.contentMode = .scaleAspectFit
+    button.accessibilityLabel = Strings.bravePanel
+    button.imageView?.adjustsImageSizeForAccessibilityContentSizeCategory = true
+    button.accessibilityIdentifier = "urlBar-safegazeButton"
+    return button
+  }()
 
   lazy var rewardsButton: RewardsButton = {
     let button = RewardsButton()
@@ -264,7 +276,7 @@ class TabLocationView: UIView {
     addGestureRecognizer(longPressRecognizer)
     addGestureRecognizer(tapRecognizer)
     
-    let optionSubviews = [readerModeButton, walletButton, shareButton, separatorLine, shieldsButton, rewardsButton]
+    let optionSubviews = [readerModeButton, walletButton, shareButton, separatorLine, shieldsButton, safegazeButton]
     optionSubviews.forEach {
       ($0 as? UIButton)?.contentEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
       $0.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
@@ -408,6 +420,10 @@ class TabLocationView: UIView {
 
   @objc func didClickBraveShieldsButton() {
     delegate?.tabLocationViewDidTapShieldsButton(self)
+  }
+    
+  @objc func didClickSafegazeButton() {
+      delegate?.tabLocationViewDidTapSafegazeButton(self)
   }
 
   @objc func didClickBraveRewardsButton() {

@@ -49,9 +49,6 @@ public struct KahfTubeView: View {
             case .profile:
                 UIKitNavigationView {
                     KahfTubeProfileView(dismissAction: dismissAction)
-                    .toolbar {
-                      dismissButtonToolbarContents
-                    }
                 }
                 .transition(.move(edge: .bottom))
             case .onboarding:
