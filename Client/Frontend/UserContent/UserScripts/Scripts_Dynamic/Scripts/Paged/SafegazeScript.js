@@ -47,18 +47,16 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
   };
   
   // Function to remove blur effect and spinner from images
-  const unblurImages = (images) => {
-    images.forEach(imgElement => {
-        const container = imgElement.parentElement; // Get the container that holds the image and spinner
+  const unblurImages = (image) => {
+    const container = image.parentElement; // Get the container that holds the image and spinner
         const spinner = container.querySelector('.spinner');
         if (spinner) {
           // Wait for the image to be fully loaded before removing the spinner
-          imgElement.onload = () => {
+          image.onload = () => {
             spinner.remove();
-            imgElement.style.filter = 'none';
+            image.style.filter = 'none';
           };
         }
-    });
   };
   
   const replaceImages = async (batch) => {
@@ -71,7 +69,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
               const protocol = window.location.protocol; // "http:" or "https:"
               const host = window.location.host; // "www.xyz.com" or your domain
               mediaUrl = `${protocol}//${host}${mediaUrl}`; // Use mediaUrl instead of url here
-              console.log('Host', host)
               console.log('Prefixed Url', mediaUrl);
           }
           else if (mediaUrl.startsWith('//')) {
@@ -118,13 +115,14 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
       if (responseBody.success) {
         responseBody.media.forEach((media, index) => {
           const processedMediaUrl = media.success ? media.processed_media_url : null;
+          let element = batch[batch.findIndex(item => item.src === media.original_media_url)];
           if (processedMediaUrl !== null) {
-            console.log('Response', batch[index].src);
-            batch[index].src = processedMediaUrl;
-            batch[index].setAttribute('data-replaced', 'true');
-            unblurImages([batch[index]]);
-            if (batch[index].dataset) {
-              batch[index].dataset.src = processedMediaUrl;
+            element.src = processedMediaUrl;
+            element.srcset = '';
+            element.setAttribute('data-replaced', 'true');
+            unblurImages(element);
+            if (element.dataset) {
+                element.dataset.src = processedMediaUrl;
             }
             window.__firefox__.execute(function($) {
                 let postMessage = $(function(message) {
@@ -138,7 +136,15 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
             });
 
           }
+          else {
+            console.log('Response true but not processed', element.src);
+            const container = element.parentElement;
+            const spinner = container.querySelector('.spinner');
+            if (spinner)
+                spinner.remove();
+          }
         });
+        
       } else {
         console.error('API request failed:', responseBody.errors);
       }

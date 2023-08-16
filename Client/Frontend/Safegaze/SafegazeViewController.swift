@@ -94,7 +94,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
     shieldsView.simpleShieldView.totalCountView.descriptionLabel.attributedText = {
           let string = NSMutableAttributedString(
             string: String(format: Strings.Shields.safegazeTotalCountLabel, String(BraveGlobalShieldStats.shared.safegazeCount)),
-            attributes: [.font: UIFont.systemFont(ofSize: 13.0)]
+            attributes: [.font: UIFont.systemFont(ofSize: 13.0), .foregroundColor: UIColor.braveLabel ]
           )
           return string
     }()
