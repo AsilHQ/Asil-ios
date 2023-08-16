@@ -39,28 +39,11 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
     return rect.width >= minImageSize && rect.height >= minImageSize;
   };
 
-  
-  const imageElements = Array.from(document.getElementsByTagName('img')).filter(img => {
-    const src = img.getAttribute('src');
-    return src ? (!src.includes('.svg') && hasMinRenderedSize(img)) : false;
-  });
-  
-  const lazyImageElements = Array.from(document.querySelectorAll('img[data-src]')).filter(img => {
-    const dataSrc = img.getAttribute('data-src');
-    return dataSrc ? (!dataSrc.includes('.svg') && hasMinRenderedSize(img)) : false;
-  });
-  
-  const allImages = [...imageElements, ...lazyImageElements];
-  const sentUrls = new Set(); // Set to keep track of URLs sent in requests
-  
-  // Function to apply blur effect to images and show spinner
-  const blurImages = (images) => {
-    images.forEach(imgElement => {
-      imgElement.style.filter = 'blur(5px)';
-      const spinner = document.createElement('div');
-      spinner.classList.add('spinner');
-      imgElement.parentElement.appendChild(spinner);
-    });
+  const blurImage = (image) => {
+       image.style.filter = 'blur(10px)';
+       const spinner = document.createElement('div');
+       spinner.classList.add('spinner');
+       image.parentElement.appendChild(spinner);
   };
   
   // Function to remove blur effect and spinner from images
@@ -79,25 +62,36 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
   };
   
   const replaceImages = async (batch) => {
-    // Apply blur effect to images during API request
-    blurImages(batch);
-    
     // Create the request body.
     const requestBody = {
-    media: batch.map(imgElement => ({
-    media_url: imgElement.getAttribute('src') || imgElement.getAttribute('data-src'),
-    media_type: 'image',
-    has_attachment: false
-    }))
-    };
-    
+    media: batch.map(imgElement => {
+          let mediaUrl = imgElement.getAttribute('src') || imgElement.getAttribute('data-src');
+          console.log('Media url:', mediaUrl);
+          if (mediaUrl.startsWith('/wp-content')) {
+              const protocol = window.location.protocol; // "http:" or "https:"
+              const host = window.location.host; // "www.xyz.com" or your domain
+              mediaUrl = `${protocol}//${host}${mediaUrl}`; // Use mediaUrl instead of url here
+              console.log('Host', host)
+              console.log('Prefixed Url', mediaUrl);
+          }
+          else if (mediaUrl.startsWith('//')) {
+            mediaUrl = 'https:' + mediaUrl;
+          }
+          return {
+            media_url: mediaUrl,
+            media_type: 'image',
+            has_attachment: false,
+            srcAttr: imgElement.getAttribute('srcAttr')
+          };
+        })
+      };
+
     console.log('Sending request:', JSON.stringify(requestBody)); // Log request body
     
     try {
       // Mark the URLs of all images in the current batch as sent in requests
       batch.forEach(imgElement => {
-        const url = imgElement.getAttribute('src') || imgElement.getAttribute('data-src');
-        sentUrls.add(url);
+        imgElement.setAttribute('isSent', 'true');
       });
       
       // Send the request to the API.
@@ -112,6 +106,9 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
         console.error('HTTP error, status = ' + response.status);
         return;
       }
+      else {
+        console.log("Response ok")
+      }
       
       // Extract the response data from the response.
       const responseBody = await response.json();
@@ -121,15 +118,15 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
       if (responseBody.success) {
         responseBody.media.forEach((media, index) => {
           const processedMediaUrl = media.success ? media.processed_media_url : null;
-
           if (processedMediaUrl !== null) {
+            console.log('Response', batch[index].src);
             batch[index].src = processedMediaUrl;
+            batch[index].setAttribute('data-replaced', 'true');
+            unblurImages([batch[index]]);
             if (batch[index].dataset) {
               batch[index].dataset.src = processedMediaUrl;
             }
-            // Remove blur effect from the individual image after it is replaced successfully
-            unblurImages([batch[index]]);
-              window.__firefox__.execute(function($) {
+            window.__firefox__.execute(function($) {
                 let postMessage = $(function(message) {
                   $.postNativeMessage('$<message_handler>', {
                     "securityToken": SECURITY_TOKEN,
@@ -138,10 +135,9 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                 });
                 
                 postMessage("replaced");
-              });
+            });
 
           }
-          batch[index].setAttribute('data-replaced', 'true');
         });
       } else {
         console.error('API request failed:', responseBody.errors);
@@ -151,50 +147,79 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
     }
   };
   
-  // Create batches of image URLs.
-  const batches = [];
-  for (let i = 0; i < allImages.length; i += batchSize) {
-    batches.push(allImages.slice(i, i + batchSize));
-  }
-  
-  for (const batch of batches) {
-    // Filter out images that have already been replaced or sent in previous requests
-    const imagesToReplace = batch.filter(imgElement => !imgElement.hasAttribute('data-replaced') && !sentUrls.has(imgElement.getAttribute('src') || imgElement.getAttribute('data-src')));
-    
-    if (imagesToReplace.length > 0) {
-      await replaceImages(imagesToReplace);
-    }
-  }
-  
   // Scroll event listener
   const fetchNewImages = async () => {
-    const newImages = Array.from(document.getElementsByTagName('img')).filter(img => {
-      const src = img.getAttribute('src');
-      return src && !img.hasAttribute('data-replaced') && !src.includes('.svg')  && !sentUrls.has(src)
-        && !allImages.includes(img) && img.naturalWidth >= minImageSize && img.naturalHeight >= minImageSize;
+     const imageElements = Array.from(document.getElementsByTagName('img')).filter(img => {
+        const src = img.getAttribute('src');
+        const alt = img.getAttribute('alt');
+        if (src && !src.startsWith('data:image/')) {
+            const isValidImage = !src.includes('.svg') && hasMinRenderedSize(img) && img.getAttribute('alt') !== 'logo' && !src.includes('logo') && img.getAttribute('isSent') !== 'true' && img.getAttribute('data-replaced') !== 'true' && !src.includes('no-image')
+            if (isValidImage) {
+                blurImage(img);
+                img.setAttribute('isSent', 'true');
+                console.log('SRC:', src);
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        else if (!src || src.length === 0) {
+            img.setAttribute('src', img.getAttribute("xlink:href"));
+            img.setAttribute('srcAttr', "xlink:href");
+            blurImage(img);
+            img.setAttribute('isSent', 'true');
+            console.log('xlink:', src);
+            return true;
+        }
+        return false;
     });
-    
-    if (newImages.length > 0) {
+      
+    const lazyImageElements = Array.from(document.querySelectorAll('img[data-src]')).filter(img => {
+        const dataSrc = img.getAttribute('data-src');
+        const alt = img.getAttribute('alt');
+        if (dataSrc && !dataSrc.startsWith('data:image/')) {
+            const isValidImage = !dataSrc.includes('.svg') && hasMinRenderedSize(img) && img.getAttribute('alt') !== 'logo' && !dataSrc.includes('logo') && img.getAttribute('isSent') !== 'true' && img.getAttribute('data-replaced') !== 'true' && !dataSrc.includes('no-image')
+            if (isValidImage) {
+                blurImage(img);
+                img.setAttribute('isSent', 'true');
+                img.setAttribute('src', dataSrc);
+                console.log('Data SRC:', dataSrc);
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        else if (!dataSrc || dataSrc.length === 0) {
+            img.setAttribute('src', img.getAttribute("xlink:href"));
+            img.setAttribute('srcAttr', "xlink:href");
+            blurImage(img);
+            img.setAttribute('isSent', 'true');
+            console.log('xlink:', src);
+            return true;
+        }
+        return false;
+    });
+    const allImages = [...imageElements, ...lazyImageElements];
+    if (allImages.length > 0) {
       const newBatches = [];
-      for (let i = 0; i < newImages.length; i += batchSize) {
-        newBatches.push(newImages.slice(i, i + batchSize));
+      for (let i = 0; i < allImages.length; i += batchSize) {
+        newBatches.push(allImages.slice(i, i + batchSize));
       }
       
       for (const batch of newBatches) {
         // Filter out images that have already been replaced or sent in previous requests
-        const imagesToReplace = batch.filter(imgElement => !imgElement.hasAttribute('data-replaced') && !sentUrls.has(imgElement.getAttribute('src') || imgElement.getAttribute('data-src')));
+        const imagesToReplace = batch.filter(imgElement => !imgElement.hasAttribute('data-replaced'));
         
         if (imagesToReplace.length > 0) {
           await replaceImages(imagesToReplace);
         }
       }
-      
-      allImages.push(...newImages);
     }
   };
-
+  fetchNewImages();
   window.addEventListener('scroll', fetchNewImages);
-  setInterval(fetchNewImages, 500);
 }
 
 replaceImagesWithApiResults();
