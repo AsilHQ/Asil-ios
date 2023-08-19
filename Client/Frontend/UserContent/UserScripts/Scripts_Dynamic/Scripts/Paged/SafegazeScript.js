@@ -29,6 +29,18 @@ const style = document.createElement('style');
 style.innerHTML = css;
 document.head.appendChild(style);
 
+function sendMessage(message) {
+    window.__firefox__.execute(function($) {
+        let postMessage = $(function(message) {
+            $.postNativeMessage('$<message_handler>', {
+                "securityToken": SECURITY_TOKEN,
+                "state": message
+            });
+        });
+
+        postMessage(message);
+    });
+}
 
 async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/api/v1/analyze') {
   const batchSize = 4;
@@ -62,26 +74,15 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
   const replaceImages = async (batch) => {
     // Create the request body.
     const requestBody = {
-    media: batch.map(imgElement => {
-          let mediaUrl = imgElement.getAttribute('src') || imgElement.getAttribute('data-src');
-          console.log('Media url:', mediaUrl);
-          if (mediaUrl.startsWith('/wp-content')) {
-              const protocol = window.location.protocol; // "http:" or "https:"
-              const host = window.location.host; // "www.xyz.com" or your domain
-              mediaUrl = `${protocol}//${host}${mediaUrl}`; // Use mediaUrl instead of url here
-              console.log('Prefixed Url', mediaUrl);
-          }
-          else if (mediaUrl.startsWith('//')) {
-            mediaUrl = 'https:' + mediaUrl;
-          }
-          return {
-            media_url: mediaUrl,
-            media_type: 'image',
-            has_attachment: false,
-            srcAttr: imgElement.getAttribute('srcAttr')
-          };
-        })
-      };
+     media: batch.map(imgElement => {
+           return {
+             media_url: imgElement.getAttribute('src'),
+             media_type: 'image',
+             has_attachment: false,
+             srcAttr: imgElement.getAttribute('srcAttr')
+           };
+         })
+    };
 
     console.log('Sending request:', JSON.stringify(requestBody)); // Log request body
     
@@ -125,24 +126,11 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
             if (element.dataset) {
                 element.dataset.src = processedMediaUrl;
             }
-            window.__firefox__.execute(function($) {
-                let postMessage = $(function(message) {
-                  $.postNativeMessage('$<message_handler>', {
-                    "securityToken": SECURITY_TOKEN,
-                    "state": message
-                  });
-                });
-                
-                postMessage("replaced");
-            });
-
+            sendMessage("replaced");
           }
           else {
             console.log('Response true but not processed', element.src);
-            const container = element.parentElement;
-            const spinner = container.querySelector('.spinner');
-            if (spinner)
-                spinner.remove();
+            unblurImages(element);
           }
         });
         
@@ -210,23 +198,151 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
     });
     const allImages = [...imageElements, ...lazyImageElements];
     if (allImages.length > 0) {
-      const newBatches = [];
-      for (let i = 0; i < allImages.length; i += batchSize) {
-        newBatches.push(allImages.slice(i, i + batchSize));
-      }
-      
-      for (const batch of newBatches) {
-        // Filter out images that have already been replaced or sent in previous requests
-        const imagesToReplace = batch.filter(imgElement => !imgElement.hasAttribute('data-replaced'));
-        
-        if (imagesToReplace.length > 0) {
-          await replaceImages(imagesToReplace);
+         const cleanedSavedImagesArray = []
+         const analyzePromises = [];
+         allImages.forEach(imgElement => {
+           let mediaUrl = imgElement.getAttribute('src') || imgElement.getAttribute('data-src');
+           console.log('Media url:', mediaUrl);
+           if (mediaUrl.startsWith('/wp-content')) {
+               const protocol = window.location.protocol; // "http:" or "https:"
+               const host = window.location.host; // "www.xyz.com" or your domain
+               mediaUrl = `${protocol}//${host}${mediaUrl}`; // Use mediaUrl instead of url here
+               console.log('Prefixed Url', mediaUrl);
+           }
+           else if (mediaUrl.startsWith('//')) {
+             mediaUrl = 'https:' + mediaUrl;
+           }
+
+           let analyzer = new RemoteAnalyzer({ mediaUrl });
+           const analyzePromise = analyzer.analyze().then((result) => {
+             if (!result.shouldMask) {
+               imgElement.src = mediaUrl
+               cleanedSavedImagesArray.push(imgElement)
+             } else {
+               imgElement.setAttribute('src', result.maskedUrl)
+               imgElement.srcset = '';
+               imgElement.setAttribute('data-replaced', 'true');
+               unblurImages(imgElement);
+               if (imgElement.dataset) {
+                 imgElement.dataset.src = result.maskedUrl;
+               }
+             }
+             console.log("Media analysis complete");
+             console.log(result);
+           }).catch((err) => {
+             console.log("Error analyzing media");
+             console.log(err);
+           });
+
+           analyzePromises.push(analyzePromise);
+         })
+
+         await Promise.all(analyzePromises)
+
+         const newBatches = [];
+
+          for (let i = 0; i < cleanedSavedImagesArray.length; i += batchSize) {
+            newBatches.push(cleanedSavedImagesArray.slice(i, i + batchSize));
+          }
+
+          for (const batch of newBatches) {
+            // Filter out images that have already been replaced or sent in previous requests
+             const imagesToReplace = batch.filter(imgElement => {
+                 const srcValue = imgElement.getAttribute('src');
+                 return !imgElement.hasAttribute('data-replaced') && !srcValue.startsWith('data:image/');
+             });
+
+            if (imagesToReplace.length > 0) {
+              await replaceImages(imagesToReplace);
+            }
+          }
         }
-      }
-    }
   };
   fetchNewImages();
   window.addEventListener('scroll', fetchNewImages);
+}
+
+class RemoteAnalyzer {
+  constructor(data) {
+    this.data = data;
+  }
+
+  analyze = async () => {
+    try {
+      let relativeFilePath = this.relativeFilePath(this.data.mediaUrl);
+      if (await this.urlExists(relativeFilePath)) {
+        sendMessage("URL exists");
+        return {
+          shouldMask: true,
+          maskedUrl: relativeFilePath,
+        };
+      } else {
+        sendMessage("URL does not exist");
+      }
+    } catch (error) {
+      alert(error)
+      console.log("Error checking if URL exists");
+    }
+    return {
+      shouldMask: false,
+      maskedUrl: ""
+    };
+  };
+
+  urlExists = async (url) => {
+      sendMessage(url);
+      try {
+        const response = await fetch(url, {
+          method: "GET",
+          cache: "no-cache"
+        });
+        sendMessage("status");
+        sendMessage(response.status.toString());
+
+        return response.ok;
+      } catch (error) {
+        sendMessage("network error");
+        sendMessage(error.toString());
+        return false;
+      }
+    };
+
+  relativeFilePath = (originalMediaUrl) => {
+    let url = decodeURIComponent(originalMediaUrl);
+    let urlParts = url.split("?");
+
+    // Handling protocol stripped URL
+    let protocolStrippedUrl = urlParts[0]
+      .replace(/http:\/\//, "")
+      .replace(/https:\/\//, "")
+      .replace(/--/g, "__")
+      .replace(/%/g, "_");
+
+    // Handling query parameters
+    let queryParams =
+      urlParts[1] !== undefined
+        ? urlParts[1].replace(/,/g, "_").replace(/=/g, "_").replace(/&/g, "/")
+        : "";
+
+    let relativeFolder = protocolStrippedUrl.split("/").slice(0, -1).join("/");
+    if (queryParams.length) {
+      relativeFolder = `${relativeFolder}/${queryParams}`;
+    }
+
+    // Handling file and extension
+    let filenameWithExtension = protocolStrippedUrl.split("/").pop();
+    let filenameParts = filenameWithExtension.split(".");
+    let filename, extension;
+    if (filenameParts.length >= 2) {
+      filename = filenameParts.slice(0, -1).join(".");
+      extension = filenameParts.pop();
+    } else {
+      filename = filenameParts[0].length ? filenameParts[0] : "image";
+      extension = "jpg";
+    }
+
+    return `https://cdn.safegaze.com/annotated_image/${relativeFolder}/${filename}.${extension}`;
+  };
 }
 
 replaceImagesWithApiResults();
