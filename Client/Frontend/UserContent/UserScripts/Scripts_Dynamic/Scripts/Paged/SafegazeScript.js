@@ -30,16 +30,20 @@ style.innerHTML = css;
 document.head.appendChild(style);
 
 function sendMessage(message) {
-    window.__firefox__.execute(function($) {
-        let postMessage = $(function(message) {
-            $.postNativeMessage('$<message_handler>', {
-                "securityToken": SECURITY_TOKEN,
-                "state": message
+    console.log(message);
+    try {
+        window.__firefox__.execute(function($) {
+            let postMessage = $(function(message) {
+                $.postNativeMessage('$<message_handler>', {
+                    "securityToken": SECURITY_TOKEN,
+                    "state": message
+                });
             });
-        });
 
-        postMessage(message);
-    });
+            postMessage(message);
+        });
+    }
+    catch {}
 }
 
 async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/api/v1/analyze') {
@@ -83,8 +87,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
            };
          })
     };
-
-    console.log('Sending request:', JSON.stringify(requestBody)); // Log request body
     
     try {
       // Mark the URLs of all images in the current batch as sent in requests
@@ -101,17 +103,15 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
       
       // Check if response status is ok
       if (!response.ok) {
-        console.error('HTTP error, status = ' + response.status);
+        sendMessage('HTTP error, status = ' + response.status);
         return;
       }
       else {
-        console.log("Response ok")
+        sendMessage("Response success")
       }
       
       // Extract the response data from the response.
       const responseBody = await response.json();
-      
-      console.log('Received response:', responseBody); // Log response body
       
       if (responseBody.success) {
         responseBody.media.forEach((media, index) => {
@@ -129,7 +129,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
             sendMessage("replaced");
           }
           else {
-            console.log('Response true but not processed', element.src);
+            sendMessage('Response true but not processed', element.src);
             unblurImages(element);
           }
         });
@@ -152,7 +152,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
             if (isValidImage) {
                 blurImage(img);
                 img.setAttribute('isSent', 'true');
-                console.log('SRC:', src);
+                sendMessage('SRC:', src);
                 return true;
             }
             else {
@@ -164,7 +164,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
             img.setAttribute('srcAttr', "xlink:href");
             blurImage(img);
             img.setAttribute('isSent', 'true');
-            console.log('xlink:', src);
+            sendMessage('xlink:', src);
             return true;
         }
         return false;
@@ -179,7 +179,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                 blurImage(img);
                 img.setAttribute('isSent', 'true');
                 img.setAttribute('src', dataSrc);
-                console.log('Data SRC:', dataSrc);
+                sendMessage('Data SRC:', dataSrc);
                 return true;
             }
             else {
@@ -191,7 +191,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
             img.setAttribute('srcAttr', "xlink:href");
             blurImage(img);
             img.setAttribute('isSent', 'true');
-            console.log('xlink:', src);
+            sendMessage('xlink:', src);
             return true;
         }
         return false;
@@ -202,12 +202,10 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
          const analyzePromises = [];
          allImages.forEach(imgElement => {
            let mediaUrl = imgElement.getAttribute('src') || imgElement.getAttribute('data-src');
-           console.log('Media url:', mediaUrl);
            if (mediaUrl.startsWith('/wp-content')) {
                const protocol = window.location.protocol; // "http:" or "https:"
                const host = window.location.host; // "www.xyz.com" or your domain
                mediaUrl = `${protocol}//${host}${mediaUrl}`; // Use mediaUrl instead of url here
-               console.log('Prefixed Url', mediaUrl);
            }
            else if (mediaUrl.startsWith('//')) {
              mediaUrl = 'https:' + mediaUrl;
@@ -227,13 +225,10 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                  imgElement.dataset.src = result.maskedUrl;
                }
              }
-             console.log("Media analysis complete");
-             console.log(result);
+             sendMessage("Media analysis complete"+ result);
            }).catch((err) => {
-             console.log("Error analyzing media");
-             console.log(err);
+             sendMessage("Error analyzing media:"+ err);
            });
-
            analyzePromises.push(analyzePromise);
          })
 
@@ -271,17 +266,16 @@ class RemoteAnalyzer {
     try {
       let relativeFilePath = this.relativeFilePath(this.data.mediaUrl);
       if (await this.urlExists(relativeFilePath)) {
-        sendMessage("URL exists");
+        sendMessage("URL exists" + relativeFilePath);
         return {
           shouldMask: true,
           maskedUrl: relativeFilePath,
         };
       } else {
-        sendMessage("URL does not exist");
+        sendMessage("URL does not exist" + relativeFilePath);
       }
     } catch (error) {
-      alert(error)
-      console.log("Error checking if URL exists");
+      sendMessage(error.toString());
     }
     return {
       shouldMask: false,
@@ -290,18 +284,13 @@ class RemoteAnalyzer {
   };
 
   urlExists = async (url) => {
-      sendMessage(url);
       try {
         const response = await fetch(url, {
           method: "GET",
           cache: "no-cache"
         });
-        sendMessage("status");
-        sendMessage(response.status.toString());
-
         return response.ok;
       } catch (error) {
-        sendMessage("network error");
         sendMessage(error.toString());
         return false;
       }
