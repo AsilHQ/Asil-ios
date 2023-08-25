@@ -25,7 +25,7 @@ public class WelcomeNTPOnboardingController: UIViewController, PopoverContentCom
 
   private let iconView = UIImageView().then {
     $0.contentMode = .scaleAspectFit
-    $0.image = UIImage(named: "welcome-view-ntp-logo", in: .module, compatibleWith: nil)!
+    $0.image = UIImage(named: "welcome-view-icon", in: .module, compatibleWith: nil)!
     $0.snp.makeConstraints {
       $0.size.equalTo(40)
     }
