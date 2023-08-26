@@ -166,7 +166,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
      const imageElements = Array.from(document.getElementsByTagName('img')).filter(img => {
         const src = img.getAttribute('src');
         const alt = img.getAttribute('alt');
-        if (src && !src.startsWith('data:image/')) {
+        if (src && !src.startsWith('data:image/') && src.length > 0) {
             const isValidImage = !src.includes('.svg') && hasMinRenderedSize(img) && img.getAttribute('alt') !== 'logo' && !src.includes('logo') && img.getAttribute('isSent') !== 'true' && img.getAttribute('data-replaced') !== 'true' && !src.includes('no-image')
             if (isValidImage) {
                 blurImage(img);
@@ -179,12 +179,14 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
             }
         }
         else if (!src || src.length === 0) {
-            img.setAttribute('src', img.getAttribute("xlink:href"));
-            img.setAttribute('srcAttr', "xlink:href");
-            blurImage(img);
-            img.setAttribute('isSent', 'true');
-            sendMessage('xlink:', src);
-            return true;
+            if (img.getAttribute("xlink:href")) {
+                img.setAttribute('src', img.getAttribute("xlink:href"));
+                img.setAttribute('srcAttr', "xlink:href");
+                blurImage(img);
+                img.setAttribute('isSent', 'true');
+                sendMessage('xlink:', src);
+                return true;
+            }
         }
         return false;
     });
@@ -192,7 +194,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
     const lazyImageElements = Array.from(document.querySelectorAll('img[data-src]')).filter(img => {
         const dataSrc = img.getAttribute('data-src');
         const alt = img.getAttribute('alt');
-        if (dataSrc && !dataSrc.startsWith('data:image/')) {
+        if (dataSrc && !dataSrc.startsWith('data:image/') && dataSrc.length > 0) {
             const isValidImage = !dataSrc.includes('.svg') && hasMinRenderedSize(img) && img.getAttribute('alt') !== 'logo' && !dataSrc.includes('logo') && img.getAttribute('isSent') !== 'true' && img.getAttribute('data-replaced') !== 'true' && !dataSrc.includes('no-image')
             if (isValidImage) {
                 blurImage(img);
@@ -206,12 +208,14 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
             }
         }
         else if (!dataSrc || dataSrc.length === 0) {
-            img.setAttribute('src', img.getAttribute("xlink:href"));
-            img.setAttribute('srcAttr', "xlink:href");
-            blurImage(img);
-            img.setAttribute('isSent', 'true');
-            sendMessage('xlink:', src);
-            return true;
+            if (img.getAttribute("xlink:href")) {
+                img.setAttribute('src', img.getAttribute("xlink:href"));
+                img.setAttribute('srcAttr', "xlink:href");
+                blurImage(img);
+                img.setAttribute('isSent', 'true');
+                sendMessage('xlink:', src);
+                return true;
+            }
         }
         return false;
     });
