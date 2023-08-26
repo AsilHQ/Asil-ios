@@ -46,6 +46,17 @@ function sendMessage(message) {
     catch {}
 }
 
+function removeSourceElementsInPictures() {
+    const pictureElements = document.querySelectorAll('picture');
+
+    pictureElements.forEach(picture => {
+        const sourceElements = picture.querySelectorAll('source');
+        sourceElements.forEach(source => {
+            source.remove();
+        });
+    });
+}
+
 async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/api/v1/analyze') {
   const batchSize = 4;
   const minImageSize = 40; // Minimum image size in pixels
@@ -144,6 +155,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
   
   // Scroll event listener
   const fetchNewImages = async () => {
+     removeSourceElementsInPictures();
      const imageElements = Array.from(document.getElementsByTagName('img')).filter(img => {
         const src = img.getAttribute('src');
         const alt = img.getAttribute('alt');
