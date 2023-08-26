@@ -57,6 +57,33 @@ function removeSourceElementsInPictures() {
     });
 }
 
+function blurImage(image) {
+     image.style.filter = 'blur(10px)';
+     const spinner = document.createElement('div');
+     spinner.classList.add('spinner');
+     image.parentElement.appendChild(spinner);
+}
+
+function unblurImages(image) {
+  const container = image.parentElement; // Get the container that holds the image and spinner
+  const spinner = container.querySelector('.spinner');
+  if (spinner) {
+    // Wait for the image to be fully loaded before removing the spinner
+    image.onload = () => {
+      spinner.remove();
+      image.style.filter = 'none';
+    };
+  }
+}
+
+function removeSpinner(image) {
+    const container = image.parentElement; // Get the container that holds the image and spinner
+    const spinner = container.querySelector('.spinner');
+    if (spinner) {
+        spinner.remove();
+    }
+}
+
 async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/api/v1/analyze') {
   const batchSize = 4;
   const minImageSize = 40; // Minimum image size in pixels
@@ -64,26 +91,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
   const hasMinRenderedSize = (element) => {
     const rect = element.getBoundingClientRect();
     return rect.width >= minImageSize && rect.height >= minImageSize;
-  };
-
-  const blurImage = (image) => {
-       image.style.filter = 'blur(10px)';
-       const spinner = document.createElement('div');
-       spinner.classList.add('spinner');
-       image.parentElement.appendChild(spinner);
-  };
-  
-  // Function to remove blur effect and spinner from images
-  const unblurImages = (image) => {
-    const container = image.parentElement; // Get the container that holds the image and spinner
-        const spinner = container.querySelector('.spinner');
-        if (spinner) {
-          // Wait for the image to be fully loaded before removing the spinner
-          image.onload = () => {
-            spinner.remove();
-            image.style.filter = 'none';
-          };
-        }
   };
   
   const replaceImages = async (batch) => {
@@ -141,7 +148,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
           }
           else {
             sendMessage('Response true but not processed', element.src);
-            unblurImages(element);
+            removeSpinner(element);
           }
         });
         
