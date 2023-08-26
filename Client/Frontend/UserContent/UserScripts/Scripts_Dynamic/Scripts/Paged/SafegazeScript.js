@@ -64,6 +64,10 @@ function blurImage(image) {
      image.parentElement.appendChild(spinner);
 }
 
+function onlyBlurImage(image) {
+     image.style.filter = 'blur(10px)';
+}
+
 function unblurImages(image) {
   const container = image.parentElement; // Get the container that holds the image and spinner
   const spinner = container.querySelector('.spinner');
@@ -163,12 +167,11 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
   // Scroll event listener
   const fetchNewImages = async () => {
      removeSourceElementsInPictures();
-     const imageElements = Array.from(document.getElementsByTagName('img')).filter(img => {
+     const imageElements = Array.from(document.querySelectorAll('img[src]:not([src*="logo"]):not([src*=".svg"]):not([src*="no-image"]):not([isSent="true"]):not([data-replaced="true"]):not([alt="logo"])')).filter(img => {
         const src = img.getAttribute('src');
         const alt = img.getAttribute('alt');
         if (src && !src.startsWith('data:image/') && src.length > 0) {
-            const isValidImage = !src.includes('.svg') && hasMinRenderedSize(img) && img.getAttribute('alt') !== 'logo' && !src.includes('logo') && img.getAttribute('isSent') !== 'true' && img.getAttribute('data-replaced') !== 'true' && !src.includes('no-image')
-            if (isValidImage) {
+            if (hasMinRenderedSize(img)) {
                 blurImage(img);
                 img.setAttribute('isSent', 'true');
                 sendMessage('SRC:', src);
@@ -188,15 +191,15 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                 return true;
             }
         }
+        onlyBlurImage(img);
         return false;
     });
       
-    const lazyImageElements = Array.from(document.querySelectorAll('img[data-src]')).filter(img => {
+    const lazyImageElements = Array.from(document.querySelectorAll('img[data-src]:not([data-src*="logo"]):not([data-src*=".svg"]):not([data-src*="no-image"]):not([isSent="true"]):not([data-replaced="true"]):not([alt="logo"])')).filter(img => {
         const dataSrc = img.getAttribute('data-src');
         const alt = img.getAttribute('alt');
         if (dataSrc && !dataSrc.startsWith('data:image/') && dataSrc.length > 0) {
-            const isValidImage = !dataSrc.includes('.svg') && hasMinRenderedSize(img) && img.getAttribute('alt') !== 'logo' && !dataSrc.includes('logo') && img.getAttribute('isSent') !== 'true' && img.getAttribute('data-replaced') !== 'true' && !dataSrc.includes('no-image')
-            if (isValidImage) {
+            if (hasMinRenderedSize(img)) {
                 blurImage(img);
                 img.setAttribute('isSent', 'true');
                 img.setAttribute('src', dataSrc);
@@ -217,6 +220,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                 return true;
             }
         }
+        onlyBlurImage(img);
         return false;
     });
     const allImages = [...imageElements, ...lazyImageElements];
