@@ -228,14 +228,10 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
          const cleanedSavedImagesArray = []
          const analyzePromises = [];
          allImages.forEach(imgElement => {
-           let mediaUrl = imgElement.getAttribute('src') || imgElement.getAttribute('data-src');
-           if (mediaUrl.startsWith('/wp-content')) {
-               const protocol = window.location.protocol; // "http:" or "https:"
-               const host = window.location.host; // "www.xyz.com" or your domain
-               mediaUrl = `${protocol}//${host}${mediaUrl}`; // Use mediaUrl instead of url here
-           }
-           else if (mediaUrl.startsWith('//')) {
-             mediaUrl = 'https:' + mediaUrl;
+           var mediaUrl = imgElement.getAttribute('src') || imgElement.getAttribute('data-src');
+           var absoluteUrl = new URL(mediaUrl, window.location.origin).href;
+           if (absoluteUrl) {
+               mediaUrl = absoluteUrl;
            }
 
            let analyzer = new RemoteAnalyzer({ mediaUrl });
