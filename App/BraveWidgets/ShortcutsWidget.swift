@@ -186,7 +186,7 @@ private struct ShortcutsView: View {
             Label {
               Text(Strings.Widgets.shortcutsEnterURLButton)
             } icon: {
-              Image("brave-logo-no-bg-small")
+              Text("Shortcut")
             }
             .foregroundColor(Color(UIColor.braveLabel))
             .frame(maxWidth: .infinity)

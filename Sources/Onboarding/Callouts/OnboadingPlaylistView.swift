@@ -13,7 +13,6 @@ public struct PlaylistOnboardingView: View {
 
   public var body: some View {
     HStack(alignment: .top, spacing: 14.0) {
-      Image("welcome-view-playlist-brave-logo", bundle: .module)
 
       VStack(alignment: .leading, spacing: 16.0) {
         VStack(alignment: .leading, spacing: 4.0) {

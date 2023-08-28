@@ -53,14 +53,6 @@ private struct StatView: View {
 
   var body: some View {
     VStack(alignment: .leading) {
-      HStack {
-        Spacer()
-        Image("brave-icon-no-bg")
-          .resizable()
-          .aspectRatio(contentMode: .fit)
-          .frame(height: 24)
-          .unredacted()
-      }
       Spacer()
       Text(verbatim: entry.statData.value)
         .font(.system(size: 40))
