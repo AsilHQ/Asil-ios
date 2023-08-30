@@ -97,6 +97,7 @@ function setImageSrc(element, url) {
     if (element.dataset) {
         element.dataset.src = url;
     }
+    sendMessage("replaced");
 }
 
 async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/api/v1/analyze') {
@@ -162,7 +163,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                       const processedMediaUrl = correspondingMedia.success ? correspondingMedia.processed_media_url : null;
                       if (processedMediaUrl !== null) {
                           setImageSrc(element, processedMediaUrl);
-                          sendMessage("replaced");
                       } else {
                           sendMessage('Response true but not processed' + element.src);
                           removeSpinner(element);
