@@ -89,8 +89,9 @@ function removeSpinner(image) {
 
 function setImageSrc(element, url) {
     element.src = url;
-    element.srcset = '';
     element.removeAttribute('data-lazysrc');
+    element.removeAttribute('srcset');
+    element.removeAttribute('data-srcset');
     element.setAttribute('data-replaced', 'true');
     unblurImages(element);
     if (element.dataset) {
@@ -155,20 +156,22 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
       }
       else {
           if (responseBody.success) {
-            responseBody.media.forEach((media, index) => {
-              const processedMediaUrl = media.success ? media.processed_media_url : null;
-              let elementIndex = batch.findIndex(item => item.src === media.original_media_url || item.src.includes(media.original_media_url));
-              let element = batch[elementIndex];
-              if (processedMediaUrl !== null) {
-                setImageSrc(element, processedMediaUrl);
-                sendMessage("replaced");
-              }
-              else {
-                sendMessage('Response true but not processed', element.src);
-                removeSpinner(element);
-              }
+            batch.forEach((element, index) => {
+                  const correspondingMedia = responseBody.media.find(media => element.src === media.original_media_url || element.src.includes(media.original_media_url));
+                  if (correspondingMedia) {
+                      const processedMediaUrl = correspondingMedia.success ? correspondingMedia.processed_media_url : null;
+                      if (processedMediaUrl !== null) {
+                          setImageSrc(element, processedMediaUrl);
+                          sendMessage("replaced");
+                      } else {
+                          sendMessage('Response true but not processed' + element.src);
+                          removeSpinner(element);
+                      }
+                  }
+                  else {
+                      removeSpinner(element);
+                  }
             });
-            
           } else {
             console.error('API request failed:', responseBody.errors);
           }
