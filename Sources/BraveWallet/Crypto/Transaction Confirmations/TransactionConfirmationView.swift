@@ -91,7 +91,7 @@ struct TransactionConfirmationView: View {
       if let originInfo = confirmationStore.originInfo {
         Group {
           if originInfo.isBraveWalletOrigin {
-            Image("wallet-brave-icon", bundle: .module)
+            Image("welcome-view-icon", bundle: .module) //TODO: Change icon if we open wallet
               .resizable()
               .aspectRatio(contentMode: .fit)
               .padding(4)
