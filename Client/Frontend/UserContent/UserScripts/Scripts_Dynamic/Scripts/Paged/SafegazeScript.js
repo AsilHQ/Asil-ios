@@ -4,7 +4,7 @@
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 const css = `
-.spinner {
+.custom-spinner-safegaze {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -60,7 +60,7 @@ function removeSourceElementsInPictures() {
 function blurImage(image) {
      image.style.filter = 'blur(10px)';
      const spinner = document.createElement('div');
-     spinner.classList.add('spinner');
+     spinner.classList.add('custom-spinner-safegaze');
      image.parentElement.appendChild(spinner);
 }
 
@@ -70,7 +70,7 @@ function onlyBlurImage(image) {
 
 function unblurImages(image) {
   const container = image.parentElement; // Get the container that holds the image and spinner
-  const spinner = container.querySelector('.spinner');
+  const spinner = container.querySelector('.custom-spinner-safegaze');
   if (spinner) {
     // Wait for the image to be fully loaded before removing the spinner
     image.onload = () => {
@@ -82,7 +82,7 @@ function unblurImages(image) {
 
 function removeSpinner(image) {
     const container = image.parentElement; // Get the container that holds the image and spinner
-    const spinner = container.querySelector('.spinner');
+    const spinner = container.querySelector('.custom-spinner-safegaze');
     if (spinner) {
         spinner.remove();
     }
