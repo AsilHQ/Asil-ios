@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-const css = `
+const customSpinnerSafegazeCSS = `
 .custom-spinner-safegaze {
   position: absolute;
   top: 50%;
@@ -24,10 +24,9 @@ const css = `
   100% { transform: rotate(360deg); }
 }`;
 
-// Create a style element and append it to the head to embed the CSS styles
-const style = document.createElement('style');
-style.innerHTML = css;
-document.head.appendChild(style);
+const customSpinnerSafegazeStyle = document.createElement('style');
+customSpinnerSafegazeStyle.innerHTML = customSpinnerSafegazeCSS;
+document.head.appendChild(customSpinnerSafegazeStyle);
 
 function sendMessage(message) {
     console.log(message);
