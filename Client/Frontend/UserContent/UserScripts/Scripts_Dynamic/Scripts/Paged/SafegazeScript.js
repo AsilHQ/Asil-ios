@@ -77,6 +77,11 @@ function unblurImages(image) {
       image.style.filter = 'none';
     };
   }
+  else {
+      image.onload = () => {
+        image.style.filter = 'none';
+      };
+  }
 }
 
 function removeSpinner(image) {
