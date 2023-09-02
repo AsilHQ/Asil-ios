@@ -189,9 +189,13 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
   // Scroll event listener
   const fetchNewImages = async () => {
      removeSourceElementsInPictures();
-     const imageElements = Array.from(document.querySelectorAll('img[src]:not([src*="logo"]):not([src*=".svg"]):not([src*="no-image"]):not([isSent="true"]):not([data-replaced="true"]):not([alt="logo"])')).filter(img => {
+     const imageElements = Array.from(document.querySelectorAll('img[src]:not([src*="logo"]):not([src*=".svg"]):not([src*="no-image"]):not([isSent="true"]):not([data-replaced="true"]):not([alt="logo"]):not([src*="captcha"])')).filter(img => {
         const src = img.getAttribute('src');
         const alt = img.getAttribute('alt');
+        const id = img.getAttribute('id');
+        if (img.parentElement.classList.contains('captcha') || (id && id.includes('captcha'))) {
+             return false;
+        }
         if (src && !src.startsWith('data:image/') && src.length > 0) {
             if (hasMinRenderedSize(img)) {
                 blurImage(img);
@@ -217,9 +221,13 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
         return false;
     });
       
-    const lazyImageElements = Array.from(document.querySelectorAll('img[data-src]:not([data-src*="logo"]):not([data-src*=".svg"]):not([data-src*="no-image"]):not([isSent="true"]):not([data-replaced="true"]):not([alt="logo"])')).filter(img => {
+    const lazyImageElements = Array.from(document.querySelectorAll('img[data-src]:not([data-src*="logo"]):not([data-src*=".svg"]):not([data-src*="no-image"]):not([isSent="true"]):not([data-replaced="true"]):not([alt="logo"]:not([data-src*="captcha"])')).filter(img => {
         const dataSrc = img.getAttribute('data-src');
         const alt = img.getAttribute('alt');
+        const id = img.getAttribute('id');
+        if (img.parentElement.classList.contains('captcha') || (id && id.includes('captcha'))) {
+             return false;
+        }
         if (dataSrc && !dataSrc.startsWith('data:image/') && dataSrc.length > 0) {
             if (hasMinRenderedSize(img)) {
                 blurImage(img);
