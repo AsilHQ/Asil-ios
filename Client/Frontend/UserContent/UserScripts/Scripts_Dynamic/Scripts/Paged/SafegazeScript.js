@@ -3,31 +3,6 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-const customSpinnerSafegazeCSS = `
-.custom-spinner-safegaze {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 4px solid rgba(0, 0, 0, 0.3);
-  border-top: 4px solid #3498db;
-  border-radius: 50%;
-  width: 25px;
-  margin-left: -12.5px;
-  margin-top: -12.5px;
-  height: 25px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}`;
-
-const customSpinnerSafegazeStyle = document.createElement('style');
-customSpinnerSafegazeStyle.innerHTML = customSpinnerSafegazeCSS;
-document.head.appendChild(customSpinnerSafegazeStyle);
-
 function sendMessage(message) {
     console.log(message);
     try {
@@ -57,39 +32,13 @@ function removeSourceElementsInPictures() {
 }
 
 function blurImage(image) {
-     image.style.filter = 'blur(10px)';
-     const spinner = document.createElement('div');
-     spinner.classList.add('custom-spinner-safegaze');
-     image.parentElement.appendChild(spinner);
-}
-
-function onlyBlurImage(image) {
-     image.style.filter = 'blur(10px)';
+  image.style.filter = 'blur(10px)';
 }
 
 function unblurImages(image) {
-  const container = image.parentElement; // Get the container that holds the image and spinner
-  const spinner = container.querySelector('.custom-spinner-safegaze');
-  if (spinner) {
-    // Wait for the image to be fully loaded before removing the spinner
-    image.onload = () => {
-      spinner.remove();
+  image.onload = () => {
       image.style.filter = 'none';
-    };
-  }
-  else {
-      image.onload = () => {
-        image.style.filter = 'none';
-      };
-  }
-}
-
-function removeSpinner(image) {
-    const container = image.parentElement; // Get the container that holds the image and spinner
-    const spinner = container.querySelector('.custom-spinner-safegaze');
-    if (spinner) {
-        spinner.remove();
-    }
+  };
 }
 
 function setImageSrc(element, url) {
@@ -143,9 +92,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
       // Check if response status is ok
       if (!response.ok) {
         sendMessage('HTTP error, status = ' + response.status);
-        batch.forEach(imgElement => {
-            removeSpinner(imgElement);
-        });
         return;
       }
       else {
@@ -156,9 +102,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
       const responseBody = await response.json();
       if (responseBody.media.length === 0) {
           sendMessage('Empty response');
-          batch.forEach(imgElement => {
-              removeSpinner(imgElement);
-          });
       }
       else {
           if (responseBody.success) {
@@ -170,11 +113,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                           setImageSrc(element, processedMediaUrl);
                       } else {
                           sendMessage('Response true but not processed' + element.src);
-                          removeSpinner(element);
                       }
-                  }
-                  else {
-                      removeSpinner(element);
                   }
             });
           } else {
@@ -217,7 +156,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                 return true;
             }
         }
-        onlyBlurImage(img);
+        blurImage(img);
         return false;
     });
       
@@ -250,7 +189,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                 return true;
             }
         }
-        onlyBlurImage(img);
+        blurImage(img);
         return false;
     });
     const allImages = [...imageElements, ...lazyImageElements];
