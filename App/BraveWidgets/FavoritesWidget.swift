@@ -58,8 +58,6 @@ struct FaviconImage: View {
 private struct NoFavoritesFoundView: View {
   var body: some View {
     VStack {
-      Image("brave-icon")
-        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
       Text(Strings.Widgets.noFavoritesFound)
         .multilineTextAlignment(.center)
         .foregroundColor(Color(UIColor.braveLabel))

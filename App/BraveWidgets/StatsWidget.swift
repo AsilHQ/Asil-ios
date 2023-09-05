@@ -66,11 +66,6 @@ private struct StatsView: View {
         Text(Strings.Widgets.shieldStatsWidgetTitle)
           .foregroundColor(Color(UIColor.braveLabel))
           .font(.system(size: 13, weight: .semibold))
-        Spacer()
-        Image("brave-icon-no-bg")
-          .resizable()
-          .aspectRatio(contentMode: .fit)
-          .frame(height: 24)
       }
       .unredacted()
       Spacer()

@@ -56,9 +56,15 @@ class SafegazeContentScriptHandler: TabContentScript {
       replyHandler(false, nil)
       return
     }
-      
-    BraveGlobalShieldStats.shared.safegazeCount += 1
-    tab.contentBlocker.stats = tab.contentBlocker.stats.adding(safegazeCount: 1)
+    
+      if let dict = message.body as? [String: Any], let message = dict["state"] as? String {
+          if message == "replaced" {
+              BraveGlobalShieldStats.shared.safegazeCount += 1
+              tab.contentBlocker.stats = tab.contentBlocker.stats.adding(safegazeCount: 1)
+          } else {
+              print("Safegaze: " + message)
+          }
+    }
   }
 }
 
