@@ -218,6 +218,9 @@
 		4E3A68B929DD5A7000DA0DAF /* channel.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = channel.js; sourceTree = "<group>"; };
 		4E79F82329D1C8FB005B6A2D /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		4E7F73D92A179506009CE085 /* closeVideoPreview.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = closeVideoPreview.js; sourceTree = "<group>"; };
+		4EB11B3D2AA8B41D002C8A54 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Shortcuts/ar.lproj/BrowserIntents.strings; sourceTree = "<group>"; };
+		4EB11B3E2AA8B41E002C8A54 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BraveWidgets.strings; sourceTree = "<group>"; };
+		4EB11B3F2AA8B447002C8A54 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = "Supporting Files/ar.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		5929A9F121B6AEF7005ECF8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59B6912221B695A400E9388E /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59B6914221B695C200E9388E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -717,6 +720,7 @@
 				zh,
 				nb,
 				tr,
+				ar,
 			);
 			mainGroup = F84B21B51A090F8100AAB793;
 			packageReferences = (
@@ -907,6 +911,7 @@
 				279AC848284FDB8600238C32 /* uk */,
 				27C601AC284FDB91002BAF19 /* zh */,
 				27FDB77C284FDB9D00ACEB16 /* zh-TW */,
+				4EB11B3D2AA8B41D002C8A54 /* ar */,
 			);
 			name = BrowserIntents.intentdefinition;
 			sourceTree = "<group>";
@@ -932,6 +937,7 @@
 				27FA21A12838018F00FA2C45 /* ja */,
 				27FA21A22838018F00FA2C45 /* zh-TW */,
 				27FA21A32838019000FA2C45 /* zh */,
+				4EB11B3F2AA8B447002C8A54 /* ar */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -982,6 +988,7 @@
 				445ABC2127319C260089710D /* sv */,
 				445ABC2327319C270089710D /* tr */,
 				445ABC2527319C290089710D /* uk */,
+				4EB11B3E2AA8B41E002C8A54 /* ar */,
 			);
 			name = BraveWidgets.intentdefinition;
 			sourceTree = "<group>";

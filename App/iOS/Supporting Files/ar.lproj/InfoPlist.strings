@@ -1,0 +1,25 @@
+/* (No Comment) */
+"1Password Fill Browser Action" = "1Password Dolgu Tarayıcı Eylemi";
+
+/* Privacy - NFC Scan Usage Description */
+"NFCReaderUsageDescription" = "Uygulamanın Yubikey'inizle iletişim kurmak için NFC okumasına erişmesi gerekir.";
+
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "Bu, fotoğraf çekmenizi ve yüklemenizi sağlar.";
+
+/* Privacy - Face ID Usage Description */
+"NSFaceIDUsageDescription" = "Bu işlem, Asil Browser erişiminizin kimliğini doğrular";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Ziyaret ettiğiniz web siteleri konumunuzu isteyebilir.";
+
+/* Privacy - Microphone Usage Description */
+"NSMicrophoneUsageDescription" = "Bu, Asil Browser kullanırken mikrofonunuzun kullanımına izin verir.";
+
+/* Privacy - Photo Library Additions Usage Description */
+"NSPhotoLibraryAddUsageDescription" = "Bu, fotoğrafları kaydetmenizi sağlar.";
+
+/* (No Comment) */
+"OPML File" = "OPML Dosyası";
+
+
