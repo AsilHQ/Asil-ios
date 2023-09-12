@@ -114,12 +114,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                   const correspondingMedia = responseBody.media.find(media => element.src === media.original_media_url || element.src.includes(media.original_media_url));
                   if (correspondingMedia) {
                       if (correspondingMedia.success) {
-                          const processedMediaUrl = correspondingMedia.success ? correspondingMedia.processed_media_url : null;
-                          if (processedMediaUrl !== null) {
-                              setImageSrc(element, processedMediaUrl);
-                          } else {
-                              unblurImage(element);
-                          }
+                          setImageSrc(element, correspondingMedia.processed_media_url);
                       }
                       else {
                           unblurImage(element);
