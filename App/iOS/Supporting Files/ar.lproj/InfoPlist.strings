@@ -1,25 +1,25 @@
 /* (No Comment) */
-"1Password Fill Browser Action" = "1Password Dolgu Tarayıcı Eylemi";
+"1Password Fill Browser Action" = "1 إجراء متصفح الحشو كلمة المرور";
 
 /* Privacy - NFC Scan Usage Description */
-"NFCReaderUsageDescription" = "Uygulamanın Yubikey'inizle iletişim kurmak için NFC okumasına erişmesi gerekir.";
+"NFCReaderUsageDescription" = "يحتاج التطبيق إلى الوصول إلى قراءة NFC للتواصل مع Yubikey الخاص بك.";
 
 /* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "Bu, fotoğraf çekmenizi ve yüklemenizi sağlar.";
+"NSCameraUsageDescription" = "هذا يسمح لك بالتقاط الصور وتحميلها.";
 
 /* Privacy - Face ID Usage Description */
-"NSFaceIDUsageDescription" = "Bu işlem, Asil Browser erişiminizin kimliğini doğrular";
+"NSFaceIDUsageDescription" = "تقوم هذه العملية بتوثيق وصولك إلى متصفح Asil";
 
 /* Privacy - Location When In Use Usage Description */
-"NSLocationWhenInUseUsageDescription" = "Ziyaret ettiğiniz web siteleri konumunuzu isteyebilir.";
+"NSLocationWhenInUseUsageDescription" = "قد تطلب مواقع الويب التي تزورها موقعك.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Bu, Asil Browser kullanırken mikrofonunuzun kullanımına izin verir.";
+"NSMicrophoneUsageDescription" = "يتيح ذلك استخدام الميكروفون الخاص بك أثناء استخدام متصفح Asil.";
 
 /* Privacy - Photo Library Additions Usage Description */
-"NSPhotoLibraryAddUsageDescription" = "Bu, fotoğrafları kaydetmenizi sağlar.";
+"NSPhotoLibraryAddUsageDescription" = "هذا يسمح لك بحفظ الصور.";
 
 /* (No Comment) */
-"OPML File" = "OPML Dosyası";
+"OPML File" = "ملف OPML";
 
 
