@@ -35,10 +35,15 @@ function blurImage(image) {
   image.style.filter = 'blur(10px)';
 }
 
-function unblurImages(image) {
+function unblurImageOnLoad(image) {
   image.onload = () => {
       image.style.filter = 'none';
   };
+}
+
+//Means that there is no object in image
+function unblurImage(image) {
+    image.style.filter = 'none';
 }
 
 function setImageSrc(element, url) {
@@ -47,7 +52,7 @@ function setImageSrc(element, url) {
     element.removeAttribute('srcset');
     element.removeAttribute('data-srcset');
     element.setAttribute('data-replaced', 'true');
-    unblurImages(element);
+    unblurImageOnLoad(element);
     if (element.dataset) {
         element.dataset.src = url;
     }
@@ -108,11 +113,11 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
             batch.forEach((element, index) => {
                   const correspondingMedia = responseBody.media.find(media => element.src === media.original_media_url || element.src.includes(media.original_media_url));
                   if (correspondingMedia) {
-                      const processedMediaUrl = correspondingMedia.success ? correspondingMedia.processed_media_url : null;
-                      if (processedMediaUrl !== null) {
-                          setImageSrc(element, processedMediaUrl);
-                      } else {
-                          sendMessage('Response true but not processed' + element.src);
+                      if (correspondingMedia.success) {
+                          setImageSrc(element, correspondingMedia.processed_media_url);
+                      }
+                      else {
+                          unblurImage(element);
                       }
                   }
             });
