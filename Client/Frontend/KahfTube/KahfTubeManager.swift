@@ -11,7 +11,6 @@ import BraveShared
 public class KahfTubeManager: ObservableObject {
     public static let shared = KahfTubeManager()
     private let webRepository = KahfTubeWebRepository.shared
-    private let util = KahfTubeUtil.shared
     private static var webView: WKWebView?
     @Published var haramChannels: [Channel] = [Channel]()
     @Published var haramChannelsMap: [[String: Any]] = [[String: Any]]()
@@ -75,18 +74,16 @@ public class KahfTubeManager: ObservableObject {
     }
     
     private func filter(webView: WKWebView) {
-        util.jsFileToCode(path: "main") { code in
-            if let jsCode = code {
-                webView.evaluateSafeJavaScript(functionName: KahfJSGenerator.shared.getFilterJS(), contentWorld: .page, asFunction: false) { object, error in
-                    if let error = error {
-                        print("Kahf Tube: \(error)")
-                    } else {
-                        webView.evaluateSafeJavaScript(functionName: jsCode, contentWorld: .page, asFunction: false) {(object, error) -> Void in
-                            if let error = error {
-                                print("Kahf Tube: \(error)")
-                            } else {
-                                print("Kahf Tube: main.js executed")
-                            }
+        if let script = self.loadUserScript(named: "KahfTubeMain") {
+            webView.evaluateSafeJavaScript(functionName: KahfJSGenerator.shared.getFilterJS(), contentWorld: .page, asFunction: false) { object, error in
+                if let error = error {
+                    print("Kahf Tube: Filter \(error)")
+                } else {
+                    webView.evaluateSafeJavaScript(functionName: script, contentWorld: .page, asFunction: false) {(object, error) -> Void in
+                        if let error = error {
+                            print("Kahf Tube: \(error)")
+                        } else {
+                            print("Kahf Tube: KahfTubeMain.js worked successfully")
                         }
                     }
                 }
@@ -109,9 +106,26 @@ public class KahfTubeManager: ObservableObject {
     
     // MARK: - Email&Login&Settings Funcs
     private func getEmail(erik: Erik) {
-        util.jsFileToCode(path: "email") { code in
-            if let jsCode = code {
-                erik.evaluate(javaScript: jsCode) { (obj, err) -> Void in
+        if let script = self.loadUserScript(named: "KahfTubeEmail") {
+            erik.evaluate(javaScript: script) { (obj, err) -> Void in
+                if let error = err {
+                    switch error {
+                    case ErikError.javaScriptError(let message):
+                        print(message)
+                    default:
+                        print("\(error)")
+                    }
+                } else {
+                    print("Kahf Tube: KahfTubeEmail.js worked successfully")
+                }
+            }
+        }
+    }
+    
+    func closeVideoPreviews() {
+        Erik.sharedInstance.visit(url: URL(string: "https://m.youtube.com/select_site")!) { object, error in
+            if let script = self.loadUserScript(named: "KahfTubeCloseVideoPreview") {
+                Erik.sharedInstance.evaluate(javaScript: script) { (obj, err) -> Void in
                     if let error = err {
                         switch error {
                         case ErikError.javaScriptError(let message):
@@ -120,28 +134,7 @@ public class KahfTubeManager: ObservableObject {
                             print("\(error)")
                         }
                     } else {
-                        print("Kahf Tube: email.js worked successfully")
-                    }
-                }
-            }
-        }
-    }
-    
-    func closeVideoPreviews() {
-        Erik.sharedInstance.visit(url: URL(string: "https://m.youtube.com/select_site")!) { object, error in
-            self.util.jsFileToCode(path: "closeVideoPreview") { code in
-                if let jsCode = code {
-                    Erik.sharedInstance.evaluate(javaScript: jsCode) { (obj, err) -> Void in
-                        if let error = err {
-                            switch error {
-                            case ErikError.javaScriptError(let message):
-                                print(message)
-                            default:
-                                print("\(error)")
-                            }
-                        } else {
-                            print("Kahf Tube: closeVideoPreview.js worked successfully")
-                        }
+                        print("Kahf Tube: KahfTubeCloseVideoPreview.js worked successfully")
                     }
                 }
             }
@@ -155,14 +148,12 @@ public class KahfTubeManager: ObservableObject {
             if let error = error {
                 print("Kahf Tube: \(error)")
             } else {
-                self.util.jsFileToCode(path: "channel") { code in
-                    if let jsCode = code {
-                        Erik.evaluate(javaScript: KahfJSGenerator.shared.getChannelStarterJS() + jsCode) { object, error in
-                            if let error = error {
-                                print("Kahf Tube: \(error)")
-                            } else {
-                                print("Kahf Tube: channel.js worked successfully")
-                            }
+                if let script = self.loadUserScript(named: "KahfTubeChannelScript") {
+                    Erik.evaluate(javaScript: KahfJSGenerator.shared.getChannelStarterJS() + script) { object, error in
+                        if let error = error {
+                            print("Kahf Tube: \(error)")
+                        } else {
+                            print("Kahf Tube: KahfTubeChannelScript.js worked successfully")
                         }
                     }
                 }
@@ -196,20 +187,28 @@ public class KahfTubeManager: ObservableObject {
             if let error = error {
                 print("Kahf Tube: \(error)")
             } else {
-                self.util.jsFileToCode(path: "unsubscribe") { code in
-                    if let jsCode = code {
-                        Erik.evaluate(javaScript: KahfJSGenerator.shared.getUnsubscribeStarterJS(haramChannel: self.haramChannelsMap) + jsCode) { object, error in
-                            if let error = error {
-                                print("Kahf Tube: \(error)")
-                            } else {
-                                print("Kahf Tube: unsubscribe.js worked successfully")
-                                Erik.sharedInstance.layoutEngine.changeAgent(agentType: UserAgent.mobile)
-                            }
+                if let script = self.loadUserScript(named: "KahfTubeUnsubscribe") {
+                    Erik.evaluate(javaScript: KahfJSGenerator.shared.getUnsubscribeStarterJS(haramChannel: self.haramChannelsMap) + script) { object, error in
+                        if let error = error {
+                            print("Kahf Tube: \(error)")
+                        } else {
+                            print("Kahf Tube: KahfTubeUnsubscribe.js worked successfully")
+                            Erik.sharedInstance.layoutEngine.changeAgent(agentType: UserAgent.mobile)
                         }
                     }
                 }
             }
         }
+    }
+    
+    func loadUserScript(named: String) -> String? {
+      guard let path = Bundle.module.path(forResource: named, ofType: "js"),
+            let source: String = try? String(contentsOfFile: path) else {
+          print("Failed to Load Script: \(named).js")
+        assertionFailure("Failed to Load Script: \(named).js")
+        return nil
+      }
+      return source
     }
     
     func finishUnsubscribeSession() {
