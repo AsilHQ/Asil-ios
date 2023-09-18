@@ -128,7 +128,7 @@ class LoginsScriptHandler: TabContentScript {
       tab?.removeSnackbar(existingPrompt)
     }
 
-    snackBar = TimerSnackBar(text: promptMessage, img: UIImage(named: "shields-menu-icon", in: .module, compatibleWith: nil)!)
+    snackBar = TimerSnackBar(text: promptMessage, img: UIImage(sharedNamed: "brave.logo")!)
     let dontSave = SnackButton(title: Strings.loginsHelperDontSaveButtonTitle, accessibilityIdentifier: "SaveLoginPrompt.dontSaveButton") { bar in
       self.tab?.removeSnackbar(bar)
       self.snackBar = nil
@@ -259,7 +259,7 @@ class LoginsScriptHandler: TabContentScript {
 
     snackBar = TimerSnackBar(
       text: promptMessage,
-      img: isUpdating ? UIImage(named: "key", in: .module, compatibleWith: nil)! : UIImage(named: "shields-menu-icon", in: .module, compatibleWith: nil)!)
+      img: isUpdating ? UIImage(named: "key", in: .module, compatibleWith: nil)! : UIImage(sharedNamed: "brave.logo")!)
 
     let dontSaveORUpdate = SnackButton(
       title: isUpdating ? Strings.loginsHelperDontUpdateButtonTitle : Strings.loginsHelperDontSaveButtonTitle,
