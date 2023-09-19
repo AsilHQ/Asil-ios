@@ -97,6 +97,7 @@ class UserScriptManager {
     case ethereumProvider
     case solanaProvider
     case safegaze
+    case kahfTube
     
     fileprivate var script: WKUserScript? {
       switch self {
@@ -111,6 +112,7 @@ class UserScriptManager {
       case .ethereumProvider: return EthereumProviderScriptHandler.userScript
       case .solanaProvider: return SolanaProviderScriptHandler.userScript
       case .safegaze: return SafegazeContentScriptHandler.userScript
+      case .kahfTube: return KahftubeContentScriptHandler.userScript
       // Always enabled scripts
       case .rewardsReporting: return RewardsReportingScriptHandler.userScript
       case .playlist: return PlaylistScriptHandler.userScript
@@ -163,6 +165,11 @@ class UserScriptManager {
       if scripts.contains(.safegaze), let script = self.dynamicScripts[.safegaze] {
         scripts.remove(.safegaze)
         scriptController.addUserScript(script)
+      }
+        
+      if scripts.contains(.kahfTube), let script = self.dynamicScripts[.kahfTube] {
+          scripts.remove(.kahfTube)
+          scriptController.addUserScript(script)
       }
       
       // Inject all static scripts

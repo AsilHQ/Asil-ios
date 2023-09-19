@@ -562,4 +562,16 @@ extension Domain {
             return true
         }
     }
+    
+    @MainActor public func isKahfTubeOn() -> Bool {
+        if let url = url {
+            if url.contains("youtube.com") {
+                return true
+            } else {
+                return false
+            }
+        } else {
+            return false
+        }
+    }
 }

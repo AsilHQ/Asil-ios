@@ -1,3 +1,22 @@
+function sendMessage(message) {
+    console.log(message);
+    try {
+        window.__firefox__.execute(function($) {
+            let postMessage = $(function(message) {
+                $.postNativeMessage('$<message_handler>', {
+                    "securityToken": SECURITY_TOKEN,
+                    "state": message
+                });
+            });
+
+            postMessage(message);
+        });
+    }
+    catch {}
+}
+
+sendMessage("aaaaaaa");
+
 class YoutubeFiltrationQueue {
   constructor() {
     this.elements = {};

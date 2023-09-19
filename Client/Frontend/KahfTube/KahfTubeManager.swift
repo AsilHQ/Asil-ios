@@ -21,7 +21,6 @@ public class KahfTubeManager: ObservableObject {
         KahfTubeManager.webView = webView
         print("Kahf Tube: User is on a YouTube page")
         if Preferences.KahfTube.isOn.value {
-            self.filter(webView: webView)
             getUserInformationsFromYoutube(view: view, webView: webView)
         } else {
             let refreshAlert = UIAlertController(title: "Kahf Tube", message: "Kahf Tube wants your permission to access your Youtube email and name to use Youtube Fitration feature.", preferredStyle: UIAlertController.Style.alert)
@@ -73,23 +72,6 @@ public class KahfTubeManager: ObservableObject {
         }
     }
     
-    private func filter(webView: WKWebView) {
-        if let script = self.loadUserScript(named: "KahfTubeMain") {
-            webView.evaluateSafeJavaScript(functionName: KahfJSGenerator.shared.getFilterJS(), contentWorld: .page, asFunction: false) { object, error in
-                if let error = error {
-                    print("Kahf Tube: Filter \(error)")
-                } else {
-                    webView.evaluateSafeJavaScript(functionName: script, contentWorld: .page, asFunction: false) {(object, error) -> Void in
-                        if let error = error {
-                            print("Kahf Tube: \(error)")
-                        } else {
-                            print("Kahf Tube: KahfTubeMain.js worked successfully")
-                        }
-                    }
-                }
-            }
-        }
-    }
     
     public func reload() {
         DispatchQueue.main.async {

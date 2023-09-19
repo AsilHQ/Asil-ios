@@ -307,7 +307,8 @@ extension BrowserViewController: WKNavigationDelegate {
           .trackerProtectionStats: url.isWebPage(includeDataURIs: false) &&
                                    domainForMainFrame.isShieldExpected(.AdblockAndTp, considerAllShieldsOption: true),
           
-          .safegaze: url.isWebPage(includeDataURIs: false) && !domainForMainFrame.isSafegazeAllOff()
+          .safegaze: url.isWebPage(includeDataURIs: false) && !domainForMainFrame.isSafegazeAllOff(),
+          .kahfTube: domainForMainFrame.isKahfTubeOn()
         ])
       }
       
