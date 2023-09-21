@@ -47,16 +47,24 @@ function unblurImage(image) {
 }
 
 function setImageSrc(element, url) {
-    element.src = url;
-    element.removeAttribute('data-lazysrc');
-    element.removeAttribute('srcset');
-    element.removeAttribute('data-srcset');
-    element.setAttribute('data-replaced', 'true');
-    unblurImageOnLoad(element);
-    if (element.dataset) {
-        element.dataset.src = url;
+    const isBackgroundImage = element.getAttribute('hasBackgroundImage') && element.tagName !== "IMG" && element.tagName !== "image";
+    if (isBackgroundImage) {
+        element.style.backgroundImage = `url(${url})`;
+        element.setAttribute('data-replaced', 'true');
+        unblurImage(element);
     }
-    sendMessage("replaced");
+    else {
+        element.src = url;
+        element.removeAttribute('data-lazysrc');
+        element.removeAttribute('srcset');
+        element.removeAttribute('data-srcset');
+        element.setAttribute('data-replaced', 'true');
+        unblurImageOnLoad(element);
+        if (element.dataset) {
+            element.dataset.src = url;
+        }
+        sendMessage("Replaced: " + url);
+    }
 }
 
 async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/api/v1/analyze') {
@@ -74,7 +82,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
      media: batch.map(imgElement => {
            return {
              media_url: imgElement.getAttribute('src'),
-             media_type: 'image',
+             media_type: imgElement.getAttribute('hasBackgroundImage') && imgElement.tagName !== "IMG" && imgElement.tagName !== "image" ? "backgroundImage" : "image",
              has_attachment: false,
              srcAttr: imgElement.getAttribute('srcAttr')
            };
@@ -133,6 +141,21 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
   // Scroll event listener
   const fetchNewImages = async () => {
      removeSourceElementsInPictures();
+     const backgroundImages = Array.from(document.querySelectorAll(':not([isSent="true"]):not([data-replaced="true"]):not([alt="logo"]):not([src*="captcha"])')).filter(img => {
+           const backgroundImage = img.style.backgroundImage;
+           if (backgroundImage) {
+               const backgroundImageUrl = backgroundImage.slice(5, -2);
+               const hasBackgroundImage = backgroundImage.startsWith("url(");
+               if (hasBackgroundImage && img.tagName !== "IMG" && !backgroundImageUrl.includes('.svg')) {
+                  blurImage(img);
+                  img.setAttribute('hasBackgroundImage', 'true');
+                  img.setAttribute('isSent', 'true');
+                  img.setAttribute('src', backgroundImageUrl);
+                  return true;
+               }
+           }
+           return false;
+     });
      const imageElements = Array.from(document.querySelectorAll('img[src]:not([src*="logo"]):not([src*=".svg"]):not([src*="no-image"]):not([isSent="true"]):not([data-replaced="true"]):not([alt="logo"]):not([src*="captcha"])')).filter(img => {
         const src = img.getAttribute('src');
         const alt = img.getAttribute('alt');
@@ -144,7 +167,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
             if (hasMinRenderedSize(img)) {
                 blurImage(img);
                 img.setAttribute('isSent', 'true');
-                sendMessage('SRC:', src);
                 return true;
             }
             else {
@@ -157,7 +179,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                 img.setAttribute('srcAttr', "xlink:href");
                 blurImage(img);
                 img.setAttribute('isSent', 'true');
-                sendMessage('xlink:', src);
                 return true;
             }
         }
@@ -177,7 +198,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                 blurImage(img);
                 img.setAttribute('isSent', 'true');
                 img.setAttribute('src', dataSrc);
-                sendMessage('Data SRC:', dataSrc);
                 return true;
             }
             else {
@@ -190,14 +210,13 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
                 img.setAttribute('srcAttr', "xlink:href");
                 blurImage(img);
                 img.setAttribute('isSent', 'true');
-                sendMessage('xlink:', src);
                 return true;
             }
         }
         blurImage(img);
         return false;
     });
-    const allImages = [...imageElements, ...lazyImageElements];
+    const allImages = [...imageElements, ...lazyImageElements, ...backgroundImages];
     if (allImages.length > 0) {
          const cleanedSavedImagesArray = []
          const analyzePromises = [];
@@ -216,9 +235,8 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
              } else {
                setImageSrc(imgElement, result.maskedUrl);
              }
-             sendMessage("Media analysis complete"+ result);
            }).catch((err) => {
-             sendMessage("Error analyzing media:"+ err);
+             sendMessage("Error analyzing media:" + err);
            });
            analyzePromises.push(analyzePromise);
          })
@@ -257,13 +275,10 @@ class RemoteAnalyzer {
     try {
       let relativeFilePath = this.relativeFilePath(this.data.mediaUrl);
       if (await this.urlExists(relativeFilePath)) {
-        sendMessage("URL exists" + relativeFilePath);
         return {
           shouldMask: true,
           maskedUrl: relativeFilePath,
         };
-      } else {
-        sendMessage("URL does not exist" + relativeFilePath);
       }
     } catch (error) {
       sendMessage(error.toString());
