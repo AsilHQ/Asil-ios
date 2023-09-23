@@ -15,8 +15,6 @@ function sendMessage(message) {
     catch {}
 }
 
-sendMessage("aaaaaaa");
-
 class YoutubeFiltrationQueue {
   constructor() {
     this.elements = {};
@@ -493,6 +491,22 @@ async function updateMediaItem(node) {
       }
     }
   }
+}
+
+function show_loading_indicator(node) {
+    const div1 = document.createElement("div");
+    div1.classList.add("caution-element");
+    div1.classList.add("kahf-tube-loading-indicator");
+    div1.innerHTML = `
+       <div class="kahf-tube-loader">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+         <div class="bar4"></div>
+         <div class="bar5"></div>
+         <div class="bar6"></div>
+       </div> `
+    node.append(div1)
 }
 
 function updateCautionView(

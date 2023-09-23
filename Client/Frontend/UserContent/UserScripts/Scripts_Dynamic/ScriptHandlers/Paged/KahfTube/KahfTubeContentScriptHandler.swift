@@ -30,7 +30,10 @@ class KahftubeContentScriptHandler: TabContentScript {
     guard var script = loadUserScript(named: scriptName) else {
       return nil
     }
-    let newScript = KahfJSGenerator.shared.getFilterJS() + script
+    guard var cssScript = loadUserStyle(named: "content", cssStyleName: "kahfTubeStyle") else {
+      return nil
+    }
+    let newScript = cssScript + KahfJSGenerator.shared.getFilterJS() + script
     return WKUserScript.create(source: secureScript(handlerName: messageHandlerName,
                                                     securityToken: scriptId,
                                                     script: newScript),
@@ -57,6 +60,8 @@ class KahftubeContentScriptHandler: TabContentScript {
       return
     }
     
-    print(message.body)
+    if let dict = message.body as? [String: Any], let message = dict["state"] as? String {
+      print("Kahf Tube: " + message)
+    }
   }
 }

@@ -1,0 +1,200 @@
+/* Initially hide the thumbnail, and only show it when the overlay is active */
+.ytd-thumbnail{
+    opacity: 0;
+}
+/* Create the overlay */
+.kahf-tube-hadith-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Create the text element */
+.kahf-tube-hadith-overlay-text {
+    color: #fff;
+    font-size: 24px;
+    width: 70%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.kahf-tube-loading-indicator {
+    background: #1c2020;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.kahf-tube-not-recommendation-indicator {
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.kahf-tube-not-recommendation-indicator button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+    pointer-events: auto;
+}
+
+.kahf-tube-not-recommendation-indicator p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.kahf-tube-loader {
+    margin: 0 auto;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.kahf-tube-loader > div {
+    height: 100%;
+    width: 8px;
+    display: inline-block;
+    float: left;
+    margin-left: 2px;
+    -webkit-animation: delay 0.8s infinite ease-in-out;
+    animation: delay 0.8s infinite ease-in-out;
+}
+.kahf-tube-loader .bar1 {
+    background-color: #754fa0;
+}
+.kahf-tube-loader .bar2 {
+    background-color: #09b7bf;
+    -webkit-animation-delay: -0.7s;
+    animation-delay: -0.7s;
+}
+.kahf-tube-loader .bar3 {
+    background-color: #90d36b;
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+}
+.kahf-tube-loader .bar4 {
+    background-color: #f2d40d;
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+.kahf-tube-loader .bar5 {
+    background-color: #fcb12b;
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+}
+.kahf-tube-loader .bar6 {
+    background-color: #ed1b72;
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s;
+}
+
+@-webkit-keyframes delay {
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.05);
+    }
+    20% {
+        -webkit-transform: scaleY(1);
+    }
+}
+@keyframes delay {
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.05);
+        -webkit-transform: scaleY(0.05);
+    }
+    20% {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+}
+
+.kahf-tube-haram-video-indicator {
+    align-content: middle;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.kahf-tube-haram-video-indicator .wrapper {
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+.kahf-tube-haram-video-indicator img {
+    height: 150px;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.kahf-tube-haram-video-indicator .title {
+    color: #383838;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+.kahf-tube-haram-video-indicator .subtitle {
+    color: #b7b7b7;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.kahf-tube-haram-video-indicator .actions {
+    display: flex;
+    font-family: Roboto, sans-serif;
+    justify-content: space-between;
+}
+
+.kahf-tube-haram-video-indicator a {
+    background: none;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.25);
+    color: #c8c8c8;
+    font-size: 13px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.kahf-tube-haram-video-indicator a:nth-child(2) {
+    background: rgb(47, 151, 75);
+    color: white;
+}
+

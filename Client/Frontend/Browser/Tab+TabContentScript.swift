@@ -26,7 +26,23 @@ extension TabContentScriptLoader {
     }
     return source
   }
-  
+    
+  static func loadUserStyle(named: String, cssStyleName: String) -> String? {
+    guard let path = Bundle.module.path(forResource: named, ofType: "css"),
+          var cssString: String = try? String(contentsOfFile: path, encoding: String.Encoding.utf8) else {
+      Logger.module.error("Failed to load script: \(named).css")
+      assertionFailure("Failed to Load Script: \(named).css")
+      return nil
+    }
+    cssString = cssString.replacingOccurrences(of: "\n", with: "")
+    let source = """
+            var \(cssStyleName) = document.createElement('style');
+            \(cssStyleName).innerHTML = '\(cssString)';
+            document.head.appendChild(\(cssStyleName));
+        """
+    return source
+  }
+
   static func secureScript(handlerName: String, securityToken: String, script: String) -> String {
     secureScript(handlerNamesMap: ["$<message_handler>": handlerName], securityToken: securityToken, script: script)
   }
