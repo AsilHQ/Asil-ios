@@ -1,0 +1,195 @@
+/* Toast displayed to user after copy url pressed. */
+"AppMenuCopyURLConfirmMessage" = "تم نسخ عنوان URL إلى الحافظة";
+
+/* Label for the button, displayed in the menu, used to request the desktop version of the current website. */
+"AppMenuViewDesktopSiteTitleString" = "طلب موقع سطح المكتب";
+
+/* Label for the button, displayed in the menu, used to request the mobile version of the current website. */
+"AppMenuViewMobileSiteTitleString" = "طلب موقع الجوال";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"BackTitle" = "خلف";
+
+/* General settings bookmarks last visited folder toggle title */
+"BookmarksLastVisitedFolderTitle" = "عرض الإشارات المرجعية التي تمت زيارتها مؤخرًا";
+
+/* Button confirming the cancellation of the download. */
+"CancelDownloadDialogCancel" = "يلغي";
+
+/* Alert dialog body when the user taps the cancel download icon. */
+"CancelDownloadDialogMessage" = "هل أنت متأكد أنك تريد إلغاء هذا التنزيل؟";
+
+/* Button declining the cancellation of the download. */
+"CancelDownloadDialogResume" = "إعادة تشغيل";
+
+/* Alert dialog title when the user taps the cancel download icon. */
+"CancelDownloadDialogTitle" = "إلغاء التنزيل";
+
+/* Cancel button */
+"CancelString" = "يلغي";
+
+/* Hardware shortcut to close all tabs from the tab tray. Shown in the Discoverability overlay when the hardware Command Key is held down. */
+"CloseAllTabsFromTabTrayKeyCodeTitle" = "إغلاق كافة علامات التبويب";
+
+/* Hardware shortcut to close the selected tab from the tab tray. Shown in the Discoverability overlay when the hardware Command Key is held down. */
+"CloseTabFromTabTrayKeyCodeTitle" = "إغلاق علامة التبويب المحددة";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"CloseTabTitle" = "إغلاق علامة التبويب";
+
+/* The button text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenuButtonToastNewTabOpenedButtonText" = "متأخر";
+
+/* The label text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenuButtonToastNewTabOpenedLabelText" = "تم فتح علامة تبويب جديدة";
+
+/* The title for the button that lets you copy the url from the location bar. */
+"CopyAddressTitle" = "نسخ العنوان";
+
+/* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
+"DownloadCancelledToastLabelText" = "تم إلغاء التنزيل";
+
+/* The label text in the Download Failed toast for showing confirmation that the download has failed. */
+"DownloadFailedToastLabelText" = "التحميل فشل";
+
+/* The description text in the Download progress toast for showing the number of files (1$) and download progress (2$). This string only consists of two placeholders for purposes of displaying two other strings side-by-side where 1$ is Downloads.Toast.MultipleFiles.DescriptionText and 2$ is Downloads.Toast.Progress.DescriptionText. This string should only consist of the two placeholders side-by-side separated by a single space and 1$ should come before 2$ everywhere except for right-to-left locales. */
+"DownloadMultipleFilesAndProgressToastDescriptionText" = "%1$@ %2$ @";
+
+/* The description text in the Download progress toast for showing the number of files when multiple files are downloading. */
+"DownloadMultipleFilesToastDescriptionText" = "1 من %d ملف";
+
+/* The description text in the Download progress toast for showing the downloaded file size (1$) out of the total expected file size (2$). */
+"DownloadProgressToastDescriptionText" = "%1$@/%2$ @";
+
+/* The button to open a new tab with the Downloads home panel */
+"DownloadsButtonTitle" = "التحميلات";
+
+/* Question shown to user when tapping a link that opens the App Store app */
+"ExternalLinkAppStoreConfirmationTitle" = "هل تريد فتح هذا الرابط في تطبيق App Store؟";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"ForwardTitle" = "إلى الأمام";
+
+/* The button to open a new tab with the copied link */
+"GoButtonTittle" = "يبدأ";
+
+/* Button to not save the user's password */
+"LoginsHelperDontSaveButtonTitle" = "إنقاذ";
+
+/* Button to not update the user's password */
+"LoginsHelperDontUpdateButtonTitle" = "تحديث";
+
+/* Button to save the user's password */
+"LoginsHelperSaveLoginButtonTitle" = "حفظ معلومات تسجيل الدخول";
+
+/* Button to update the user's password */
+"LoginsHelperUpdateButtonTitle" = "تحديث";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"NewPrivateTabTitle" = "علامة تبويب جديدة للتصفح المتخفي";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"NewTabTitle" = "علامة تبويب جديدة";
+
+/* OK button */
+"OKString" = "حسنا";
+/* Hardware shortcut to open a new tab from the tab tray. Shown in the Discoverability overlay when the hardware Command Key is held down. */
+"OpenNewTabFromTabTrayKeyCodeTitle" = "افتح علامة تبويب جديدة";
+
+/* Hardware shortcut open the selected tab from the tab tray. Shown in the Discoverability overlay when the hardware Command Key is held down. */
+"OpenSelectedTabFromTabTrayKeyCodeTitle" = "افتح علامة التبويب المحددة";
+
+/* The title for the button that lets you paste and go to a URL */
+"PasteAndGoTitle" = "لصق وانطلق";
+
+/* The title for the button that lets you paste into the location bar */
+"PasteTitle" = "معجون";
+
+/* Accessibility message e.g. spoken by VoiceOver when Reader Mode becomes available. */
+"ReaderModeAvailableVoiceOverAnnouncement" = "وضع القارئ متاح";
+
+/* Accessibility label for button resetting font size in display settings of reader mode */
+"ReaderModeResetFontSizeAccessibilityLabel" = "إعادة ضبط حجم النص";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"ReloadPageTitle" = "إعادة تحميل الصفحة";
+
+/* Prompt for saving a password with no username. The parameter is the hostname of the site. */
+"SaveLoginPrompt" = "حفظ كلمة المرور لـ %@؟";
+
+/* Prompt for saving a login. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"SaveLoginUsernamePrompt" = "حفظ %1$@ تسجيل الدخول لـ %2$@؟";
+
+/* OK button to dismiss the error prompt. */
+"ScanQRCodeErrorOKButton" = "حسنا";
+
+/* Text for the instructions label, displayed in the QR scanner view */
+"ScanQRCodeInstructionsLabel" = "قم بمحاذاة رمز الاستجابة السريعة في الإطار للمسح الضوئي";
+
+/* Text of the prompt that is shown to the user when the data is invalid */
+"ScanQRCodeInvalidDataErrorMessage" = "البيانات غير صالحة";
+
+/* Text of the prompt user to setup the camera authorization. */
+"ScanQRCodePermissionErrorMessage" = "يرجى السماح للمتصفح الملكي من "الإعدادات" -> "الخصوصية" -> "الكاميرا" بالوصول إلى كاميرا جهازك.";
+
+/* Title for the QR code scanner view. */
+"ScanQRCodeViewTitle" = "مسح رمز الاستجابة السريعة";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"SelectLocationBarTitle" = "حدد شريط الموقع";
+
+/* General settings section title */
+"SettingsGeneralSectionTitle" = "عام";
+
+/* Button displayed at the top of the search settings. */
+"SettingsSearchDoneButton" = "أنجز";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"showBookmarksTitle" = "إظهار الإشارات المرجعية";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"ShowNextTabTitle" = "إظهار علامة التبويب التالية";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"ShowPreviousTabTitle" = "إظهار علامة التبويب السابقة";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Asil Browser Shields */
+"showShieldsTitle" = "افتح دروع متصفح نوبل";
+
+/* Hardware shortcut to open the tab tray from a tab. Shown in the Discoverability overlay when the hardware Command Key is held down. */
+"ShowTabTrayFromTabKeyCodeTitle" = "إظهار كافة علامات التبويب";
+
+/* Hardware shortcut for non-private tab or tab. Shown in the Discoverability overlay when the hardware Command Key is held down. */
+"SwitchToNonPBMKeyCodeTitle" = "وضع التصفح العادي";
+
+/* Hardware shortcut switch to the private browsing tab or tab tray. Shown in the Discoverability overlay when the hardware Command Key is held down. */
+"SwitchToPBMKeyCodeTitle" = "وضع التصفح الخاص";
+
+/* The button to undo the delete all tabs */
+"TabsDeleteAllUndoAction" = "استعادة";
+
+/* The label indicating that all the tabs were closed */
+"TabsDeleteAllUndoTitle" = "تم إغلاق %d من علامات التبويب";
+
+/* Button to dismiss the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet. */
+"UnableToAddPassErrorDismiss" = "حسنا";
+
+/* Text of the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet. */
+"UnableToAddPassErrorMessage" = "حدث خطأ أثناء إضافة البطاقة إلى المحفظة. الرجاء معاودة المحاولة في وقت لاحق.";
+
+/* Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet. */
+"UnableToAddPassErrorTitle" = "فشل في إضافة انتقال";
+
+/* The message displayed to a user when they try to open a URL that cannot be handled by Asil Browser, or any external app. */
+"UnableToOpenURLError" = "لا يمكن لمتصفح Asil فتح الصفحة لأنها تحتوي على عنوان غير صالح.";
+
+/* Title of the message shown when the user attempts to navigate to an invalid link. */
+"UnableToOpenURLErrorTitle" = "لا يمكن فتح الصفحة";
+
+/* Prompt for updating a login. The first parameter is the username for which the password will be updated for. The second parameter is the hostname of the site. */
+"UpdateLoginPrompt" = "تحديث تسجيل الدخول %1$@ لـ %2$@؟";
+
+/* Prompt for updating a login. The first parameter is the username for which the password will be updated for. The second parameter is the hostname of the site. */
+"UpdateLoginUsernamePrompt" = "تحديث تسجيل الدخول %1$@ لـ %2$@؟";
+
+
