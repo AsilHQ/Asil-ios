@@ -39,10 +39,14 @@ public extension Int {
    }
     
    var noneFormattedString: String? {
-        let numberFormatter = NumberFormatter()
-          numberFormatter.numberStyle = NumberFormatter.Style.none
-        numberFormatter.locale = NSLocale.current
-        return numberFormatter.string(from: self as NSNumber)
+       let numberFormatter = NumberFormatter()
+       numberFormatter.numberStyle = NumberFormatter.Style.none
+       if let prefferedLanguage = Locale.preferredLanguages.first {
+           numberFormatter.locale = Locale(identifier: prefferedLanguage)
+       } else {
+           numberFormatter.locale = NSLocale.current
+       }
+       return numberFormatter.string(from: self as NSNumber)
    }
 }
 
