@@ -63,8 +63,8 @@ function setImageSrc(element, url) {
         if (element.dataset) {
             element.dataset.src = url;
         }
-        sendMessage("Replaced: " + url);
     }
+    sendMessage("replaced");
 }
 
 async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/api/v1/analyze') {
