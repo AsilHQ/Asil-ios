@@ -1,4 +1,4 @@
-![Build](https://github.com/Asil/Asil-ios/workflows/Build/badge.svg?branch=development)
+
 
 Asil for iOS 🦁
 ===============
