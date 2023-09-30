@@ -172,6 +172,16 @@ extension BrowserViewController: WKNavigationDelegate {
       return (.allow, preferences)
     }
 
+    if shouldBlockHost(url: url) {
+        guard let path = Bundle.module.path(forResource: "restrictedPage", ofType: "html"),
+              let source: String = try? String(contentsOfFile: path) else {
+          Logger.module.error("Failed to load script: restrictedPage.html")
+          return (.cancel, preferences)
+        }
+        webView.loadHTMLString(source, baseURL: nil)
+        return (.cancel, preferences)
+    }
+    
     if url.scheme == "about" {
       return (.allow, preferences)
     }
@@ -698,6 +708,15 @@ extension BrowserViewController: WKNavigationDelegate {
         tabManager.allTabs.filter { $0.webView == webView }.first?.restoring = false
       }
     }
+  }
+    
+  private func shouldBlockHost(url: URL?) -> Bool {
+      guard let host = url?.host else {
+          return false
+      }
+      
+      let blockedHosts = ["blockedwebsite.com"] //TODO: Fetch domains from hosts file
+      return blockedHosts.contains(host)
   }
 }
 
