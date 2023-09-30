@@ -10,24 +10,44 @@ public extension Int {
   /// Returns larger numbers in K(thousands) and M(millions) friendly format.
   /// Example : 123 456 -> 123K, 3000 -> 3k, 3400 -> 3.4K
   var kFormattedNumber: String {
-    if self >= 1000 && self < 10000 {
-      return String(format: "%.1fK", Double(self / 100) / 10).replacingOccurrences(of: ".0", with: "")
-    }
+       let numberFormatter = NumberFormatter()
+       numberFormatter.numberStyle = .decimal
 
-    if self >= 10000 && self < 1000000 {
-      return "\(self/1000)K"
-    }
+       if self >= 1000 && self < 10000 {
+           let formattedNumber = Double(self) / 1000.0
+           numberFormatter.maximumFractionDigits = 1
+           return "\(numberFormatter.string(from: NSNumber(value: formattedNumber)) ?? "")K"
+       }
 
-    if self >= 1000000 && self < 10000000 {
-      return String(format: "%.1fM", Double(self / 100000) / 10).replacingOccurrences(of: ".0", with: "")
-    }
+       if self >= 10000 && self < 1000000 {
+           let formattedNumber = Double(self) / 1000.0
+           return "\(numberFormatter.string(from: NSNumber(value: formattedNumber)) ?? "")K"
+       }
 
-    if self >= 10000000 {
-      return "\(self/1000000)M"
-    }
+       if self >= 1000000 && self < 10000000 {
+           let formattedNumber = Double(self) / 1000000.0
+           numberFormatter.maximumFractionDigits = 1
+           return "\(numberFormatter.string(from: NSNumber(value: formattedNumber)) ?? "")M"
+       }
 
-    return String(self)
-  }
+       if self >= 10000000 {
+           let formattedNumber = Double(self) / 1000000.0
+           return "\(numberFormatter.string(from: NSNumber(value: formattedNumber)) ?? "")M"
+       }
+
+       return "\(numberFormatter.string(from: NSNumber(value: self)) ?? "")"
+   }
+    
+   var noneFormattedString: String? {
+       let numberFormatter = NumberFormatter()
+       numberFormatter.numberStyle = NumberFormatter.Style.none
+       if let prefferedLanguage = Locale.preferredLanguages.first {
+           numberFormatter.locale = Locale(identifier: prefferedLanguage)
+       } else {
+           numberFormatter.locale = NSLocale.current
+       }
+       return numberFormatter.string(from: self as NSNumber)
+   }
 }
 
 public extension NSDecimalNumber {
