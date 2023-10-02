@@ -80,7 +80,7 @@ class TabsButton: UIButton {
     let count = max(count, 1)
     // Sometimes tabs count state is held in the cloned tabs button.
     let infinity = "\u{221E}"
-    let countToBe = (count < 100) ? "\(count)" : infinity
+    let countToBe = (count < 100) ? count.noneFormattedString : infinity
     currentCount = count
     self.countLabel.text = countToBe
     self.accessibilityValue = countToBe
