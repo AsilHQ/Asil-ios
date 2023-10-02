@@ -1,9 +1,9 @@
-![Build](https://github.com/brave/brave-ios/workflows/Build/badge.svg?branch=development)
 
-Brave for iOS 🦁
+
+Asil for iOS 🦁
 ===============
 
-Download on the [App Store](https://apps.apple.com/app/brave-web-browser/id1052879175).
+Download on the [App Store](https://apps.apple.com/tr/app/asil-browser/id1669467773).
 
 This branch (development)
 -----------
@@ -14,17 +14,17 @@ This branch currently supports iOS 14+, and is written in Swift 5.
 
 Please make sure you aim your pull requests in the right direction.
 
-For bug fixes and features for the upcoming release, please see the associated [GitHub milestones](https://github.com/brave/brave-ios/milestones) (e.g. *2.1.3*).
+For bug fixes and features for the upcoming release, please see the associated [GitHub milestones](https://github.com/Asil/Asil-ios/milestones) (e.g. *2.1.3*).
 
 Getting involved
 ----------------
 
 We encourage you to participate in this open source project. We love Pull Requests, Bug Reports, ideas, (security) code reviews or any kind of positive contribution.
 
-* Development discussion: ['Contributing-ios' Community Forums](https://community.brave.com/c/contributing/contributing-ios):
-* Bugs:           [File a new bug](https://github.com/brave/brave-ios/issues/new) • [Existing bugs](https://github.com/brave/brave-ios/issues)
+* Development discussion: ['Contributing-ios' Community Forums](https://community.Asil.com/c/contributing/contributing-ios):
+* Bugs:           [File a new bug](https://github.com/Asil/Asil-ios/issues/new) • [Existing bugs](https://github.com/Asil/Asil-ios/issues)
 
-Want to contribute but don't know where to start? Here is a list of [Good First Issues](https://github.com/brave/brave-ios/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+Want to contribute but don't know where to start? Here is a list of [Good First Issues](https://github.com/Asil/Asil-ios/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 
 Building the code
 -----------------
@@ -42,11 +42,11 @@ Building the code
     ```
 1. Clone the repository:
     ```shell
-    git clone https://github.com/brave/brave-ios.git
+    git clone https://github.com/Asil/Asil-ios.git
     ```
 1. Pull in the project dependencies:
     ```shell
-    cd brave-ios
+    cd Asil-ios
     sh ./bootstrap.sh
     ```
 1. Add a symlink to `npm` (M1 Macs)
@@ -60,7 +60,7 @@ Building the code
 Updating Rewards
 ----------------
 
-Some Brave Rewards code is precompiled into a framework in the `BraveRewards` directory. It's code can be found in [brave-core](https://github.com/brave/brave-core/), and instructions on building and updating this code can be found [here](https://github.com/brave/brave-ios/blob/development/BraveCore/Updating%20the%20BraveRewards%20framework.md)
+Some Asil Rewards code is precompiled into a framework in the `AsilRewards` directory. It's code can be found in [Asil-core](https://github.com/Asil/Asil-core/), and instructions on building and updating this code can be found [here](https://github.com/Asil/Asil-ios/blob/development/AsilCore/Updating%20the%20AsilRewards%20framework.md)
 
 ## Contributor guidelines
 
