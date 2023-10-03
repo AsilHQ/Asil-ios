@@ -358,6 +358,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       )
     }
     
+    HostBlockerManager.shared.fetchAndOverwriteHostFile()
+    
     return shouldPerformAdditionalDelegateHandling
   }
 
