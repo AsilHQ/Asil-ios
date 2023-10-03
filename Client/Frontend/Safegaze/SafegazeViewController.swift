@@ -90,13 +90,18 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
   }
 
   private func updateShieldBlockStats() {
-    shieldsView.simpleShieldView.blockCountView.countLabel.text = String(tab.contentBlocker.stats.safegazeCount)
-    shieldsView.simpleShieldView.totalCountView.descriptionLabel.attributedText = {
+     shieldsView.simpleShieldView.blockCountView.countLabel.attributedText = {
           let string = NSMutableAttributedString(
-            string: String(format: Strings.Shields.safegazeTotalCountLabel, String(BraveGlobalShieldStats.shared.safegazeCount)),
-            attributes: [.font: UIFont.systemFont(ofSize: 13.0), .foregroundColor: UIColor.braveLabel ]
+            string: String(tab.contentBlocker.stats.safegazeCount.noneFormattedString ?? "")
           )
           return string
+    }()
+    shieldsView.simpleShieldView.totalCountView.descriptionLabel.attributedText = {
+        let string = NSMutableAttributedString(
+            string: String(format: Strings.Shields.safegazeTotalCountLabel, BraveGlobalShieldStats.shared.safegazeCount.noneFormattedString ?? ""),
+            attributes: [.font: UIFont.systemFont(ofSize: 13.0), .foregroundColor: UIColor.braveLabel ]
+        )
+        return string
     }()
   }
 

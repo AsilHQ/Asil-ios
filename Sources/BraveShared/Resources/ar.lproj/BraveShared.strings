@@ -1,0 +1,2642 @@
+/* About settings section title */
+"About" = "حول";
+/* The title of the screen explaining Asil Browser Shields */
+"AboutBraveShields" = "عن Brave Shields";
+/* The body of the screen explaining Asil Browser Shields */
+"AboutBraveShieldsBody" = "المواقع غالبًا ما تحتوي على ملفات تعريف الارتباط والسيناريوهات التي تحاول التعرف عليك وعلى جهازك. إنهم يريدون معرفة من أنت وتتبعك على الويب ومراقبة ما تفعله على كل موقع.\n\nAsil Browser يمنع ذلك لتصفح الويب دون تتبع.";
+/* See http://mzl.la/1G7uHo7 */
+"AccessPhotoDeniedAlertMessage" = "هذا يسمح لك بحفظ الصورة في لفة الأفلام الخاصة بك.";
+/* See http://mzl.la/1G7uHo7 */
+"AccessPhotoDeniedAlertTitle" = "Asil Browser يرغب في الوصول إلى صورك";
+/* Button to add a bookmark */
+"AddBookmark" = "إضافة علامة مرجعية";
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"addBookmarkTitle" = "إضافة علامة مرجعية";
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"addFavouritesTitle" = "إضافة إلى المفضلات";
+/* Cell title for add folder action */
+"AddFolderActionCellTitle" = "مجلد جديد";
+/* Add to favorites share action. */
+"AddToFavorites" = "إضافة إلى المفضلات";
+/* Title for the button to add a new website bookmark. */
+"AddToMenuItem" = "إضافة علامة مرجعية";
+/* individual blocking statistic title */
+"AdsAndTrackers" = "الإعلانات والمتتبعون";
+/* Shields Ads Stat */
+"AdsAndTrackersrBlocked" = "تم حظر المتتبعون والإعلانات";
+/* Shields Ads Stat */
+"AdsrBlocked" = "الإعلان تم\nحظره";
+/* Setting to always request the desktop version of a website. */
+"AlwaysRequestDesktopSite" = "دائمًا طلب إصدار سطح المكتب للموقع";
+/* Used as a button label for crash dialog prompt */
+"AlwaysSendButtonTitle" = "إرسال دائمًا";
+/* Setting preference to always show the browser tabs bar. */
+"AlwaysShow" = "عرض دائمًا";
+/* Label for the Face ID/Passcode item in Settings */
+"AuthenticationFaceIDPasscodeSetting" = "الوجه ورمز المرور";
+/* Touch ID or PIN entry prompt subtitle when accessing Asil Browser with the Browser Lock feature enabled */
+"AuthenticationLoginsTouchReason" = "يتحقق هذا الإجراء من هويتك عند الوصول إلى Asil Browser.";
+/* Label for the Passcode item in Settings */
+"AuthenticationPasscode" = "رمز المرور";
+/* Label for the Touch ID/Passcode item in Settings */
+"AuthenticationTouchIDPasscodeSetting" = "Touch ID ورمز المرور";
+/* Label for Cancel button */
+"AuthPromptAlertCancelButtonTitle" = "إلغاء";
+/* Authentication prompt message with a realm. First parameter is the hostname. Second is the realm string */
+"AuthPromptAlertFormatRealmMessageText" = "الموقع %1$@ يطلب اسم مستخدم وكلمة مرور. الموقع يقول: %2$@";
+/* Authentication prompt log in button */
+"AuthPromptAlertLogInButtonTitle" = "تسجيل الدخول";
+/* Authentication prompt message with no realm. Parameter is the hostname of the site */
+"AuthPromptAlertMessageText" = "الموقع %@ يطلب اسم مستخدم وكلمة مرور.";
+
+
+/* Password textbox in Authentication prompt */
+"AuthPromptAlertPasswordPlaceholderText" = "كلمة المرور";
+/* Authentication prompt title */
+"AuthPromptAlertTitle" = "يتطلب التحقق من الهوية";
+/* Username textbox in Authentication prompt */
+"AuthPromptAlertUsernamePlaceholderText" = "اسم المستخدم";
+/* This is a title for a setting toggle that enables/disables auto-redirect of Google's AMP (Accelerated Mobile Page) pages to the original (non-AMP) pages. The text 'AMP' is not to be translated. */
+"AutoRedirectAMPPages" = "توجيه صفحات AMP تلقائيًا";
+/* This is a description for a setting toggle that enables/disables auto-redirect of Google's AMP (Accelerated Mobile Page) pages to the original (non-AMP) pages. The text 'AMP' and 'Accelerated Mobile Page' is not to be translated. */
+"AutoRedirectAMPPagesDescription" = "دائمًا قم بزيارة عناوين URL الأصلية (غير AMP) بدلاً من نسخ Google لصفحات AMP المعتمدة على الهواتف المحمولة.";
+/* cookie settings option */
+"Block3rdPartyCookies" = "منع الكوكيز من الأطراف الثالثة";
+/* No comment provided by engineer. */
+"BlockAdsAndTracking" = "منع الإعلانات وتتبع الأنشطة بين المواقع";
+/* No comment provided by engineer. */
+"BlockAdsAndTrackingDescription" = "منع تحميل الإعلانات والنوافذ المنبثقة وعمليات التتبع.";
+/* Title for setting to block all website cookies. */
+"BlockAllCookies" = "منع جميع الكوكيز";
+/* block all cookies settings action title */
+"BlockAllCookiesAction" = "منع الكل";
+/* Information displayed to user when block all cookie is enabled. */
+"BlockAllCookiesAlertInfo" = "سيؤدي منع جميع الكوكيز إلى منع تشغيل بعض مواقع الويب بشكل صحيح.";
+/* Title of alert displayed to user when block all cookie is enabled. */
+"BlockAllCookiesAlertTitle" = "هل ترغب في منع جميع الكوكيز؟";
+/* Message of alert displayed to user when block all cookie operation fails */
+"BlockAllCookiesFailedAlertMsg" = "تعذر تعيين التفضيل. يرجى المحاولة مرة أخرى.";
+/* A title for a toggle that allows user to block cookie consent notices */
+"BlockCookieConsentNotices" = "منع إشعارات موافقة الكوكيز";
+/* A description for a popup that notifies the user that we can block cookie consent notices */
+"BlockCookieConsentNoticesPopupDescription" = "Asil Browser يمنع بالفعل الكوكيز من الأطراف الثالثة. يمكننا أيضًا منع إشعارات موافقة الكوكيز.";
+/* A title for a popup that notifies the user that we can block cookie consent notices */
+"BlockCookieConsentNoticesPopupTitle" = "هل أنت متعب من إشعارات موافقة الكوكيز؟";
+/* No comment provided by engineer. */
+"BlockCookiesDescription" = "منع مواقع الويب من تخزين معلومات حول زياراتك السابقة.";
+/* title for section showing page blocking statistics */
+"BlockingMonitor" = "رصد الحجب";
+/* A title for setting which blocks 'switch to app' popups */
+"blockMobileAnnoyances" = "منع إشعارات التبديل إلى التطبيق";
+/* Asil Browser panel individual toggle title */
+"BlockPhishing" = "منع صيد الاحتيال";
+/* No comment provided by engineer. */
+"BlockPhishingAndMalware" = "منع صيد الاحتيال والبرمجيات الخبيثة";
+/* Setting to enable popup blocking */
+"BlockPopups" = "منع النوافذ المنبثقة";
+/* No comment provided by engineer. */
+"BlockScripts" = "منع النصوص البرمجية";
+
+"BlockScriptsDescription" = "يمنع JavaScript (قد يتسبب في تعطيل بعض المواقع).";
+/* Action item title of long press for Adding Bookmark for All Tabs in Tab List - The parameter indicates the number of tabs like Add Bookmark for 5 Tabs */
+"BookmarkAllTabsTitle" = "إضافة علامة مرجعية لـ %lld علامة تبويب";
+/* Bookmark Folder Section Title */
+"BookmarkFolder" = "مجلد العلامة المرجعية";
+/* Bookmark Info Section Title */
+"BookmarkInfo" = "معلومات العلامة المرجعية";
+/* Title for root level bookmarks cell */
+"BookmarkRootLevelCellTitle" = "علامات التبويب";
+/* title for bookmarks panel */
+"Bookmarks" = "علامات التبويب";
+/* Action to export bookmarks to another device. */
+"bookmarksExportAction" = "تصدير علامات التبويب إلى جهاز آخر.";
+/* Action to import bookmarks from a file. */
+"bookmarksImportAction" = "استيراد علامات التبويب من ملف.";
+/* Title for bookmarks menu item */
+"BookmarksMenuItem" = "علامات التبويب";
+/* Placeholder text for adding or editing a bookmark */
+"BookmarkTitlePlaceholderText" = "العنوان";
+/* Placeholder text for adding or editing a bookmark */
+"BookmarkUrlPlaceholderText" = "العنوان";
+/* Button to show the Asil Browser panel */
+"BravePanel" = "لوحة متصفح Asil";
+/* No comment provided by engineer. */
+"BraveRewardsAdNotificationTitle" = "مكافآت Asil Browser";
+/* No comment provided by engineer. */
+"BraveRewardsOpen" = "فتح";
+/* Asil Browser Rewards settings title */
+"BraveRewardsTitle" = "إعدادات مكافآت Asil Browser";
+/* Asil Browser Search Banner Promotion description content in Search Suggestions */
+"braveSearchPromotion.bannerDescription" = "Asil Browser لا يتتبع عمليات البحث أو الاستعراض أو النقر الخاصة بك.";
+/* Asil Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
+"braveSearchPromotion.bannerMaybeLaterButtonTitle" = "ربما لاحقًا";
+/* Asil Browser Search Banner Promotion title in Search Suggestions */
+"braveSearchPromotion.bannerTitle" = "قم بدعم البحث المستقل بأمان أفضل";
+/* Asil Browser Search Banner Promotion title for try button in Search Suggestions */
+"braveSearchPromotion.bannerTryButtonTitle" = "جرب البحث مع Asil Browser";
+/* Asil Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
+"braveSearchPromotion.braveSearchPromotionBannerDismissButtonTitle" = "رفض";
+/* No comment provided by engineer. */
+"BraveShieldsAdvancedControls" = "ضوابط متقدمة";
+/* No comment provided by engineer. */
+"BraveShieldsAndPrivacy" = "Asil Browser Kalkanları والخصوصية";
+/* The number of ads and trackers blocked will be next to this */
+"BraveShieldsBlockedCountLabel" = "تم حظر الإعلانات والمتتبعين";
+/* "The number of sinful acts avoided will be next to this" */
+"SafegazeBlockedCountLabel" = "تجنبت الأعمال الخاطئة";
+/* "The number of total sinful acts avoided will be next to this" */
+"SafegazeTotalBlockedCountLabel" = "لقد منعت %@ أعمال خاطئة منذ البداية";
+/* What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel */
+
+"BraveShieldsBlockedInfoButtonAccessibilityLabel" = "احصل على مزيد من المعلومات";
+/* No comment provided by engineer. */
+"BraveShieldsGlobalChangeButton" = "تغيير إعدادات الحماية العامة";
+/* No comment provided by engineer. */
+"BraveShieldsGlobalControls" = "التحكم العام";
+/* No comment provided by engineer. */
+"BraveShieldsSiteBroken" = "إذا كان هذا الموقع يبدو تالفًا، جرب تعطيل الحماية.";
+/* Context: 'Asil Browser Shields Up' or 'Asil Browser Shields Down' */
+"BraveShieldsStatusTitle" = "حماية Asil Browser";
+/* Context: The 'Down' in 'Asil Browser Shields Down' */
+"BraveShieldsStatusValueDown" = "متوقفة";
+/* Context: The 'Up' in 'Asil Browser Shields Up' */
+"BraveShieldsStatusValueUp" = "قيد التشغيل";
+/* The accessibility hint spoken when focused on the main shields toggle */
+"BraveShieldsToggleHint" = "لتغيير حالة حماية Asil Browser، اضغط مرتين.";
+/* Sync page title */
+"BraveSync" = "مزامنة";
+/* Sync-Internals screen title (Sync Internals or Sync Debugging is fine). */
+"BraveSyncInternalsTitle" = "تصحيح مزامنة";
+/* Sync settings welcome */
+"BraveSyncWelcome" = "للبدء، يجب أن يتم تثبيت Asil Browser على جميع الأجهزة التي ترغب في مزامنة بينها. لبدء الاتصال بينها بشكل آمن، قم ببدء سلسلة مزامنة تستخدمها لربط جميع أجهزتك.";
+/* The name of the feature */
+"bravetalk.braveTalkTitle" = "الدردشة في Asil Browser";
+/* Setting to enable the browser lock privacy feature */
+"BrowserLock" = "قفل المتصفح";
+/* No comment provided by engineer. */
+"BrowserLockDescription" = "افتح Asil Browser باستخدام Touch ID، Face ID أو رمز المرور الخاص بالنظام.";
+/* A button title for the action to move to the next step of the browser lock migration process. */
+"browserLockMigrationContinueButtonTitle" = "المتابعة";
+/* Displayed to the user when they don't have a passcode set on their phone, therefore cannot use the Browser Lock feature. \"%@\" will be filled with either "Touch ID & Passcode" or "Face ID & Passcode" */
+"browserLockMigrationNoPasscodeSetup" = "لم تقم بإعداد %@ بعد. افتح الإعدادات ثم انقر على \"%@\".";
+/* Subtitle on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
+"browserLockMigrationSubtitle" = "لقد قمنا بتبسيط أكواد الانتقال في Asil Browser. يمكنك الآن الوصول إلى Asil Browser باستخدام نفس رمز المرور الذي تستخدمه على هاتفك.";
+/* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
+"browserLockMigrationTitle" = "افتح Asil Browser باستخدام Apple Face ID، Touch ID أو رمز المرور الخاص بك.";
+/* Settings item for clearing browsing history */
+"BrowsingHistory" = "سجل التصفح";
+/* Settings item for clearing the cache */
+"Cache" = "المخبأ";
+/* Subtitle - Description for Default Browser Full Screen Callout */
+"callout.defaultBrowserCalloutDescription" = "عندما يتم تعيين Asil Browser كمتصفح افتراضي، سيتم فتح كل ارتباط تنقر عليه باستخدام حماية Asil Browser.";
+/* Title for main button in Default Browser Full Screen Callout */
+"callout.defaultBrowserCalloutPrimaryButtonTitle" = "تعيين كمتصفح افتراضي";
+/* Description for secondary button in Default Browser Full Screen Callout */
+"callout.defaultBrowserCalloutSecondaryButtonDescription" = "هل هو بالفعل الافتراضي؟";
+
+
+
+/* Title for secondary button in Default Browser Full Screen Callout */
+"callout.defaultBrowserCalloutSecondaryButtonTitle" = "تخطى ذلك";
+/* Title for Default Browser Full Screen Callout */
+"callout.defaultBrowserTitle" = "الأمان. أصبح أسهل الآن.";
+/* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
+"callout.p3aCalloutDescription" = "يمكنك مساعدتنا في معرفة الخصائص الأكثر استخدامًا في Asil Browser بهذه الطريقة. يمكنك تغيير هذا التفضيل في أي وقت من خلال \"Asil Browser Kalkanları والخصوصية\" في إعدادات Asil Browser.";
+/* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
+"callout.p3aCalloutLinkTitle" = "اعرف المزيد عن تحليلات الخصوصية المحفوظة (P3A).";
+/* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
+"callout.p3aCalloutTitle" = "ساعد في تحسين Asil Browser.";
+/* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
+"callout.p3aCalloutToggleTitle" = "شارك رؤى المنتج بشكل مجهول وخاص.";
+/* Button title for Playlist Onboarding View */
+"callout.playlistOnboardingViewButtonTitle" = "شاهد الفيديو";
+/* Description for Playlist Onboarding View */
+"callout.playlistOnboardingViewDescription" = "استمتع بمشاهدة الفيديو في أي مكان وزمان. خلفية أو في وضع الصورة داخل الصورة، حتى دون اتصال بالإنترنت، وبالطبع بدون إعلانات.";
+/* Title for Playlist Onboarding View */
+"callout.playlistOnboardingViewTitle" = "أضف الفيديو إلى قائمة التشغيل...";
+/* Subtitle - Description for Privacy Everywhere Full Screen Callout */
+"callout.privacyEverywhereCalloutDescription" = "تمتع بخصوصيتك على جهاز الكمبيوتر أو الجهاز اللوحي الخاص بك، وقم بمزامنة العلامات المرجعية والإضافات عبر أجهزتك.";
+/* Title for button in Default Browser Full Screen Callout */
+"callout.privacyEverywhereCalloutPrimaryButtonTitle" = "قم بالمزامنة الآن";
+/* Title for Privacy Everywhere Full Screen Callout */
+"callout.privacyEverywhereCalloutTitle" = "الخصوصية. في كل مكان.";
+/* Title for 'Tab Received' Callout, This is shown in the message when a Tab information is received from another sync device. */
+"callout.tabReceivedCalloutTitle" = "تم استلام علامة تبويب";
+/* No comment provided by engineer. */
+"CancelButtonTitle" = "إلغاء";
+/* Title indicating whether the section for the algorithm used */
+"certificateViewer.algorithmTitle" = "الخوارزمية";
+/* Title indicating whether or not a private key can be used for 'Anything' (encrypting, deriving, wrapping, verifying, signing, etc) */
+"certificateViewer.anyTitle" = "أي شيء";
+/* A measurement unit used in computing to indicate or how memory is used. */
+"certificateViewer.bitsUnitTitle" = "بت";
+/* A measurement unit used in computing to indicate or how memory is used. */
+"certificateViewer.bytesUnitTitle" = "بايت";
+/* The description for when an SSL certificate is valid */
+"certificateViewer.certificateIsValidTitle" = "هذا الشهادة صالحة";
+/* Section Title displaying common information */
+"certificateViewer.commonInfoTitle" = "المعلومات المشتركة";
+/* Title of the section for Commonly used Name for the certificate. Example: Alias, Commonly used name, DigiCert High Assurance TLS. */
+"certificateViewer.commonNameTitle" = "الاسم المشترك";
+/* Title of the section for the certificate's issuing country or region. Example: Canada, or USA */
+"certificateViewer.countryOrRegionTitle" = "البلد أو المنطقة";
+/* Title indicating whether or not a private key can be used to derive some data from another piece of data. IE: Use one key to generate another */
+
+/* Title indicating whether or not a private key can be used to encrypt data */
+"certificateViewer.encryptTitle" = "تشفير";
+/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
+"certificateViewer.domainComponentTitle" = "مكون النطاق";
+/* Title of the section indication which 'Encryption' algorithm was used. */
+"certificateViewer.encryptionTitle" = "التشفير";
+/* Title indicating whether or not a private key can be used to encrypt data */
+"certificateViewer.encryptTitle" = "تشفير";
+/* Title indicating whether the mathematical exponent used. x³, x², etc. */
+"certificateViewer.exponentTitle" = "الأس";
+/* Fingerprints/Hashes are algorithms used to determine if the certificate is legitimate */
+"certificateViewer.fingerPrintsTitle" = "البصمات";
+/* Section Title for Issuer Name in the SSL Certificate */
+"certificateViewer.issuerNameTitle" = "اسم الناشر";
+/* Title indicating the size of the private or public key used in bytes. Example: KeySize - 1024 Bytes. Key Size - 2048 Bytes. */
+"certificateViewer.keySizeTitle" = "حجم المفتاح";
+/* Title indicating what the private or public key can be used for. */
+"certificateViewer.keyUsageTitle" = "استخدام المفتاح";
+/* Title of the section for the certificate's issuing city. Example: Toronto, New York, or San Francisco */
+"certificateViewer.localityTitle" = "المدينة";
+/* Title indicating 'None' or no information or empty. */
+"certificateViewer.noneTitle" = "لا شيء";
+/* Certificate is 'not valid after' January 31st, 2022 for example. */
+"certificateViewer.notValidAfterTitle" = "غير صالح بعد:";
+/* Certificate is 'not valid before' January 1st, 2022 for example. */
+"certificateViewer.notValidBeforeTitle" = "غير صالح قبل:";
+/* Title of the section for Department of the Company. Example: Human Resources. */
+"certificateViewer.organizationalUnitTitle" = "الوحدة التنظيمية";
+/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
+"certificateViewer.organizationTitle" = "الشركة";
+/* Title indicating 'Parameters' or Input passed to a function/algorithm. */
+"certificateViewer.parametersTitle" = "المعلمات";
+/* Information about a Public Key section title. */
+"certificateViewer.publicKeyInfoTitle" = "معلومات المفتاح العام";
+/* Title indicating whether the key used is public (not private) */
+"certificateViewer.publicKeyTitle" = "المفتاح العام";
+/* Certificates have a serial number to identify that it's unique */
+"certificateViewer.serialNumberTitle" = "الرقم المتسلسل";
+/* Do NOT translate the %@. They are place holders. Example: 'SHA256' with 'RSA' Encryption */
+"certificateViewer.signatureAlgorithmEncryptionDescription" = "%2$@ بواسطة التشفير %1$@";
+/* Do NOT translate the %@. They are place holders. Example: 'ECDSA Signature' with 'SHA-256' */
+"certificateViewer.signatureAlgorithmSignatureDescription" = "%2$@ توقيع %1$@";
+/* Title for the section where we display information about the algorithm used to sign the certificate */
+"certificateViewer.signatureAlgorithmTitle" = "خوارزمية التوقيع";
+/* Title of the view that states whether or not something was signed with an encryption algorithm or hash. */
+"certificateViewer.signatureTitle" = "التوقيع";
+/* Title of the section for the certificate's issuing state or province. Example: Ontario Province or California State */
+"certificateViewer.stateOrProvinceTitle" = "الولاية/المقاطعة";
+/* Title of the section for the address of where the certificate came from. */
+"certificateViewer.streetAddressTitle" = "عنوان الشارع";
+/* Section Title for Subject Name in the SSL Certificate */
+"certificateViewer.subjectNameTitle" = "اسم الموضوع";
+/* Title indicating whether or not a private key can be used to encrypt data */
+"certificateViewer.encryptTitle" = "تشفير";
+/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
+"certificateViewer.domainComponentTitle" = "مكون النطاق";
+/* Title of the section indication which 'Encryption' algorithm was used. */
+"certificateViewer.encryptionTitle" = "التشفير";
+/* Title indicating whether or not a private key can be used to encrypt data */
+"certificateViewer.encryptTitle" = "تشفير";
+/* Title indicating whether the mathematical exponent used. x³, x², etc. */
+"certificateViewer.exponentTitle" = "الأس";
+/* Fingerprints/Hashes are algorithms used to determine if the certificate is legitimate */
+"certificateViewer.fingerPrintsTitle" = "البصمات";
+/* Section Title for Issuer Name in the SSL Certificate */
+"certificateViewer.issuerNameTitle" = "اسم الناشر";
+/* Title indicating the size of the private or public key used in bytes. Example: KeySize - 1024 Bytes. Key Size - 2048 Bytes. */
+"certificateViewer.keySizeTitle" = "حجم المفتاح";
+/* Title indicating what the private or public key can be used for. */
+"certificateViewer.keyUsageTitle" = "استخدام المفتاح";
+/* Title of the section for the certificate's issuing city. Example: Toronto, New York, or San Francisco */
+"certificateViewer.localityTitle" = "المدينة";
+/* Title indicating 'None' or no information or empty. */
+"certificateViewer.noneTitle" = "لا شيء";
+/* Certificate is 'not valid after' January 31st, 2022 for example. */
+"certificateViewer.notValidAfterTitle" = "غير صالح بعد:";
+/* Certificate is 'not valid before' January 1st, 2022 for example. */
+"certificateViewer.notValidBeforeTitle" = "غير صالح قبل:";
+/* Title of the section for Department of the Company. Example: Human Resources. */
+"certificateViewer.organizationalUnitTitle" = "الوحدة التنظيمية";
+/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
+"certificateViewer.organizationTitle" = "الشركة";
+/* Title indicating 'Parameters' or Input passed to a function/algorithm. */
+"certificateViewer.parametersTitle" = "المعلمات";
+/* Information about a Public Key section title. */
+"certificateViewer.publicKeyInfoTitle" = "معلومات المفتاح العام";
+/* Title indicating whether the key used is public (not private) */
+"certificateViewer.publicKeyTitle" = "المفتاح العام";
+/* Certificates have a serial number to identify that it's unique */
+"certificateViewer.serialNumberTitle" = "الرقم المتسلسل";
+/* Do NOT translate the %@. They are place holders. Example: 'SHA256' with 'RSA' Encryption */
+"certificateViewer.signatureAlgorithmEncryptionDescription" = "%2$@ بواسطة التشفير %1$@";
+/* Do NOT translate the %@. They are place holders. Example: 'ECDSA Signature' with 'SHA-256' */
+"certificateViewer.signatureAlgorithmSignatureDescription" = "%2$@ توقيع %1$@";
+/* Title for the section where we display information about the algorithm used to sign the certificate */
+"certificateViewer.signatureAlgorithmTitle" = "خوارزمية التوقيع";
+/* Title of the view that states whether or not something was signed with an encryption algorithm or hash. */
+"certificateViewer.signatureTitle" = "التوقيع";
+/* Title of the section for the certificate's issuing state or province. Example: Ontario Province or California State */
+"certificateViewer.stateOrProvinceTitle" = "الولاية/المقاطعة";
+/* Title of the section for the address of where the certificate came from. */
+"certificateViewer.streetAddressTitle" = "عنوان الشارع";
+/* Section Title for Subject Name in the SSL Certificate */
+"certificateViewer.subjectNameTitle" = "اسم الموضوع";
+
+/* Title of the section for the User's ID (Identifier). */
+"certificateViewer.userIDTitle" = "هوية المستخدم";
+/* Title of section that determines if the dates on a certificate is valid. */
+"certificateViewer.validityDatesTitle" = "تواريخ الصلاحية";
+/* Title indicating whether or not a private key can be used to verify data is legitimate */
+"certificateViewer.verifyTitle" = "تحقق";
+/* Certificates have a version number */
+"certificateViewer.versionNumberTitle" = "الإصدار";
+/* Title indicating whether or not a private key can be used to wrap or enclose some data */
+"certificateViewer.wrapTitle" = "لف";
+/* No comment provided by engineer. */
+"ClearData" = "مسح البيانات";
+/* Section title in settings panel */
+"ClearPrivateData" = "مسح البيانات الخاصة";
+/* The cancel button when confirming clear private data. */
+"ClearPrivateDataAlertCancelButtonTitle" = "إلغاء";
+/* No comment provided by engineer. */
+"ClearPrivateDataAlertMessage" = "هل أنت متأكد؟";
+/* The button that clears private data. */
+"ClearPrivateDataAlertOkButtonTitle" = "موافق";
+/* No comment provided by engineer. */
+"ClearPrivateDataAlertTitle" = "مسح البيانات";
+/* No comment provided by engineer. */
+"ClearPrivateDataAlertYesAction" = "نعم، احذف";
+/* Button in settings that clears private data for the selected items. */
+"ClearPrivateDataNow" = "مسح البيانات الآن";
+/* The cancel button when confirming clear history. */
+"ClearSyncedHistoryAlertCancelButtoTitle" = "إلغاء";
+/* Description of the confirmation dialog shown when a user tries to clear history that's synced to another device. */
+"ClearSyncedHistoryAlertMessage" = "سيؤدي هذا الإجراء إلى مسح جميع البيانات الخاصة بك، بما في ذلك التاريخ، من جميع الأجهزة المتزامنة.";
+/* The confirmation button that clears history even when Sync is connected. */
+"ClearSyncedHistoryAlertOkButtoTitle" = "موافق";
+/* Client is in an invalid state which caused the error */
+"clientErrorMessage" = "خطأ في العميل";
+/* Button title to close a menu. */
+"Close" = "إغلاق";
+/* We ask users this prompt before attempting to close multiple tabs via context menu */
+"closeAllTabsPrompt" = "هل أنت متأكد أنك تريد إغلاق جميع الألسنة المفتوحة؟";
+/* No comment provided by engineer. */
+"CloseAllTabsTitle" = "إغلاق كل الألسنة %i";
+/* Code words input help */
+"CodeWordInputHelp" = "يرجى كتابة كلمات التزامن الخاصة بك في النموذج أدناه.";
+/* Code words section title */
+"CodeWords" = "كلمات التزامن";
+/* Text to choose for downloading a file (example: saving an image to phone) */
+"CommonDownload" = "تنزيل";
+/* Text to select sharing something (example: image, video, URL) */
+"CommonShare" = "مشاركة";
+/* No comment provided by engineer. */
+"Confirm" = "تأكيد";
+/* A title to the content filtering page under global shield settings and the title on the Content filtering page */
+"ContentFiltering" = "تصفية المحتوى";
+
+/* A description of the content filtering page. */
+"ContentFilteringDescription" = "قم بتمكين مرشحات مخصصة تمنع المتتبعين والمحتوى المزعج المحددين للمنطقة واللغة.";
+/* Cookie settings option title */
+"CookieControl" = "مراقبة الكوكيز";
+/* Settings item for clearing cookies and site data */
+"Cookies" = "مسح الكوكيز وبيانات الموقع";
+/* Copied action complete title */
+"Copied" = "تم النسخ";
+/* Copied codewords title */
+"CopiedToClipboard" = "تم نسخها إلى الحافظة!";
+/* Copy app info to clipboard action sheet action. */
+"CopyAppInfoToClipboard" = "انسخ معلومات التطبيق إلى الحافظة.";
+/* Context menu item for copying an image to the clipboard */
+"CopyImageActionTitle" = "نسخ الصورة";
+/* Context menu item for copying a link URL to the clipboard */
+"CopyLinkActionTitle" = "نسخ الرابط";
+/* Copy codewords title */
+"CopyToClipboard" = "نسخ إلى الحافظة";
+/* Copy rewards internals info for support */
+"CopyWalletSupportInfo" = "نسخ معلومات الدعم";
+/* Create PDF share action. */
+"CreatePDF" = "إنشاء ملف PDF";
+/* Currently used search engines section name. */
+"CurrentlyUsedSearchEngines" = "محركات البحث المستخدمة حاليًا";
+/* Button title for Adding Engine in navigation Bar */
+"customSearchEngine.addButtonTitle" = "إضافة";
+/* Label explaining how to add search engine. */
+"customSearchEngine.addEngineDescription" = "اكتب عنوان URL للبحث واستبدل البحث المنصوص عليه بـ %s. مثال: https://youtube.com/search?q= %s. (إذا كان الموقع يدعم OpenSearch، سيتم توفير خيار الإضافة تلقائيًا عند تحرير هذا الحقل.)";
+/* Button title for Auto Add in header */
+"customSearchEngine.autoAddTitle" = "إضافة تلقائية";
+/* The warning description shown to the user when custom search engine will be deleted while it is the default search engine. */
+"customSearchEngine.deleteEngineAlertDescription" = "سيؤدي حذف محرك البحث المخصص أثناء كونه المحرك الافتراضي إلى تغيير المحرك الافتراضي تلقائيًا.";
+/* The alert title shown to the user when custom search engine will be deleted while it is the default search engine. The parameter will be replaced with the name of the search engine. */
+"customSearchEngine.deleteEngineAlertTitle" = "هل تريد بالتأكيد حذف محرك البحث %@؟";
+/* Navigation Bar title */
+"customSearchEngine.navigationTitle" = "إضافة محرك بحث";
+/* The message that asks the user to Add the search provider explaining where the search engine will appear */
+"customSearchEngine.thirdPartySearchEngineAddAlertDescription" = "سيظهر محرك البحث الجديد في شريط البحث السريع.";
+/* The title that asks the user to Add the search provider */
+"customSearchEngine.thirdPartySearchEngineAddAlertTitle" = "هل ترغب في إضافة مزود البحث؟";
+/* A description explaining that there is an error while adding a search engine */
+"customSearchEngine.thirdPartySearchEngineAddErrorDescription" = "تعذرت إضافة محرك البحث المخصص. يرجى المحاولة مرة أخرى في وقت لاحق.";
+/* A title explaining that there is an error while adding a search engine */
+"customSearchEngine.thirdPartySearchEngineAddErrorTitle" = "خطأ في محرك البحث المخصص";
+/* A message explaining that a replica search engine is already added */
+
+"customSearchEngine.thirdPartySearchEngineDuplicateErrorDescription" = "يتمتع محرك البحث الذي يحمل هذا العنوان أو هذا الرابط بالفعل بالإضافة.";
+/* A description explaining that there is a formatting error in URL field */
+"customSearchEngine.thirdPartySearchEngineIncorrectFormErrorDescription" = "يرجى كتابة عنوان URL للبحث واستبدال الاستعلام بـ %s. ";
+/* A title explaining that there is a formatting error in URL field */
+"customSearchEngine.thirdPartySearchEngineIncorrectFormErrorTitle" = "خطأ في عنوان URL للبحث";
+/* A description explaining the copied URL should be secure */
+"customSearchEngine.thirdPartySearchEngineInsecureURLErrorDescription" = "يجب أن يكون النص المنسوخ بدءًا بـ 'https://' ليكون عنوان URL الآمن الصحيح";
+/* A description explaining that the fields must be filled while adding a search engine. */
+"customSearchEngine.thirdPartySearchEngineMissingInfoErrorDescription" = "الرجاء ملء كل من حقل العنوان وحقل عنوان URL.";
+/* Title for quick-search engines settings section. */
+"CustomSearchEngines" = "محركات البحث المخصصة";
+/* The success message that appears after a user successfully adds a new search engine */
+"custonmSearchEngine.thirdPartySearchEngineAddedToastTitle" = "تم إضافة محرك البحث!";
+/* Data Saved Shield Stat */
+"DataSavedStat" = "محتوى تم الحفظ";
+/* Button text to close the default browser popup. */
+"defaultBrowserCallout.introCancelButtonText" = "لاحقًا";
+/* Button text to open app settings */
+"defaultBrowserCallout.introOpenSettingsButtonText" = "فتح الإعدادات";
+/* Primary text on default browser popup screen */
+"defaultBrowserCallout.introPrimaryText" = "افتح جميع الروابط مع Brave للحفاظ على خصوصيتك";
+/* Secondary text on default browser popup. */
+"defaultBrowserCallout.introSecondaryText" = "تمنع درعات Brave التتبع والإعلانات وتحسّن أداء تصفح الويب.";
+/* Tertiary text on default browser popup screen */
+"defaultBrowserCallout.introTertiaryText" = "اذهب إلى الإعدادات واختر التطبيق المتصفح الافتراضي لتحديد Brave.";
+/* Notification body to promote setting Brave app as the default browser */
+"defaultBrowserCallout.notificationBody" = "تم تحسينه لنظام iOS %@. اجعل Brave متصفحك الافتراضي اليوم.";
+/* Notification title to promote setting Brave app as the default browser */
+"defaultBrowserCallout.notificationTitle" = "متصفح Brave";
+/* No comment provided by engineer. */
+"defaultBrowserCalloutCloseAccesabilityLabel" = "أغلق علامة المتصفح الافتراضي";
+/* Name for the default Brave theme. */
+"defaultThemeName" = "موضوع Brave الافتراضي";
+/* No comment provided by engineer. */
+"Delete" = "حذف";
+/* Message for the alert shown when the user tries to delete a bookmarks folder */
+"DeleteBookmarksFolderAlertMessage" = "هذا الإجراء سيؤدي إلى حذف جميع المجلدات والعلامات المرتبطة به. هل ترغب حقًا في المتابعة؟";
+/* Title for the alert shown when the user tries to delete a bookmarks folder */
+"DeleteBookmarksFolderAlertTitle" = "هل تريد حذف المجلد؟";
+/* Prompt option for canceling out of deletion */
+"DeleteLoginAlertCancelActionTitle" = "إلغاء";
+/* Prompt message warning the user that deleting non-synced logins will permanently remove them */
+"DeleteLoginAlertLocalMessage" = "ستُحذف بيانات تسجيل الدخول بشكل دائم.";
+/* Prompt message warning the user that deleting logins will remove logins from all connected devices */
+
+"DeleteLoginAlertSyncedDevicesMessage" = "سيتم حذف بيانات تسجيل الدخول من جميع الأجهزة المتصلة.";
+/* Prompt title when deleting logins */
+"DeleteLoginAlertTitle" = "هل أنت متأكد؟";
+/* Label for the button used to delete the current login. */
+"DeleteLoginButtonTitle" = "حذف";
+/* Sync device settings page title. */
+"Devices" = "الأجهزة المتصلة";
+/* Current device model and iOS version copied to clipboard. */
+"DeviceTemplate" = "الجهاز %1$@ ( %2$@)";
+/* Section name for display preferences. */
+"DisplaySettingsSection" = "عرض";
+/* No comment provided by engineer. */
+"Done" = "تم";
+/* cookie settings option */
+"DontBlockCookies" = "عدم حظر ملفات تعريف الارتباط";
+/* Used as a button label for crash dialog prompt */
+"DontSendButtonTitle" = "عدم الإرسال";
+/* A label representing the state of a filter list that is downloaded */
+"Downloaded" = "تم التنزيل";
+/* Settings item for clearing downloaded files. */
+"DownloadedFiles" = "الملفات المُنزلة";
+/* A label representing the state of a filter list that is currently being downloaded */
+"Downloading" = "جار التنزيل";
+/* Title for downloads menu item */
+"DownloadsMenuItem" = "الملفات المنزلة";
+/* Title for when a user has nothing downloaded onto their device, and the list is empty. */
+"DownloadsPanelEmptyStateTitle" = "ستظهر الملفات المنزلة هنا.";
+/* Action item title of long press for Opening the existing - active Tab url in a new Tab */
+"DuplicateActiveTab" = "تكرار علامة التبويب النشطة";
+/* History tableview section header that indicated history items earlier than last month */
+"Earlier" = "منذ فترة";
+/* No comment provided by engineer. */
+"Edit" = "تحرير";
+/* Button to edit a bookmark */
+"EditBookmark" = "تحرير العلامة";
+/* Header title for bookmark save location */
+"EditBookmarkTableLocationHeader" = "الموقع";
+/* Title for editing a bookmark */
+"EditBookmarkTitle" = "تحرير العلامة";
+/* Button to edit a favorite */
+"EditFavorite" = "تحرير المفضلة";
+/* Title for editing a favorite bookmark */
+"EditFavoriteTitle" = "تحرير المفضلة";
+/* Title for editing a folder */
+"EditFolderTitle" = "تحرير المجلد";
+/* Describes whether or not the feature that allows the user to pull down from the top of a web page a certain amount before it triggers a page refresh */
+"enablePullToRefresh" = "تمكين السحب للتحديث";
+/* Sync enter code words */
+"EnterCodeWords" = "أدخل كلمات الرمز";
+/* Enter sync code words below */
+"EnterCodeWordsBelow" = "أدخل كلمات الرمز أدناه";
+/* Description for new folder popup */
+"EnterFolderName" = "أدخل اسم المجلد";
+
+/* Shown in error pages to suggest a fix to the user. */
+"errorPageCantBeReachedTry" = "حاول كتابة عنوان URL مرة أخرى أو قم بالبحث عن عنوان URL جديد باستخدام محرك البحث.";
+/* Shown in error pages for files that can't be shown and need to be downloaded. */
+"ErrorPageOpenInSafariButtonTitle" = "افتح في Safari";
+/* Shown in error pages on a button that will try to load the page again */
+"ErrorPageReloadButtonTitle" = "إعادة التحميل";
+/* Additional warning text when clicking the Advanced button on error pages */
+"ErrorPagesAdvancedWarningDetails" = "الخادم لا يستطيع التأكد مما إذا كان هذا %@ أم لا، ونظام تشغيل جهازك لا يثق بشهادته الأمان. قد يكون ذلك نتيجة لتكوين غير صحيح أو محاولة قرصنة لاتصالك.";
+/* Warning text when clicking the Advanced button on error pages */
+"ErrorPagesAdvancedWarningTitle" = "قد تكون هناك محاولات من المخترقين لسرقة بياناتك (%@)، مثل كلمات المرور أو الرسائل أو معلومات بطاقات الائتمان.";
+/* Label for button to go back from the error page */
+"ErrorPagesBackToSafetyButton" = "عودة إلى الأمان";
+/* Title on the certificate error page */
+"ErrorPagesCertErrorTitle" = "هذا الموقع لا يمكنه توفير اتصال آمن";
+/* Title on the certificate error page */
+"ErrorPagesCertWarningTitle" = "اتصالك غير آمن";
+/* Label for button to hide advanced actions on the error page */
+"ErrorPagesHideDetailsButton" = "إخفاء التفاصيل";
+/* Label for learn more link on error page */
+"ErrorPagesLearnMoreButton" = "المزيد من المعلومات";
+/* Label for button to perform advanced actions on the error page */
+"ErrorPagesMoreDetailsButton" = "المزيد من التفاصيل";
+/* Title of the No Internet error page */
+"ErrorPagesNoInternetTitle" = "لا يوجد اتصال بالإنترنت";
+/* Text telling the user to Try: The following list of things */
+"ErrorPagesNoInternetTry" = "يبدو أنك غير متصل بالإنترنت. جرب ما يلي لإصلاح الوضع:";
+/* List of things to try when the internet is not working */
+"ErrorPagesNoInternetTryItem1" = "تحقق من كابل الشبكة وجهاز التوجيه والمودم";
+/* List of things to try when the internet is not working */
+"ErrorPagesNoInternetTryItem2" = "إعادة الاتصال بشبكة Wi-Fi";
+/* Button label to temporarily continue to the site from the certificate error page */
+"ErrorPagesProceedAnywayButton" = "متابعة زيارة %@ (غير آمن)";
+/* Shields Time Saved Stat */
+"EstTimerSaved" = "وقت التوفير التقديري";
+/* %@ will launch an external application */
+"ExternalAppURLAlertMessage" = "سيتم تشغيل %@ تطبيق خارجي";
+/* Allow link to switch apps? */
+"ExternalAppURLAlertTitle" = "السماح لـ Asil Browser بفتح عنوان URL الخارجي؟";
+/* Allow Asil Browser to open the external app URL */
+"ExternalAppURLAllow" = "السماح";
+/* Don't allow Asil Browser to open the external app URL */
+"ExternalAppURLDontAllow" = "عدم السماح";
+/* Footer text when user selects to save to favorites when editing a bookmark */
+"FavoritesLocationFooterText" = "تظهر العلامات المفضلة على شاشة البداية. لن يتم مزامنة هذه العلامات مع الأجهزة الأخرى.";
+/* Title for favorites cell */
+"FavoritesRootLevelCellTitle" = "المفضلات";
+/* No comment provided by engineer. */
+"Features" = "الميزات";
+/* A title on the content filtering screen that allows you to enable/disable filter lists */
+
+"FilterLists" = "قوائم الفلترة";
+/* A description on the content filtering screen for the filter lists section. */
+"FilterListsDescription" = "قوائم تم إعدادها من قبل المجتمعات الشهيرة. يرجى ملاحظة أن تمكين العديد من الفلاتر قد يؤدي إلى بطء في التصفح.";
+/* Share action title */
+"FindInPage" = "ابحث في الصفحة";
+/* Done button in Find in Page Toolbar. */
+"FindInPageDoneButtonAccessibilityLabel" = "تم";
+/* Find %@ text in page. */
+"FindInPageFormat" = "البحث عن \"%@\" في الصفحة";
+/* Accessibility label for next result button in Find in Page Toolbar. */
+"FindInPageNextResultButtonAccessibilityLabel" = "النتيجة التالية في الصفحة";
+/* Accessibility label for previous result button in Find in Page Toolbar. */
+"FindInPagePreviousResultButtonAccessibilityLabel" = "النتيجة السابقة في الصفحة";
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"findInPageTitle" = "ابحث في الصفحة";
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"findNextTitle" = "البحث عن النتيجة التالية";
+/* Section header for find in page option */
+"FindOnPageSectionHeader" = "في هذه الصفحة";
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"findPreviousTitle" = "البحث عن النتيجة السابقة";
+/* individual blocking statistic title */
+"FingerprintingMethods" = "أساليب التعرف على البصمة";
+/* No comment provided by engineer. */
+"FingerprintingProtection" = "حماية التعرف على البصمة";
+/* No comment provided by engineer. */
+"FingerprintingProtectionDescription" = "يجعل من الصعب على المواقع التعرف على خصائص جهازك.";
+/* Setting to follow universal links */
+"FollowUniversalLinks" = "السماح بفتح روابط Universal في التطبيقات الخارجية";
+/* A label which when tapped pastes from the users clipboard forcefully (so as to ignore any paste restrictions placed by the website) */
+"ForcePaste" = "الصق بقوة";
+/* No comment provided by engineer. */
+"genericErrorBody" = "عذرًا! حدث خطأ ما. يرجى المحاولة مرة أخرى.";
+/* No comment provided by engineer. */
+"genericErrorTitle" = "خطأ";
+/* No comment provided by engineer. */
+"GoogleSafeBrowsing" = "منع المواقع الخطرة";
+/* No comment provided by engineer. */
+"GoogleSafeBrowsingUsingWebKitDescription" = "عندما يكون أمانك معرضًا للخطر، يقوم Google بإرسال العناوين المظللة لبعض الصفحات التي تزورها إلى خدمة التصفح الآمن من Google.";
+/* Grand camera access */
+"GrantCameraAccess" = "تمكين الكاميرا";
+/* Context menu item for hiding link previews */
+"HideLinkPreviewsActionTitle" = "إخفاء معاينات الروابط";
+/* Hides the rewards icon */
+"HideRewardsIcon" = "إخفاء أيقونة مكافآت Asil Browser";
+/* Hide the rewards icon explination. */
+"HideRewardsIconSubtitle" = "تخفي أيقونة مكافآت Asil Browser عندما يكون تمكين مكافآت Asil Browser معطلاً";
+/* Title for history menu item */
+"HistortMenuItem" = "السجل";
+/* Title for History Clear All Action */
+
+"history.historyClearActionTitle" = "مسح التاريخ";
+/* Description for Clear All History Alert Description */
+"history.historyClearAlertDescription" = "هذا الإجراء سيمحو كامل تاريخ التصفح.";
+/* Title for Clear All History Alert Title */
+"history.historyClearAlertTitle" = "مسح تاريخ التصفح";
+/* Title which is displayed when History screen is empty. */
+"history.historyEmptyStateTitle" = "سجل التصفح هنا.";
+/* Title which is displayed on History screen as an overlay when Private Browsing Only enabled */
+"history.historyPrivateModeOnlyStateTitle" = "السجل غير متاح إلا في وضع التصفح الخاص فقط.";
+/* Title displayed for the placeholder inside Search Bar in History */
+"history.historySearchBarTitle" = "سجل البحث";
+/* Title for history screen */
+"HistoryScreenTitle" = "السجل";
+/* No comment provided by engineer. */
+"Home" = "الصفحة الرئيسية";
+/* No comment provided by engineer. */
+"HTTPSEverywhere" = "زيادة الاتصال إلى HTTPS";
+/* No comment provided by engineer. */
+"HTTPSEverywhereDescription" = "يفتح المواقع بشكل آمن عبر HTTPS في الحالات الممكنة بدلاً من HTTP.";
+/* individual blocking statistic title */
+"HTTPSUpgrades" = "ترقيات HTTPS";
+/* title for per-site shield toggles */
+"IndividualControls" = "التحكم الفردي";
+/* Error message if details don't have the right type or values */
+"invalidDetailsMessage" = "تفاصيل غير صالحة في طلب الدفع";
+/* Generic error message for when the sync code is invalid */
+"InvalidSyncCodeDescription" = "رمز المزامنة غير صالح، يرجى التحقق والمحاولة مرة أخرى.";
+/* History tableview section header */
+"LastMonth" = "الشهر الماضي";
+/* History tableview section header */
+"LastWeek" = "الأسبوع الماضي";
+/* No comment provided by engineer. */
+"learnMore" = "تعرف أكثر";
+/* The message displayed in alert when a login entry is deleted */
+"login.loginEntryDeleteAlertMessage" = "ستتم إزالة معلومات تسجيل الدخول المحفوظة نهائيًا.";
+/* The message displayed in alert when a login entry is deleted */
+"login.loginInfoCreatedHeaderTitle" = "تم الإنشاء في %@";
+/* The header title displayed over the details of a login entry */
+"login.loginInfoDetailsHeaderTitle" = "تفاصيل تسجيل الدخول";
+/* Title for the password field in the password detail page */
+"login.loginInfoDetailsPasswordFieldTitle" = "كلمة المرور";
+/* Title for the username field in the password detail page */
+"login.loginInfoDetailsUsernameFieldTitle" = "اسم المستخدم";
+/* Title for the website field in the password detail page */
+"login.loginInfoDetailsWebsiteFieldTitle" = "موقع الويب";
+/* The message displayed in alert when a user needs to set a passcode */
+"login.loginInfoSetPasscodeAlertDescription" = "لعرض كلمات المرور، يجب عليك تعيين رمز مرور على جهازك أولاً.";
+/* The title displayed in alert when a user needs to set a passcode */
+"login.loginInfoSetPasscodeAlertTitle" = "تعيين رمز مرور";
+/* The message displayed on the password list screen when there are no passwords found */
+"login.loginListEmptyScreenTitle" = "لم يتم العثور على معلومات تسجيل الدخول.";
+/* Title for the navigation bar of the login list screen */
+"login.loginListNavigationTitle" = "تسجيل الدخول وكلمات المرور";
+
+/* The header title displayed over the login list */
+"login.loginListSavedLoginsHeaderTitle" = "تسجيلات الدخول المحفوظة";
+/* The text for the placeholder inside the search bar in the login list */
+"login.loginListSearchBarPlaceHolderTitle" = "تصفية";
+/* Footer label describing when the current login was last modified with the timestamp as the parameter. */
+"LoginDetailLastModifiedCellFormatTitle" = "آخر تعديل في %@";
+/* Label displayed above the password row in the Login Detail View. */
+"LoginDetailPasswordCellTitle" = "كلمة المرور";
+/* Label displayed above the username row in the Login Detail View. */
+"LoginDetailUsernameCellTitle" = "اسم المستخدم";
+/* Label displayed above the website row in the Login Detail View. */
+"LoginDetailWebsiteCellTitle" = "الموقع الإلكتروني";
+/* Label for the button used to deselect all logins. */
+"LoginListDeselectAllButtonTitle" = "إلغاء تحديد الكل";
+/* Label displayed when no logins are found after searching. */
+"LoginListNoLoginTitle" = "لم يتم العثور على معلومات تسجيل الدخول";
+/* Title for the Logins List View screen. */
+"LoginListScreenTitle" = "معلومات تسجيل الدخول";
+/* Label for the button used to select all logins. */
+"LoginListSelectAllButtonTitle" = "تحديد الكل";
+/* Setting to allow media to play in the background */
+"MediaAutoBackgrounding" = "تمكين تشغيل الوسائط في الخلفية";
+/* Copy password text selection menu item */
+"MenuItemCopyTitle" = "نسخ";
+/* Hide password text selection menu item */
+"MenuItemHidePasswordTitle" = "إخفاء";
+/* Open and Fill website text selection menu item */
+"MenuItemOpenTitle" = "فتح الموقع الإلكتروني";
+/* Reveal password text selection menu item */
+"MenuItemRevealPasswordTitle" = "إظهار";
+/* Abbreviation for 'Month,' use the full word 'Month' if this word can't be shortened in your language */
+"monthAbbreviation" = "شهر";
+/* The body of the notification that goes out monthly to users who can claim an ads grant */
+"MonthlyAdsClaimNotificationBody" = "اضغط هنا لطلب الرموز المجانية الخاصة بك.";
+/* The title of the notification that goes out monthly to users who can claim an ads grant */
+"MonthlyAdsClaimNotificationTitle" = "مكافآت Asil Browser 💵🎁";
+/* No comment provided by the engineer. */
+"MyFirstAdBody" = "اضغط هنا لمعرفة المزيد.";
+/* No comment provided by the engineer. */
+"MyFirstAdTitle" = "إعلانك الأول في Asil Browser.";
+/* Bookmark title / Device name */
+"Name" = "الاسم";
+/* Setting preference to always hide the browser tabs bar. */
+"NeverShow" = "إخفاء دائمًا";
+/* Default name for creating a new bookmark. */
+"NewBookmarkDefaultName" = "علامة مرجعية جديدة";
+/* Title for adding a new bookmark */
+"NewBookmarkTitle" = "علامة مرجعية جديدة";
+/* Title for new folder popup */
+"NewFolder" = "مجلد جديد";
+/* Default name for creating a new folder. */
+"NewFolderDefaultName" = "مجلد جديد";
+/* Title for adding a new folder */
+
+"NewFolderTitle" = "مجلد جديد";
+/* New sync code button title */
+"NewSyncCode" = "ابدأ سلسلة تزامن جديدة";
+/* New Tab title */
+"NewTab" = "علامة تبويب جديدة";
+/* It refers to a night mode, to a type of mode a user can change referring to website appearance. */
+"nightMode.modeTitle" = "وضع";
+/* A table cell subtitle for Night Mode - explanatory element for the toggle preference */
+"nightMode.sectionDescription" = "وضع الليل يؤثر على مظهر الموقع الإلكتروني والمظهر العام للنظام في نفس الوقت.";
+/* A table cell subtitle for Night Mode - explanatory element for the toggle preference */
+"nightMode.settingsDescription" = "تمكين/تعطيل وضع الليل";
+/* A table cell title for Night Mode - defining element for the toggle */
+"nightMode.settingsTitle" = "وضع الليل";
+/* For search suggestions prompt. This string should be short so it fits nicely on the prompt row. */
+"No" = "لا";
+/* The information title displayed when there is no search result found */
+"noSearchResultsfound" = "لم يتم العثور على نتائج بحث.";
+/* A label representing the state of a filter list that is not downloaded */
+"NotDownloaded" = "لم يتم التنزيل";
+/* Error message for when the sync code does not have the correct amount of words */
+"NotEnoughWordsDescription" = "الرجاء إدخال جميع الكلمات والمحاولة مرة أخرى.";
+/* Error title for when the sync code does not have the correct amount of words */
+"NotEnoughWordsTitle" = "كلمات غير كافية";
+/* An action (button title) that does not block cookie consent notices and dismisses the popup */
+"NoThanks" = "لا، شكرًا";
+/* Setting title for the option to automatically redirect a URL to another URL */
+"nprRedirectFooter" = "تقوم عناوين NPR بتوجيهك تلقائيًا إلى الإصدار النصي (text.npr.org) عند تمكينها.";
+/* Bookmark title for Asil Browser Support */
+"ntp.braveSupportFavoriteTitle" = "دعم Asil Browser";
+/* No comment provided by engineer. */
+"ntp.claimRewards" = "طلب الرموز";
+/* Placeholder example: 'You earned 42 BAT by browsing with Asil Browser.' */
+"ntp.earningsReport" = "لقد كسبت %@ من خلال تصفح Asil Browser.";
+/* The context is to praise the user that they did a good job, to keep it up. It is used in full sentences like: 'Way to go! You earned 40 BAT last month.' */
+"ntp.goodJob" = "أحسنت!";
+/* No comment provided by the engineer. */
+"ntp.hideSponsoredImages" = "إخفاء الصور المُرَعَبَة";
+/* The text description of the image type which is being used in NTP */
+"ntp.imageTypeSelectionDescription" = "الصور المُرَعَبَة هي خلفيات علامات تبويب العلامات التجارية الإضافية التي يمكنك الحصول عليها عند تمكين مكافآت Asil Browser.";
+/* No comment provided by engineer. */
+"ntp.learnMoreAboutRewards" = "تعرف على المزيد حول مكافآت Asil Browser";
+/* No comment provided by engineer. */
+"ntp.learnMoreAboutSI" = "تعرف على المزيد حول الصور المُرَعَبَة";
+/* A setting to enable or disable the device's keyboard from opening automatically when creating a new tab. */
+"ntp.settingsAutoOpenKeyboard" = "تمكين فتح لوحة المفاتيح تلقائيًا";
+/* A setting to enable or disable background images on the main screen. */
+"ntp.settingsBackgroundImages" = "صور الخلفية";
+/* A button that leads to a 'more' menu, letting users configure additional settings. */
+"ntp.settingsBackgroundImageSubMenu" = "نوع الصورة";
+
+/* A selection to let the users only see a set of predefined, default images on the background of the app. */
+"ntp.settingsDefaultImagesOnly" = "الصور الافتراضية";
+/* A selection to let the users see sponsored image backgrounds when opening a new tab. */
+"ntp.settingsSponsoredImagesSelection" = "المُرَعَبَة";
+/* Title on settings page to adjust the primary home screen functionality. */
+"ntp.settingsTitle" = "صفحة علامة تبويب جديدة";
+/* A button title to show more bookmarks, that opens a new menu. */
+"ntp.showMoreFavorites" = "عرض المزيد";
+/* No comment provided by engineer. */
+"ntp.sponsoredImageDescription" = "من خلال عرض هذه الصورة المُرَعَبَة، تدعم مُنتِجي المحتوى والناشرين.";
+/* The placeholder says 'Terms of Service'. So the full sentence goes like: 'By turning Rewards, you agree to the Terms of Service'. */
+"ntp.turnRewardsTos" = "من خلال تمكين المكافآت، أنت توافق على %@.";
+/* Message when opting into Asil Browser Ads when the region becomes available */
+"OBAdsOptInMessage" = "اكسب الرموز وقم بمكافأة منتِجي المحتوى أثناء التصفح.";
+/* Message when opting into Asil Browser Ads when the region becomes available */
+"OBAdsOptInMessageJapan" = "اكسب النقاط وقم بمكافأة منتِجي المحتوى أثناء التصفح.";
+/* Title when opting into Asil Browser Ads when the region becomes available */
+"OBAdsOptInTitle" = "Asil Browser Ads متاح الآن!";
+/* Title for ads onboarding screen */
+"OBAdsTitle" = "أول إعلان لك على Asil Browser";
+/* Title for when the user completes onboarding */
+"OBCompleteTitle" = "أنت الآن جاهز للبدء.";
+/* Button to show information on how to enable ads */
+"OBDidntSeeAdButton" = "لم أر إعلانًا.";
+/* A generic error body for onboarding */
+"OBErrorDetails" = "حدث خطأ ما أثناء إنشاء محفظتك. يُرجى المحاولة مرة أخرى.";
+/* No comment provided by engineer. */
+"OBErrorOkay" = "موافق";
+/* A generic error title for onboarding */
+"OBErrorTitle" = "عذرًا";
+/* Button to finish onboarding and start using the app. */
+"OBFinishButton" = "ابدأ التصفح";
+/* Button to join Asil Browser Rewards. */
+"OBJoinButton" = "الانضمام";
+/* No comment provided by the engineer. */
+"OBPrivacyConsentClipboardPermission" = "السماح لـ Asil Browser بفحص الحافظة للبحث عن رمز إحالة";
+/* No comment provided by engineer. */
+"OBPrivacyConsentDetail" = "قد تكون قد قمت بتنزيل Asil Browser بناءً على إحالة من شخص آخر. لاكتشاف الشخص الذي قام بإحالتك، يقوم Asil Browser بفحص الحافظة الخاصة بك للبحث عن رمز إحالة تطابقي. هذا الفحص محدود للغاية ولن يتم نقل أي بيانات شخصية أخرى. إذا قررت عدم السماح بذلك، فلن يحصل الشخص الذي قام بإحالتك على أي مكافأة من Asil Browser.";
+/* No comment provided by engineer. */
+"OBPrivacyConsentNoButton" = "لا تسمح بهذا الفحص";
+/* No comment provided by engineer. */
+"OBPrivacyConsentTitle" = "فحص الحافظة المؤقتة لرمز الإحالة بشكل مجهول";
+/* No comment provided by engineer. */
+"OBPrivacyConsentYesButton" = "السماح بالفحص المؤقت للحافظة لمرة واحدة";
+/* Detail text for rewards agreement onboarding screen */
+"OBRewardsAgreementDetail" = "بالنقر على 'نعم'، أنت توافق على ما يلي:";
+
+/* Detail text for rewards agreement onboarding screen */
+"OBRewardsAgreementDetailLink" = "شروط الخدمة";
+/* Detail text for rewards agreement onboarding screen */
+"OBRewardsAgreementDetailsAnd" = "و";
+/* Title for rewards agreement onboarding screen */
+"OBRewardsAgreementTitle" = "مكافآت متصفح Asil";
+/* Detail text for rewards onboarding screen */
+"OBRewardsDetail" = "الاشتراك في إعلانات متصفح Asil الخاصة يدعم الناشرين ومنتجي المحتوى مع كل إعلان تشاهده.";
+/* Detail text for rewards onboarding screen */
+"OBRewardsDetailInAdRegion" = "كسب الرموز ومكافأة منتجي المحتوى أثناء التصفح.";
+/* Detail text for rewards agreement onboarding screen */
+"OBRewardsPrivacyPolicyDetailLink" = "سياسة الخصوصية";
+/* Title for rewards onboarding screen */
+"OBRewardsTitle" = "مكافآت متصفح Asil";
+/* Save button to save the current selection */
+"OBSaveButton" = "حفظ";
+/* Detail text for search engine onboarding screen */
+"OBSearchEngineDetail" = "اختر محرك البحث الافتراضي الخاص بك";
+/* Title for search engine onboarding screen */
+"OBSearchEngineTitle" = "مرحبًا في متصفح Asil";
+/* Detail text for shields onboarding screen */
+"OBShieldsDetail" = "قم بمنع المتتبعين الذين ينتهكون الخصوصية لتصفح الويب بدون تتبع";
+/* Title for shields onboarding screen */
+"OBShieldsTitle" = "حماية متصفح Asil";
+/* Button to show the Asil Browser Rewards Ads. */
+"OBShowMeButton" = "عرض";
+/* Button to show Asil Browser Rewards. */
+"OBTurnOnButton" = "بدء التشغيل";
+/* The description text shown when there is a big tech tracker among trackers. Example usage: Google, Amazon, and 32 other trackers blocked. */
+"onboarding.blockedAdsOnboardingBigTechInformationText" = "تم منع %1$@ و %2$lld من الإعلانات والمتتبعين الآخرين";
+/* The footnote indicating what Asil Browser shields are blocking. */
+"onboarding.blockedAdsOnboardingFootnoteText" = "انظر إلى جميع المحتويات الضارة التي تم حظرها بواسطة Shields في Asil Browser على كل صفحة";
+/* The text describing to the user where they should press in order to open the Shield panel. */
+"onboarding.blockedAdsOnboardingInstructionsText" = "اضغط لعرض Shields في Asil Browser";
+/* The description text shown when there is no big tech tracker among trackers. Example usage: 31 Ads & trackers blocked. The number here is presented separately so it is not in translation. */
+"onboarding.blockedAdsOnboardingNoBigTechInformationText" = "تم منع الإعلانات والمتتبعين";
+/* Description for Navigate Settings Screen in Onboarding. This part indicating navigation ('Default Browser App') should match the option in iPhone Settings in that Language. */
+"onboarding.navigateSettingsOnboardingScreenDescription" = "البحث عن \"تطبيق المتصفح الافتراضي\"";
+/* Title for Navigate Settings Screen in Onboarding */
+"onboarding.navigateSettingsOnboardingScreenTitle" = "ستُوجه إلى الإعدادات...";
+/* Description for the NTP pop-over that describes the tracking information on NTP. */
+"onboarding.ntpOnboardingPopOverTrackerDescription" = "عند منع المتتبعين والإعلانات، يستخدم مواقع الويب أقل من البيانات وتتحمل بشكل أسرع.";
+/* Description for the Omnibox (URL Bar) pop-over that describes faster load times. */
+"onboarding.omniboxOnboardingPopOverDescription" = "رؤية الفرق مع Asil Browser\nبدون إعلانات. بدون متتبعين. تحميل أسرع للصفحات.";
+
+/* Title for the Omnibox (URL Bar) pop-over that describes faster load times. */
+"onboarding.omniboxOnboardingPopOverTitle" = "أدخل اسم موقع الويب أو عنوان URL";
+/* Title for Welcome Screen in Onboarding */
+"onboarding.welcomeScreenTitle" = "مرحبًا بك في متصفح Asil";
+/* Continue button to navigate to the next onboarding screen. */
+"OnboardingContinueButton" = "متابعة";
+/* Skip button to skip onboarding and start using the app. */
+"OnboardingSkipButton" = "تخطي";
+/* This is a suffix statement. example: SomeChannel on Twitter */
+"OnProviderText" = "% على تويتر @";
+/* Context menu item for opening all folder bookmarks */
+"OpenAllBookmarks" = "افتح الكل (%i)";
+/* Button title for opening the Asil Browser Rewards panel to settings */
+"OpenBraveRewardsSettings" = "افتح إعدادات مكافآت متصفح Asil";
+/* Error description when there is an error while navigating to the Files App */
+"OpenDownloadsFolderErrorDescription" = "حدث خطأ غير معروف أثناء فتح مجلد التنزيلات في تطبيق الملفات.";
+/* Context menu for opening an image in a new tab */
+"OpenImageInNewTab" = "فتح الصورة في تبويب جديد";
+/* Context menu option for opening a link in a new private tab */
+"OpenNewPrivateTabButtonTitle" = "فتح الرابط في تبويب جديد خاص";
+/* Context menu item for opening a link in a new tab */
+"OpenNewTabButtonTitle" = "فتح الرابط في تبويب جديد";
+/* See http://mzl.la/1G7uHo7 */
+"OpenPhoneSettingsActionTitle" = "فتح الإعدادات";
+/* The description indicating the device is active # of days ago. The parameter substituted for \"%ld\" is the number of days. E.g.: Active 123 Days Ago */
+"opentabs.activePeriodDeviceDaysAgoTitle" = "نشط منذ %ld يومًا";
+/* The description indicating the device is active last time this month */
+"opentabs.activePeriodDeviceThisMonthTitle" = "نشط آخر مرة في هذا الشهر";
+/* The description indicating the device is active last time this week */
+"opentabs.activePeriodDeviceThisWeekTitle" = "نشط آخر مرة هذا الأسبوع";
+/* The description indicating the device is active last time today */
+"opentabs.activePeriodDeviceTodayTitle" = "نشط آخر مرة اليوم";
+/* The description indicating the device is active last time yesterday */
+"opentabs.activePeriodDeviceYesterdayTitle" = "نشط آخر مرة أمس";
+/* The description of the view describing tab syncing should be enabled. */
+"opentabs.enableOpenTabsPlaceHolderViewDescription" = "قم بتمكين مزامنة التبويبات لرؤية علامات التبويب الخاصة بك على أجهزتك الأخرى.";
+/* The description of the view showing no devices inside the sync chain */
+"opentabs.noDevicesSyncChainPlaceholderViewDescription" = "انضم إلى سلسلة المزامنة لرؤية أجهزتك وأنواع المزامنة النشطة الخاصة بك.";
+/* The title of the view showing no devices inside the sync chain */
+"opentabs.noDevicesSyncChainPlaceholderViewTitle" = "لا توجد أجهزة في هذه السلسلة";
+/* The description of the view explaining that the user should join a sync chain. */
+"opentabs.noSyncChainPlaceHolderViewDescription" = "قم بإعداد سلسلة المزامنة لبدء المزامنة والتحكم فيها.";
+/* The additional description of the view describing tab syncing should be enabled. */
+"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "إدارة إعدادات المزامنة في Asil Browser.";
+/* The description of the view describing no other sessions are active in sync. */
+"opentabs.noSyncSessionPlaceHolderViewDescription" = "لا توجد جلسات مزامنة نشطة على أجهزتك الأخرى.";
+
+"opentabs.noSyncSessionPlaceHolderViewTitle" = "هذا المكان يعرض علامات التبويب المفتوحة في Asil Browser على الأجهزة الأخرى حاليًا";
+/* The title for the action to hide the open session with all tabs */
+"opentabs.openSessionHideAllActionTitle" = "إخفاء مؤقتًا";
+/* The title for the action to open all the tabs in a synced open session */
+"opentabs.openSessionOpenAllActionTitle" = "فتح الكل";
+/* The description indicating when is the open tab synced. The parameter substituted for \"%@\" is the actual string representation of the exact day of the week and exact time. E.g.: Last Week Monday 12:00 PM */
+"opentabs.openTabsItemLastSyncedLastWeekTitle" = "الأسبوع الماضي في %@";
+/* The description indicating when is the open tab synced. The parameter substituted for \"%@\" is the actual string representation of the exact time. E.g.: Today 12:00 PM */
+"opentabs.openTabsItemLastSyncedTodayTitle" = "اليوم في %@";
+/* The description indicating when is the open tab synced. The parameter substituted for \"%@\" is the actual string representation of the exact time. E.g.: Yesterday 12:00 PM */
+"opentabs.openTabsItemLastSyncedYesterdayTitle" = "أمس في %@";
+/* The title displayed on the table header for open tabs list from other devices */
+"openTabs.openTabsListTableHeaderTitle" = "الأجهزة";
+/* Title action button for sending a webpage to the selected other device */
+"opentabs.sendDeviceButtonTitle" = "إرسال إلى جهازك";
+/* The title displayed on the screen showing that sending the page is already completed */
+"opentabs.sendingWebpageCompletedTitle" = "تم الإرسال!";
+/* The title displayed on the screen showing that the webpage is being sent */
+"opentabs.sendingWebpageProgressTitle" = "جاري الإرسال...";
+/* The title displayed on the send-webpage screen */
+"opentabs.sendWebpageScreenTitle" = "إرسال صفحة الويب";
+/* Share action title for sending a URL to another device */
+"opentabs.sendWebsiteShareActionTitle" = "إرسال إلى أجهزتك";
+/* The button which navigates to the screen where the user can view sync settings */
+"opentabs.showSettingsSyncButtonTitle" = "عرض إعدادات المزامنة";
+/* The button which navigates to the screen starting a new sync chain */
+"opentabs.startASyncChainButtonTitle" = "بدء سلسلة مزامنة جديدة";
+/* The button which navigates to the screen where Tab Sync functionality toggle can be adjusted */
+"opentabs.tabSyncEnableButtonTitle" = "تمكين مزامنة التبويب";
+/* The placeholder written in the search bar while the tab tray is showing open tabs. */
+"opentabs.tabTrayOpenSearchBarTitle" = "البحث عن علامات التبويب على الأجهزة الأخرى";
+/* Title for open tabs menu item */
+"OpenTabsMenuItem" = "علامات التبويب المفتوحة";
+/* Button title to open a website. */
+"OpenWebsite" = "فتح موقع الويب";
+/* The subtitle description of the menu item Asil Browser News */
+"optionsMenu.braveNewsItemDescription" = "أفضل القصص في اليوم في تدفق أخبار خاص";
+/* Asil Browser News Item Menu title */
+"optionsMenu.braveNewsItemTitle" = "أخبار";
+/* The subtitle description of the menu item Asil Browser Playlist */
+"optionsMenu.bravePlaylistItemDescription" = "احتفظ بقائمة تشغيل لجميع مقاطع الفيديو/البث المباشر";
+/* Asil Browser News Item Menu title */
+"optionsMenu.bravePlaylistItemTitle" = "قائمة التشغيل";
+/* The subtitle description of the menu item Asil Browser Talk */
+"optionsMenu.braveTalkItemDescription" = "مكالمات فيديو خاصة داخل متصفحك مباشرة";
+/* Asil Browser Talk Item Menu title */
+"optionsMenu.braveTalkItemTitle" = "الدردشة";
+/* The subtitle description of the menu item Asil Browser VPN */
+"optionsMenu.braveVPNItemDescription" = "حماية جميع أجهزتك عبر الإنترنت";
+
+/* Asil Browser VPN Item Menu title */
+"optionsMenu.braveVPNItemTitle" = "VPN";
+/* The subtitle description of menu item Asil Browser Wallet */
+"optionsMenu.braveWalletItemDescription" = "محفظة العملات الرقمية الآمنة، لا تحتاج إلى إضافات";
+/* Privacy Features Section title */
+"optionsMenu.menuSectionTitle" = "ميزات الخصوصية في Asil Browser";
+/* Section name for other privacy settings */
+"OtherPrivacySettingsSection" = "إعدادات الخصوصية الأخرى";
+/* Section name for other settings. */
+"OtherSettingsSection" = "إعدادات أخرى";
+/* A subtitle shown on the setting that toggles analytics on Asil Browser. */
+"p3a.settingSubtitle" = "المعلومات المجهولة تساعد Asil Browser على تقدير الاستخدام العام وتحسين الميزات الشائعة.";
+/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
+"p3a.settingTitle" = "السماح بإرسال تحليل المنتج الخاص بالخصوصية (P3A)";
+/* Title for the section for the global/default zoom level */
+"pagezoom.settings.defaultZoomLevelSectionTitle" = "مستوى التكبير الافتراضي لصفحة الويب";
+/* Description for the empty Web-Page zoom view */
+"pagezoom.settings.emptyWebsitesDescription" = "ستظهر مواقع الويب هنا عندما يتم تغيير مستوى التكبير للموقع. لا يوجد موقع ويب تم تكبيره أو تصغيره حاليًا.";
+/* Title for the empty Web-Page zoom view */
+"pagezoom.settings.emptyWebsitesTitle" = "لا يوجد موقع ويب مُضاف";
+/* Title of the Web-Page Zoom settings menu */
+"pagezoom.settings.menu-title" = "إعدادات التكبير للصفحة";
+/* Title for the section for the Web-Page zoom level of other websites */
+"pagezoom.settings.otherWebsitesZoomLevelSectionTitle" = "مستوى التكبير لجميع مواقع الويب الأخرى";
+/* Title of the Web-Page Zoom reset all option */
+"pagezoom.settings.reset-all" = "إعادة تعيين الكل";
+/* Description of the Web-Page Zoom reset all option */
+"pagezoom.settings.reset-all-description" = "إعادة تعيين مستوى تكبير الصفحة لجميع مواقع الويب";
+/* Title for list of websites shown in settings screen */
+"pagezoom.settings.specificWebsitesZoomLevelsSectionTitle" = "إعدادات الصفحة المخصصة";
+/* Title of the Web-Page Zoom screen */
+"pagezoom.settings.title" = "إعدادات تكبير الصفحة";
+/* Title for the web-page zoom level view */
+"pagezoom.zoomView.text" = "تكبير الصفحة";
+/* Sync pair device settings section title */
+"Pair" = "تزامن";
+/* Title for passwords menu item */
+"PasswordsMenuItem" = "كلمات المرور";
+/* Label that says who took a photograph that will be displayed to the user. '%@' is a placeholder and will include be a specific person's name, example 'Bill Gates'. */
+"PhotoBy" = "الصورة بواسطة: %@";
+/* Alert Description for adding videos to playlist */
+"playList.addToPlayListAlertDescription" = "هل ترغب في إضافة هذا الفيديو إلى قائمة التشغيل؟";
+/* Alert Title for adding videos to playlist */
+"playList.addToPlayListAlertTitle" = "إضافة إلى قائمة التشغيل في Asil Browser";
+/* The title of the screen in CarPlay that contains all the audio/playback options */
+"playlist.carplayOptionsScreenTitle" = "خيارات التشغيل";
+/* The already disabled button title with instructions telling the user they can tap it to enable playback. */
+
+
+"playlist.carplayRestartPlaybackButtonStateDisabled" = "معطل. اضغط لتمكين إعادة التشغيل.";
+/* The already enabled button title with instructions telling the user they can tap it to disable playback. */
+"playlist.carplayRestartPlaybackButtonStateEnabled" = "مُمكّن. اضغط لتعطيل إعادة التشغيل.";
+/* The description of the checkbox that allows the user to restart audio/video playback */
+"playlist.carplayRestartPlaybackOptionDetailsTitle" = "قرر ما إذا كنت تريد إعادة تشغيل العنصر الذي يتم تشغيله حاليًا أو الاستمرار في التشغيل من حيث انتهى.";
+/* The title of the checkbox that allows the user to restart audio/video playback */
+"playlist.carplayRestartPlaybackOptionTitle" = "إعادة التشغيل";
+/* The title of the section containing settings/options in CarPlay */
+"playlist.carplaySettingsSectionTitle" = "الإعدادات";
+/* The title of the playlist when in Carplay mode */
+"playlist.carplayTitle" = "قائمة تشغيل Asil Browser";
+/* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
+"playlist.deleteForOfflineButtonTitle" = "حذف ذاكرة التخزين المؤقت للتشغيل بدون اتصال";
+/* The description for the alert that shows up when an item is expired */
+"playList.expiredAlertDescription" = "هذا الفيديو كان بثًا مباشرًا أو تم الوصول إلى الحد الزمني. يرجى فتح الرابط مرة أخرى للتجديد.";
+/* The title for the alert that shows up when an item is expired */
+"playList.expiredAlertTitle" = "انتهاء مدة الفيديو";
+/* Text indicator on the table cell If a video is expired */
+"playList.expiredLabelTitle" = "انتهت مدته";
+/* Description for load resources error alert */
+"playList.loadResourcesErrorAlertDescription" = "حدثت مشكلة أثناء تحميل الموارد!";
+/* Description footer for playlist menu badge option */
+"playlist.menuBadgeOptionFooterText" = "عند تمكين هذا الخيار، ستظهر شارة على رمز القائمة الرئيسية تشير إلى أن الوسائط على الصفحة يمكن إضافتها إلى قائمة التشغيل في Asil Browser.";
+/* Title for playlist menu badge option */
+"playlist.menuBadgeOptionTitle" = "إظهار شارة القائمة";
+/* Button Title of the ActionSheet/Alert Button when moving a playlist item from the Swipe-Action to a new folder */
+"playlist.movePlaylistShareActionMenuTitle" = "نقل العنصر...";
+/* Detail Text when there are no items in the playlist */
+"playList.noItemLabelDetailLabel" = "يمكنك إضافة عناصر إلى قائمة تشغيل Asil Browser داخل المتصفح.";
+/* Text when there are no items in the playlist */
+"playList.noItemLabelTitle" = "لا توجد عناصر متاحة";
+/* Title for download video error alert */
+"playList.noticeAlertTitle" = "تنبيه";
+/* Okay Alert button title */
+"playList.okayButtonTitle" = "موافق";
+/* The title for the alert that shows up when an item is expired */
+"playList.pictureInPictureErrorTitle" = "عذرًا، حدث خطأ عند محاولة عرض الصورة في الصورة.";
+/* Footer Text for the Playlist Settings Option for Enable/Disable Auto-Play */
+"playlist.playlistAutoPlaySettingsOptionFooterText" = "يُمكن تمكين أو تعطيل تشغيل التلقائي عند فتح قائمة التشغيل. ومع ذلك، لا يؤثر هذا الخيار على التشغيل التلقائي للفيديو القادم في القائمة.";
+/* Title for the Playlist Settings Option for Enable/Disable Auto-Play */
+"playlist.playlistAutoPlaySettingsOptionTitle" = "تشغيل تلقائي";
+/* Auto Download turn Off Option */
+
+"playlist.playlistAutoSaveOptionOff" = "متوقف";
+/* Auto Save turn On Option */
+"playlist.playlistAutoSaveOptionOn" = "مُشغّل";
+/* Option Text for Auto Save Only Wi-Fi Option */
+"playlist.playlistAutoSaveOptionOnlyWifi" = "Wi-Fi فقط";
+/* Description for the Playlist Settings Option for Auto Save Videos for Offline (Off/On/Only Wi-fi) */
+"playlist.playlistAutoSaveSettingsDescription" = "إضافة ملفات الفيديو والصوت للاستخدام دون اتصال عبر الإنترنت يمكن أن يتطلب مساحة تخزين كبيرة على جهازك واستخدام بيانات الجوال";
+/* Footer Text for the Playlist Settings Option for Auto Save Videos for Offline (Off/On/Only Wi-fi)) */
+"playlist.playlistAutoSaveSettingsFooterText" = "تُمكن هذه الخيارات من الاحتفاظ التلقائي بعناصر قائمة التشغيل على جهازك حتى تتمكن من تشغيلها دون اتصال بالإنترنت.";
+/* Title for the Playlist Settings Option for Auto Save Videos for Offline (Off/On/Only Wi-fi) */
+"playlist.playlistAutoSaveSettingsTitle" = "حفظ تلقائي للاستخدام دون اتصال";
+/* When the user's disk space is almost full */
+"playlist.playlistDiskSpaceWarningMessage" = "إضافة ملفات الفيديو والصوت للاستخدام دون اتصال يمكن أن يستخدم مساحة تخزين كبيرة على جهازك. يرجى حذف بعض الملفات لإفساح المجال للتخزين.";
+/* When the user's disk space is almost full */
+"playlist.playlistDiskSpaceWarningTitle" = "نفاد مساحة التخزين";
+/* When a video or audio is live and has no duration */
+"playlist.playlistLiveMediaStream" = "بث مباشر";
+/* Footer Text for the Playlist Settings Option for long press gesture */
+"playlist.playlistLongPressSettingsOptionFooterText" = "عند تمكين هذا الخيار، يمكنك إضافة معظم ملفات الفيديو والصوت إلى قائمة التشغيل عن طريق الضغط المطول عليها.";
+/* Title for the Playlist Settings Option for long press gesture */
+"playlist.playlistLongPressSettingsOptionTitle" = "تمكين الضغط المطول";
+/* Text for Playlist Media & Offline Data Toggle while clearing the offline data storage in settings */
+"playlist.playlistMediaAndOfflineDataToggleOption" = "وسائط قائمة التشغيل والبيانات دون اتصال";
+/* Text for Playlist Offline Data Toggle while clearing the offline data storage in settings */
+"playlist.playlistOfflineDataToggleOption" = "بيانات قائمة التشغيل دون اتصال";
+/* The title for the alert that shows up when removing all videos and their offline mode storage. */
+"playList.playlistResetAlertTitle" = "إعادة تعيين";
+/* Footer Text for the Playlist Settings Option for resetting Playlist. */
+"playlist.playlistResetPlaylistOptionFooterText" = "يقوم هذا الخيار بإزالة جميع ملفات الفيديو ومساحة التخزين دون اتصال الخاصة بها من قائمة التشغيل.";
+/* Error message when saving a playlist item for offline fails */
+"playlist.playlistSaveForOfflineErrorMessage" = "عذرًا، لا يمكن حاليًا حفظ هذا العنصر للاستخدام دون اتصال.";
+/* Title of alert when saving a playlist item for offline mode */
+"playlist.playlistSaveForOfflineErrorTitle" = "عذرًا، حدثت مشكلة";
+/* Title For the Section that videos are listed */
+"playList.playListSectionTitle" = "قوائم التشغيل";
+/* Title Playlist (used for back button, and playlist settings) */
+"playList.playListSettingTitle" = "قائمة التشغيل";
+/* Body for the error message that shows when a playlist folder already exists */
+"playList.playlistSharedFolderAlreadyExistsBody" = "هذا المجلد موجود بالفعل في قائمة تشغيل Asil Browser الخاصة بك";
+/* Title for the error message that shows when a playlist folder already exists */
+"playList.playlistSharedFolderAlreadyExistsTitle" = "نأسف";
+/* Title for the Section that videos are listed */
+"playList.playlistSharedFolderSectionTitle" = "المجلدات المشتركة معك";
+/* Title For the Section that videos are listed */
+"playList.playListSharedFolderSectionTitle" = "المجلدات المشتركة معك";
+/* Footer Text for the Playlist Settings Option for Sidebar Location (Left/Right) */
+
+"playlist.playlistSidebarLocationFooterText" = "هذا الإعداد يغير موقع قائمة الفيديو بين الجانب الأيسر والجانب الأيمن.";
+/* Option Text for Sidebar Location Left */
+"playlist.playlistSidebarLocationOptionLeft" = "الجانب الأيسر";
+/* Option Text for Sidebar Location Right */
+"playlist.playlistSidebarLocationOptionRight" = "الجانب الأيمن";
+/* Title for the Playlist Settings Option for Sidebar Location (Left/Right) */
+"playlist.playlistSidebarLocationTitle" = "موقع الشريط الجانبي";
+/* Footer Text for the Playlist Settings Option for Enable/Disable ability to start playing from the point where user last left-off */
+"playlist.playlistStartPlaybackSettingsFooterText" = "يُمكن هذا الخيار تمكين أو تعطيل ميزة بدء التشغيل من النقطة التي تركها المستخدم آخر مرة.";
+/* Title for the Playlist Settings Option for Enable/Disable ability to start playing from the point where user last left-off */
+"playlist.playlistStartPlaybackSettingsOptionTitle" = "بدء التشغيل من آخر مكان تركته";
+/* Description for Playlist setting */
+"playlist.playlistWebCompatibilityDescription" = "يعطل واجهة برمجة تطبيقات ويب كيت الخاصة بالوسائط.";
+/* Title for Playlist setting */
+"playlist.playlistWebCompatibilityTitle" = "توافق مع الويب";
+/* Body of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
+"playlist.popoverAddBody" = "تدعم قوائم التشغيل في Asil Browser الإعادة المتواصلة للتشغيل ، والتشغيل في وضع الصورة في الصورة ، والتكرار ، وتشغيل الميديا بدون اتصال.";
+/* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
+"playlist.popoverAddedTitle" = "هذا الوسائط موجودة بالفعل في قائمة تشغيل Asil Browser الخاصة بك";
+/* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
+"playlist.popoverAddTitle" = "هل ترغب في إضافة هذه الوسائط إلى قائمة تشغيل Asil Browser الخاصة بك؟";
+/* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
+"playlist.popoverOpenInBravePlaylist" = "افتح في قائمة التشغيل Asil Browser";
+/* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
+"playlist.popoverRemoveFromBravePlaylist" = "إزالة";
+/* Title for removing offline mode storage */
+"playList.removeActionButtonTitle" = "إزالة";
+/* Message for the alert shown when the user tries to remove offline data of an item from playlist */
+"playlist.removePlaylistOfflineDataAlertMessage" = "سيتم حذف هذا الوسائط من التخزين دون اتصال. هل ترغب في المتابعة؟";
+/* Title for the alert shown when the user tries to remove offline data of an item from playlist */
+"playlist.removePlaylistOfflineDataAlertTitle" = "حذف البيانات دون اتصال";
+/* Message for the alert shown when the user tries to remove a video from playlist */
+"playlist.removePlaylistVideoAlertMessage" = "سيتم إزالة هذا الملف الوسائطي من قائمة التشغيل. هل ترغب في المتابعة؟";
+/* Title for the alert shown when the user tries to remove an item from playlist */
+"playlist.removePlaylistVideoAlertTitle" = "إزالة الوسائط من قائمة التشغيل؟";
+/* Reopen Alert button title */
+"playList.reopenButtonTitle" = "إعادة فتح";
+/* Text indicator on the table cell while saving a video for offline with percentage eg: %25 Saved for Offline */
+"playList.savedForOfflineLabelTitle" = "تم الحفظ للاستخدام دون اتصال";
+/* The title of the button indicating that the user can save a video for offline playback. (playing without internet) */
+"playlist.saveForOfflineButtonTitle" = "حفظ للاستخدام دون اتصال";
+/* Text indicator on the table cell while saving a video for offline */
+
+"playList.savingForOfflineLabelTitle" = "جاري الحفظ للاستخدام دون اتصال...";
+/* Description of the settings option to sync folders with the server automatically, every 4 hours. */
+"playList.sharedFolderSyncAutomaticallyDescription" = "تزامن جميع ملفات قائمة التشغيل تلقائيًا";
+/* Title of the settings option to sync folders with the server automatically, every 4 hours. */
+"playList.sharedFolderSyncAutomaticallyTitle" = "تزامن ملفات قائمة التشغيل تلقائيًا";
+/* Details Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
+"playlist.sharePlaylistActionDetailsTitle" = "يمكنك فتح العنصر الحالي في علامة تبويب جديدة أو مشاركته عبر قائمة المشاركة النظامية";
+/* Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
+"playlist.sharePlaylistActionTitle" = "قائمة تشغيل Asil Browser";
+/* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
+"playlist.sharePlaylistOpenInNewPrivateTabTitle" = "افتح في علامة تبويب خاصة جديدة";
+/* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
+"playlist.sharePlaylistOpenInNewTabTitle" = "افتح في علامة تبويب جديدة";
+/* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
+"playlist.sharePlaylistShareActionMenuTitle" = "مشاركة...";
+/* Title for load resources error alert */
+"playList.sorryAlertTitle" = "نأسف";
+/* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
+"playList.toastAddedToPlaylistTitle" = "تمت إضافتها إلى قائمة تشغيل Asil Browser";
+/* The title for the toast button when an item was added to playlist */
+"playList.toastAddToPlaylistOpenButton" = "افتح";
+/* The title for the toast that shows up on a page containing a playlist item */
+"playList.toastAddToPlaylistTitle" = "أضف إلى قائمة تشغيل Asil Browser";
+/* The title for the toast that shows up on a page when an item that has already been added, was updated. */
+"playList.toastExitingItemPlaylistTitle" = "عرض في قائمة تشغيل Asil Browser";
+/* Footer for option to disable URL-Bar button */
+"playlist.urlBarButtonOptionFooter" = "يضيف هذا الزر إمكانية الوصول السريع إلى قائمة التشغيل بجوار شريط عنوان متصفح Asil Browser (+ يظهر كخطوط 4 مع الرمز). يمكن استخدام هذا الزر لفتح قائمة التشغيل أو إضافة أو إزالة الوسائط بسرعة.";
+/* Title for option to disable URL-Bar button */
+"playlist.urlBarButtonOptionTitle" = "تمكين زر الوصول السريع";
+/* The title of the button to create a new folder */
+"playlistFolders.createNewFolderButtonTitle" = "إنشاء";
+/* The title of the button that allows the user to edit the name of a folder */
+"playlistFolders.editButtonTitle" = "تحرير";
+/* The title of the screen where the user edits folder names */
+"playlistFolders.editFolderScreenTitle" = "تحرير المجلد";
+/* The title of the menu option that allows the user to edit the name of a folder */
+"playlistFolders.editMenuTitle" = "تحرير المجلد";
+/* The error shown to the user when we cannot save their changes made on a folder */
+"playlistFolders.errorSavingMessage" = "عذرًا، لا يمكننا حفظ التغييرات التي قمت بها على هذا المجلد";
+/* The title of the button where the user will move an item from one folder to another folder. */
+"playlistFolders.moveFolderButtonTitle" = "نقل";
+/* The title of the section indicating the currently selected folder */
+"playlistFolders.moveFolderCurrentSectionTitle" = "المجلد الحالي";
+/* The title of the screen where the user will move an item from one folder to another folder. */
+"playlistFolders.moveFolderScreenTitle" = "نقل";
+/* %@ Should NOT be localized. It is a placeholder. Example: Asil Browser Folder and 1 more item. */
+"playlistFolders.moveItemDescription" = "%@ وعنصر إضافي واحد";
+
+/* %lld is a placeholder and should not be localized. Sometimes items can have no name. So this is a generic title to use */
+"playlistFolders.moveItemWithMultipleNoNameTitle" = "%lld عنصر";
+/* Sometimes an item can have no name. So this is a generic title to use */
+"playlistFolders.moveItemWithNoNameTitle" = "عنصر واحد";
+/* %@ and %lld Should NOT be localized. They are placeholders. Example: Asil Browser Folder and 3 more items. Music and 2 more items. */
+"playlistFolders.moveMultipleItemDescription" = "%1$@ و %2$lld عنصر آخر";
+/* The title of the button to create a new folder */
+"playlistFolders.newFolderButtonTitle" = "مجلد جديد";
+/* The title of the screen to create a new folder */
+"playlistFolders.newFolderScreenTitle" = "مجلد جديد";
+/* The sub-title of the section where the user can select videos to add to the new folder being created */
+"playlistFolders.newFolderSectionSubtitle" = "اضغط لتحديد الفيديوهات";
+/* The title of the section where the user can select videos to add to the new folder being created */
+"playlistFolders.newFolderSectionTitle" = "أضف فيديوهات إلى هذا المجلد";
+/* The title of the default playlist folder */
+"playlistFolders.savedFolderTitle" = "المحفوظة";
+/* The title of the section indicating that the user should select a folder to move `%zu` items to. %lld should not be translated. It will be replaced by a number so the sentence becomes: 'Select a folder to move 10 items to.' */
+"playlistFolders.selectAFolderTitle" = "اختر مجلدًا لنقل %lld عنصر إليه";
+/* The title of the section indicating that the user should select a folder to move 1 item to. */
+"playlistFolders.selectASingleFolderTitle" = "اختر مجلدًا لنقل عنصر واحد إليه";
+/* The sub-title of the folder. Example: This folder contains 10 Items. This folder contains 3 Items. */
+"playlistFolders.subtitleItemCount" = "%lld عنصر";
+/* The sub-title of the folder. Example: This folder contains ONE item. This folder contains 1 Item. */
+"playlistFolders.subtitleItemSingleCount" = "عنصر واحد";
+/* The title of a folder when the user enters no name (untitled) */
+"playlistFolders.untitledFolderTitle" = "مجلد بدون عنوان";
+/* Accessibility Title for the button that adds the playlist to the database. */
+"playlistFolderSharing.addButtonAccessibilityTitle" = "إضافة إلى قائمة التشغيل في متصفح Asil";
+/* Title for the button that adds the playlist to the database. */
+"playlistFolderSharing.addButtonTitle" = "إضافة";
+/* Menu Title for removing offline data/cache */
+"playlistFolderSharing.deleteOfflineDataMenuTitle" = "حذف البيانات دون اتصال";
+/* Menu Title for deleting the playlist */
+"playlistFolderSharing.deletePlaylistMenuTitle" = "حذف قائمة التشغيل";
+/* Menu Title for editing a folder */
+"playlistFolderSharing.editMenuTitle" = "تعديل";
+/* Accessibility Title for the playlist menu. */
+"playlistFolderSharing.menuButtonAccessibilityTitle" = "قائمة التشغيل";
+/* Button that adds the playlist to the local database */
+"playlistFolderSharing.offlineManagementViewAddButtonTitle" = "إضافة قائمة التشغيل الآن";
+/* Description of the playlist offline data management view */
+"playlistFolderSharing.offlineManagementViewDescription" = "قم بعرض العناصر الجديدة المضافة إلى قوائم التشغيل بما في ذلك قوائم التشغيل المشتركة التي تم حفظها على جهازك لعرضها دون اتصال ولضمان توفير تكاليف البيانات.\n\nيمكنك إدارة هذه الإعدادات من خلال إعدادات قائمة التشغيل.";
+/* Button that takes the user to the settings menu */
+"playlistFolderSharing.offlineManagementViewSettingsButtonTitle" = "الإعدادات";
+/* Title of the playlist offline data management view */
+"playlistFolderSharing.offlineManagementViewTitle" = "إدارة بيانات قوائم التشغيل";
+/* Menu Title for renaming a folder */
+
+"playlistFolderSharing.renameMenuTitle" = "إعادة التسمية";
+/* Menu Title for saving offline data/cache */
+"playlistFolderSharing.saveOfflineDataMenuTitle" = "حفظ البيانات دون اتصال";
+/* Menu Title for syncing playlist */
+"playlistFolderSharing.syncNowMenuTitle" = "مزامنة الآن";
+/* Playlist menu item */
+"PlaylistMenuItem" = "قائمة التشغيل";
+/* Description for closing a popover menu that is displayed. */
+"PopoverDefaultClose" = "إغلاق القائمة المنبثقة";
+/* Description for closing the `Asil Browser Shields` popover menu that is displayed. */
+"PopoverShieldsMenuClose" = "إغلاق قائمة الدروع";
+/* Label for preview action on Tab Tray Tab to add the current tab to Bookmarks */
+"PreviewActionAddToBookmarksActionTitle" = "إضافة إلى الإشارات المرجعية";
+/* Label for preview action on Tab Tray Tab to close the current tab */
+"PreviewActionCloseTabActionTitle" = "إغلاق التبويب";
+/* Label for preview action on Tab Tray Tab to copy the URL of the current tab to the clipboard */
+"PreviewActionCopyURLActionTitle" = "نسخ الرابط";
+/* Accessibility label, associated with the 3D Touch action on the current tab in the tab tray, used to display a larger preview of the tab. */
+"PreviewFormatAccessibilityLabel" = "معاينة %@";
+/* Settings privacy section title */
+"Privacy" = "الخصوصية";
+/* Button text that takes the user to a list of all trackers and ads we blocked. 'All-time lists' refer to a list of blocked trackers or websites with the most trackers */
+"privacyHub.allTimeListsButtonText" = "قوائم على مر الزمن";
+/* Header text, under which we show items blocked by our ad blocker. 'All time' sentence context is like 'All-time items blocked by our ad blocker. */
+"privacyHub.allTimeListsHeader" = "على مر الزمن";
+/* Title of a section to show the total count of trackers blocked by Asil Browser */
+"privacyHub.allTimeListsTrackersView" = "المتتبعون والإعلانات";
+/* Title of a section to show websites containing the highest amount of trackers */
+"privacyHub.allTimeListsWebsitesView" = "مواقع الويب";
+/* Header title for a list of most frequent ads and trackers detected. */
+"privacyHub.allTimeListTrackersHeaderTitle" = "المتتبعون والإعلانات الأكثر شيوعًا على المواقع التي قمت بزيارتها";
+/* Header title for a list of websites with ads and trackers. */
+"privacyHub.allTimeListWebsitesHeaderTitle" = "أكثر مواقع الويب تتبعًا وإعلانًا";
+/* Displays a number of websites on which we blocked trackers, example usage: '23 sites' */
+"privacyHub.allTimeSitesCount" = "%lld موقعًا";
+/* Displays a number of trackers we blocked on a particular website, example usage: '23 trackers & ads' */
+"privacyHub.allTimeTrackersCount" = "%lld متتبع وإعلان";
+/* Title under which we display the most name of the most blocked tracker or ad. */
+"privacyHub.allTimeTrackerTitle" = "المتتبع والإعلان الأكثر حظرًا";
+/* Title under which we display a website on which there's the highest number of trackers or ads. */
+"privacyHub.allTimeWebsiteTitle" = "موقع الويب";
+/* Text for a button to display a list of all alerts caught by the Asil Browser VPN. VPN alert is a notification of what item has been blocked by the VPN, similar to a regular adblocker. */
+"privacyHub.allVPNAlertsButtonText" = "جميع التنبيهات";
+/* Text which explains by what type of ad blocker a given resource was blocked. The context is like: 'Blocked by Asil Browser Shields', 'Blocked by BraveVPN */
+"privacyHub.blockedBy" = "تم الحظر بواسطة:";
+/* It says that an ad or tracker was blocked. Think of it in the context of 'A tracker X was blocked' */
+"privacyHub.blockedLabel" = "تم الحظر";
+/* Accessibility label for the 'clear all data' button. */
+
+
+"privacyHub.clearAllDataAccessibility" = "مسح بيانات مركز الخصوصية";
+/* A prompt message we show to the user if they want to clear all data gathered by the Privacy Reports Feature */
+"privacyHub.clearAllDataPrompt" = "هل ترغب في مسح جميع بيانات الدروع؟";
+/* The title of the button action which hides the privacy hub */
+"privacyHub.hidePrivacyHubWidgetActionTitle" = "إخفاء واجهة مركز الخصوصية";
+/* Header text, under it we display blocked items from last week */
+"privacyHub.lastWeekHeader" = "الأسبوع الماضي";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Asil Browser Shields on 42 sites' */
+"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** تم حظره بواسطة مركز الخصوصية في Asil Browser على **%2$lld** موقع";
+/* Title under which we display a tracker which was most frequently detected by our ad blocking mechanism. */
+"privacyHub.mostFrequentTrackerAndAdTitle" = "المتتبع والإعلان الأكثر شيوعًا";
+/* Text of a callout that tells the user they need to browse some websites first in order to see privacy stats data */
+"privacyHub.noDataCalloutBody" = "تفضل بزيارة بعض مواقع الويب لرؤية البيانات هنا.";
+/* This text is displayed when there is no data to display to the user. The data is about blocked trackers or sites with trackers on them. */
+"privacyHub.noDataToShow" = "لا توجد بيانات لعرضها حاليًا.";
+/* Text of a callout to encourage the user to enable the Apple notification system. */
+"privacyHub.notificationCalloutBody" = "احصل على تحديثات أسبوعية حول منع المتتبعين والإعلانات.";
+/* Text of a button to encourage the user to enable the Apple notification system. */
+"privacyHub.notificationCalloutButtonText" = "تمكين الإشعارات";
+/* Message of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
+"privacyHub.notificationMessage" = "ملخص لكيفية حماية Asil Browser لخصوصيتك أثناء تصفحك للإنترنت هذا الأسبوع.";
+/* Title of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
+"privacyHub.notificationTitle" = "تقرير الخصوصية الأسبوعي";
+/* Text of a button that opens up a Privacy Reports screen. */
+"privacyHub.onboardingButtonTitle" = "فتح مركز الخصوصية";
+/* The title of the button action which opens the privacy hub */
+"privacyHub.openPrivacyHubWidgetActionTitle" = "فتح واجهة مركز الخصوصية";
+/* Text of a disclaimer that explains how the data for generating privacy reports is stored. */
+"privacyHub.privacyReportsDisclaimer" = "يتم تخزين بيانات الخصوصية محليًا ولا تُرسَل إلى أي مكان آخر.";
+/* Title of the main privacy hub screen. This screen shows various stats caught by Asil Browser's ad blockers. */
+"privacyHub.privacyReportsTitle" = "مركز الخصوصية";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which website had the most tracker per visit, example usage: 'example.com had an average of 10 trackers & ads blocked per visit ' */
+"privacyHub.riskiestWebsiteBody" = "**%1$@** كان لديه متوسط ​​%2$lld** متتبع وإعلان تم حظره لكل زيارة";
+/* Title of a website that contained the most trackers per visit. */
+"privacyHub.riskiestWebsiteTitle" = "أكثر موقع يحتوي على متتبعات";
+/* This text explains a setting that lets Asil Browser monitor blocked network requests */
+"privacyHub.settingsEnableShieldsFooter" = "مركز الخصوصية يعرض عدد العناصر التي تم حظرها بواسطة الدروع. الإعداد لا يؤثر على عداد الدروع في صفحة علامة تبويب جديدة. لا تُحسب بيانات الدروع في النوافذ الخاصة.";
+/* Title of a setting that lets Asil Browser monitor blocked network requests */
+"privacyHub.settingsEnableShieldsTitle" = "عرض بيانات الدروع";
+
+/* This text explains a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+"privacyHub.settingsEnableVPNAlertsFooter" = "هذا الإعداد ساري المفعول فقط إذا قمت بشراء اشتراك VPN.";
+/* Title of a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+"privacyHub.settingsEnableVPNAlertsTitle" = "عرض تنبيهات VPN";
+/* This text explains what the button to clear data in the Privacy Hub is for. */
+"privacyHub.settingsSlearDataFooter" = "يعيد تعيين عدد كل شيء تم حظره بواسطة الدروع.";
+/* Button that lets the user clear all blocked requests and VPN alerts data that Asil Browser captured for them. */
+"privacyHub.settingsSlearDataTitle" = "مسح بيانات الدروع";
+/* This label says shields, as a source of by what a resource was blocked. Think of it in context of 'Blocked by Shields' */
+"privacyHub.shieldsLabel" = "الدروع";
+/* Type of tracker blocked by the VPN, it's a tracker contained in an email. */
+"privacyHub.vpnAlertEmailTrackerTypePlural" = "متتبعين البريد الإلكتروني";
+/* Type of tracker blocked by the VPN, it's a tracker contained in an email. */
+"privacyHub.vpnAlertEmailTrackerTypeSingular" = "متتبع البريد الإلكتروني";
+/* Type of tracker blocked by the VPN, it's a tracker that asks you for your location. */
+"privacyHub.vpnAlertLocationTrackerTypePlural" = "متتبعين الموقع";
+/* Type of tracker blocked by the VPN, it's a tracker that asks you for your location. */
+"privacyHub.vpnAlertLocationTrackerTypeSingular" = "متتبع الموقع";
+/* Type of tracker blocked by the VPN, it's a regular tracker or an ad. */
+"privacyHub.vpnAlertRegularTrackerTypePlural" = "متتبعون وإعلانات";
+/* Type of tracker blocked by the VPN, it's a regular tracker or an ad. */
+"privacyHub.vpnAlertRegularTrackerTypeSingular" = "متتبع أو إعلان";
+/* Section title, this section displays VPN alerts: items that the VPN managed to block on the user's behalf. */
+"privacyHub.vpnAlertsHeader" = "جدران الأمان + تنبيهات VPN";
+/* This label says about Asil Browser VPN, as a source of by what the resource was blocked by. Think of it in the context of 'Blocked by VPN' */
+"privacyHub.vpnLabel" = "جدران الأمان + VPN";
+/* It shows a total count of items blocked by our VPN shields */
+"privacyHub.vpvnAlertsTotalCount" = "العدد الإجمالي";
+/* Show Asil Browser Browser Privacy Policy page from the Privacy section in the settings. */
+"PrivacyPolicy" = "سياسة الخصوصية";
+/* Private button title */
+"Private" = "خاص";
+/* No comment provided by the engineer. */
+"PrivateBrowsing" = "تصفح خاص";
+/* Setting to keep the app in private mode */
+"PrivateBrowsingOnly" = "التصفح الخاص فقط";
+/* When 'Private Browsing Only' is enabled, we need to alert the user that their normal tabs will be destroyed. */
+"PrivateBrowsingOnlyWarning" = "وضع التصفح الخاص فقط سيؤدي إلى إغلاق جميع علامات التبويب الحالية وجلسات المواقع فيها.";
+/* Private tab details */
+"PrivateTabBody" = "لن يتم حفظ علامات التبويب الخاصة في Asil Browser، ولكن ذلك لا يجعل تصفحك على الإنترنت مجهولًا. الصفحات التي تزورها في علامات التبويب الخاصة لن تظهر في تاريخك وستُمسح ملفات تعريف الارتباط عند إغلاقها دائمًا - لا يترك لها أثر في Asil Browser. ومع ذلك، ستتم حفظ التنزيلات.\nمشغل الهاتف الجوال الخاص بك (أو مالك شبكة الواي فاي التي تتصل بها أو VPN) يمكن أن يرى مواقع الويب التي تزورها وحتى في علامات التبويب الخاصة، يمكن للجميع معرفة عنوان IP العام الخاص بك.";
+/* Private tab detail text */
+
+
+"PrivateTabDetails" = "استخدام علامات تبويب الخصوصية يؤثر فقط على ما تفعله Asil Browser على جهازك، ولا يؤثر على سلوك أي شخص آخر.\n\nتعلم المواقع عنوان IP الخاص بك في كل مرة تزورها في العادة، ويمكن أن تستنتج من ذلك عادة مكان وجودك، وغالبًا ما يمكن أن تكون توقعات محددة للمدينة التي تتواجد فيها. في بعض الأحيان، يمكن أن تكون تلميحات الموقع هذه أكثر تحديدًا. تعرف المواقع أيضًا كل شيء تقدمه لها بشكل خاص مثل مصطلحات البحث التي تمررها إليها. عندما تقوم بتسجيل الدخول إلى موقع ويب، يعرفون أنك هو صاحب الحساب. عندما تغلق علامات تبويب الخصوصية، سيتم إغلاق جلستك على الرغم من ذلك، لأن Asil Browser سيحذف ملفات تعريف الارتباط التي تمكن الجلسة من البقاء مفتوحة.\n\nالشركة المزودة للإنترنت الخاصة بك (مزود الخدمة) يمكنها رؤية كل نشاطك عبر الشبكة. عادةً، هذا سيكون مشغل الجوال الخاص بك. إذا كنت متصلاً بشبكة Wi-Fi، فإن مالك الشبكة هو الشخص المسؤول عنها وإذا كنت تستخدم VPN، فإنه يتحكم فيها. مزود الخدمة يمكنه رؤية المواقع التي تزورها بينما تزورها. إذا كانت هذه المواقع تستخدم HTTPS، فإنها لا تستطيع القيام بأكثر من توقع استنادي للبيانات حول ما تفعله على تلك المواقع. ومع ذلك، إذا كان الموقع يستخدم فقط HTTP، فإن مزود الخدمة الخاص بك سيتمكن من رؤية كل شيء: مصطلحات البحث الخاصة بك، والصفحات التي تقرأها، والروابط التي تتابعها.\n\nإذا كان هناك شخص آخر لديه وصول إلى جهازك، فقد يكون قد قام بتثبيت برنامج لتتبع نشاطك، وعلامات تبويب الخصوصية لا تحميك من ذلك.";
+/* Private tab information link */
+"PrivateTabLink" = "تعرف على المزيد حول علامات التبويب الخصوصية.";
+/* Default engine for private search. */
+"PrivateTabSearch" = "علامة تبويب خاصة";
+/* QR Code section title */
+"QRCode" = "رمز الاستجابة السريعة (QR)";
+/* Title for quick-search engines settings section. */
+"QuickSearchEngines" = "محركات البحث السريعة";
+/* Open the App Store to rate Asil Browser. */
+"RateBrave" = "قيم تطبيق Asil Browser";
+/* Accessibility label for button increasing font size in display settings of reader mode */
+"ReaderModeBiggerFontButtonAccessibilityLabel" = "زيادة حجم الخط";
+/* Button for larger reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"ReaderModeBiggerFontButtonTitle" = "+";
+/* Accessibility label for brightness adjustment slider in Reader Mode display settings */
+"ReaderModeBrightSliderAccessibilityLabel" = "الإضاءة";
+/* Name for display settings button in reader mode. Display in the meaning of presentation, not monitor. */
+"ReaderModeDisplaySettingsButtonTitle" = "إعدادات العرض";
+/* Error displayed when reader mode cannot be enabled */
+"ReaderModeErrorConvertDisplayText" = "حدث خطأ أثناء تحويل الصفحة";
+/* Font type setting in the reading view settings */
+"ReaderModeFontButtonSansSerifTitle" = "غير مزخرف";
+/* Font type setting in the reading view settings */
+"ReaderModeFontButtonSerifTitle" = "مزخرف";
+/* Button for reader mode font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"ReaderModeFontSizeLabelText" = "حجم الخط";
+/* Accessibility hint for the font type buttons in reader mode display settings */
+"ReaderModeFontTypeButtonAccessibilityHint" = "تغيير نوع الخط.";
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Asil Browser reader mode from another app. */
+"ReaderModeLoadingContentDisplayText" = "جاري تحميل المحتوى...";
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
+"ReaderModeLoadOriginalLinkText" = "تحميل الصفحة الأصلية";
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app.";
+
+"ReaderModePageCantShowDisplayText" = "تعذر عرض صفحة وضع القارئ.";
+/* Title of a bar that shows up when you enter reader mode. */
+"readerModeSettingsButton" = "وضع القارئ";
+/* Accessibility label for button decreasing font size in display settings of reader mode */
+"ReaderModeSmallerFontButtonAccessibilityLabel" = "تصغير حجم الخط";
+/* Button for smaller reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"ReaderModeSmallerFontButtonTitle" = "-";
+/* Accessibility hint for the color theme setting buttons in reader mode display settings */
+"ReaderModeThemeButtonAccessibilityHint" = "تغيير موضوع الألوان.";
+/* Recent Search Clear Button */
+"RecentSearchClear" = "مسح";
+/* The button title that shows when you clear all recent searches */
+"RecentSearchClearAlertButton" = "مسح جميع البحث الأخير";
+/* Recent Search setting title to clear recent searches */
+"RecentSearchClearDataToggleOption" = "بيانات البحث الأخير";
+/* Recent Search button title to disable suggestions */
+"RecentSearchDisableSuggestions" = "تعطيل الاقتراحات";
+/* Recent Search button title to enable suggestions */
+"RecentSearchEnableSuggestions" = "تمكين";
+/* Recent Search Favorites Section Title */
+"RecentSearchFavorites" = "المفضلات";
+/* Recent Search Hide Button */
+"RecentSearchHide" = "إخفاء";
+/* Recent Search Paste & Go Button Title */
+"RecentSearchPasteAndGo" = "لصق وانتقل";
+/* Recent Search 'on' text when a user searches 'on' a website */
+"RecentSearchQuickSearchOnWebsite" = "على";
+/* Recent Search Scanned text when a user scans a QR code */
+"RecentSearchScanned" = "تم مسحها";
+/* Scanning a QR Code for searching body */
+"RecentSearchScannerDescriptionBody" = "قم بمحاذاة رمز الاستجابة السريعة في منتصف الإطار للبحث باستخدام رمز الاستجابة السريعة.";
+/* Scanning a QR Code for title */
+"RecentSearchScannerDescriptionTitle" = "التعليمات";
+/* Scanning a QR Code for searching */
+"RecentSearchScannerTitle" = "مسح رمز الاستجابة السريعة";
+/* Recent Search Section Description */
+"RecentSearchSectionDescription" = "البحث الأخير يسمح لك بالوصول إلى البحوث السابقة. هل ترغب في تمكين البحث الأخير؟";
+/* Recent Search Section Title */
+"RecentSearchSectionTitle" = "البحث الأخير";
+/* Recent Search Show Button */
+"RecentSearchShow" = "عرض";
+/* Recent Search Show More button */
+"RecentSearchShowMore" = "عرض المزيد";
+/* Recent Search suggestions title when prompting to turn on suggestions */
+"RecentSearchSuggestionsTitle" = "اقتراحات البحث";
+/* Setting title for the option to automatically redirect a URL to another URL */
+"redditRedirectFooter" = "يقوم Reddit تلقائيًا بتوجيه الروابط إلى واجهة أقدم (old.reddit.com). لاستخدام واجهة Reddit الجديدة، استخدم عنوان new.reddit.com بدلاً من ذلك.";
+/* Action button for removing sync device. */
+"RemoveDevice" = "إزالة";
+/* Button to remove a favorite */
+
+
+"RemoveFavorite" = "إزالة المفضلة";
+/* No comment provided by engineer. */
+"ReportABrokenSite" = "الإبلاغ عن موقع معطل";
+/* Providers the user an email page where they can submit a but report. */
+"ReportABug" = "الإبلاغ عن خلل";
+/* First part of the report a broken site copy. After the colon is a new line and then a website address */
+"ReportBrokenSiteBody1" = "الرجاء الإبلاغ لمطوري Asil Browser أن هذا الموقع لا يعمل بشكل صحيح مع Kalkanlar:";
+/* No comment provided by engineer. */
+"ReportBrokenSiteBody2" = "ملاحظة: سيتم إرسال عنوان هذا الموقع بالإضافة إلى رقم إصدار Asil Browser الخاص بك وعنوان IP الخاص بك (لن يتم تخزين هذه البيانات).";
+/* No comment provided by engineer. */
+"ReportBrokenSubmitButtonTitle" = "إرسال";
+/* Name of folder where restored bookmarks are retrieved */
+"RestoredBookmarksFolderName" = "اسم المجلد الذي يتم استعادة الإشارات المرجعية منه";
+/* Name of folder where restored favorites are retrieved */
+"RestoredFavoritesFolderName" = "اسم المجلد الذي يتم استعادة المفضلات منه";
+/* Restore Tabs Affirmative Action */
+"RestoreTabAffirmativeButtonTitle" = "نعم";
+/* Restore Tabs Negative Action */
+"RestoreTabNegativeButtonTitle" = "لا";
+/* Restore Tabs Prompt Description */
+"RestoreTabOnCrashAlertMessage" = "يبدو أن Asil Browser قد انهار. هل ترغب في استعادة علامات التبويب؟";
+/* Restore Tabs Prompt Title */
+"RestoreTabOnCrashAlertTitle" = "هذا مخجل بعض الشيء.";
+/* Body for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInBody" = "يمكنك عرض الإعلانات المحمية للخصوصية من Asil Browser Ads والحصول على مكافآت Asil Browser Rewards. لا توجد أي تتبعات. لا تأخير. وجميع بياناتك تظل آمنة تمامًا.";
+/* Title for Asil Browser Talk rewards opt-in screen button */
+"rewards.braveTalkRewardsOptInButtonTitle" = "تمكين المكافآت";
+/* Body for successful Asil Browser Talk rewards opt-in */
+"rewards.braveTalkRewardsOptInSuccessBody" = "انقر في أي مكان على الشاشة للبدء في المكالمة المجانية الآن.";
+/* Title for successful Asil Browser Talk rewards opt-in */
+"rewards.braveTalkRewardsOptInSuccessTitle" = "يمكنك الآن بدء مكالمة مجانية";
+/* Title for Asil Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInTitle" = "قم بتمكين مكالمات مجانية عن طريق فتح Asil Browser Rewards";
+/* Displayed when Asil Browser Rewards is disabled */
+"rewards.disabledBody" = "قم بتمكينها لدعم مبدعي المحتوى";
+/* Displayed in the status container when rewards is disabled */
+"rewards.disabledStatusBody" = "استخدام جوائز Asil Browser يساعد في دعم مبدعي المحتوى أثناء تصفح الويب.";
+/* Displayed when Asil Browser Rewards is enabled */
+"rewards.enabledBody" = "أنت تدعم مبدعي المحتوى";
+/* Displayed in the status container when rewards is enabled but you're not currently supporting any publishers (0 AC count) */
+"rewards.enabledStatusBody" = "شكرًا لك على دعم مبدعي المحتوى أثناء تصفحك!";
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransfer" = "نقل المحفظة القديمة";
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransferStatusButtonCompletedTitle" = "تم نقل المحفظة القديمة بنجاح!";
+
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransferStatusButtonDelayedTitle" = "تم تأجيل نقل المحفظة القديمة ...";
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransferStatusButtonInProgressTitle" = "جاري نقل المحفظة القديمة";
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransferStatusButtonInvalidTitle" = "نقل المحفظة القديمة غير صالح";
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransferStatusButtonPendingTitle" = "انتظار نقل المحفظة القديمة";
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransferStatusCompletedBody" = "تم نقل المحفظة القديمة بنجاح! قد يستغرق ظهور الرصيد الخاص بك في محفظة Asil Browser Rewards على سطح المكتب بضع دقائق.";
+/* Title shown above body of text explaining that their transfer is completed */
+"rewards.legacyWalletTransferStatusCompletedTitle" = "تم النقل!";
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransferStatusDelayedBody" = "تم تأجيل نقل المحفظة القديمة وقد يستغرق استكمالها بضع دقائق إضافية.";
+/* Title shown above body of text explaining that their transfer is delayed */
+"rewards.legacyWalletTransferStatusDelayedTitle" = "تم التأجيل";
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransferStatusInProgressBody" = "جاري نقل المحفظة القديمة وقد يستغرق الانتهاء بضع دقائق إضافية.";
+/* Title shown above body of text explaining that their transfer is in progress */
+"rewards.legacyWalletTransferStatusInProgressTitle" = "نقل مستمر";
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransferStatusInvalidBody" = "نقل المحفظة القديمة غير صالح ولا يمكن الانتهاء منه.";
+/* Title shown above body of text explaining that their transfer is invalid */
+"rewards.legacyWalletTransferStatusInvalidTitle" = "نقل غير صالح";
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransferStatusPendingBody" = "نقل المحفظة القديمة معلق ويجب أن يبدأ في وقت قريب.";
+/* Title shown above body of text explaining that their transfer is pending */
+"rewards.legacyWalletTransferStatusPendingTitle" = "انتظار النقل";
+/* Completed as in: stating that the status of the users transfer is in completed */
+"rewards.legacyWalletTransferStatusShortformCompleted" = "تم الانتهاء!";
+/* Delayed as in: stating that the status of the users transfer is in delayed */
+"rewards.legacyWalletTransferStatusShortformDelayed" = "تم التأجيل";
+/* In Progress as in: stating that the status of the users transfer is in progress */
+"rewards.legacyWalletTransferStatusShortformInProgress" = "جاري";
+/* Invalid as in: stating that the status of the users transfer is invalid */
+"rewards.legacyWalletTransferStatusShortformInvalid" = "غير صالح";
+/* Pending as in: stating that the status of the users transfer is pending */
+"rewards.legacyWalletTransferStatusShortformPending" = "معلق";
+/* No comment provided by engineer. */
+"rewards.legacyWalletTransferSubtitle" = "نقل الرموز الحالية مرة واحدة";
+/* The placeholders say 'Terms of Service' and 'Privacy Policy'. So full sentence goes like: 'By clicking, you agree to the Terms of Service and Privacy Policy...' */
+"rewards.optInDisclaimer" = "بالنقر فوقها، أنت توافق على %1$@ و %2$@. يمكنك تعطيلها في أي وقت من قسم الإعدادات.";
+/* No comment provided by engineer. */
+"rewards.settingsFooterMessage" = "لا يمكن استخدام مدفوعات Asil Browser Rewards على هذا الجهاز مؤقتًا. قم بنقل رصيدك الحالي إلى محفظة سطح المكتب الخاصة بـ Asil Browser لحماية عملاتك الرمزية.";
+/* No comment provided by engineer. */
+
+
+"rewards.settingsToggleMessage" = "قم بتمكين إعلانات Asil Browser الخاصة لدعم محتوى الناشرين تلقائيًا. إعلانات Asil Browser الخاصة هي إعلانات تحترم الخصوصية وتعيدها إلى محتوى الناشرين.";
+/* No comment provided by engineer. */
+"rewards.settingsToggleTitle" = "تمكين مكافآت Asil Browser";
+/* Displayed under verified publishers */
+"rewards.supportingPublisher" = "أنت تدعم الناشرين مثل هؤلاء.";
+/* Displayed next to a number representing the total number of publishers supported */
+"rewards.totalSupportedCount" = "عدد الناشرين الذين دعمتهم هذا الشهر.";
+/* No comment provided by engineer. */
+"rewards.transferNoLongerAvailableWarningMessage" = "الرجاء استخدام نقل المحفظة حتى 13 مارس 2021. لن يتم دعم نقل المحفظة بعد 13 مارس.";
+/* Displayed under unverified publishers */
+"rewards.unverifiedPublisher" = "هذا الناشر لم يتم التحقق من دعمه ولن يتم تضمينه في الدعم.";
+/* A confirmation message shown to the user after completing a wallet transfer successfully */
+"rewards.walletTransferCompleteBody" = "تم بدء نقل المحفظة الخاصة بك. قد يستغرق ظهور رصيد BAT الحالي في محفظة مكافآت Asil Browser على سطح المكتب بضع دقائق. يمكنك إغلاق هذه النافذة ومتابعة استخدام Asil Browser أثناء تنفيذ النقل.";
+/* Title shown above the confirmation message after completing a wallet transfer successfully */
+"rewards.walletTransferCompleteTitle" = "تم بدء نقل الرصيد";
+/* Message on the alert presented if wallet transfer fails */
+"rewards.walletTransferFailureAlertMessage" = "خادم مكافآت Asil Browser لم يستجب. يرجى المحاولة مرة أخرى في وقت لاحق.";
+/* Title on the alert presented if wallet transfer fails */
+"rewards.walletTransferFailureAlertTitle" = "خطأ في الاتصال";
+/* Describes the steps for using wallet transfer */
+"rewards.walletTransferStepsBody" = "يمكن نقل رصيد رموز مكافآت Asil Browser الخاص بك إلى محفظة مكافآت Asil Browser على سطح المكتب مرة واحدة فقط.\n\n1. افتح Asil Browser على سطح المكتب الخاص بك\n2. انتقل إلى Asil Browser://rewards\n3. انقر على \"الرمز الشريطي\"\n4. قم بمسح الرمز الشريطي باستخدام جهازك";
+/* Title above the steps to use wallet transfer */
+"rewards.walletTransferStepsTitle" = "مسح رمز النقل لمرة واحدة";
+/* Title of the legacy wallet transfer screen */
+"rewards.walletTransferTitle" = "حالة نقل المحفظة";
+/* No comment provided by engineer. */
+"RewardsInternalsAmount" = "المبلغ";
+/* No comment provided by engineer. */
+"RewardsInternalsAnonymous" = "مجهول";
+/* No comment provided by engineer. */
+"RewardsInternalsBalanceInfoHeader" = "معلومات الرصيد";
+/* No comment provided by engineer. */
+"RewardsInternalsClaimedAt" = "تمت المطالبة بالمكافأة في";
+/* No comment provided by engineer. */
+"RewardsInternalsClaimID" = "معرّف المطالبة";
+/* No comment provided by engineer. */
+"RewardsInternalsClearLogsConfirmation" = "هل أنت متأكد من رغبتك في مسح جميع سجلات المكافآت؟";
+/* No comment provided by engineer. */
+"RewardsInternalsClearLogsTitle" = "مسح السجلات";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionAmount" = "مبلغ المساهمة";
+
+/* No comment provided by engineer. */
+"RewardsInternalsContributionProcessorBraveTokens" = "رموز Asil Browser";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionProcessorNone" = "بلا";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionProcessorUphold" = "حافظ";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionProcessorUserFunds" = "أموال المستخدم";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionsStepACOff" = "المساهمة التلقائية مغلقة";
+/* 'AC' refers to Auto-Contribute */
+"RewardsInternalsContributionsStepACTableEmpty" = "جدول AC فارغ";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionsStepCompleted" = "تم";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionsStepCreds" = "بيانات الاعتماد";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionsStepExternalTransaction" = "عملية خارجية";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionsStepFailed" = "فشل";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionsStepNotEnoughFunds" = "لا توجد أموال كافية";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionsStepPrepare" = "تجهيز";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionsStepReserve" = "احتياط";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionsStepRewardsOff" = "المكافآت مغلقة";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionsStepStart" = "البدء";
+/* No comment provided by engineer. */
+"RewardsInternalsContributionsTitle" = "المساهمة";
+/* No comment provided by engineer. */
+"RewardsInternalsCreatedAt" = "أنشئ في";
+/* No comment provided by engineer. */
+"RewardsInternalsDeviceInfoHeader" = "معلومات الجهاز";
+/* No comment provided by engineer. */
+"RewardsInternalsEnrolled" = "مسجل";
+/* No comment provided by engineer. */
+"RewardsInternalsEnrollmentState" = "حالة التسجيل";
+/* No comment provided by engineer. */
+"RewardsInternalsExpiresAt" = "ستنتهي صلاحيةه في";
+/* No comment provided by engineer. */
+"RewardsInternalsInvalid" = "غير صالح";
+/* No comment provided by engineer. */
+"RewardsInternalsKeyInfoSeed" = "بيانات مفتاح البذرة";
+/* No comment provided by engineer. */
+"RewardsInternalsLegacyPromotion" = "الترويج القديم";
+/* No comment provided by engineer. */
+"RewardsInternalsLegacyWalletHasTransferrableBalance" = "لديه رصيد قابل للنقل";
+/* No comment provided by engineer. */
+"RewardsInternalsLegacyWalletInfoHeader" = "معلومات المحفظة القديمة";
+/* %d will be the number of logs currently being shown, i.e. '10 logs shown' */
+"RewardsInternalsLogsCount" = "تم عرض %d سجل";
+/* No comment provided by engineer. */
+
+"RewardsInternalsLogsTitle" = "السجلات";
+/* No comment provided by engineer. */
+"RewardsInternalsNotEnrolled" = "غير مسجل";
+/* No comment provided by engineer. */
+"RewardsInternalsNotSupported" = "غير مدعوم";
+/* No comment provided by engineer. */
+"RewardsInternalsProcessor" = "المعالج";
+/* No comment provided by engineer. */
+"RewardsInternalsPromotionStatusActive" = "نشط";
+/* No comment provided by engineer. */
+"RewardsInternalsPromotionStatusAttested" = "موثق";
+/* No comment provided by engineer. */
+"RewardsInternalsPromotionStatusCorrupted" = "تالف";
+/* No comment provided by engineer. */
+"RewardsInternalsPromotionStatusFinished" = "مكتمل";
+/* No comment provided by engineer. */
+"RewardsInternalsPromotionStatusOver" = "انتهى";
+/* No comment provided by engineer. */
+"RewardsInternalsPromotionsTitle" = "العروض الترويجية";
+/* No comment provided by engineer. */
+"RewardsInternalsPublisher" = "الناشر";
+/* No comment provided by engineer. */
+"RewardsInternalsPublishers" = "الناشرون";
+/* No comment provided by engineer. */
+"RewardsInternalsRetryCount" = "عدد مرات المحاولة مرة أخرى";
+/* No comment provided by engineer. */
+"RewardsInternalsRewardsTypeAutoContribute" = "المساهمة التلقائية";
+/* No comment provided by engineer. */
+"RewardsInternalsRewardsTypeOneTimeTip" = "نصيحة مرة واحدة";
+/* No comment provided by engineer. */
+"RewardsInternalsRewardsTypeRecurringTip" = "نصيحة متكررة";
+/* No comment provided by engineer. */
+"RewardsInternalsSharableBasicDescription" = "معلومات العملة والجهاز والرصيد (مشترك دائمًا)";
+/* No comment provided by engineer. */
+"RewardsInternalsSharableBasicTitle" = "معلومات أساسية";
+/* No comment provided by engineer. */
+"RewardsInternalsSharableContributionsDescription" = "جميع المساهمات المقدمة للناشرين من خلال الإكرامية أو المساهمة التلقائية";
+/* No comment provided by engineer. */
+"RewardsInternalsSharableDatabaseDescription" = "قاعدة بيانات الجوائز الداخلية";
+/* No comment provided by engineer. */
+"RewardsInternalsSharableDatabaseTitle" = "قاعدة بيانات الجوائز";
+/* No comment provided by engineer. */
+"RewardsInternalsSharableLogsDescription" = "تسجيلات الأمان الخاصة بالجوائز";
+/* No comment provided by engineer. */
+"RewardsInternalsSharablePromotionsDescription" = "جميع عروض BAT الترويجية المطلوبة أو المتوقعة من الإعلانات أو المنح";
+/* No comment provided by engineer. */
+"RewardsInternalsShare" = "مشاركة";
+/* 'Rewards' as in 'Asil Browser Rewards' */
+"RewardsInternalsShareInternalsTitle" = "مشاركة الجوائز الداخلية";
+/* No comment provided by engineer. */
+"RewardsInternalsSharingWarningMessage" = "قد تحتوي البيانات على هذه الصفحة على معلومات حساسة. يُرجى التعامل معها بعناية مثل مفاتيح محفظتك الخاصة. تحقق من مشاركتها مع من تثق.";
+
+
+
+/* No comment provided by engineer. */
+"RewardsInternalsSharingWarningTitle" = "تحذير";
+/* No comment provided by engineer. */
+"RewardsInternalsStatus" = "الحالة";
+/* i.e. 'Step: Started' */
+"RewardsInternalsStep" = "خطوة";
+/* No comment provided by engineer. */
+"RewardsInternalsSupported" = "مدعوم";
+/* 'Rewards' as in 'Asil Browser Rewards' */
+"RewardsInternalsTitle" = "المكافآت الداخلية";
+/* No comment provided by engineer. */
+"RewardsInternalsTotalAmount" = "المبلغ الإجمالي";
+/* No comment provided by engineer. */
+"RewardsInternalsTotalBalance" = "الرصيد الإجمالي";
+/* No comment provided by engineer. */
+"RewardsInternalsType" = "النوع";
+/* No comment provided by engineer. */
+"RewardsInternalsValid" = "صالح";
+/* No comment provided by engineer. */
+"RewardsInternalsVersion" = "الإصدار";
+/* No comment provided by engineer. */
+"RewardsInternalsWalletCreationDate" = "تاريخ إنشاء المحفظة";
+/* No comment provided by engineer. */
+"RewardsInternalsWalletInfoHeader" = "معلومات المحفظة";
+/* No comment provided by engineer. */
+"RewardsInternalsWalletPaymentID" = "معرّف الدفع في المحفظة";
+/* Button to show the rewards panel */
+"RewardsPanel" = "لوحة المكافآت";
+/* Label for the button used to save data */
+"SaveButtonTitle" = "حفظ";
+/* Settings item for clearing passwords and login data */
+"SavedLogins" = "بيانات تسجيل الدخول المحفوظة";
+/* The title for the folder created when all bookmarks are being */
+"SavedTabsFolderTitle" = "علامات التبويب المحفوظة";
+/* Context menu item for saving an image */
+"SaveImageActionTitle" = "حفظ الصورة";
+/* Setting to enable the built-in password manager */
+"SaveLogins" = "حفظ تسجيل الدخول";
+/* Scan sync code title */
+"Scan" = "مسح";
+/* Scan sync code button title */
+"ScanSyncCode" = "لدي رمز المزامنة";
+/* individual blocking statistic title */
+"ScriptsBlocked" = "السكربتات المحظورة";
+/* The placeholder text for bookmark search */
+"searchBookmarksTitle" = "ابحث عن العلامات المرجعية";
+/* Label for search engine buttons. The argument corresponds to the name of the search engine. */
+"SearchEngineFormatText" = "البحث %@";
+/* Title for default search engine picker. */
+"SearchEnginePickerNavTitle" = "محرك البحث الافتراضي";
+/* Search engines section of settings */
+"SearchEngines" = "محركات البحث";
+/* Accessibility hint describing the action performed when a search suggestion is clicked */
+"SearchesForSuggestionButtonAccessibilityText" = "البحث عن الاقتراح";
+/* Section header for history and bookmarks and open tabs option */
+
+
+
+"SearchHistorySectionHeader" = "علامات التبويب المفتوحة، العلامات المرجعية، والسجل";
+/* Accessibility message e.g. spoken by VoiceOver after the user taps the close button in the search field to clear the search and exit search mode */
+"SearchInputViewClearButtonTitle" = "مسح البحث";
+/* Accessibility label for entering search mode for logins */
+"SearchInputViewOverlayAccessibilityLabel" = "الانتقال إلى وضع البحث";
+/* Accessibility label for the search input field in the Logins list */
+"SearchInputViewTextFieldAccessibilityLabel" = "مدخل البحث";
+/* Title for the search field at the top of the Logins list screen */
+"SearchInputViewTitle" = "بحث";
+/* Add Custom Search Engine Table Cell Row Title */
+"searchSettingAddCustomEngineCellTitle" = "إضافة محرك بحث مخصص";
+/* Navigation title for search settings. */
+"SearchSettingNavTitle" = "بحث";
+/* Label for showing recent search setting. */
+"SearchSettingRecentSearchesCellTitle" = "عرض عمليات البحث الأخيرة";
+/* Label for search settings button. */
+"SearchSettingsButtonTitle" = "إعدادات البحث";
+/* Label for show search suggestions setting. */
+"SearchSettingSuggestionCellTitle" = "عرض اقتراحات البحث";
+/* Accessibility label for image of default search engine displayed left to the actual search suggestions from the engine. The parameter substituted for \"%@\" is the name of the search engine. E.g.: Search suggestions from Google */
+"SearchSuggestionFromFormatText" = "اقتراحات البحث من %@";
+/* Action title for Switching to an existing tab for the suggestion item shown on the table list */
+"searchSuggestionOpenTabActionTitle" = "الانتقال إلى هذه العلامة";
+/* Section Title when showing search suggestions. The parameter substituted for \"%@\" is the name of the search engine. E.g.: Google Search */
+"SearchSuggestionSectionTitleFormat" = "بحث %@";
+/* Section Title when showing search suggestions and the engine does not contain the word 'Search'. */
+"SearchSuggestionSectionTitleNoSearchFormat" = "بحث";
+/* Section header for search suggestions option */
+"SearchSuggestionsSectionHeader" = "اقتراحات البحث";
+/* Title of an action that allows the user to perform a one-click web search for selected text */
+"SearchWithBrave" = "البحث باستخدام Asil Browser";
+/* Settings security section title */
+"Security" = "الأمان";
+/* Message displayed in the crash dialog above the buttons used to select when sending reports */
+"SendCrashReportAlertMessage" = "هل ترغب في إرسال تقرير الانهيار لـ Asil Browser لحل المشكلة؟";
+/* Title for prompt displayed to the user after the app crashes */
+"SendCrashReportAlertTitle" = "نجاح! تعطل Asil Browser!";
+/* Used as a button label for crash dialog prompt */
+"SendReportButtonTitle" = "إرسال التقرير";
+/* No comment provided by engineer. */
+"setDefaultBrowserCalloutTitle" = "Asil Browser يمكن الآن تعيينه كمتصفح افتراضي على iOS. اضغط هنا لفتح الإعدادات.";
+/* Settings item to set Asil Browser as a default browser on the iOS device. */
+"setDefaultBrowserSettingsCell" = "تعيين كمتصفح افتراضي";
+/* No comment provided by engineer. */
+"Settings" = "الإعدادات";
+/* Settings option to never close tabs automatically, must be done manually */
+"settings.autocloseTabsManualOption" = "يدويًا";
+/* Settings option to close old tabs after 1 day */
+
+"settings.autocloseTabsOneDayOption" = "بعد يوم واحد";
+/* Settings option to close old tabs after 1 month */
+"settings.autocloseTabsOneMonthOption" = "بعد شهر واحد";
+/* Settings option to close old tabs after 1 week */
+"settings.autocloseTabsOneWeekOption" = "بعد أسبوع واحد";
+/* Name of app setting that allows users to automatically close tabs. */
+"settings.autocloseTabsSetting" = "إغلاق علامات التبويب تلقائيًا";
+/* Description of autoclose tabs feature. */
+"settings.autocloseTabsSettingFooter" = "اسمح لـ Asil Browser بإغلاق علامات التبويب التي لم تُعرض مؤخرًا تلقائيًا.";
+/* Error message that is shown in settings when there was a problem loading */
+"SettingsContentLoadErrorMessage" = "تعذر تحميل الصفحة.";
+/* Row name for licenses. */
+"SettingsLicenses" = "التراخيص";
+/* Title for settings menu item */
+"SettingsMenuItem" = "الإعدادات";
+/* An option for the URL bar position. (Top Bar and Bottom Bar). Refers to the location of the URL bar */
+"SettingsTabsOptionBottomBar" = "شريط التبويب السفلي";
+/* An option for the URL bar position. (Top Bar and Bottom Bar). Refers to the location of the URL bar */
+"SettingsTabsOptionTopBar" = "شريط التبويب العلوي";
+/* Tabs settings section title */
+"SettingsTabsSectionTitle" = "علامات التبويب";
+/* Context menu item for sharing a link URL */
+"ShareLinkActionTitle" = "مشاركة الرابط";
+/* Title for sharing URL menu item */
+"ShareWithMenuItem" = "مشاركة مع...";
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"shareWithTitle" = "مشاركة مع...";
+/* Subtitle for tracker benchmark Share */
+"shieldEducation.benchmarkAnyTierTitle" = "تهانينا، لقد وصلت إلى هذه المرحلة على طريق الخصوصية.";
+/* Subtitle for tracker benchmark Share */
+"shieldEducation.benchmarkExclusiveTierTitle" = "تهانينا. أنت الآن جزءًا من نادي خاص.";
+/* Subtitle for tracker benchmark Share */
+"shieldEducation.benchmarkGrandTierTitle" = "تهانينا. أصبحت مشهورًا.";
+/* Subtitle for tracker benchmark Share */
+"shieldEducation.benchmarkLegendaryTierTitle" = "تهانينا. أنت أسطورة.";
+/* Subtitle for tracker benchmark Share */
+"shieldEducation.benchmarkPrimeTierTitle" = "تهانينا. أصبحت خبيرًا.";
+/* Subtitle for tracker benchmark Share */
+"shieldEducation.benchmarkProfessionalTierTitle" = "تهانينا. انضممت إلى المحترفين.";
+/* Subtitle for tracker benchmark Share */
+"shieldEducation.benchmarkSpecialTierTitle" = "تهانينا. أنت فريد.";
+/* Subtitle for The parameter substituted for \"%@\" is the amount of data saved in MB. E.g.: Average Data Saved: 17.43 MB */
+"shieldEducation.domainSpecificDataSavedSubtitle" = "المتوسط للبيانات المحفوظة\n%@ ميجابايت";
+/* Action title for button at domain specific data saved pop-up */
+"shieldEducation.dontShowThisTitle" = "عدم إظهار هذا مرة أخرى";
+/* Action title for actionable Share warnings */
+"shieldEducation.shareTheNewsTitle" = "شارك الأخبار";
+/* Subtitle for Shield Education Tracker Ad Warning */
+"shieldEducation.trackerAdWarningSubTitle" = "حماية Asil Browser الخصوصية الخاصة بك عبر الإنترنت.";
+/* Subtitle for Shield Education Tracker Count Share */
+"shieldEducation.trackerCountShareSubtitle" = "تهانينا. أنت فريد.";
+
+/* Title for Shield Education Tracker Count Share. The parameter substituted for \"%ld\" is the count of the trackers and ads blocked in total until present. E.g.: 5000 trackers & ads blocked */
+"shieldEducation.trackerCountShareTitle" = "تم حظر %ld متتبع وإعلان!";
+/* Subtitle for Shield Education Tracker Video Ad Block */
+"shieldEducation.videoAdBlockSubtitle" = "الفيديوهات بدون إعلانات تستخدم أقل بيانات.";
+/* Title for Shield Education Tracker Video Ad Block */
+"shieldEducation.videoAdBlockTitle" = "يتم حظر الإعلانات أثناء مشاهدة الفيديوهات على هذا الموقع.";
+/* Section title for adbblock, tracking protection, HTTPS-E, and cookies */
+"ShieldsDefaults" = "إعدادات الحماية العالمية في Asil Browser";
+/* Section footer for global shields defaults */
+"ShieldsDefaultsFooter" = "هذه هي الإعدادات الافتراضية للدروع للمواقع الجديدة. تغيير هذه الإعدادات لن يؤثر على إعدادات المواقع الحالية.";
+/* No comment provided by engineer. */
+"ShieldsDownDisclaimer" = "أنت تتصفح هذا الموقع بدون حماية الخصوصية في Asil Browser. هل هذا الموقع لا يعمل بشكل صحيح عندما تكون الدروع مفعلة؟";
+/* shields overview message */
+"ShieldsOverview" = "تسمح دروع الموقع بمراقبة متى تم حظر الإعلانات ومتتبعين لكل موقع تزوره. إذا كنت تفضل رؤية الإعلانات على موقع معين، يمكنك تمكين الإعلانات هنا.";
+/* shields overview footer message */
+"ShieldsOverviewFooter" = "ملحوظة: قد تتطلب بعض المواقع أن تعمل النصائح بشكل صحيح، لذا يمكن تعطيل هذه الإعدادات افتراضيًا.";
+/* Time Saved Days */
+"ShieldsTimeStatsDays" = "أيام";
+/* Time Saved Hours */
+"ShieldsTimeStatsHour" = "ساعات";
+/* Time Saved Minutes */
+"ShieldsTimeStatsMinutes" = "دقائق";
+/* Time Saved Seconds */
+"ShieldsTimeStatsSeconds" = "ثواني";
+/* Quick Action for 3D-Touch on the Application Icon */
+"ShortcutItemTitleNewPrivateTab" = "علامة تبويب خاصة جديدة";
+/* Quick Action for 3D-Touch on the Application Icon */
+"ShortcutItemTitleNewTab" = "علامة تبويب جديدة";
+/* Quick Action for 3D-Touch on the Application Icon */
+"ShortcutItemTitleQRCode" = "مسح رمز الاستجابة السريعة (QR)";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeBraveNewsDescription" = "افتح Asil Browser News وتصفح أفضل القصص اليوم.";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeClearHistoryDescription" = "افتح المتصفح في علامة تبويب جديدة وامسح جميع بيانات تصفح الخصوصية.";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeClearHistorySuggestedPhrase" = "مسح تاريخ التصفح";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeClearHistoryTitle" = "افتح Asil Browser وامسح تاريخ التصفح";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeEnableVPNDescription" = "افتح المتصفح في علامة تبويب جديدة وقم بتمكين VPN.";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeEnableVPNSuggestedPhrase" = "قم بتمكين VPN";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeEnableVPNTitle" = "افتح Asil Browser وقم بتمكين VPN";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeNewPrivateTabSuggestedPhrase" = "افتح علامة تبويب خاصة جديدة";
+/* No comment provided by engineer. */
+
+
+
+"shortcuts.activityTypeNewPrivateTabTitle" = "افتح علامة تبويب خاص جديد";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeNewTabSuggestedPhrase" = "افتح علامة تبويب جديد";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeNewTabTitle" = "افتح علامة تبويب جديدة";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeOpenBraveNewsTitle" = "افتح Asil Browser News";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "افتح Asil Browser News";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeOpenPlaylistDescription" = "ابدأ تشغيل مقاطع الفيديو في قائمة التشغيل الخاصة بك";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeOpenPlaylistSuggestedPhrase" = "افتح قائمة التشغيل";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeOpenPlaylistTitle" = "افتح قائمة التشغيل";
+/* No comment provided by engineer. */
+"shortcuts.activityTypeTabDescription" = "ابدأ البحث بأمان على الويب باستخدام Asil Browser";
+/* No comment provided by engineer. */
+"shortcuts.customIntentOpenBookmarkSuggestedPhrase" = "افتح موقع العلامة المرجعية";
+/* No comment provided by engineer. */
+"shortcuts.customIntentOpenHistorySuggestedPhrase" = "افتح موقع السجل";
+/* No comment provided by engineer. */
+"shortcuts.customIntentOpenWebsiteSuggestedPhrase" = "افتح موقع الويب";
+/* Description for opening Asil Browser Settings for altering Siri shortcut. */
+"shortcuts.shortcutOpenApplicationSettingsDescription" = "هذا الخيار سيفتح إعدادات Asil Browser. يُرجى تحديد \"Siri والبحث\" من القائمة وتخصيص الاختيارات لتغيير مختصر Siri.";
+/* Button title that open application settings */
+"shortcuts.shortcutOpenApplicationSettingsTitle" = "افتح الإعدادات";
+/* Description of Clear Browser History Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsClearBrowserHistoryDescription" = "استخدم Siri - المساعد الصوتي لفتح علامة تبويب جديد ومسح سجل التصفح";
+/* No comment provided by engineer. */
+"shortcuts.shortcutSettingsClearBrowserHistoryTitle" = "مسح سجل التصفح";
+/* No comment provided by engineer. */
+"shortcuts.shortcutSettingsEnableVPNDescription" = "استخدم Siri - المساعد الصوتي لتمكين VPN في Asil Browser";
+/* No comment provided by engineer. */
+"shortcuts.shortcutSettingsEnableVPNTitle" = "تمكين VPN";
+/* Description of Open Asil Browser News Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "استخدم مختصر Siri لفتح علامة تبويب جديدة وعرض مصدر أخبار Asil Browser";
+/* No comment provided by engineer. */
+"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "افتح Asil Browser News";
+/* No comment provided by engineer. */
+"shortcuts.shortcutSettingsOpenNewPrivateTabDescription" = "استخدم Siri - المساعد الصوتي لفتح علامة تبويب خاصة جديدة";
+/* No comment provided by engineer. */
+"shortcuts.shortcutSettingsOpenNewPrivateTabTitle" = "افتح علامة تبويب خاصة جديدة";
+/* No comment provided by engineer. */
+"shortcuts.shortcutSettingsOpenNewTabDescription" = "استخدم Siri - المساعد الصوتي لفتح علامة تبويب جديدة";
+/* No comment provided by engineer. */
+"shortcuts.shortcutSettingsOpenNewTabTitle" = "افتح علامة تبويب جديدة";
+
+/* Description of Open Playlist Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsOpenPlaylistDescription" = "استخدم Siri - المساعد الصوتي لفتح قائمة التشغيل";
+/* No comment provided by engineer. */
+"shortcuts.shortcutSettingsOpenPlaylistTitle" = "افتح قائمة التشغيل";
+/* No comment provided by engineer. */
+"shortcuts.shortcutSettingsTitle" = "اختصارات Siri";
+/* Setting to show a bookmark button on the top level menu that triggers a panel of the user's bookmarks. */
+"ShowBookmarkButtonInTopToolbar" = "عرض زر العلامات المرجعية في شريط الأدوات العلوي";
+/* Button to show the bookmarks list */
+"ShowBookmarks" = "عرض العلامات المرجعية";
+/* Show code words instead */
+"ShowCodeWords" = "عرض كلمات المرور بدلاً من ذلك";
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"showDownloadsTitle" = "عرض التنزيلات";
+/* Button to show the history list */
+"ShowHistory" = "عرض التاريخ";
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"showHistoryTitle" = "عرض التاريخ";
+/* Setting preference to only show the browser tabs bar when the device is in the landscape orientation. */
+"ShowInLandscapeOnly" = "عرض في وضع الأفق فقط";
+/* Context menu item for showing link previews */
+"ShowLinkPreviewsActionTitle" = "عرض معاينات الروابط";
+/* Accessibility Label for the tabs button in the browser toolbar */
+"ShowTabs" = "عرض التبويبات";
+/* Setting to show/hide the tabs bar */
+"ShowTabsBar" = "عرض شريط التبويبات";
+/* No comment provided by engineer. */
+"SiteReportedBody" = "قم بالإبلاغ عن مشكلة في هذا الموقع إلى مطوري Asil Browser. سنبذل قصارى جهدنا لإصلاحه!";
+/* No comment provided by engineer. */
+"SiteReportedTitle" = "شكراً";
+/* Asil Browser panel topmost title */
+"SiteShieldSettings" = "إعدادات الحماية";
+/* Title used when in warning pop-over when domain-specific data save appears */
+"socialSharing.domainSpecificDataSavedTitle" = "أوفر البيانات كل يوم أثناء تصفح الويب باستخدام Asil Browser.";
+/* Text used for social sharing together with Asil Browser Shield values */
+"socialSharing.shareDescriptionTitle" = "أوفر البيانات كل يوم أثناء تصفح الويب باستخدام Asil Browser.";
+/* Open search section of settings */
+"StandardTabSearch" = "بحث العلامة التبويب القياسية";
+/* Support section title */
+"Support" = "الدعم";
+/* Message body of alert that seeks permission from the user to suppress future JS alerts */
+"SuppressAlertsActionMessage" = "منع هذا الموقع من إصدار تنبيهات إضافية";
+/* Title of alert that seeks permission from the user to suppress future JS alerts */
+"SuppressAlertsActionTitle" = "قم بمنع التنبيهات";
+/* Sync settings section title */
+"Sync" = "مزامنة";
+/* Title of the bookmark import popup. */
+"sync.bookmarksImportPopupErrorTitle" = "علامات مرجعية";
+/* Message of the popup if bookmark import fails. */
+
+
+
+"sync.bookmarksImportPopupFailureMessage" = "فشل في استيراد الإشارات المرجعية";
+/* Message of the popup if bookmark import succeeds. */
+"sync.bookmarksImportPopupSuccessMessage" = "تم استيراد الإشارات المرجعية بنجاح";
+/* Information Text underneath the toggles for enable/disable different sync types for the device */
+"sync.syncConfigurationInformationText" = "إدارة المعلومات التي ترغب في مزامنتها بين الأجهزة. هذه الإعدادات تؤثر فقط على هذا الجهاز.";
+/* Title for Sync Settings Toggle Header */
+"sync.syncSettingsTitle" = "إعدادات المزامنة";
+/* Text that informs a user about Asil Browser Sync service deprecation. */
+"sync.syncV1DeprecationText" = "يأتي مزامنة Asil Browser الجديدة قريبًا وستؤثر على إعداداتك. كن مستعدًا للترقية.";
+/* Message for popup when the bookmark migration fails */
+"sync.v2MigrationErrorMessage" = "فشلت عملية نقل الإشارات المرجعية. يُرجى المحاولة مرة أخرى في وقت لاحق.";
+/* Title for popup when the bookmark migration fails */
+"sync.v2MigrationErrorTitle" = "خطأ";
+/* Bookmarks migration website page description */
+"sync.v2MigrationInterstitialPageDescription" = "تعذر نقل بعض الإشارات المرجعية. يمكنك إعادتها يدويًا.";
+/* Bookmarks migration website title */
+"sync.v2MigrationInterstitialTitle" = "نقل الإشارات المرجعية";
+/* Message for popup to inform the user that bookmarks migration is required for sync */
+"sync.v2MigrationMessage" = "لاستخدام خدمة مزامنة Asil Browser، يجب نقل الإشارات المرجعية الحالية إلى النظام الجديد. لن يتم حذف الإشارات المرجعية خلال هذه العملية.";
+/* Button to perform bookmarks migration in order to support sync */
+"sync.v2MigrationOKButton" = "نقل";
+/* Title for popup to inform the user that bookmarks migration is required for sync */
+"sync.v2MigrationTitle" = "مطلوب النقل";
+/* Add New Device cell button. */
+"SyncAddAnotherDevice" = "إضافة جهاز جديد";
+/* Add a Computer title */
+"SyncAddComputerTitle" = "إضافة حاسوب";
+/* Add mobile device to sync with scan */
+"SyncAddDeviceScan" = "مزامنة باستخدام مسح الرمز QR";
+/* Sync add device description */
+"SyncAddDeviceScanDescription" = "على الجهاز الثاني (الهاتف المحمول الثاني)، انتقل إلى الإعدادات واضغط على 'مزامنة' ثم اضغط على 'مسح رمز المزامنة'. استخدم كاميرا هذا الجهاز لمسح الرمز الذي يظهر أدناه.\n\nتعتبر هذه الرموز مثل كلمات المرور، إذا حصل شخص ما على الرمز، فإنه يمكنه الوصول إلى بيانات المزامنة وتعديلها.";
+/* Add device to sync with code words */
+"SyncAddDeviceWords" = "أدخل رمز المزامنة";
+/* Sync add device description */
+"SyncAddDeviceWordsDescription" = "على الجهاز الخاص بك، انتقل إلى الإعدادات واضغط على \"%@\". أدخل الكلمات المرجعية الموجودة أدناه.\n\nتعتبر هذه الكلمات مثل كلمات المرور، إذا حصل شخص ما على الكلمات، فإنه يمكنه الوصول إلى بيانات المزامنة وتعديلها.";
+/* Add device to sync with code words navigation title */
+"SyncAddDeviceWordsTitle" = "إدخال كلمات المرور";
+/* Add Tablet or phone title */
+"SyncAddTabletOrPhoneTitle" = "إضافة لوحي أو هاتف";
+/* Choose device type for sync */
+"SyncChooseDevice" = "اختر نوع الجهاز للمزامنة";
+/* Header for device choosing screen. */
+"SyncChooseDeviceHeader" = "حدد نوع الجهاز الذي ترغب في مزامنته.";
+/* Computer device button title */
+"SyncComputerDevice" = "حاسوب";
+/* Sync Error Description */
+
+"syncDeprecatedVersionError" = "تم إنشاء هذا الرمز للمزامنة بواسطة إصدار قديم من Asil Browser على جهاز آخر. الرجاء تحديث Asil Browser على جميع الأجهزة المزامنة والمحاولة مرة أخرى.";
+/* Sync you browser settings across devices. */
+"SyncDevices" = "الأجهزة والإعدادات";
+/* Sync Error message for when the sync code is expired */
+"syncExpiredError" = "انتهت صلاحية هذا الرمز المزامنة. يرجى إنشاء رمز مزامنة جديد والمحاولة مرة أخرى.";
+/* Generic Sync Error Description */
+"syncGenericError" = "عذرًا، حدثت مشكلة";
+/* Folder name for where bookmarks are imported into when the root folder is not empty. */
+"SyncImportFolderName" = "الإشارات المرجعية المستوردة";
+/* Message for sync initialization error alert */
+"SyncInitErrorMessage" = "وكيل المزامنة غير متاح حاليًا أو غير متصل. الرجاء المحاولة مرة أخرى لاحقًا.";
+/* Title for sync initialization error alert */
+"SyncInitErrorTitle" = "خطأ في التواصل مع المزامنة";
+/* Default name for a device */
+"syncJoinChainCameraWarning" = "سيؤدي هذا الإجراء إلى مشاركة بيانات Asil Browser الخاصة بك، بما في ذلك كلمات المرور، مع الجهاز الذي أنشأ هذا الرمز QR. يرجى التحقق من أن هذا الرمز QR تم إنشاؤه بواسطة جهاز يعود إليك. هل ترغب حقًا في القيام بهذا؟";
+/* Default name for a device */
+"syncJoinChainCodewordsWarning" = "سيؤدي هذا الإجراء إلى مشاركة بيانات Asil Browser الخاصة بك، بما في ذلك كلمات المرور، مع الجهاز الذي أنشأ هذه الكلمات. يرجى التحقق من أن هذه الكلمات تم إنشاؤها بواسطة جهاز يعود إليك. هل ترغب حقًا في القيام بهذا؟";
+/* Title for pairing sync device */
+"syncJoinChainWarningTitle" = "تحذير";
+/* No internet connection alert body. */
+"SyncNoConnectionBody" = "الرجاء التحقق من اتصالك بالإنترنت والمحاولة مرة أخرى.";
+/* No internet connection alert title. */
+"SyncNoConnectionTitle" = "تعذر الاتصال بالمزامنة";
+/* Message for removing the current device from Sync */
+"SyncRemoveCurrentDeviceMessage" = "سيتم الاحتفاظ ببيانات الجهاز المحلي دون تلف على جميع الأجهزة المزامنة الأخرى. سيستمر الأجهزة الأخرى في المزامنة بينها.";
+/* Title for removing the current device from Sync */
+"SyncRemoveCurrentDeviceTitle" = "الرجاء إزالة %@ من سلسلة المزامنة؟";
+/* Remove device button for action sheet. */
+"SyncRemoveDeviceAction" = "إزالة الجهاز";
+/* Default name for a device */
+"SyncRemoveDeviceDefaultName" = "الجهاز";
+/* Message for removing last device from Sync */
+"SyncRemoveLastDeviceMessage" = "سيتم الاحتفاظ بالبيانات المتزامنة الحالية، ولكن جميع البيانات المخزنة مؤقتًا لمزامنة Asil Browser ستتم محوها. يجب عليك بدء سلسلة مزامنة جديدة لمزامنة البيانات من الجهاز مرة أخرى.";
+/* Button name for removing last device from Sync */
+"SyncRemoveLastDeviceRemoveButtonName" = "مسح سلسلة المزامنة";
+/* Title for removing last device from Sync */
+"SyncRemoveLastDeviceTitle" = "ستتم إزالة %@ عند مسح سلسلة المزامنة.";
+/* Message for removing other device from Sync */
+"SyncRemoveOtherDeviceMessage" = "إزالة الجهاز من سلسلة المزامنة لن يحذف البيانات المتزامنة من الجهاز الآخر.";
+/* Title for removing other device from Sync */
+"SyncRemoveOtherDeviceTitle" = "الرجاء إزالة %@ من سلسلة المزامنة؟";
+/* Sync remove device. */
+"SyncRemoveThisDevice" = "إزالة هذا الجهاز";
+
+
+
+/* Sync remove device? */
+"SyncRemoveThisDeviceQuestion" = "هل تريد إزالة هذا الجهاز؟";
+/* Sync remove device? */
+"SyncRemoveThisDeviceQuestionDesc" = "سيتم فصل هذا الجهاز عن مجموعة المزامنة ولن يتلقى أو يرسل بيانات المزامنة بعد الآن. ستظل جميع البيانات الحالية على الجهاز.";
+/* Header title for Sync settings */
+"SyncSettingsHeader" = "تحتوي قائمة الأجهزة أدناه على جميع الأجهزة في سلسلة المزامنة الخاصة بك. يمكن إدارة كل جهاز من خلال جهاز آخر.";
+/* Switch back to camera button */
+"SyncSwitchBackToCameraButton" = "سأستخدم الكاميرا ...";
+/* Tablet or phone button title */
+"SyncTabletOrMobileDevice" = "الكمبيوتر اللوحي أو الهاتف";
+/* This device cell */
+"SyncThisDevice" = "هذا الجهاز";
+/* Sync to existing device */
+"SyncToDevice" = "مزامنة مع الجهاز الموجود";
+/* Sync to existing device description */
+"SyncToDeviceDescription" = "افتح إعدادات Asil Browser باستخدام الجهاز المزامن الموجود وانتقل إلى الإعدادات -> المزامنة. اختر \"إضافة جهاز\" وقم بمسح الرمز الذي يظهر على الشاشة.";
+/* Description on popup when setting up a sync group fails */
+"SyncUnableCreateGroup" = "تعذرت عملية المزامنة مع هذا الجهاز";
+/* No comment provided by engineer. */
+"SyncUnsuccessful" = "فشلت العملية";
+/* Sync Error Description */
+"syncValidForTooLongError" = "هذا الرمز غير صالح. يرجى التحقق من توقيت الجهاز والمنطقة الزمنية للتأكد من صحتهما.";
+/* Accessibility label for action denoting closing a tab in tab list (tray) */
+"TabAccessibilityCloseActionLabel" = "إغلاق";
+/* Accessiblity hint for toggling on/off private mode */
+"TabPrivateModeToggleAccessibilityHint" = "تمكين أو تعطيل وضع الخصوصية";
+/* Accessibility label for toggling on/off private mode */
+"TabPrivateModeToggleAccessibilityLabel" = "وضع الخصوصية";
+/* Toggled OFF accessibility value */
+"TabPrivateModeToggleAccessibilityValueOff" = "متوقف";
+/* Toggled ON accessibility value */
+"TabPrivateModeToggleAccessibilityValueOn" = "مفعّل";
+/* Accessibility label for the navigation toolbar displayed at the bottom of the screen. */
+"TabToolbarAccessibilityLabel" = "شريط أدوات التصفح";
+/* Accessibility label for the Add Tab button in the Tab Tray. */
+"TabToolbarAddTabButtonAccessibilityLabel" = "إضافة علامة تبويب";
+/* Accessibility label for the Back button in the tab toolbar. */
+"TabToolbarBackButtonAccessibilityLabel" = "رجوع";
+/* Accessibility Label for the tab toolbar Forward button */
+"TabToolbarForwardButtonAccessibilityLabel" = "إلى الأمام";
+/* Accessibility label for the lock icon, which is only present if the connection is secure */
+"TabToolbarLockImageAccessibilityLabel" = "اتصال آمن";
+/* Accessibility Label for the browser toolbar Menu button */
+"TabToolbarMenuButtonAccessibilityLabel" = "القائمة";
+/* Accessibility Label for the tab toolbar Playlist button */
+"TabToolbarPlaylistButtonAccessibilityLabel" = "قائمة التشغيل";
+/* Accessibility label for the Reader View button */
+"TabToolbarReaderViewButtonAccessibilityLabel" = "عرض القارئ";
+/* Accessibility label for action adding current page to reading list. */
+"TabToolbarReaderViewButtonTitle" = "إضافة الصفحة الحالية إلى قائمة القراءة";
+/* Accessibility Label for the tab toolbar Reload button */
+
+"TabToolbarReloadButtonAccessibilityLabel" = "إعادة التحميل";
+/* The text shown in the URL bar on about:home */
+"TabToolbarSearchAddressPlaceholderText" = "ابحث أو أدخل العنوان";
+/* Accessibility Label for the browser toolbar Share button */
+"TabToolbarShareButtonAccessibilityLabel" = "مشاركة";
+/* Accessibility Label for the tab toolbar Stop button */
+"TabToolbarStopButtonAccessibilityLabel" = "توقف";
+/* Accessibility label for the lock icon, which is only present if the connection is insecure */
+"TabToolbarWarningImageAccessibilityLabel" = "اتصال غير آمن";
+/* Accessibility label for the Tabs Tray view. */
+"TabTrayAccessibilityLabel" = "علبة التبويب";
+/* Accessibility label for the Add Tab button in the Tab Tray. */
+"TabTrayAddTabAccessibilityLabel" = "إضافة علامة تبويب";
+/* Accessibility hint for tab tray's displayed tab. */
+"TabTrayCellCloseAccessibilityHint" = "اسحب إصبعيك ثلاث مرات إلى اليمين أو اليسار لإغلاق التبويب.";
+/* Accessibility label (used by assistive technology) notifying the user that the tab is being closed. */
+"TabTrayClosingTabAccessibilityNotificationText" = "يتم إغلاق التبويب";
+/* Message spoken by VoiceOver to indicate that there are no tabs in the Tabs Tray */
+"TabTrayEmptyVoiceOverText" = "لا توجد علامات تبويب";
+/* Message spoken by VoiceOver saying the range of tabs that are currently visible in Tabs Tray, along with the total number of tabs. E.g. "Tabs 8 to 10 of 15" says tabs 8, 9 and 10 are visible, out of 15 tabs total. */
+"TabTrayMultiTabPositionFormatVoiceOverText" = "علامة تبويب من %1$ إلى %2$ من %3$";
+/* Accessibility label for the New Tab button in the tab toolbar. */
+"TabTrayNewTabButtonAccessibilityLabel" = "علامة تبويب جديدة";
+/* Title displayed for placeholder inside Search Bar in Tab Tray */
+"TabTraySearchBarTitle" = "ابحث في علامات التبويب";
+/* Message spoken by VoiceOver saying the position of the single currently visible tab in Tabs Tray, along with the total number of tabs. E.g. "Tab 2 of 5" says that tab 2 is visible (and is the only visible tab), out of 5 tabs total. */
+"TabTraySingleTabPositionFormatVoiceOverText" = "علامة تبويب %1$ من %2$";
+/* No comment provided by engineer. */
+"TermsOfService" = "شروط الخدمة";
+/* Show Asil Browser Browser TOS page from the Privacy section in the settings. */
+"TermsOfUse" = "شروط الاستخدام";
+/* Text for button to share referral's QR code. */
+"themeQRCodeShareButton" = "مشاركة...";
+/* Title for QR popup encouraging users to share the code with their friends. */
+"themeQRCodeShareTitle" = "شارك Asil Browser مع أصدقائك!";
+/* Selection to automatically color/style the user interface. */
+"ThemesAutomaticOption" = "تلقائي";
+/* Selection to color/style the user interface with a dark theme */
+"ThemesDarkOption" = "داكن";
+/* Setting to choose the user interface theme for normal browsing mode, contains choices like 'light' or 'dark' themes */
+"ThemesDisplayBrightness" = "المظهر";
+/* Text specifying that the above setting does not impact the user interface while the user is in private browsing mode. */
+"ThemesDisplayBrightnessFooter" = "هذه الإعدادات لا تؤثر على واجهة المستخدم أثناء تصفحك الخاص.";
+/* Selection to color/style the user interface with a light theme. */
+"ThemesLightOption" = "فاتح";
+/* Name for app theme settings */
+"themesSettings" = "الأوضاع";
+/* No comment provided by engineer. */
+
+
+"Title" = "العنوان";
+/* History tableview section header */
+"Today" = "اليوم";
+/* To add a list of 1 or more RSS feeds */
+"today.addSourceAddButtonTitle" = "إضافة";
+/* The title in the alert when a source fails to add */
+"today.addSourceFailureTitle" = "فشل إضافة المصدر";
+/* No comment provided by engineer. */
+"today.addSourceInvalidDataMessage" = "عذرًا، لم نتمكن من التعرف على عنوان هذا التغذية.";
+/* No comment provided by engineer. */
+"today.addSourceNetworkFailureMessage" = "عذرًا، لم نتمكن من العثور على عنوان هذا التغذية.";
+/* No comment provided by engineer. */
+"today.addSourceNoFeedsFoundMessage" = "عذرًا، لا تحتوي عنوان هذا التغذية على محتوى.";
+/* The action title displayed in the iOS share menu */
+"today.addSourceShareTitle" = "إضافة مصدر إلى Asil Browser News";
+/* A header title shown above a button that will allow the user to fetch RSS feeds for a website they have typed in */
+"today.availableRSSFeedsHeaderTitle" = "التغذيات المتاحة حاليًا";
+/* The name of the feature */
+"today.braveToday" = "أخبار Asil Browser";
+/* Shown below 'Channels' explaining what will be shown when tapping on it. */
+"today.channelsButtonSubtitle" = "تابع مواضيع تهمك";
+/* A button title that when tapped shows users a list of channels/topics that they can follow */
+"today.channelsButtonTitle" = "القنوات";
+/* A header title shown over a list of channels (i.e. Cars, Business, Fashion, etc.) */
+"today.channelsHeaderTitle" = "القنوات";
+/* A title at the top of the screen that shows a list of topics the user can follow */
+"today.channelsTitle" = "القنوات";
+/* No comment provided by engineer. */
+"today.contentAvailableButtonTitle" = "المحتوى المتاح الجديد";
+/* No comment provided by engineer. */
+"today.deals" = "صفقات";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+"today.disabledAlertBody" = "Asil Browser News ستتوقف عن عرض المحتوى من %@";
+/* No comment provided by engineer. */
+"today.disabledAlertTitle" = "معطل";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+"today.disablePublisherContent" = "إخفاء المحتوى من %@";
+/* No comment provided by engineer. */
+"today.emptyFeedBody" = "جرب فتح بعض مصادر الأخبار";
+/* No comment provided by engineer. */
+"today.emptyFeedTitle" = "لا توجد مقالات لعرضها";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+"today.enablePublisherContent" = "تمكين المحتوى من %@";
+/* No comment provided by engineer. */
+"today.errorGeneralBody" = "Asil Browser News تواجه مشكلات. حاول مرة أخرى.";
+/* No comment provided by engineer. */
+"today.errorGeneralTitle" = "عذرًا...";
+/* Shown below 'Following' explaining that they can manage their list of followed sources by tapping on it */
+"today.followingButtonSubtitle" = "إدارة المصادر التي تتابعها في التغذية الخاصة بك";
+/* A button title that when tapped shows users a list of sources & channels they are currently following */
+"today.followingButtonTitle" = "المصادر التي تتابعها";
+/* A title at the top of the screen that shows a list of the news content the user is following */
+
+"today.followingTitle" = "تُتابَع";
+/* A toggle title shown next to a source or channel that the user can follow. When tapped switches to 'Unfollow' */
+"today.followToggleTitle" = "تتبع";
+/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Asil Browser.com'. */
+"today.getFeedsFromSiteButtonTitle" = "احصل على تغذيات من هنا:";
+/* "OPML" is a file extension that contains a list of RSS feeds. */
+"today.importOPML" = "استيراد ملف OPML";
+/* The header above the list of insecure sources */
+"today.insecureSourcesHeader" = "المصادر غير الآمنة - إذا كنت تقبل المخاطرة ، قم بإضافتها";
+/* Shown above a button that turns on the "Asil Browser News" product in the app. By sources & feeds, they mean websites & blogs. */
+"today.introCardBody" = "تابع مصادرك المفضلة في تغذية واحدة. فقط افتح تبويبًا في Asil Browser واسحب لأسفل... هكذا!\nAsil Browser News مدعومة من إعلانات مجهولة ومجهولة.";
+/* Shown above a button that turns on the "Asil Browser News" product in the app. */
+"today.introCardTitle" = "فتح Asil Browser News ولا تفوت أي أخبار";
+/* No comment provided by engineer. */
+"today.isEnabledToggleLabel" = "إظهار Asil Browser News";
+/* No comment provided by engineer. */
+"today.learnMoreTitle" = "معرفة المزيد عن بياناتك";
+/* 'Asil Browser Offers' is a product name */
+"today.moreBraveOffers" = "مزيد من عروض Asil Browser";
+/* No comment provided by engineer. */
+"today.noInternet" = "لا يوجد اتصال بالإنترنت";
+/* No comment provided by engineer. */
+"today.noInternetBody" = "تحقق من اتصالك أو حاول الاتصال بشبكة Wi-Fi.";
+/* Shown on the screen when a user searches for sources/channels but finds no results. */
+"today.noResultsFound" = "لم يتم العثور على نتائج";
+/* Shown below 'Popular Sources' explaining what sources will be shown. */
+"today.popularSourcesButtonSubtitle" = "قائمة بأعلى المصادر تصنيفًا";
+/* A button title that when tapped shows users a list of news sources that are ranked the highest */
+"today.popularSourcesDestinationTitle" = "الشهيرة";
+/* A title at the top of the screen that shows a list of sources that are ranked the highest */
+"today.popularSourcesTitle" = "مصادر مشهورة";
+/* A button title that is placed on promoted cards */
+"today.promoted" = "ترويج";
+/* No comment provided by engineer. */
+"today.refresh" = "تحديث";
+/* Placeholder text that appears in the search bar when empty. Site as in website. */
+"today.searchPlaceholder" = "ابحث عن موقع أو موضوع أو تدفق RSS";
+/* Shown on a row displaying a source. '%@' will be replaced with another source's name. For example: 'Similar to 9to5Mac' */
+"today.similarToSourceSubtitle" = "مشابه لـ %@";
+/* No comment provided by engineer. */
+"today.sourcesAndSettings" = "المصادر والإعدادات";
+/* A header title shown over a list of online news sources (i.e. CNN, NYT, etc.) */
+"today.sourcesHeaderTitle" = "المصادر";
+/* Shown below 'Suggested' explaining what sources will be shown. */
+"today.suggestedSourcesButtonSubtitle" = "مصادر مقترحة قد تعجبك";
+/* A button title that when tapped shows users a list of news sources that are suggested based on the ones they currently follow */
+"today.suggestedSourcesButtonTitle" = "المقترحة";
+/* A title at the top of the screen that shows a list of the news content the user is being suggested */
+"today.suggestedTitle" = "المقترحة";
+
+/* No comment provided by engineer. */
+"today.turnOnBraveToday" = "قم بتشغيل أخبار Asil Browser";
+/* A toggle title shown next to a source or channel that the user can unfollow. When tapped switches to 'Follow' */
+"today.unfollowToggleTitle" = "إلغاء المتابعة";
+/* A header title shown over a list of news sources the user has subscribed to manually via RSS. */
+"today.userSourcesHeaderTitle" = "مصادر المستخدم";
+/* Shields Trackers Stat */
+"TrackersrBlocked" = "المتتبعون تم منعهم";
+/* Prompt shown before enabling provider search queries */
+"Turn on search suggestions?" = "هل تريد تمكين اقتراحات البحث؟";
+/* Sync Alert */
+"UnableToConnectDescription" = "تعذّر الانضمام إلى مجموعة المزامنة. يرجى التحقق من الكلمات المدخلة والمحاولة مرة أخرى.";
+/* Sync Alert */
+"UnableToConnectTitle" = "غير قادر على الاتصال";
+/* Error message if list of Payment Instruments doesn't include BAT */
+"unsupportedInstrumentMessage" = "وسائل الدفع غير المعتمدة";
+/* Bookmark URL */
+"URL" = "عنوان URL";
+/* Accessibility label for address and search field, both words (Address, Search) are therefore nouns. */
+"URLBarViewLocationTextViewAccessibilityLabel" = "العنوان والبحث";
+/* Setting title for option to automatically redirect a URL to another URL */
+"urlRedirectsSettings" = "إعادة توجيه مواقع الويب";
+/* Error message if the payment workflow is canceled by the user */
+"userCancelledMessage" = "ألغى المستخدم سير الدفع";
+/* Setting to allow a user in a non-English locale to use adblock rules specific to their language */
+"UseRegionalAdblock" = "استخدام قواعد مانع الإعلانات الإقليمية";
+/* No comment provided by engineer. */
+"UserWalletCloseButtonTitle" = "إغلاق";
+/* No comment provided by engineer. */
+"UserWalletGenericErrorMessage" = "حدثت مشكلة أثناء تسجيل الدخول إلى حساب الدعم الخاص بك. يرجى المحاولة مرة أخرى";
+/* No comment provided by engineer. */
+"UserWalletGenericErrorTitle" = "عذرًا، حدث خطأ";
+/* Version number of Asil Browser shown in settings */
+"VersionTemplate" = "الإصدار %1$@ (%2$@)";
+/* Label that says where to view an item. '%@' is a placeholder and will include things like 'Instagram', 'unsplash'. The full label will look like 'View on Instagram'. */
+"ViewOn" = "عرض على %@";
+/* Button text to buy Asil Browser VPN */
+"vpn.buyButton" = "شراء";
+/* Title for the screen to buy the VPN. */
+"vpn.buyVPNTitle" = "Asil Browser Firewall + VPN";
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+"vpn.checkboxBlockAds" = "يمنع اتصالات الشبكة غير المرغوب فيها";
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+"vpn.checkboxEncryption" = "يستخدم نفق VPN المشفر بأمان IKEv2";
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+"vpn.checkboxFast" = "يدعم سرعات تصل إلى 100 ميغابت في الثانية";
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+"vpn.checkboxGeoSelector" = "حدد موقعك الجغرافي/البلد";
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+"vpn.checkboxNoIPLog" = "يسمح لك بالبقاء مجهول الهوية عبر الإنترنت";
+
+/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+"vpn.checkboxNoSellout" = "نحن لن نبيع أو نشارك معلوماتك أبدًا";
+/* AppStore Receipt field for customer support contact form. */
+"vpn.contactFormAppStoreReceipt" = "إيصال AppStore";
+/* App Version field for customer support contact form. */
+"vpn.contactFormAppVersion" = "إصدار التطبيق";
+/* Cellular Carrier field for customer support contact form. */
+"vpn.contactFormCarrier" = "مشغل الهاتف الخلوي";
+/* Text to tell the user to not modify support info below email's body. */
+"vpn.contactFormDoNotEditText" = "نظرًا لأن Asil Browser لا يتتبعك ولا يعرف كيف تستخدم التطبيق أو كيف قمت بإعداد VPN، لا يمكننا معرفة كيف قمت بتكوينه. من فضلك، شارك المشكلة التي تواجهها وسنقوم بمساعدتك في أسرع وقت ممكن.";
+/* Button name to send contact form. */
+"vpn.contactFormEmailNotConfiguredBody" = "تعذر إرسال البريد الإلكتروني. يرجى التحقق من إعدادات البريد الإلكتروني الخاصة بك.";
+/* Footer for customer support contact form. */
+"vpn.contactFormFooter" = "يرجى تحديد المعلومات التي تشعر بالراحة في مشاركتها معنا.\n\nكلما قمت بمشاركة المزيد من المعلومات معنا في البداية، سيكون من الأسهل بالنسبة لفريق الدعم حل مشكلتك.";
+/* Footer for customer support contact form. */
+"vpn.contactFormFooterSharedWithGuardian" = "تم توفير الدعم بالتعاون مع فريق الحماية.";
+/* VPN Hostname field for customer support contact form. */
+"vpn.contactFormHostname" = "اسم المضيف للVPN";
+/* Specific issue field for customer support contact form. */
+"vpn.contactFormIssue" = "المشكلة";
+/* Connection problems for contact form issue field. */
+"vpn.contactFormIssueConnectionReliability" = "مشكلة في موثوقية الاتصال";
+/* No internet problem for contact form issue field. */
+"vpn.contactFormIssueNoInternet" = "لا يوجد اتصال بالإنترنت";
+/* Other problem for contact form issue field. */
+"vpn.contactFormIssueOther" = "أخرى";
+/* Other connection problem for contact form issue field. */
+"vpn.contactFormIssueOtherConnectionError" = "لا يمكن الاتصال بالVPN (خطأ آخر)";
+/* Slow connection problem for contact form issue field. */
+"vpn.contactFormIssueSlowConnection" = "اتصال بطيء";
+/* Website problem for contact form issue field. */
+"vpn.contactFormIssueWebsiteProblems" = "مشكلة في موقع الويب";
+/* VPN logs field for customer support contact form. */
+"vpn.contactFormLogs" = "سجلات الأخطاء";
+/* Network Type field for customer support contact form. */
+"vpn.contactFormNetworkType" = "نوع الشبكة";
+/* A contact form field that displays platform type: 'iOS' 'Android' or 'Desktop' */
+"vpn.contactFormPlatform" = "المنصة";
+/* Button name to send contact form. */
+"vpn.contactFormSendButton" = "متابعة البريد الإلكتروني";
+/* Subscription Type field for customer support contact form. */
+"vpn.contactFormSubscriptionType" = "نوع الاشتراك";
+/* iOS Timezone field for customer support contact form. */
+"vpn.contactFormTimezone" = "المنطقة الزمنية لنظام التشغيل iOS";
+/* Title for contact form email. */
+"vpn.contactFormTitle" = "مشكلة في Asil Browser Firewall + VPN";
+/* Button text to enable Asil Browser VPN */
+"vpn.enableButton" = "تمكين";
+/* Message for an alert when the VPN can't get prices from the App Store */
+
+"vpn.errorCantGetPricesBody" = "تعذر الاتصال بمتجر App Store، يرجى المحاولة مرة أخرى خلال بضع دقائق.";
+/* Title for an alert when the VPN can't get prices from the App Store */
+"vpn.errorCantGetPricesTitle" = "خطأ في App Store";
+/* No comment provided by engineer. */
+"vpn.freeTrial" = "جميع الخطط تتضمن فترة تجريبية مجانية لمدة 7 أيام!";
+/* Disclaimer about the free trial */
+"vpn.freeTrialDisclaimer" = "جرب مجاناً لمدة 7 أيام. سيتم فرض رسوم الخطة بعد مرور 7 أيام.";
+/* Disclaimer about in-app subscription */
+"vpn.iapDisclaimer" = "يتم تجديد جميع الاشتراكات تلقائيًا، ولكن يمكن إلغاء التجديد قبل ذلك.";
+/* Text explaining how the VPN works. */
+"vpn.installProfileBody" = "يسمح هذا الملف بتوصيل حركة مرور VPN على جهازك تلقائيًا وتأمينه دائمًا. ستتم مرور هذه الاتصالات عبر جدار الحماية الذكي لـ Asil Browser وتشفيرها وتوجيهها لمنع الاتصالات الضارة والاختراق.";
+/* Text for 'install VPN profile' button */
+"vpn.installProfileButtonText" = "قم بتثبيت ملف تكوين VPN";
+/* No comment provided by engineer. */
+"vpn.installProfileTitle" = "Asil Browser سيقوم الآن بتثبيت ملف تكوين VPN.";
+/* Popup that shows after the user installs the VPN for the first time. */
+"vpn.installSuccessPopup" = "الآن تم تمكين VPN";
+/* Title for the screen to install the VPN. */
+"vpn.installTitle" = "قم بتثبيت VPN";
+/* Button text to try free Asil Browser VPN */
+"vpn.learnMore" = "جرب مجاناً";
+/* Used in context: 'Monthly subscription, (it) renews monthly' */
+"vpn.monthlySubDetail" = "يتجدد شهرياً";
+/* No comment provided by engineer. */
+"vpn.monthlySubTitle" = "اشتراك شهري";
+/* Text to show the user when their VPN plan has expired */
+"vpn.planExpired" = "انتهت صلاحية الخطة";
+/* Text for a checkbox to present the user benefits of using Asil Browser VPN */
+"vpn.popupCheckmark247Support" = "دعم على مدار الساعة طوال أيام الأسبوع";
+/* Text for a checkbox to present the user benefits of using Asil Browser VPN */
+"vpn.popupCheckmarkSecureConnections" = "تأمين جميع الاتصالات";
+/* It is used in context: 'Powered by BRAND_NAME' */
+"vpn.poweredBy" = "بدعم من";
+/* Description of what automatic server selection does. */
+"vpn.regionPickerAutomaticDescription" = "بناءً على منطقتك الزمنية، سيتم اختيار منطقة الخادم الأقرب لك تلقائيًا. يُفضل هذا لضمان سرعات إنترنت عالية.";
+/* Name of automatic VPN region selector */
+"vpn.regionPickerAutomaticModeCellText" = "تلقائي";
+/* Message for error when we fail to switch VPN server for the user */
+"vpn.regionPickerErrorMessage" = "تعذر تغيير الخادم، يرجى المحاولة مرة أخرى في وقت لاحق.";
+/* Title for error when we fail to switch VPN server for the user */
+"vpn.regionPickerErrorTitle" = "خطأ في الخادم";
+/* Title for VPN region selector screen */
+"vpn.regionPickerTitle" = "منطقة الخادم";
+/* Message that we show after successfully changing VPN region. */
+"vpn.regionSwitchSuccessPopupText" = "تم تغيير منطقة الخادم بنجاح.";
+/* Message to show when VPN configuration reset fails. */
+"vpn.resetVPNErrorBody" = "تعذر إعادة تعيين تكوين VPN، يرجى المحاولة مرة أخرى في وقت لاحق.";
+
+"vpn.resetVPNErrorTitle" = "خطأ";
+/* No comment provided by engineer. */
+"vpn.restorePurchases" = "استعادة المشتريات";
+/* VPN Banner Description */
+"vpn.settingHeaderBody" = "قم بالترقية إلى VPN لحماية اتصالك ومنع المتتبعين الاختراقيين في كل مكان.";
+/* Button to change VPN server location */
+"vpn.settingsChangeLocation" = "تغيير الموقع";
+/* Button to contact tech support */
+"vpn.settingsContactSupport" = "الاتصال بالدعم الفني";
+/* Error message shown if we failed to retrieve VPN server list. */
+"vpn.settingsFailedToFetchServerList" = "تعذر استرداد قائمة الخوادم، يرجى المحاولة مرة أخرى لاحقًا.";
+/* Button for FAQ */
+"vpn.settingsFAQ" = "الدعم للـ VPN";
+/* Button to link your VPN receipt to other devices. */
+"vpn.settingsLinkReceipt" = "ربط إيصال VPN بحساب Asil Browser الخاص بك";
+/* Footer text to link your VPN receipt to other devices. */
+"vpn.settingsLinkReceiptFooter" = "قم بربط إيصال App Store الخاص بك بحساب Asil Browser لاستخدام VPN على أجهزة أخرى.";
+/* Button to manage your VPN subscription */
+"vpn.settingsManageSubscription" = "إدارة الاشتراك في الـ VPN";
+/* Button to reset VPN configuration */
+"vpn.settingsResetConfiguration" = "إعادة تعيين التكوين للـ VPN";
+/* Table cell title for VPN's server host */
+"vpn.settingsServerHost" = "المضيف";
+/* Table cell title for VPN's server location */
+"vpn.settingsServerLocation" = "الموقع";
+/* Header title for VPN settings server section. */
+"vpn.settingsServerSection" = "الخادم";
+/* Table cell title for cell that shows when the VPN subscription expires. */
+"vpn.settingsSubscriptionExpiration" = "تاريخ انتهاء الاشتراك";
+/* Header title for VPN settings subscription section. */
+"vpn.settingsSubscriptionSection" = "الاشتراك";
+/* Table cell title for the status of the current VPN subscription. */
+"vpn.settingsSubscriptionStatus" = "الحالة";
+/* Whether the VPN is enabled or not */
+"vpn.settingsVPNDisabled" = "معطل";
+/* Whether the VPN is enabled or not */
+"vpn.settingsVPNEnabled" = "ممكن";
+/* Whether the VPN plan has expired */
+"vpn.settingsVPNExpired" = "انتهت صلاحية الاشتراك";
+/* Notification title to tell the user that the VPN is turned on even in the background */
+"vpn.vpnBackgroundNotificationBody" = "سيقوم Asil Browser بالمضي في حمايتك حتى عندما تكون في الخلفية.";
+/* Notification title to tell the user that the VPN is turned on even in the background */
+"vpn.vpnBackgroundNotificationTitle" = "Asil Browser الجدار الناري + VPN قيد التشغيل";
+/* Message for an alert when the VPN can't be configured. */
+"vpn.vpnConfigGenericErrorBody" = "حدثت مشكلة أثناء تشغيل الـ VPN. يرجى المحاولة مرة أخرى أو محاولة إعادة تعيين التكوين في صفحة إعدادات الـ VPN.";
+/* Title for an alert when the VPN can't be configured */
+"vpn.vpnConfigGenericErrorTitle" = "خطأ";
+/* Title for an alert when the user didn't allow to install VPN profile */
+"vpn.vpnConfigPermissionDeniedErrorBody" = "يجب تثبيت ملف تكوين VPN على جهازك لضمان عمل Asil Browser الجدار الناري + VPN.";
+
+/* Title for an alert when the user didn't allow to install VPN profile */
+"vpn.vpnConfigPermissionDeniedErrorTitle" = "تم رفض الإذن";
+/* Message for error when VPN could not be purchased. */
+"vpn.vpnErrorPurchaseFailedBody" = "تعذر شراء الخدمة. يُرجى المحاولة مرة أخرى أو التحقق من معلومات الدفع على Apple والمحاولة مرة أخرى.";
+/* Title for error when VPN could not be purchased. */
+"vpn.vpnErrorPurchaseFailedTitle" = "خطأ";
+/* Disclaimer for user purchasing the VPN plan. */
+"vpn.vpnIAPBoilerPlate" = "الاشتراكات تُفرض على حساب iTunes الخاص بك.\n\nسيتم فقدان أي جزء غير مستخدم من الفترة التجريبية المجانية عند الاقتراب من عرض اشتراك.\n\nسيتم تجديد الاشتراك تلقائيًا ما لم يتم إلغاؤه قبل 24 ساعة على الأقل من نهاية الفترة الحالية.\n\nيمكنك إدارة الاشتراكات الخاصة بك من الإعدادات.\n\nباستخدام Asil Browser، أنت توافق على شروط الاستخدام وسياسة الخصوصية.";
+/* Message for alert to reset VPN configuration */
+"vpn.vpnResetAlertBody" = "سيتم إعادة تعيين تكوين Asil Browser الجدار الناري + VPN وإصلاح الأخطاء. قد تستغرق هذه العملية دقيقة واحدة.";
+/* Title for alert to reset VPN configuration */
+"vpn.vpnResetAlertTitle" = "إعادة تعيين التكوين";
+/* Button name to reset VPN configuration */
+"vpn.vpnResetButton" = "إعادة تعيين";
+/* Name of monthly subscription in VPN Settings */
+"vpn.vpnSettingsMonthlySubName" = "اشتراك شهري";
+/* Name of annual subscription in VPN Settings */
+"vpn.vpnSettingsYearlySubName" = "اشتراك سنوي";
+/* Used in context: 'yearly subscription, renew annually (to) save 16%'. The placeholder is for percent value */
+"vpn.yearlySubDetail" = "تجديد سنوي بتوفير %@";
+/* It's like when there's few subscription plans, and one plan has the best value to price ratio, so this label says next to that plan: '(plan) - Best value' */
+"vpn.yearlySubDisclaimer" = "أفضل قيمة";
+/* One year length VPN subscription */
+"vpn.yearlySubTitle" = "عام واحد";
+/* The date your wallet was created */
+"WalletCreationDate" = "تاريخ إنشاء المحفظة";
+/* Accessibility label for the main web content view */
+"WebContentAccessibilityLabel" = "محتوى الويب";
+/* Temporary data that is stored on the users device to speed up future requests and interactions. */
+"websiteData.dataRecordCache" = "الذاكرة المؤقتة";
+/* The word used to describe small bits of state stored locally in a web browser (e.g. Browser cookies) */
+"websiteData.dataRecordCookies" = "الكوكيز";
+/* Some data stored on disk that is a kind of database (such as WebSQL or IndexedDB.) */
+"websiteData.dataRecordDatabases" = "قواعد البيانات";
+/* A kind of browser storage particularly for saving data on the user's device for a specific webpage for the given session or longer time periods. */
+"websiteData.dataRecordLocalStorage" = "التخزين المحلي";
+/* A message displayed to users while the system fetches all website data to display. */
+"websiteData.loadingWebsiteData" = "جاري تحميل بيانات الموقع...";
+/* A button or screen title describing that the user is there to manually manage website data that is persisted to their device. I.e. to manage data specific to a web page the user has visited */
+"websiteData.manageWebsiteDataTitle" = "إدارة بيانات الموقع الإلكتروني";
+/* Shown when the user has no website data (such as cookies, caches, or local storage) persisted to their device. */
+"websiteData.noSavedWebsiteData" = "لا توجد بيانات موقع إلكتروني محفوظة";
+
+/* Shown on a button to delete all displayed webpage records (such as cookies, caches, or local storage) that has been persisted on their device. Tapping it will delete those records and remove them from the list */
+"websiteData.removeAllDataRecords" = "حذف الكل";
+/* Shown when a user has attempted to delete a single webpage data record such as cookies, caches, or local storage that has been persisted on their device. Tapping it will delete that records and remove it from the list */
+"websiteData.removeDataRecord" = "حذف";
+/* Shown on a button when a user has selected multiple webpage data records (such as cookies, caches, or local storage) that has been persisted on their device. Tapping it will delete those records and remove them from the list */
+"websiteData.removeSelectedDataRecord" = "حذف %ld عنصرًا";
+/* Description for favorites widget on 'add widget' screen. */
+"widgets.favoritesWidgetDescription" = "الوصول السريع إلى مواقع الويب المفضلة لديك.";
+/* Title for favorites widget on 'add widget' screen. */
+"widgets.favoritesWidgetTitle" = "المفضلة";
+/* This shows when you add a widget but have no favorites added in your app */
+"widgets.noFavoritesFound" = "يرجى فتح Asil Browser لعرض مفضلاتك هنا";
+/* Description for the search option on the 'shortcuts' widget. */
+"widgets.searchShortcutTitle" = "البحث";
+/* Description for Asil Browser Shields widget on 'add widget' screen. */
+"widgets.shieldStatsDescription" = "ملخص حول كيفية توفير Asil Browser للوقت وحمايتك أثناء تصفح الإنترنت.";
+/* Title for Asil Browser Shields widget on 'add widget' screen. */
+"widgets.shieldStatsTitle" = "إحصائيات الخصوصية";
+/* Title of Asil Browser Shields widget shown above stat numbers. */
+"widgets.shieldStatsWidgetTitle" = "إحصائيات الخصوصية";
+/* Button to the browser and enter URL or make a search query there. */
+"widgets.shortcutsEnterURLButton" = "ابحث عن عنوان URL أو اكتبه";
+/* Button to open a new browser tab. */
+"widgets.shortcutsNewTabButton" = "علامة تبويب جديدة";
+/* Button to open the video playlist window. */
+"widgets.shortcutsPlaylistButton" = "قائمة التشغيل الفيديو";
+/* Button to open a new private browser tab. */
+"widgets.shortcutsPrivateTabButton" = "علامة تبويب خاصة جديدة";
+/* Description for shortcuts widget on 'add widget' screen. */
+"widgets.shortcutsWidgetDescription" = "الوصول السريع إلى البحث على الويب أو فتح صفحات ويب في Asil Browser.";
+/* Title for shortcuts widget on 'add widget' screen. */
+"widgets.shortcutsWidgetTitle" = "اختصارات";
+/* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
+"widgets.singleStatDescription" = "ملخص حول كيفية حماية Asil Browser لخصوصيتك أثناء تصفح الإنترنت.";
+/* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
+"widgets.singleStatTitle" = "إحصائية الخصوصية";
+/* Description for the Asil Browser Wallet option on the 'shortcuts' widget. */
+"widgets.walletShortcutTitle" = "محفظة Asil Browser";
+/* Title of the settings for widgets part */
+"widgets.widgetTitle" = "الحاجيات";
+/* Word count title */
+"WordCount" = "عدد الكلمات: %i";
+/* Abbreviation for 'Year', use full word 'Yeara' if this word can't be shortened in your language */
+"yearAbbreviation" = "سنة";
+/* For search suggestions prompt. This string should be short so it fits nicely on the prompt row. */
+"Yes" = "نعم";
+/* An action (button title) that enables cookie consent blocking and dismisses the popup */
+"YesBlockCookieConsentNotices" = "نعم، حظر إشعارات ملفات تعريف الارتباط";
+/* Button title to confirm the deletion of a bookmarks folder */
+"YesDeleteButtonTitle" = "نعم، حذف";
+/* History tableview section header */
+"Yesterday" = "أمس";
+
+
+

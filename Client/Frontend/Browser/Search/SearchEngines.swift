@@ -71,7 +71,7 @@ public class SearchEngines {
   }
 
   public func searchEngineSetup() {
-    let engine = initialSearchEngines.defaultSearchEngine
+    let engine = InitialSearchEngines.SearchEngineID.google
     setInitialDefaultEngine(engine.legacyName ?? engine.rawValue)
   }
 

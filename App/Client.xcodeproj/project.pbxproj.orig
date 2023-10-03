@@ -208,6 +208,8 @@
 		445ABC2327319C270089710D /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/BraveWidgets.strings; sourceTree = "<group>"; };
 		445ABC2527319C290089710D /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/BraveWidgets.strings; sourceTree = "<group>"; };
 		4484BAF02654227A0099A205 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
 		4E2DEAC129D1C7C300219024 /* email.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = email.js; sourceTree = "<group>"; };
 		4E2F0B5429D61A31005886B7 /* unsubscribe.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = unsubscribe.js; sourceTree = "<group>"; };
 		4E3A68B929DD5A7000DA0DAF /* channel.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = channel.js; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		4EB11B3E2AA8B41E002C8A54 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BraveWidgets.strings; sourceTree = "<group>"; };
 		4EB11B3F2AA8B447002C8A54 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = "Supporting Files/ar.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4EF311FE2AB602500051876D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+>>>>>>> test
 		5929A9F121B6AEF7005ECF8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59B6912221B695A400E9388E /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59B6914221B695C200E9388E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
