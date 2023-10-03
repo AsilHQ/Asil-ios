@@ -711,12 +711,41 @@ extension BrowserViewController: WKNavigationDelegate {
   }
     
   private func shouldBlockHost(url: URL?) -> Bool {
-      guard let host = url?.host else {
+      do {
+          guard let path = Bundle.module.path(forResource: "hosts", ofType: "txt") else {
+              Logger.module.error("Failed to load script: hosts.txt")
+              return false
+          }
+          
+          guard let host = url?.host else {
+              return false
+          }
+          
+          let source: String = try String(contentsOfFile: path)
+          let lines = source.components(separatedBy: .newlines)
+          
+          for line in lines {
+              
+              if line.contains("#") || line.isEmpty {
+                continue
+              }
+              
+              let components = line.components(separatedBy: .whitespaces)
+              
+              if components.count >= 2 {
+                  let domain = components[1]
+                  if host.hasSuffix(domain) {
+                      return true
+                  }
+              }
+          }
+    
+          return false
+      } catch {
+          // Handle the error here
+          Logger.module.error("Error reading hosts.txt: \(error)")
           return false
       }
-      
-      let blockedHosts = ["blockedwebsite.com"] //TODO: Fetch domains from hosts file
-      return blockedHosts.contains(host)
   }
 }
 
