@@ -68,7 +68,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
     }
 
     if let domain = domain {
-      shieldsUpSwitch.isOn = !domain.isSafegazeAllOff()
+      shieldsUpSwitch.isOn = !domain.isSafegazeAllOff(url: url, ignoredDomains: SafegazeManager.ignoredDomains)
     } else {
       shieldsUpSwitch.isOn = true
     }

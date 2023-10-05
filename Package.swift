@@ -161,6 +161,7 @@ let package = Package(
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/CookieControlScript.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/SafegazeScript.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/HostBlocker/hosts.txt"),
+        .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/Safegaze/safegazeIgnore.txt"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/HostBlocker/restrictedPage.html"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/FarblingProtectionScript.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/MediaBackgroundingScript.js"),
