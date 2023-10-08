@@ -18,7 +18,7 @@ struct PreloadedFavorites {
       }
 
       if let url = URL(string: "https://iou.edu.gm/") {
-        list.append(FavoriteSite(url: url, title: "IEO"))
+        list.append(FavoriteSite(url: url, title: "IOU"))
       }
 
       if let url = URL(string: "https://islamqa.info/en") {
