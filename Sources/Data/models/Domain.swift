@@ -554,13 +554,13 @@ extension Domain {
     @MainActor
     public func isSafegazeAllOff(url: URL?, ignoredDomains: [String]) -> Bool {
         guard let host = url?.host else {
-            return true
+            return self.safegaze_allOff?.boolValue ?? false
         }
 
         if ignoredDomains.contains(where: { host.hasSuffix($0) }) {
             return true
         }
 
-        return false
+        return self.safegaze_allOff?.boolValue ?? false
     }
 }
