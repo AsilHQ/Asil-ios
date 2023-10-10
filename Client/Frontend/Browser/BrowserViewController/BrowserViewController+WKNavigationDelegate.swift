@@ -172,6 +172,16 @@ extension BrowserViewController: WKNavigationDelegate {
       return (.allow, preferences)
     }
 
+    if shouldBlockHost(url: url) {
+        guard let path = Bundle.module.path(forResource: "restrictedPage", ofType: "html"),
+              let source: String = try? String(contentsOfFile: path) else {
+          Logger.module.error("Failed to load script: restrictedPage.html")
+          return (.cancel, preferences)
+        }
+        webView.loadHTMLString(source, baseURL: nil)
+        return (.cancel, preferences)
+    }
+    
     if url.scheme == "about" {
       return (.allow, preferences)
     }
@@ -307,7 +317,7 @@ extension BrowserViewController: WKNavigationDelegate {
           .trackerProtectionStats: url.isWebPage(includeDataURIs: false) &&
                                    domainForMainFrame.isShieldExpected(.AdblockAndTp, considerAllShieldsOption: true),
           
-          .safegaze: url.isWebPage(includeDataURIs: false) && !domainForMainFrame.isSafegazeAllOff()
+          .safegaze: url.isWebPage(includeDataURIs: false) && !domainForMainFrame.isSafegazeAllOff(url: url, ignoredDomains: SafegazeManager.ignoredDomains)
         ])
       }
       
@@ -698,6 +708,44 @@ extension BrowserViewController: WKNavigationDelegate {
         tabManager.allTabs.filter { $0.webView == webView }.first?.restoring = false
       }
     }
+  }
+    
+  private func shouldBlockHost(url: URL?) -> Bool {
+      do {
+          guard let path = Bundle.module.path(forResource: "hosts", ofType: "txt") else {
+              Logger.module.error("Failed to load script: hosts.txt")
+              return false
+          }
+          
+          guard let host = url?.host else {
+              return false
+          }
+          
+          let source: String = try String(contentsOfFile: path)
+          let lines = source.components(separatedBy: .newlines)
+          
+          for line in lines {
+              
+              if line.contains("#") || line.isEmpty {
+                continue
+              }
+              
+              let components = line.components(separatedBy: .whitespaces)
+              
+              if components.count >= 2 {
+                  let domain = components[1]
+                  if host.hasSuffix(domain) {
+                      return true
+                  }
+              }
+          }
+    
+          return false
+      } catch {
+          // Handle the error here
+          Logger.module.error("Error reading hosts.txt: \(error)")
+          return false
+      }
   }
 }
 

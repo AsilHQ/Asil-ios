@@ -13,50 +13,53 @@ struct PreloadedFavorites {
     func appendPopularEnglishWebsites() -> [FavoriteSite] {
       var list = [FavoriteSite]()
 
-      if let url = URL(string: "https://m.youtube.com") {
-        list.append(FavoriteSite(url: url, title: "YouTube"))
+      if let url = URL(string: "https://quran.com/") {
+        list.append(FavoriteSite(url: url, title: "Quran"))
       }
 
-      if let url = URL(string: "https://www.amazon.com/") {
-        list.append(FavoriteSite(url: url, title: "Amazon"))
+      if let url = URL(string: "https://iou.edu.gm/") {
+        list.append(FavoriteSite(url: url, title: "IOU"))
+      }
+
+      if let url = URL(string: "https://islamqa.info/en") {
+        list.append(FavoriteSite(url: url, title: "Islamqa"))
+      }
+
+      if let url = URL(string: "https://www.youtube.com/") {
+        list.append(FavoriteSite(url: url, title: "Youtube"))
       }
 
       if let url = URL(string: "https://www.wikipedia.org/") {
         list.append(FavoriteSite(url: url, title: "Wikipedia"))
       }
-
-      if let url = URL(string: "https://mobile.twitter.com/") {
-        list.append(FavoriteSite(url: url, title: "Twitter"))
-      }
-
-      if let url = URL(string: "https://reddit.com/") {
-        list.append(FavoriteSite(url: url, title: "Reddit"))
-      }
       return list
     }
 
-    func appendJapaneseWebsites() -> [FavoriteSite] {
-      var list = [FavoriteSite]()
+      func appendPopularBangladeshWebsites() -> [FavoriteSite] {
+        var list = [FavoriteSite]()
 
-      if let url = URL(string: "https://m.youtube.com/") {
-        list.append(FavoriteSite(url: url, title: "YouTube"))
-      }
+        if let url = URL(string: "https://www.rokomari.com/") {
+          list.append(FavoriteSite(url: url, title: "Rokomari"))
+        }
 
-      if let url = URL(string: "https://m.yahoo.co.jp/") {
-        list.append(FavoriteSite(url: url, title: "Yahoo! Japan"))
-      }
+        if let url = URL(string: "https://quran.com/") {
+          list.append(FavoriteSite(url: url, title: "Quran"))
+        }
 
-      if let url = URL(string: "https://brave.com/ja/ntp-tutorial") {
-        list.append(FavoriteSite(url: url, title: "Braveガイド"))
-      }
+        if let url = URL(string: "https://iou.edu.gm/") {
+          list.append(FavoriteSite(url: url, title: "IEO"))
+        }
 
-      if let url = URL(string: "https://mobile.twitter.com/") {
-        list.append(FavoriteSite(url: url, title: "Twitter"))
-      }
+        if let url = URL(string: "https://www.youtube.com/") {
+          list.append(FavoriteSite(url: url, title: "Youtube"))
+        }
 
-      return list
+        if let url = URL(string: "https://www.wafilife.com/") {
+          list.append(FavoriteSite(url: url, title: "Wafilife"))
+        }
+        return list
     }
-
+      
     var preloadedFavorites = [FavoriteSite]()
 
     // Locale consists of language and region, region makes more sense when it comes to setting preloaded websites imo.
@@ -71,12 +74,11 @@ struct PreloadedFavorites {
       // try? list.append(FavoriteSite(url: "https://allegro.pl/".asURL(), title: "Allegro"))
       preloadedFavorites += appendPopularEnglishWebsites()
       break
-    case "JP":
-      preloadedFavorites += appendJapaneseWebsites()
+    case "BD":
+      preloadedFavorites += appendPopularBangladeshWebsites()
     default:
       preloadedFavorites += appendPopularEnglishWebsites()
     }
-
     return preloadedFavorites
   }
 }

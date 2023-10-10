@@ -358,6 +358,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       )
     }
     
+    HostBlockerManager.shared.fetchAndOverwriteHostFile()
+    SafegazeManager.shared.fetchAndOverwriteSafegazeIgnoreFile()
+    
     return shouldPerformAdditionalDelegateHandling
   }
 
