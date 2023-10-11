@@ -13,7 +13,7 @@ import Growth
 import BraveCore
 
 /// Displays shield settings and shield stats for a given URL
-class SafegazeViewController: UIViewController, PopoverContentComponent {
+class KahfTubePopUpViewController: UIViewController, PopoverContentComponent {
 
   let tab: Tab
   private lazy var url: URL? = {
@@ -28,8 +28,8 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
     return _url
   }()
 
-  var shieldsSettingsChanged: ((SafegazeViewController, BraveShield) -> Void)?
-  var showGlobalShieldsSettings: ((SafegazeViewController) -> Void)?
+  var shieldsSettingsChanged: ((KahfTubePopUpViewController, BraveShield) -> Void)?
+  var showGlobalShieldsSettings: ((KahfTubePopUpViewController) -> Void)?
 
   private var statsUpdateObservable: AnyObject?
 
@@ -68,11 +68,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
     }
 
     if let domain = domain {
-<<<<<<< Updated upstream
-      shieldsUpSwitch.isOn = !domain.isSafegazeAllOff(url: url, ignoredDomains: SafegazeManager.ignoredDomains)
-=======
       shieldsUpSwitch.isOn = !domain.isSafegazeAllOff()
->>>>>>> Stashed changes
     } else {
       shieldsUpSwitch.isOn = true
     }
@@ -236,11 +232,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
     }
     
     // Follows the logic in `updateTextWithURL` for formatting
-<<<<<<< Updated upstream
-    let normalizedDisplayHost = URLFormatter.formatURL(url?.withoutWWW.absoluteString ?? "", formatTypes: .omitDefaults, unescapeOptions: []).removeSchemeFromURLString(url?.scheme)
-=======
     let normalizedDisplayHost = URLFormatter.formatURL(url?.withoutWWW.absoluteString ?? "")
->>>>>>> Stashed changes
     
     shieldsView.simpleShieldView.hostLabel.text = normalizedDisplayHost
     shieldsView.reportBrokenSiteView.urlLabel.text = url?.domainURL.absoluteString
@@ -358,7 +350,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
   }
 }
 
-extension SafegazeViewController {
+extension KahfTubePopUpViewController {
   class View: UIView {
 
     private let scrollView = UIScrollView().then {
@@ -383,7 +375,7 @@ extension SafegazeViewController {
       $0.translatesAutoresizingMaskIntoConstraints = false
     }
 
-    let simpleShieldView = SimpleSafegazeView()
+    let simpleShieldView = SimpleKahfTubeView()
     let advancedControlsBar = AdvancedControlsBarView()
     let advancedShieldView = AdvancedShieldsView().then {
       $0.isHidden = true
@@ -426,7 +418,7 @@ extension SafegazeViewController {
   }
 }
 
-extension SafegazeViewController {
+extension KahfTubeViewController {
 
   var closeActionAccessibilityLabel: String {
     return Strings.Popover.closeShieldsMenu

@@ -327,6 +327,18 @@ extension BrowserViewController: WKNavigationDelegate {
         let scriptTypes = tab?.currentPageData?.makeUserScriptTypes(domain: domainForMainFrame) ?? []
         tab?.setCustomUserScript(scripts: scriptTypes)
       }
+        
+      // TODO: Make as safegaze after kids feature
+      if let url = webView.url {
+        if url.absoluteString.contains("youtube.com") {
+            KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+            topToolbar.locationView.configureTabLocationView(isKahfTube: true)
+        } else {
+            topToolbar.locationView.configureTabLocationView(isKahfTube: false)
+        }
+      } else {
+          topToolbar.locationView.configureTabLocationView(isKahfTube: false)
+      }
     }
 
     // Brave Search logic.
