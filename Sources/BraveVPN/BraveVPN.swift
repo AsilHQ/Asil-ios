@@ -6,7 +6,6 @@
 import UIKit
 import Shared
 import BraveShared
-import NetworkExtension
 import Data
 import GuardianConnect
 import os.log
@@ -38,12 +37,6 @@ public class BraveVPN {
     func clearConfiguration() {
       GRDVPNHelper.clearVpnConfiguration()
       clearCredentials()
-
-      /*NEVPNManager.shared().removeFromPreferences { error in
-        if let error = error {
-          logAndStoreError("Remove vpn error: \(error.localizedDescription)")
-        }
-      }*/
     }
     
     if let customCredential = customCredential {
