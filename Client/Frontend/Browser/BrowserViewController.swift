@@ -16,7 +16,6 @@ import CoreData
 import StoreKit
 import SafariServices
 import BraveUI
-import NetworkExtension
 import FeedKit
 import SwiftUI
 import class Combine.AnyCancellable
@@ -746,11 +745,6 @@ public class BrowserViewController: UIViewController {
     }
   }
 
-  @objc func vpnConfigChanged() {
-    // Load latest changes to the vpn.
-    //NEVPNManager.shared().loadFromPreferences { _ in }
-  }
-
   @objc func appDidBecomeActiveNotification() {
     guard let tab = tabManager.selectedTab, tab.isPrivate else {
       return
@@ -861,9 +855,6 @@ public class BrowserViewController: UIViewController {
       $0.addObserver(
         self, selector: #selector(resetNTPNotification),
         name: .adsOrRewardsToggledInSettings, object: nil)
-      $0.addObserver(
-        self, selector: #selector(vpnConfigChanged),
-        name: .NEVPNConfigurationChange, object: nil)
       $0.addObserver(
         self, selector: #selector(updateShieldNotifications),
         name: NSNotification.Name(rawValue: BraveGlobalShieldStats.didUpdateNotification), object: nil)
@@ -3526,7 +3517,7 @@ extension BrowserViewController: PreferencesObserver {
       PrivacyReportsManager.scheduleProcessingBlockedRequests()
       PrivacyReportsManager.scheduleNotification(debugMode: !AppConstants.buildChannel.isPublic)
     case Preferences.PrivacyReports.captureVPNAlerts.key:
-      PrivacyReportsManager.scheduleVPNAlertsTask()
+      return
     case Preferences.Wallet.defaultEthWallet.key:
       tabManager.reset()
       tabManager.reloadSelectedTab()
