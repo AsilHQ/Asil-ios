@@ -10,8 +10,8 @@ struct KahfTubeProfileView: View {
     @ObservedObject private var kahfTubeManager = KahfTubeManager.shared
     let genders = [KahftubeGender.male, KahftubeGender.female, KahftubeGender.child]
     let religionStatus = [KahftubeMode.practicingMuslim, KahftubeMode.liberalMuslim, KahftubeMode.moderateMuslim]
-    @State private var genderSelection: Int = Preferences.KahfTube.gender.value ?? 0
-    @State private var religionSelection: Int = Preferences.KahfTube.mode.value ?? 0
+    @State private var genderSelection: Int = Preferences.KahfTube.gender.value
+    @State private var religionSelection: Int = Preferences.KahfTube.mode.value
     @State private var profileImageUrl: String = Preferences.KahfTube.imageURL.value ?? ""
     @State private var isLoading: Bool = false
     var dismissAction: (() -> Void)?
