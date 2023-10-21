@@ -47,7 +47,7 @@ struct KahfTubeProfileView: View {
                     Section(header: Text("Preferences")) {
                         Picker(selection: $genderSelection, label: Text("Gender")) {
                             ForEach(genders.indices, id: \.self) { index in
-                                Text(genders[index].localizedString).tag(religionStatus[index].rawValue)
+                                Text(genders[index].localizedString).tag(genders[index].rawValue)
                             }
                         }
                         
