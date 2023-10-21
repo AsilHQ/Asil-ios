@@ -8,8 +8,8 @@ import BraveShared
 
 struct KahfTubeProfileView: View {
     @ObservedObject private var kahfTubeManager = KahfTubeManager.shared
-    let genders = ["Male", "Female", "Child"]
-    let religionStatus = ["Practicing Muslim", "Liberal Muslim", "Moderate Muslim"]
+    let genders = [KahftubeGender.male, KahftubeGender.female, KahftubeGender.child]
+    let religionStatus = [KahftubeMode.practicingMuslim, KahftubeMode.liberalMuslim, KahftubeMode.moderateMuslim]
     @State private var genderSelection: Int = Preferences.KahfTube.gender.value ?? 0
     @State private var religionSelection: Int = Preferences.KahfTube.mode.value ?? 0
     @State private var profileImageUrl: String = Preferences.KahfTube.imageURL.value ?? ""
@@ -47,13 +47,13 @@ struct KahfTubeProfileView: View {
                     Section(header: Text("Preferences")) {
                         Picker(selection: $genderSelection, label: Text("Gender")) {
                             ForEach(genders.indices, id: \.self) { index in
-                                Text(genders[index]).tag(index)
+                                Text(genders[index].localizedString).tag(religionStatus[index].rawValue)
                             }
                         }
                         
                         Picker(selection: $religionSelection, label: Text("Religion Status")) {
                             ForEach(religionStatus.indices, id: \.self) { index in
-                                Text(religionStatus[index]).tag(index)
+                                Text(religionStatus[index].localizedString).tag(religionStatus[index].rawValue)
                             }
                         }
                     }
