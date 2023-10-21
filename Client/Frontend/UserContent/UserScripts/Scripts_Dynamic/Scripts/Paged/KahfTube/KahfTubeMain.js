@@ -493,7 +493,7 @@ async function updateMediaItem(node) {
   }
 }
 
-function show_loading_indicator(node) {
+function show_loading_indicator() {
     const div1 = document.createElement("div");
     div1.classList.add("caution-element");
     div1.classList.add("kahf-tube-loading-indicator");
@@ -506,7 +506,7 @@ function show_loading_indicator(node) {
          <div class="bar5"></div>
          <div class="bar6"></div>
        </div> `
-    node.append(div1)
+    return div1;
 }
 
 function updateCautionView(
