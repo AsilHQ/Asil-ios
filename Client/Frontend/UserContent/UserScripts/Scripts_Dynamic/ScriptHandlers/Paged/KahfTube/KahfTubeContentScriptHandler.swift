@@ -49,7 +49,7 @@ class KahftubeContentScriptHandler: TabContentScript {
   }
   
   func userContentController(_ userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage, replyHandler: @escaping (Any?, String?) -> Void) {
-    guard let tab = tab, let currentTabURL = tab.webView?.url else {
+    guard let tab = tab else {
       assertionFailure("Should have a tab set")
       return
     }
@@ -61,7 +61,14 @@ class KahftubeContentScriptHandler: TabContentScript {
     }
     
     if let dict = message.body as? [String: Any], let message = dict["state"] as? String {
-      print("Kahf Tube: " + message)
+        if message.contains("fetchYtInitialData") {
+            let messageArray = message.components(separatedBy: " ")
+            if messageArray.count == 3 {
+                KahfTubeManager.shared.myQueue.enqueue(ReplaceVideo(id: messageArray[1], href: messageArray[2]))
+            }
+        } else {
+            print("Kahf Tube Main: " + message)
+        }
     }
   }
 }

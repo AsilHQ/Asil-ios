@@ -188,7 +188,7 @@ extension Preferences {
     
   public final class KahfTube {
       public static let isOn = Option<Bool>(key: "kahfTube.isOn", default: false)
-      public static let token = Option<String?>(key: "kahfTube.token", default: nil)
+      public static let token = Option<String>(key: "kahfTube.token", default: "296|y4AAmzzmIPN4rXydWoFBs60XWMIg58rA8aVhjp30")
       public static let username = Option<String?>(key: "kahfTube.username", default: nil)
       public static let email = Option<String?>(key: "kahfTube.email", default: nil)
       public static let gender = Option<Int>(key: "kahfTube.gender", default: 2)

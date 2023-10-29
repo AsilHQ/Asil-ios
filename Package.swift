@@ -165,6 +165,7 @@ let package = Package(
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/KahfTube/KahfTubeEmail.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/KahfTube/KahfTubeMain.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/KahfTube/KahfTubeUnsubscribe.js"),
+        .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/KahfTube/KahfTubeYtData.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/KahfTube/content.css"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/HostBlocker/hosts.txt"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/Safegaze/safegazeIgnore.txt"),

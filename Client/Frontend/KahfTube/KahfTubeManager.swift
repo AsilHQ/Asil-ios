@@ -16,6 +16,8 @@ public class KahfTubeManager: ObservableObject {
     @Published var haramChannelsMap: [[String: Any]] = [[String: Any]]()
     @Published var channelsFetched: Bool = false
     @Published var newUserRefreshNeeded = false
+    @Published var myQueue = Queue<ReplaceVideo>()
+    @Published var videosList = [ReplaceVideo]()
     
     public func startKahfTube(view: UIView, webView: WKWebView, vc: UIViewController) {
         KahfTubeManager.webView = webView
@@ -51,7 +53,7 @@ public class KahfTubeManager: ObservableObject {
     
     func saveYoutubeInformations(dict: [String: Any]) {
         if let email = dict["email"] as? String, let name = dict["name"] as? String, let imgSrc = dict["imgSrc"] as? String {
-            if email != Preferences.KahfTube.email.value || Preferences.KahfTube.token.value == nil || Preferences.KahfTube.token.value == "" || Preferences.KahfTube.imageURL.value != imgSrc {
+            if email != Preferences.KahfTube.email.value || Preferences.KahfTube.imageURL.value != imgSrc {
                 KahfTubeManager.shared.newUserRefreshNeeded = true
                 self.closeVideoPreviews()
                 webRepository.authSession(email: email, name: name) { dict, error in
@@ -62,7 +64,7 @@ public class KahfTubeManager: ObservableObject {
                     }
                 }
             } else {
-                print("Kahf Tube: Already signed-in \(Preferences.KahfTube.token.value ?? "non-Token")")
+                print("Kahf Tube: Already signed-in \(Preferences.KahfTube.token.value )")
                 KahfTubeManager.shared.newUserRefreshNeeded = false
                 closeVideoPreviews()
             }
@@ -71,7 +73,6 @@ public class KahfTubeManager: ObservableObject {
             print("Kahf Tube: Anonymous user")
         }
     }
-    
     
     public func reload() {
         DispatchQueue.main.async {
@@ -183,6 +184,49 @@ public class KahfTubeManager: ObservableObject {
         }
     }
     
+    func loadYtScript(id: String) {
+        Erik.visit(url: URL(string: "https://m.youtube.com//watch?v=\(id)")!) { object, error in
+            if let script = self.loadUserScript(named: "KahfTubeYtData") {
+                Erik.evaluate(javaScript: script) { object, error in
+                    if let error = error {
+                        print("Kahf Tube: \(error)")
+                    } else {
+                        Erik.sharedInstance.layoutEngine.changeAgent(agentType: UserAgent.mobile)
+                    }
+                }
+            }
+        }
+    }
+    
+    func ytCompletion(lengthSeconds: String, url: String, viewCount: String) {
+        if var video = myQueue.dequeue() {
+            video.thumbnail = url
+            video.timeline = lengthSeconds
+            video.views = "\(viewCount) views"
+            do {
+                let encoder = JSONEncoder()
+                let jsonData = try encoder.encode(video)
+                
+                if let jsonString = String(data: jsonData, encoding: .utf8) {
+                    let jsString = """
+                        window.apiResponses["\(video.href)"].metaData = \(jsonString);
+                        globalCallbackFunction("\(video.href)");
+                    """
+                    
+                    KahfTubeManager.webView?.evaluateSafeJavaScript(functionName: jsString, contentWorld: .page, asFunction: false) { object, error in
+                        if let error = error {
+                            print("Kahf Tube:** Filter \(error)")
+                        }
+                    }
+                }
+            } catch {
+                print("Error encoding to JSON: \(error)")
+            }
+
+            videosList.append(video)
+        }
+    }
+    
     func loadUserScript(named: String) -> String? {
       guard let path = Bundle.module.path(forResource: named, ofType: "js"),
             let source: String = try? String(contentsOfFile: path) else {
@@ -202,7 +246,7 @@ public class KahfTubeManager: ObservableObject {
         Preferences.KahfTube.email.value = nil
         Preferences.KahfTube.username.value = nil
         Preferences.KahfTube.imageURL.value = nil
-        Preferences.KahfTube.token.value = nil
+        Preferences.KahfTube.token.value = "296|y4AAmzzmIPN4rXydWoFBs60XWMIg58rA8aVhjp30"
     }
     
     func login(email: String, token: String, imgSrc: String, name: String) {
@@ -213,10 +257,36 @@ public class KahfTubeManager: ObservableObject {
     }
 }
 
-struct Channel: Identifiable, Hashable, Encodable {
-    var id: String
-    var name: String
-    var thumbnail: String
-    var isHaram: Bool
-    var isUnsubscribed: Bool
+struct Queue<Element> {
+    private var elements: [ReplaceVideo] = []
+    
+    var isEmpty: Bool {
+        return elements.isEmpty
+    }
+    
+    mutating func enqueue(_ element: ReplaceVideo) {
+        elements.append(element)
+        if elements.count == 1 {
+            KahfTubeManager.shared.loadYtScript(id: element.id)
+        }
+    }
+    
+    mutating func dequeue() -> ReplaceVideo? {
+        guard !isEmpty else {
+            return nil
+        }
+        
+        let removedElement = elements.removeFirst()
+        
+        if let element = elements.first {
+            KahfTubeManager.shared.loadYtScript(id: element.id)
+            return removedElement
+        } else {
+            return nil
+        }
+    }
+    
+    func peek() -> ReplaceVideo? {
+        return elements.first
+    }
 }

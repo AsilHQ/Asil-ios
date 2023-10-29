@@ -55,6 +55,7 @@ let JavascriptEmailHandler = "emailHandler"
 let JavascriptLogHandler = "logHandler"
 let JavascriptUnsubscribeHandler = "getUnsubscribedChannelsHandler"
 let JavascriptGetChannelsHandler = "getChannelsHandler"
+let JavascriptYtDataHandler = "ytDataHandler"
 
 // Protocole which define a navigate boolean
 // Useful to know if currently in navigation processs
@@ -158,6 +159,7 @@ open class WebKitLayoutEngine: NSObject, LayoutEngine {
         self.webView.configuration.userContentController.add(self, name: JavascriptUnsubscribeHandler)
         self.webView.configuration.userContentController.add(self, name: JavascriptGetChannelsHandler)
         self.webView.configuration.userContentController.add(self, name: JavascriptLogHandler)
+        self.webView.configuration.userContentController.add(self, name: JavascriptYtDataHandler)
         if self.webView.navigationDelegate == nil {
             let delegate = LayoutEngineNavigationDelegate()
             self.webView.navigationDelegate = delegate
@@ -422,6 +424,10 @@ extension WebKitLayoutEngine: WKScriptMessageHandler {
                 KahfTubeManager.shared.askUserToUnsubscribe(channels: message)
             } else {
                 KahfTubeManager.shared.askUserToUnsubscribe()
+            }
+        } else if message.name == JavascriptYtDataHandler, let message = message.body as? Dictionary<String, Any> {
+            if let lengthSeconds = message["lengthSeconds"] as? String, let url = message["url"] as? String, let viewCount = message["viewCount"] as? String {
+                KahfTubeManager.shared.ytCompletion(lengthSeconds: lengthSeconds, url: url, viewCount: viewCount)
             }
         }
     }
