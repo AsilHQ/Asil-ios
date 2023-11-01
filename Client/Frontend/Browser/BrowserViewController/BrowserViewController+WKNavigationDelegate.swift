@@ -734,7 +734,7 @@ extension BrowserViewController: WKNavigationDelegate {
               
               if components.count >= 2 {
                   let domain = components[1]
-                  if host.hasSuffix(domain) {
+                  if host == domain {
                       return true
                   }
               }

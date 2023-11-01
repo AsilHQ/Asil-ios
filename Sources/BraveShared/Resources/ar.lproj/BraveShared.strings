@@ -139,7 +139,7 @@
 /* No comment provided by engineer. */
 "BraveShieldsAdvancedControls" = "ضوابط متقدمة";
 /* No comment provided by engineer. */
-"BraveShieldsAndPrivacy" = "Asil Browser Kalkanları والخصوصية";
+"BraveShieldsAndPrivacy" = "دروع متصفح Asil والخصوصية";
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "تم حظر الإعلانات والمتتبعين";
 /* "The number of sinful acts avoided will be next to this" */
@@ -201,7 +201,7 @@
 /* Title for Default Browser Full Screen Callout */
 "callout.defaultBrowserTitle" = "الأمان. أصبح أسهل الآن.";
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "يمكنك مساعدتنا في معرفة الخصائص الأكثر استخدامًا في Asil Browser بهذه الطريقة. يمكنك تغيير هذا التفضيل في أي وقت من خلال \"Asil Browser Kalkanları والخصوصية\" في إعدادات Asil Browser.";
+"callout.p3aCalloutDescription" = "يمكنك مساعدتنا في معرفة الخصائص الأكثر استخدامًا في متصفح Asil بهذه الطريقة. يمكنك تغيير هذا التفضيل في أي وقت من خلال 'إعدادات متصفح Asil والخصوصية'."
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "اعرف المزيد عن تحليلات الخصوصية المحفوظة (P3A).";
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
