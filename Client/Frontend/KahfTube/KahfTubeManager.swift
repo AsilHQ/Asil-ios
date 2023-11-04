@@ -107,7 +107,7 @@ public class KahfTubeManager: ObservableObject {
         }
         if kidsModeErik == nil {
             let newKidsModeErikWebView = WKWebView(frame: CGRect(x: view.bounds.center.x, y: view.bounds.center.y, width: view.bounds.width * 0.5, height: view.bounds.height * 0.5))
-            newKidsModeErikWebView.isHidden = false
+            newKidsModeErikWebView.isHidden = true
             view.addSubview(newKidsModeErikWebView)
             kidsModeErikWebView = newKidsModeErikWebView
             kidsModeErik = Erik(webView: kidsModeErikWebView)
