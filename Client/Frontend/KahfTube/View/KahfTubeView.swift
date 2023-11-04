@@ -23,7 +23,7 @@ public struct KahfTubeView: View {
     }
     
     private var visibleScreen: VisibleScreen {
-        if Preferences.KahfTube.token.value == nil || Preferences.KahfTube.token.value == "" {
+        if Preferences.KahfTube.username.value == nil || Preferences.KahfTube.username.value == "" {
             return .onboarding
         } else {
             return .profile

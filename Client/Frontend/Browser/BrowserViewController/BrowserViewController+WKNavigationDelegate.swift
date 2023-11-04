@@ -316,7 +316,7 @@ extension BrowserViewController: WKNavigationDelegate {
           // This script will track what is blocked and increase stats
           .trackerProtectionStats: url.isWebPage(includeDataURIs: false) &&
                                    domainForMainFrame.isShieldExpected(.AdblockAndTp, considerAllShieldsOption: true),
-          
+          .kahfTube: domainForMainFrame.isKahfTubeOn(),
           .safegaze: url.isWebPage(includeDataURIs: false) && !domainForMainFrame.isSafegazeAllOff(url: url, ignoredDomains: SafegazeManager.ignoredDomains)
         ])
       }
@@ -657,6 +657,8 @@ extension BrowserViewController: WKNavigationDelegate {
       if let url = webView.url {
           if url.absoluteString.contains("youtube.com") {
               KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+          } else {
+              KahfTubeManager.shared.closeKahfTubeTools()
           }
       }
     }

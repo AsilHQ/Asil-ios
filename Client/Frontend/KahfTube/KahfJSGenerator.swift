@@ -14,9 +14,9 @@ class KahfJSGenerator {
         return """
                 new MutationObserver(async (mutationList, observer) => {
                   if (!mode || !gender) {
-                    mode = \(Preferences.KahfTube.mode.value ?? 1);
-                    gender = \(Preferences.KahfTube.gender.value ?? 0);
-                    token = "\(Preferences.KahfTube.token.value ?? "296|y4AAmzzmIPN4rXydWoFBs60XWMIg58rA8aVhjp30")";
+                    mode = \(Preferences.KahfTube.mode.value);
+                    gender = \(Preferences.KahfTube.gender.value);
+                    token = "\(Preferences.KahfTube.token.value)";
                   }
 
                   console.log(location.href);
@@ -48,9 +48,9 @@ class KahfJSGenerator {
 
     func getChannelStarterJS() -> String {
         return """
-         let mode = \(Preferences.KahfTube.mode.value ?? 1);
-         let gender = \(Preferences.KahfTube.gender.value ?? 0);
-         let token = "\(Preferences.KahfTube.token.value ?? "296|y4AAmzzmIPN4rXydWoFBs60XWMIg58rA8aVhjp30")";
+         let mode = \(Preferences.KahfTube.mode.value);
+         let gender = \(Preferences.KahfTube.gender.value);
+         let token = "\(Preferences.KahfTube.token.value)";
         """
     }
     

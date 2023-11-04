@@ -9,10 +9,12 @@ import BraveCore
 import Combine
 
 public class KahfTubeViewController: UIHostingController<KahfTubeView> {
+    var dismissAction: (() -> Void)?
     
     public init() {
         super.init(rootView: KahfTubeView())
         rootView.dismissAction = { [unowned self] in
+          dismissAction?()
           self.dismiss(animated: true)
         }
     }
