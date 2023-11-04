@@ -62,9 +62,9 @@ class KahftubeContentScriptHandler: TabContentScript {
     
     if let dict = message.body as? [String: Any], let message = dict["state"] as? String {
         if message.contains("fetchYtInitialData") {
-            let messageArray = message.components(separatedBy: " ")
-            if messageArray.count == 3 {
-                KahfTubeManager.shared.myQueue.enqueue(ReplaceVideo(id: messageArray[1], href: messageArray[2]))
+            let messageArray = message.components(separatedBy: "/-/")
+            if messageArray.count == 4 {
+                KahfTubeManager.shared.myQueue.enqueue(ReplaceVideo(id: messageArray[1], href: messageArray[2], body: messageArray[3]))
             }
         } else {
             print("Kahf Tube Main: " + message)

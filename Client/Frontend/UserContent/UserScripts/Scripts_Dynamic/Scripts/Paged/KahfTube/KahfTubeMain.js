@@ -105,7 +105,12 @@ setInterval(() => {
 }, 0);
 
 window.apiResponses = {};
-window.globalCallbackFunction = function(newHref) {
+window.globalCallbackFunction = function(newHref, metadata, object) {
+    window.apiResponses[newHref] = {
+        ...object,
+        type: "recommended",
+        metaData: metadata,
+    };
     for (let index = 0; index < videoList.length; index++) {
       const thumbnail = videoList[index].children?.item(0);
       const href = thumbnail?.getAttribute("href");
@@ -489,6 +494,7 @@ async function updateMediaItem(node) {
       if (image.getAttribute("src") != response.metaData.thumbnail) {
         image?.removeAttribute("src");
         image?.setAttribute("src", response.metaData.thumbnail);
+        updateLoadingView(imageUrl, thumbnail);
       }
       if (thumbnail.href !== response.url) {
         apiResponses[response.url] = response;
@@ -530,7 +536,6 @@ async function updateMediaItem(node) {
       if (timeLine.textContent !== response.metaData["timeline"]) {
         timeLine.textContent = response.metaData["timeline"];
       }
-      updateLoadingView(imageUrl, thumbnail);
     }
   }
 }
@@ -689,11 +694,7 @@ function updateApiResponse(hrefs, chrefs, callback) {
           let relatedIndex = 0;
           for (const href of hrefs) {
             if (gender == 4) {
-              sendMessage("fetchYtInitialData " + response?.data[recommendIndex].id + " " + href);
-              apiResponses[href] = {
-                ...response?.data[recommendIndex],
-                type: "recommended",
-              };
+              sendMessage("fetchYtInitialData/-/" + response?.data[recommendIndex].id + "/-/" + href + "/-/ " + JSON.stringify(response?.data[recommendIndex]));
               recommendIndex = recommendIndex + 1;
             } else {
               const fIndex = response?.data?.findIndex((el) =>

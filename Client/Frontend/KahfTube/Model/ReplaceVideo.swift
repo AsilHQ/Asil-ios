@@ -11,10 +11,12 @@ struct ReplaceVideo: Codable {
     var thumbnail: String?
     var timeline: String?
     var views: String?
+    var body: String?
     
-    init(id: String, href: String) {
+    init(id: String, href: String, body: String) {
         self.id = id
         self.href = href
+        self.body = body
     }
     
     func encode(to encoder: Encoder) throws {

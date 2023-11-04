@@ -206,13 +206,10 @@ public class KahfTubeManager: ObservableObject {
             do {
                 let encoder = JSONEncoder()
                 let jsonData = try encoder.encode(video)
-                
-                if let jsonString = String(data: jsonData, encoding: .utf8) {
+                if let jsonString = String(data: jsonData, encoding: .utf8), let body = video.body {
                     let jsString = """
-                        window.apiResponses["\(video.href)"].metaData = \(jsonString);
-                        globalCallbackFunction("\(video.href)");
+                        globalCallbackFunction("\(video.href)",\(jsonString),\(body));
                     """
-                    
                     KahfTubeManager.webView?.evaluateSafeJavaScript(functionName: jsString, contentWorld: .page, asFunction: false) { object, error in
                         if let error = error {
                             print("Kahf Tube:** Filter \(error)")
