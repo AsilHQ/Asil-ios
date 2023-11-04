@@ -67,7 +67,6 @@ function check_mode(response_mode, mode) {
 }
 
 function can_see(response) {
-  sendMessage("can_see")
   return (
     check_gender(response.permissible_for.value, gender) &&
     check_mode(response.practicing_level.value, mode)
@@ -232,8 +231,6 @@ function updateFeaturedVideo() {
     let ogImage = image?.lazyData?.sources?.find((el) =>
       el["url"].includes("mqdefault")
     );
-    sendMessage(ogImage);
-    sendMessage("ogImage");
     ogImage = ogImage ?? image?.lazyData?.sources[0];
     imageUrls[href] = ogImage?.url;
     const cUrl = document.querySelector("ytm-c4-tabbed-header-renderer")?.data?.channelId;
@@ -750,6 +747,9 @@ function updateApiResponse(hrefs, chrefs, callback) {
                 }
               }
             }
+          }
+          if (gender !== 4) {
+            callback()
           }
         } catch (error) {
           // console.log(error);
