@@ -657,6 +657,8 @@ extension BrowserViewController: WKNavigationDelegate {
       if let url = webView.url {
           if url.absoluteString.contains("youtube.com") {
               KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+          } else {
+              KahfTubeManager.shared.closeKahfTubeTools()
           }
       }
     }

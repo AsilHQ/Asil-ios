@@ -12,6 +12,10 @@ public class KahfTubeManager: ObservableObject {
     public static let shared = KahfTubeManager()
     private let webRepository = KahfTubeWebRepository.shared
     private static var webView: WKWebView?
+    private var kidsModeErik: Erik? // Use for only kids mode video operations
+    private var generalErik: Erik? // General use for email login logout operations
+    private var generalErikWebView: WKWebView?
+    private var kidsModeErikWebView: WKWebView?
     @Published var haramChannels: [Channel] = [Channel]()
     @Published var haramChannelsMap: [[String: Any]] = [[String: Any]]()
     @Published var channelsFetched: Bool = false
@@ -23,13 +27,13 @@ public class KahfTubeManager: ObservableObject {
         KahfTubeManager.webView = webView
         print("Kahf Tube: User is on a YouTube page")
         if Preferences.KahfTube.isOn.value {
-            getUserInformationsFromYoutube(view: view, webView: webView)
+            getUserInformationsFromYoutube(view: view)
         } else {
             let refreshAlert = UIAlertController(title: "Kahf Tube", message: "Kahf Tube wants your permission to access your Youtube email and name to use Youtube Fitration feature.", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Allow", style: .default, handler: { (action: UIAlertAction!) in
                 Preferences.KahfTube.isOn.value = true
-                self.getUserInformationsFromYoutube(view: view, webView: webView)
+                self.getUserInformationsFromYoutube(view: view)
             }))
 
             refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
@@ -40,14 +44,19 @@ public class KahfTubeManager: ObservableObject {
         }
     }
     
-    func getUserInformationsFromYoutube(view: UIView, webView: WKWebView) {
-        let hiddenView = WKWebView(frame: CGRect(width: view.bounds.width, height: view.bounds.height - 100))
-        hiddenView.isHidden = true
-        view.addSubview(hiddenView)
-        let erik = Erik(webView: hiddenView)
-        Erik.sharedInstance = erik
-        erik.visit(url: URL(string: "https://m.youtube.com/")!) { object, error in
-            self.getEmail(erik: erik)
+    public func closeKahfTubeTools() {
+        if kidsModeErik != nil {
+            myQueue.clear()
+            kidsModeErik = nil
+            kidsModeErikWebView?.removeFromSuperview()
+            kidsModeErikWebView = nil
+        }
+    }
+    
+    func getUserInformationsFromYoutube(view: UIView) {
+        initializeEriks(view: view)
+        Erik.sharedInstance.visit(url: URL(string: "https://m.youtube.com/")!) { object, error in
+            self.getEmail(erik: Erik.sharedInstance)
         }
     }
     
@@ -84,6 +93,24 @@ public class KahfTubeManager: ObservableObject {
     public func refreshYoutube() {
         DispatchQueue.main.async {
             KahfTubeManager.webView?.load(URLRequest(url: URL(string: "https://m.youtube.com/")!))
+        }
+    }
+    
+    private func initializeEriks(view: UIView) {
+        if generalErik == nil {
+            let newGeneralErikWebView = WKWebView(frame: CGRect(x: view.bounds.center.x, y: view.bounds.center.y, width: view.bounds.width * 0.5, height: view.bounds.height * 0.5))
+            newGeneralErikWebView.isHidden = true
+            view.addSubview(newGeneralErikWebView)
+            generalErikWebView = newGeneralErikWebView
+            Erik.sharedInstance = Erik(webView: generalErikWebView)
+            generalErik = Erik.sharedInstance
+        }
+        if kidsModeErik == nil {
+            let newKidsModeErikWebView = WKWebView(frame: CGRect(x: view.bounds.center.x, y: view.bounds.center.y, width: view.bounds.width * 0.5, height: view.bounds.height * 0.5))
+            newKidsModeErikWebView.isHidden = false
+            view.addSubview(newKidsModeErikWebView)
+            kidsModeErikWebView = newKidsModeErikWebView
+            kidsModeErik = Erik(webView: kidsModeErikWebView)
         }
     }
     
@@ -185,13 +212,11 @@ public class KahfTubeManager: ObservableObject {
     }
     
     func loadYtScript(id: String) {
-        Erik.visit(url: URL(string: "https://m.youtube.com//watch?v=\(id)")!) { object, error in
+        kidsModeErik?.visit(url: URL(string: "https://m.youtube.com//watch?v=\(id)")!) { object, error in
             if let script = self.loadUserScript(named: "KahfTubeYtData") {
-                Erik.evaluate(javaScript: script) { object, error in
+                self.kidsModeErik?.evaluate(javaScript: script) { object, error in
                     if let error = error {
                         print("Kahf Tube: \(error)")
-                    } else {
-                        Erik.sharedInstance.layoutEngine.changeAgent(agentType: UserAgent.mobile)
                     }
                 }
             }
@@ -285,5 +310,9 @@ struct Queue<Element> {
     
     func peek() -> ReplaceVideo? {
         return elements.first
+    }
+    
+    mutating func clear() {
+        elements = []
     }
 }
