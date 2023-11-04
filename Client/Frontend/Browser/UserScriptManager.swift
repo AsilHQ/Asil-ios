@@ -166,10 +166,11 @@ class UserScriptManager {
         scripts.remove(.safegaze)
         scriptController.addUserScript(script)
       }
-        
-      if scripts.contains(.kahfTube), let script = self.dynamicScripts[.kahfTube] {
-          scripts.remove(.kahfTube)
-          scriptController.addUserScript(script)
+       
+      // ALWAYS fetch updated script
+      if scripts.contains(.kahfTube), let script = KahftubeContentScriptHandler.userScript {
+        scripts.remove(.kahfTube)
+        scriptController.addUserScript(script)
       }
       
       // Inject all static scripts

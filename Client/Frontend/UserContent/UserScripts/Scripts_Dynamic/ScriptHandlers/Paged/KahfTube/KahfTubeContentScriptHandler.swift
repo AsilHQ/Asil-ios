@@ -26,11 +26,11 @@ class KahftubeContentScriptHandler: TabContentScript {
   static let scriptId = UUID().uuidString
   static let messageHandlerName = "kahfTubeMessageHandler"
   static let scriptSandbox: WKContentWorld = .page
-  static let userScript: WKUserScript? = {
-    guard var script = loadUserScript(named: scriptName) else {
+  static var userScript: WKUserScript? {
+    guard let script = loadUserScript(named: scriptName) else {
       return nil
     }
-    guard var cssScript = loadUserStyle(named: "content", cssStyleName: "kahfTubeStyle") else {
+    guard let cssScript = loadUserStyle(named: "content", cssStyleName: "kahfTubeStyle") else {
       return nil
     }
     let newScript = cssScript + KahfJSGenerator.shared.getFilterJS() + script
@@ -40,8 +40,7 @@ class KahftubeContentScriptHandler: TabContentScript {
                                injectionTime: .atDocumentEnd,
                                forMainFrameOnly: false,
                                in: scriptSandbox)
-  }()
-    
+  }
   private weak var tab: Tab?
   
   init(tab: Tab) {
@@ -49,7 +48,7 @@ class KahftubeContentScriptHandler: TabContentScript {
   }
   
   func userContentController(_ userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage, replyHandler: @escaping (Any?, String?) -> Void) {
-    guard let tab = tab else {
+      guard tab != nil else {
       assertionFailure("Should have a tab set")
       return
     }

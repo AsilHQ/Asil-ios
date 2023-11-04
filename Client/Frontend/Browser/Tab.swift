@@ -1068,6 +1068,8 @@ extension Tab {
     if customUserScripts != scripts {
       customUserScripts = scripts
       updateInjectedScripts()
+    } else if let url = url?.absoluteString, url.contains("youtube.com") {
+      updateInjectedScripts()  //Update KahfTubeMain.js script for Prefences update
     }
   }
   
