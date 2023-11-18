@@ -426,8 +426,11 @@ extension WebKitLayoutEngine: WKScriptMessageHandler {
                 KahfTubeManager.shared.askUserToUnsubscribe()
             }
         } else if message.name == JavascriptYtDataHandler, let message = message.body as? Dictionary<String, Any> {
-            if let lengthSeconds = message["lengthSeconds"] as? String, let url = message["url"] as? String, let viewCount = message["viewCount"] as? String {
-                KahfTubeManager.shared.ytCompletion(lengthSeconds: lengthSeconds, url: url, viewCount: viewCount)
+            if let lengthSeconds = message["lengthSeconds"] as? String,
+               let url = message["url"] as? String,
+               let viewCount = message["viewCount"] as? String,
+               let erikId = message["erikId"] as? Int {
+                KahfTubeManager.shared.ytCompletion(lengthSeconds: lengthSeconds, url: url, viewCount: viewCount, erikId: erikId)
             }
         }
     }

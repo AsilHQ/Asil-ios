@@ -6,7 +6,7 @@ if (ytplayer.bootstrapPlayerResponse) {
   const url = ytplayer.bootstrapPlayerResponse.videoDetails.thumbnail.thumbnails[1].url;
   const lengthSeconds = fancyTimeFormat(ytplayer.bootstrapPlayerResponse.videoDetails.lengthSeconds);
   const viewCount = abbreviateNumber(ytplayer.bootstrapPlayerResponse.videoDetails.viewCount);
-  const returnValues = { url , lengthSeconds, viewCount };
+  const returnValues = { url , lengthSeconds, viewCount, erikId };
   window.webkit.messageHandlers.ytDataHandler.postMessage(returnValues);
 }
 
