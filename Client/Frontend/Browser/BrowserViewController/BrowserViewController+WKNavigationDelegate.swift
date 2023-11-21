@@ -162,6 +162,23 @@ extension BrowserViewController: WKNavigationDelegate {
     guard let url = navigationAction.request.url else {
       return (.cancel, preferences)
     }
+      
+    if let urlString = navigationAction.request.url?.absoluteString {
+      if urlString.starts(with: "https://www.youtube.com") {
+          let modifiedURLString = urlString.replacingOccurrences(of: "www", with: "m")
+          let modifiedURL = URL(string: modifiedURLString)
+          let modifiedRequest = URLRequest(url: modifiedURL!)
+          webView.load(modifiedRequest)
+          return (.cancel, preferences)
+      }
+    
+      if urlString.contains("continue=https://m.youtube.com") && !urlString.contains("?noapp=1") {
+          let modifiedURL = URL(string: "https://m.youtube.com/?noapp=1")
+          let modifiedRequest = URLRequest(url: modifiedURL!)
+          webView.load(modifiedRequest)
+          return (.cancel, preferences)
+      }
+    }
 
     if InternalURL.isValid(url: url) {
       if navigationAction.navigationType != .backForward, navigationAction.isInternalUnprivileged {
