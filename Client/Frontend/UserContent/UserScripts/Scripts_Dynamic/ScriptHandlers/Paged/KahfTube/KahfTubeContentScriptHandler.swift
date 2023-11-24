@@ -63,7 +63,9 @@ class KahftubeContentScriptHandler: TabContentScript {
         if message.contains("fetchYtInitialData") {
             let messageArray = message.components(separatedBy: "/-/")
             if messageArray.count == 4 {
-                KahfTubeManager.shared.myQueue.enqueue(ReplaceVideo(id: messageArray[1], href: messageArray[2], body: messageArray[3]))
+                let video =  ReplaceVideo(id: messageArray[1], href: messageArray[2], body: messageArray[3])
+                KahfTubeManager.shared.videosList.append(video)
+                KahfTubeManager.shared.loadYtScript(video: video)
             }
         } else {
             print("Kahf Tube Main: " + message)
