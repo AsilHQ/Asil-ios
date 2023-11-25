@@ -162,8 +162,7 @@ extension BrowserViewController: WKNavigationDelegate {
     guard let url = navigationAction.request.url else {
       return (.cancel, preferences)
     }
-    
-    print("Url absoluteString \(url.absoluteString)")
+
     if url.absoluteString.starts(with: "https://www.youtube.com/signin") {
       let modifiedURLString = url.absoluteString.replacingOccurrences(of: "www", with: "m")
       let modifiedURL = URL(string: modifiedURLString)
