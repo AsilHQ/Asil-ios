@@ -12,17 +12,13 @@ public class KahfTubeManager: ObservableObject {
     public static let shared = KahfTubeManager()
     private let webRepository = KahfTubeWebRepository.shared
     private static var webView: WKWebView?
-    private var kidsModeErik: Erik? // Use for only kids mode video operations
-    private var kidsModeErik2: Erik?
     private var generalErik: Erik? // General use for email login logout operations
     private var generalErikWebView: WKWebView?
-    private var kidsModeErikWebView: WKWebView?
-    private var kidsModeErik2WebView: WKWebView?
+    private var parentView: UIView?
     @Published var haramChannels: [Channel] = [Channel]()
     @Published var haramChannelsMap: [[String: Any]] = [[String: Any]]()
     @Published var channelsFetched: Bool = false
     @Published var newUserRefreshNeeded = false
-    @Published var myQueue = Queue<ReplaceVideo>()
     @Published var videosList = [ReplaceVideo]()
     
     public func startKahfTube(view: UIView, webView: WKWebView, vc: UIViewController) {
@@ -43,18 +39,6 @@ public class KahfTubeManager: ObservableObject {
             }))
             
             vc.present(refreshAlert, animated: true, completion: nil)
-        }
-    }
-    
-    public func closeKahfTubeTools() {
-        if kidsModeErik != nil {
-            myQueue.clear()
-            kidsModeErik = nil
-            kidsModeErik2 = nil
-            kidsModeErikWebView?.removeFromSuperview()
-            kidsModeErik2WebView?.removeFromSuperview()
-            kidsModeErikWebView = nil
-            kidsModeErik2WebView = nil
         }
     }
     
@@ -102,6 +86,7 @@ public class KahfTubeManager: ObservableObject {
     }
     
     private func initializeEriks(view: UIView) {
+        self.parentView = view
         if generalErik == nil {
             let newGeneralErikWebView = WKWebView(frame: CGRect(x: view.bounds.center.x, y: view.bounds.center.y, width: view.bounds.width * 0.5, height: view.bounds.height * 0.5))
             newGeneralErikWebView.isHidden = true
@@ -109,20 +94,6 @@ public class KahfTubeManager: ObservableObject {
             generalErikWebView = newGeneralErikWebView
             Erik.sharedInstance = Erik(webView: generalErikWebView)
             generalErik = Erik.sharedInstance
-        }
-        if kidsModeErik == nil {
-            let newKidsModeErikWebView = WKWebView(frame: CGRect(x: view.bounds.center.x, y: view.bounds.center.y, width: view.bounds.width * 0.5, height: view.bounds.height * 0.5))
-            newKidsModeErikWebView.isHidden = true
-            view.addSubview(newKidsModeErikWebView)
-            kidsModeErikWebView = newKidsModeErikWebView
-            kidsModeErik = Erik(webView: kidsModeErikWebView)
-        }
-        if kidsModeErik2 == nil {
-            let newKidsModeErikWebView = WKWebView(frame: CGRect(x: 0, y: view.bounds.center.y, width: view.bounds.width * 0.5, height: view.bounds.height * 0.5))
-            newKidsModeErikWebView.isHidden = true
-            view.addSubview(newKidsModeErikWebView)
-            kidsModeErik2WebView = newKidsModeErikWebView
-            kidsModeErik2 = Erik(webView: kidsModeErik2WebView)
         }
     }
     
@@ -223,17 +194,18 @@ public class KahfTubeManager: ObservableObject {
         }
     }
     
-    func loadYtScript(id: String, erikId: Int) {
-        var erik: Erik?
-        if erikId == 1 {
-            erik = kidsModeErik
-        } else if erikId == 2  {
-            erik = kidsModeErik2
-        }
-        erik?.visit(url: URL(string: "https://m.youtube.com//watch?v=\(id)")!) { object, error in
-            let erikIdScript = "const erikId  = \(erikId);"
+    func loadYtScript(video: ReplaceVideo) {
+        let newKidsModeErikWebView = WKWebView(frame: .zero)
+        newKidsModeErikWebView.tag = -1111
+        newKidsModeErikWebView.isHidden = true
+        parentView?.addSubview(newKidsModeErikWebView)
+        let newErik = Erik(webView: newKidsModeErikWebView)
+        let videoId = video.id
+        let videoString = "\(videoId)"
+        let videoIdScript = "const videoId = '\(videoString)';"
+        newErik.visit(url: URL(string: "https://m.youtube.com//watch?v=\(videoId)")!) { object, error in
             if let script = self.loadUserScript(named: "KahfTubeYtData") {
-                erik?.evaluate(javaScript: erikIdScript + script) { object, error in
+                newErik.evaluate(javaScript: videoIdScript + script) { object, error in
                     if let error = error {
                         print("Kahf Tube: \(error)")
                     }
@@ -242,29 +214,29 @@ public class KahfTubeManager: ObservableObject {
         }
     }
     
-    func ytCompletion(lengthSeconds: String, url: String, viewCount: String, erikId: Int) {
-        if var video = myQueue.dequeue(erikId: erikId) {
-            video.thumbnail = url
-            video.timeline = lengthSeconds
-            video.views = "\(viewCount) views"
-            do {
-                let encoder = JSONEncoder()
-                let jsonData = try encoder.encode(video)
-                if let jsonString = String(data: jsonData, encoding: .utf8), let body = video.body {
-                    let jsString = """
-                        globalCallbackFunction("\(video.href)",\(jsonString),\(body));
-                    """
-                    KahfTubeManager.webView?.evaluateSafeJavaScript(functionName: jsString, contentWorld: .page, asFunction: false) { object, error in
-                        if let error = error {
-                            print("Kahf Tube:** Filter \(error)")
-                        }
+    func ytCompletion(lengthSeconds: String, url: String, viewCount: String, videoId: String) {
+        guard var video = videosList.first(where: { video in
+            return video.id == videoId
+        }) else { return }
+        video.thumbnail = url
+        video.timeline = lengthSeconds
+        video.views = "\(viewCount) views"
+        do {
+            let encoder = JSONEncoder()
+            let jsonData = try encoder.encode(video)
+            if let jsonString = String(data: jsonData, encoding: .utf8), let body = video.body {
+                
+                let jsString = """
+                    globalCallbackFunction("\(video.href)",\(jsonString),\(body));
+                """
+                KahfTubeManager.webView?.evaluateSafeJavaScript(functionName: jsString, contentWorld: .page, asFunction: false) { object, error in
+                    if let error = error {
+                        print("Kahf Tube:** Filter \(error)")
                     }
                 }
-            } catch {
-                print("Error encoding to JSON: \(error)")
             }
-
-            videosList.append(video)
+        } catch {
+            print("Error encoding to JSON: \(error)")
         }
     }
     
@@ -296,60 +268,13 @@ public class KahfTubeManager: ObservableObject {
         Preferences.KahfTube.imageURL.value = imgSrc
         Preferences.KahfTube.token.value = token
     }
-}
-
-struct Queue<Element> {
-    private var elementsOne: [ReplaceVideo] = []
-    private var elementsTwo: [ReplaceVideo] = []
-    private var isOneAvailable: Bool = true
     
-    var isEmpty: Bool {
-        return elementsOne.isEmpty && elementsTwo.isEmpty
-    }
-
-    mutating func enqueue(_ element: ReplaceVideo) {
-        if elementsOne.isEmpty && elementsTwo.isEmpty {
-            elementsOne.append(element)
-            KahfTubeManager.shared.loadYtScript(id: element.id, erikId: 1)
-        } else if elementsOne.count == elementsTwo.count {
-            elementsOne.append(element)
-        } else if elementsTwo.count < elementsOne.count {
-            if elementsTwo.isEmpty {
-                KahfTubeManager.shared.loadYtScript(id: element.id, erikId: 2)
+    func closeKahfTubeTools() {
+        videosList.removeAll()
+        parentView?.subviews.forEach({ view in
+            if view.tag == -1111 {
+                view.removeFromSuperview()
             }
-            elementsTwo.append(element)
-        } else {
-            elementsOne.append(element)
-        }
-    }
-
-    mutating func dequeue(erikId: Int) -> ReplaceVideo? {
-        var removedElement: ReplaceVideo?
-        
-        if erikId == 1 {
-            guard !elementsOne.isEmpty else {
-                return nil
-            }
-            
-            removedElement = elementsOne.removeFirst()
-            if let nextElement = elementsOne.first {
-                KahfTubeManager.shared.loadYtScript(id: nextElement.id, erikId: erikId)
-            }
-            return removedElement
-        } else {
-            guard !elementsTwo.isEmpty else {
-                return nil
-            }
-            removedElement = elementsTwo.removeFirst()
-            if let nextElement = elementsTwo.first {
-                KahfTubeManager.shared.loadYtScript(id: nextElement.id, erikId: erikId)
-            }
-            return removedElement
-        }
-    }
-
-    mutating func clear() {
-        elementsOne = []
-        elementsTwo = []
+        })
     }
 }
