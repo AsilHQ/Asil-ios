@@ -304,7 +304,7 @@ class RemoteAnalyzer {
 
   relativeFilePath = async (originalMediaUrl) => {
     const hash = await this.sha256(originalMediaUrl);
-    let newUrl = `https://cdn.safegaze.com/annotated_image/${hash}/image.png`;
+    let newUrl = `https://images.safegaze.com/annotated_image/${hash}/image.png`;
     sendMessage("Hash " + originalMediaUrl + " XX " + newUrl);
     return newUrl;
   };
