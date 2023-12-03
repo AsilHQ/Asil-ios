@@ -262,7 +262,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
           }
         }
   };
-  fetchNewImages();
+  window.addEventListener('load', function() { fetchNewImages(); });
   window.addEventListener('scroll', fetchNewImages);
 }
 
