@@ -273,7 +273,7 @@ class RemoteAnalyzer {
 
   analyze = async () => {
     try {
-      let relativeFilePath = this.relativeFilePath(this.data.mediaUrl);
+      let relativeFilePath = await this.relativeFilePath(this.data.mediaUrl);
       if (await this.urlExists(relativeFilePath)) {
         return {
           shouldMask: true,
