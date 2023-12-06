@@ -2420,6 +2420,7 @@ extension BrowserViewController: TabDelegate {
       SiteStateListenerScriptHandler(tab: tab),
       CosmeticFiltersScriptHandler(tab: tab),
       tab.safegazeHandler,
+      tab.kahfTubeHandler,
       tab.contentBlocker,
       tab.requestBlockingContentHelper,
     ]

@@ -262,7 +262,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
           }
         }
   };
-  fetchNewImages();
+  window.addEventListener('load', function() { fetchNewImages(); });
   window.addEventListener('scroll', fetchNewImages);
 }
 
@@ -273,7 +273,7 @@ class RemoteAnalyzer {
 
   analyze = async () => {
     try {
-      let relativeFilePath = this.relativeFilePath(this.data.mediaUrl);
+      let relativeFilePath = await this.relativeFilePath(this.data.mediaUrl);
       if (await this.urlExists(relativeFilePath)) {
         return {
           shouldMask: true,
@@ -302,41 +302,26 @@ class RemoteAnalyzer {
       }
     };
 
-  relativeFilePath = (originalMediaUrl) => {
-    let url = decodeURIComponent(originalMediaUrl);
-    let urlParts = url.split("?");
-
-    // Handling protocol stripped URL
-    let protocolStrippedUrl = urlParts[0]
-      .replace(/http:\/\//, "")
-      .replace(/https:\/\//, "")
-      .replace(/--/g, "__")
-      .replace(/%/g, "_");
-
-    // Handling query parameters
-    let queryParams =
-      urlParts[1] !== undefined
-        ? urlParts[1].replace(/,/g, "_").replace(/=/g, "_").replace(/&/g, "/")
-        : "";
-
-    let relativeFolder = protocolStrippedUrl.split("/").slice(0, -1).join("/");
-    if (queryParams.length) {
-      relativeFolder = `${relativeFolder}/${queryParams}`;
-    }
-
-    // Handling file and extension
-    let filenameWithExtension = protocolStrippedUrl.split("/").pop();
-    let filenameParts = filenameWithExtension.split(".");
-    let filename, extension;
-    if (filenameParts.length >= 2) {
-      filename = filenameParts.slice(0, -1).join(".");
-      extension = filenameParts.pop();
-    } else {
-      filename = filenameParts[0].length ? filenameParts[0] : "image";
-      extension = "jpg";
-    }
-
-    return `https://cdn.safegaze.com/annotated_image/${relativeFolder}/${filename}.${extension}`;
+  relativeFilePath = async (originalMediaUrl) => {
+    const hash = await this.sha256(originalMediaUrl);
+    let newUrl = `https://images.safegaze.com/annotated_image/${hash}/image.png`;
+    sendMessage("Hash " + originalMediaUrl + " XX " + newUrl);
+    return newUrl;
+  };
+    
+ sha256 = async (str) => {
+      try {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(str);
+        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('');
+        sendMessage(str + " --- " + hashHex)
+        return hashHex;
+      } catch (error) {
+        sendMessage("Error in sha256:" + error);
+        return "";
+      }
   };
 }
 

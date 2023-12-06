@@ -73,8 +73,8 @@ open class Erik {
 
     // Go to specific url
     open func visit(url: Foundation.URL, completionHandler: DocumentCompletionHandler?) {
-        layoutEngine.browse(url: url) {[unowned self] (object, error) -> Void in
-            self.publish(content: object, error: error, completionHandler: completionHandler)
+        layoutEngine.browse(url: url) {[weak self] (object, error) -> Void in
+            self?.publish(content: object, error: error, completionHandler: completionHandler)
         }
     }
     

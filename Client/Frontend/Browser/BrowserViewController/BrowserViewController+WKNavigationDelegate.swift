@@ -163,6 +163,21 @@ extension BrowserViewController: WKNavigationDelegate {
       return (.cancel, preferences)
     }
 
+    if url.absoluteString.starts(with: "https://www.youtube.com/signin") {
+      let modifiedURLString = url.absoluteString.replacingOccurrences(of: "www", with: "m")
+      let modifiedURL = URL(string: modifiedURLString)
+      let modifiedRequest = URLRequest(url: modifiedURL!)
+      webView.load(modifiedRequest)
+      return (.cancel, preferences)
+    }
+    
+    if url.absoluteString.contains("continue=https://m.youtube.com") && !url.absoluteString.contains("?noapp=1") {
+      let modifiedURL = URL(string: "https://m.youtube.com/?noapp=1")
+      let modifiedRequest = URLRequest(url: modifiedURL!)
+      webView.load(modifiedRequest)
+      return (.cancel, preferences)
+    }
+
     if InternalURL.isValid(url: url) {
       if navigationAction.navigationType != .backForward, navigationAction.isInternalUnprivileged {
         Logger.module.warning("Denying unprivileged request: \(navigationAction.request)")
@@ -316,7 +331,7 @@ extension BrowserViewController: WKNavigationDelegate {
           // This script will track what is blocked and increase stats
           .trackerProtectionStats: url.isWebPage(includeDataURIs: false) &&
                                    domainForMainFrame.isShieldExpected(.AdblockAndTp, considerAllShieldsOption: true),
-          
+          .kahfTube: domainForMainFrame.isKahfTubeOn(),
           .safegaze: url.isWebPage(includeDataURIs: false) && !domainForMainFrame.isSafegazeAllOff(url: url, ignoredDomains: SafegazeManager.ignoredDomains)
         ])
       }
@@ -669,6 +684,8 @@ extension BrowserViewController: WKNavigationDelegate {
       if let url = webView.url {
           if url.absoluteString.contains("youtube.com") {
               KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+          } else {
+              KahfTubeManager.shared.closeKahfTubeTools()
           }
       }
     }
@@ -746,7 +763,7 @@ extension BrowserViewController: WKNavigationDelegate {
               
               if components.count >= 2 {
                   let domain = components[1]
-                  if host.hasSuffix(domain) {
+                  if host == domain {
                       return true
                   }
               }

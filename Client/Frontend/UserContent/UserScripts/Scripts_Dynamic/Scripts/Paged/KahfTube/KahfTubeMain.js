@@ -1,3 +1,20 @@
+function sendMessage(message) {
+    console.log(message);
+    try {
+        window.__firefox__.execute(function($) {
+            let postMessage = $(function(message) {
+                $.postNativeMessage('$<message_handler>', {
+                    "securityToken": SECURITY_TOKEN,
+                    "state": message
+                });
+            });
+
+            postMessage(message);
+        });
+    }
+    catch {}
+}
+
 class YoutubeFiltrationQueue {
   constructor() {
     this.elements = {};
@@ -28,27 +45,39 @@ class YoutubeFiltrationQueue {
 const apiQueue = new YoutubeFiltrationQueue();
 let mode;
 let gender;
+let metaData;
+
+function check_gender(response_gender, gender) {
+  if (response_gender == 1) return true;
+  if (response_gender == 4) return true; //Kids items are halal for both male and female.
+  return response_gender == gender;
+}
+
+function check_mode(response_mode, mode) {
+  switch (mode) {
+    case 2:
+      return true;
+    case 3:
+      return response_mode == 3 || response_mode == 1;
+    case 1:
+      return response_mode === 1;
+    default:
+      return false;
+  }
+}
+
+function can_see(response) {
+  return (
+    check_gender(response.permissible_for.value, gender) &&
+    check_mode(response.practicing_level.value, mode)
+  );
+}
 
 async function canSeee(responsee) {
-  const apiGender = responsee["permissible_for"];
-  const apiMode = responsee["practicing_level"];
-  // console.log(mode);
-  // console.log(gender);
   if (responsee["type"]) {
     return true;
   }
-  if (apiGender["value"] == gender || apiGender["value"] == 1) {
-    if (mode == 2) {
-      return true;
-    } else if (mode == 3) {
-      return apiMode["value"] == 3 || apiMode["value"] == 1;
-    } else if (mode == 1) {
-      return apiMode["value"] == 1;
-    }
-  } else if (apiGender["value"] == -4 && gender != 4) {
-    return true;
-  }
-  return false;
+  return can_see(responsee);
 }
 
 let timerId;
@@ -74,12 +103,27 @@ setInterval(() => {
   }
 }, 0);
 
-const apiResponses = {};
+window.apiResponses = {};
+window.globalCallbackFunction = function(newHref, metadata, object) {
+    window.apiResponses[newHref] = {
+        ...object,
+        type: "recommended",
+        metaData: metadata,
+    };
+    for (let index = 0; index < videoList.length; index++) {
+      const thumbnail = videoList[index].children?.item(0);
+      const href = thumbnail?.getAttribute("href");
+      if (href === newHref) {
+        updateMediaItem(videoList[index]);
+        break;
+      }
+    }
+};
+window.videoList = {};
 const imageUrls = {};
-const restrictionImageUrl =
-  "Media/img_do_not_enter.jpeg";
-const loadingImageUrl = "Media/loading.gif";
-const cautionImageUrl = "Media/caution.png";
+const restrictionImageUrl = "http://localhost:8080/assets/images/img_do_not_enter.jpeg";
+const loadingImageUrl = "http://localhost:8080/assets/images/loading.gif";
+const cautionImageUrl = "http://localhost:8080/assets/images/caution.png";
 
 
 setInterval(() => {
@@ -187,10 +231,10 @@ function updateFeaturedVideo() {
     let ogImage = image?.lazyData?.sources?.find((el) =>
       el["url"].includes("mqdefault")
     );
-    console.log(ogImage);
     ogImage = ogImage ?? image?.lazyData?.sources[0];
     imageUrls[href] = ogImage?.url;
-    updateApiResponse([href], updateView);
+    const cUrl = document.querySelector("ytm-c4-tabbed-header-renderer")?.data?.channelId;
+    updateApiResponse([href], [cUrl], updateView);
   } else {
     updateView();
   }
@@ -258,7 +302,12 @@ function updateCardVideo() {
     );
     ogImage = ogImage ?? image?.lazyData?.sources[0];
     imageUrls[href] = ogImage?.url;
-    updateApiResponse([href], updateView);
+    const cUrl = cardVideo?.baseURI.split("/");
+    updateApiResponse(
+        [href],
+        [cUrl.find((el) => el.startsWith("@"))],
+        updateView
+    );
   } else {
     updateView();
   }
@@ -322,7 +371,10 @@ async function updateCompactVideo(node) {
 
 let compactItemLength = 0;
 function updateCompactVideoList() {
-  const compactVideoList = document.querySelectorAll("div.compact-media-item");
+  let compactVideoList = document.querySelectorAll("div.compact-media-item");
+  if (!compactVideoList.length) {
+    compactVideoList = document.querySelectorAll("ytm-video-card-renderer.horizontal-card-list-card");
+  }
 
   const updateView = () => {
     for (let index = 0; index < compactVideoList.length; index++) {
@@ -334,12 +386,15 @@ function updateCompactVideoList() {
     // console.log(compactVideoList.length);
     compactItemLength = compactVideoList.length;
     const hrefs = [];
+    const chrefs = [];
     for (let index = 0; index < compactVideoList.length; index++) {
       const thumbnail = compactVideoList[index]?.children?.item(0);
       const image = thumbnail.children?.item(0)?.children?.item(1);
       const href = thumbnail?.getAttribute("href");
       if (!apiResponses[href]) {
         hrefs.push(href);
+        const cUrl = document.querySelector("ytm-c4-tabbed-header-renderer")?.data?.channelId;
+        chrefs.push(cUrl);
         apiResponses[href] = "loading";
         let ogImage = image?.lazyData?.sources?.find((el) =>
           el["url"].includes("mqdefault")
@@ -348,7 +403,7 @@ function updateCompactVideoList() {
         imageUrls[href] = ogImage?.url;
       }
     }
-    updateApiResponse(hrefs, updateView);
+    updateApiResponse(hrefs, chrefs, updateView);
   } else {
     updateView();
   }
@@ -356,7 +411,7 @@ function updateCompactVideoList() {
 
 let mediaItemLength = 0;
 function updateMediaItemList() {
-  const videoList = document.getElementsByTagName("ytm-media-item");
+  videoList = document.getElementsByTagName("ytm-media-item");
 
   const updateView = () => {
     for (let index = 0; index < videoList.length; index++) {
@@ -368,12 +423,16 @@ function updateMediaItemList() {
     // console.log(videoList.length);
     mediaItemLength = videoList.length;
     const hrefs = [];
+    const chrefs = [];
     for (let index = 0; index < videoList.length; index++) {
       const thumbnail = videoList[index]?.children?.item(0);
       const href = thumbnail?.getAttribute("href");
       const image = thumbnail?.children?.item(0)?.children?.item(1);
+      const channelInfo = videoList[index]?.children ?.item(videoList[index].children.length - 1)?.children?.item(0);
       if (!apiResponses[href]) {
         hrefs.push(href);
+        const channelLink = channelInfo?.children?.item(0)?.children?.item(0)?._data?.browseEndpoint?.browseId;
+        chrefs.push(channelLink);
         apiResponses[href] = "loading";
         let ogImage = image?.lazyData?.sources.find((el) =>
           el["url"].includes("sddefault")
@@ -382,7 +441,7 @@ function updateMediaItemList() {
         imageUrls[href] = ogImage?.url;
       }
     }
-    updateApiResponse(hrefs, updateView);
+    updateApiResponse(hrefs, chrefs, updateView);
   } else {
     updateView();
   }
@@ -410,8 +469,9 @@ async function updateMediaItem(node) {
         [thumbnail, details],
         action
       );
+      updateLoadingView(imageUrl, thumbnail);
       updateCautionView(imageUrl, image, thumbnail);
-      if (cautionImageUrl) {
+     if (imageUrl == cautionImageUrl) {
         const channelThumb = node
           .querySelector("ytm-profile-icon.channel-thumbnail-icon")
           ?.children?.item(0);
@@ -431,6 +491,7 @@ async function updateMediaItem(node) {
       if (image.getAttribute("src") != response.metaData.thumbnail) {
         image?.removeAttribute("src");
         image?.setAttribute("src", response.metaData.thumbnail);
+        updateLoadingView(imageUrl, thumbnail);
       }
       if (thumbnail.href !== response.url) {
         apiResponses[response.url] = response;
@@ -476,6 +537,21 @@ async function updateMediaItem(node) {
   }
 }
 
+function show_loading_indicator() {
+    const div1 = document.createElement("div");
+    div1.classList.add("kahf-tube-loading-indicator");
+    div1.innerHTML = `
+       <div class="kahf-tube-loader">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+         <div class="bar4"></div>
+         <div class="bar5"></div>
+         <div class="bar6"></div>
+       </div> `
+    return div1;
+}
+
 function updateCautionView(
   imageUrl,
   imageElement,
@@ -486,99 +562,58 @@ function updateCautionView(
     if (imageElement.style.filter != "blur(1.1rem)") {
       imageElement.style.filter = "blur(1.1rem)";
     }
-    // Check if the caution element is already present in the thumbnailElement
-    const cautionElement = thumbnailElement.querySelector(".caution-element");
-    if (!cautionElement ) {
+    if (thumbnailElement.children.item(0).children.length <= 4) {
       thumbnailElement.children
         .item(0)
         .append(
           isLargeView
-            ? createLargeCautionElement()
-            : createCompactCautionElement()
+            ? createCautionElement("large")
+            : createCautionElement("compact")
         );
     }
   }
 }
 
-function createCompactCautionElement() {
-  const div1 = document.createElement("div");
-  div1.classList.add("caution-element");
-  div1.style.position = "absolute";
-  div1.style.display = "flex";
-  div1.style.width = "100%";
-  div1.style.alignItems = "center";
-  div1.style.justifyContent = "center";
-  div1.style.bottom = "15%";
-  div1.style.flexDirection = "column";
-  const div2 = document.createElement("div");
-  div2.style.background = "#FFFFFF";
-  div2.style.boxShadow = "0px 4px 12px rgba(53, 53, 55, 0.82)";
-  div2.style.borderRadius = "5px";
-  const p = document.createElement("p");
-  p.style.fontFamily = "Roboto";
-  p.style.fontStyle = "normal";
-  p.style.fontWeight = 500;
-  p.style.fontSize = "0.9rem";
-  p.style.lineHeight = "1rem";
-  p.style.color = "#383838";
-  p.style.margin = "0.5rem";
-  p.textContent = "See Video (Not Recommended)";
-  div2.append(p);
-  div1.append(div2);
-  const p1 = document.createElement("p");
-  p1.style.color = "#FFFFFF";
-  p1.textContent =
-    "This video is not avaialable on our database. Proceed with caution";
-  p1.style.fontFamily = "Roboto";
-  p1.style.fontStyle = "normal";
-  p1.style.fontWeight = 400;
-  p1.style.fontSize = "0.8rem";
-  p1.style.textAlign = "center";
-  p1.style.lineHeight = "1rem";
-  div1.append(p1);
-  return div1;
+function updateLoadingView(
+  imageUrl,
+  thumbnailElement
+) {
+  if (imageUrl == loadingImageUrl) {
+    if (thumbnailElement.children.item(0).children.length <= 4) {
+      thumbnailElement.children
+        .item(0)
+        .append(show_loading_indicator());
+    }
+  }
+  else {
+      const cautionElement = thumbnailElement.querySelector(".kahf-tube-loading-indicator");
+      if (cautionElement) {
+          cautionElement.remove();
+      }
+  }
 }
 
-function createLargeCautionElement() {
-  const div1 = document.createElement("div");
-  div1.classList.add("caution-element");
-  div1.style.position = "absolute";
-  div1.style.display = "flex";
-  div1.style.width = "100%";
-  div1.style.alignItems = "center";
-  div1.style.justifyContent = "center";
-  div1.style.bottom = "31%";
-  div1.style.flexDirection = "column";
-  const div2 = document.createElement("div");
-  div2.style.background = "#FFFFFF";
-  div2.style.boxShadow = "0px 4px 12px rgba(53, 53, 55, 0.82)";
-  div2.style.borderRadius = "5px";
-  const p = document.createElement("p");
-  p.style.fontFamily = "Roboto";
-  p.style.fontStyle = "normal";
-  p.style.fontWeight = 500;
-  p.style.fontSize = "1.3";
-  p.style.lineHeight = "1.5rem";
-  p.style.color = "#383838";
-  p.style.margin = "1.5rem";
-  p.textContent = "See Video (Not Recommended)";
-  div2.append(p);
-  div1.append(div2);
-  const p1 = document.createElement("p");
-  p1.style.color = "#FFFFFF";
-  p1.textContent =
-    "This video is not avaialable on our database. Proceed with caution";
-  p1.style.fontFamily = "Roboto";
-  p1.style.fontStyle = "normal";
-  p1.style.fontWeight = 400;
-  p1.style.fontSize = "1.1rem";
-  p1.style.textAlign = "center";
-  p1.style.lineHeight = "1.4rem";
-  div1.append(p1);
-  return div1;
+function createCautionElement(options) {
+  const container = document.createElement("div");
+  container.classList.add("caution-container");
+  options === "large" ?  container.classList.add("large-container") : container.classList.add("compact-container");
+  const box = document.createElement("div");
+  box.classList.add("caution-box");
+  const title = document.createElement("p");
+  options === "large" ?  title.classList.add("large-title") : title.classList.add("compact-title");
+  title.textContent = "See Video (Not Recommended)";
+  box.append(title);
+  container.append(box);
+  const message = document.createElement("p");
+  message.classList.add("caution-message");
+  options === "large" ?  message.classList.add("aution-message-large-caution") : message.classList.add("caution-message-compact-caution");
+  message.textContent = "This video is not available on our database. Proceed with caution";
+  container.append(message);
+  return container;
 }
 
-function updateApiResponse(hrefs, callback) {
+
+function updateApiResponse(hrefs, chrefs, callback) {
   if (hrefs) {
     const re = new RegExp(
       ".*(?:(?:youtu.be/|v/|vi/|u/w/|embed/)|(?:(?:watch)??v(?:i)?=|&v(?:i)?=))([^#&?]*).*"
@@ -620,76 +655,102 @@ function updateApiResponse(hrefs, callback) {
     if (vIds.length > 0) {
       apiQueue.enqueue(async () => {
         try {
-          const res = await fetch(
-            `https://api.kahf.ai/api/v1/videos?ids[]=` + vIds.join("&ids[]="),
-            {
-              headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-                Authorization: `Bearer ${token}`,
-              },
+          let ids = "";
+          for (let index = 0; index < vIds.length; index++) {
+            const element = vIds[index];
+            ids = ids + element + ":";
+            if (chrefs[index]) {
+              ids = ids + chrefs[index];
             }
-          );
+            if (index != vIds.length - 1) {
+              ids = ids + "&ids[]=";
+            }
+          }
+          let url =
+            `https://api.kahf.ai/api/v1/videos?ids[]=` +
+            ids +
+            `&premissible-for=${gender}&practicing-level=${mode}&_country=${yt.config_.GL}`;
+          if (gender == 4) {
+            let cursor = metaData?.next_cursor ?? "";
+            url = `https://api.kahf.ai/api/v1/videos/recommends?permissible-for=${gender}&limit=${vIds.length}&cursor=${cursor}&_country=${yt.config_.GL}`;
+          }
+          const res = await fetch(url, {
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+              Authorization: `Bearer ${token}`,
+            },
+          });
           const response = await res.json();
-          console.log(JSON.stringify(response));
-          const recommendVideoLength = response?.recommend?.length;
+          let recommendVideoLength = response?.recommend?.length;
+          if (gender == 4) {
+            metaData = response?.meta;
+          }
           let recommendIndex = 0;
-          const relatedVideoLength = response?.related?.length;
+          let relatedVideoLength = response?.related?.length;
           let relatedIndex = 0;
           for (const href of hrefs) {
-            const fIndex = response?.data?.findIndex((el) =>
-              href.includes(el.id)
-            );
-            if (fIndex !== undefined && fIndex != -1) {
-              if (!response?.data[fIndex]?.is_halal) {
-                if (
-                  relatedVideoLength > 0 &&
-                  relatedIndex < relatedVideoLength
-                ) {
-                  const res = await window.flutter_inappwebview.callHandler(
-                    "fetchYtInitialData",
-                    response?.related[relatedIndex].id
-                  );
-                  apiResponses[href] = {
-                    ...response?.related[relatedIndex],
-                    type: "related",
-                    metaData: res,
-                  };
-                  console.log(JSON.stringify(apiResponses[href]));
+            if (gender == 4) {
+              sendMessage("fetchYtInitialData/-/" + response?.data[recommendIndex].id + "/-/" + href + "/-/ " + JSON.stringify(response?.data[recommendIndex]));
+              recommendIndex = recommendIndex + 1;
+            } else {
+              const fIndex = response?.data?.findIndex((el) =>
+                href.includes(el.id)
+              );
+              if (fIndex !== undefined && fIndex != -1) {
+                if (!response?.data[fIndex]?.is_halal) {
+                  if (
+                    relatedVideoLength > 0 &&
+                    relatedIndex < relatedVideoLength
+                  ) {
+                    const res = await window.flutter_inappwebview.callHandler(
+                      "fetchYtInitialData",
+                      response?.related[relatedIndex].id
+                    );
+                    apiResponses[href] = {
+                      ...response?.related[relatedIndex],
+                      type: "related",
+                      metaData: res,
+                    };
+                    // console.log(JSON.stringify(apiResponses[href]));
 
-                  relatedIndex = relatedIndex + 1;
+                    relatedIndex = relatedIndex + 1;
+                  } else {
+                    apiResponses[href] = response?.data[fIndex];
+                  }
                 } else {
                   apiResponses[href] = response?.data[fIndex];
                 }
               } else {
-                apiResponses[href] = response?.data[fIndex];
-              }
-            } else {
-              const cIndex = cIds.findIndex((el) => href.includes(el));
-              if (cIndex !== undefined && cIndex != -1) {
-              } else {
-                // console.log(href + "----" + 404);
-                apiResponses[href] = 404;
-                if (
-                  recommendVideoLength > 0 &&
-                  recommendIndex < recommendVideoLength
-                ) {
-                  const res = await window.flutter_inappwebview.callHandler(
-                    "fetchYtInitialData",
-                    response?.recommend[recommendIndex].id
-                  );
-                  apiResponses[href] = {
-                    ...response?.recommend[recommendIndex],
-                    type: "recommended",
-                    metaData: res,
-                  };
-                  recommendIndex = recommendIndex + 1;
+                const cIndex = cIds.findIndex((el) => href.includes(el));
+                if (cIndex !== undefined && cIndex != -1) {
+                } else {
+                  // console.log(href + "----" + 404);
+
+                  if (
+                    recommendVideoLength > 0 &&
+                    recommendIndex < recommendVideoLength
+                  ) {
+                    const res = await window.flutter_inappwebview.callHandler(
+                      "fetchYtInitialData",
+                      response?.recommend[recommendIndex].id
+                    );
+                    apiResponses[href] = {
+                      ...response?.recommend[recommendIndex],
+                      type: "recommended",
+                      metaData: res,
+                    };
+                    recommendIndex = recommendIndex + 1;
+                  } else {
+                    apiResponses[href] = 404;
+                  }
                 }
               }
             }
           }
-
-          callback();
+          if (gender !== 4) {
+            callback()
+          }
         } catch (error) {
           // console.log(error);
         }
@@ -697,7 +758,7 @@ function updateApiResponse(hrefs, callback) {
     }
 
     if (cIds.length > 0) {
-      console.log(cIds);
+      // console.log(cIds);
       apiQueue.enqueue(async () => {
         try {
           const res = await fetch(
@@ -711,9 +772,7 @@ function updateApiResponse(hrefs, callback) {
             }
           );
           const response = await res.json();
-          console.log(JSON.stringify(response));
           hrefs.forEach((href) => {
-            console.log(href);
             const fIndex = response?.data?.findIndex(
               (el) =>
                 href.toLowerCase().includes(el.id) ||
@@ -732,7 +791,6 @@ function updateApiResponse(hrefs, callback) {
               fIndex != -1 &&
               apiResponses[href] == "loading"
             ) {
-              console.log("LOL");
               apiResponses[href] = 404;
             }
           });
@@ -800,27 +858,4 @@ new MutationObserver(() => {
   } else {
     isShareClicked = false;
   }
-
-  const url = location.href;
-  if (!url.includes("google")) {
-    forceSignin();
-  } else {
-    if (!email) {
-      if (url == "https://m.youtube.com/") {
-        document.location.reload();
-      }
-      document.location.href = "https://m.youtube.com";
-    }
-  }
 }).observe(document, { subtree: true, childList: true });
-
-const forceSignin = async () => {
-  const button = document
-    .querySelector("ytm-topbar-menu-button-renderer")
-    .children.item(0);
-
-  window.flutter_inappwebview.callHandler(
-    "shouldRestart",
-    button?.children?.item(0)?.children?.item(0)?.nodeName
-  );
-};
