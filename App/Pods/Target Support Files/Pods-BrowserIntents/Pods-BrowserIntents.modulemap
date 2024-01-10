@@ -1,0 +1,6 @@
+framework module Pods_BrowserIntents {
+  umbrella header "Pods-BrowserIntents-umbrella.h"
+
+  export *
+  module * { export * }
+}

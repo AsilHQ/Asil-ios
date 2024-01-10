@@ -1,0 +1,6 @@
+framework module Pods_BraveWidgetsExtension {
+  umbrella header "Pods-BraveWidgetsExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
