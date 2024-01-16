@@ -1,7 +1,52 @@
-// Copyright 2022 The Brave Authors. All rights reserved.
+// Copyright 2023 The Asil Browser Authors. All rights reserved.
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+const imagesToReplace = [];
+const cleanedSavedImagesArray = []
+window.safegazeOnDeviceModelHandler = safegazeOnDeviceModelHandler;
+
+
+async function safegazeOnDeviceModelHandler (isExist, index) {
+    if (isExist === true) {
+        imagesToReplace.push(cleanedSavedImagesArray[index]);
+
+        // Check if the batch size (5) is reached, or if it's the last image
+        if (imagesToReplace.length % 5 === 0) {
+            try {
+                sendMessage("**//analyzedImages");
+                await analyzeImages(imagesToReplace.slice(-5)); // Get the last 5 elements
+            } catch (error) {
+                sendMessage('**//Error in analyzeImages:' + error);
+            }
+        }
+        else if (index === cleanedSavedImagesArray.length - 1) {
+            // If it's the last image and we have fewer than 5 images, wait for a certain period
+            setTimeout(async () => {
+                if (imagesToReplace.length > 0 && index === cleanedSavedImagesArray.length - 1) {
+                    try {
+                        const startIndex = Math.floor(imagesToReplace.length / 5) * 5;
+                        let slice = imagesToReplace.slice(startIndex)
+                        sendMessage("**//analyzedImages/escape " + slice.length);
+                        await analyzeImages(slice);
+                    } catch (error) {
+                        sendMessage('**//Error in analyzeImages:' + error);
+                    }
+                }
+            }, 1000); // Adjust the timeout value as needed (5 seconds in this example)
+        } else {
+            sendMessage("**//skipForCount" + imagesToReplace.length);
+        }
+    } else {
+        let element = cleanedSavedImagesArray[index]
+        unblurImage(element);
+        element.removeAttribute('data-lazysrc');
+        element.removeAttribute('srcset');
+        element.removeAttribute('data-srcset');
+        element.setAttribute('data-replaced', 'true');
+    }
+};
 
 function sendMessage(message) {
     console.log(message);
@@ -64,78 +109,79 @@ function setImageSrc(element, url) {
             element.dataset.src = url;
         }
     }
-    sendMessage("replaced");
+    sendMessage("replaced"); //Sends message for total blurred imaged count
 }
 
-async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/api/v1/analyze') {
+
+const analyzeImages = async (batch) => {
+  const requestBody = {
+   media: batch.map(imgElement => {
+         return {
+           media_url: imgElement.getAttribute('src'),
+           media_type: imgElement.getAttribute('hasBackgroundImage') && imgElement.tagName !== "IMG" && imgElement.tagName !== "image" ? "backgroundImage" : "image",
+           has_attachment: false,
+           srcAttr: imgElement.getAttribute('srcAttr')
+         };
+       })
+  };
+  
+  try {
+    // Mark the URLs of all images in the current batch as sent in requests
+    batch.forEach(imgElement => {
+      imgElement.setAttribute('isSent', 'true');
+    });
+    
+    // Send the request to the API.
+    const response = await fetch('https://api.safegaze.com/api/v1/analyze', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(requestBody)
+    });
+    
+    // Check if response status is ok
+    if (!response.ok) {
+      sendMessage('HTTP error, status = ' + response.status + " " + JSON.stringify(requestBody));
+      return;
+    }
+    else {
+      sendMessage("Response success")
+    }
+    
+    // Extract the response data from the response.
+    const responseBody = await response.json();
+    if (responseBody.media.length === 0) {
+        sendMessage('Empty response');
+    }
+    else {
+        if (responseBody.success) {
+          batch.forEach((element, index) => {
+                const correspondingMedia = responseBody.media.find(media => element.src === media.original_media_url || element.src.includes(media.original_media_url));
+                if (correspondingMedia) {
+                    if (correspondingMedia.success) {
+                        setImageSrc(element, correspondingMedia.processed_media_url);
+                    }
+                    else {
+                        unblurImage(element);
+                    }
+                }
+          });
+        } else {
+          sendMessage('API request failed:' + responseBody.errors);
+        }
+    }
+  } catch (error) {
+      sendMessage('Error occurred during API request:' + error);
+  }
+};
+
+
+async function replaceImagesWithApiResults() {
   const batchSize = 4;
   const minImageSize = 40; // Minimum image size in pixels
   
   const hasMinRenderedSize = (element) => {
     const rect = element.getBoundingClientRect();
     return rect.width >= minImageSize && rect.height >= minImageSize;
-  };
-  
-  const replaceImages = async (batch) => {
-    // Create the request body.
-    const requestBody = {
-     media: batch.map(imgElement => {
-           return {
-             media_url: imgElement.getAttribute('src'),
-             media_type: imgElement.getAttribute('hasBackgroundImage') && imgElement.tagName !== "IMG" && imgElement.tagName !== "image" ? "backgroundImage" : "image",
-             has_attachment: false,
-             srcAttr: imgElement.getAttribute('srcAttr')
-           };
-         })
-    };
-    
-    try {
-      // Mark the URLs of all images in the current batch as sent in requests
-      batch.forEach(imgElement => {
-        imgElement.setAttribute('isSent', 'true');
-      });
-      
-      // Send the request to the API.
-      const response = await fetch(apiUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(requestBody)
-      });
-      
-      // Check if response status is ok
-      if (!response.ok) {
-        sendMessage('HTTP error, status = ' + response.status);
-        return;
-      }
-      else {
-        sendMessage("Response success")
-      }
-      
-      // Extract the response data from the response.
-      const responseBody = await response.json();
-      if (responseBody.media.length === 0) {
-          sendMessage('Empty response');
-      }
-      else {
-          if (responseBody.success) {
-            batch.forEach((element, index) => {
-                  const correspondingMedia = responseBody.media.find(media => element.src === media.original_media_url || element.src.includes(media.original_media_url));
-                  if (correspondingMedia) {
-                      if (correspondingMedia.success) {
-                          setImageSrc(element, correspondingMedia.processed_media_url);
-                      }
-                      else {
-                          unblurImage(element);
-                      }
-                  }
-            });
-          } else {
-            console.error('API request failed:', responseBody.errors);
-          }
-      }
-    } catch (error) {
-      console.error('Error occurred during API request:', error);
-    }
   };
   
   // Scroll event listener
@@ -218,7 +264,6 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
     });
     const allImages = [...imageElements, ...lazyImageElements, ...backgroundImages];
     if (allImages.length > 0) {
-         const cleanedSavedImagesArray = []
          const analyzePromises = [];
          allImages.forEach(imgElement => {
            var mediaUrl = imgElement.getAttribute('src') || imgElement.getAttribute('data-src');
@@ -231,6 +276,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
            const analyzePromise = analyzer.analyze().then((result) => {
              if (!result.shouldMask) {
                imgElement.src = mediaUrl
+               sendMessage("coreML/-/" + imgElement.src + "/-/" + cleanedSavedImagesArray.length); //Pushs image url to on device model
                cleanedSavedImagesArray.push(imgElement)
              } else {
                setImageSrc(imgElement, result.maskedUrl);
@@ -242,28 +288,15 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
          })
 
          await Promise.all(analyzePromises)
-
-         const newBatches = [];
-
-          for (let i = 0; i < cleanedSavedImagesArray.length; i += batchSize) {
-            newBatches.push(cleanedSavedImagesArray.slice(i, i + batchSize));
-          }
-
-          for (const batch of newBatches) {
-            // Filter out images that have already been replaced or sent in previous requests
-             const imagesToReplace = batch.filter(imgElement => {
-                 const srcValue = imgElement.getAttribute('src');
-                 return !imgElement.hasAttribute('data-replaced') && !srcValue.startsWith('data:image/');
-             });
-
-            if (imagesToReplace.length > 0) {
-              await replaceImages(imagesToReplace);
-            }
-          }
         }
   };
   window.addEventListener('load', function() { fetchNewImages(); });
   window.addEventListener('scroll', fetchNewImages);
+  window.addEventListener('beforeunload', function () {
+        // Reset the arrays when the page is about to unload
+        imagesToReplace.length = 0;
+        cleanedSavedImagesArray.length = 0;
+  });
 }
 
 class RemoteAnalyzer {
@@ -281,7 +314,7 @@ class RemoteAnalyzer {
         };
       }
     } catch (error) {
-      sendMessage(error.toString());
+      sendMessage("RemoteAnalyzer Error: " + error.toString());
     }
     return {
       shouldMask: false,
@@ -305,7 +338,6 @@ class RemoteAnalyzer {
   relativeFilePath = async (originalMediaUrl) => {
     const hash = await this.sha256(originalMediaUrl);
     let newUrl = `https://images.safegaze.com/annotated_image/${hash}/image.png`;
-    sendMessage("Hash " + originalMediaUrl + " XX " + newUrl);
     return newUrl;
   };
     
@@ -316,10 +348,9 @@ class RemoteAnalyzer {
         const hashBuffer = await crypto.subtle.digest('SHA-256', data);
         const hashArray = Array.from(new Uint8Array(hashBuffer));
         const hashHex = hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('');
-        sendMessage(str + " --- " + hashHex)
         return hashHex;
       } catch (error) {
-        sendMessage("Error in sha256:" + error);
+        sendMessage("Sha256 Error: " + error.toString());
         return "";
       }
   };
