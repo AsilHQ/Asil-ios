@@ -262,7 +262,7 @@ async function replaceImagesWithApiResults(apiUrl = 'https://api.safegaze.com/ap
           }
         }
   };
-  fetchNewImages();
+  window.addEventListener('load', function() { fetchNewImages(); });
   window.addEventListener('scroll', fetchNewImages);
 }
 
@@ -273,7 +273,7 @@ class RemoteAnalyzer {
 
   analyze = async () => {
     try {
-      let relativeFilePath = this.relativeFilePath(this.data.mediaUrl);
+      let relativeFilePath = await this.relativeFilePath(this.data.mediaUrl);
       if (await this.urlExists(relativeFilePath)) {
         return {
           shouldMask: true,
@@ -304,7 +304,7 @@ class RemoteAnalyzer {
 
   relativeFilePath = async (originalMediaUrl) => {
     const hash = await this.sha256(originalMediaUrl);
-    let newUrl = `https://cdn.safegaze.com/annotated_image/${hash}/image.png`;
+    let newUrl = `https://images.safegaze.com/annotated_image/${hash}/image.png`;
     sendMessage("Hash " + originalMediaUrl + " XX " + newUrl);
     return newUrl;
   };
