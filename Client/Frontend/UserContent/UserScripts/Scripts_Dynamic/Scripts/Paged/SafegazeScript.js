@@ -15,7 +15,7 @@ async function safegazeOnDeviceModelHandler (isExist, index) {
         // Check if the batch size (5) is reached, or if it's the last image
         if (imagesToReplace.length % 5 === 0) {
             try {
-                sendMessage("**//analyzedImages");
+                //sendMessage("**//analyzedImages");
                 await analyzeImages(imagesToReplace.slice(-5)); // Get the last 5 elements
             } catch (error) {
                 sendMessage('**//Error in analyzeImages:' + error);
@@ -28,7 +28,7 @@ async function safegazeOnDeviceModelHandler (isExist, index) {
                     try {
                         const startIndex = Math.floor(imagesToReplace.length / 5) * 5;
                         let slice = imagesToReplace.slice(startIndex)
-                        sendMessage("**//analyzedImages/escape " + slice.length);
+                        //sendMessage("**//analyzedImages/escape " + slice.length);
                         await analyzeImages(slice);
                     } catch (error) {
                         sendMessage('**//Error in analyzeImages:' + error);
@@ -36,7 +36,7 @@ async function safegazeOnDeviceModelHandler (isExist, index) {
                 }
             }, 1000); // Adjust the timeout value as needed (5 seconds in this example)
         } else {
-            sendMessage("**//skipForCount" + imagesToReplace.length);
+            //sendMessage("**//skipForCount" + imagesToReplace.length);
         }
     } else {
         let element = cleanedSavedImagesArray[index]
@@ -132,6 +132,7 @@ const analyzeImages = async (batch) => {
     });
     
     // Send the request to the API.
+    //sendMessage("**Request sent batchCount -> " + batch.length);
     const response = await fetch('https://api.safegaze.com/api/v1/analyze', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -140,11 +141,11 @@ const analyzeImages = async (batch) => {
     
     // Check if response status is ok
     if (!response.ok) {
-      sendMessage('HTTP error, status = ' + response.status + " " + JSON.stringify(requestBody));
+      //sendMessage('**Response fail -> HTTP error, status = ' + response.status + "->" + JSON.stringify(requestBody));
       return;
     }
     else {
-      sendMessage("Response success")
+      //sendMessage("**Response success")
     }
     
     // Extract the response data from the response.
