@@ -128,6 +128,9 @@ extension BrowserViewController {
     
   func presentYoutubeFiltrationSettingsView() {
       let vc = KahfTubeViewController()
+      vc.dismissAction = {
+          self.tabManager.reloadSelectedTab()
+      }
       self.dismiss(animated: true) {
         self.present(vc, animated: true)
       }

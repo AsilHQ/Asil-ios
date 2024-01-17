@@ -11,25 +11,27 @@ import BraveShared
 public class KahfTubeManager: ObservableObject {
     public static let shared = KahfTubeManager()
     private let webRepository = KahfTubeWebRepository.shared
-    private let util = KahfTubeUtil.shared
     private static var webView: WKWebView?
+    private var generalErik: Erik? // General use for email login logout operations
+    private var generalErikWebView: WKWebView?
+    private var parentView: UIView?
     @Published var haramChannels: [Channel] = [Channel]()
     @Published var haramChannelsMap: [[String: Any]] = [[String: Any]]()
     @Published var channelsFetched: Bool = false
     @Published var newUserRefreshNeeded = false
+    @Published var videosList = [ReplaceVideo]()
     
     public func startKahfTube(view: UIView, webView: WKWebView, vc: UIViewController) {
         KahfTubeManager.webView = webView
         print("Kahf Tube: User is on a YouTube page")
         if Preferences.KahfTube.isOn.value {
-            self.filter(webView: webView)
-            getUserInformationsFromYoutube(view: view, webView: webView)
+            getUserInformationsFromYoutube(view: view)
         } else {
             let refreshAlert = UIAlertController(title: "Kahf Tube", message: "Kahf Tube wants your permission to access your Youtube email and name to use Youtube Fitration feature.", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Allow", style: .default, handler: { (action: UIAlertAction!) in
                 Preferences.KahfTube.isOn.value = true
-                self.getUserInformationsFromYoutube(view: view, webView: webView)
+                self.getUserInformationsFromYoutube(view: view)
             }))
 
             refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
@@ -40,20 +42,16 @@ public class KahfTubeManager: ObservableObject {
         }
     }
     
-    func getUserInformationsFromYoutube(view: UIView, webView: WKWebView) {
-        let hiddenView = WKWebView(frame: CGRect(width: view.bounds.width, height: view.bounds.height - 100))
-        hiddenView.isHidden = true
-        view.addSubview(hiddenView)
-        let erik = Erik(webView: hiddenView)
-        Erik.sharedInstance = erik
-        erik.visit(url: URL(string: "https://m.youtube.com/")!) { object, error in
-            self.getEmail(erik: erik)
+    func getUserInformationsFromYoutube(view: UIView) {
+        initializeEriks(view: view)
+        Erik.sharedInstance.visit(url: URL(string: "https://m.youtube.com/")!) { object, error in
+            self.getEmail(erik: Erik.sharedInstance)
         }
     }
     
     func saveYoutubeInformations(dict: [String: Any]) {
         if let email = dict["email"] as? String, let name = dict["name"] as? String, let imgSrc = dict["imgSrc"] as? String {
-            if email != Preferences.KahfTube.email.value || Preferences.KahfTube.token.value == nil || Preferences.KahfTube.token.value == "" || Preferences.KahfTube.imageURL.value != imgSrc {
+            if email != Preferences.KahfTube.email.value || Preferences.KahfTube.imageURL.value != imgSrc {
                 KahfTubeManager.shared.newUserRefreshNeeded = true
                 self.closeVideoPreviews()
                 webRepository.authSession(email: email, name: name) { dict, error in
@@ -64,33 +62,13 @@ public class KahfTubeManager: ObservableObject {
                     }
                 }
             } else {
-                print("Kahf Tube: Already signed-in \(Preferences.KahfTube.token.value ?? "non-Token")")
+                print("Kahf Tube: Already signed-in \(Preferences.KahfTube.token.value )")
                 KahfTubeManager.shared.newUserRefreshNeeded = false
                 closeVideoPreviews()
             }
         } else {
             logout()
             print("Kahf Tube: Anonymous user")
-        }
-    }
-    
-    private func filter(webView: WKWebView) {
-        util.jsFileToCode(path: "main") { code in
-            if let jsCode = code {
-                webView.evaluateSafeJavaScript(functionName: KahfJSGenerator.shared.getFilterJS(), contentWorld: .page, asFunction: false) { object, error in
-                    if let error = error {
-                        print("Kahf Tube: \(error)")
-                    } else {
-                        webView.evaluateSafeJavaScript(functionName: jsCode, contentWorld: .page, asFunction: false) {(object, error) -> Void in
-                            if let error = error {
-                                print("Kahf Tube: \(error)")
-                            } else {
-                                print("Kahf Tube: main.js executed")
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
     
@@ -107,11 +85,40 @@ public class KahfTubeManager: ObservableObject {
         }
     }
     
+    private func initializeEriks(view: UIView) {
+        self.parentView = view
+        if generalErik == nil {
+            let newGeneralErikWebView = WKWebView(frame: CGRect(x: view.bounds.center.x, y: view.bounds.center.y, width: view.bounds.width * 0.5, height: view.bounds.height * 0.5))
+            newGeneralErikWebView.isHidden = true
+            view.addSubview(newGeneralErikWebView)
+            generalErikWebView = newGeneralErikWebView
+            Erik.sharedInstance = Erik(webView: generalErikWebView)
+            generalErik = Erik.sharedInstance
+        }
+    }
+    
     // MARK: - Email&Login&Settings Funcs
     private func getEmail(erik: Erik) {
-        util.jsFileToCode(path: "email") { code in
-            if let jsCode = code {
-                erik.evaluate(javaScript: jsCode) { (obj, err) -> Void in
+        if let script = self.loadUserScript(named: "KahfTubeEmail") {
+            erik.evaluate(javaScript: script) { (obj, err) -> Void in
+                if let error = err {
+                    switch error {
+                    case ErikError.javaScriptError(let message):
+                        print(message)
+                    default:
+                        print("\(error)")
+                    }
+                } else {
+                    print("Kahf Tube: KahfTubeEmail.js worked successfully")
+                }
+            }
+        }
+    }
+    
+    func closeVideoPreviews() {
+        Erik.sharedInstance.visit(url: URL(string: "https://m.youtube.com/select_site")!) { object, error in
+            if let script = self.loadUserScript(named: "KahfTubeCloseVideoPreview") {
+                Erik.sharedInstance.evaluate(javaScript: script) { (obj, err) -> Void in
                     if let error = err {
                         switch error {
                         case ErikError.javaScriptError(let message):
@@ -120,28 +127,7 @@ public class KahfTubeManager: ObservableObject {
                             print("\(error)")
                         }
                     } else {
-                        print("Kahf Tube: email.js worked successfully")
-                    }
-                }
-            }
-        }
-    }
-    
-    func closeVideoPreviews() {
-        Erik.sharedInstance.visit(url: URL(string: "https://m.youtube.com/select_site")!) { object, error in
-            self.util.jsFileToCode(path: "closeVideoPreview") { code in
-                if let jsCode = code {
-                    Erik.sharedInstance.evaluate(javaScript: jsCode) { (obj, err) -> Void in
-                        if let error = err {
-                            switch error {
-                            case ErikError.javaScriptError(let message):
-                                print(message)
-                            default:
-                                print("\(error)")
-                            }
-                        } else {
-                            print("Kahf Tube: closeVideoPreview.js worked successfully")
-                        }
+                        print("Kahf Tube: KahfTubeCloseVideoPreview.js worked successfully")
                     }
                 }
             }
@@ -155,14 +141,12 @@ public class KahfTubeManager: ObservableObject {
             if let error = error {
                 print("Kahf Tube: \(error)")
             } else {
-                self.util.jsFileToCode(path: "channel") { code in
-                    if let jsCode = code {
-                        Erik.evaluate(javaScript: KahfJSGenerator.shared.getChannelStarterJS() + jsCode) { object, error in
-                            if let error = error {
-                                print("Kahf Tube: \(error)")
-                            } else {
-                                print("Kahf Tube: channel.js worked successfully")
-                            }
+                if let script = self.loadUserScript(named: "KahfTubeChannelScript") {
+                    Erik.evaluate(javaScript: KahfJSGenerator.shared.getChannelStarterJS() + script) { object, error in
+                        if let error = error {
+                            print("Kahf Tube: \(error)")
+                        } else {
+                            print("Kahf Tube: KahfTubeChannelScript.js worked successfully")
                         }
                     }
                 }
@@ -196,20 +180,74 @@ public class KahfTubeManager: ObservableObject {
             if let error = error {
                 print("Kahf Tube: \(error)")
             } else {
-                self.util.jsFileToCode(path: "unsubscribe") { code in
-                    if let jsCode = code {
-                        Erik.evaluate(javaScript: KahfJSGenerator.shared.getUnsubscribeStarterJS(haramChannel: self.haramChannelsMap) + jsCode) { object, error in
-                            if let error = error {
-                                print("Kahf Tube: \(error)")
-                            } else {
-                                print("Kahf Tube: unsubscribe.js worked successfully")
-                                Erik.sharedInstance.layoutEngine.changeAgent(agentType: UserAgent.mobile)
-                            }
+                if let script = self.loadUserScript(named: "KahfTubeUnsubscribe") {
+                    Erik.evaluate(javaScript: KahfJSGenerator.shared.getUnsubscribeStarterJS(haramChannel: self.haramChannelsMap) + script) { object, error in
+                        if let error = error {
+                            print("Kahf Tube: \(error)")
+                        } else {
+                            print("Kahf Tube: KahfTubeUnsubscribe.js worked successfully")
+                            Erik.sharedInstance.layoutEngine.changeAgent(agentType: UserAgent.mobile)
                         }
                     }
                 }
             }
         }
+    }
+    
+    func loadYtScript(video: ReplaceVideo) {
+        let newKidsModeErikWebView = WKWebView(frame: .zero)
+        newKidsModeErikWebView.tag = -1111
+        newKidsModeErikWebView.isHidden = true
+        parentView?.addSubview(newKidsModeErikWebView)
+        let newErik = Erik(webView: newKidsModeErikWebView)
+        let videoId = video.id
+        let videoString = "\(videoId)"
+        let videoIdScript = "const videoId = '\(videoString)';"
+        newErik.visit(url: URL(string: "https://m.youtube.com//watch?v=\(videoId)")!) { object, error in
+            if let script = self.loadUserScript(named: "KahfTubeYtData") {
+                newErik.evaluate(javaScript: videoIdScript + script) { object, error in
+                    if let error = error {
+                        print("Kahf Tube: \(error)")
+                    }
+                }
+            }
+        }
+    }
+    
+    func ytCompletion(lengthSeconds: String, url: String, viewCount: String, videoId: String) {
+        guard var video = videosList.first(where: { video in
+            return video.id == videoId
+        }) else { return }
+        video.thumbnail = url
+        video.timeline = lengthSeconds
+        video.views = "\(viewCount) views"
+        do {
+            let encoder = JSONEncoder()
+            let jsonData = try encoder.encode(video)
+            if let jsonString = String(data: jsonData, encoding: .utf8), let body = video.body {
+                
+                let jsString = """
+                    globalCallbackFunction("\(video.href)",\(jsonString),\(body));
+                """
+                KahfTubeManager.webView?.evaluateSafeJavaScript(functionName: jsString, contentWorld: .page, asFunction: false) { object, error in
+                    if let error = error {
+                        print("Kahf Tube:** Filter \(error)")
+                    }
+                }
+            }
+        } catch {
+            print("Error encoding to JSON: \(error)")
+        }
+    }
+    
+    func loadUserScript(named: String) -> String? {
+      guard let path = Bundle.module.path(forResource: named, ofType: "js"),
+            let source: String = try? String(contentsOfFile: path) else {
+          print("Failed to Load Script: \(named).js")
+        assertionFailure("Failed to Load Script: \(named).js")
+        return nil
+      }
+      return source
     }
     
     func finishUnsubscribeSession() {
@@ -221,7 +259,7 @@ public class KahfTubeManager: ObservableObject {
         Preferences.KahfTube.email.value = nil
         Preferences.KahfTube.username.value = nil
         Preferences.KahfTube.imageURL.value = nil
-        Preferences.KahfTube.token.value = nil
+        Preferences.KahfTube.token.value = "296|y4AAmzzmIPN4rXydWoFBs60XWMIg58rA8aVhjp30"
     }
     
     func login(email: String, token: String, imgSrc: String, name: String) {
@@ -230,12 +268,13 @@ public class KahfTubeManager: ObservableObject {
         Preferences.KahfTube.imageURL.value = imgSrc
         Preferences.KahfTube.token.value = token
     }
-}
-
-struct Channel: Identifiable, Hashable, Encodable {
-    var id: String
-    var name: String
-    var thumbnail: String
-    var isHaram: Bool
-    var isUnsubscribed: Bool
+    
+    func closeKahfTubeTools() {
+        videosList.removeAll()
+        parentView?.subviews.forEach({ view in
+            if view.tag == -1111 {
+                view.removeFromSuperview()
+            }
+        })
+    }
 }
