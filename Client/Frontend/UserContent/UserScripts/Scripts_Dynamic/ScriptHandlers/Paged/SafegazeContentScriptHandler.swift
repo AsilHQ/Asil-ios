@@ -98,26 +98,21 @@ class SafegazeContentScriptHandler: TabContentScript {
     
     @available(iOS 15.0, *)
     func downloadAndProcessImage(from imageURL: URL, completion: @escaping (Bool) -> Void) {
-        // Capture start time for downloading
-        let downloadStartTime = DispatchTime.now()
-
         // Use a background queue for network operations
         DispatchQueue.global(qos: .userInitiated).async {
-            do {
-                // Download the image asynchronously
-                let imageData = try Data(contentsOf: imageURL)
+            self.asyncDownloadImage(from: imageURL) { imageData in
+                guard let imageData = imageData else {
+                    DispatchQueue.main.async {
+                        completion(false)
+                    }
+                    return
+                }
                 
-                // Capture end time for downloading
-                let downloadEndTime = DispatchTime.now()
-
                 let imageHandler = VNImageRequestHandler(data: imageData)
-
+                
                 var humanCount = 0
                 var faceCount = 0
-
-                // Capture start time for processing
-                let processingStartTime = DispatchTime.now()
-
+                
                 let humanRequest = VNDetectHumanRectanglesRequest { request, error in
                     // Process the results for human detection
                     if let humanObservations = request.results as? [VNHumanObservation] {
@@ -125,7 +120,7 @@ class SafegazeContentScriptHandler: TabContentScript {
                     }
                 }
                 humanRequest.usesCPUOnly = true
-
+                
                 let faceRequest = VNDetectFaceRectanglesRequest { request, error in
                     // Process the results for face detection
                     if let faceObservations = request.results as? [VNFaceObservation] {
@@ -133,33 +128,27 @@ class SafegazeContentScriptHandler: TabContentScript {
                     }
                 }
                 faceRequest.usesCPUOnly = true
-
+                
                 // Perform the requests on the image handler
                 try? imageHandler.perform([humanRequest, faceRequest])
-
-                // Capture end time for processing
-                let processingEndTime = DispatchTime.now()
-
+                
                 // Notify on the main queue when the background tasks are completed
                 DispatchQueue.main.async {
-                    /* Calculate the downloading duration
-                    let downloadNanoseconds = downloadEndTime.uptimeNanoseconds - downloadStartTime.uptimeNanoseconds
-                    let downloadSeconds = Double(downloadNanoseconds) / 1_000_000_000
-
-                    // Calculate the processing duration
-                    let processingNanoseconds = processingEndTime.uptimeNanoseconds - processingStartTime.uptimeNanoseconds
-                    let processingSeconds = Double(processingNanoseconds) / 1_000_000_000
-
-                    print("**Image downloading completed in \(downloadSeconds) seconds.")
-                    print("**Both human and face detection completed in \(processingSeconds) seconds.") */
-
-                    completion(humanCount + faceCount > 0 )
+                    completion(humanCount + faceCount > 0)
                 }
-
-            } catch {
-                print("Error downloading or processing image: \(error.localizedDescription)")
             }
         }
+    }
+
+    func asyncDownloadImage(from imageURL: URL, completion: @escaping (Data?) -> Void) {
+        URLSession.shared.dataTask(with: imageURL) { data, _, error in
+            if let error = error {
+                print("Error downloading image: \(error.localizedDescription)")
+                completion(nil)
+            } else {
+                completion(data)
+            }
+        }.resume()
     }
 }
 
