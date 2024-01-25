@@ -1,9 +1,7 @@
-//
-//  ContentView.swift
-//  SwiftUI_DEsigner
-//
-//  Created by Cem Sertkaya on 18.01.2024.
-//
+// Copyright 2024 The Asil Browser Authors. All rights reserved.
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import SwiftUI
 import Storage
@@ -51,14 +49,22 @@ struct SafegazePopUpView: View {
     }
     
     private var reportView: some View {
-        HStack {
-            ResizableImageView(image: Image(braveSystemName: "sg.popup.bug"), width: 16, height: 16)
-            
-            Text("Please report any bugs or suggestions to this form")
-                .font(Font.custom("Inter", size: 12))
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color(red: 0.27, green: 0.27, blue: 0.27))
-        }.padding(.horizontal, 33)
+        Button {
+            guard let url = URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSeaW7PjI-K3yqZZ4gpuXbbx5qOFxAwILLy5uy7PTerXfdzFqw/viewform") else { return }
+            UIApplication.shared.open(url)
+        } label: {
+            HStack {
+                ResizableImageView(image: Image(braveSystemName: "sg.popup.bug"), width: 16, height: 16)
+                
+                Text("Please report any bugs or suggestions to ")
+                    .font(Font.custom("Inter", size: 12))
+                    .foregroundColor(Color(red: 0.27, green: 0.27, blue: 0.27))
+                +
+                Text("this form")
+                    .font(Font.custom("Inter", size: 12))
+                    .foregroundColor(Color(uiColor: UIColor(red: 0.06, green: 0.7, blue: 0.79, alpha: 1)))
+            }.padding(.horizontal, 33)
+        }
     }
     
     @MainActor static func redirect(url: URL?, updateView: (() -> Void)?) -> UIView {

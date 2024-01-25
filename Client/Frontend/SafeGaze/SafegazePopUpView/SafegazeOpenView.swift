@@ -1,9 +1,7 @@
-//
-//  SafegazeOpenView.swift
-//  SwiftUI_DEsigner
-//
-//  Created by Cem Sertkaya on 19.01.2024.
-//
+// Copyright 2024 The Asil Browser Authors. All rights reserved.
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import SwiftUI
 
@@ -21,7 +19,7 @@ struct SafegazeOpenView: View {
             
             genderModeView.padding(.top, 10)
             
-            imageBlurIntensityView.padding(.top, 10)
+            ImageBlurIntensityView(value: $value).padding(.top, 10)
             
             supportVStack.padding(.top, 20)
         }
@@ -38,10 +36,7 @@ struct SafegazeOpenView: View {
             
             HStack {
                 Text("Safegaze UP")
-                    .font(
-                        Font.custom("Quicksand", size: 12)
-                            .weight(.bold)
-                    )
+                    .font(FontHelper.quicksand(size: 12, weight: .bold))
                     .frame(width: 74)
                     .padding(.leading, 14)
                     .padding(.trailing, 18)
@@ -90,10 +85,7 @@ struct SafegazeOpenView: View {
             
             HStack {
                 Text("Never Pause")
-                    .font(
-                        Font.custom("Quicksand", size: 12)
-                            .weight(.medium)
-                    )
+                    .font(FontHelper.quicksand(size: 12, weight: .medium))
                     .foregroundColor(.black)
                 
                 ResizableImageView(image: Image(braveSystemName: "sg.arrow.down"), width: 10, height: 10)
@@ -118,10 +110,7 @@ struct SafegazeOpenView: View {
             
             HStack {
                 Text("Sinful acts avoided")
-                    .font(
-                        Font.custom("Quicksand", size: 13)
-                            .weight(.bold)
-                    )
+                    .font(FontHelper.quicksand(size: 13, weight: .bold))
                     .foregroundColor(.black)
                     .padding(.leading, 14)
                 
@@ -131,10 +120,7 @@ struct SafegazeOpenView: View {
                     ResizableImageView(image: Image(braveSystemName: "sg.hide.icon"), width: 12, height: 12)
                     
                     Text("Hide")
-                        .font(
-                            Font.custom("Quicksand", size: 12)
-                                .weight(.semibold)
-                        )
+                        .font(FontHelper.quicksand(size: 12, weight: .semibold))
                         .foregroundColor(Color(red: 0.53, green: 0.53, blue: 0.53))
                 }.padding(.trailing, 14)
             }
@@ -147,25 +133,18 @@ struct SafegazeOpenView: View {
                     Spacer()
                     
                     Text("This Page")
-                        .font(
-                            Font.custom("Quicksand", size: 14)
-                                .weight(.medium)
-                        )
+                        .font(FontHelper.quicksand(size: 14, weight: .medium))
                         .foregroundColor(Color(red: 0.43, green: 0.43, blue: 0.43))
                     
                 }.frame(width: 108).padding(.leading, 14)
-                
                 
                 HStack {
                     SafegazeCircleCountView(count: 34)
                     
                     Spacer()
                     
-                    Text("This Page")
-                        .font(
-                            Font.custom("Quicksand", size: 14)
-                                .weight(.medium)
-                        )
+                    Text("Lifetime")
+                        .font(FontHelper.quicksand(size: 14, weight: .medium))
                         .foregroundColor(Color(red: 0.43, green: 0.43, blue: 0.43))
                     
                 }.frame(width: 108).padding(.leading, 30)
@@ -187,10 +166,7 @@ struct SafegazeOpenView: View {
                 
                 HStack {
                     Text("Gender Mode")
-                        .font(
-                            Font.custom("Quicksand", size: 13)
-                                .weight(.bold)
-                        )
+                        .font(FontHelper.quicksand(size: 13, weight: .bold))
                         .foregroundColor(.black)
                     
                     ResizableImageView(image: Image(braveSystemName: "sg.lock.icon"), width: 13, height: 13).padding(.leading, 2)
@@ -202,10 +178,7 @@ struct SafegazeOpenView: View {
                 
                 HStack(alignment: .center, spacing: 10) {
                     Text("Coming Soon")
-                        .font(
-                            Font.custom("Quicksand", size: 10)
-                                .weight(.bold)
-                        )
+                        .font(FontHelper.quicksand(size: 10, weight: .bold))
                         .multilineTextAlignment(.trailing)
                         .foregroundColor(Color(red: 0.62, green: 0.48, blue: 0.92))
                 }
@@ -226,10 +199,7 @@ struct SafegazeOpenView: View {
                         .foregroundColor(Color(red: 0.06, green: 0.7, blue: 0.79))
                     
                     Text("I am Man")
-                        .font(
-                            Font.custom("Quicksand", size: 14)
-                                .weight(.bold)
-                        )
+                        .font(FontHelper.quicksand(size: 14, weight: .bold))
                         .foregroundColor(Color(red: 0.06, green: 0.7, blue: 0.79))
                     
                 }
@@ -251,12 +221,8 @@ struct SafegazeOpenView: View {
                     ResizableImageView(image: Image(braveSystemName: "sg.woman"), width: 20, height: 20)
                     
                     Text("I am Women")
-                        .font(
-                            Font.custom("Quicksand", size: 14)
-                                .weight(.semibold)
-                        )
+                        .font(FontHelper.quicksand(size: 14, weight: .semibold))
                         .foregroundColor(Color(red: 0.23, green: 0.23, blue: 0.23))
-                    
                 }
                 .frame(width: 142, height: 32)
                 .background(
@@ -313,10 +279,7 @@ struct SafegazeOpenView: View {
                 } label: {
                     ZStack {
                         Text("Support this project")
-                            .font(
-                                Font.custom("Quicksand", size: 14)
-                                    .weight(.bold)
-                            )
+                            .font(FontHelper.quicksand(size: 14, weight: .bold))
                             .foregroundColor(Color.white)
                     }
                     .frame(width: 232, height: 40)
@@ -347,38 +310,6 @@ struct SafegazeOpenView: View {
                 }
             }
         }.padding(.horizontal, 18)
-    }
-    
-    private var imageBlurIntensityView: some View {
-        HStack {
-            VStack(alignment: .leading, spacing: 19) {
-                
-                Spacer()
-                
-                Text("Image Blur Intensity")
-                    .font(
-                        Font.custom("Quicksand", size: 13)
-                            .weight(.bold)
-                    )
-                    .foregroundColor(.black)
-                
-                SliderView(value: $value)
-                    .frame(height: 23)
-                    .cornerRadius(3)
-                
-                Spacer()
-                
-            }.padding(.leading, 12).padding(.top, 11).padding(.bottom, 19)
-            
-            Spacer()
-            
-            ResizableImageView(image: Image(braveSystemName: "sg.blur.sample"), width: 64, height: 46)
-        }
-        .frame(height: 79)
-        .background(.white)
-        .cornerRadius(10)
-        .shadow(color: Color(red: 0.49, green: 0.52, blue: 0.56).opacity(0.12), radius: 2.5, x: 0, y: 1)
-        .padding(.horizontal, 18)
     }
 }
 

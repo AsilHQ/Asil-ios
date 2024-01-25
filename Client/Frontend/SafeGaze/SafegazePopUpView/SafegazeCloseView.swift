@@ -1,9 +1,7 @@
-//
-//  SafegazeCloseView.swift
-//  SwiftUI_DEsigner
-//
-//  Created by Cem Sertkaya on 19.01.2024.
-//
+// Copyright 2024 The Asil Browser Authors. All rights reserved.
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import SwiftUI
 import Storage
@@ -58,7 +56,7 @@ struct SafegazeCloseView: View {
                         )
                     
                     Text("Always pause")
-                        .font(Font.custom("Quicksand", size: 12).weight(.medium))
+                        .font(FontHelper.quicksand(size: 12, weight: .medium))
                         .foregroundColor(Color(red: 0.58, green: 0.58, blue: 0.58))
                     
                     Spacer()
@@ -66,13 +64,14 @@ struct SafegazeCloseView: View {
             }
             .padding(.leading, 18)
             
-            Text("Sinful acts showing")
+            /*Text("Sinful acts showing")
                 .font(Font.custom("Outfit", size: 12).weight(.medium))
                 .foregroundColor(Color(red: 0.36, green: 0.36, blue: 0.36))
                 .frame(width: 69)
                 .padding(.trailing, 14)
             
-            SafegazeCircleCountView(count: 34).padding(.trailing, 15)
+            SafegazeCircleCountView(count: 34).padding(.trailing, 15)*/
+            
         }.frame(height: 66)
             .background(Color.white)
             .cornerRadius(10)
@@ -83,10 +82,7 @@ struct SafegazeCloseView: View {
     private var descriptionView: some View {
         ZStack {
             Text("Take control of your digital space with our Ad Blocker and Image Purificator extension combo. Savegaze will save your eyes from singul act.")
-                .font(
-                    Font.custom("Quicksand", size: 12)
-                        .weight(.medium)
-                )
+                .font(FontHelper.quicksand(size: 12, weight: .medium))
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color(red: 0.27, green: 0.27, blue: 0.27))
             

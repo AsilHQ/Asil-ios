@@ -1,11 +1,42 @@
-//
-//  SwiftUIView.swift
-//  
-//
-//  Created by Cem Sertkaya on 24.01.2024.
-//
+// Copyright 2024 The Asil Browser Authors. All rights reserved.
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import SwiftUI
+
+struct ImageBlurIntensityView: View {
+    @Binding var value: Double
+    
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 19) {
+                
+                Spacer()
+                
+                Text("Image Blur Intensity")
+                    .font(FontHelper.quicksand(size: 13, weight: .bold))
+                    .foregroundColor(.black)
+                
+                SliderView(value: $value)
+                    .frame(height: 23)
+                    .cornerRadius(3)
+                
+                Spacer()
+                
+            }.padding(.leading, 12).padding(.top, 11).padding(.bottom, 19)
+            
+            Spacer()
+            
+            ResizableImageView(image: Image(braveSystemName: "sg.blur.sample"), width: 64, height: 46).padding(.trailing, 11)
+        }
+        .frame(height: 79)
+        .background(.white)
+        .cornerRadius(10)
+        .shadow(color: Color(red: 0.49, green: 0.52, blue: 0.56).opacity(0.12), radius: 2.5, x: 0, y: 1)
+        .padding(.horizontal, 18)
+    }
+}
 
 struct SliderView: View {
     @Binding var value: Double
