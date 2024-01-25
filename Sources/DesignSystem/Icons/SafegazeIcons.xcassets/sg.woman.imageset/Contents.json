@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "new-tab.png",
+      "filename" : "sg.woman.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "new-tab@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "new-tab@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

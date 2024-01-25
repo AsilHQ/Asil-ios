@@ -16,7 +16,7 @@ import BraveCore
 class SafegazeViewController: UIViewController, PopoverContentComponent {
 
   let tab: Tab
-  private lazy var url: URL? = {
+  lazy var url: URL? = {
     guard let _url = tab.url else { return nil }
 
     if InternalURL.isValid(url: _url),
@@ -189,7 +189,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
 
   private func updatePreferredContentSize() {
     guard let visibleView = shieldsView.contentView else { return }
-    let width = min(360, UIScreen.main.bounds.width - 20)
+    let width = UIScreen.main.bounds.width
     // Ensure the a static width is given to the main view so we can calculate the height
     // correctly when we force a layout
     let height = visibleView.systemLayoutSizeFitting(
@@ -219,7 +219,11 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
   }
 
   override func loadView() {
-    view = View()
+      let newView = View(frame: .zero, url: url)
+      newView.updateBgView = {  newViewX, boolValue in
+          self.updateContentView(to: newViewX, animated: boolValue)
+      }
+      view = newView
   }
 
   override func viewDidLoad() {
@@ -383,15 +387,21 @@ extension SafegazeViewController {
 
     let reportBrokenSiteView = ReportBrokenSiteView()
     let siteReportedView = SiteReportedView()
-
-    override init(frame: CGRect) {
+    public var updateBgView: ((UIView, Bool) -> ())?
+    var url: URL?
+      
+    init(frame: CGRect, url: URL?) {
+      self.url = url
       super.init(frame: frame)
 
       backgroundColor = .braveBackground
 
-      stackView.addArrangedSubview(simpleShieldView)
-      // stackView.addArrangedSubview(advancedControlsBar)
-      // stackView.addArrangedSubview(advancedShieldView)
+      let popupView = SafegazePopUpView.redirect(url: url, updateView: { [self] in
+          setNeedsUpdateConstraints()
+          layoutIfNeeded()
+          updateBgView?(stackView, true)
+      })
+      stackView.addArrangedSubview(popupView)
 
       addSubview(scrollView)
       scrollView.addSubview(stackView)

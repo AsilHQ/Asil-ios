@@ -9,7 +9,7 @@ import PackageDescription
 let package = Package(
   name: "Brave",
   defaultLocalization: "en",
-  platforms: [.iOS(.v14), .macOS(.v11)],
+  platforms: [.iOS(.v15), .macOS(.v11)],
   products: [
     .library(name: "Brave", targets: ["Brave"]),
     .library(name: "HTTPSE", targets: ["HTTPSE"]),
