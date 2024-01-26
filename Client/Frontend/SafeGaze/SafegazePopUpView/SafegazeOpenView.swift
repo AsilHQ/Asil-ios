@@ -6,7 +6,7 @@
 import SwiftUI
 
 struct SafegazeOpenView: View {
-    @Binding var value: Double
+    @Binding var value: Float
     @Binding var isOn: Bool
     @State var url: URL?
     var body: some View {
@@ -34,6 +34,8 @@ struct SafegazeOpenView: View {
                 Spacer()
             }
             
+            Spacer()
+            
             HStack {
                 Text("Safegaze UP")
                     .font(FontHelper.quicksand(size: 12, weight: .bold))
@@ -58,9 +60,10 @@ struct SafegazeOpenView: View {
                     .inset(by: 0.5)
                     .stroke(Color(red: 0.91, green: 0.91, blue: 0.91), lineWidth: 1)
                 
-            )
+            ).padding(.trailing, 17)
             
-            ResizableImageView(image: Image(braveSystemName: "sg.settings.icon"), width: 20, height: 20)
+            // TODO: Implement settings later
+            /*ResizableImageView(image: Image(braveSystemName: "sg.settings.icon"), width: 20, height: 20)
                 .frame(width: 40, height: 40)
                 .background(Color.white)
                 .cornerRadius(8)
@@ -69,8 +72,7 @@ struct SafegazeOpenView: View {
                         .inset(by: 0.5)
                         .stroke(Color(red: 0.91, green: 0.91, blue: 0.91), lineWidth: 1)
                 )
-                .padding(.trailing, 17)
-            
+                .padding(.trailing, 17)*/
         }
         .frame(height: 80)
         .background(Color.white)
@@ -316,7 +318,7 @@ struct SafegazeOpenView: View {
 #if DEBUG
 struct SafegazeOpenView_Previews: PreviewProvider {
     static var previews: some View {
-        SafegazeOpenView(value: .constant(10), isOn: .constant(true))
+        SafegazeOpenView(value: .constant(0.3), isOn: .constant(true))
     }
 }
 #endif

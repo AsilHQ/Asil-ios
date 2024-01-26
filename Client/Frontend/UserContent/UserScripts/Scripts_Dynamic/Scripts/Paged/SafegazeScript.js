@@ -5,8 +5,10 @@
 
 const imagesToReplace = [];
 const cleanedSavedImagesArray = []
-window.safegazeOnDeviceModelHandler = safegazeOnDeviceModelHandler;
 
+window.safegazeOnDeviceModelHandler = safegazeOnDeviceModelHandler;
+window.sendMessage = sendMessage;
+window.updateBluredImageOpacity = updateBluredImageOpacity;
 
 async function safegazeOnDeviceModelHandler (isExist, index) {
     if (isExist === true) {
@@ -65,6 +67,13 @@ function sendMessage(message) {
     catch {}
 }
 
+function updateBluredImageOpacity() {
+    const blurredElements = document.querySelectorAll('[isBlurred="true"]');
+    blurredElements.forEach(element => {
+        element.style.filter = `blur(${window.blurIntensity * 20}px)`;
+    });
+}
+
 function removeSourceElementsInPictures() {
     const pictureElements = document.querySelectorAll('picture');
 
@@ -77,18 +86,21 @@ function removeSourceElementsInPictures() {
 }
 
 function blurImage(image) {
-  image.style.filter = 'blur(10px)';
+  image.style.filter = `blur(${window.blurIntensity * 10}px)`;
+  image.setAttribute('isBlurred', 'true');
 }
 
 function unblurImageOnLoad(image) {
   image.onload = () => {
       image.style.filter = 'none';
   };
+  image.setAttribute('isBlurred', 'false');
 }
 
 //Means that there is no object in image
 function unblurImage(image) {
     image.style.filter = 'none';
+    image.setAttribute('isBlurred', 'false');
 }
 
 function setImageSrc(element, url) {

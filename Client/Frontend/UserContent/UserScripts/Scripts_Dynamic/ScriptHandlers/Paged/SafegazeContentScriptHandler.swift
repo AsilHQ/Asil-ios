@@ -29,13 +29,14 @@ class SafegazeContentScriptHandler: TabContentScript {
     static let messageHandlerName = "safegazeMessageHandler"
     static let scriptSandbox: WKContentWorld = .page
     static let userScript: WKUserScript? = {
+        let scriptSetup = "window.blurIntensity = \(Preferences.Safegaze.blurIntensity.value);"
         guard var script = loadUserScript(named: scriptName) else {
             return nil
         }
         
         return WKUserScript.create(source: secureScript(handlerName: messageHandlerName,
                                                         securityToken: scriptId,
-                                                        script: script),
+                                                        script: scriptSetup + script),
                                    injectionTime: .atDocumentEnd,
                                    forMainFrameOnly: false,
                                    in: scriptSandbox)

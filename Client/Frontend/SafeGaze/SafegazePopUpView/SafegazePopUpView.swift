@@ -16,9 +16,11 @@ import BraveCore
 
 struct SafegazePopUpView: View {
     @State var isOpened: Bool
-    @State var value: Double = 10.0
+    @State var value: Float = Preferences.Safegaze.blurIntensity.value
     @State var url: URL?
     var updateView: (() -> Void)?
+    var updateBlurIntensity: (() -> Void)?
+    var shieldsSettingsChanged: (() -> Void)?
     
     var body: some View {
         
@@ -44,7 +46,17 @@ struct SafegazePopUpView: View {
         .shadow(color: Color(red: 0.09, green: 0.12, blue: 0.27).opacity(0.08), radius: 20, x: 0, y: 8)
         .onChange(of: isOpened) { newValue in
             updateSafegaze(isOpened: newValue)
+            shieldsSettingsChanged?()
             updateView?()
+        }
+        .onChange(of: value) { newValue in
+            value = newValue
+        }
+        .onDisappear() {
+            Preferences.Safegaze.blurIntensity.value = value
+            if isOpened {
+                updateBlurIntensity?()
+            }
         }
     }
     
@@ -67,7 +79,7 @@ struct SafegazePopUpView: View {
         }
     }
     
-    @MainActor static func redirect(url: URL?, updateView: (() -> Void)?) -> UIView {
+    @MainActor static func redirect(url: URL?, updateView: (() -> Void)?, updateBlurIntensity: (() -> Void)?, shieldsSettingsChanged: (() -> Void)?) -> UIView {
         var domain: Domain?
         var isOpened: Bool = false
         if let url = url {
@@ -81,7 +93,7 @@ struct SafegazePopUpView: View {
         } else {
             isOpened = false
         }
-        return UIHostingController(rootView: SafegazePopUpView(isOpened: isOpened, url: url, updateView: updateView)).view
+        return UIHostingController(rootView: SafegazePopUpView(isOpened: isOpened, url: url, updateView: updateView, updateBlurIntensity: updateBlurIntensity, shieldsSettingsChanged: shieldsSettingsChanged)).view
     }
     
     func updateSafegaze(isOpened: Bool) {

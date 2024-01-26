@@ -6,7 +6,7 @@
 import SwiftUI
 
 struct ImageBlurIntensityView: View {
-    @Binding var value: Double
+    @Binding var value: Float
     
     var body: some View {
         HStack {
@@ -28,7 +28,11 @@ struct ImageBlurIntensityView: View {
             
             Spacer()
             
-            ResizableImageView(image: Image(braveSystemName: "sg.blur.sample"), width: 64, height: 46).padding(.trailing, 11)
+            ResizableImageView(image: Image(braveSystemName: "sg.blur.sample"), width: 64, height: 46)
+                .scaledToFill()
+                .blur(radius: Double(value) * 10)
+                .cornerRadius(8)
+                .padding(.trailing, 11)
         }
         .frame(height: 79)
         .background(.white)
@@ -39,23 +43,23 @@ struct ImageBlurIntensityView: View {
 }
 
 struct SliderView: View {
-    @Binding var value: Double
+    @Binding var value: Float
     @State var lastCoordinateValue: CGFloat = 0.0
-    var sliderRange: ClosedRange<Double> = 1...100
+    var sliderRange: ClosedRange<CGFloat> = 0...1
     var thumbColor: Color = .yellow
     var minTrackColor: Color = Color(red: 0.06, green: 0.7, blue: 0.79)
     var maxTrackColor: Color = Color(red: 0.9, green: 0.9, blue: 0.9)
     
     var body: some View {
         GeometryReader { gr in
-            let thumbWidth = gr.size.width * 0.03
+            let thumbWidth = 10.258
             let radius = gr.size.height * 0.5
-            let minValue = gr.size.width * 0.015
-            let maxValue = (gr.size.width * 0.98) - thumbWidth
+            let minValue = 0.0
+            let maxValue = (gr.size.width * 0.95) - thumbWidth
             
-            let scaleFactor = (maxValue - minValue) / (sliderRange.upperBound - sliderRange.lowerBound)
+            let scaleFactor = Double(maxValue - minValue) / Double(sliderRange.upperBound - sliderRange.lowerBound)
             let lower = sliderRange.lowerBound
-            let sliderVal = (self.value - lower) * scaleFactor + minValue
+            let sliderVal = (Double(self.value) - lower) * scaleFactor + minValue
             
             ZStack {
                 Color.clear
@@ -67,7 +71,7 @@ struct SliderView: View {
                 HStack {
                     Rectangle()
                         .foregroundColor(minTrackColor)
-                        .frame(width: sliderVal, height: 5)
+                        .frame(width: max(0, sliderVal), height: 5)
                     Spacer()
                 }
                 .clipShape(RoundedRectangle(cornerRadius: radius))
@@ -99,15 +103,15 @@ struct SliderView: View {
                     .gesture(
                         DragGesture(minimumDistance: 0)
                             .onChanged { v in
-                                if (abs(v.translation.width) < 0.1) {
+                                if abs(v.translation.width) < 0.1 {
                                     self.lastCoordinateValue = sliderVal
                                 }
                                 if v.translation.width > 0 {
                                     let nextCoordinateValue = min(maxValue, self.lastCoordinateValue + v.translation.width)
-                                    self.value = ((nextCoordinateValue - minValue) / scaleFactor)  + lower
+                                    self.value = Float(((nextCoordinateValue - minValue) / scaleFactor)  + lower)
                                 } else {
                                     let nextCoordinateValue = max(minValue, self.lastCoordinateValue + v.translation.width)
-                                    self.value = ((nextCoordinateValue - minValue) / scaleFactor) + lower
+                                    self.value = Float(((nextCoordinateValue - minValue) / scaleFactor) + lower)
                                 }
                             }
                     )

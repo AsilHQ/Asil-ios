@@ -195,6 +195,10 @@ extension Preferences {
       public static let mode = Option<Int>(key: "kahfTube.mode", default: 1)
       public static let imageURL = Option<String?>(key: "kahfTube.religionStatus", default: nil)
   }
+    
+  public final class Safegaze {
+      public static let blurIntensity = Option<Float>(key: "safegaze.blurIntensity", default: 1.0)
+  }
 }
 
 extension Preferences {
