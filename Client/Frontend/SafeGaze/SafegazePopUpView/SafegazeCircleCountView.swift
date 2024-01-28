@@ -6,7 +6,7 @@
 import SwiftUI
 
 struct SafegazeCircleCountView: View {
-    var count: Int
+    @State var count: Int
     
     var body: some View {
         ZStack {
@@ -14,7 +14,7 @@ struct SafegazeCircleCountView: View {
                 .frame(width: 36, height: 36)
                 .background(Color(red: 0.97, green: 0.91, blue: 0.87))
             
-            Text("34")
+            Text(String(count))
                 .font(FontHelper.quicksand(size: 14, weight: .bold))
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color(red: 1, green: 0, blue: 0))

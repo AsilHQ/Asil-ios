@@ -18,15 +18,17 @@ struct SafegazePopUpView: View {
     @State var isOpened: Bool
     @State var value: Float = Preferences.Safegaze.blurIntensity.value
     @State var url: URL?
+    @State var lifetimeAvoidedContentCount: Int = BraveGlobalShieldStats.shared.safegazeCount
     var updateView: (() -> Void)?
     var updateBlurIntensity: (() -> Void)?
     var shieldsSettingsChanged: (() -> Void)?
+    var tab: Tab 
     
     var body: some View {
         
         VStack {
             if isOpened {
-                SafegazeOpenView(value: $value, isOn: $isOpened, url: url)
+                SafegazeOpenView(value: $value, isOn: $isOpened, url: url, domainAvoidedContentCount: tab.contentBlocker.stats.safegazeCount, lifetimeAvoidedContentCount: lifetimeAvoidedContentCount)
             } else {
                 SafegazeCloseView(isOpened: $isOpened, url: url)
             }
@@ -79,7 +81,7 @@ struct SafegazePopUpView: View {
         }
     }
     
-    @MainActor static func redirect(url: URL?, updateView: (() -> Void)?, updateBlurIntensity: (() -> Void)?, shieldsSettingsChanged: (() -> Void)?) -> UIView {
+    @MainActor static func redirect(url: URL?, updateView: (() -> Void)?, updateBlurIntensity: (() -> Void)?, shieldsSettingsChanged: (() -> Void)?, tab: Tab) -> UIView {
         var domain: Domain?
         var isOpened: Bool = false
         if let url = url {
@@ -93,7 +95,9 @@ struct SafegazePopUpView: View {
         } else {
             isOpened = false
         }
-        return UIHostingController(rootView: SafegazePopUpView(isOpened: isOpened, url: url, updateView: updateView, updateBlurIntensity: updateBlurIntensity, shieldsSettingsChanged: shieldsSettingsChanged)).view
+        let popupView = SafegazePopUpView(isOpened: isOpened, url: url, updateView: updateView, updateBlurIntensity: updateBlurIntensity, shieldsSettingsChanged: shieldsSettingsChanged, tab: tab)
+        return UIHostingController(rootView: popupView).view
+        
     }
     
     func updateSafegaze(isOpened: Bool) {
@@ -109,7 +113,7 @@ struct SafegazePopUpView: View {
 #if DEBUG
 struct SafegazePopUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SafegazePopUpView(isOpened: true)
+        SafegazePopUpView(isOpened: true, tab: Tab(configuration: WKWebViewConfiguration()))
     }
 }
 #endif

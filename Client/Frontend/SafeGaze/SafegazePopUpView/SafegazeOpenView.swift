@@ -9,6 +9,8 @@ struct SafegazeOpenView: View {
     @Binding var value: Float
     @Binding var isOn: Bool
     @State var url: URL?
+    @State var domainAvoidedContentCount: Int
+    @State var lifetimeAvoidedContentCount: Int
     var body: some View {
         VStack {
             openHeaderView
@@ -117,20 +119,20 @@ struct SafegazeOpenView: View {
                     .padding(.leading, 14)
                 
                 Spacer()
-                HStack {
+                /*HStack {
                     
                     ResizableImageView(image: Image(braveSystemName: "sg.hide.icon"), width: 12, height: 12)
                     
                     Text("Hide")
                         .font(FontHelper.quicksand(size: 12, weight: .semibold))
                         .foregroundColor(Color(red: 0.53, green: 0.53, blue: 0.53))
-                }.padding(.trailing, 14)
+                }.padding(.trailing, 14)*/
             }
             
             HStack {
                 
                 HStack {
-                    SafegazeCircleCountView(count: 34)
+                    SafegazeCircleCountView(count: domainAvoidedContentCount)
                     
                     Spacer()
                     
@@ -141,7 +143,7 @@ struct SafegazeOpenView: View {
                 }.frame(width: 108).padding(.leading, 14)
                 
                 HStack {
-                    SafegazeCircleCountView(count: 34)
+                    SafegazeCircleCountView(count: lifetimeAvoidedContentCount)
                     
                     Spacer()
                     
@@ -318,7 +320,7 @@ struct SafegazeOpenView: View {
 #if DEBUG
 struct SafegazeOpenView_Previews: PreviewProvider {
     static var previews: some View {
-        SafegazeOpenView(value: .constant(0.3), isOn: .constant(true))
+        SafegazeOpenView(value: .constant(0.3), isOn: .constant(true), domainAvoidedContentCount: 1000, lifetimeAvoidedContentCount: 1000)
     }
 }
 #endif

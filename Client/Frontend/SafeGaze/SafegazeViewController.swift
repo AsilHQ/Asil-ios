@@ -128,7 +128,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
   }
 
   override func loadView() {
-      let newView = View(frame: .zero, url: url)
+      let newView = View(frame: .zero, url: url, tab: tab)
       newView.updateBgView = {  updatedView, animated in
           self.updateContentView(to: updatedView, animated: animated)
       }
@@ -318,9 +318,11 @@ extension SafegazeViewController {
     public var updateBlurIntensity: (() -> Void)?
     public var shieldsSettingsChanged: (() -> Void)?
     var url: URL?
+    var tab: Tab
       
-    init(frame: CGRect, url: URL?) {
+    init(frame: CGRect, url: URL?, tab: Tab) {
       self.url = url
+      self.tab = tab
       super.init(frame: frame)
 
       backgroundColor = .braveBackground
@@ -331,9 +333,9 @@ extension SafegazeViewController {
           updateBgView?(stackView, true)
       }, updateBlurIntensity: {
           self.updateBlurIntensity?()
-      }) {
+      }, shieldsSettingsChanged: {
           self.shieldsSettingsChanged?()
-      }
+      }, tab: tab)
       stackView.addArrangedSubview(popupView)
 
       addSubview(scrollView)
