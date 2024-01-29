@@ -267,19 +267,20 @@ struct SafegazeOpenView: View {
             HStack {
                 
                 Button {
-                    
+                   
                 } label: {
                     ResizableImageView(image: Image(braveSystemName: "sg.share.icon"), width: 16, height: 16)
                         .frame(width: 44, height: 40)
                         .background(Color.white)
                         .cornerRadius(10)
                         .shadow(color: Color(red: 0.49, green: 0.52, blue: 0.56).opacity(0.12), radius: 2.5, x: 0, y: 1)
-                }
+                }.disabled(true)
                 
                 Spacer()
                 
                 Button {
-                    
+                    guard let url = URL(string: "https://safegaze.com/support-safegaze/") else { return }
+                    UIApplication.shared.open(url)
                 } label: {
                     ZStack {
                         Text("Support this project")
@@ -303,7 +304,7 @@ struct SafegazeOpenView: View {
                 
                 Spacer()
                 
-                Button {
+               Button {
                     
                 } label: {
                     ResizableImageView(image: Image(braveSystemName: "sg.night.icon"), width: 16, height: 16)
@@ -311,7 +312,7 @@ struct SafegazeOpenView: View {
                         .background(Color.white)
                         .cornerRadius(10)
                         .shadow(color: Color(red: 0.49, green: 0.52, blue: 0.56).opacity(0.12), radius: 2.5, x: 0, y: 1)
-                }
+                }.disabled(true)
             }
         }.padding(.horizontal, 18)
     }

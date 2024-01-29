@@ -386,7 +386,7 @@ extension BrowserViewController: TopToolbarDelegate {
         }
     }
     let container = PopoverNavigationController(rootViewController: shields)
-    let popover = PopoverController(contentController: container, contentSizeBehavior: .preferredContentSize, contentOutherMargins: UIEdgeInsets(top: 10.0, left: 0.0, bottom: 10.0, right: 0.0))
+    let popover = PopoverController(contentController: container, contentSizeBehavior: .preferredContentSize)
     popover.present(from: topToolbar.locationView.safegazeButton, on: self)
   }
 

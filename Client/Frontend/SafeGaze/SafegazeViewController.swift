@@ -98,18 +98,18 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
 
   private func updatePreferredContentSize() {
     guard let visibleView = shieldsView.contentView else { return }
-    let width = UIScreen.main.bounds.width
+    let width = min(360, UIScreen.main.bounds.width - 20)
     // Ensure the a static width is given to the main view so we can calculate the height
     // correctly when we force a layout
     let height = visibleView.systemLayoutSizeFitting(
-      CGSize(width: width, height: 0),
-      withHorizontalFittingPriority: .required,
-      verticalFittingPriority: .fittingSizeLevel
+        CGSize(width: width, height: 0),
+        withHorizontalFittingPriority: .required,
+        verticalFittingPriority: .fittingSizeLevel
     ).height
-
+    
     preferredContentSize = CGSize(
-      width: width,
-      height: height
+        width: width,
+        height: height
     )
   }
 
