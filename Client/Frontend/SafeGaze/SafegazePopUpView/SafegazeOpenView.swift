@@ -11,6 +11,8 @@ struct SafegazeOpenView: View {
     @State var url: URL?
     @State var domainAvoidedContentCount: Int
     @State var lifetimeAvoidedContentCount: Int
+    @State private var selection: Int = 0
+    
     var body: some View {
         VStack {
             openHeaderView
@@ -24,6 +26,10 @@ struct SafegazeOpenView: View {
             ImageBlurIntensityView(value: $value).padding(.top, 10)
             
             supportVStack.padding(.top, 20)
+        }.onChange(of: selection) { newValue in
+            if newValue == 1 {
+                isOn.toggle()
+            }
         }
     }
     
@@ -88,11 +94,20 @@ struct SafegazeOpenView: View {
             Spacer()
             
             HStack {
-                Text("Never Pause")
-                    .font(FontHelper.quicksand(size: 12, weight: .medium))
-                    .foregroundColor(.black)
-                
-                ResizableImageView(image: Image(braveSystemName: "sg.arrow.down"), width: 10, height: 10)
+                Menu {
+                    Picker("", selection: $selection) {
+                        Text("Always Purify")
+                            .tag(0)
+                        Text("Never Purify")
+                            .tag(1)
+                    }
+                } label: {
+                    Text(selection == 0 ? "Always Purify" : "Never Purify")
+                        .font(FontHelper.quicksand(size: 12, weight: .medium))
+                        .foregroundColor(.black)
+                    
+                    ResizableImageView(image: Image(braveSystemName: "sg.arrow.down"), width: 10, height: 10)
+                }.id(selection)
             }.frame(width: 110, height: 28)
                 .background(.white)
                 .cornerRadius(6)

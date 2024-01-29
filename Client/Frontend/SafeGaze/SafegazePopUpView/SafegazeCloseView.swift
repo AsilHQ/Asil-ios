@@ -42,25 +42,6 @@ struct SafegazeCloseView: View {
         HStack {
             VStack {
                 SafegazeHostView(url: url)
-                
-                HStack {
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 12, height: 12)
-                        .background(Color.white)
-                        .cornerRadius(3)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 3)
-                                .inset(by: 0.5)
-                                .stroke(Color(red: 0.91, green: 0.91, blue: 0.91), lineWidth: 1)
-                        )
-                    
-                    Text("Always pause")
-                        .font(FontHelper.quicksand(size: 12, weight: .medium))
-                        .foregroundColor(Color(red: 0.58, green: 0.58, blue: 0.58))
-                    
-                    Spacer()
-                }
             }
             .padding(.leading, 18)
             
