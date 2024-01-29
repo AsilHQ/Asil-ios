@@ -12,7 +12,9 @@ struct SafegazeOpenView: View {
     @State var domainAvoidedContentCount: Int
     @State var lifetimeAvoidedContentCount: Int
     @State private var selection: Int = 0
-    
+    @State private var isShareSheetPresented: Bool = false
+    let sharedText: String = "https://apps.apple.com/us/app/asil-browser/id1669467773"
+
     var body: some View {
         VStack {
             openHeaderView
@@ -30,6 +32,9 @@ struct SafegazeOpenView: View {
             if newValue == 1 {
                 isOn.toggle()
             }
+        }
+        .sheet(isPresented: $isShareSheetPresented) {
+            ShareSheet(activityItems: [sharedText])
         }
     }
     
@@ -282,14 +287,14 @@ struct SafegazeOpenView: View {
             HStack {
                 
                 Button {
-                   
+                    isShareSheetPresented.toggle()
                 } label: {
                     ResizableImageView(image: Image(braveSystemName: "sg.share.icon"), width: 16, height: 16)
                         .frame(width: 44, height: 40)
                         .background(Color.white)
                         .cornerRadius(10)
                         .shadow(color: Color(red: 0.49, green: 0.52, blue: 0.56).opacity(0.12), radius: 2.5, x: 0, y: 1)
-                }.disabled(true)
+                }
                 
                 Spacer()
                 
@@ -331,6 +336,17 @@ struct SafegazeOpenView: View {
             }
         }.padding(.horizontal, 18)
     }
+}
+
+struct ShareSheet: UIViewControllerRepresentable {
+    let activityItems: [Any]
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let controller = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        return controller
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }
 
 #if DEBUG
