@@ -3775,3 +3775,19 @@
 /* History tableview section header */
 "Yesterday" = "Igår";
 
+"safegaze.popup.report.title1" = "Vänligen rapportera eventuella buggar eller förslag till ";
+"safegaze.popup.report.title2" = "detta formulär";
+"safegaze.popup.support.title" = "Stöd detta projekt";
+"safegaze.popup.woman.title" = "Jag är kvinna";
+"safegaze.popup.man.title" = "Jag är man";
+"safegaze.popup.comingsoon.title" = "Kommer snart";
+"safegaze.popup.gendermode.title" = "Könsläge";
+"safegaze.popup.sinfulacts.title" = "Undvikna syndiga handlingar";
+"safegaze.popup.thispage.title" = "Denna sida";
+"safegaze.popup.lifetime.title" = "Livstid";
+"safegaze.popup.alwayspurify.title" = "Alltid rena";
+"safegaze.popup.neverpurify.title" = "Aldrig rena";
+"safegaze.popup.safegazeup.title" = "Safegaze UPP";
+"safegaze.popup.imageblur.title" = "Bildoskärpa Intensitet";
+"safegaze.popup.takecontrol.title" = "Förbättra din online-upplevelse med Safegaze, vår bildrensningsförlängning som skyddar din syn från olämpligt innehåll.";
+"safegaze.popup.turnon.title" = "Slå på SafeGaze";

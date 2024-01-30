@@ -2638,5 +2638,20 @@
 /* History tableview section header */
 "Yesterday" = "أمس";
 
+"safegaze.popup.report.title1" = "الرجاء الإبلاغ عن أي علل أو اقتراحات إلى ";
+"safegaze.popup.report.title2" = "هذا النموذج";
+"safegaze.popup.support.title" = "دعم هذا المشروع";
+"safegaze.popup.woman.title" = "أنا امرأة";
+"safegaze.popup.man.title" = "أنا رجل";
+"safegaze.popup.comingsoon.title" = "قريبًا";
+"safegaze.popup.gendermode.title" = "وضع الجنس";
+"safegaze.popup.sinfulacts.title" = "الأعمال الخاطئة المتجنبة";
+"safegaze.popup.thispage.title" = "هذه الصفحة";
+"safegaze.popup.lifetime.title" = "مدى الحياة";
+"safegaze.popup.alwayspurify.title" = "دائمًا تنقية";
+"safegaze.popup.neverpurify.title" = "أبدًا لا تنقية";
+"safegaze.popup.safegazeup.title" = "رفع SafeGaze";
+"safegaze.popup.imageblur.title" = "شدة ضباب الصورة";
+"safegaze.popup.takecontrol.title" = "قم بتعزيز تجربتك عبر الإنترنت مع SafeGaze، إضاف
 
 

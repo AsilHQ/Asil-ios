@@ -51,6 +51,26 @@ extension Strings {
       bundle: .module, value: "yr.", comment: "Abbreviation for 'Year', use full word' Yeara' if this word can't be shortened in your language")
 }
 
+// MARK: - Safegaze pop up strings
+extension Strings {
+  public static let safegazePopupReportTitle1 = NSLocalizedString("safegaze.popup.report.title1", tableName: "BraveShared", bundle: .module, value: "Please report any bugs or suggestions to ", comment: "")
+  public static let safegazePopupReportTitle2 = NSLocalizedString("safegaze.popup.report.title2", tableName: "BraveShared", bundle: .module, value: "this form", comment: "")
+  public static let safegazePopupSupportTitle = NSLocalizedString("safegaze.popup.support.title", tableName: "BraveShared", bundle: .module, value: "Support this project", comment: "")
+  public static let safegazePopupWomanTitle = NSLocalizedString("safegaze.popup.woman.title", tableName: "BraveShared", bundle: .module, value: "I am Woman", comment: "")
+  public static let safegazePopupManTitle = NSLocalizedString("safegaze.popup.man.title", tableName: "BraveShared", bundle: .module, value: "I am Man", comment: "")
+  public static let safegazePopupComingSoonTitle = NSLocalizedString("safegaze.popup.comingsoon.title", tableName: "BraveShared", bundle: .module, value: "Coming Soon", comment: "")
+  public static let safegazePopupGenderModeTitle = NSLocalizedString("safegaze.popup.gendermode.title", tableName: "BraveShared", bundle: .module, value: "Gender Mode", comment: "")
+  public static let safegazePopupSinfulActsTitle = NSLocalizedString("safegaze.popup.sinfulacts.title", tableName: "BraveShared", bundle: .module, value: "Sinful acts avoided", comment: "")
+  public static let safegazePopupThisPageTitle = NSLocalizedString("safegaze.popup.thispage.title", tableName: "BraveShared", bundle: .module, value: "This Page", comment: "")
+  public static let safegazePopupLifeTimeTitle = NSLocalizedString("safegaze.popup.lifetime.title", tableName: "BraveShared", bundle: .module, value: "Lifetime", comment: "")
+  public static let safegazePopupAlwaysPurifyTitle = NSLocalizedString("safegaze.popup.alwayspurify.title", tableName: "BraveShared", bundle: .module, value: "Always Purify", comment: "")
+  public static let safegazePopupNeverPurifyTitle = NSLocalizedString("safegaze.popup.neverpurify.title", tableName: "BraveShared", bundle: .module, value: "Never Purify", comment: "")
+  public static let safegazePopupSafegazeUpTitle = NSLocalizedString("safegaze.popup.safegazeup.title", tableName: "BraveShared", bundle: .module, value: "Safegaze UP", comment: "")
+  public static let safegazeImageBlurIntensityTitle = NSLocalizedString("safegaze.popup.imageblur.title", tableName: "BraveShared", bundle: .module, value: "Image Blur Intensity", comment: "")
+  public static let safegazeTakeControlTitle = NSLocalizedString("safegaze.popup.takecontrol.title", tableName: "BraveShared", bundle: .module, value: "Enhance your online experience with Safegaze, our Image Purificator extension that shields your vision from inappropriate content.", comment: "")
+  public static let safegazeTurnOnTitle = NSLocalizedString("safegaze.popup.turnon.title", tableName: "BraveShared", bundle: .module, value: "Turn on SafeGaze", comment: "")
+}
+
 // MARK:-  UIAlertControllerExtensions.swift
 extension Strings {
   public static let sendCrashReportAlertTitle = NSLocalizedString("SendCrashReportAlertTitle", tableName: "BraveShared", bundle: .module, value: "Oops! Asil Browser crashed", comment: "Title for prompt displayed to user after the app crashes")

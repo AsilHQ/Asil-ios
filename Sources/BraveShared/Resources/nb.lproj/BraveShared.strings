@@ -3775,3 +3775,19 @@
 /* History tableview section header */
 "Yesterday" = "I går";
 
+"safegaze.popup.report.title1" = "Vennligst rapporter eventuelle feil eller forslag til ";
+"safegaze.popup.report.title2" = "dette skjemaet";
+"safegaze.popup.support.title" = "Støtt dette prosjektet";
+"safegaze.popup.woman.title" = "Jeg er kvinne";
+"safegaze.popup.man.title" = "Jeg er mann";
+"safegaze.popup.comingsoon.title" = "Kommer snart";
+"safegaze.popup.gendermode.title" = "Kjønnsmodus";
+"safegaze.popup.sinfulacts.title" = "Syndige handlinger unngått";
+"safegaze.popup.thispage.title" = "Denne siden";
+"safegaze.popup.lifetime.title" = "Livstid";
+"safegaze.popup.alwayspurify.title" = "Alltid rense";
+"safegaze.popup.neverpurify.title" = "Aldri rense";
+"safegaze.popup.safegazeup.title" = "Safegaze OPP";
+"safegaze.popup.imageblur.title" = "Bildeblur-intensitet";
+"safegaze.popup.takecontrol.title" = "Forbedre din online opplevelse med Safegaze, vår bildepurifikatorutvidelse som beskytter synet ditt mot upassende innhold.";
+"safegaze.popup.turnon.title" = "Slå på SafeGaze";

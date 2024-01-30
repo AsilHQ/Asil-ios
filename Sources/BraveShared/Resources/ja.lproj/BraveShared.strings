@@ -3775,3 +3775,19 @@
 /* History tableview section header */
 "Yesterday" = "昨日";
 
+"safegaze.popup.report.title1" = "バグや提案があれば、こちらに報告してください：";
+"safegaze.popup.report.title2" = "このフォーム";
+"safegaze.popup.support.title" = "このプロジェクトをサポート";
+"safegaze.popup.woman.title" = "私は女性です";
+"safegaze.popup.man.title" = "私は男性です";
+"safegaze.popup.comingsoon.title" = "近日公開";
+"safegaze.popup.gendermode.title" = "ジェンダーモード";
+"safegaze.popup.sinfulacts.title" = "避けられる罪深い行為";
+"safegaze.popup.thispage.title" = "このページ";
+"safegaze.popup.lifetime.title" = "一生";
+"safegaze.popup.alwayspurify.title" = "常に浄化";
+"safegaze.popup.neverpurify.title" = "決して浄化しない";
+"safegaze.popup.safegazeup.title" = "Safegaze UP";
+"safegaze.popup.imageblur.title" = "画像のぼかし強度";
+"safegaze.popup.takecontrol.title" = "Safegazeを使用してオンライン体験を向上させ、不適切なコンテンツから視力を保護します。";
+"safegaze.popup.turnon.title" = "SafeGazeをオンにする";

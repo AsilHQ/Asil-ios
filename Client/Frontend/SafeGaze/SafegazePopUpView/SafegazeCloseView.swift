@@ -62,7 +62,7 @@ struct SafegazeCloseView: View {
     
     private var descriptionView: some View {
         ZStack {
-            Text("Take control of your digital space with our Ad Blocker and Image Purificator extension combo. Savegaze will save your eyes from singul act.")
+            Text(Strings.safegazeTakeControlTitle)
                 .font(FontHelper.quicksand(size: 12, weight: .medium))
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color(red: 0.27, green: 0.27, blue: 0.27))

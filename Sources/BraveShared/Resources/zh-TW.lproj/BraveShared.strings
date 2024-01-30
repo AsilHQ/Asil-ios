@@ -3775,3 +3775,19 @@
 /* History tableview section header */
 "Yesterday" = "昨天";
 
+"safegaze.popup.report.title1" = "請將任何錯誤或建議報告給 ";
+"safegaze.popup.report.title2" = "這個表單";
+"safegaze.popup.support.title" = "支持這個項目";
+"safegaze.popup.woman.title" = "我是女性";
+"safegaze.popup.man.title" = "我是男性";
+"safegaze.popup.comingsoon.title" = "即將推出";
+"safegaze.popup.gendermode.title" = "性別模式";
+"safegaze.popup.sinfulacts.title" = "避免的罪行";
+"safegaze.popup.thispage.title" = "此頁面";
+"safegaze.popup.lifetime.title" = "一生";
+"safegaze.popup.alwayspurify.title" = "永遠淨化";
+"safegaze.popup.neverpurify.title" = "永不淨化";
+"safegaze.popup.safegazeup.title" = "Safegaze 上升";
+"safegaze.popup.imageblur.title" = "圖片模糊強度";
+"safegaze.popup.takecontrol.title" = "透過 Safegaze 提升您的線上體驗，我們的圖片淨化擴充套件可保護您的視覺免受不當內容的影響。";
+"safegaze.popup.turnon.title" = "開啟 SafeGaze";

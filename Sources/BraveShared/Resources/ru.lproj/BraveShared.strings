@@ -3775,3 +3775,19 @@
 /* History tableview section header */
 "Yesterday" = "Вчера";
 
+"safegaze.popup.report.title1" = "Пожалуйста, сообщайте о любых ошибках или предложениях по адресу ";
+"safegaze.popup.report.title2" = "этой форме";
+"safegaze.popup.support.title" = "Поддержите этот проект";
+"safegaze.popup.woman.title" = "Я женщина";
+"safegaze.popup.man.title" = "Я мужчина";
+"safegaze.popup.comingsoon.title" = "Скоро";
+"safegaze.popup.gendermode.title" = "Режим пола";
+"safegaze.popup.sinfulacts.title" = "Избегаемые греховные поступки";
+"safegaze.popup.thispage.title" = "Эта страница";
+"safegaze.popup.lifetime.title" = "Вечность";
+"safegaze.popup.alwayspurify.title" = "Всегда очищать";
+"safegaze.popup.neverpurify.title" = "Никогда не очищать";
+"safegaze.popup.safegazeup.title" = "Safegaze ВВЕРХ";
+"safegaze.popup.imageblur.title" = "Интенсивность размытия изображения";
+"safegaze.popup.takecontrol.title" = "Улучшите свой онлайн-опыт с помощью Safegaze, нашего расширения для очистки изображений, которое защищает ваше зрение от неподходящего контента.";
+"safegaze.popup.turnon.title" = "Включить SafeGaze";

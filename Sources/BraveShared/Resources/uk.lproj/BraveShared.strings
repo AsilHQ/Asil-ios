@@ -3775,3 +3775,19 @@
 /* History tableview section header */
 "Yesterday" = "Учора";
 
+"safegaze.popup.report.title1" = "Будь ласка, повідомте про будь-які помилки чи пропозиції за адресою ";
+"safegaze.popup.report.title2" = "цей формуляр";
+"safegaze.popup.support.title" = "Підтримайте цей проєкт";
+"safegaze.popup.woman.title" = "Я жінка";
+"safegaze.popup.man.title" = "Я чоловік";
+"safegaze.popup.comingsoon.title" = "Незабаром";
+"safegaze.popup.gendermode.title" = "Режим статі";
+"safegaze.popup.sinfulacts.title" = "Уникнені гріховні вчинки";
+"safegaze.popup.thispage.title" = "Ця сторінка";
+"safegaze.popup.lifetime.title" = "Протягом життя";
+"safegaze.popup.alwayspurify.title" = "Завжди очищати";
+"safegaze.popup.neverpurify.title" = "Ніколи не очищати";
+"safegaze.popup.safegazeup.title" = "Safegaze ВГОРУ";
+"safegaze.popup.imageblur.title" = "Інтенсивність розмиття зображення";
+"safegaze.popup.takecontrol.title" = "Покращте свій онлайн-досвід за допомогою Safegaze, нашого розширення для очищення зображень, яке захищає вашу зірку від неприпустимого контенту.";
+"safegaze.popup.turnon.title" = "Увімкнути SafeGaze";

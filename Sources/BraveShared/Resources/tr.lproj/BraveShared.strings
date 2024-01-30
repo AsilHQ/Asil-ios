@@ -3775,3 +3775,19 @@
 /* History tableview section header */
 "Yesterday" = "Dün";
 
+"safegaze.popup.report.title1" = "Lütfen herhangi bir hata veya öneriyi şu adrese bildirin: ";
+"safegaze.popup.report.title2" = "bu form";
+"safegaze.popup.support.title" = "Bu projeyi destekleyin";
+"safegaze.popup.woman.title" = "Ben Kadınım";
+"safegaze.popup.man.title" = "Ben Erkeğim";
+"safegaze.popup.comingsoon.title" = "Yakında";
+"safegaze.popup.gendermode.title" = "Cinsiyet Modu";
+"safegaze.popup.sinfulacts.title" = "Kaçınılan Günahkar Eylemler";
+"safegaze.popup.thispage.title" = "Bu Sayfa";
+"safegaze.popup.lifetime.title" = "Ömür Boyu";
+"safegaze.popup.alwayspurify.title" = "Her Zaman Arındır";
+"safegaze.popup.neverpurify.title" = "Asla Arındırma";
+"safegaze.popup.safegazeup.title" = "Safegaze YUKARI";
+"safegaze.popup.imageblur.title" = "Görüntü Bulanıklığı Şiddeti";
+"safegaze.popup.takecontrol.title" = "Görüntülerinizi uygunsuz içerikten koruyan uzantımız Safegaze ile çevrimiçi deneyiminizi geliştirin.";
+"safegaze.popup.turnon.title" = "Safegaze'i Aç";

@@ -50,7 +50,7 @@ struct SafegazeOpenView: View {
             Spacer()
             
             HStack {
-                Text("Safegaze UP")
+                Text(Strings.safegazePopupSafegazeUpTitle)
                     .font(FontHelper.quicksand(size: 12, weight: .bold))
                     .frame(width: 74)
                     .padding(.leading, 14)
@@ -101,13 +101,13 @@ struct SafegazeOpenView: View {
             HStack {
                 Menu {
                     Picker("", selection: $selection) {
-                        Text("Always Purify")
+                        Text(Strings.safegazePopupAlwaysPurifyTitle)
                             .tag(0)
-                        Text("Never Purify")
+                        Text(Strings.safegazePopupNeverPurifyTitle)
                             .tag(1)
                     }
                 } label: {
-                    Text(selection == 0 ? "Always Purify" : "Never Purify")
+                    Text(selection == 0 ? Strings.safegazePopupAlwaysPurifyTitle : Strings.safegazePopupNeverPurifyTitle)
                         .font(FontHelper.quicksand(size: 12, weight: .medium))
                         .foregroundColor(.black)
                     
@@ -133,7 +133,7 @@ struct SafegazeOpenView: View {
         VStack {
             
             HStack {
-                Text("Sinful acts avoided")
+                Text(Strings.safegazePopupSinfulActsTitle)
                     .font(FontHelper.quicksand(size: 13, weight: .bold))
                     .foregroundColor(.black)
                     .padding(.leading, 14)
@@ -156,7 +156,7 @@ struct SafegazeOpenView: View {
                     
                     Spacer()
                     
-                    Text("This Page")
+                    Text(Strings.safegazePopupThisPageTitle)
                         .font(FontHelper.quicksand(size: 14, weight: .medium))
                         .foregroundColor(Color(red: 0.43, green: 0.43, blue: 0.43))
                     
@@ -167,7 +167,7 @@ struct SafegazeOpenView: View {
                     
                     Spacer()
                     
-                    Text("Lifetime")
+                    Text(Strings.safegazePopupLifeTimeTitle)
                         .font(FontHelper.quicksand(size: 14, weight: .medium))
                         .foregroundColor(Color(red: 0.43, green: 0.43, blue: 0.43))
                     
@@ -189,7 +189,7 @@ struct SafegazeOpenView: View {
             HStack {
                 
                 HStack {
-                    Text("Gender Mode")
+                    Text(Strings.safegazePopupGenderModeTitle)
                         .font(FontHelper.quicksand(size: 13, weight: .bold))
                         .foregroundColor(.black)
                     
@@ -201,7 +201,7 @@ struct SafegazeOpenView: View {
                 Spacer()
                 
                 HStack(alignment: .center, spacing: 10) {
-                    Text("Coming Soon")
+                    Text(Strings.safegazePopupComingSoonTitle)
                         .font(FontHelper.quicksand(size: 10, weight: .bold))
                         .multilineTextAlignment(.trailing)
                         .foregroundColor(Color(red: 0.62, green: 0.48, blue: 0.92))
@@ -222,7 +222,7 @@ struct SafegazeOpenView: View {
                     ResizableImageView(image: Image(braveSystemName: "sg.man"), width: 20, height: 20)
                         .foregroundColor(Color(red: 0.06, green: 0.7, blue: 0.79))
                     
-                    Text("I am Man")
+                    Text(Strings.safegazePopupManTitle)
                         .font(FontHelper.quicksand(size: 14, weight: .bold))
                         .foregroundColor(Color(red: 0.06, green: 0.7, blue: 0.79))
                     
@@ -244,7 +244,7 @@ struct SafegazeOpenView: View {
                 HStack {
                     ResizableImageView(image: Image(braveSystemName: "sg.woman"), width: 20, height: 20)
                     
-                    Text("I am Women")
+                    Text(Strings.safegazePopupWomanTitle)
                         .font(FontHelper.quicksand(size: 14, weight: .semibold))
                         .foregroundColor(Color(red: 0.23, green: 0.23, blue: 0.23))
                 }
@@ -303,7 +303,7 @@ struct SafegazeOpenView: View {
                     UIApplication.shared.open(url)
                 } label: {
                     ZStack {
-                        Text("Support this project")
+                        Text(Strings.safegazePopupSupportTitle)
                             .font(FontHelper.quicksand(size: 14, weight: .bold))
                             .foregroundColor(Color.white)
                     }

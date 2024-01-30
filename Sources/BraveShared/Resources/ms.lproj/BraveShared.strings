@@ -3775,3 +3775,19 @@
 /* History tableview section header */
 "Yesterday" = "Semalam";
 
+"safegaze.popup.report.title1" = "Sila laporkan sebarang bug atau cadangan kepada ";
+"safegaze.popup.report.title2" = "borang ini";
+"safegaze.popup.support.title" = "Sokong projek ini";
+"safegaze.popup.woman.title" = "Saya Wanita";
+"safegaze.popup.man.title" = "Saya Lelaki";
+"safegaze.popup.comingsoon.title" = "Akan Datang";
+"safegaze.popup.gendermode.title" = "Mod Gender";
+"safegaze.popup.sinfulacts.title" = "Tindakan berdosa dielakkan";
+"safegaze.popup.thispage.title" = "Laman Ini";
+"safegaze.popup.lifetime.title" = "Seumur Hidup";
+"safegaze.popup.alwayspurify.title" = "Sentiasa Membersihkan";
+"safegaze.popup.neverpurify.title" = "Jangan Pernah Membersihkan";
+"safegaze.popup.safegazeup.title" = "Safegaze ATAS";
+"safegaze.popup.imageblur.title" = "Ketajaman Kabur Gambar";
+"safegaze.popup.takecontrol.title" = "Perkasa pengalaman atas talian anda dengan Safegaze, sambungan Pemurnian Imej kami yang melindungi penglihatan anda daripada kandungan yang tidak sesuai.";
+"safegaze.popup.turnon.title" = "Hidupkan SafeGaze";

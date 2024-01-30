@@ -3775,3 +3775,19 @@
 /* History tableview section header */
 "Yesterday" = "Ayer";
 
+"safegaze.popup.report.title1" = "Por favor, informe cualquier error o sugerencia a ";
+"safegaze.popup.report.title2" = "este formulario";
+"safegaze.popup.support.title" = "Apoyar este proyecto";
+"safegaze.popup.woman.title" = "Soy mujer";
+"safegaze.popup.man.title" = "Soy hombre";
+"safegaze.popup.comingsoon.title" = "Próximamente";
+"safegaze.popup.gendermode.title" = "Modo de género";
+"safegaze.popup.sinfulacts.title" = "Actos pecaminosos evitados";
+"safegaze.popup.thispage.title" = "Esta página";
+"safegaze.popup.lifetime.title" = "Duración de la vida";
+"safegaze.popup.alwayspurify.title" = "Siempre purificar";
+"safegaze.popup.neverpurify.title" = "Nunca purificar";
+"safegaze.popup.safegazeup.title" = "Safegaze ARRIBA";
+"safegaze.popup.imageblur.title" = "Intensidad del desenfoque de imagen";
+"safegaze.popup.takecontrol.title" = "Mejora tu experiencia en línea con Safegaze, nuestra extensión de purificación de imágenes que protege tu visión de contenido inapropiado.";
+"safegaze.popup.turnon.title" = "Encender Safegaze";

@@ -3775,3 +3775,19 @@
 /* History tableview section header */
 "Yesterday" = "Hier";
 
+"safegaze.popup.report.title1" = "Veuillez signaler tout bug ou suggestion à ";
+"safegaze.popup.report.title2" = "ce formulaire";
+"safegaze.popup.support.title" = "Soutenez ce projet";
+"safegaze.popup.woman.title" = "Je suis une femme";
+"safegaze.popup.man.title" = "Je suis un homme";
+"safegaze.popup.comingsoon.title" = "Bientôt disponible";
+"safegaze.popup.gendermode.title" = "Mode Genre";
+"safegaze.popup.sinfulacts.title" = "Actes pécheurs évités";
+"safegaze.popup.thispage.title" = "Cette page";
+"safegaze.popup.lifetime.title" = "Durée de vie";
+"safegaze.popup.alwayspurify.title" = "Toujours purifier";
+"safegaze.popup.neverpurify.title" = "Jamais purifier";
+"safegaze.popup.safegazeup.title" = "Safegaze UP";
+"safegaze.popup.imageblur.title" = "Intensité du flou d'image";
+"safegaze.popup.takecontrol.title" = "Améliorez votre expérience en ligne avec Safegaze, notre extension de purification d'image qui protège votre vision contre le contenu inapproprié.";
+"safegaze.popup.turnon.title" = "Activer SafeGaze";

@@ -70,11 +70,11 @@ struct SafegazePopUpView: View {
             HStack {
                 ResizableImageView(image: Image(braveSystemName: "sg.popup.bug"), width: 16, height: 16)
                 
-                Text("Please report any bugs or suggestions to ")
+                Text(Strings.safegazePopupReportTitle1)
                     .font(Font.custom("Inter", size: 12))
                     .foregroundColor(Color(red: 0.27, green: 0.27, blue: 0.27))
                 +
-                Text("this form")
+                Text(Strings.safegazePopupReportTitle2)
                     .font(Font.custom("Inter", size: 12))
                     .foregroundColor(Color(uiColor: UIColor(red: 0.06, green: 0.7, blue: 0.79, alpha: 1)))
             }.padding(.horizontal, 33)

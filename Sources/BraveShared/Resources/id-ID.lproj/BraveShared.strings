@@ -3775,3 +3775,19 @@
 /* History tableview section header */
 "Yesterday" = "Kemarin";
 
+"safegaze.popup.report.title1" = "Mohon laporkan segala bug atau saran ke ";
+"safegaze.popup.report.title2" = "formulir ini";
+"safegaze.popup.support.title" = "Dukung proyek ini";
+"safegaze.popup.woman.title" = "Saya Wanita";
+"safegaze.popup.man.title" = "Saya Pria";
+"safegaze.popup.comingsoon.title" = "Akan Datang";
+"safegaze.popup.gendermode.title" = "Mode Gender";
+"safegaze.popup.sinfulacts.title" = "Tindakan berdosa dihindari";
+"safegaze.popup.thispage.title" = "Halaman Ini";
+"safegaze.popup.lifetime.title" = "Seumur Hidup";
+"safegaze.popup.alwayspurify.title" = "Selalu Bersihkan";
+"safegaze.popup.neverpurify.title" = "Jangan Pernah Bersihkan";
+"safegaze.popup.safegazeup.title" = "Safegaze ATAS";
+"safegaze.popup.imageblur.title" = "Intensitas Blur Gambar";
+"safegaze.popup.takecontrol.title" = "Perbaiki pengalaman online Anda dengan Safegaze, ekstensi Pemurnian Gambar kami yang melindungi penglihatan Anda dari konten yang tidak pantas.";
+"safegaze.popup.turnon.title" = "Aktifkan SafeGaze";

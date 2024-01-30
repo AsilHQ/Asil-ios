@@ -14,7 +14,7 @@ struct ImageBlurIntensityView: View {
                 
                 Spacer()
                 
-                Text("Image Blur Intensity")
+                Text(Strings.safegazeImageBlurIntensityTitle)
                     .font(FontHelper.quicksand(size: 13, weight: .bold))
                     .foregroundColor(.black)
                 
