@@ -52,10 +52,11 @@ struct SafegazeOpenView: View {
             HStack {
                 Text(Strings.safegazePopupSafegazeUpTitle)
                     .font(FontHelper.quicksand(size: 12, weight: .bold))
-                    .frame(width: 74)
-                    .padding(.leading, 14)
-                    .padding(.trailing, 18)
+                    .frame(width: 76)
                     .foregroundColor(.black)
+                    .padding(.leading, 14)
+                
+                Spacer()
                 
                 Toggle("", isOn: $isOn)
                     .toggleStyle(SwitchToggleStyle(tint: Color(uiColor: UIColor(red: 0.06, green: 0.7, blue: 0.79, alpha: 1))))

@@ -65,9 +65,9 @@ extension Strings {
   public static let safegazePopupLifeTimeTitle = NSLocalizedString("safegaze.popup.lifetime.title", tableName: "BraveShared", bundle: .module, value: "Lifetime", comment: "")
   public static let safegazePopupAlwaysPurifyTitle = NSLocalizedString("safegaze.popup.alwayspurify.title", tableName: "BraveShared", bundle: .module, value: "Always Purify", comment: "")
   public static let safegazePopupNeverPurifyTitle = NSLocalizedString("safegaze.popup.neverpurify.title", tableName: "BraveShared", bundle: .module, value: "Never Purify", comment: "")
-  public static let safegazePopupSafegazeUpTitle = NSLocalizedString("safegaze.popup.safegazeup.title", tableName: "BraveShared", bundle: .module, value: "Safegaze UP", comment: "")
+  public static let safegazePopupSafegazeUpTitle = NSLocalizedString("safegaze.popup.safegazeup.title", tableName: "BraveShared", bundle: .module, value: "SafeGaze UP", comment: "")
   public static let safegazeImageBlurIntensityTitle = NSLocalizedString("safegaze.popup.imageblur.title", tableName: "BraveShared", bundle: .module, value: "Image Blur Intensity", comment: "")
-  public static let safegazeTakeControlTitle = NSLocalizedString("safegaze.popup.takecontrol.title", tableName: "BraveShared", bundle: .module, value: "Enhance your online experience with Safegaze, our Image Purificator extension that shields your vision from inappropriate content.", comment: "")
+  public static let safegazeTakeControlTitle = NSLocalizedString("safegaze.popup.takecontrol.title", tableName: "BraveShared", bundle: .module, value: "Enhance your online experience with SafeGaze, our Image Purificator extension that shields your vision from inappropriate content.", comment: "")
   public static let safegazeTurnOnTitle = NSLocalizedString("safegaze.popup.turnon.title", tableName: "BraveShared", bundle: .module, value: "Turn on SafeGaze", comment: "")
 }
 
