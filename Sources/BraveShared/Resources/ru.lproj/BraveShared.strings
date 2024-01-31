@@ -3787,7 +3787,7 @@
 "safegaze.popup.lifetime.title" = "Вечность";
 "safegaze.popup.alwayspurify.title" = "Всегда очищать";
 "safegaze.popup.neverpurify.title" = "Никогда не очищать";
-"safegaze.popup.safegazeup.title" = "Safegaze ВВЕРХ";
+"safegaze.popup.safegazeup.title" = "SafeGaze ВВЕРХ";
 "safegaze.popup.imageblur.title" = "Интенсивность размытия изображения";
-"safegaze.popup.takecontrol.title" = "Улучшите свой онлайн-опыт с помощью Safegaze, нашего расширения для очистки изображений, которое защищает ваше зрение от неподходящего контента.";
+"safegaze.popup.takecontrol.title" = "Улучшите свой онлайн-опыт с помощью SafeGaze, нашего расширения для очистки изображений, которое защищает ваше зрение от неподходящего контента.";
 "safegaze.popup.turnon.title" = "Включить SafeGaze";
