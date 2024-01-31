@@ -201,7 +201,7 @@
 /* Title for Default Browser Full Screen Callout */
 "callout.defaultBrowserTitle" = "الأمان. أصبح أسهل الآن.";
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "يمكنك مساعدتنا في معرفة الخصائص الأكثر استخدامًا في متصفح Asil بهذه الطريقة. يمكنك تغيير هذا التفضيل في أي وقت من خلال 'إعدادات متصفح Asil والخصوصية'."
+"callout.p3aCalloutDescription" = "يمكنك مساعدتنا في معرفة الخصائص الأكثر استخدامًا في متصفح Asil بهذه الطريقة. يمكنك تغيير هذا التفضيل في أي وقت من خلال 'إعدادات متصفح Asil والخصوصية'.";
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "اعرف المزيد عن تحليلات الخصوصية المحفوظة (P3A).";
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
@@ -2652,6 +2652,6 @@
 "safegaze.popup.neverpurify.title" = "أبدًا لا تنقية";
 "safegaze.popup.safegazeup.title" = "رفع SafeGaze";
 "safegaze.popup.imageblur.title" = "شدة ضباب الصورة";
-"safegaze.popup.takecontrol.title" = "قم بتعزيز تجربتك عبر الإنترنت مع SafeGaze، إضاف"
-"safegaze_popup_turnon_title" = "تشغيل SafeGaze";
+"safegaze.popup.takecontrol.title" = "قم بتعزيز تجربتك عبر الإنترنت مع SafeGaze، إضاف";
+"safegaze.popup.turnon.title" = "تشغيل SafeGaze";
 

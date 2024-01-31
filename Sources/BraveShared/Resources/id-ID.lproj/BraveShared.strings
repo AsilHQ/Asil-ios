@@ -215,7 +215,7 @@
 "SafegazeBlockedCountLabel" = "Tindakan dosa dihindari";
 
 /* "The number of total sinful acts avoided will be next to this" */
-"SafegazeTotalBlockedCountLabel" = "Total %@ tindakan dosa dihindari sejak awal"
+"SafegazeTotalBlockedCountLabel" = "Total %@ tindakan dosa dihindari sejak awal";
 
 /* What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel */
 "BraveShieldsBlockedInfoButtonAccessibilityLabel" = "Pelajari lebih lanjut";

@@ -215,7 +215,7 @@
 "SafegazeBlockedCountLabel" = "Unikniętych grzesznych czynów";
 
 /* "The number of total sinful acts avoided will be next to this" */
-"SafegazeTotalBlockedCountLabel" =  "Łącznie %@ uniknięto grzesznych czynów od początku"
+"SafegazeTotalBlockedCountLabel" =  "Łącznie %@ uniknięto grzesznych czynów od początku";
 
 /* What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel */
 "BraveShieldsBlockedInfoButtonAccessibilityLabel" = "Dowiedz się więcej";
