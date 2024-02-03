@@ -143,14 +143,16 @@ function updateElementsWhenNecessary(
   elementsToBeActionable = [],
   action
 ) {
-  if (imageElement?.getAttribute("src") == imageUrl) {
+  if (imageElement.getAttribute("src") == imageUrl) {
     return;
   }
   elementsToBeActionable.forEach((element) => {
     element.style.pointerEvents = action;
   });
-  imageElement?.removeAttribute("src");
-  imageElement?.setAttribute("src", imageUrl);
+  if (imageUrl && imageUrl !== loadingImageUrl) {
+      imageElement.removeAttribute("src");
+      imageElement.setAttribute("src", imageUrl);
+  }
 }
 
 async function getParamsBasedOnResponse(response) {
@@ -434,10 +436,10 @@ function updateMediaItemList() {
         const channelLink = channelInfo?.children?.item(0)?.children?.item(0)?._data?.browseEndpoint?.browseId;
         chrefs.push(channelLink);
         apiResponses[href] = "loading";
-        let ogImage = image?.lazyData?.sources.find((el) =>
+        let ogImage = image?.qC?.sources.find((el) =>
           el["url"].includes("sddefault")
         );
-        ogImage = ogImage ?? image?.lazyData?.sources[0];
+        ogImage = ogImage ?? image?.qC?.sources[0];
         imageUrls[href] = ogImage?.url;
       }
     }
