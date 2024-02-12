@@ -153,7 +153,7 @@
 /* Label to display in the Discoverability overlay for keyboard shortcuts */
 "ShowPreviousTabTitle" = "إظهار علامة التبويب السابقة";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Asil Browser Shields */
+/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Kahf Browser Shields */
 "showShieldsTitle" = "افتح دروع متصفح نوبل";
 
 /* Hardware shortcut to open the tab tray from a tab. Shown in the Discoverability overlay when the hardware Command Key is held down. */
@@ -180,8 +180,8 @@
 /* Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet. */
 "UnableToAddPassErrorTitle" = "فشل في إضافة انتقال";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Asil Browser, or any external app. */
-"UnableToOpenURLError" = "لا يمكن لمتصفح Asil فتح الصفحة لأنها تحتوي على عنوان غير صالح.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by Kahf Browser, or any external app. */
+"UnableToOpenURLError" = "لا يمكن لمتصفح Kahf فتح الصفحة لأنها تحتوي على عنوان غير صالح.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "UnableToOpenURLErrorTitle" = "لا يمكن فتح الصفحة";

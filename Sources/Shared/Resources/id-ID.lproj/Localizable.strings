@@ -131,7 +131,7 @@
 "ScanQRCodeInvalidDataErrorMessage" = "Data tidak valid";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCodePermissionErrorMessage" = "Izinkan Asil Browser untuk mengakses kamera perangkat Anda dalam ‘Pengaturan’ -> ‘Privasi’ -> ‘Kamera’.";
+"ScanQRCodePermissionErrorMessage" = "Izinkan Kahf Browser untuk mengakses kamera perangkat Anda dalam ‘Pengaturan’ -> ‘Privasi’ -> ‘Kamera’.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCodeViewTitle" = "Pindai Kode QR";
@@ -154,8 +154,8 @@
 /* Label to display in the Discoverability overlay for keyboard shortcuts */
 "ShowPreviousTabTitle" = "Tampilkan Tab Sebelumnya";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Asil Browser Shields */
-"showShieldsTitle" = "Buka Perisai Asil Browser";
+/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Kahf Browser Shields */
+"showShieldsTitle" = "Buka Perisai Kahf Browser";
 
 /* Hardware shortcut to open the tab tray from a tab. Shown in the Discoverability overlay when the hardware Command Key is held down. */
 "ShowTabTrayFromTabKeyCodeTitle" = "Tampilkan Semua Tab";
@@ -181,8 +181,8 @@
 /* Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet. */
 "UnableToAddPassErrorTitle" = "Gagal Menambahkan Sandi";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Asil Browser, or any external app. */
-"UnableToOpenURLError" = "Asil Browser tidak dapat membuka laman karena alamatnya tidak valid.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by Kahf Browser, or any external app. */
+"UnableToOpenURLError" = "Kahf Browser tidak dapat membuka laman karena alamatnya tidak valid.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "UnableToOpenURLErrorTitle" = "Tidak Dapat Membuka Laman";

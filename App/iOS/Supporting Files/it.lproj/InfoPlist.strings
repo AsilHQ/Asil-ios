@@ -8,13 +8,13 @@
 "NSCameraUsageDescription" = "Questa impostazione ti permette di scattare e caricare le foto.";
 
 /* Privacy - Face ID Usage Description */
-"NSFaceIDUsageDescription" = "In questo modo puoi autenticarti per l’accesso a Asil Browser";
+"NSFaceIDUsageDescription" = "In questo modo puoi autenticarti per l’accesso a Kahf Browser";
 
 /* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "I siti web che visiti potrebbero richiedere la tua posizione.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Questa impostazione consente di utilizzare il microfono quando si usa Asil Browser.";
+"NSMicrophoneUsageDescription" = "Questa impostazione consente di utilizzare il microfono quando si usa Kahf Browser.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Questa impostazione ti permette di salvare le foto.";

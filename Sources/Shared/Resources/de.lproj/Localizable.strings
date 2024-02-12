@@ -131,7 +131,7 @@
 "ScanQRCodeInvalidDataErrorMessage" = "Die Daten sind ungültig.";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCodePermissionErrorMessage" = "Bitte erlauben Sie Asil Browser, auf die Kamera Ihres Geräts zuzugreifen. Gehen Sie dazu zu „Einstellungen“ -> „Datenschutz“ -> „Kamera“.";
+"ScanQRCodePermissionErrorMessage" = "Bitte erlauben Sie Kahf Browser, auf die Kamera Ihres Geräts zuzugreifen. Gehen Sie dazu zu „Einstellungen“ -> „Datenschutz“ -> „Kamera“.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCodeViewTitle" = "QR-Code scannen";
@@ -154,8 +154,8 @@
 /* Label to display in the Discoverability overlay for keyboard shortcuts */
 "ShowPreviousTabTitle" = "Vorherigen Tab anzeigen";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Asil Browser Shields */
-"showShieldsTitle" = "Asil Browser-Schutz öffnen";
+/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Kahf Browser Shields */
+"showShieldsTitle" = "Kahf Browser-Schutz öffnen";
 
 /* Hardware shortcut to open the tab tray from a tab. Shown in the Discoverability overlay when the hardware Command Key is held down. */
 "ShowTabTrayFromTabKeyCodeTitle" = "Alle Tabs anzeigen";
@@ -181,8 +181,8 @@
 /* Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet. */
 "UnableToAddPassErrorTitle" = "Pass konnte nicht hinzugefügt werden";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Asil Browser, or any external app. */
-"UnableToOpenURLError" = "Asil Browser kann die Seite nicht öffnen, da die Adresse ungültig ist.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by Kahf Browser, or any external app. */
+"UnableToOpenURLError" = "Kahf Browser kann die Seite nicht öffnen, da die Adresse ungültig ist.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "UnableToOpenURLErrorTitle" = "Seite kann nicht geöffnet werden";

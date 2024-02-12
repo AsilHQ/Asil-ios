@@ -131,7 +131,7 @@
 "ScanQRCodeInvalidDataErrorMessage" = "I dati non sono validi";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCodePermissionErrorMessage" = "Autorizza Asil Browser ad accedere alla fotocamera del tuo dispositivo andando su “Impostazioni” -> “Privacy” -> “Fotocamera”.";
+"ScanQRCodePermissionErrorMessage" = "Autorizza Kahf Browser ad accedere alla fotocamera del tuo dispositivo andando su “Impostazioni” -> “Privacy” -> “Fotocamera”.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCodeViewTitle" = "Scansiona codice QR";
@@ -154,8 +154,8 @@
 /* Label to display in the Discoverability overlay for keyboard shortcuts */
 "ShowPreviousTabTitle" = "Mostra la scheda precedente";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Asil Browser Shields */
-"showShieldsTitle" = "Apri Asil Browser Shields";
+/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Kahf Browser Shields */
+"showShieldsTitle" = "Apri Kahf Browser Shields";
 
 /* Hardware shortcut to open the tab tray from a tab. Shown in the Discoverability overlay when the hardware Command Key is held down. */
 "ShowTabTrayFromTabKeyCodeTitle" = "Mostra tutte le schede";
@@ -181,8 +181,8 @@
 /* Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet. */
 "UnableToAddPassErrorTitle" = "Impossibile aggiungere il pass";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Asil Browser, or any external app. */
-"UnableToOpenURLError" = "Asil Browser non può aprire la pagina perché l’indirizzo non è valido.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by Kahf Browser, or any external app. */
+"UnableToOpenURLError" = "Kahf Browser non può aprire la pagina perché l’indirizzo non è valido.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "UnableToOpenURLErrorTitle" = "Impossibile aprire la pagina";
