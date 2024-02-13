@@ -11,23 +11,21 @@ import BraveShared
 
 /// A menu button that provides a shortcut to toggling Night Mode
 struct KahfTubeMenuButton: View {
-  @ObservedObject private var kafhTubeIsOn = Preferences.KahfTube.isOn
-
-  var dismiss: () -> Void
+  @Binding var kafhTubeIsOn: Bool
 
   var body: some View {
-    HStack {
-      MenuItemFactory.button(for: .kafhTube, completion: dismiss)
+    VStack {
+      Text("KahfTube")
       Spacer()
-        Toggle("", isOn: $kafhTubeIsOn.value)
+        Toggle("", isOn: $kafhTubeIsOn)
         .labelsHidden()
         .toggleStyle(SwitchToggleStyle(tint: Color(UIColor(colorString: "#A242FF"))))
-        .onChange(of: kafhTubeIsOn.value) { value in
+        .onChange(of: kafhTubeIsOn) { value in
             KahfTubeManager.shared.reload()
         }
     }
-    .padding(.trailing, 14)
-    .frame(maxWidth: .infinity, minHeight: 48.0)
+    .frame(maxWidth: .infinity)
+    .frame(height: 48)
   }
 }
 

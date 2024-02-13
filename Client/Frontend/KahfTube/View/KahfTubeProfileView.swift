@@ -14,7 +14,8 @@ struct KahfTubeProfileView: View {
     @State private var religionSelection: Int = Preferences.KahfTube.mode.value
     @State private var profileImageUrl: String = Preferences.KahfTube.imageURL.value ?? ""
     @State private var isLoading: Bool = false
-    var dismissAction: (() -> Void)?
+    @Binding var isOpened: Bool
+    var reloadWebView: (() -> Void)?
     
     var body: some View {
         ZStack {
@@ -22,14 +23,17 @@ struct KahfTubeProfileView: View {
                 if #available(iOS 15.0, *) {
                     AsyncImage(url: URL(string: profileImageUrl))
                         .clipShape(Circle())
-                        .padding(.vertical, 30)
+                        .frame(width: 100.0, height: 100.0)
+                        .padding(.vertical, 10)
                 } else {
                     Circle()
                     .frame(width: 100.0, height: 100.0)
                     .overlay(RoundedRectangle(cornerRadius: 50.0)
                     .strokeBorder(Color.black, style: StrokeStyle(lineWidth: 0.5)))
-                    .padding(.vertical, 30)
+                    .padding(.vertical, 10)
                 }
+                
+                KahfTubeMenuButton(kafhTubeIsOn: $isOpened).padding(.bottom, 10)
                 
                 Form {
                     Section(header: Text("Name")) {
@@ -67,18 +71,21 @@ struct KahfTubeProfileView: View {
                         }
                     }
                 }
+                
+                Spacer()
             }
             .navigationTitle(Strings.KahfTube.kahfTubeTitle)
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                Button {
-                    Preferences.KahfTube.gender.value = genderSelection
-                    Preferences.KahfTube.mode.value = religionSelection
-                    dismissAction?()
-                } label: {
-                    Text("Save")
-                }
-            }.overlay(KahfTubeManager.shared.channelsFetched ? Color.black.opacity(0.3) : .clear).edgesIgnoringSafeArea(.bottom)
+            .onChange(of: genderSelection, perform: { newValue in
+                Preferences.KahfTube.gender.value = newValue
+                reloadWebView?()
+            })
+            .onChange(of: religionSelection, perform: { newValue in
+                Preferences.KahfTube.mode.value = religionSelection
+                reloadWebView?()
+            })
+            .overlay(KahfTubeManager.shared.channelsFetched ? Color.black.opacity(0.3) : .clear)
+            .edgesIgnoringSafeArea(.bottom)
             
             if KahfTubeManager.shared.channelsFetched {
                 KahfUnsubscribeView(haramChannels: kahfTubeManager.haramChannels, isLoading: $isLoading)
@@ -102,7 +109,7 @@ private extension KahfTubeProfileView {
 #if DEBUG
 struct YoutubeFiltrationProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        KahfTubeProfileView()
+        KahfTubeProfileView(isOpened: .constant(true))
     }
 }
 #endif
