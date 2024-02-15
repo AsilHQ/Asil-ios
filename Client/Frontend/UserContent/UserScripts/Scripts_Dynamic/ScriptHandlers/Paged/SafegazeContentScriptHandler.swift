@@ -89,7 +89,32 @@ class SafegazeContentScriptHandler: TabContentScript {
                             print("do nothing")
                         }
                     }
-                   
+                    
+                }
+            } else if message.contains("ConvertToBase64") {
+                var messageArray = message.components(separatedBy: "/**/")
+                if !messageArray.isEmpty {
+                    messageArray.remove(at: 0)
+                }
+                asyncDownloadAndConvertToBase64(for: messageArray) { base64Strings in
+                    let base64ArrayString = "[" + base64Strings.map { "\"\($0 ?? "")\"" }.joined(separator: ",") + "]"
+                    let urlArray = "[" + messageArray.map { "\"\($0)\"" }.joined(separator: ",") + "]"
+
+                    let jsString =
+                    """
+                         var base64Array = \(base64ArrayString);
+                         var urlArray = \(urlArray);
+                        
+                        (function() {
+                            safegazeSendBase64RequestsHandler(urlArray, base64Array);
+                        })();
+                    """
+                    
+                    tab.webView?.evaluateSafeJavaScript(functionName: jsString, contentWorld: .page, asFunction: false) { object, error in
+                        if let error = error {
+                            print("SafegazeContentScriptHandler coreML script\(error)")
+                        }
+                    }
                 }
             } else {
                 print("Safegaze: " + message)
@@ -104,7 +129,7 @@ class SafegazeContentScriptHandler: TabContentScript {
             self.asyncDownloadImage(from: imageURL) { imageData in
                 guard let imageData = imageData else {
                     DispatchQueue.main.async {
-                        completion(false)
+                        completion(true)
                     }
                     return
                 }
@@ -150,6 +175,39 @@ class SafegazeContentScriptHandler: TabContentScript {
                 completion(data)
             }
         }.resume()
+    }
+    
+    func asyncDownloadAndConvertToBase64(for imageStrings: [String], completion: @escaping ([String?]) -> Void) {
+        let dispatchGroup = DispatchGroup()
+        var base64Strings: [String?] = []
+
+        for imageURLString in imageStrings {
+            guard let imageURL = URL(string: imageURLString) else {
+                // Invalid URL string, append nil to the result
+                base64Strings.append(nil)
+                continue
+            }
+
+            dispatchGroup.enter()
+
+            asyncDownloadImage(from: imageURL) { data in
+                defer {
+                    dispatchGroup.leave()
+                }
+
+                if let imageData = data {
+                    let base64String = imageData.base64EncodedString()
+                    base64Strings.append(base64String)
+                } else {
+                    // Failed to download image, append nil to the result
+                    base64Strings.append(nil)
+                }
+            }
+        }
+
+        dispatchGroup.notify(queue: .main) {
+            completion(base64Strings)
+        }
     }
 }
 

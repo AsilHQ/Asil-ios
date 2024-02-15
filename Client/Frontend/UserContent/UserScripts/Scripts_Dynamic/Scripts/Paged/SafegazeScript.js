@@ -5,10 +5,80 @@
 
 const imagesToReplace = [];
 const cleanedSavedImagesArray = []
+const requestFailImages = {};
 
 window.safegazeOnDeviceModelHandler = safegazeOnDeviceModelHandler;
 window.sendMessage = sendMessage;
 window.updateBluredImageOpacity = updateBluredImageOpacity;
+window.safegazeSendBase64RequestsHandler = safegazeSendBase64RequestsHandler
+
+async function sendSingleRequest(base64, src) {
+    const requestBody = {
+        media: [
+            {
+                media_ref: src,
+                media_url: base64,
+                media_type: "image",
+                has_attachment: false
+            }
+        ]
+    };
+
+    try {
+        //sendMessage("-> Request analyze base64 images has been sent")
+        const response = await fetch('https://api.safegaze.com/api/v1/analyze', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(requestBody)
+        });
+
+        if (!response.ok) {
+            sendMessage(`-> Response for ${src} fail -> HTTP error, status = ${response.status}`);
+        } else {
+            const responseBody = await response.json();
+            //sendMessage(`-> Response for ${src} success -> HTTP status = ${response.status}`);
+
+            if (responseBody.media.length === 0) {
+                sendMessage('Empty response');
+            } else {
+                if (responseBody.success) {
+                    const element = responseBody.media[0];
+                    const correspondingMedia = requestFailImages[element.media_ref];
+                    if (correspondingMedia) {
+                        if (element.errors.length > 0) {
+                            unblurImage(correspondingMedia);
+                        } else {
+                            setImageSrc(correspondingMedia, element.processed_media_url)
+                        }
+                    }
+                } else {
+                    sendMessage(`API request for ${src} failed: ${responseBody.errors}`);
+                }
+            }
+        }
+    } catch (error) {
+        sendMessage(`Error occurred while processing ${src}: ${error.message}`);
+    }
+}
+
+async function safegazeSendBase64RequestsHandler (srcs, base64s) {
+    try {
+        for (let i = 0; i < base64s.length; i++) {
+            const base64 = base64s[i];
+            const src = srcs[i];
+            await sendSingleRequest(base64, src);
+        }
+    } catch(error) {
+        sendMessage('Error occurred during /api/v1/safegazeSendBase64RequestsHandler request:' + error);
+        /*srcs.map(src => {
+            sendMessage("Error media:" + src)
+            const correspondingMedia = requestFailImages[src];
+            if (correspondingMedia) {
+                unblurImage(correspondingMedia)
+            }
+        });*/
+    }
+};
 
 async function safegazeOnDeviceModelHandler (isExist, index) {
     if (isExist === true) {
@@ -36,7 +106,7 @@ async function safegazeOnDeviceModelHandler (isExist, index) {
                         sendMessage('**//Error in analyzeImages:' + error);
                     }
                 }
-            }, 1000); // Adjust the timeout value as needed (5 seconds in this example)
+            }, 1000); // Adjust the timeout value as needed
         } else {
             //sendMessage("**//skipForCount" + imagesToReplace.length);
         }
@@ -124,13 +194,22 @@ function setImageSrc(element, url) {
     sendMessage("replaced"); //Sends message for total blurred imaged count
 }
 
+const sendConvertToBase64Request = async (batch) => {
+    let base64Request = "ConvertToBase64";
+    batch.forEach(imgElement => {
+        requestFailImages[imgElement.src] = imgElement;
+        base64Request += "/**/" + imgElement.src;
+    });
+    sendMessage(base64Request);
+};
+
 
 const analyzeImages = async (batch) => {
   const requestBody = {
    media: batch.map(imgElement => {
          return {
            media_url: imgElement.getAttribute('src'),
-           media_type: imgElement.getAttribute('hasBackgroundImage') && imgElement.tagName !== "IMG" && imgElement.tagName !== "image" ? "backgroundImage" : "image",
+           media_type: "image",
            has_attachment: false,
            srcAttr: imgElement.getAttribute('srcAttr')
          };
@@ -139,34 +218,28 @@ const analyzeImages = async (batch) => {
   
   try {
     // Mark the URLs of all images in the current batch as sent in requests
-    batch.forEach(imgElement => {
-      imgElement.setAttribute('isSent', 'true');
-    });
-    
-    // Send the request to the API.
-    //sendMessage("**Request sent batchCount -> " + batch.length);
+    batch.forEach(imgElement => imgElement.setAttribute('isSent', 'true'));
+      
+    //sendMessage("->Request analyzeImages has been sent")
+
     const response = await fetch('https://api.safegaze.com/api/v1/analyze', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(requestBody)
     });
     
-    // Check if response status is ok
     if (!response.ok) {
-      //sendMessage('**Response fail -> HTTP error, status = ' + response.status + "->" + JSON.stringify(requestBody));
+      sendMessage('->Response analyzeImages fail -> HTTP error, status = ' + response.status + "->" + JSON.stringify(requestBody));
       return;
     }
-    else {
-      //sendMessage("**Response success")
-    }
-    
-    // Extract the response data from the response.
+      
     const responseBody = await response.json();
     if (responseBody.media.length === 0) {
         sendMessage('Empty response');
     }
     else {
         if (responseBody.success) {
+          const failImagesArray = []
           batch.forEach((element, index) => {
                 const correspondingMedia = responseBody.media.find(media => element.src === media.original_media_url || element.src.includes(media.original_media_url));
                 if (correspondingMedia) {
@@ -174,16 +247,19 @@ const analyzeImages = async (batch) => {
                         setImageSrc(element, correspondingMedia.processed_media_url);
                     }
                     else {
-                        unblurImage(element);
+                        failImagesArray.push(element);
                     }
                 }
           });
+          if (failImagesArray.length !== 0) {
+            await sendConvertToBase64Request(failImagesArray);
+          }
         } else {
           sendMessage('API request failed:' + responseBody.errors);
         }
     }
   } catch (error) {
-      sendMessage('Error occurred during API request:' + error);
+      sendMessage('Error occurred during /api/v1/analyze request:' + error);
   }
 };
 
