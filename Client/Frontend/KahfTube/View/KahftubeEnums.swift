@@ -14,11 +14,11 @@ enum KahftubeGender: Int {
     
     var localizedString: String {
         switch self {
-            case .all: return "All"
-            case .male: return "Male"
-            case .female: return "Female"
-            case .child: return "Child"
-            case .exceptChild: return "Except"
+            case .all: return Strings.kahftubeGenderAllTitle
+            case .male: return Strings.kahftubeGenderMaleTitle
+            case .female: return Strings.kahftubeGenderFemaleTitle
+            case .child: return Strings.kahftubeGenderChildTitle
+            case .exceptChild: return Strings.kahftubeGenderExceptTitle
         }
     }
 }
@@ -31,10 +31,10 @@ enum KahftubeMode: Int {
     
     var localizedString: String {
         switch self {
-            case .haram: return "Haram"
-            case .practicingMuslim: return "Practicing Muslim"
-            case .liberalMuslim: return "Liberal Muslim"
-            case .moderateMuslim: return "Moderate Muslim"
+            case .haram: return Strings.kahftubeReligionHaramTitle
+            case .practicingMuslim: return Strings.kahftubeReligionPracticingMuslimTitle
+            case .liberalMuslim: return Strings.kahftubeReligionLiberalMuslimTitle
+            case .moderateMuslim: return Strings.kahftubeReligionModerateMuslimTitle
         }
     }
 }

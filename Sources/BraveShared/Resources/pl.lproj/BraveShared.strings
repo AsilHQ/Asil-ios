@@ -3791,3 +3791,35 @@
 "safegaze.popup.imageblur.title" = "Intensywność Rozmycia Obrazu";
 "safegaze.popup.takecontrol.title" = "Ulepsz swoje doświadczenie online za pomocą SafeGaze, naszego rozszerzenia do oczyszczania obrazów, które chroni Twoje widzenie przed nieodpowiednimi treściami.";
 "safegaze.popup.turnon.title" = "Włącz SafeGaze";
+
+/* Tytuły płci */
+"kahftube.gender.all.title" = "Wszystkie";
+"kahftube.gender.male.title" = "Mężczyzna";
+"kahftube.gender.female.title" = "Kobieta";
+"kahftube.gender.child.title" = "Dziecko";
+"kahftube.gender.except.title" = "Z wyjątkiem";
+
+/* Tytuły religii */
+"kahftube.religion.haram.title" = "Haram";
+"kahftube.religion.practicingMuslim.title" = "Praktykujący Muzułmanin";
+"kahftube.religion.liberalMuslim.title" = "Liberalny Muzułmanin";
+"kahftube.religion.moderateMuslim.title" = "Umiarkowany Muzułmanin";
+
+/* Tytuły okna modalnego */
+"kahftube.popup.name.title" = "Imię";
+"kahftube.popup.connectedAccount.title" = "Połączone Konto";
+"kahftube.popup.preferences.title" = "Preferencje";
+"kahftube.popup.gender.title" = "Płeć";
+"kahftube.popup.religionStatus.title" = "Status Religijny";
+"kahftube.popup.unsubHaramChannels.title" = "Wypisz się z kanałów Haram";
+"kahftube.popup.unsubscribeSuccessful.title1" = "Kanały Haram zostały wypisane";
+"kahftube.popup.unsubscribeSuccessful.title2" = "z powodzeniem";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "Dobrze";
+"kahftube.popup.openToUse.title" = "Otwórz do użytku";
+"kahftube.popup.explore.title" = "Eksploruj tę funkcję po zalogowaniu się na YouTube";
+"kahftube.popup.haramChannelsFound.title" = "Znaleziono %d kanałów Haram";
+"kahftube.popup.refreshAgain.title" = "Odśwież ponownie";
+"kahftube.popup.unsubscribeNow.title" = "Wypisz się teraz";
+"kahftube.popup.noHaramSubscribed.title" = "Brak subskrypcji kanałów Haram";
+"kahftube.popup.channelFound.title" = "Znaleziono kanał";
+"kahftube.popup.alright.title" = "Dobrze";

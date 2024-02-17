@@ -3791,3 +3791,35 @@
 "safegaze.popup.imageblur.title" = "Інтенсивність розмиття зображення";
 "safegaze.popup.takecontrol.title" = "Покращте свій онлайн-досвід за допомогою SafeGaze, нашого розширення для очищення зображень, яке захищає вашу зірку від неприпустимого контенту.";
 "safegaze.popup.turnon.title" = "Увімкнути SafeGaze";
+
+/* Заголовки статі */
+"kahftube.gender.all.title" = "Всі";
+"kahftube.gender.male.title" = "Чоловік";
+"kahftube.gender.female.title" = "Жінка";
+"kahftube.gender.child.title" = "Дитина";
+"kahftube.gender.except.title" = "Крім";
+
+/* Заголовки релігії */
+"kahftube.religion.haram.title" = "Гарем";
+"kahftube.religion.practicingMuslim.title" = "Практикуючий мусульманин";
+"kahftube.religion.liberalMuslim.title" = "Ліберальний мусульманин";
+"kahftube.religion.moderateMuslim.title" = "Модератний мусульманин";
+
+/* Заголовки спливаючого вікна */
+"kahftube.popup.name.title" = "Ім'я";
+"kahftube.popup.connectedAccount.title" = "Підключений Обліковий запис";
+"kahftube.popup.preferences.title" = "Налаштування";
+"kahftube.popup.gender.title" = "Стать";
+"kahftube.popup.religionStatus.title" = "Релігійний Статус";
+"kahftube.popup.unsubHaramChannels.title" = "Відписатися від каналів Гарем";
+"kahftube.popup.unsubscribeSuccessful.title1" = "Канали Гарем відписані";
+"kahftube.popup.unsubscribeSuccessful.title2" = "успішно";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "Добре";
+"kahftube.popup.openToUse.title" = "Відкрити для використання";
+"kahftube.popup.explore.title" = "Досліджуйте цю функцію після входу в YouTube";
+"kahftube.popup.haramChannelsFound.title" = "Знайдено %d каналів Гарем";
+"kahftube.popup.refreshAgain.title" = "Оновити знову";
+"kahftube.popup.unsubscribeNow.title" = "Відписатися зараз";
+"kahftube.popup.noHaramSubscribed.title" = "Немає підписки на канали Гарем";
+"kahftube.popup.channelFound.title" = "Знайдений канал";
+"kahftube.popup.alright.title" = "Добре";

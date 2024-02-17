@@ -36,11 +36,11 @@ struct KahfTubeProfileView: View {
                 KahfTubeMenuButton(kafhTubeIsOn: $isOpened).padding(.bottom, 10)
                 
                 Form {
-                    Section(header: Text("Name")) {
+                    Section(header: Text(Strings.kahftubePopupNameTitle)) {
                         Text(Preferences.KahfTube.username.value ?? "")
                     }
                     
-                    Section(header: Text("Connected Account")) {
+                    Section(header: Text(Strings.kahftubePopupConnectedAccountTitle)) {
                         HStack {
                             Text(Preferences.KahfTube.email.value ?? "")
                             
@@ -48,14 +48,14 @@ struct KahfTubeProfileView: View {
                         }
                     }
                     
-                    Section(header: Text("Preferences")) {
-                        Picker(selection: $genderSelection, label: Text("Gender")) {
+                    Section(header: Text(Strings.kahftubePopupPreferencesTitle)) {
+                        Picker(selection: $genderSelection, label: Text(Strings.kahftubePopupGenderTitle)) {
                             ForEach(genders.indices, id: \.self) { index in
                                 Text(genders[index].localizedString).tag(genders[index].rawValue)
                             }
                         }
                         
-                        Picker(selection: $religionSelection, label: Text("Religion Status")) {
+                        Picker(selection: $religionSelection, label: Text(Strings.kahftubePopupReligionStatusTitle)) {
                             ForEach(religionStatus.indices, id: \.self) { index in
                                 Text(religionStatus[index].localizedString).tag(religionStatus[index].rawValue)
                             }
@@ -67,7 +67,7 @@ struct KahfTubeProfileView: View {
                             isLoading.toggle()
                             KahfTubeManager.shared.getHaramChannels()
                         } label: {
-                            Text("Unsubscribe Haram Channels")
+                            Text(Strings.kahftubePopupUnsubscribeHaramChannelsTitle)
                         }
                     }
                 }

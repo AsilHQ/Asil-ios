@@ -71,6 +71,36 @@ extension Strings {
   public static let safegazeTurnOnTitle = NSLocalizedString("safegaze.popup.turnon.title", tableName: "BraveShared", bundle: .module, value: "Turn on SafeGaze", comment: "")
 }
 
+// MARK: - Kahf tube pop up strings
+extension Strings {
+  public static let kahftubeGenderAllTitle = NSLocalizedString("kahftube.gender.all.title", tableName: "BraveShared", bundle: .module, value: "All", comment: "")
+  public static let kahftubeGenderMaleTitle = NSLocalizedString("kahftube.gender.male.title", tableName: "BraveShared", bundle: .module, value: "Male", comment: "")
+  public static let kahftubeGenderFemaleTitle = NSLocalizedString("kahftube.gender.female.title", tableName: "BraveShared", bundle: .module, value: "Female", comment: "")
+  public static let kahftubeGenderChildTitle = NSLocalizedString("kahftube.gender.child.title", tableName: "BraveShared", bundle: .module, value: "Child", comment: "")
+  public static let kahftubeGenderExceptTitle = NSLocalizedString("kahftube.gender.except.title", tableName: "BraveShared", bundle: .module, value: "Except", comment: "")
+  public static let kahftubeReligionHaramTitle = NSLocalizedString("kahftube.religion.haram.title", tableName: "BraveShared", bundle: .module, value: "Haram", comment: "")
+  public static let kahftubeReligionPracticingMuslimTitle = NSLocalizedString("kahftube.religion.practicingMuslim.title", tableName: "BraveShared", bundle: .module, value: "Practicing Muslim", comment: "")
+  public static let kahftubeReligionLiberalMuslimTitle = NSLocalizedString("kahftube.religion.liberalMuslim.title", tableName: "BraveShared", bundle: .module, value: "Liberal Muslim", comment: "")
+  public static let kahftubeReligionModerateMuslimTitle = NSLocalizedString("kahftube.religion.moderateMuslim.title", tableName: "BraveShared", bundle: .module, value: "Moderate Muslim", comment: "")
+  public static let kahftubePopupNameTitle = NSLocalizedString("kahftube.popup.name.title", tableName: "BraveShared", bundle: .module, value: "Name", comment: "")
+  public static let kahftubePopupConnectedAccountTitle = NSLocalizedString("kahftube.popup.connectedAccount.title", tableName: "BraveShared", bundle: .module, value: "Connected Account", comment: "")
+  public static let kahftubePopupPreferencesTitle = NSLocalizedString("kahftube.popup.preferences.title", tableName: "BraveShared", bundle: .module, value: "Preferences", comment: "")
+  public static let kahftubePopupGenderTitle = NSLocalizedString("kahftube.popup.gender.title", tableName: "BraveShared", bundle: .module, value: "Gender", comment: "")
+  public static let kahftubePopupReligionStatusTitle = NSLocalizedString("kahftube.popup.religionStatus.title", tableName: "BraveShared", bundle: .module, value: "Religion Status", comment: "")
+  public static let kahftubePopupUnsubscribeHaramChannelsTitle = NSLocalizedString("kahftube.popup.unsubHaramChannels.title", tableName: "BraveShared", bundle: .module, value: "Unsubscribe Haram Channels", comment: "")
+  public static let kahftubeUnsubscribeSuccessfulTitle1 = NSLocalizedString("kahftube.popup.unsubscribeSuccessful.title1", tableName: "BraveShared", bundle: .module, value: "Haram Channels are unsubscribed", comment: "")
+  public static let kahftubeUnsubscribeSuccessfulTitle2 = NSLocalizedString("kahftube.popup.unsubscribeSuccessful.title2", tableName: "BraveShared", bundle: .module, value: "successfully", comment: "")
+  public static let kahftubeUnsubscribeSuccessfulAlrightTitle = NSLocalizedString("kahftube.popup.unsubscribeSuccessful.alright.title", tableName: "BraveShared", bundle: .module, value: "Alright", comment: "")
+  public static let kahftubeOpenToUseTitle = NSLocalizedString("kahftube.popup.openToUse.title", tableName: "BraveShared", bundle: .module, value: "Open to use", comment: "")
+  public static let kahftubeExploreTitle = NSLocalizedString("kahftube.popup.explore.title", tableName: "BraveShared", bundle: .module, value: "Explore this feature after signing to Youtube", comment: "")
+  public static let kahftubeHaramChannelsFoundTitle = NSLocalizedString("kahftube.popup.haramChannelsFound.title", tableName: "BraveShared", bundle: .module, value: "%d Haram Channels found", comment: "")
+  public static let kahftubeRefreshAgainTitle = NSLocalizedString("kahftube.popup.refreshAgain.title", tableName: "BraveShared", bundle: .module, value: "Refresh again", comment: "")
+  public static let kahftubeUnsubscribeNowTitle = NSLocalizedString("kahftube.popup.unsubscribeNow.title", tableName: "BraveShared", bundle: .module, value: "Unsubscribe Now", comment: "")
+  public static let kahftubeNoHaramSubscribedTitle = NSLocalizedString("kahftube.popup.noHaramSubscribed.title", tableName: "BraveShared", bundle: .module, value: "No Haram Subscribed", comment: "")
+  public static let kahftubeChannelFoundTitle = NSLocalizedString("kahftube.popup.channelFound.title", tableName: "BraveShared", bundle: .module, value: "Channel Found", comment: "")
+  public static let kahftubeAlrightTitle = NSLocalizedString("kahftube.popup.alright.title", tableName: "BraveShared", bundle: .module, value: "Alright", comment: "")
+}
+
 // MARK:-  UIAlertControllerExtensions.swift
 extension Strings {
   public static let sendCrashReportAlertTitle = NSLocalizedString("SendCrashReportAlertTitle", tableName: "BraveShared", bundle: .module, value: "Oops! Kahf Browser crashed", comment: "Title for prompt displayed to user after the app crashes")

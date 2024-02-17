@@ -32,14 +32,14 @@ private extension KahfUnsubscribeView {
             
             VStack {
                 HStack {
-                    Text("\(haramChannels.count) Haram Channels found")
+                    Text(String(format: Strings.kahftubeHaramChannelsFoundTitle, haramChannels.count))
                     
                     Spacer()
                     
                     Button {
                         KahfTubeManager.shared.finishUnsubscribeSession()
                     } label: {
-                        Text("Close").foregroundColor(Color(UIColor(colorString: "#7B7B7B")))
+                        Text(Strings.close).foregroundColor(Color(UIColor(colorString: "#7B7B7B")))
                     }
                 }.padding(.top, 26)
                 
@@ -84,7 +84,7 @@ private extension KahfUnsubscribeView {
                         KahfTubeManager.shared.getHaramChannels()
                     } label: {
                         Spacer()
-                        Text("Refresh again").foregroundColor(Color(UIColor(colorString: "#7B7B7B")))
+                        Text(Strings.kahftubeRefreshAgainTitle).foregroundColor(Color(UIColor(colorString: "#7B7B7B")))
                         Spacer()
                     }.frame(height: 50.0).background(Color.white).cornerRadius(10.0)
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(UIColor(colorString: "#7B7B7B")), lineWidth: 1)).padding(.trailing, 10)
@@ -98,7 +98,7 @@ private extension KahfUnsubscribeView {
                         }
                     } label: {
                         Spacer()
-                        Text("Unsubscribe Now").foregroundColor(Color.white)
+                        Text(Strings.kahftubeUnsubscribeNowTitle).foregroundColor(Color.white)
                         Spacer()
                     }.frame(height: 50.0).background(Color(UIColor(colorString: "#A242FF"))).cornerRadius(10.0)
                 }
@@ -120,13 +120,13 @@ private extension KahfUnsubscribeView {
                     .padding(.top, 62)
                     .padding(.bottom, 20)
                 
-                Text("No Haram Subscribed")
-                Text("Channel Found").padding(.bottom, 42)
+                Text(Strings.kahftubeNoHaramSubscribedTitle)
+                Text(Strings.kahftubeChannelFoundTitle).padding(.bottom, 42)
                 
                 Button {
                     KahfTubeManager.shared.finishUnsubscribeSession()
                 } label: {
-                    Text("Alright").foregroundColor(Color.white)
+                    Text(Strings.kahftubeAlrightTitle).foregroundColor(Color.white)
                 }.frame(width: 175, height: 50.0).background(Color(UIColor(colorString: "#A242FF"))).cornerRadius(10.0).padding(.bottom, 42)
             }.padding(.horizontal, 16)
         }.frame(maxHeight: 372.0).cornerRadius(5.0).padding(.horizontal, 20).cornerRadius(5.0).onAppear {

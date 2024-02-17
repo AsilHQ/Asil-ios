@@ -47,7 +47,7 @@ public struct KahfTubeView: View {
                 VStack {
                     Spacer()
                     
-                    Text("Open to use")
+                    Text(Strings.kahftubeOpenToUseTitle)
                         .padding(.bottom, 20)
                     
                     KahfTubeMenuButton(kafhTubeIsOn: $isOpened)
@@ -60,7 +60,7 @@ public struct KahfTubeView: View {
                 .frame(minHeight: 600)
             case .onboarding:
                 VStack {
-                    Text("Explore this feature after signing to Youtube")
+                    Text(Strings.kahftubeExploreTitle)
                 }.frame(height: 300)
             }
         }

@@ -3791,3 +3791,35 @@
 "safegaze.popup.imageblur.title" = "Intensité du flou d'image";
 "safegaze.popup.takecontrol.title" = "Améliorez votre expérience en ligne avec SafeGaze, notre extension de purification d'image qui protège votre vision contre le contenu inapproprié.";
 "safegaze.popup.turnon.title" = "Activer SafeGaze";
+
+/* Titres de genre */
+"kahftube.gender.all.title" = "Tous";
+"kahftube.gender.male.title" = "Masculin";
+"kahftube.gender.female.title" = "Féminin";
+"kahftube.gender.child.title" = "Enfant";
+"kahftube.gender.except.title" = "Sauf";
+
+/* Titres de religion */
+"kahftube.religion.haram.title" = "Haram";
+"kahftube.religion.practicingMuslim.title" = "Musulman pratiquant";
+"kahftube.religion.liberalMuslim.title" = "Musulman libéral";
+"kahftube.religion.moderateMuslim.title" = "Musulman modéré";
+
+/* Titres de fenêtre contextuelle */
+"kahftube.popup.name.title" = "Nom";
+"kahftube.popup.connectedAccount.title" = "Compte connecté";
+"kahftube.popup.preferences.title" = "Préférences";
+"kahftube.popup.gender.title" = "Genre";
+"kahftube.popup.religionStatus.title" = "Statut religieux";
+"kahftube.popup.unsubHaramChannels.title" = "Se désabonner des chaînes Haram";
+"kahftube.popup.unsubscribeSuccessful.title1" = "Les chaînes Haram sont désabonnées";
+"kahftube.popup.unsubscribeSuccessful.title2" = "avec succès";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "D'accord";
+"kahftube.popup.openToUse.title" = "Ouvert à l'utilisation";
+"kahftube.popup.explore.title" = "Explorez cette fonctionnalité après vous être connecté à YouTube";
+"kahftube.popup.haramChannelsFound.title" = "%d chaînes Haram trouvées";
+"kahftube.popup.refreshAgain.title" = "Actualiser à nouveau";
+"kahftube.popup.unsubscribeNow.title" = "Se désabonner maintenant";
+"kahftube.popup.noHaramSubscribed.title" = "Aucune chaîne Haram abonnée";
+"kahftube.popup.channelFound.title" = "Chaîne trouvée";
+"kahftube.popup.alright.title" = "D'accord";

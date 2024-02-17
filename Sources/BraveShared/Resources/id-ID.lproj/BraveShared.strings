@@ -3791,3 +3791,35 @@
 "safegaze.popup.imageblur.title" = "Intensitas Blur Gambar";
 "safegaze.popup.takecontrol.title" = "Perbaiki pengalaman online Anda dengan SafeGaze, ekstensi Pemurnian Gambar kami yang melindungi penglihatan Anda dari konten yang tidak pantas.";
 "safegaze.popup.turnon.title" = "Aktifkan SafeGaze";
+
+/* Judul Gender */
+"kahftube.gender.all.title" = "Semua";
+"kahftube.gender.male.title" = "Laki-laki";
+"kahftube.gender.female.title" = "Perempuan";
+"kahftube.gender.child.title" = "Anak-anak";
+"kahftube.gender.except.title" = "Kecuali";
+
+/* Judul Agama */
+"kahftube.religion.haram.title" = "Haram";
+"kahftube.religion.practicingMuslim.title" = "Muslim Praktik";
+"kahftube.religion.liberalMuslim.title" = "Muslim Liberal";
+"kahftube.religion.moderateMuslim.title" = "Muslim Moderat";
+
+/* Judul Popup */
+"kahftube.popup.name.title" = "Nama";
+"kahftube.popup.connectedAccount.title" = "Akun Terhubung";
+"kahftube.popup.preferences.title" = "Preferensi";
+"kahftube.popup.gender.title" = "Jenis Kelamin";
+"kahftube.popup.religionStatus.title" = "Status Agama";
+"kahftube.popup.unsubHaramChannels.title" = "Berhenti Berlangganan Saluran Haram";
+"kahftube.popup.unsubscribeSuccessful.title1" = "Saluran Haram sudah dihentikan berlangganan";
+"kahftube.popup.unsubscribeSuccessful.title2" = "berhasil";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "Baik";
+"kahftube.popup.openToUse.title" = "Buka untuk digunakan";
+"kahftube.popup.explore.title" = "Jelajahi fitur ini setelah masuk ke YouTube";
+"kahftube.popup.haramChannelsFound.title" = "%d Saluran Haram ditemukan";
+"kahftube.popup.refreshAgain.title" = "Segarkan lagi";
+"kahftube.popup.unsubscribeNow.title" = "Berhenti Berlangganan Sekarang";
+"kahftube.popup.noHaramSubscribed.title" = "Tidak Ada yang Berlangganan Saluran Haram";
+"kahftube.popup.channelFound.title" = "Saluran Ditemukan";
+"kahftube.popup.alright.title" = "Baik";

@@ -3791,3 +3791,35 @@
 "safegaze.popup.imageblur.title" = "이미지 블러 강도";
 "safegaze.popup.takecontrol.title" = "SafeGaze를 사용하여 온라인 경험을 향상시키고 부적절한 콘텐츠로부터 시각을 보호하세요.";
 "safegaze.popup.turnon.title" = "SafeGaze 활성화";
+
+/* 성별 제목 */
+"kahftube.gender.all.title" = "모두";
+"kahftube.gender.male.title" = "남성";
+"kahftube.gender.female.title" = "여성";
+"kahftube.gender.child.title" = "어린이";
+"kahftube.gender.except.title" = "제외";
+
+/* 종교 제목 */
+"kahftube.religion.haram.title" = "하람";
+"kahftube.religion.practicingMuslim.title" = "수행 중인 무슬림";
+"kahftube.religion.liberalMuslim.title" = "자유로운 무슬림";
+"kahftube.religion.moderateMuslim.title" = "온건한 무슬림";
+
+/* 팝업 제목 */
+"kahftube.popup.name.title" = "이름";
+"kahftube.popup.connectedAccount.title" = "연결된 계정";
+"kahftube.popup.preferences.title" = "환경 설정";
+"kahftube.popup.gender.title" = "성별";
+"kahftube.popup.religionStatus.title" = "종교 상태";
+"kahftube.popup.unsubHaramChannels.title" = "하람 채널 구독 해지";
+"kahftube.popup.unsubscribeSuccessful.title1" = "하람 채널 구독이 해지되었습니다";
+"kahftube.popup.unsubscribeSuccessful.title2" = "성공적으로";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "알겠습니다";
+"kahftube.popup.openToUse.title" = "사용 가능";
+"kahftube.popup.explore.title" = "YouTube에 로그인한 후 이 기능을 탐색하세요";
+"kahftube.popup.haramChannelsFound.title" = "하람 채널 %d개 발견";
+"kahftube.popup.refreshAgain.title" = "다시 새로고침";
+"kahftube.popup.unsubscribeNow.title" = "지금 구독 해지";
+"kahftube.popup.noHaramSubscribed.title" = "하람 채널에 구독 중이 아님";
+"kahftube.popup.channelFound.title" = "채널 발견";
+"kahftube.popup.alright.title" = "알겠습니다";

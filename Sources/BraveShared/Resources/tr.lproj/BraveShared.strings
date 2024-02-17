@@ -3791,3 +3791,35 @@
 "safegaze.popup.imageblur.title" = "Görüntü Bulanıklığı Şiddeti";
 "safegaze.popup.takecontrol.title" = "Görüntülerinizi uygunsuz içerikten koruyan uzantımız SafeGaze ile çevrimiçi deneyiminizi geliştirin.";
 "safegaze.popup.turnon.title" = "SafeGaze'i Aç";
+
+/* Cinsiyet Başlıkları */
+"kahftube.gender.all.title" = "Hepsi";
+"kahftube.gender.male.title" = "Erkek";
+"kahftube.gender.female.title" = "Kadın";
+"kahftube.gender.child.title" = "Çocuk";
+"kahftube.gender.except.title" = "Haricinde";
+
+/* Din Başlıkları */
+"kahftube.religion.haram.title" = "Haram";
+"kahftube.religion.practicingMuslim.title" = "Pratik Müslüman";
+"kahftube.religion.liberalMuslim.title" = "Liberal Müslüman";
+"kahftube.religion.moderateMuslim.title" = "Orta Dereceli Müslüman";
+
+/* Açılır Pencere Başlıkları */
+"kahftube.popup.name.title" = "Ad";
+"kahftube.popup.connectedAccount.title" = "Bağlı Hesap";
+"kahftube.popup.preferences.title" = "Tercihler";
+"kahftube.popup.gender.title" = "Cinsiyet";
+"kahftube.popup.religionStatus.title" = "Din Durumu";
+"kahftube.popup.unsubHaramChannels.title" = "Haram Kanalları Abonelikten Çıkar";
+"kahftube.popup.unsubscribeSuccessful.title1" = "Haram Kanallar abonelikten çıkarıldı";
+"kahftube.popup.unsubscribeSuccessful.title2" = "başarıyla";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "Tamam";
+"kahftube.popup.openToUse.title" = "Kullanıma Açık";
+"kahftube.popup.explore.title" = "YouTube'a giriş yaptıktan sonra bu özelliği keşfedin";
+"kahftube.popup.haramChannelsFound.title" = "%d Haram Kanal bulundu";
+"kahftube.popup.refreshAgain.title" = "Yeniden Yenile";
+"kahftube.popup.unsubscribeNow.title" = "Şimdi Aboneliği İptal Et";
+"kahftube.popup.noHaramSubscribed.title" = "Hiç Haram Kanal Abonesi Yok";
+"kahftube.popup.channelFound.title" = "Kanal Bulundu";
+"kahftube.popup.alright.title" = "Tamam";

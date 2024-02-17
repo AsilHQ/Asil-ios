@@ -25,6 +25,10 @@ struct SafegazeCloseView: View {
             
             toggleView.padding(.top, 11)
             
+            Text(Strings.safegazeTurnOnTitle)
+                .font(FontHelper.quicksand(size: 14, weight: .bold))
+                .foregroundColor(Color(red: 0.02, green: 0.02, blue: 0.02))
+            
             descriptionView.padding(.top, 30)
         }
     }
@@ -80,7 +84,7 @@ struct SafegazeCloseView: View {
         Button {
             isOpened.toggle()
         } label: {
-            ResizableImageView(image: Image(braveSystemName: "safegaze.turn.on"), width: 122, height: 136)
+            ResizableImageView(image: Image(braveSystemName: "safegaze.turn.on"), width: 120, height: 120)
         }
     }
 }

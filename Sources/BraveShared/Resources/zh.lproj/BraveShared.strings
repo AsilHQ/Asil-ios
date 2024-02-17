@@ -3791,3 +3791,35 @@
 "safegaze.popup.imageblur.title" = "图像模糊强度";
 "safegaze.popup.takecontrol.title" = "通过 SafeGaze 提升您的在线体验，我们的图像净化扩展可保护您的视觉免受不适当内容的影响。";
 "safegaze.popup.turnon.title" = "启用 SafeGaze";
+
+/* 性别标题 */
+"kahftube.gender.all.title" = "全部";
+"kahftube.gender.male.title" = "男性";
+"kahftube.gender.female.title" = "女性";
+"kahftube.gender.child.title" = "儿童";
+"kahftube.gender.except.title" = "除外";
+
+/* 宗教标题 */
+"kahftube.religion.haram.title" = "哈拉姆";
+"kahftube.religion.practicingMuslim.title" = "虔诚的穆斯林";
+"kahftube.religion.liberalMuslim.title" = "自由派穆斯林";
+"kahftube.religion.moderateMuslim.title" = "适度的穆斯林";
+
+/* 弹出窗口标题 */
+"kahftube.popup.name.title" = "姓名";
+"kahftube.popup.connectedAccount.title" = "已连接帐户";
+"kahftube.popup.preferences.title" = "偏好设置";
+"kahftube.popup.gender.title" = "性别";
+"kahftube.popup.religionStatus.title" = "宗教状态";
+"kahftube.popup.unsubHaramChannels.title" = "取消订阅哈拉姆频道";
+"kahftube.popup.unsubscribeSuccessful.title1" = "已成功取消订阅哈拉姆频道";
+"kahftube.popup.unsubscribeSuccessful.title2" = "成功";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "好的";
+"kahftube.popup.openToUse.title" = "开放使用";
+"kahftube.popup.explore.title" = "在登录YouTube后探索此功能";
+"kahftube.popup.haramChannelsFound.title" = "发现 %d 个哈拉姆频道";
+"kahftube.popup.refreshAgain.title" = "再次刷新";
+"kahftube.popup.unsubscribeNow.title" = "立即取消订阅";
+"kahftube.popup.noHaramSubscribed.title" = "未订阅任何哈拉姆频道";
+"kahftube.popup.channelFound.title" = "发现频道";
+"kahftube.popup.alright.title" = "好的";

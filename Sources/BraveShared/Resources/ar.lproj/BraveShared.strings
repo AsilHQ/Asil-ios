@@ -2655,3 +2655,34 @@
 "safegaze.popup.takecontrol.title" = "قم بتعزيز تجربتك عبر الإنترنت مع SafeGaze، إضاف";
 "safegaze.popup.turnon.title" = "تشغيل SafeGaze";
 
+/* عناوين الجنس */
+"kahftube.gender.all.title" = "الكل";
+"kahftube.gender.male.title" = "ذكر";
+"kahftube.gender.female.title" = "أنثى";
+"kahftube.gender.child.title" = "طفل";
+"kahftube.gender.except.title" = "باستثناء";
+
+/* عناوين الديانة */
+"kahftube.religion.haram.title" = "حرام";
+"kahftube.religion.practicingMuslim.title" = "مسلم متدين";
+"kahftube.religion.liberalMuslim.title" = "مسلم ليبرالي";
+"kahftube.religion.moderateMuslim.title" = "مسلم معتدل";
+
+/* عناوين النافذة المنبثقة */
+"kahftube.popup.name.title" = "الاسم";
+"kahftube.popup.connectedAccount.title" = "الحساب المتصل";
+"kahftube.popup.preferences.title" = "التفضيلات";
+"kahftube.popup.gender.title" = "الجنس";
+"kahftube.popup.religionStatus.title" = "حالة الديانة";
+"kahftube.popup.unsubHaramChannels.title" = "الغاء الاشتراك في القنوات الحرام";
+"kahftube.popup.unsubscribeSuccessful.title1" = "تم إلغاء الاشتراك في القنوات الحرام";
+"kahftube.popup.unsubscribeSuccessful.title2" = "بنجاح";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "حسنًا";
+"kahftube.popup.openToUse.title" = "مفتوح للاستخدام";
+"kahftube.popup.explore.title" = "استكشاف هذه الميزة بعد تسجيل الدخول إلى يوتيوب";
+"kahftube.popup.haramChannelsFound.title" = "تم العثور على %d قنوات حرام";
+"kahftube.popup.refreshAgain.title" = "تحديث مرة أخرى";
+"kahftube.popup.unsubscribeNow.title" = "الغاء الاشتراك الآن";
+"kahftube.popup.noHaramSubscribed.title" = "لم يتم الاشتراك في قنوات حرام";
+"kahftube.popup.channelFound.title" = "تم العثور على القناة";
+"kahftube.popup.alright.title" = "حسنًا";

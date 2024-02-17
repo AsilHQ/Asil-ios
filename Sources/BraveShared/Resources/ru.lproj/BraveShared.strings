@@ -3791,3 +3791,35 @@
 "safegaze.popup.imageblur.title" = "Интенсивность размытия изображения";
 "safegaze.popup.takecontrol.title" = "Улучшите свой онлайн-опыт с помощью SafeGaze, нашего расширения для очистки изображений, которое защищает ваше зрение от неподходящего контента.";
 "safegaze.popup.turnon.title" = "Включить SafeGaze";
+
+/* Заголовки пола */
+"kahftube.gender.all.title" = "Все";
+"kahftube.gender.male.title" = "Мужской";
+"kahftube.gender.female.title" = "Женский";
+"kahftube.gender.child.title" = "Ребенок";
+"kahftube.gender.except.title" = "Кроме";
+
+/* Заголовки религии */
+"kahftube.religion.haram.title" = "Харам";
+"kahftube.religion.practicingMuslim.title" = "Практикующий мусульманин";
+"kahftube.religion.liberalMuslim.title" = "Либеральный мусульманин";
+"kahftube.religion.moderateMuslim.title" = "Умеренный мусульманин";
+
+/* Заголовки всплывающего окна */
+"kahftube.popup.name.title" = "Имя";
+"kahftube.popup.connectedAccount.title" = "Подключенный аккаунт";
+"kahftube.popup.preferences.title" = "Настройки";
+"kahftube.popup.gender.title" = "Пол";
+"kahftube.popup.religionStatus.title" = "Религиозный статус";
+"kahftube.popup.unsubHaramChannels.title" = "Отписаться от каналов Харам";
+"kahftube.popup.unsubscribeSuccessful.title1" = "Каналы Харам отписаны";
+"kahftube.popup.unsubscribeSuccessful.title2" = "успешно";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "Хорошо";
+"kahftube.popup.openToUse.title" = "Открыто для использования";
+"kahftube.popup.explore.title" = "Исследуйте эту функцию после входа в YouTube";
+"kahftube.popup.haramChannelsFound.title" = "Найдено %d каналов Харам";
+"kahftube.popup.refreshAgain.title" = "Обновить снова";
+"kahftube.popup.unsubscribeNow.title" = "Отписаться сейчас";
+"kahftube.popup.noHaramSubscribed.title" = "Нет подписанных на каналы Харам";
+"kahftube.popup.channelFound.title" = "Найден канал";
+"kahftube.popup.alright.title" = "Хорошо";

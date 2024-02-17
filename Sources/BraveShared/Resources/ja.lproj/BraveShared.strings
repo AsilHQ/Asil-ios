@@ -3791,3 +3791,35 @@
 "safegaze.popup.imageblur.title" = "画像のぼかし強度";
 "safegaze.popup.takecontrol.title" = "SafeGazeを使用してオンライン体験を向上させ、不適切なコンテンツから視力を保護します。";
 "safegaze.popup.turnon.title" = "SafeGazeをオンにする";
+
+/* ジェンダータイトル */
+"kahftube.gender.all.title" = "すべて";
+"kahftube.gender.male.title" = "男性";
+"kahftube.gender.female.title" = "女性";
+"kahftube.gender.child.title" = "子供";
+"kahftube.gender.except.title" = "除外";
+
+/* 宗教タイトル */
+"kahftube.religion.haram.title" = "ハラム";
+"kahftube.religion.practicingMuslim.title" = "実践するムスリム";
+"kahftube.religion.liberalMuslim.title" = "リベラルなムスリム";
+"kahftube.religion.moderateMuslim.title" = "穏健なムスリム";
+
+/* ポップアップタイトル */
+"kahftube.popup.name.title" = "名前";
+"kahftube.popup.connectedAccount.title" = "接続されたアカウント";
+"kahftube.popup.preferences.title" = "設定";
+"kahftube.popup.gender.title" = "ジェンダー";
+"kahftube.popup.religionStatus.title" = "宗教の状態";
+"kahftube.popup.unsubHaramChannels.title" = "ハラムなチャンネルの購読解除";
+"kahftube.popup.unsubscribeSuccessful.title1" = "ハラムなチャンネルの購読が解除されました";
+"kahftube.popup.unsubscribeSuccessful.title2" = "成功";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "了解";
+"kahftube.popup.openToUse.title" = "使用可能";
+"kahftube.popup.explore.title" = "YouTubeにサインインした後、この機能を探索";
+"kahftube.popup.haramChannelsFound.title" = "ハラムなチャンネルが %d 件見つかりました";
+"kahftube.popup.refreshAgain.title" = "再度リフレッシュ";
+"kahftube.popup.unsubscribeNow.title" = "今すぐ購読解除";
+"kahftube.popup.noHaramSubscribed.title" = "ハラムなチャンネルに購読していません";
+"kahftube.popup.channelFound.title" = "チャンネルが見つかりました";
+"kahftube.popup.alright.title" = "了解";

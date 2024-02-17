@@ -3791,3 +3791,35 @@
 "safegaze.popup.imageblur.title" = "Bildoskärpa Intensitet";
 "safegaze.popup.takecontrol.title" = "Förbättra din online-upplevelse med SafeGaze, vår bildrensningsförlängning som skyddar din syn från olämpligt innehåll.";
 "safegaze.popup.turnon.title" = "Slå på SafeGaze";
+
+/* Könstitlar */
+"kahftube.gender.all.title" = "Alla";
+"kahftube.gender.male.title" = "Man";
+"kahftube.gender.female.title" = "Kvinna";
+"kahftube.gender.child.title" = "Barn";
+"kahftube.gender.except.title" = "Förutom";
+
+/* Religionstitlar */
+"kahftube.religion.haram.title" = "Haram";
+"kahftube.religion.practicingMuslim.title" = "Praktiserande Muslim";
+"kahftube.religion.liberalMuslim.title" = "Liberal Muslim";
+"kahftube.religion.moderateMuslim.title" = "Måttlig Muslim";
+
+/* Popup-titlar */
+"kahftube.popup.name.title" = "Namn";
+"kahftube.popup.connectedAccount.title" = "Ansluten Konto";
+"kahftube.popup.preferences.title" = "Inställningar";
+"kahftube.popup.gender.title" = "Kön";
+"kahftube.popup.religionStatus.title" = "Religiös Status";
+"kahftube.popup.unsubHaramChannels.title" = "Avsluta prenumerationen på Haram-kanaler";
+"kahftube.popup.unsubscribeSuccessful.title1" = "Prenumerationen på Haram-kanaler är avslutad";
+"kahftube.popup.unsubscribeSuccessful.title2" = "framgångsrikt";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "Okej";
+"kahftube.popup.openToUse.title" = "Öppen för användning";
+"kahftube.popup.explore.title" = "Utforska den här funktionen efter inloggning på YouTube";
+"kahftube.popup.haramChannelsFound.title" = "%d Haram-kanaler hittade";
+"kahftube.popup.refreshAgain.title" = "Uppdatera igen";
+"kahftube.popup.unsubscribeNow.title" = "Avsluta prenumerationen nu";
+"kahftube.popup.noHaramSubscribed.title" = "Ingen prenumererar på Haram-kanaler";
+"kahftube.popup.channelFound.title" = "Kanal hittad";
+"kahftube.popup.alright.title" = "Okej";
