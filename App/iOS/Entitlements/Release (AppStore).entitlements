@@ -10,7 +10,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.$(MOZ_BUNDLE_ID)</string>
+		<string>group.com.halalz.kahfbrowser</string>
 	</array>
 </dict>
 </plist>
