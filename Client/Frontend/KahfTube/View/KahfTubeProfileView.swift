@@ -20,18 +20,10 @@ struct KahfTubeProfileView: View {
     var body: some View {
         ZStack {
             VStack {
-                if #available(iOS 15.0, *) {
-                    AsyncImage(url: URL(string: profileImageUrl))
-                        .clipShape(Circle())
-                        .frame(width: 100.0, height: 100.0)
-                        .padding(.vertical, 10)
-                } else {
-                    Circle()
+                AsyncImage(url: URL(string: profileImageUrl))
+                    .clipShape(Circle())
                     .frame(width: 100.0, height: 100.0)
-                    .overlay(RoundedRectangle(cornerRadius: 50.0)
-                    .strokeBorder(Color.black, style: StrokeStyle(lineWidth: 0.5)))
                     .padding(.vertical, 10)
-                }
                 
                 KahfTubeMenuButton(kafhTubeIsOn: $isOpened).padding(.bottom, 10)
                 
