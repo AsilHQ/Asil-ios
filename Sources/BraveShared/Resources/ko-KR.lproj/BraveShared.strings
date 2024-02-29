@@ -3823,3 +3823,7 @@
 "kahftube.popup.noHaramSubscribed.title" = "하람 채널에 구독 중이 아님";
 "kahftube.popup.channelFound.title" = "채널 발견";
 "kahftube.popup.alright.title" = "알겠습니다";
+
+"kahfVPN.invalid.title" = "네트워크 익스텐션 환경 설정에서 연결된 VPN 구성이 없거나 활성화되어 있지 않습니다.";
+"kahfVPN.reconnect.title" = "서버와 통신할 수 없습니다. 다시 연결해 보십시오.";
+"kahfVPN.configuration.error.title" = "서버와 통신할 수 없습니다. 다시 연결해 보십시오.";

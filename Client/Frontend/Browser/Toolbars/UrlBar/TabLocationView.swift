@@ -27,7 +27,8 @@ protocol TabLocationViewDelegate {
   func topToolbarDidTapShareButton(_ urlBar: TabLocationView)
   func tabLocationViewDidTapSafegazeButton(_ tabLocationView: TabLocationView)
   func tabLocationViewDidTapKahftubeButton(_ tabLocationView: TabLocationView)
-  
+  func tabLocationViewDidTapKahfVPNButton(_ tabLocationView: TabLocationView)
+    
   /// - returns: whether the long-press was handled by the delegate; i.e. return `false` when the conditions for even starting handling long-press were not satisfied
   @discardableResult func tabLocationViewDidLongPressReaderMode(_ tabLocationView: TabLocationView) -> Bool
 }
@@ -242,6 +243,17 @@ class TabLocationView: UIView {
       return button
   }()
 
+  lazy var kahfVPNButton: ToolbarButton = {
+      let button = ToolbarButton(top: true)
+      button.setImage(UIImage(named: "kahfdns", in: .module, compatibleWith: nil)!.scale(toSize: CGSize(width: 20, height: 20)), for: .normal)
+      button.addTarget(self, action: #selector(didClickKahfVPNButton), for: .touchUpInside)
+      button.imageView?.contentMode = .scaleAspectFit
+      button.accessibilityLabel = Strings.bravePanel
+      button.imageView?.adjustsImageSizeForAccessibilityContentSizeCategory = true
+      button.accessibilityIdentifier = "urlBar-kahfTubebButton"
+      return button
+  }()
+ 
   lazy var rewardsButton: RewardsButton = {
     let button = RewardsButton()
     button.addTarget(self, action: #selector(didClickBraveRewardsButton), for: .touchUpInside)
@@ -288,7 +300,7 @@ class TabLocationView: UIView {
     addGestureRecognizer(longPressRecognizer)
     addGestureRecognizer(tapRecognizer)
     
-    let optionSubviews = [readerModeButton, walletButton, shareButton, separatorLine, shieldsButton]
+    let optionSubviews = [readerModeButton, walletButton, shareButton, separatorLine, shieldsButton, kahfVPNButton]
     optionSubviews.forEach {
       ($0 as? UIButton)?.contentEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
       $0.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
@@ -456,6 +468,10 @@ class TabLocationView: UIView {
 
   @objc func didClickKahftubeButton() {
     delegate?.tabLocationViewDidTapKahftubeButton(self)
+  }
+    
+  @objc func didClickKahfVPNButton() {
+    delegate?.tabLocationViewDidTapKahfVPNButton(self)
   }
     
   @objc func didClickBraveRewardsButton() {

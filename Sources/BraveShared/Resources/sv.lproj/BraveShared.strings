@@ -3823,3 +3823,7 @@
 "kahftube.popup.noHaramSubscribed.title" = "Ingen prenumererar på Haram-kanaler";
 "kahftube.popup.channelFound.title" = "Kanal hittad";
 "kahftube.popup.alright.title" = "Okej";
+
+"kahfVPN.invalid.title" = "Den associerade VPN-konfigurationen finns inte i nätverkstilläggets inställningar eller är inte aktiverad.";
+"kahfVPN.reconnect.title" = "Det går inte att kommunicera med servern. Försök att ansluta igen.";
+"kahfVPN.configuration.error.title" = "Det går inte att kommunicera med servern. Försök att ansluta igen.";

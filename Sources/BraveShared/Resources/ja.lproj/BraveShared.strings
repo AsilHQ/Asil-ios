@@ -3823,3 +3823,7 @@
 "kahftube.popup.noHaramSubscribed.title" = "ハラムなチャンネルに購読していません";
 "kahftube.popup.channelFound.title" = "チャンネルが見つかりました";
 "kahftube.popup.alright.title" = "了解";
+
+"kahfVPN.invalid.title" = "関連するVPN構成はネットワーク拡張の設定に存在しないか、有効になっていません。";
+"kahfVPN.reconnect.title" = "サーバーとの通信ができません。再接続してみてください。";
+"kahfVPN.configuration.error.title" = "サーバーとの通信ができません。再接続してみてください。";

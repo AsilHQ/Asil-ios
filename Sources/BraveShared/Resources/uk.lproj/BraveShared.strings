@@ -3823,3 +3823,7 @@
 "kahftube.popup.noHaramSubscribed.title" = "Немає підписки на канали Гарем";
 "kahftube.popup.channelFound.title" = "Знайдений канал";
 "kahftube.popup.alright.title" = "Добре";
+
+"kahfVPN.invalid.title" = "Пов'язана конфігурація VPN відсутня в налаштуваннях розширення мережі або не активована.";
+"kahfVPN.reconnect.title" = "Неможливо зв'язатися з сервером. Спробуйте підключитися знову.";
+"kahfVPN.configuration.error.title" = "Неможливо зв'язатися з сервером. Спробуйте підключитися знову.";

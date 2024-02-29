@@ -101,7 +101,14 @@ extension Strings {
   public static let kahftubeAlrightTitle = NSLocalizedString("kahftube.popup.alright.title", tableName: "BraveShared", bundle: .module, value: "Alright", comment: "")
 }
 
-// MARK:-  UIAlertControllerExtensions.swift
+// MARK: - KahfVPN alert
+extension Strings {
+    public static let kahfVPNInvalidTitle = NSLocalizedString("kahfVPN.invalid.title", tableName: "BraveShared", bundle: .module, value: "The associated VPN configuration doesn’t exist in the Network Extension preferences or isn’t enabled.", comment: "")
+    public static let kahfVPNReconnectTitle = NSLocalizedString("kahfVPN.reconnect.title", tableName: "BraveShared", bundle: .module, value: "Unable to communicate with server. Try connecting again.", comment: "")
+    public static let kahfVPNConfigurationErrorTitle = NSLocalizedString("kahfVPN.configuration.error.title", tableName: "BraveShared", bundle: .module, value: "Unable to communicate with server. Try connecting again.", comment: "")
+}
+
+// MARK: -  UIAlertControllerExtensions.swift
 extension Strings {
   public static let sendCrashReportAlertTitle = NSLocalizedString("SendCrashReportAlertTitle", tableName: "BraveShared", bundle: .module, value: "Oops! Kahf Browser crashed", comment: "Title for prompt displayed to user after the app crashes")
   public static let sendCrashReportAlertMessage = NSLocalizedString("SendCrashReportAlertMessage", tableName: "BraveShared", bundle: .module, value: "Send a crash report so Kahf Browser can fix the problem?", comment: "Message displayed in the crash dialog above the buttons used to select when sending reports")

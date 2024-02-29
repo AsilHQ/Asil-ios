@@ -2686,3 +2686,7 @@
 "kahftube.popup.noHaramSubscribed.title" = "لم يتم الاشتراك في قنوات حرام";
 "kahftube.popup.channelFound.title" = "تم العثور على القناة";
 "kahftube.popup.alright.title" = "حسنًا";
+
+"kahfVPN.invalid.title" = "التكوين المرتبط بالـ VPN غير موجود في تفضيلات Network Extension أو غير مُمكّن.";
+"kahfVPN.reconnect.title" = "غير قادر على التواصل مع الخادم. حاول الاتصال مرة أخرى.";
+"kahfVPN.configuration.error.title" = "غير قادر على التواصل مع الخادم. حاول الاتصال مرة أخرى.";

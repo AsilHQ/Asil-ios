@@ -3823,3 +3823,7 @@
 "kahftube.popup.noHaramSubscribed.title" = "Tiada Saluran Haram yang dilanggan";
 "kahftube.popup.channelFound.title" = "Saluran Ditemui";
 "kahftube.popup.alright.title" = "Baik";
+
+"kahfVPN.invalid.title" = "Konfigurasi VPN yang berkaitan tidak wujud dalam keutamaan Sambungan Rangkaian atau tidak diaktifkan.";
+"kahfVPN.reconnect.title" = "Tidak dapat berkomunikasi dengan pelayan. Cuba sambung semula.";
+"kahfVPN.configuration.error.title" = "Tidak dapat berkomunikasi dengan pelayan. Cuba sambung semula.";

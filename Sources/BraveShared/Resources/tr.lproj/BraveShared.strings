@@ -3823,3 +3823,7 @@
 "kahftube.popup.noHaramSubscribed.title" = "Hiç Haram Kanal Abonesi Yok";
 "kahftube.popup.channelFound.title" = "Kanal Bulundu";
 "kahftube.popup.alright.title" = "Tamam";
+
+"kahfVPN.invalid.title" = "İlgili VPN yapılandırması Ağ Genişletme tercihlerinde mevcut değil veya etkin değil.";
+"kahfVPN.reconnect.title" = "Sunucu ile iletişim kurulamıyor. Yeniden bağlanmayı deneyin.";
+"kahfVPN.configuration.error.title" = "Sunucu ile iletişim kurulamıyor. Yeniden bağlanmayı deneyin.";

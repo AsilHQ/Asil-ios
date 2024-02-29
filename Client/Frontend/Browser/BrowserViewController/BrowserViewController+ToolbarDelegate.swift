@@ -288,6 +288,10 @@ extension BrowserViewController: TopToolbarDelegate {
   func topToolbarDidTapKahftubeButton(_ topToolbar: TopToolbarView) {
     presentKahftubeViewController()
   }
+    
+  func topToolbarDidTapKahfVPNButton(_ topToolbar: TopToolbarView) {
+    presentKahfVPNViewController()
+  }
 
   func presentBraveShieldsViewController() {
     guard let selectedTab = tabManager.selectedTab, var url = selectedTab.url else { return }
@@ -430,6 +434,22 @@ extension BrowserViewController: TopToolbarDelegate {
     let popover = PopoverController(contentController: container, contentSizeBehavior: .preferredContentSize)
     popover.present(from: topToolbar.locationView.kahfTubeButton, on: self)
   }
+    
+  func presentKahfVPNViewController() {
+    guard let selectedTab = tabManager.selectedTab, var url = selectedTab.url else { return }
+    if let internalUrl = InternalURL(url), internalUrl.isErrorPage, let originalURL = internalUrl.originalURLFromErrorPage {
+        url = originalURL
+    }
+    
+    if url.isLocalUtility || InternalURL(url)?.isAboutURL == true || InternalURL(url)?.isAboutHomeURL == true {
+        return
+    }
+    
+    let shields = KahfVPNPopUpViewController(tab: selectedTab)
+    let container = PopoverNavigationController(rootViewController: shields)
+    let popover = PopoverController(contentController: container, contentSizeBehavior: .preferredContentSize)
+    popover.present(from: topToolbar.locationView.kahfVPNButton, on: self)
+  }
 
   // TODO: This logic should be fully abstracted away and share logic from current MenuViewController
   // See: https://github.com/brave/brave-ios/issues/1452
@@ -437,9 +457,7 @@ extension BrowserViewController: TopToolbarDelegate {
     navigationHelper.openBookmarks()
   }
 
-  func topToolbarDidTapBraveRewardsButton(_ topToolbar: TopToolbarView) {
-    //showBraveRewardsPanel()
-  }
+  func topToolbarDidTapBraveRewardsButton(_ topToolbar: TopToolbarView) {}
 
   func topToolbarDidLongPressBraveRewardsButton(_ topToolbar: TopToolbarView) {
     showRewardsDebugSettings()

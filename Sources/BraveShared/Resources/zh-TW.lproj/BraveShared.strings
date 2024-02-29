@@ -3823,3 +3823,8 @@
 "kahftube.popup.noHaramSubscribed.title" = "沒有訂閱哈拉姆頻道";
 "kahftube.popup.channelFound.title" = "發現頻道";
 "kahftube.popup.alright.title" = "好的";
+
+"kahfVPN.invalid.title" = "在網路擴充偏好中找不到或未啟用相關的VPN設定。";
+"kahfVPN.reconnect.title" = "無法與伺服器通訊。請嘗試重新連接。";
+"kahfVPN.configuration.error.title" = "無法與伺服器通訊。請嘗試重新連接。";
+
