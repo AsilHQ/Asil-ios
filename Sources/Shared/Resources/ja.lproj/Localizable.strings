@@ -131,7 +131,7 @@
 "ScanQRCodeInvalidDataErrorMessage" = "データが無効です";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCodePermissionErrorMessage" = "「設定」->「プライバシー」->「カメラ」でAsil Browserによるデバイスのカメラへのアクセスを許可してください。";
+"ScanQRCodePermissionErrorMessage" = "「設定」->「プライバシー」->「カメラ」でKahf Browserによるデバイスのカメラへのアクセスを許可してください。";
 
 /* Title for the QR code scanner view. */
 "ScanQRCodeViewTitle" = "QRコードをスキャン";
@@ -154,8 +154,8 @@
 /* Label to display in the Discoverability overlay for keyboard shortcuts */
 "ShowPreviousTabTitle" = "前のタブを表示";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Asil Browser Shields */
-"showShieldsTitle" = "Asil Browser Shieldを開く";
+/* Label to display in the Discoverability overlay for keyboard shortcuts which is for Showing Kahf Browser Shields */
+"showShieldsTitle" = "Kahf Browser Shieldを開く";
 
 /* Hardware shortcut to open the tab tray from a tab. Shown in the Discoverability overlay when the hardware Command Key is held down. */
 "ShowTabTrayFromTabKeyCodeTitle" = "すべてのタブを表示";
@@ -181,8 +181,8 @@
 /* Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet. */
 "UnableToAddPassErrorTitle" = "パスを追加できませんでした";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Asil Browser, or any external app. */
-"UnableToOpenURLError" = "アドレスが無効なためAsil Browserでページを開けません。";
+/* The message displayed to a user when they try to open a URL that cannot be handled by Kahf Browser, or any external app. */
+"UnableToOpenURLError" = "アドレスが無効なためKahf Browserでページを開けません。";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "UnableToOpenURLErrorTitle" = "ページを開けません";

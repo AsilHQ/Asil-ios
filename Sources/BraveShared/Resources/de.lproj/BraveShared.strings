@@ -1,17 +1,17 @@
 /* About settings section title */
 "About" = "Über uns";
 
-/* The title of the screen explaining Asil Browser Shields */
-"AboutBraveShields" = "Über Asil Browser Shields";
+/* The title of the screen explaining Kahf Browser Shields */
+"AboutBraveShields" = "Über Kahf Browser Shields";
 
-/* The body of the screen explaining Asil Browser Shields */
-"AboutBraveShieldsBody" = "Websites nutzen häufig Cookies und Skripte, mit denen man Sie und Ihr Gerät erkennen kann. Das Ziel ist dabei, Ihre Identität zu ermitteln und Ihre Aktivitäten im Internet auf jeder der von Ihnen besuchten Websites zu verfolgen.\n\nAsil Browser blockiert dieses Tracking, damit Sie surfen können, ohne im Web beobachtet zu werden.";
+/* The body of the screen explaining Kahf Browser Shields */
+"AboutBraveShieldsBody" = "Websites nutzen häufig Cookies und Skripte, mit denen man Sie und Ihr Gerät erkennen kann. Das Ziel ist dabei, Ihre Identität zu ermitteln und Ihre Aktivitäten im Internet auf jeder der von Ihnen besuchten Websites zu verfolgen.\n\nKahf Browser blockiert dieses Tracking, damit Sie surfen können, ohne im Web beobachtet zu werden.";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "Ermöglicht es Ihnen, das Bild in Ihrer Galerie zu speichern.";
 
 /* See http://mzl.la/1G7uHo7 */
-"AccessPhotoDeniedAlertTitle" = "Asil Browser möchte auf Ihre Fotos zugreifen.";
+"AccessPhotoDeniedAlertTitle" = "Kahf Browser möchte auf Ihre Fotos zugreifen.";
 
 /* Button to add a bookmark */
 "AddBookmark" = "Lesezeichen hinzufügen";
@@ -52,8 +52,8 @@
 /* Label for the Face ID/Passcode item in Settings */
 "AuthenticationFaceIDPasscodeSetting" = "Face-ID und Passcode";
 
-/* Touch ID or PIN entry prompt subtitle when accessing Asil Browser with the Browser Lock feature enabled */
-"AuthenticationLoginsTouchReason" = "Dies authentifiziert Ihren Zugang zu Asil Browser";
+/* Touch ID or PIN entry prompt subtitle when accessing Kahf Browser with the Browser Lock feature enabled */
+"AuthenticationLoginsTouchReason" = "Dies authentifiziert Ihren Zugang zu Kahf Browser";
 
 /* Label for the Passcode item in Settings */
 "AuthenticationPasscode" = "Passcode";
@@ -116,7 +116,7 @@
 "BlockCookieConsentNotices" = "Cookie-Einwilligungshinweise blockieren";
 
 /* A description for a popup that notifies the user that we can block cookie consent notices */
-"BlockCookieConsentNoticesPopupDescription" = "Asil Browser blockiert bereits Cookies von Drittanbietern. Wir können auch Cookie-Einwilligungshinweise blockieren.";
+"BlockCookieConsentNoticesPopupDescription" = "Kahf Browser blockiert bereits Cookies von Drittanbietern. Wir können auch Cookie-Einwilligungshinweise blockieren.";
 
 /* A title for a popup that notifies the user that we can block cookie consent notices */
 "BlockCookieConsentNoticesPopupTitle" = "Keine Lust mehr auf Cookie-Einwilligungshinweise?";
@@ -130,7 +130,7 @@
 /* A title for setting which blocks 'switch to app' popups */
 "blockMobileAnnoyances" = "Hinweise zum Wechseln zur App blockieren";
 
-/* Asil Browser panel individual toggle title */
+/* Kahf Browser panel individual toggle title */
 "BlockPhishing" = "Phishing blockieren";
 
 /* No comment provided by engineer. */
@@ -175,38 +175,38 @@
 /* Placeholder text for adding or editing a bookmark */
 "BookmarkUrlPlaceholderText" = "Adresse";
 
-/* Button to show the Asil Browser panel */
-"BravePanel" = "Asil Browser-Menü";
+/* Button to show the Kahf Browser panel */
+"BravePanel" = "Kahf Browser-Menü";
 
 /* No comment provided by engineer. */
-"BraveRewardsAdNotificationTitle" = "Asil Browser-Belohnungen";
+"BraveRewardsAdNotificationTitle" = "Kahf Browser-Belohnungen";
 
 /* No comment provided by engineer. */
 "BraveRewardsOpen" = "Öffnen";
 
-/* Asil Browser Rewards settings title */
-"BraveRewardsTitle" = "Asil Browser-Belohnungen";
+/* Kahf Browser Rewards settings title */
+"BraveRewardsTitle" = "Kahf Browser-Belohnungen";
 
-/* Asil Browser Search Banner Promotion description content in Search Suggestions */
-"braveSearchPromotion.bannerDescription" = "Die Asil Browser-Suche verfolgt Ihre Aktivitäten, Anfragen oder Klicks nicht nach.";
+/* Kahf Browser Search Banner Promotion description content in Search Suggestions */
+"braveSearchPromotion.bannerDescription" = "Die Kahf Browser-Suche verfolgt Ihre Aktivitäten, Anfragen oder Klicks nicht nach.";
 
-/* Asil Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
 "braveSearchPromotion.bannerMaybeLaterButtonTitle" = "Vielleicht später";
 
-/* Asil Browser Search Banner Promotion title in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title in Search Suggestions */
 "braveSearchPromotion.bannerTitle" = "Unterstützen Sie eine unabhängige Suche mit besserem Datenschutz";
 
-/* Asil Browser Search Banner Promotion title for try button in Search Suggestions */
-"braveSearchPromotion.bannerTryButtonTitle" = "Asil Browser-Suche testen";
+/* Kahf Browser Search Banner Promotion title for try button in Search Suggestions */
+"braveSearchPromotion.bannerTryButtonTitle" = "Kahf Browser-Suche testen";
 
-/* Asil Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
 "braveSearchPromotion.braveSearchPromotionBannerDismissButtonTitle" = "Schließen";
 
 /* No comment provided by engineer. */
 "BraveShieldsAdvancedControls" = "Erweiterte Steuerelemente";
 
 /* No comment provided by engineer. */
-"BraveShieldsAndPrivacy" = "Asil Browser Shields und Datenschutz";
+"BraveShieldsAndPrivacy" = "Kahf Browser Shields und Datenschutz";
 
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "Anzahl der Anzeigen und andere unerwünschte Dinge, die blockiert wurden";
@@ -215,7 +215,7 @@
 "SafegazeBlockedCountLabel" = "Vermeidung von sündigen Handlungen";
 
 /* "The number of total sinful acts avoided will be next to this" */
-"SafegazeTotalBlockedCountLabel" = "Insgesamt %@ vermiedene sündige Handlungen seit Beginn"
+"SafegazeTotalBlockedCountLabel" = "Insgesamt %@ vermiedene sündige Handlungen seit Beginn";
 
 /* What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel */
 "BraveShieldsBlockedInfoButtonAccessibilityLabel" = "Mehr erfahren";
@@ -229,17 +229,17 @@
 /* No comment provided by engineer. */
 "BraveShieldsSiteBroken" = "Wenn diese Website defekt erscheint, versuchen Sie es mit Shields down";
 
-/* Context: 'Asil Browser Shields Up' or 'Asil Browser Shields Down' */
-"BraveShieldsStatusTitle" = "Asil Browser Shields";
+/* Context: 'Kahf Browser Shields Up' or 'Kahf Browser Shields Down' */
+"BraveShieldsStatusTitle" = "Kahf Browser Shields";
 
-/* Context: The 'Down' in 'Asil Browser Shields Down' */
+/* Context: The 'Down' in 'Kahf Browser Shields Down' */
 "BraveShieldsStatusValueDown" = "Down";
 
-/* Context: The 'Up' in 'Asil Browser Shields Up' */
+/* Context: The 'Up' in 'Kahf Browser Shields Up' */
 "BraveShieldsStatusValueUp" = "Online";
 
 /* The accessibility hint spoken when focused on the main shields toggle */
-"BraveShieldsToggleHint" = "Zum Umschalten von Asil Browser Shields doppeltippen";
+"BraveShieldsToggleHint" = "Zum Umschalten von Kahf Browser Shields doppeltippen";
 
 /* Sync page title */
 "BraveSync" = "Synchronisieren";
@@ -248,16 +248,16 @@
 "BraveSyncInternalsTitle" = "Interna synchronisieren ";
 
 /* Sync settings welcome */
-"BraveSyncWelcome" = "Zum Starten müssen Sie Asil Browser auf allen zu synchronisierenden Geräten installiert haben. Um sie miteinander zu verketten, starten Sie eine Synchronisierungskette, mit der Sie alle Ihre Geräte sicher miteinander verbinden können.";
+"BraveSyncWelcome" = "Zum Starten müssen Sie Kahf Browser auf allen zu synchronisierenden Geräten installiert haben. Um sie miteinander zu verketten, starten Sie eine Synchronisierungskette, mit der Sie alle Ihre Geräte sicher miteinander verbinden können.";
 
 /* The name of the feature */
-"bravetalk.braveTalkTitle" = "Asil Browser-Gespräche";
+"bravetalk.braveTalkTitle" = "Kahf Browser-Gespräche";
 
 /* Setting to enable the browser lock privacy feature */
 "BrowserLock" = "Browsersperre";
 
 /* No comment provided by engineer. */
-"BrowserLockDescription" = "Entsperren Sie Asil Browser mit Touch ID, Face ID oder Systempasscode.";
+"BrowserLockDescription" = "Entsperren Sie Kahf Browser mit Touch ID, Face ID oder Systempasscode.";
 
 /* A button title for the action to move to the next step of the browser lock migration process. */
 "browserLockMigrationContinueButtonTitle" = "Weiter";
@@ -266,10 +266,10 @@
 "browserLockMigrationNoPasscodeSetup" = "Sie haben keine ID oder keinen Passcode festgelegt? Öffnen Sie die Einstellungen und tippen Sie dann auf \"%@\"";
 
 /* Subtitle on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationSubtitle" = "Wir haben Asil Browser-Passcodes vereinfacht. Sie können jetzt mit derselben ID oder demselben Passcode auf Asil Browser zugreifen, die Sie auf Ihrem Smartphone verwenden.";
+"browserLockMigrationSubtitle" = "Wir haben Kahf Browser-Passcodes vereinfacht. Sie können jetzt mit derselben ID oder demselben Passcode auf Kahf Browser zugreifen, die Sie auf Ihrem Smartphone verwenden.";
 
 /* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationTitle" = "Öffnen Sie Asil Browser mit Ihrer Apple Face ID, Touch ID oder Ihrem Passcode";
+"browserLockMigrationTitle" = "Öffnen Sie Kahf Browser mit Ihrer Apple Face ID, Touch ID oder Ihrem Passcode";
 
 /* Settings item for clearing browsing history */
 "BrowsingHistory" = "Browser-Verlauf";
@@ -278,7 +278,7 @@
 "Cache" = "Cache";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Wenn Asil Browser als Standard gewählt wurde, wird jeder Link, den Sie antippen, mit den Datenschutzmechanismen von Asil Browser geöffnet.";
+"callout.defaultBrowserCalloutDescription" = "Wenn Kahf Browser als Standard gewählt wurde, wird jeder Link, den Sie antippen, mit den Datenschutzmechanismen von Kahf Browser geöffnet.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Als Standard-Browser festlegen";
@@ -293,13 +293,13 @@
 "callout.defaultBrowserTitle" = "Privatsphäre leicht gemacht.";
 
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "Das hilft uns, zu verstehen, welche Asil Browser-Funktionen am häufigsten genutzt werden. Sie können diese jederzeit in den Asil Browser-Einstellungen unter „Asil Browser Shields und Datenschutz“ ändern.";
+"callout.p3aCalloutDescription" = "Das hilft uns, zu verstehen, welche Kahf Browser-Funktionen am häufigsten genutzt werden. Sie können diese jederzeit in den Kahf Browser-Einstellungen unter „Kahf Browser Shields und Datenschutz“ ändern.";
 
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "Erfahren Sie mehr über unsere Produktanalyse, die den Datenschutz respektiert (P3A).";
 
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutTitle" = "Asil Browser mit Ihrer Hilfe verbessern.";
+"callout.p3aCalloutTitle" = "Kahf Browser mit Ihrer Hilfe verbessern.";
 
 /* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
 "callout.p3aCalloutToggleTitle" = "Teilen Sie anonyme und private Produkteinblicke.";
@@ -314,7 +314,7 @@
 "callout.playlistOnboardingViewTitle" = "Fügen Sie das Video zur Playlist hinzu …";
 
 /* Subtitle - Description for Privacy Everywhere Full Screen Callout */
-"callout.privacyEverywhereCalloutDescription" = "Nutzen Sie den Asil Browser-Datenschutz jetzt für Ihren Computer oder Ihr Tablet und synchronisieren Sie Lesezeichen und Erweiterungen zwischen Ihren Geräten.";
+"callout.privacyEverywhereCalloutDescription" = "Nutzen Sie den Kahf Browser-Datenschutz jetzt für Ihren Computer oder Ihr Tablet und synchronisieren Sie Lesezeichen und Erweiterungen zwischen Ihren Geräten.";
 
 /* Title for button in Default Browser Full Screen Callout */
 "callout.privacyEverywhereCalloutPrimaryButtonTitle" = "Jetzt synchronisieren";
@@ -355,7 +355,7 @@
 /* Title indicating whether or not a private key can be used to derive some data from another piece of data. IE: Use one key to generate another */
 "certificateViewer.deriveTitle" = "Ableiten";
 
-/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
+/* Title of the section for the Domain Component such as: DNS or Kahf Browser.com or a website's domain. */
 "certificateViewer.domainComponentTitle" = "Domain-Komponente";
 
 /* Title of the section indication which 'Encryption' algorithm was used. */
@@ -394,7 +394,7 @@
 /* Title of the section for Department of the Company. Example: Human Resources. */
 "certificateViewer.organizationalUnitTitle" = "Unternehmensbereich";
 
-/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
+/* Title of the section for Name of the Company. Example: Kahf Browser Inc. */
 "certificateViewer.organizationTitle" = "Unternehmen";
 
 /* Title indicating 'Parameters' or Input passed to a function/algorithm. */
@@ -605,25 +605,25 @@
 "defaultBrowserCallout.introOpenSettingsButtonText" = "Einstellungen öffnen";
 
 /* Primary text on default browser popup screen */
-"defaultBrowserCallout.introPrimaryText" = "Öffnen Sie alle Links mit Asil Browser, um Ihre Privatsphäre zu schützen.";
+"defaultBrowserCallout.introPrimaryText" = "Öffnen Sie alle Links mit Kahf Browser, um Ihre Privatsphäre zu schützen.";
 
 /* Secondary text on default browser popup. */
-"defaultBrowserCallout.introSecondaryText" = "Asil Browser Shields blockiert Tracker und Anzeigen und spart Ihnen Daten und Zeit auf jeder von Ihnen besuchten Website.";
+"defaultBrowserCallout.introSecondaryText" = "Kahf Browser Shields blockiert Tracker und Anzeigen und spart Ihnen Daten und Zeit auf jeder von Ihnen besuchten Website.";
 
 /* Tertiary text on default browser popup screen */
-"defaultBrowserCallout.introTertiaryText" = "Öffnen Sie die Einstellungen, tippen Sie auf „Standardbrowser“ und wählen Sie Asil Browser aus.";
+"defaultBrowserCallout.introTertiaryText" = "Öffnen Sie die Einstellungen, tippen Sie auf „Standardbrowser“ und wählen Sie Kahf Browser aus.";
 
-/* Notification body to promote setting Asil Browser app as default browser */
-"defaultBrowserCallout.notificationBody" = "Optimiert für iOS %@. Legen Sie Asil Browser gleich als Ihren Standardbrowser fest.";
+/* Notification body to promote setting Kahf Browser app as default browser */
+"defaultBrowserCallout.notificationBody" = "Optimiert für iOS %@. Legen Sie Kahf Browser gleich als Ihren Standardbrowser fest.";
 
-/* Notification title to promote setting Asil Browser app as default browser */
-"defaultBrowserCallout.notificationTitle" = "Asil Browser-Webbrowser";
+/* Notification title to promote setting Kahf Browser app as default browser */
+"defaultBrowserCallout.notificationTitle" = "Kahf Browser-Webbrowser";
 
 /* No comment provided by engineer. */
 "defaultBrowserCalloutCloseAccesabilityLabel" = "Standard-Browser-Popup schließen";
 
-/* Name for default Asil Browser theme. */
-"defaultThemeName" = "Asil Browser-Standarddesign";
+/* Name for default Kahf Browser theme. */
+"defaultThemeName" = "Kahf Browser-Standarddesign";
 
 /* No comment provided by engineer. */
 "Delete" = "Löschen";
@@ -778,10 +778,10 @@
 /* Allow link to switch apps? */
 "ExternalAppURLAlertTitle" = "Link erlauben, Apps zu wechseln?";
 
-/* Allow Asil Browser to open the external app URL */
+/* Allow Kahf Browser to open the external app URL */
 "ExternalAppURLAllow" = "Erlauben";
 
-/* Don't allow Asil Browser to open the external app URL */
+/* Don't allow Kahf Browser to open the external app URL */
 "ExternalAppURLDontAllow" = "Nicht erlauben";
 
 /* Footer text when user selects to save to favorites when editing a bookmark */
@@ -860,10 +860,10 @@
 "HideLinkPreviewsActionTitle" = "Link-Vorschauen ausblenden";
 
 /* Hides the rewards icon */
-"HideRewardsIcon" = "Asil Browser Rewards-Symbol ausblenden";
+"HideRewardsIcon" = "Kahf Browser Rewards-Symbol ausblenden";
 
 /* Hide the rewards icon explination. */
-"HideRewardsIconSubtitle" = "Versteckt das Asil Browser Rewards-Symbol, wenn Asil Browser Rewards nicht aktiviert ist.";
+"HideRewardsIconSubtitle" = "Versteckt das Kahf Browser Rewards-Symbol, wenn Kahf Browser Rewards nicht aktiviert ist.";
 
 /* Title for history menu item */
 "HistortMenuItem" = "Verlauf";
@@ -1001,13 +1001,13 @@
 "MonthlyAdsClaimNotificationBody" = "Tippen Sie, um Ihre kostenlosen Token anzufordern.";
 
 /* The title of the notification that goes out monthly to users who can claim an ads grant */
-"MonthlyAdsClaimNotificationTitle" = "Asil Browser Rewards 💵🎁";
+"MonthlyAdsClaimNotificationTitle" = "Kahf Browser Rewards 💵🎁";
 
 /* No comment provided by engineer. */
 "MyFirstAdBody" = "Tippen Sie hier, um mehr zu erfahren.";
 
 /* No comment provided by engineer. */
-"MyFirstAdTitle" = "Dies ist Ihre erste Anzeige von Asil Browser.";
+"MyFirstAdTitle" = "Dies ist Ihre erste Anzeige von Kahf Browser.";
 
 /* Bookmark title / Device name */
 "Name" = "Name";
@@ -1069,14 +1069,14 @@
 /* Setting title for option to automatically redirect a url to another url */
 "nprRedirectFooter" = "Leitet NPR-Links automatisch auf ihre textbasierte Version um (auf text.npr.org).";
 
-/* Bookmark title for Asil Browser Support */
-"ntp.braveSupportFavoriteTitle" = "Asil Browser Support";
+/* Bookmark title for Kahf Browser Support */
+"ntp.braveSupportFavoriteTitle" = "Kahf Browser Support";
 
 /* No comment provided by engineer. */
 "ntp.claimRewards" = "Token anfordern";
 
-/* Placeholder example: 'You earned 42 BAT by browsing with Asil Browser.' */
-"ntp.earningsReport" = "Sie haben %@ durch das Surfen mit Asil Browser verdient.";
+/* Placeholder example: 'You earned 42 BAT by browsing with Kahf Browser.' */
+"ntp.earningsReport" = "Sie haben %@ durch das Surfen mit Kahf Browser verdient.";
 
 /* The context is to praise the user that they did a good job, to keep it up. It is used in full sentence like: 'Way to go! You earned 40 BAT last month.' */
 "ntp.goodJob" = "Gut gemacht!";
@@ -1085,10 +1085,10 @@
 "ntp.hideSponsoredImages" = "Gesponserte Bilder ausblenden";
 
 /* The text description of image type which is being used NTP */
-"ntp.imageTypeSelectionDescription" = "„Gesponsert“ zeigt zusätzliche gebrandete Hintergrunde, über die Sie etwas verdienen können, wenn die Asil Browser-Belohnungen aktiviert sind.";
+"ntp.imageTypeSelectionDescription" = "„Gesponsert“ zeigt zusätzliche gebrandete Hintergrunde, über die Sie etwas verdienen können, wenn die Kahf Browser-Belohnungen aktiviert sind.";
 
 /* No comment provided by engineer. */
-"ntp.learnMoreAboutRewards" = "Mehr über Asil Browser Rewards erfahren";
+"ntp.learnMoreAboutRewards" = "Mehr über Kahf Browser Rewards erfahren";
 
 /* No comment provided by engineer. */
 "ntp.learnMoreAboutSI" = "Mehr über gesponserte Bilder erfahren";
@@ -1120,17 +1120,17 @@
 /* The placeholder says 'Terms of Service'. So full sentence goes like: 'By turning Rewards, you agree to the Terms of Service'. */
 "ntp.turnRewardsTos" = "Mit der Aktivierung von Rewards erklären Sie sich einverstanden mit den %@.";
 
-/* Message when opting into Asil Browser Ads when region becomes available */
+/* Message when opting into Kahf Browser Ads when region becomes available */
 "OBAdsOptInMessage" = "Verdienen Sie Token und belohnen Sie die Ersteller für großartige Inhalte, während Sie surfen.";
 
-/* Message when opting into Asil Browser Ads when region becomes available */
+/* Message when opting into Kahf Browser Ads when region becomes available */
 "OBAdsOptInMessageJapan" = "Sammeln Sie Punkte und belohnen Sie die Ersteller für großartige Inhalte, während Sie surfen";
 
-/* Title when opting into Asil Browser Ads when region becomes available */
-"OBAdsOptInTitle" = "Asil Browser Ads ist da!";
+/* Title when opting into Kahf Browser Ads when region becomes available */
+"OBAdsOptInTitle" = "Kahf Browser Ads ist da!";
 
 /* Title for ads onboarding screen */
-"OBAdsTitle" = "Asil Browser zeigt Ihre erste Ad in";
+"OBAdsTitle" = "Kahf Browser zeigt Ihre erste Ad in";
 
 /* Title for when the user completes onboarding */
 "OBCompleteTitle" = "Jetzt Sind Sie bereit.";
@@ -1150,14 +1150,14 @@
 /* Button to finish onboarding and start using the app. */
 "OBFinishButton" = "Mit dem Surfen beginnen";
 
-/* Button to join Asil Browser Rewards. */
+/* Button to join Kahf Browser Rewards. */
 "OBJoinButton" = "Beitreten";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentClipboardPermission" = "Asil Browser erlauben, in meiner Zwischenablage nach einem passenden Referenzcode zu suchen";
+"OBPrivacyConsentClipboardPermission" = "Kahf Browser erlauben, in meiner Zwischenablage nach einem passenden Referenzcode zu suchen";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentDetail" = "Möglicherweise haben Sie Asil Browser zur Unterstützung Ihres Empfehlers heruntergeladen. Um Ihren Empfehler zu erkennen, führt Asil Browser eine einmalige Überprüfung Ihrer Zwischenablage auf den passenden Empfehlungscode durch. Diese Prüfung ist nur auf den Code beschränkt und es werden keine weiteren personenbezogenen Daten übertragen. Wenn Sie nicht zustimmen, erhält Ihr Empfehler keine Belohnungen von Asil Browser.";
+"OBPrivacyConsentDetail" = "Möglicherweise haben Sie Kahf Browser zur Unterstützung Ihres Empfehlers heruntergeladen. Um Ihren Empfehler zu erkennen, führt Kahf Browser eine einmalige Überprüfung Ihrer Zwischenablage auf den passenden Empfehlungscode durch. Diese Prüfung ist nur auf den Code beschränkt und es werden keine weiteren personenbezogenen Daten übertragen. Wenn Sie nicht zustimmen, erhält Ihr Empfehler keine Belohnungen von Kahf Browser.";
 
 /* No comment provided by engineer. */
 "OBPrivacyConsentNoButton" = "Diese Prüfung nicht zulassen";
@@ -1178,10 +1178,10 @@
 "OBRewardsAgreementDetailsAnd" = "und";
 
 /* Title for rewards agreement onboarding screen */
-"OBRewardsAgreementTitle" = "Asil Browser-Belohnungen";
+"OBRewardsAgreementTitle" = "Kahf Browser-Belohnungen";
 
 /* Detail text for rewards onboarding screen */
-"OBRewardsDetail" = "Wenn Sie sich für private Asil Browser-Anzeigen entscheiden, werden Publisher und Content-Ersteller unterstützt, wann immer Sie eine Anzeige öffnen.";
+"OBRewardsDetail" = "Wenn Sie sich für private Kahf Browser-Anzeigen entscheiden, werden Publisher und Content-Ersteller unterstützt, wann immer Sie eine Anzeige öffnen.";
 
 /* Detail text for rewards onboarding screen */
 "OBRewardsDetailInAdRegion" = "Verdienen Sie Token und belohnen Sie die Ersteller für großartige Inhalte, während Sie surfen.";
@@ -1190,7 +1190,7 @@
 "OBRewardsPrivacyPolicyDetailLink" = "Datenschutzrichtlinie";
 
 /* Title for rewards onboarding screen */
-"OBRewardsTitle" = "Asil Browser-Belohnungen";
+"OBRewardsTitle" = "Kahf Browser-Belohnungen";
 
 /* Save button to save current selection */
 "OBSaveButton" = "Speichern";
@@ -1199,28 +1199,28 @@
 "OBSearchEngineDetail" = "Wählen Sie Ihre Standardsuchmaschine aus";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Willkommen beim Asil Browser";
+"OBSearchEngineTitle" = "Willkommen beim Kahf Browser";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "Blockieren Sie Tracker, die Ihre Privatsphäre beeinträchtigen. So können Sie surfen, ohne im Web beobachtet zu werden.";
 
 /* Title for shields onboarding screen */
-"OBShieldsTitle" = "Asil Browser Shields";
+"OBShieldsTitle" = "Kahf Browser Shields";
 
-/* Button to show the Asil Browser Rewards Ads. */
+/* Button to show the Kahf Browser Rewards Ads. */
 "OBShowMeButton" = "Zeige mir";
 
-/* Button to show Asil Browser Rewards. */
+/* Button to show Kahf Browser Rewards. */
 "OBTurnOnButton" = "Unterstützen";
 
 /* The description text shown when there is big tech tracker among trackers. Example usage: Google, Amazon and 32 other trackers blocked */
 "onboarding.blockedAdsOnboardingBigTechInformationText" = "%1$@ und %2$lld andere Anzeigen und Tracker blockiert";
 
-/* The footnote indicating what Asil Browser shields is blocking */
-"onboarding.blockedAdsOnboardingFootnoteText" = "Sehen Sie sich mit Asil Browser-Schutz alle Elemente an, die Asil Browser auf jeder Seite blockiert hat.";
+/* The footnote indicating what Kahf Browser shields is blocking */
+"onboarding.blockedAdsOnboardingFootnoteText" = "Sehen Sie sich mit Kahf Browser-Schutz alle Elemente an, die Kahf Browser auf jeder Seite blockiert hat.";
 
 /* The text describing user where they should press in order to open Shield panel */
-"onboarding.blockedAdsOnboardingInstructionsText" = "Tippen, um Asil Browser-Schutz anzuzeigen";
+"onboarding.blockedAdsOnboardingInstructionsText" = "Tippen, um Kahf Browser-Schutz anzuzeigen";
 
 /* The description text shown when there is no big tech tracker among trackers. Example usage: 31 Ads & trackers blocked. The number here is presented separately so it is not in translation. */
 "onboarding.blockedAdsOnboardingNoBigTechInformationText" = "Anzeigen und Trackers blockiert";
@@ -1235,13 +1235,13 @@
 "onboarding.ntpOnboardingPopOverTrackerDescription" = "Durch die Blockierung von Trackern und Anzeigen verbrauchen Websites eine geringere Datenmenge und laden deutlich schneller.";
 
 /* Description for the Omnibox (URL Bar) pop-over that describes faster load times. */
-"onboarding.omniboxOnboardingPopOverDescription" = "Sehen Sie, welchen Unterschied Asil Browser macht:\nKeine Anzeigen, Keine Tracker. Deutlich schnellere Ladezeiten.";
+"onboarding.omniboxOnboardingPopOverDescription" = "Sehen Sie, welchen Unterschied Kahf Browser macht:\nKeine Anzeigen, Keine Tracker. Deutlich schnellere Ladezeiten.";
 
 /* Title for the Omnibox (URL Bar) pop-over that describes faster load times. */
 "onboarding.omniboxOnboardingPopOverTitle" = "Geben Sie den Namen einer Website oder eine URL ein";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "Willkommen bei Asil Browser";
+"onboarding.welcomeScreenTitle" = "Willkommen bei Kahf Browser";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "Weiter";
@@ -1255,8 +1255,8 @@
 /* Context menu item for opening all folder bookmarks */
 "OpenAllBookmarks" = "Alle (%i) öffnen";
 
-/* Button title for opening the Asil Browser Rewards panel to settings */
-"OpenBraveRewardsSettings" = "Asil Browser Rewards-Einstellungen öffnen";
+/* Button title for opening the Kahf Browser Rewards panel to settings */
+"OpenBraveRewardsSettings" = "Kahf Browser Rewards-Einstellungen öffnen";
 
 /* Error description when there is an error while navigating to Files App */
 "OpenDownloadsFolderErrorDescription" = "Beim Öffnen des Ordners „Downloads“ in der Dateien-App ist ein unbekannter Fehler aufgetreten.";
@@ -1301,13 +1301,13 @@
 "opentabs.noSyncChainPlaceHolderViewDescription" = "Um loszulegen, richten Sie eine Synchronisierungskette ein und schalten Sie „Geöffnete Tabs“ in den Synchronisierungseinstellungen um.";
 
 /* The additional description of the view describing tab syncing should be enabled. */
-"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Verwalten Sie in den Einstellungen, was Asil Browser synchronisieren soll.";
+"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Verwalten Sie in den Einstellungen, was Kahf Browser synchronisieren soll.";
 
 /* The description of the view describing no other sessions are active in sync. */
 "opentabs.noSyncSessionPlaceHolderViewDescription" = "Auf Ihren anderen Geräten gibt es keine aktiven Sitzungen zum Anzeigen.";
 
 /* The title of the view showing no synced sessions */
-"opentabs.noSyncSessionPlaceHolderViewTitle" = "In diesem Bereich wird angezeigt, welche Asil Browser-Tabs auf anderen Geräten geöffnet sind";
+"opentabs.noSyncSessionPlaceHolderViewTitle" = "In diesem Bereich wird angezeigt, welche Kahf Browser-Tabs auf anderen Geräten geöffnet sind";
 
 /* The title for the action to hide open session with all tabs */
 "opentabs.openSessionHideAllActionTitle" = "Vorerst ausblenden";
@@ -1360,35 +1360,35 @@
 /* Button title to that opens a website. */
 "OpenWebsite" = "Website öffnen";
 
-/* The subtitle description of menu item Asil Browser News */
+/* The subtitle description of menu item Kahf Browser News */
 "optionsMenu.braveNewsItemDescription" = "Die Top-Meldungen von heute in einem privaten Nachrichten-Feed";
 
-/* Asil Browser News Item Menu title */
+/* Kahf Browser News Item Menu title */
 "optionsMenu.braveNewsItemTitle" = "Nachrichten";
 
-/* The subtitle description of menu item Asil Browser Playlist */
+/* The subtitle description of menu item Kahf Browser Playlist */
 "optionsMenu.bravePlaylistItemDescription" = "Führen Sie eine Offline-Playlist Ihrer Videos/Streams";
 
-/* Asil Browser News Item Menu title */
+/* Kahf Browser News Item Menu title */
 "optionsMenu.bravePlaylistItemTitle" = "Playlist";
 
-/* The subtitle description of menu item Asil Browser Talk */
+/* The subtitle description of menu item Kahf Browser Talk */
 "optionsMenu.braveTalkItemDescription" = "Private Videoanrufe direkt über Ihren Browser";
 
-/* Asil Browser Talk Item Menu title */
+/* Kahf Browser Talk Item Menu title */
 "optionsMenu.braveTalkItemTitle" = "Gespräche";
 
-/* The subtitle description of menu item Asil Browser VPN */
+/* The subtitle description of menu item Kahf Browser VPN */
 "optionsMenu.braveVPNItemDescription" = "Schützen Sie Ihr ganzes Gerät online";
 
-/* Asil Browser VPN Item Menu title */
+/* Kahf Browser VPN Item Menu title */
 "optionsMenu.braveVPNItemTitle" = "VPN";
 
-/* The subtitle description of menu item Asil Browser Wallet */
+/* The subtitle description of menu item Kahf Browser Wallet */
 "optionsMenu.braveWalletItemDescription" = "Die sichere Kryptowährungs-Wallet, die keine Erweiterung erfordert";
 
 /* Privacy Features Section title */
-"optionsMenu.menuSectionTitle" = "Asil Browser-Funktionen";
+"optionsMenu.menuSectionTitle" = "Kahf Browser-Funktionen";
 
 /* Section name for other privacy settings */
 "OtherPrivacySettingsSection" = "Andere Datenschutzeinstellungen";
@@ -1396,10 +1396,10 @@
 /* Section name for other settings. */
 "OtherSettingsSection" = "Andere Einstellungen";
 
-/* A subtitle shown on the setting that toggles analytics on Asil Browser. */
-"p3a.settingSubtitle" = "Mit anonymisierten P3A-Informationen kann Asil Browser die Gesamtnutzung einschätzen und sicherstellen, dass wir beliebte Funktionen verbessern.";
+/* A subtitle shown on the setting that toggles analytics on Kahf Browser. */
+"p3a.settingSubtitle" = "Mit anonymisierten P3A-Informationen kann Kahf Browser die Gesamtnutzung einschätzen und sicherstellen, dass wir beliebte Funktionen verbessern.";
 
-/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
+/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Kahf Browser. */
 "p3a.settingTitle" = "Erlaubt Produktanalyse, die den Datenschutz respektiert (P3A)";
 
 /* Title for the section for the global/default zoom level */
@@ -1445,7 +1445,7 @@
 "playList.addToPlayListAlertDescription" = "Möchten Sie dieses Video zu Ihrer Playlist hinzufügen?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Zur Asil Browser-Playlist hinzufügen";
+"playList.addToPlayListAlertTitle" = "Zur Kahf Browser-Playlist hinzufügen";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "Wiedergabeoptionen";
@@ -1466,7 +1466,7 @@
 "playlist.carplaySettingsSectionTitle" = "Einstellungen";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Asil Browser-Playlist";
+"playlist.carplayTitle" = "Kahf Browser-Playlist";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Offline-Cache löschen";
@@ -1484,7 +1484,7 @@
 "playList.loadResourcesErrorAlertDescription" = "Beim Laden der Ressource ist ein Fehler aufgetreten!";
 
 /* Description footer for playlist menu badge option */
-"playlist.menuBadgeOptionFooterText" = "Wenn diese Option aktiviert ist, wird ein Abzeichen im Hauptmenüsymbol angezeigt. Dieses gibt an, dass Medien auf der Seite zur Asil Browser-Playlist hinzugefügt werden können.";
+"playlist.menuBadgeOptionFooterText" = "Wenn diese Option aktiviert ist, wird ein Abzeichen im Hauptmenüsymbol angezeigt. Dieses gibt an, dass Medien auf der Seite zur Kahf Browser-Playlist hinzugefügt werden können.";
 
 /* Title for playlist menu badge option */
 "playlist.menuBadgeOptionTitle" = "Benachrichtigungsabzeichen im Menü anzeigen";
@@ -1493,7 +1493,7 @@
 "playlist.movePlaylistShareActionMenuTitle" = "Verschieben …";
 
 /* Detail Text when there are no items in the playlist */
-"playList.noItemLabelDetailLabel" = "Sie können Ihrer Asil Browser-Playlist im Browser etwas hinzufügen.";
+"playList.noItemLabelDetailLabel" = "Sie können Ihrer Kahf Browser-Playlist im Browser etwas hinzufügen.";
 
 /* Text when there are no items in the playlist */
 "playList.noItemLabelTitle" = "Es sind keine Elemente verfügbar";
@@ -1571,7 +1571,7 @@
 "playList.playListSettingTitle" = "Playlist";
 
 /* Body for the error message that shows when a playlist folder already exists */
-"playList.playlistSharedFolderAlreadyExistsBody" = "Dieser Ordner befindet sich bereits in Ihrer Asil Browser-Playlist.";
+"playList.playlistSharedFolderAlreadyExistsBody" = "Dieser Ordner befindet sich bereits in Ihrer Kahf Browser-Playlist.";
 
 /* Title for the error message that shows when a playlist folder already exists */
 "playList.playlistSharedFolderAlreadyExistsTitle" = "Es tut uns leid";
@@ -1607,16 +1607,16 @@
 "playlist.playlistWebCompatibilityTitle" = "Webkompatibilität";
 
 /* Body of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddBody" = "Asil Browser-Playlists unterstützen Offline-Wiedergabe-, Bild-im-Bild-, kontinuierliche Wiedergabe- und Wiederholungsmodi.";
+"playlist.popoverAddBody" = "Kahf Browser-Playlists unterstützen Offline-Wiedergabe-, Bild-im-Bild-, kontinuierliche Wiedergabe- und Wiederholungsmodi.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Diese Medien befinden sich bereits in Ihrer Asil Browser-Playlist";
+"playlist.popoverAddedTitle" = "Diese Medien befinden sich bereits in Ihrer Kahf Browser-Playlist";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddTitle" = "Möchten Sie diese Medien zu Ihrer Asil Browser-Playlist hinzufügen?";
+"playlist.popoverAddTitle" = "Möchten Sie diese Medien zu Ihrer Kahf Browser-Playlist hinzufügen?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "In Asil Browser-Playlist öffnen";
+"playlist.popoverOpenInBravePlaylist" = "In Kahf Browser-Playlist öffnen";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Entfernen";
@@ -1658,7 +1658,7 @@
 "playlist.sharePlaylistActionDetailsTitle" = "Sie können das aktuelle Element in einem neuen Tab öffnen oder über das Systemmenü teilen.";
 
 /* Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
-"playlist.sharePlaylistActionTitle" = "Asil Browser-Playlist-Menü";
+"playlist.sharePlaylistActionTitle" = "Kahf Browser-Playlist-Menü";
 
 /* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
 "playlist.sharePlaylistOpenInNewPrivateTabTitle" = "In privatem Tab öffnen";
@@ -1673,19 +1673,19 @@
 "playList.sorryAlertTitle" = "Es tut uns leid";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Zur Asil Browser-Playlist hinzugefügt";
+"playList.toastAddedToPlaylistTitle" = "Zur Kahf Browser-Playlist hinzugefügt";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "Öffnen";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Zur Asil Browser-Playlist hinzufügen";
+"playList.toastAddToPlaylistTitle" = "Zur Kahf Browser-Playlist hinzufügen";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
-"playList.toastExitingItemPlaylistTitle" = "In Asil Browser-Playlist anzeigen";
+"playList.toastExitingItemPlaylistTitle" = "In Kahf Browser-Playlist anzeigen";
 
 /* Footer for option to disable URL-Bar button */
-"playlist.urlBarButtonOptionFooter" = "Fügt neben der Adressleiste im Asil Browser-Browser eine Playlist-Schaltfläche hinzu (sieht aus wie vier Linien mit einem Plussymbol). Mit dieser Schaltfläche können Sie Ihre Playlist ganz einfach öffnen oder Medien hinzufügen oder entfernen.";
+"playlist.urlBarButtonOptionFooter" = "Fügt neben der Adressleiste im Kahf Browser-Browser eine Playlist-Schaltfläche hinzu (sieht aus wie vier Linien mit einem Plussymbol). Mit dieser Schaltfläche können Sie Ihre Playlist ganz einfach öffnen oder Medien hinzufügen oder entfernen.";
 
 /* Title for option to disable URL-Bar button */
 "playlist.urlBarButtonOptionTitle" = "Schaltfläche für den Schnellzugriff aktivieren";
@@ -1714,7 +1714,7 @@
 /* The title of the screen where the user will move an item from one folder to another folder. */
 "playlistFolders.moveFolderScreenTitle" = "Verschieben";
 
-/* %@ Should NOT be localized. It is a placeholder. Example: Asil Browser Folder and 1 more item. */
+/* %@ Should NOT be localized. It is a placeholder. Example: Kahf Browser Folder and 1 more item. */
 "playlistFolders.moveItemDescription" = "%@ und ein weiteres Element";
 
 /* %lld is a placeholder and should not be localized. Sometimes items can have no name. So this is a generic title to use */
@@ -1723,7 +1723,7 @@
 /* Sometimes an item can have no name. So this is a generic title to use */
 "playlistFolders.moveItemWithNoNameTitle" = "Ein Element";
 
-/* %@ and %lld Should NOT be localized. They are placeholders. Example: Asil Browser Folder and 3 more items. Music and 2 more items. */
+/* %@ and %lld Should NOT be localized. They are placeholders. Example: Kahf Browser Folder and 3 more items. Music and 2 more items. */
 "playlistFolders.moveMultipleItemDescription" = "%1$@ und %2$lld weitere Elemente";
 
 /* The title of the button to create a new folder */
@@ -1757,7 +1757,7 @@
 "playlistFolders.untitledFolderTitle" = "Unbenannter Ordner";
 
 /* Accessibility Title for the button that adds the playlist to the database. */
-"playlistFolderSharing.addButtonAccessibilityTitle" = "Schaltfläche „Zur Asil Browser-Playlist hinzufügen“";
+"playlistFolderSharing.addButtonAccessibilityTitle" = "Schaltfläche „Zur Kahf Browser-Playlist hinzufügen“";
 
 /* Title for the button that adds the playlist to the database. */
 "playlistFolderSharing.addButtonTitle" = "Hinzufügen";
@@ -1801,7 +1801,7 @@
 /* Description for closing a popover menu that is displayed. */
 "PopoverDefaultClose" = "Kontextmenü schließen";
 
-/* Description for closing the `Asil Browser Shields` popover menu that is displayed. */
+/* Description for closing the `Kahf Browser Shields` popover menu that is displayed. */
 "PopoverShieldsMenuClose" = "Shields-Menü schließen";
 
 /* Label for preview action on Tab Tray Tab to add current tab to Bookmarks */
@@ -1825,7 +1825,7 @@
 /* Header text, under it we show items blocked by our ad blocker. 'All  time' sentence context is like 'All time items blocked by our ad blocker. */
 "privacyHub.allTimeListsHeader" = "Gesamtzeit";
 
-/* Title of a section to show total count of trackers blocked by Asil Browser */
+/* Title of a section to show total count of trackers blocked by Kahf Browser */
 "privacyHub.allTimeListsTrackersView" = "Tracker und Anzeigen";
 
 /* Title of a section to show websites containing highest amount of trackers */
@@ -1849,10 +1849,10 @@
 /* Title under which we display a website on which there's the highest number of trackers or ads. */
 "privacyHub.allTimeWebsiteTitle" = "Website";
 
-/* Text for a button to display a list of all alerts caught by the Asil Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
+/* Text for a button to display a list of all alerts caught by the Kahf Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
 "privacyHub.allVPNAlertsButtonText" = "Alle Benachrichtigungen";
 
-/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Asil Browser Shields', 'Blocked by BraveVPN */
+/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Kahf Browser Shields', 'Blocked by BraveVPN */
 "privacyHub.blockedBy" = "Blockiert von";
 
 /* It says that a ad or tracker was blocked. Think of it in context of 'A tracker X was blocked' */
@@ -1870,8 +1870,8 @@
 /* Header text, under it we display blocked items from last week */
 "privacyHub.lastWeekHeader" = "Letzte Woche";
 
-/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Asil Browser Shields on 42 sites' */
-"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** wurde vom Asil Browser-Schutz auf **%2$lld** Websites blockiert";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Kahf Browser Shields on 42 sites' */
+"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** wurde vom Kahf Browser-Schutz auf **%2$lld** Websites blockiert";
 
 /* Title under which we display a tracker which was most frequently detected by our ad blocking mechanism. */
 "privacyHub.mostFrequentTrackerAndAdTitle" = "Häufigster Tracker bzw. häufigste Anzeige";
@@ -1889,7 +1889,7 @@
 "privacyHub.notificationCalloutButtonText" = "Benachrichtigungen aktivieren";
 
 /* Message of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
-"privacyHub.notificationMessage" = "Eine Zusammenfassung davon, wie Asil Browser Sie diese Woche online geschützt hat.";
+"privacyHub.notificationMessage" = "Eine Zusammenfassung davon, wie Kahf Browser Sie diese Woche online geschützt hat.";
 
 /* Title of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
 "privacyHub.notificationTitle" = "Wöchentlicher Datenschutzbericht";
@@ -1903,7 +1903,7 @@
 /* Text of a disclaimer that explains how the data for generating privacy reprots is stored. */
 "privacyHub.privacyReportsDisclaimer" = "Die Daten werden lokal im Datenschutzhub gespeichert und nirgendwohin weitergegeben.";
 
-/* Title of main privacy hub screen. This screen shows various stats caught by Asil Browser's ad blockers. */
+/* Title of main privacy hub screen. This screen shows various stats caught by Kahf Browser's ad blockers. */
 "privacyHub.privacyReportsTitle" = "Datenschutzhub";
 
 /* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which website had the most tracker per visit, example usage: 'example.com had an average of 10 trackers & ads blocked per visit ' */
@@ -1912,22 +1912,22 @@
 /* Title of a website that contained the most trackers per visit. */
 "privacyHub.riskiestWebsiteTitle" = "Website mit den meisten Trackern";
 
-/* This text explains a setting that lets Asil Browser monitor blocked network requests */
-"privacyHub.settingsEnableShieldsFooter" = "Der Datenschutzhub zeigt an, welche Elemente der Asil Browser-Schutz blockiert hat. Die Einstellung hat keine Auswirkung auf die Schutz-Anzahl in neuen Tabs. In privaten Fenstern werden keine Schutz-Daten erfasst.";
+/* This text explains a setting that lets Kahf Browser monitor blocked network requests */
+"privacyHub.settingsEnableShieldsFooter" = "Der Datenschutzhub zeigt an, welche Elemente der Kahf Browser-Schutz blockiert hat. Die Einstellung hat keine Auswirkung auf die Schutz-Anzahl in neuen Tabs. In privaten Fenstern werden keine Schutz-Daten erfasst.";
 
-/* Title of a setting that lets Asil Browser monitor blocked network requests */
+/* Title of a setting that lets Kahf Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsTitle" = "Schutz-Daten anzeigen";
 
-/* This text explains a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+/* This text explains a setting that lets Kahf Browser monitor blocked network requests captured by Kahf Browser VPN */
 "privacyHub.settingsEnableVPNAlertsFooter" = "Die Einstellung gilt nur, wenn Sie ein VPN-Abonnement erworben haben.";
 
-/* Title of a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+/* Title of a setting that lets Kahf Browser monitor blocked network requests captured by Kahf Browser VPN */
 "privacyHub.settingsEnableVPNAlertsTitle" = "VPN-Benachrichtigungen anzeigen";
 
 /* This text explains what the button to clear datain the Privacy Hub is for. */
 "privacyHub.settingsSlearDataFooter" = "Setzt die Anzahl der vom Schutz blockierten Elemente zurück.";
 
-/* Button that lets user clear all blocked requests and vpn alerts data that Asil Browser captured for them. */
+/* Button that lets user clear all blocked requests and vpn alerts data that Kahf Browser captured for them. */
 "privacyHub.settingsSlearDataTitle" = "Schutz-Daten löschen";
 
 /* This label says shields, as a source of by what a resource was blocked. Think of it in context of 'Blocked by Shields' */
@@ -1952,15 +1952,15 @@
 "privacyHub.vpnAlertRegularTrackerTypeSingular" = "Tracker oder Anzeige";
 
 /* Section title, this section displays vpn alerts: items which the vpn managed to block on users behalf. */
-"privacyHub.vpnAlertsHeader" = "Asil Browser Firewall + VPN-Benachrichtigungen";
+"privacyHub.vpnAlertsHeader" = "Kahf Browser Firewall + VPN-Benachrichtigungen";
 
-/* This label says about Asil Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
+/* This label says about Kahf Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
 "privacyHub.vpnLabel" = "Firewall + VPN";
 
 /* It shows a total count of items blocked by our VPN shields */
 "privacyHub.vpvnAlertsTotalCount" = "Gesamtanzahl";
 
-/* Show Asil Browser Browser Privacy Policy page from the Privacy section in the settings. */
+/* Show Kahf Browser Browser Privacy Policy page from the Privacy section in the settings. */
 "PrivacyPolicy" = "Datenschutzrichtlinie";
 
 /* Private button title */
@@ -1976,10 +1976,10 @@
 "PrivateBrowsingOnlyWarning" = "Der Modus Nur privates Browsen schließt alle aktuellen Registerkarten und meldet Sie von allen Seiten ab.";
 
 /* Private tab details */
-"PrivateTabBody" = "Private Tabs werden in Asil Browser nicht gespeichert, aber Sie sind dadurch nicht anonym im Netz unterwegs. Websites, die Sie in einem privaten Tab aufrufen, werden in Ihrem Verlauf nicht angezeigt, und ihre Cookies werden immer gelöscht, wenn Sie die Websites schließen. In Asil Browser wird keine Spur von ihnen hinterlassen. Downloads werden jedoch gespeichert.\nIhr Mobilfunkanbieter (oder der Eigentümer des WLAN- bzw. VPN-Netzwerks, mit dem Sie verbunden sind) kann die von Ihnen besuchten Websites sehen und diese Websites speichern Ihre öffentliche IP-Adresse, auch in privaten Tabs.";
+"PrivateTabBody" = "Private Tabs werden in Kahf Browser nicht gespeichert, aber Sie sind dadurch nicht anonym im Netz unterwegs. Websites, die Sie in einem privaten Tab aufrufen, werden in Ihrem Verlauf nicht angezeigt, und ihre Cookies werden immer gelöscht, wenn Sie die Websites schließen. In Kahf Browser wird keine Spur von ihnen hinterlassen. Downloads werden jedoch gespeichert.\nIhr Mobilfunkanbieter (oder der Eigentümer des WLAN- bzw. VPN-Netzwerks, mit dem Sie verbunden sind) kann die von Ihnen besuchten Websites sehen und diese Websites speichern Ihre öffentliche IP-Adresse, auch in privaten Tabs.";
 
 /* Private tab detail text */
-"PrivateTabDetails" = "Die Nutzung privater Tabs ändert lediglich das Verhalten von Asil Browser auf Ihrem Gerät, nicht das Verhalten anderer.\n\nWenn Sie eine Website besuchen, senden Sie stets Ihre IP-Adresse mit, wodurch Ihr Standort – in der Regel Ihre Stadt – grob ermittelt werden kann. Manchmal ist Ihr Standort auch konkreter feststellbar. Darüber hinaus erhalten die Websites alle von Ihnen mitgeteilten Informationen, z. B. Suchbegriffe. Wenn Sie sich bei einer Website anmelden, teilen Sie mit, dass Sie der Eigentümer dieses Kontos sind. Dennoch werden Sie abgemeldet, sobald Sie den entsprechenden privaten Tab schließen, da Asil Browser den Cookie entfernt, mit dem Sie angemeldet bleiben.\n\nFür den, der Ihre Internetverbindung herstellt (Ihr ISP), ist Ihre gesamte Netzwerkaktivität sichtbar. Häufig handelt es sich hierbei um Ihren Mobilfunkanbieter. Wenn Sie mit einem WLAN-Netzwerk verbunden sind, ist dies der Eigentümer des Netzwerks. Falls Sie wiederum ein VPN nutzen, dann gehört es dem Betreiber des VPNs. Für Ihren ISP sind die von Ihnen besuchten Websites in dem Moment sichtbar, wenn Sie sie besuchen. Verwenden diese Websites HTTPS, erhalten sie keine konkreten Einblicke in Ihre Aktivitäten auf diesen Websites. Wenn eine Website jedoch nur HTTP nutzt, kann Ihr ISP alles sehen: Ihre Suchbegriffe, die von Ihnen gelesenen Seiten und die von Ihnen angeklickten Links.\n\nWenn Ihr Arbeitgeber Ihr Gerät verwaltet, könnte auch dieser dessen Nutzung durch Sie verfolgen. Auch die Verwendung privater Tabs kann wahrscheinlich nicht verhindern, dass er die von Ihnen besuchten Websites einsehen kann. Jemand anderes, der Zugriff auf Ihr Gerät hat, könnte eine Software zur Überwachung Ihrer Aktivitäten installiert haben. Auch davor schützen Sie private Tabs nicht.";
+"PrivateTabDetails" = "Die Nutzung privater Tabs ändert lediglich das Verhalten von Kahf Browser auf Ihrem Gerät, nicht das Verhalten anderer.\n\nWenn Sie eine Website besuchen, senden Sie stets Ihre IP-Adresse mit, wodurch Ihr Standort – in der Regel Ihre Stadt – grob ermittelt werden kann. Manchmal ist Ihr Standort auch konkreter feststellbar. Darüber hinaus erhalten die Websites alle von Ihnen mitgeteilten Informationen, z. B. Suchbegriffe. Wenn Sie sich bei einer Website anmelden, teilen Sie mit, dass Sie der Eigentümer dieses Kontos sind. Dennoch werden Sie abgemeldet, sobald Sie den entsprechenden privaten Tab schließen, da Kahf Browser den Cookie entfernt, mit dem Sie angemeldet bleiben.\n\nFür den, der Ihre Internetverbindung herstellt (Ihr ISP), ist Ihre gesamte Netzwerkaktivität sichtbar. Häufig handelt es sich hierbei um Ihren Mobilfunkanbieter. Wenn Sie mit einem WLAN-Netzwerk verbunden sind, ist dies der Eigentümer des Netzwerks. Falls Sie wiederum ein VPN nutzen, dann gehört es dem Betreiber des VPNs. Für Ihren ISP sind die von Ihnen besuchten Websites in dem Moment sichtbar, wenn Sie sie besuchen. Verwenden diese Websites HTTPS, erhalten sie keine konkreten Einblicke in Ihre Aktivitäten auf diesen Websites. Wenn eine Website jedoch nur HTTP nutzt, kann Ihr ISP alles sehen: Ihre Suchbegriffe, die von Ihnen gelesenen Seiten und die von Ihnen angeklickten Links.\n\nWenn Ihr Arbeitgeber Ihr Gerät verwaltet, könnte auch dieser dessen Nutzung durch Sie verfolgen. Auch die Verwendung privater Tabs kann wahrscheinlich nicht verhindern, dass er die von Ihnen besuchten Websites einsehen kann. Jemand anderes, der Zugriff auf Ihr Gerät hat, könnte eine Software zur Überwachung Ihrer Aktivitäten installiert haben. Auch davor schützen Sie private Tabs nicht.";
 
 /* Private tab information link */
 "PrivateTabLink" = "Erfahren Sie mehr über private Tabs.";
@@ -1993,8 +1993,8 @@
 /* Title for quick-search engines settings section. */
 "QuickSearchEngines" = "Schnellsuchmaschinen";
 
-/* Open the App Store to rate Asil Browser. */
-"RateBrave" = "Asil Browser bewerten";
+/* Open the App Store to rate Kahf Browser. */
+"RateBrave" = "Kahf Browser bewerten";
 
 /* Accessibility label for button increasing font size in display settings of reader mode */
 "ReaderModeBiggerFontButtonAccessibilityLabel" = "Textgröße erhöhen";
@@ -2023,13 +2023,13 @@
 /* Accessibility hint for the font type buttons in reader mode display settings */
 "ReaderModeFontTypeButtonAccessibilityHint" = "Ändert die Schriftart.";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModeLoadingContentDisplayText" = "Inhalt wird geladen …";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModeLoadOriginalLinkText" = "Originalseite laden";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModePageCantShowDisplayText" = "Die Seite kann nicht in der Leseansicht angezeigt werden.";
 
 /* Title of a bar that show up when you enter reader mode. */
@@ -2114,10 +2114,10 @@
 "ReportABug" = "Einen Fehler melden";
 
 /* First part of the report a broken site copy. After the colon is a new line and then a website address */
-"ReportBrokenSiteBody1" = "Teilen Sie den Entwicklern von Asil Browser mit, dass diese Seite nicht mit Shields funktioniert:";
+"ReportBrokenSiteBody1" = "Teilen Sie den Entwicklern von Kahf Browser mit, dass diese Seite nicht mit Shields funktioniert:";
 
 /* No comment provided by engineer. */
-"ReportBrokenSiteBody2" = "Hinweis: Die Adresse dieser Seite wird gemeinsam mit Ihrer Asil Browser-Versionsnummer und Ihrer IP-Adresse (wird nicht gespeichert) übermittelt.";
+"ReportBrokenSiteBody2" = "Hinweis: Die Adresse dieser Seite wird gemeinsam mit Ihrer Kahf Browser-Versionsnummer und Ihrer IP-Adresse (wird nicht gespeichert) übermittelt.";
 
 /* No comment provided by engineer. */
 "ReportBrokenSubmitButtonTitle" = "Absenden";
@@ -2135,37 +2135,37 @@
 "RestoreTabNegativeButtonTitle" = "Nein";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Asil Browser war abgestürzt. Möchten Sie Ihre Tabs wiederherstellen?";
+"RestoreTabOnCrashAlertMessage" = "Kahf Browser war abgestürzt. Möchten Sie Ihre Tabs wiederherstellen?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "Tut uns sehr leid.";
 
-/* Body for Asil Browser Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInBody" = "Mit Asil Browser Rewards können Sie Anzeigen aus dem Asil Browser Ads-Netzwerk, die Ihre Privatsphäre respektieren, anzeigen. Keine Tracker. Keine Verlangsamung. Und Ihre Daten bleiben vollkommen sicher.";
+/* Body for Kahf Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInBody" = "Mit Kahf Browser Rewards können Sie Anzeigen aus dem Kahf Browser Ads-Netzwerk, die Ihre Privatsphäre respektieren, anzeigen. Keine Tracker. Keine Verlangsamung. Und Ihre Daten bleiben vollkommen sicher.";
 
-/* Title for Asil Browser Talk rewards opt-in screen button */
+/* Title for Kahf Browser Talk rewards opt-in screen button */
 "rewards.braveTalkRewardsOptInButtonTitle" = "Rewards einschalten";
 
-/* Body for successful Asil Browser Talk rewards opt-in */
-"rewards.braveTalkRewardsOptInSuccessBody" = "Klicken Sie auf eine beliebige Stelle auf dem Bildschirm, um zu Asil Browser Talk zu gehen.";
+/* Body for successful Kahf Browser Talk rewards opt-in */
+"rewards.braveTalkRewardsOptInSuccessBody" = "Klicken Sie auf eine beliebige Stelle auf dem Bildschirm, um zu Kahf Browser Talk zu gehen.";
 
-/* Title for successful Asil Browser Talk rewards opt-in */
+/* Title for successful Kahf Browser Talk rewards opt-in */
 "rewards.braveTalkRewardsOptInSuccessTitle" = "Sie können jetzt einen kostenlosen Anruf tätigen";
 
-/* Title for Asil Browser Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInTitle" = "Um einen kostenlosen Anruf zu tätigen, schalten Sie Asil Browser Rewards ein";
+/* Title for Kahf Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInTitle" = "Um einen kostenlosen Anruf zu tätigen, schalten Sie Kahf Browser Rewards ein";
 
-/* Displayed when Asil Browser Rewards is disabled */
+/* Displayed when Kahf Browser Rewards is disabled */
 "rewards.disabledBody" = "Aktiveren Sie diese Funktion, um Content-Ersteller zu unterstützen.";
 
 /* Displayed in the status container when rewards is disabled */
-"rewards.disabledStatusBody" = "Indem du Asil Browser Rewards beim surfen benutzt, unterstützt du Webseiten-Betreiber ganz nebenbei.";
+"rewards.disabledStatusBody" = "Indem du Kahf Browser Rewards beim surfen benutzt, unterstützt du Webseiten-Betreiber ganz nebenbei.";
 
-/* Displayed when Asil Browser Rewards is enabled */
+/* Displayed when Kahf Browser Rewards is enabled */
 "rewards.enabledBody" = "Sie unterstützen Content-Ersteller.";
 
 /* Displayed in the status container when rewards is enabled but you're not currently supporting any publishers (0 AC count) */
-"rewards.enabledStatusBody" = "Danke, dass Sie Webseiten-Betreiber unterstützen indem Sie Asil Browser Rewards beim surfen benützen!";
+"rewards.enabledStatusBody" = "Danke, dass Sie Webseiten-Betreiber unterstützen indem Sie Kahf Browser Rewards beim surfen benützen!";
 
 /* No comment provided by engineer. */
 "rewards.legacyWalletTransfer" = "Transfer der alten Wallet";
@@ -2186,7 +2186,7 @@
 "rewards.legacyWalletTransferStatusButtonPendingTitle" = "Der Transfer Ihrer alten Wallet steht aus";
 
 /* No comment provided by engineer. */
-"rewards.legacyWalletTransferStatusCompletedBody" = "Der Transfer Ihrer alten Wallet wurde abgeschlossen. Es kann noch ein paar Minuten dauern, bis Ihr aktuelles Guthaben in der Asil Browser Rewards Wallet auf dem Desktop angezeigt wird.";
+"rewards.legacyWalletTransferStatusCompletedBody" = "Der Transfer Ihrer alten Wallet wurde abgeschlossen. Es kann noch ein paar Minuten dauern, bis Ihr aktuelles Guthaben in der Kahf Browser Rewards Wallet auf dem Desktop angezeigt wird.";
 
 /* Title shown above body of text explaining that their transfer is completed */
 "rewards.legacyWalletTransferStatusCompletedTitle" = "Transfer abgeschlossen!";
@@ -2237,13 +2237,13 @@
 "rewards.optInDisclaimer" = "Durch Ihren Klick erteilen Sie Ihre Zustimmung zu den folgenden Vereinbarungen: %1$@ und %2$@. Sie können das jederzeit in den Einstellungen deaktivieren.";
 
 /* No comment provided by engineer. */
-"rewards.settingsFooterMessage" = "Asil Browser-Rewards-Auszahlungen sind auf diesem Gerät vorübergehend nicht verfügbar. Transferieren Sie Ihr bestehendes Wallet-Guthaben in eine Desktop-Wallet, um Ihre Tokens zu behalten.";
+"rewards.settingsFooterMessage" = "Kahf Browser-Rewards-Auszahlungen sind auf diesem Gerät vorübergehend nicht verfügbar. Transferieren Sie Ihr bestehendes Wallet-Guthaben in eine Desktop-Wallet, um Ihre Tokens zu behalten.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleMessage" = "Unterstützen Sie Content-Ersteller und Publisher automatisch, indem Sie Asil Browser Private Ads aktivieren. Dabei handelt es sich um Anzeigen, die Ihre Privatsphäre respektieren und Content-Ersteller respektieren.";
+"rewards.settingsToggleMessage" = "Unterstützen Sie Content-Ersteller und Publisher automatisch, indem Sie Kahf Browser Private Ads aktivieren. Dabei handelt es sich um Anzeigen, die Ihre Privatsphäre respektieren und Content-Ersteller respektieren.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleTitle" = "Asil Browser Rewards aktivieren";
+"rewards.settingsToggleTitle" = "Kahf Browser Rewards aktivieren";
 
 /* Displayed under verified publishers */
 "rewards.supportingPublisher" = "Sie unterstützen Content-Ersteller wie diesen.";
@@ -2258,19 +2258,19 @@
 "rewards.unverifiedPublisher" = "Dieser Ersteller wurde nicht verifiziert und kann deshalb nicht unterstützt werden.";
 
 /* A confirmation message shown to the user after completing a wallet transfer successfully */
-"rewards.walletTransferCompleteBody" = "Ihr Transfer wurde eingeleitet. Es kann einige Minuten dauern, ehe ein etwaiges BAT-Guthaben in Ihrer Desktop-Wallet von Asil Browser Rewards erscheint. Nach Abschluss des Transfers können Sie Ihre Rewards-Übersicht auf dem Desktop prüfen.\n\nSie können dieses Fenster schließen und weiterhin Asil Browser nutzen, während der Transfer vorgenommen wird.";
+"rewards.walletTransferCompleteBody" = "Ihr Transfer wurde eingeleitet. Es kann einige Minuten dauern, ehe ein etwaiges BAT-Guthaben in Ihrer Desktop-Wallet von Kahf Browser Rewards erscheint. Nach Abschluss des Transfers können Sie Ihre Rewards-Übersicht auf dem Desktop prüfen.\n\nSie können dieses Fenster schließen und weiterhin Kahf Browser nutzen, während der Transfer vorgenommen wird.";
 
 /* Title shown above the confirmation message after completing a wallet transfer successfully */
 "rewards.walletTransferCompleteTitle" = "Guthabentransfer eingeleitet";
 
 /* Message on the alert presented if wallet transfer fails */
-"rewards.walletTransferFailureAlertMessage" = "Der Asil Browser Rewards-Server antwortet nicht. Bitte versuchen Sie es in Kürze erneut.";
+"rewards.walletTransferFailureAlertMessage" = "Der Kahf Browser Rewards-Server antwortet nicht. Bitte versuchen Sie es in Kürze erneut.";
 
 /* Title on the alert presented if wallet transfer fails */
 "rewards.walletTransferFailureAlertTitle" = "Verbindungsfehler";
 
 /* Describes the steps for using wallet transfer */
-"rewards.walletTransferStepsBody" = "Ihr Guthaben an Asil Browser-Rewards-Token kann einmalig in eine bestehende Asil Browser-Rewards-Desktop-Wallet transferiert werden.\n\n1. Öffnen Sie den Asil Browser Browser auf Ihrem Desktop-PC\n2. Gehen Sie zu Asil Browser://rewards\n3. Klicken Sie auf „QR-Code“\n4. Scannen Sie den QR-Code mit Ihrem Mobilgerät";
+"rewards.walletTransferStepsBody" = "Ihr Guthaben an Kahf Browser-Rewards-Token kann einmalig in eine bestehende Kahf Browser-Rewards-Desktop-Wallet transferiert werden.\n\n1. Öffnen Sie den Kahf Browser Browser auf Ihrem Desktop-PC\n2. Gehen Sie zu Kahf Browser://rewards\n3. Klicken Sie auf „QR-Code“\n4. Scannen Sie den QR-Code mit Ihrem Mobilgerät";
 
 /* Title above the steps to use wallet transfer */
 "rewards.walletTransferStepsTitle" = "Einmaligen Transfercode scannen";
@@ -2303,7 +2303,7 @@
 "RewardsInternalsContributionAmount" = "Beitragsbetrag";
 
 /* No comment provided by engineer. */
-"RewardsInternalsContributionProcessorBraveTokens" = "Asil Browser-Token";
+"RewardsInternalsContributionProcessorBraveTokens" = "Kahf Browser-Token";
 
 /* No comment provided by engineer. */
 "RewardsInternalsContributionProcessorNone" = "Keine";
@@ -2455,7 +2455,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsShare" = "Teilen";
 
-/* 'Rewards' as in 'Asil Browser Rewards' */
+/* 'Rewards' as in 'Kahf Browser Rewards' */
 "RewardsInternalsShareInternalsTitle" = "Rewards-Interna teilen";
 
 /* No comment provided by engineer. */
@@ -2473,7 +2473,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsSupported" = "Unterstützt";
 
-/* 'Rewards' as in 'Asil Browser Rewards' */
+/* 'Rewards' as in 'Kahf Browser Rewards' */
 "RewardsInternalsTitle" = "Rewards-Interna";
 
 /* No comment provided by engineer. */
@@ -2588,24 +2588,24 @@
 "SearchSuggestionsSectionHeader" = "Suchvorschläge";
 
 /* Title of an action that allows user to perform a one-click web search for selected text */
-"SearchWithBrave" = "Mit Asil Browser suchen";
+"SearchWithBrave" = "Mit Kahf Browser suchen";
 
 /* Settings security section title */
 "Security" = "Sicherheit";
 
 /* Message displayed in the crash dialog above the buttons used to select when sending reports */
-"SendCrashReportAlertMessage" = "Einen Absturzbericht senden, damit Asil Browser das Problem beheben kann?";
+"SendCrashReportAlertMessage" = "Einen Absturzbericht senden, damit Kahf Browser das Problem beheben kann?";
 
 /* Title for prompt displayed to user after the app crashes */
-"SendCrashReportAlertTitle" = "Tut uns leid – Asil Browser ist abgestürzt";
+"SendCrashReportAlertTitle" = "Tut uns leid – Kahf Browser ist abgestürzt";
 
 /* Used as a button label for crash dialog prompt */
 "SendReportButtonTitle" = "Bericht senden";
 
 /* No comment provided by engineer. */
-"setDefaultBrowserCalloutTitle" = "Asil Browser kann nun als Ihr Standard-Browser für iOS festgelegt werden. Tippen Sie hier, um die Einstellungen zu öffnen.";
+"setDefaultBrowserCalloutTitle" = "Kahf Browser kann nun als Ihr Standard-Browser für iOS festgelegt werden. Tippen Sie hier, um die Einstellungen zu öffnen.";
 
-/* Settings item to set the Asil Browser as a default browser on the iOS device. */
+/* Settings item to set the Kahf Browser as a default browser on the iOS device. */
 "setDefaultBrowserSettingsCell" = "Als Standard-Browser festlegen";
 
 /* No comment provided by engineer. */
@@ -2627,7 +2627,7 @@
 "settings.autocloseTabsSetting" = "Tabs schließen";
 
 /* Description of autoclose tabs feature. */
-"settings.autocloseTabsSettingFooter" = "Erlauben Sie Asil Browser, die Tabs automatisch zu schließen, die Sie in letzter Zeit nicht verwendet haben.";
+"settings.autocloseTabsSettingFooter" = "Erlauben Sie Kahf Browser, die Tabs automatisch zu schließen, die Sie in letzter Zeit nicht verwendet haben.";
 
 /* Error message that is shown in settings when there was a problem loading */
 "SettingsContentLoadErrorMessage" = "Seite konnte nicht geladen werden.";
@@ -2687,7 +2687,7 @@
 "shieldEducation.shareTheNewsTitle" = "Teilen Sie die Nachrichten";
 
 /* Subtitle for Shield Education Tracker Ad Warning */
-"shieldEducation.trackerAdWarningSubTitle" = "Asil Browser Shields hat soeben Ihre Online-Privatsphäre geschützt.";
+"shieldEducation.trackerAdWarningSubTitle" = "Kahf Browser Shields hat soeben Ihre Online-Privatsphäre geschützt.";
 
 /* Subtitle for Shield Education Tracker Count Share */
 "shieldEducation.trackerCountShareSubtitle" = "Glückwunsch. Sie sind etwas Besonderes.";
@@ -2702,13 +2702,13 @@
 "shieldEducation.videoAdBlockTitle" = "Während des Abspielens von Videos auf dieser Website wurden Anzeigen blockiert.";
 
 /* Section title for adbblock, tracking protection, HTTPS-E, and cookies */
-"ShieldsDefaults" = "Globale Asil Browser Shields-Standardeinstellungen";
+"ShieldsDefaults" = "Globale Kahf Browser Shields-Standardeinstellungen";
 
 /* Section footer for global shields defaults */
 "ShieldsDefaultsFooter" = "Dies sind die Shields-Standardeinstellungen für neue Seiten. Änderungen wirken sich nicht auf Ihre bestehenden Einstellungen für Seiten.";
 
 /* No comment provided by engineer. */
-"ShieldsDownDisclaimer" = "Sie surfen auf dieser Website ohne den Datenschutz von Asil Browser. Funktioniert es nicht richtig mit Shields?";
+"ShieldsDownDisclaimer" = "Sie surfen auf dieser Website ohne den Datenschutz von Kahf Browser. Funktioniert es nicht richtig mit Shields?";
 
 /* shields overview message */
 "ShieldsOverview" = "Mit Site Shields steuern Sie, wann Anzeigen und Tracker der von Ihnen besuchten Websites blockiert werden. Wenn Sie bei einer bestimmten Website Anzeigen sehen möchten, können Sie diese hier aktivieren.";
@@ -2738,7 +2738,7 @@
 "ShortcutItemTitleQRCode" = "QR-Code scannen";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeBraveNewsDescription" = "Asil Browser News öffnen und die wichtigsten Nachrichten von heute lesen";
+"shortcuts.activityTypeBraveNewsDescription" = "Kahf Browser News öffnen und die wichtigsten Nachrichten von heute lesen";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeClearHistoryDescription" = "Browser in einem neuen Tab öffnen und alle privaten Browserverlaufsdaten löschen";
@@ -2747,7 +2747,7 @@
 "shortcuts.activityTypeClearHistorySuggestedPhrase" = "Browserverlauf löschen";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeClearHistoryTitle" = "Asil Browser-Browserverlauf löschen";
+"shortcuts.activityTypeClearHistoryTitle" = "Kahf Browser-Browserverlauf löschen";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeEnableVPNDescription" = "Browser in einem neuen Tab öffnen und VPN aktivieren";
@@ -2756,7 +2756,7 @@
 "shortcuts.activityTypeEnableVPNSuggestedPhrase" = "VPN aktivieren";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeEnableVPNTitle" = "Asil Browser Browser öffnen und VPN aktivieren";
+"shortcuts.activityTypeEnableVPNTitle" = "Kahf Browser Browser öffnen und VPN aktivieren";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeNewPrivateTabSuggestedPhrase" = "Neuen privaten Tab öffnen";
@@ -2771,10 +2771,10 @@
 "shortcuts.activityTypeNewTabTitle" = "Neuen Browser-Tab öffnen";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveNewsTitle" = "Asil Browser News öffnen";
+"shortcuts.activityTypeOpenBraveNewsTitle" = "Kahf Browser News öffnen";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Asil Browser News öffnen";
+"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Kahf Browser News öffnen";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeOpenPlaylistDescription" = "Starten Sie die Wiedergabe Ihrer Videos in der Playlist";
@@ -2786,7 +2786,7 @@
 "shortcuts.activityTypeOpenPlaylistTitle" = "Playlist öffnen";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeTabDescription" = "Beginnen Sie mit der sicheren Suche im Internet mit Asil Browser";
+"shortcuts.activityTypeTabDescription" = "Beginnen Sie mit der sicheren Suche im Internet mit Kahf Browser";
 
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenBookmarkSuggestedPhrase" = "Lesezeichen-Website öffnen";
@@ -2797,8 +2797,8 @@
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenWebsiteSuggestedPhrase" = "Website öffnen";
 
-/* Description for opening Asil Browser Settings for altering Siri shortcut. */
-"shortcuts.shortcutOpenApplicationSettingsDescription" = "Diese Option öffnet die Asil Browser-Einstellungen. Um verschiedene Siri-Optionen zu ändern, wählen Sie bitte den Menüpunkt „Siri & Suche“ und passen Sie Ihre Auswahl an.";
+/* Description for opening Kahf Browser Settings for altering Siri shortcut. */
+"shortcuts.shortcutOpenApplicationSettingsDescription" = "Diese Option öffnet die Kahf Browser-Einstellungen. Um verschiedene Siri-Optionen zu ändern, wählen Sie bitte den Menüpunkt „Siri & Suche“ und passen Sie Ihre Auswahl an.";
 
 /* Button title that open application settings */
 "shortcuts.shortcutOpenApplicationSettingsTitle" = "Einstellungen öffnen";
@@ -2810,16 +2810,16 @@
 "shortcuts.shortcutSettingsClearBrowserHistoryTitle" = "Browserverlauf löschen";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsEnableVPNDescription" = "Verwenden Sie Verknüpfungen, um Asil Browser VPN via Siri-Sprachassistent zu aktivieren";
+"shortcuts.shortcutSettingsEnableVPNDescription" = "Verwenden Sie Verknüpfungen, um Kahf Browser VPN via Siri-Sprachassistent zu aktivieren";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsEnableVPNTitle" = "VPN aktivieren";
 
-/* Description of Open Asil Browser News Siri Shortcut in Settings Screen */
-"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Verwenden Sie Verknüpfungen, um einen neuen Tab zu öffnen und Asil Browser News Feed über Siri - Voice Assistant anzuzeigen";
+/* Description of Open Kahf Browser News Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Verwenden Sie Verknüpfungen, um einen neuen Tab zu öffnen und Kahf Browser News Feed über Siri - Voice Assistant anzuzeigen";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Asil Browser News öffnen";
+"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Kahf Browser News öffnen";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsOpenNewPrivateTabDescription" = "Verwenden Sie Verknüpfungen, um einen neue privaten Tab via Siri-Sprachassistent zu öffnen";
@@ -2873,19 +2873,19 @@
 "ShowTabsBar" = "Tab-Leiste";
 
 /* No comment provided by engineer. */
-"SiteReportedBody" = "Danke, dass Sie den Entwicklern von Asil Browser mitgeteilt haben, dass mit dieser Seite etwas nicht stimmt. Wir bemühen uns, das zu reparieren!";
+"SiteReportedBody" = "Danke, dass Sie den Entwicklern von Kahf Browser mitgeteilt haben, dass mit dieser Seite etwas nicht stimmt. Wir bemühen uns, das zu reparieren!";
 
 /* No comment provided by engineer. */
 "SiteReportedTitle" = "Vielen Dank";
 
-/* Asil Browser panel topmost title */
+/* Kahf Browser panel topmost title */
 "SiteShieldSettings" = "Schutz";
 
 /* Title used when in warning pop-over when domain specific data save appears */
-"socialSharing.domainSpecificDataSavedTitle" = "Ich spare jeden Tag Datenvolumen, indem ich mit Asil Browser im Internet surfe.";
+"socialSharing.domainSpecificDataSavedTitle" = "Ich spare jeden Tag Datenvolumen, indem ich mit Kahf Browser im Internet surfe.";
 
-/* Text used for social sharing together with Asil Browser Shield values */
-"socialSharing.shareDescriptionTitle" = "Ich spare jeden Tag Datenvolumen, indem ich mit Asil Browser im Internet surfe.";
+/* Text used for social sharing together with Kahf Browser Shield values */
+"socialSharing.shareDescriptionTitle" = "Ich spare jeden Tag Datenvolumen, indem ich mit Kahf Browser im Internet surfe.";
 
 /* Open search section of settings */
 "StandardTabSearch" = "Standard-Tab";
@@ -2917,8 +2917,8 @@
 /* Title for Sync Settings Toggle Header */
 "sync.syncSettingsTitle" = "Synchronisierungseinstellungen";
 
-/* Text that informs a user about Asil Browser Sync service deprecation. */
-"sync.syncV1DeprecationText" = "Asil Browser Sync wird überarbeitet, was sich auf Ihre Konfiguration auswirken kann. Bereiten Sie sich auf das Upgrade vor.";
+/* Text that informs a user about Kahf Browser Sync service deprecation. */
+"sync.syncV1DeprecationText" = "Kahf Browser Sync wird überarbeitet, was sich auf Ihre Konfiguration auswirken kann. Bereiten Sie sich auf das Upgrade vor.";
 
 /* Message for popup when the bookmark migration fails */
 "sync.v2MigrationErrorMessage" = "Die Lesezeichen konnten nicht migriert werden. Bitte versuchen Sie es später erneut.";
@@ -2933,7 +2933,7 @@
 "sync.v2MigrationInterstitialTitle" = "Migration von Lesezeichen";
 
 /* Message for popup to inform the user that bookmarks migration is required for sync */
-"sync.v2MigrationMessage" = "Wenn Sie Asil Browser Sync verwenden möchten, müssen Ihre bereits vorhandenen Lesezeichen zur Nutzung des neuen Systems migriert werden. Durch diesen Vorgang werden Ihre Lesezeichen nicht gelöscht.";
+"sync.v2MigrationMessage" = "Wenn Sie Kahf Browser Sync verwenden möchten, müssen Ihre bereits vorhandenen Lesezeichen zur Nutzung des neuen Systems migriert werden. Durch diesen Vorgang werden Ihre Lesezeichen nicht gelöscht.";
 
 /* Button to perform bookmarks migration in order to support sync */
 "sync.v2MigrationOKButton" = "Migrieren";
@@ -2975,7 +2975,7 @@
 "SyncComputerDevice" = "Computer";
 
 /* Sync Error Description */
-"syncDeprecatedVersionError" = "Dieser Synchronisierungscode wurde von einer veralteten Version von Asil Browser auf einem anderen Gerät generiert. Bitte aktualisieren Sie Asil Browser auf allen synchronisierten Geräten und versuchen Sie es erneut.";
+"syncDeprecatedVersionError" = "Dieser Synchronisierungscode wurde von einer veralteten Version von Kahf Browser auf einem anderen Gerät generiert. Bitte aktualisieren Sie Kahf Browser auf allen synchronisierten Geräten und versuchen Sie es erneut.";
 
 /* Sync you browser settings across devices. */
 "SyncDevices" = "Geräte & Einstellungen";
@@ -2996,10 +2996,10 @@
 "SyncInitErrorTitle" = "Kommunikationsfehler beim Synchronisieren";
 
 /* Default name for a device */
-"syncJoinChainCameraWarning" = "Dadurch werden Ihre Asil Browser-Daten, darunter womöglich Ihre Passwörter, mit dem Gerät geteilt, das diesen QR-Code generiert hat. Bitte vergewissern Sie sich, dass dieser QR-Code von einem Gerät generiert worden ist, das Ihnen gehört. Möchten Sie wirklich fortfahren?";
+"syncJoinChainCameraWarning" = "Dadurch werden Ihre Kahf Browser-Daten, darunter womöglich Ihre Passwörter, mit dem Gerät geteilt, das diesen QR-Code generiert hat. Bitte vergewissern Sie sich, dass dieser QR-Code von einem Gerät generiert worden ist, das Ihnen gehört. Möchten Sie wirklich fortfahren?";
 
 /* Default name for a device */
-"syncJoinChainCodewordsWarning" = "Dadurch werden Ihre Asil Browser-Daten, darunter womöglich Ihre Passwörter, mit dem Gerät geteilt, das diese Codewörter generiert hat. Bitte vergewissern Sie sich, dass diese Codewörter von einem Gerät generiert worden sind, das Ihnen gehört. Möchten Sie wirklich fortfahren?";
+"syncJoinChainCodewordsWarning" = "Dadurch werden Ihre Kahf Browser-Daten, darunter womöglich Ihre Passwörter, mit dem Gerät geteilt, das diese Codewörter generiert hat. Bitte vergewissern Sie sich, dass diese Codewörter von einem Gerät generiert worden sind, das Ihnen gehört. Möchten Sie wirklich fortfahren?";
 
 /* Title for pairing sync device */
 "syncJoinChainWarningTitle" = "Achtung";
@@ -3023,7 +3023,7 @@
 "SyncRemoveDeviceDefaultName" = "Gerät";
 
 /* Message for removing last device from Sync */
-"SyncRemoveLastDeviceMessage" = "Die aktuell synchronisierten Daten bleiben erhalten, aber alle Daten im Synchronisations-Cache von Asil Browser werden gelöscht. Sie müssen eine neue Synchronisationskette starten, um die Gerätedaten erneut zu synchronisieren.";
+"SyncRemoveLastDeviceMessage" = "Die aktuell synchronisierten Daten bleiben erhalten, aber alle Daten im Synchronisations-Cache von Kahf Browser werden gelöscht. Sie müssen eine neue Synchronisationskette starten, um die Gerätedaten erneut zu synchronisieren.";
 
 /* Button name for removing last device from Sync */
 "SyncRemoveLastDeviceRemoveButtonName" = "Synchronisierungskette löschen";
@@ -3062,7 +3062,7 @@
 "SyncToDevice" = "Mit Gerät synchronisieren";
 
 /* Sync to existing device description */
-"SyncToDeviceDescription" = "Wenn Sie ein vorhandenes synchronisiertes Gerät verwenden, öffnen Sie die Asil Browser-Einstellungen und navigieren Sie zu Einstellungen -> Synchronisieren. Wählen Sie \"Gerät hinzufügen\" und scannen Sie den auf dem Bildschirm angezeigten Code.";
+"SyncToDeviceDescription" = "Wenn Sie ein vorhandenes synchronisiertes Gerät verwenden, öffnen Sie die Kahf Browser-Einstellungen und navigieren Sie zu Einstellungen -> Synchronisieren. Wählen Sie \"Gerät hinzufügen\" und scannen Sie den auf dem Bildschirm angezeigten Code.";
 
 /* Description on popup when setting up a sync group fails */
 "SyncUnableCreateGroup" = "Dieses Gerät kann nicht synchronisiert werden";
@@ -3160,14 +3160,14 @@
 /* No comment provided by engineer. */
 "TermsOfService" = "Allgemeine Geschäftsbedingungen";
 
-/* Show Asil Browser Browser TOS page from the Privacy section in the settings. */
+/* Show Kahf Browser Browser TOS page from the Privacy section in the settings. */
 "TermsOfUse" = "Nutzungsbedingungen";
 
 /* Text for button to share referral's QR code. */
 "themeQRCodeShareButton" = "Teilen …";
 
 /* Title for QR popup encouraging users to share the code with their friends. */
-"themeQRCodeShareTitle" = "Teilen Sie Asil Browser mit Ihren Freunden!";
+"themeQRCodeShareTitle" = "Teilen Sie Kahf Browser mit Ihren Freunden!";
 
 /* Selection to automatically color/style the user interface. */
 "ThemesAutomaticOption" = "Automatisch";
@@ -3209,13 +3209,13 @@
 "today.addSourceNoFeedsFoundMessage" = "Diese Feed-Adresse enthält leider keinen Inhalt.";
 
 /* The action title displayed in the iOS share menu */
-"today.addSourceShareTitle" = "Quelle zu Asil Browser News hinzufügen";
+"today.addSourceShareTitle" = "Quelle zu Kahf Browser News hinzufügen";
 
 /* A header title shown above a button that will allow the user to fetch RSS feeds for a website they have typed in */
 "today.availableRSSFeedsHeaderTitle" = "Verfügbare RSS-Feeds";
 
 /* The name of the feature */
-"today.braveToday" = "Asil Browser-Nachrichten";
+"today.braveToday" = "Kahf Browser-Nachrichten";
 
 /* Shown below 'Channels' explaining what will be shown when tapping on it. */
 "today.channelsButtonSubtitle" = "Folgen Sie Themen, die Sie interessieren";
@@ -3235,13 +3235,13 @@
 /* No comment provided by engineer. */
 "today.deals" = "Angebote";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
-"today.disabledAlertBody" = "Asil Browser News wird keine Inhalte von %@ mehr anzeigen.";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
+"today.disabledAlertBody" = "Kahf Browser News wird keine Inhalte von %@ mehr anzeigen.";
 
 /* No comment provided by engineer. */
 "today.disabledAlertTitle" = "Deaktiviert";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
 "today.disablePublisherContent" = "Inhalte von %@ verbergen";
 
 /* No comment provided by engineer. */
@@ -3250,11 +3250,11 @@
 /* No comment provided by engineer. */
 "today.emptyFeedTitle" = "Es gibt keine Artikel zum Anzeigen.";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
 "today.enablePublisherContent" = "Inhalte von %@ zulassen";
 
 /* No comment provided by engineer. */
-"today.errorGeneralBody" = "Es gibt Probleme mit Asil Browser News. Bitte versuchen Sie es erneut.";
+"today.errorGeneralBody" = "Es gibt Probleme mit Kahf Browser News. Bitte versuchen Sie es erneut.";
 
 /* No comment provided by engineer. */
 "today.errorGeneralTitle" = "Hoppla …";
@@ -3271,7 +3271,7 @@
 /* A toggle title shown next to a source or channel that the user can follow. When tapped switches to 'Unfollow' */
 "today.followToggleTitle" = "Folgen";
 
-/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Asil Browser.com'. */
+/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Kahf Browser.com'. */
 "today.getFeedsFromSiteButtonTitle" = "Holen Sie sich Feeds von";
 
 /* \"OPML\" is a file extension that contains a list of rss feeds. */
@@ -3280,20 +3280,20 @@
 /* The header above the list of insecure sources */
 "today.insecureSourcesHeader" = "Unsichere Quellen - Hinzufügen auf eigenes Risiko";
 
-/* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "Folgen Sie Ihren Lieblingsquellen in einem einzigen Feed. Öffnen Sie einfach einen Tab in Asil Browser, scrollen Sie nach unten und … voila!\nAsilBrowser News wird werbefinanziert mit privaten, anonymisierten Anzeigen.";
+/* Shown above a button that turns on the \"Kahf Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
+"today.introCardBody" = "Folgen Sie Ihren Lieblingsquellen in einem einzigen Feed. Öffnen Sie einfach einen Tab in Kahf Browser, scrollen Sie nach unten und … voila!\nKahf Browser News wird werbefinanziert mit privaten, anonymisierten Anzeigen.";
 
-/* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
-"today.introCardTitle" = "Aktivieren Sie die Asil Browser-Nachrichten, um keine Storys zu verpassen";
+/* Shown above a button that turns on the \"Kahf Browser News\" product in the app. */
+"today.introCardTitle" = "Aktivieren Sie die Kahf Browser-Nachrichten, um keine Storys zu verpassen";
 
 /* No comment provided by engineer. */
-"today.isEnabledToggleLabel" = "Asil Browser News anzeigen";
+"today.isEnabledToggleLabel" = "Kahf Browser News anzeigen";
 
 /* No comment provided by engineer. */
 "today.learnMoreTitle" = "Mehr über Ihre Daten erfahren";
 
-/* 'Asil Browser Offers' is a product name */
-"today.moreBraveOffers" = "Mehr Asil Browser-Angebote";
+/* 'Kahf Browser Offers' is a product name */
+"today.moreBraveOffers" = "Mehr Kahf Browser-Angebote";
 
 /* No comment provided by engineer. */
 "today.noInternet" = "Kein Internet";
@@ -3341,7 +3341,7 @@
 "today.suggestedTitle" = "Vorgeschlagen";
 
 /* No comment provided by engineer. */
-"today.turnOnBraveToday" = "Asil Browser News einschalten";
+"today.turnOnBraveToday" = "Kahf Browser News einschalten";
 
 /* A toggle title shown next to a source or channel that the user can unfollow. When tapped switches to 'Follow' */
 "today.unfollowToggleTitle" = "Nicht mehr folgen";
@@ -3388,34 +3388,34 @@
 /* No comment provided by engineer. */
 "UserWalletGenericErrorTitle" = "Entschuldigen Sie, es ist ein Fehler aufgetreten.";
 
-/* Version number of Asil Browser shown in settings */
+/* Version number of Kahf Browser shown in settings */
 "VersionTemplate" = "Version %1$@ (%2$@)";
 
 /* Label that says where to view an item. '%@' is a placeholder and will include things like 'Instagram', 'unsplash'. The full label will look like 'View  on Instagram'. */
 "ViewOn" = "Anzeigen in %@";
 
-/* Button text to buy Asil Browser VPN */
+/* Button text to buy Kahf Browser VPN */
 "vpn.buyButton" = "Kaufen";
 
 /* Title for screen to buy the VPN. */
-"vpn.buyVPNTitle" = "Asil Browser Firewall + VPN";
+"vpn.buyVPNTitle" = "Kahf Browser Firewall + VPN";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxBlockAds" = "Blockiert unerwünschte Netzwerkverbindungen";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxEncryption" = "Nutzt einen sicheren, IKEv2-verschlüsselten VPN-Tunnel";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxFast" = "Unterstützt Geschwindigkeiten bis 100 Mbps";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxGeoSelector" = "Geo-Standort/Land auswählen";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxNoIPLog" = "Hilft Ihnen, online anonym zu bleiben";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxNoSellout" = "Wir teilen und verkaufen Ihre Daten unter keinen Umständen";
 
 /* AppStore Receipt field for customer support contact form. */
@@ -3428,7 +3428,7 @@
 "vpn.contactFormCarrier" = "Mobilfunkanbieter";
 
 /* Text to tell user to not modify support info below email's body. */
-"vpn.contactFormDoNotEditText" = "Asil Browser verfolgt Ihre Aktivitäten nicht nach und weiß nicht, wie Sie unsere App nutzen, daher können wir nicht nachvollziehen, wie Sie Ihr VPN eingerichtet haben. Bitte geben Sie uns Einzelheiten zu Ihrem Problem und wir werden unser Bestes tun, es so schnell wie möglich zu lösen.";
+"vpn.contactFormDoNotEditText" = "Kahf Browser verfolgt Ihre Aktivitäten nicht nach und weiß nicht, wie Sie unsere App nutzen, daher können wir nicht nachvollziehen, wie Sie Ihr VPN eingerichtet haben. Bitte geben Sie uns Einzelheiten zu Ihrem Problem und wir werden unser Bestes tun, es so schnell wie möglich zu lösen.";
 
 /* Button name to send contact form. */
 "vpn.contactFormEmailNotConfiguredBody" = "Es konnte keine E-Mail geschickt werden. Bitte überprüfen Sie Ihre E-Mail-Konfiguration.";
@@ -3482,9 +3482,9 @@
 "vpn.contactFormTimezone" = "iOS-Zeitzone";
 
 /* Title for contact form email. */
-"vpn.contactFormTitle" = "Problem mit Asil Browser Firewall + VPN";
+"vpn.contactFormTitle" = "Problem mit Kahf Browser Firewall + VPN";
 
-/* Button text to enable Asil Browser VPN */
+/* Button text to enable Kahf Browser VPN */
 "vpn.enableButton" = "Aktivieren";
 
 /* Message for an alert when the VPN can't get prices from the App Store */
@@ -3503,13 +3503,13 @@
 "vpn.iapDisclaimer" = "Alle Abonnements werden automatisch verlängert, können vor der Verlängerung aber storniert werden.";
 
 /* Text explaining how the VPN works. */
-"vpn.installProfileBody" = "Mit diesem Profil kann das VPN jederzeit automatisch eine Verbindung herstellen und den Datenverkehr auf Ihrem Gerät sichern. Diese VPN-Verbindung wird verschlüsselt und durch die intelligente Firewall von Asil Browser geleitet, um potenziell schädliche und invasive Verbindungen zu blockieren.";
+"vpn.installProfileBody" = "Mit diesem Profil kann das VPN jederzeit automatisch eine Verbindung herstellen und den Datenverkehr auf Ihrem Gerät sichern. Diese VPN-Verbindung wird verschlüsselt und durch die intelligente Firewall von Kahf Browser geleitet, um potenziell schädliche und invasive Verbindungen zu blockieren.";
 
 /* Text for 'install vpn profile' button */
 "vpn.installProfileButtonText" = "VPN-Profil installieren";
 
 /* No comment provided by engineer. */
-"vpn.installProfileTitle" = "Asil Browser wird nun ein VPN-Profil installieren.";
+"vpn.installProfileTitle" = "Kahf Browser wird nun ein VPN-Profil installieren.";
 
 /* Popup that shows after user installs the vpn for the first time. */
 "vpn.installSuccessPopup" = "VPN ist jetzt aktiviert";
@@ -3517,7 +3517,7 @@
 /* Title for screen to install the VPN. */
 "vpn.installTitle" = "VPN installieren";
 
-/* Button text to try free Asil Browser VPN */
+/* Button text to try free Kahf Browser VPN */
 "vpn.learnMore" = "KOSTENLOS testen";
 
 /* Used in context: 'Monthly subscription, (it) renews monthly' */
@@ -3529,10 +3529,10 @@
 /* Text to show user when their vpn plan has expired */
 "vpn.planExpired" = "Abgelaufen";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.popupCheckmark247Support" = "Support rund um die Uhr";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.popupCheckmarkSecureConnections" = "Schützt alle Verbindungen";
 
 /* It is used in context: 'Powered by BRAND_NAME' */
@@ -3581,10 +3581,10 @@
 "vpn.settingsFAQ" = "VPN-Support";
 
 /* Button to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceipt" = "Kauf mit Ihrem Asil Browser-Konto verknüpfen";
+"vpn.settingsLinkReceipt" = "Kauf mit Ihrem Kahf Browser-Konto verknüpfen";
 
 /* Footer text to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceiptFooter" = "Verknüpfen Sie Ihren Kauf im App Store mit Ihrem Asil Browser-Konto, um Asil Browser VPN auf anderen Geräten zu nutzen.";
+"vpn.settingsLinkReceiptFooter" = "Verknüpfen Sie Ihren Kauf im App Store mit Ihrem Kahf Browser-Konto, um Kahf Browser VPN auf anderen Geräten zu nutzen.";
 
 /* Button to manage your VPN subscription */
 "vpn.settingsManageSubscription" = "Abonnement verwalten";
@@ -3620,10 +3620,10 @@
 "vpn.settingsVPNExpired" = "Abgelaufen";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationBody" = "Auch im Hintergrund schützt Asil Browser Sie weiter.";
+"vpn.vpnBackgroundNotificationBody" = "Auch im Hintergrund schützt Kahf Browser Sie weiter.";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationTitle" = "Asil Browser Firewall + VPN ist AN";
+"vpn.vpnBackgroundNotificationTitle" = "Kahf Browser Firewall + VPN ist AN";
 
 /* Message for an alert when the VPN can't be configured. */
 "vpn.vpnConfigGenericErrorBody" = "Bei der Initialisierung des VPNs ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder versuchen Sie auf der VPN-Einstellungsseite, die Konfiguration zurückzusetzen.";
@@ -3632,7 +3632,7 @@
 "vpn.vpnConfigGenericErrorTitle" = "Fehler";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
-"vpn.vpnConfigPermissionDeniedErrorBody" = "Für die Nutzung von Asil Browser Firewall + VPN muss ein VPN-Profil auf Ihrem Gerät installiert sein.";
+"vpn.vpnConfigPermissionDeniedErrorBody" = "Für die Nutzung von Kahf Browser Firewall + VPN muss ein VPN-Profil auf Ihrem Gerät installiert sein.";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
 "vpn.vpnConfigPermissionDeniedErrorTitle" = "Zugriff verweigert";
@@ -3644,10 +3644,10 @@
 "vpn.vpnErrorPurchaseFailedTitle" = "Fehler";
 
 /* Disclaimer for user purchasing the VPN plan. */
-"vpn.vpnIAPBoilerPlate" = "Abonnements werden über Ihr iTunes-Konto abgerechnet.\n\nWenn Ihnen eine kostenlose Testversion angeboten wurde, verfällt deren nicht genutzter Teil beim Kauf eines Abonnements.\n\nIhr Abonnement verlängert sich automatisch, wenn Sie es nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums kündigen.\n\nSie können Ihre Abonnements in den Einstellungen verwalten.\n\nDurch die Verwendung von Asil Browser stimmen Sie den Nutzungsbedingungen und den Datenschutzbestimmungen zu.";
+"vpn.vpnIAPBoilerPlate" = "Abonnements werden über Ihr iTunes-Konto abgerechnet.\n\nWenn Ihnen eine kostenlose Testversion angeboten wurde, verfällt deren nicht genutzter Teil beim Kauf eines Abonnements.\n\nIhr Abonnement verlängert sich automatisch, wenn Sie es nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums kündigen.\n\nSie können Ihre Abonnements in den Einstellungen verwalten.\n\nDurch die Verwendung von Kahf Browser stimmen Sie den Nutzungsbedingungen und den Datenschutzbestimmungen zu.";
 
 /* Message for alert to reset vpn configuration */
-"vpn.vpnResetAlertBody" = "Hiermit wird Ihre Konfiguration für Asil Browser Firewall + VPN zurückgesetzt, womit Fehler behoben werden können. Dieser Vorgang kann etwa eine Minute dauern.";
+"vpn.vpnResetAlertBody" = "Hiermit wird Ihre Konfiguration für Kahf Browser Firewall + VPN zurückgesetzt, womit Fehler behoben werden können. Dieser Vorgang kann etwa eine Minute dauern.";
 
 /* Title for alert to reset vpn configuration */
 "vpn.vpnResetAlertTitle" = "Konfiguration zurücksetzen";
@@ -3713,18 +3713,18 @@
 "widgets.favoritesWidgetTitle" = "Favoriten";
 
 /* This shows when you add a widget but have no favorites added in your app */
-"widgets.noFavoritesFound" = "Bitte öffnen Sie Asil Browser, um hier Ihre Favoriten anzuzeigen.";
+"widgets.noFavoritesFound" = "Bitte öffnen Sie Kahf Browser, um hier Ihre Favoriten anzuzeigen.";
 
 /* Description for the search option on the 'shortcuts' widget. */
 "widgets.searchShortcutTitle" = "Suche";
 
-/* Description for Asil Browser Shields widget on 'add widget' screen. */
-"widgets.shieldStatsDescription" = "Eine Zusammenfassung davon, wie Sie mit Asil Browser Zeit sparen können und online geschützt werden.";
+/* Description for Kahf Browser Shields widget on 'add widget' screen. */
+"widgets.shieldStatsDescription" = "Eine Zusammenfassung davon, wie Sie mit Kahf Browser Zeit sparen können und online geschützt werden.";
 
-/* Title for Asil Browser Shields widget on 'add widget' screen. */
+/* Title for Kahf Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsTitle" = "Datenschutzstatistik";
 
-/* Title of Asil Browser Shields widget shown above stat numbers. */
+/* Title of Kahf Browser Shields widget shown above stat numbers. */
 "widgets.shieldStatsWidgetTitle" = "Datenschutzstatistik";
 
 /* Button to the browser and enter URL or make a search query there. */
@@ -3740,19 +3740,19 @@
 "widgets.shortcutsPrivateTabButton" = "Privater Tab";
 
 /* Description for shortcuts widget on 'add widget' screen. */
-"widgets.shortcutsWidgetDescription" = "Sie erhalten Schnellzugriff, um etwas im Web zu suchen oder Webseiten in Asil Browser zu öffnen.";
+"widgets.shortcutsWidgetDescription" = "Sie erhalten Schnellzugriff, um etwas im Web zu suchen oder Webseiten in Kahf Browser zu öffnen.";
 
 /* Title for shortcuts widget on 'add widget' screen. */
 "widgets.shortcutsWidgetTitle" = "Verknüpfungen";
 
-/* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
-"widgets.singleStatDescription" = "Eine Zusammenfassung davon, wie Asil Browser Sie online geschützt hat.";
+/* Description for Kahf Browser Shields single stat widget on 'add widget' screen. */
+"widgets.singleStatDescription" = "Eine Zusammenfassung davon, wie Kahf Browser Sie online geschützt hat.";
 
-/* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
+/* Title for Kahf Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatTitle" = "Datenschutzstatistik";
 
-/* Description for the Asil Browser Wallet option on the 'shortcuts' widget. */
-"widgets.walletShortcutTitle" = "Asil Browser-Wallet";
+/* Description for the Kahf Browser Wallet option on the 'shortcuts' widget. */
+"widgets.walletShortcutTitle" = "Kahf Browser-Wallet";
 
 /* Title of the settings for widgets part */
 "widgets.widgetTitle" = "Widgets";
@@ -3775,3 +3775,51 @@
 /* History tableview section header */
 "Yesterday" = "Gestern";
 
+"safegaze.popup.report.title1" = "Bitte melden Sie alle Fehler oder Vorschläge an ";
+"safegaze.popup.report.title2" = "dieses Formular";
+"safegaze.popup.support.title" = "Unterstützen Sie dieses Projekt";
+"safegaze.popup.woman.title" = "Ich bin eine Frau";
+"safegaze.popup.man.title" = "Ich bin ein Mann";
+"safegaze.popup.comingsoon.title" = "Demnächst verfügbar";
+"safegaze.popup.gendermode.title" = "Geschlechtsmodus";
+"safegaze.popup.sinfulacts.title" = "Vermeidbare sündige Handlungen";
+"safegaze.popup.thispage.title" = "Diese Seite";
+"safegaze.popup.lifetime.title" = "Lebensdauer";
+"safegaze.popup.alwayspurify.title" = "Immer reinigen";
+"safegaze.popup.neverpurify.title" = "Nie reinigen";
+"safegaze.popup.safegazeup.title" = "SafeGaze HOCH";
+"safegaze.popup.imageblur.title" = "Bildunschärfe-Intensität";
+"safegaze.popup.takecontrol.title" = "Verbessern Sie Ihre Online-Erfahrung mit SafeGaze, unserer Bildreinigungs-Erweiterung, die Ihre Sicht vor unangemessenem Inhalt schützt.";
+"safegaze.popup.turnon.title" = "SafeGaze einschalten";
+
+/* Geschlechtstitel */
+"kahftube.gender.all.title" = "Alle";
+"kahftube.gender.male.title" = "Männlich";
+"kahftube.gender.female.title" = "Weiblich";
+"kahftube.gender.child.title" = "Kind";
+"kahftube.gender.except.title" = "Außer";
+
+/* Religionstitel */
+"kahftube.religion.haram.title" = "Haram";
+"kahftube.religion.practicingMuslim.title" = "Praktizierender Muslim";
+"kahftube.religion.liberalMuslim.title" = "Liberaler Muslim";
+"kahftube.religion.moderateMuslim.title" = "Gemäßigter Muslim";
+
+/* Popup-Titel */
+"kahftube.popup.name.title" = "Name";
+"kahftube.popup.connectedAccount.title" = "Verbundenes Konto";
+"kahftube.popup.preferences.title" = "Einstellungen";
+"kahftube.popup.gender.title" = "Geschlecht";
+"kahftube.popup.religionStatus.title" = "Religionsstatus";
+"kahftube.popup.unsubHaramChannels.title" = "Haram-Kanäle abmelden";
+"kahftube.popup.unsubscribeSuccessful.title1" = "Haram-Kanäle sind abgemeldet";
+"kahftube.popup.unsubscribeSuccessful.title2" = "erfolgreich";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "In Ordnung";
+"kahftube.popup.openToUse.title" = "Bereit zur Verwendung";
+"kahftube.popup.explore.title" = "Erkunden Sie diese Funktion nach der Anmeldung bei YouTube";
+"kahftube.popup.haramChannelsFound.title" = "%d Haram-Kanäle gefunden";
+"kahftube.popup.refreshAgain.title" = "Erneut aktualisieren";
+"kahftube.popup.unsubscribeNow.title" = "Jetzt abmelden";
+"kahftube.popup.noHaramSubscribed.title" = "Keine Haram-Kanäle abonniert";
+"kahftube.popup.channelFound.title" = "Kanal gefunden";
+"kahftube.popup.alright.title" = "In Ordnung";

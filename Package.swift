@@ -9,7 +9,7 @@ import PackageDescription
 let package = Package(
   name: "Brave",
   defaultLocalization: "en",
-  platforms: [.iOS(.v14), .macOS(.v11)],
+  platforms: [.iOS(.v15), .macOS(.v11)],
   products: [
     .library(name: "Brave", targets: ["Brave"]),
     .library(name: "HTTPSE", targets: ["HTTPSE"]),
@@ -119,6 +119,11 @@ let package = Package(
         .copy("Assets/Fonts/FiraSans-Regular.ttf"),
         .copy("Assets/Fonts/FiraSans-SemiBold.ttf"),
         .copy("Assets/Fonts/FiraSans-UltraLight.ttf"),
+        .copy("Assets/Fonts/Quicksand-Bold.ttf"),
+        .copy("Assets/Fonts/Quicksand-Light.ttf"),
+        .copy("Assets/Fonts/Quicksand-Medium.ttf"),
+        .copy("Assets/Fonts/Quicksand-Regular.ttf"),
+        .copy("Assets/Fonts/Quicksand-SemiBold.ttf"),
         .copy("Assets/Fonts/NewYorkMedium-Bold.otf"),
         .copy("Assets/Fonts/NewYorkMedium-BoldItalic.otf"),
         .copy("Assets/Fonts/NewYorkMedium-Regular.otf"),

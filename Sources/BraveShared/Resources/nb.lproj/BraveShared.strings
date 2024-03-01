@@ -1,17 +1,17 @@
 /* About settings section title */
 "About" = "Om";
 
-/* The title of the screen explaining Asil Browser Shields */
-"AboutBraveShields" = "Om Asil Browser-skjold";
+/* The title of the screen explaining Kahf Browser Shields */
+"AboutBraveShields" = "Om Kahf Browser-skjold";
 
-/* The body of the screen explaining Asil Browser Shields */
-"AboutBraveShieldsBody" = "Nettsteder inkluderer ofte informasjonskapsler og skript som prøver å identifisere deg og enheten din. De vil finne ut hvem du er og følge deg på nettet – spore hva du gjør på hvert nettsted.\n\nAsilBrowser blokkerer disse tingene slik at du kan surfe uten å bli forfulgt.";
+/* The body of the screen explaining Kahf Browser Shields */
+"AboutBraveShieldsBody" = "Nettsteder inkluderer ofte informasjonskapsler og skript som prøver å identifisere deg og enheten din. De vil finne ut hvem du er og følge deg på nettet – spore hva du gjør på hvert nettsted.\n\nKahf Browser blokkerer disse tingene slik at du kan surfe uten å bli forfulgt.";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "Dette lar deg lagre bilder til kamerarullen.";
 
 /* See http://mzl.la/1G7uHo7 */
-"AccessPhotoDeniedAlertTitle" = "Asil Browser vil ha tilgang til bildene dine";
+"AccessPhotoDeniedAlertTitle" = "Kahf Browser vil ha tilgang til bildene dine";
 
 /* Button to add a bookmark */
 "AddBookmark" = "Legg til bokmerke";
@@ -52,8 +52,8 @@
 /* Label for the Face ID/Passcode item in Settings */
 "AuthenticationFaceIDPasscodeSetting" = "Face ID og passkode";
 
-/* Touch ID or PIN entry prompt subtitle when accessing Asil Browser with the Browser Lock feature enabled */
-"AuthenticationLoginsTouchReason" = "Dette autentiserer din tilgang til Asil Browser";
+/* Touch ID or PIN entry prompt subtitle when accessing Kahf Browser with the Browser Lock feature enabled */
+"AuthenticationLoginsTouchReason" = "Dette autentiserer din tilgang til Kahf Browser";
 
 /* Label for the Passcode item in Settings */
 "AuthenticationPasscode" = "Passkode";
@@ -116,7 +116,7 @@
 "BlockCookieConsentNotices" = "Blokker samtykkemeldinger om informasjonskapsler";
 
 /* A description for a popup that notifies the user that we can block cookie consent notices */
-"BlockCookieConsentNoticesPopupDescription" = "Asil Browser blokkerer allerede informasjonskapsler fra tredjeparter. Vi kan også blokkere samtykkemeldinger om informasjonskapsler.";
+"BlockCookieConsentNoticesPopupDescription" = "Kahf Browser blokkerer allerede informasjonskapsler fra tredjeparter. Vi kan også blokkere samtykkemeldinger om informasjonskapsler.";
 
 /* A title for a popup that notifies the user that we can block cookie consent notices */
 "BlockCookieConsentNoticesPopupTitle" = "Lei av samtykkemeldinger om informasjonskapsler?";
@@ -130,7 +130,7 @@
 /* A title for setting which blocks 'switch to app' popups */
 "blockMobileAnnoyances" = "Blokker varsler om å bytte til app";
 
-/* Asil Browser panel individual toggle title */
+/* Kahf Browser panel individual toggle title */
 "BlockPhishing" = "Blokker nettfiske";
 
 /* No comment provided by engineer. */
@@ -175,38 +175,38 @@
 /* Placeholder text for adding or editing a bookmark */
 "BookmarkUrlPlaceholderText" = "Adresse";
 
-/* Button to show the Asil Browser panel */
-"BravePanel" = "Asil Browser-panel";
+/* Button to show the Kahf Browser panel */
+"BravePanel" = "Kahf Browser-panel";
 
 /* No comment provided by engineer. */
-"BraveRewardsAdNotificationTitle" = "Asil Browser Belønninger";
+"BraveRewardsAdNotificationTitle" = "Kahf Browser Belønninger";
 
 /* No comment provided by engineer. */
 "BraveRewardsOpen" = "Åpne";
 
-/* Asil Browser Rewards settings title */
-"BraveRewardsTitle" = "Asil Browser Belønninger";
+/* Kahf Browser Rewards settings title */
+"BraveRewardsTitle" = "Kahf Browser Belønninger";
 
-/* Asil Browser Search Banner Promotion description content in Search Suggestions */
-"braveSearchPromotion.bannerDescription" = "Asil Browser Søk sporer ikke deg, søkene eller klikkene dine.";
+/* Kahf Browser Search Banner Promotion description content in Search Suggestions */
+"braveSearchPromotion.bannerDescription" = "Kahf Browser Søk sporer ikke deg, søkene eller klikkene dine.";
 
-/* Asil Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
 "braveSearchPromotion.bannerMaybeLaterButtonTitle" = "Kanskje senere";
 
-/* Asil Browser Search Banner Promotion title in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title in Search Suggestions */
 "braveSearchPromotion.bannerTitle" = "Støtt uavhengige søk med bedre personvern";
 
-/* Asil Browser Search Banner Promotion title for try button in Search Suggestions */
-"braveSearchPromotion.bannerTryButtonTitle" = "Prøv Asil Browser Søk";
+/* Kahf Browser Search Banner Promotion title for try button in Search Suggestions */
+"braveSearchPromotion.bannerTryButtonTitle" = "Prøv Kahf Browser Søk";
 
-/* Asil Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
 "braveSearchPromotion.braveSearchPromotionBannerDismissButtonTitle" = "Avvis";
 
 /* No comment provided by engineer. */
 "BraveShieldsAdvancedControls" = "Avanserte kontroller";
 
 /* No comment provided by engineer. */
-"BraveShieldsAndPrivacy" = "Asil Browser Shields og -personvern";
+"BraveShieldsAndPrivacy" = "Kahf Browser Shields og -personvern";
 
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "Annonser og andre ekle ting blokkert";
@@ -215,7 +215,7 @@
 "SafegazeBlockedCountLabel" = "Syndige handlinger unngått";
 
 /* "The number of total sinful acts avoided will be next to this" */
-"SafegazeTotalBlockedCountLabel" =  "Totalt %@ syndige handlinger unngått siden begynnelsen"
+"SafegazeTotalBlockedCountLabel" =  "Totalt %@ syndige handlinger unngått siden begynnelsen";
 
 /* What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel */
 "BraveShieldsBlockedInfoButtonAccessibilityLabel" = "Finn ut mer";
@@ -229,17 +229,17 @@
 /* No comment provided by engineer. */
 "BraveShieldsSiteBroken" = "Hvis nettstedet ser ut til å være ødelagt, prøv Skjold ned";
 
-/* Context: 'Asil Browser Shields Up' or 'Asil Browser Shields Down' */
-"BraveShieldsStatusTitle" = "Asil Browser-skjold";
+/* Context: 'Kahf Browser Shields Up' or 'Kahf Browser Shields Down' */
+"BraveShieldsStatusTitle" = "Kahf Browser-skjold";
 
-/* Context: The 'Down' in 'Asil Browser Shields Down' */
+/* Context: The 'Down' in 'Kahf Browser Shields Down' */
 "BraveShieldsStatusValueDown" = "Ned";
 
-/* Context: The 'Up' in 'Asil Browser Shields Up' */
+/* Context: The 'Up' in 'Kahf Browser Shields Up' */
 "BraveShieldsStatusValueUp" = "Opp";
 
 /* The accessibility hint spoken when focused on the main shields toggle */
-"BraveShieldsToggleHint" = "Dobbeltklikk for å skru av og på Asil Browser Shields";
+"BraveShieldsToggleHint" = "Dobbeltklikk for å skru av og på Kahf Browser Shields";
 
 /* Sync page title */
 "BraveSync" = "Synkroniser";
@@ -248,16 +248,16 @@
 "BraveSyncInternalsTitle" = "Sync internt";
 
 /* Sync settings welcome */
-"BraveSyncWelcome" = "Asil Browser må være installert på alle enhetene du vil synkronisere. Start en synkkjede for å knytte alle enhetene dine sikkert sammen.";
+"BraveSyncWelcome" = "Kahf Browser må være installert på alle enhetene du vil synkronisere. Start en synkkjede for å knytte alle enhetene dine sikkert sammen.";
 
 /* The name of the feature */
-"bravetalk.braveTalkTitle" = "Asil Browser Prat";
+"bravetalk.braveTalkTitle" = "Kahf Browser Prat";
 
 /* Setting to enable the browser lock privacy feature */
 "BrowserLock" = "Nettleser Lås";
 
 /* No comment provided by engineer. */
-"BrowserLockDescription" = "Lås opp Asil Browser med Touch ID, Face ID eller systempassord.";
+"BrowserLockDescription" = "Lås opp Kahf Browser med Touch ID, Face ID eller systempassord.";
 
 /* A button title for the action to move to the next step of the browser lock migration process. */
 "browserLockMigrationContinueButtonTitle" = "Fortsett";
@@ -266,10 +266,10 @@
 "browserLockMigrationNoPasscodeSetup" = "Har du ikke angitt ID eller passord? Åpne Innstillinger, og trykk deretter på \"% @\"";
 
 /* Subtitle on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationSubtitle" = "Vi har forenklet Asil Browser Passcodes. Du kan nå få tilgang til Asil Browser med samme ID eller passord du bruker på telefonen.";
+"browserLockMigrationSubtitle" = "Vi har forenklet Kahf Browser Passcodes. Du kan nå få tilgang til Kahf Browser med samme ID eller passord du bruker på telefonen.";
 
 /* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationTitle" = "Åpne Asil Browser med Apple Face ID, Touch ID eller passord";
+"browserLockMigrationTitle" = "Åpne Kahf Browser med Apple Face ID, Touch ID eller passord";
 
 /* Settings item for clearing browsing history */
 "BrowsingHistory" = "Nettleserhistorikk";
@@ -278,7 +278,7 @@
 "Cache" = "Buffer";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Med Asil Browser som standard åpnes alle linker du trykker på, med Asil Browsers innebygde standardinnstillinger.";
+"callout.defaultBrowserCalloutDescription" = "Med Kahf Browser som standard åpnes alle linker du trykker på, med Kahf Browsers innebygde standardinnstillinger.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Angi som standardnettleser";
@@ -293,13 +293,13 @@
 "callout.defaultBrowserTitle" = "Personvern. Gjort enkelt.";
 
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "Dette hjelper oss å finne ut hvilke Asil Browser-funksjoner som brukes oftest. Du kan endre dette når som helst i Asil Browser-innstillinger under «Asil Browser Shields og personvern».";
+"callout.p3aCalloutDescription" = "Dette hjelper oss å finne ut hvilke Kahf Browser-funksjoner som brukes oftest. Du kan endre dette når som helst i Kahf Browser-innstillinger under «Kahf Browser Shields og personvern».";
 
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "Finn ut mer om vår personvernbevarende produktanalyse (P3A).";
 
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutTitle" = "Hjelp oss med å gjøre Asil Browser bedre.";
+"callout.p3aCalloutTitle" = "Hjelp oss med å gjøre Kahf Browser bedre.";
 
 /* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
 "callout.p3aCalloutToggleTitle" = "Del anonym, privat produktinnsikt.";
@@ -314,7 +314,7 @@
 "callout.playlistOnboardingViewTitle" = "Legg til video i Spillelisten …";
 
 /* Subtitle - Description for Privacy Everywhere Full Screen Callout */
-"callout.privacyEverywhereCalloutDescription" = "Få Asil Browser-personvernfunksjonalitet på datamaskinen eller nettbrettet, og synkroniser bokmerker og utvidelser mellom enheter.";
+"callout.privacyEverywhereCalloutDescription" = "Få Kahf Browser-personvernfunksjonalitet på datamaskinen eller nettbrettet, og synkroniser bokmerker og utvidelser mellom enheter.";
 
 /* Title for button in Default Browser Full Screen Callout */
 "callout.privacyEverywhereCalloutPrimaryButtonTitle" = "Synkroniser nå";
@@ -355,7 +355,7 @@
 /* Title indicating whether or not a private key can be used to derive some data from another piece of data. IE: Use one key to generate another */
 "certificateViewer.deriveTitle" = "Avlede";
 
-/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
+/* Title of the section for the Domain Component such as: DNS or Kahf Browser.com or a website's domain. */
 "certificateViewer.domainComponentTitle" = "Domenekomponent";
 
 /* Title of the section indication which 'Encryption' algorithm was used. */
@@ -394,7 +394,7 @@
 /* Title of the section for Department of the Company. Example: Human Resources. */
 "certificateViewer.organizationalUnitTitle" = "Organisasjonsenhet";
 
-/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
+/* Title of the section for Name of the Company. Example: Kahf Browser Inc. */
 "certificateViewer.organizationTitle" = "Organisasjon";
 
 /* Title indicating 'Parameters' or Input passed to a function/algorithm. */
@@ -605,25 +605,25 @@
 "defaultBrowserCallout.introOpenSettingsButtonText" = "Åpne innstillinger";
 
 /* Primary text on default browser popup screen */
-"defaultBrowserCallout.introPrimaryText" = "Åpne alle lenkene med Asil Browser for å beskytte personvernet ditt";
+"defaultBrowserCallout.introPrimaryText" = "Åpne alle lenkene med Kahf Browser for å beskytte personvernet ditt";
 
 /* Secondary text on default browser popup. */
-"defaultBrowserCallout.introSecondaryText" = "Asil Browser Shields blokkerer sporere og annonser, sparer data og sparer deg tid på hvert nettsted du besøker";
+"defaultBrowserCallout.introSecondaryText" = "Kahf Browser Shields blokkerer sporere og annonser, sparer data og sparer deg tid på hvert nettsted du besøker";
 
 /* Tertiary text on default browser popup screen */
-"defaultBrowserCallout.introTertiaryText" = "Åpne Innstillinger, trykk på Standard Nettleser-appen, og velg Asil Browser.";
+"defaultBrowserCallout.introTertiaryText" = "Åpne Innstillinger, trykk på Standard Nettleser-appen, og velg Kahf Browser.";
 
-/* Notification body to promote setting Asil Browser app as default browser */
-"defaultBrowserCallout.notificationBody" = "Optimalisert for iOS %@. Gjør Asil Browser til den standard nettleseren din i dag.";
+/* Notification body to promote setting Kahf Browser app as default browser */
+"defaultBrowserCallout.notificationBody" = "Optimalisert for iOS %@. Gjør Kahf Browser til den standard nettleseren din i dag.";
 
-/* Notification title to promote setting Asil Browser app as default browser */
-"defaultBrowserCallout.notificationTitle" = "Asil Browser-nettleser";
+/* Notification title to promote setting Kahf Browser app as default browser */
+"defaultBrowserCallout.notificationTitle" = "Kahf Browser-nettleser";
 
 /* No comment provided by engineer. */
 "defaultBrowserCalloutCloseAccesabilityLabel" = "Lukk infomelding om standard nettleser";
 
-/* Name for default Asil Browser theme. */
-"defaultThemeName" = "Asil Browser standard";
+/* Name for default Kahf Browser theme. */
+"defaultThemeName" = "Kahf Browser standard";
 
 /* No comment provided by engineer. */
 "Delete" = "Slett";
@@ -778,10 +778,10 @@
 /* Allow link to switch apps? */
 "ExternalAppURLAlertTitle" = "Skal lenke til bytteapper tillates?";
 
-/* Allow Asil Browser to open the external app URL */
+/* Allow Kahf Browser to open the external app URL */
 "ExternalAppURLAllow" = "Tillat";
 
-/* Don't allow Asil Browser to open the external app URL */
+/* Don't allow Kahf Browser to open the external app URL */
 "ExternalAppURLDontAllow" = "Ikke tillat";
 
 /* Footer text when user selects to save to favorites when editing a bookmark */
@@ -860,10 +860,10 @@
 "HideLinkPreviewsActionTitle" = "Skjul forhåndsvisning av kobling";
 
 /* Hides the rewards icon */
-"HideRewardsIcon" = "Skjul Asil Browser Rewards-ikon";
+"HideRewardsIcon" = "Skjul Kahf Browser Rewards-ikon";
 
 /* Hide the rewards icon explination. */
-"HideRewardsIconSubtitle" = "Skjuler ikonet for Asil Browser Rewards når Asil Browser Rewards ikke er tilgjengelig";
+"HideRewardsIconSubtitle" = "Skjuler ikonet for Kahf Browser Rewards når Kahf Browser Rewards ikke er tilgjengelig";
 
 /* Title for history menu item */
 "HistortMenuItem" = "Logg";
@@ -1001,13 +1001,13 @@
 "MonthlyAdsClaimNotificationBody" = "Trykk for å gjøre krav på dine gratis tokener.";
 
 /* The title of the notification that goes out monthly to users who can claim an ads grant */
-"MonthlyAdsClaimNotificationTitle" = "Asil Browser Rewards 💵🎁";
+"MonthlyAdsClaimNotificationTitle" = "Kahf Browser Rewards 💵🎁";
 
 /* No comment provided by engineer. */
 "MyFirstAdBody" = "Trykk her for å lære mer.";
 
 /* No comment provided by engineer. */
-"MyFirstAdTitle" = "Dette er den første Asil Browser-annonsen din";
+"MyFirstAdTitle" = "Dette er den første Kahf Browser-annonsen din";
 
 /* Bookmark title / Device name */
 "Name" = "Navn";
@@ -1069,14 +1069,14 @@
 /* Setting title for option to automatically redirect a url to another url */
 "nprRedirectFooter" = "Videresender automatisk NPR-linker til den tekstbaserte versjonen (på tekst.npr.org).";
 
-/* Bookmark title for Asil Browser Support */
-"ntp.braveSupportFavoriteTitle" = "Asil Browser-kundestøtte";
+/* Bookmark title for Kahf Browser Support */
+"ntp.braveSupportFavoriteTitle" = "Kahf Browser-kundestøtte";
 
 /* No comment provided by engineer. */
 "ntp.claimRewards" = "Krev inn tokener";
 
-/* Placeholder example: 'You earned 42 BAT by browsing with Asil Browser.' */
-"ntp.earningsReport" = "Du tjente %@ ved å surfe med Asil Browser.";
+/* Placeholder example: 'You earned 42 BAT by browsing with Kahf Browser.' */
+"ntp.earningsReport" = "Du tjente %@ ved å surfe med Kahf Browser.";
 
 /* The context is to praise the user that they did a good job, to keep it up. It is used in full sentence like: 'Way to go! You earned 40 BAT last month.' */
 "ntp.goodJob" = "Bra jobba!";
@@ -1085,10 +1085,10 @@
 "ntp.hideSponsoredImages" = "Skjul sponsede bilder";
 
 /* The text description of image type which is being used NTP */
-"ntp.imageTypeSelectionDescription" = "«Sponset» er ytterligere merkeprofilerte bakgrunner du kan tjene på med Asil Browser-belønninger aktivert.";
+"ntp.imageTypeSelectionDescription" = "«Sponset» er ytterligere merkeprofilerte bakgrunner du kan tjene på med Kahf Browser-belønninger aktivert.";
 
 /* No comment provided by engineer. */
-"ntp.learnMoreAboutRewards" = "Lær mer om Asil Browser Rewards";
+"ntp.learnMoreAboutRewards" = "Lær mer om Kahf Browser Rewards";
 
 /* No comment provided by engineer. */
 "ntp.learnMoreAboutSI" = "Lær mer om sponsede bilder";
@@ -1120,17 +1120,17 @@
 /* The placeholder says 'Terms of Service'. So full sentence goes like: 'By turning Rewards, you agree to the Terms of Service'. */
 "ntp.turnRewardsTos" = "Ved å slå på Rewards, godtar du %@.";
 
-/* Message when opting into Asil Browser Ads when region becomes available */
+/* Message when opting into Kahf Browser Ads when region becomes available */
 "OBAdsOptInMessage" = "Tjen tokener og belønn skaperne for supert innhold mens du surfer.";
 
-/* Message when opting into Asil Browser Ads when region becomes available */
+/* Message when opting into Kahf Browser Ads when region becomes available */
 "OBAdsOptInMessageJapan" = "Tjen poeng og belønn skaperne for supert innhold mens du surfer.";
 
-/* Title when opting into Asil Browser Ads when region becomes available */
-"OBAdsOptInTitle" = "Asil Browser-annonser er her!";
+/* Title when opting into Kahf Browser Ads when region becomes available */
+"OBAdsOptInTitle" = "Kahf Browser-annonser er her!";
 
 /* Title for ads onboarding screen */
-"OBAdsTitle" = "Asil Browser vil vise din første annonse i";
+"OBAdsTitle" = "Kahf Browser vil vise din første annonse i";
 
 /* Title for when the user completes onboarding */
 "OBCompleteTitle" = "Nå er du klar til å begynne.";
@@ -1150,14 +1150,14 @@
 /* Button to finish onboarding and start using the app. */
 "OBFinishButton" = "Start å surfe";
 
-/* Button to join Asil Browser Rewards. */
+/* Button to join Kahf Browser Rewards. */
 "OBJoinButton" = "Registrer deg";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentClipboardPermission" = "La Asil Browser sjekke utklippstavlen min for en samsvarende henvisningskode";
+"OBPrivacyConsentClipboardPermission" = "La Kahf Browser sjekke utklippstavlen min for en samsvarende henvisningskode";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentDetail" = "Du har kanskje lastet ned Asil Browser for å støtte henviseren din. For å oppdage henviseren din, utfører Asil Browser en engangskontroll av utklippstavlen for samsvarende henvisningskode. Denne kontrollen er begrenset til koden, og ingen andre personlige data vil bli overført. Hvis du velger bort dette, mottar henviseren ikke belønninger fra Asil Browser.";
+"OBPrivacyConsentDetail" = "Du har kanskje lastet ned Kahf Browser for å støtte henviseren din. For å oppdage henviseren din, utfører Kahf Browser en engangskontroll av utklippstavlen for samsvarende henvisningskode. Denne kontrollen er begrenset til koden, og ingen andre personlige data vil bli overført. Hvis du velger bort dette, mottar henviseren ikke belønninger fra Kahf Browser.";
 
 /* No comment provided by engineer. */
 "OBPrivacyConsentNoButton" = "Ikke tillat denne kontrollen";
@@ -1178,10 +1178,10 @@
 "OBRewardsAgreementDetailsAnd" = "og";
 
 /* Title for rewards agreement onboarding screen */
-"OBRewardsAgreementTitle" = "Asil Browser Belønninger";
+"OBRewardsAgreementTitle" = "Kahf Browser Belønninger";
 
 /* Detail text for rewards onboarding screen */
-"OBRewardsDetail" = "Ved å takke ja til Asil Browser Private Annonser støtter du innholdsutgivere og -produsenter hver gang du ser på en annonse.";
+"OBRewardsDetail" = "Ved å takke ja til Kahf Browser Private Annonser støtter du innholdsutgivere og -produsenter hver gang du ser på en annonse.";
 
 /* Detail text for rewards onboarding screen */
 "OBRewardsDetailInAdRegion" = "Tjen tokener og belønn skaperne for supert innhold mens du surfer.";
@@ -1190,7 +1190,7 @@
 "OBRewardsPrivacyPolicyDetailLink" = "Personvernreglene";
 
 /* Title for rewards onboarding screen */
-"OBRewardsTitle" = "Asil Browser Belønninger";
+"OBRewardsTitle" = "Kahf Browser Belønninger";
 
 /* Save button to save current selection */
 "OBSaveButton" = "Lagre";
@@ -1199,28 +1199,28 @@
 "OBSearchEngineDetail" = "Velg standard søkemotor";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Velkommen til Asil Browser";
+"OBSearchEngineTitle" = "Velkommen til Kahf Browser";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "Blokker trackere som truer personvernet, slik at du kan surfe på nett uten å bli forfulgt";
 
 /* Title for shields onboarding screen */
-"OBShieldsTitle" = "Asil Browser-skjold";
+"OBShieldsTitle" = "Kahf Browser-skjold";
 
-/* Button to show the Asil Browser Rewards Ads. */
+/* Button to show the Kahf Browser Rewards Ads. */
 "OBShowMeButton" = "Vis meg";
 
-/* Button to show Asil Browser Rewards. */
+/* Button to show Kahf Browser Rewards. */
 "OBTurnOnButton" = "Start";
 
 /* The description text shown when there is big tech tracker among trackers. Example usage: Google, Amazon and 32 other trackers blocked */
 "onboarding.blockedAdsOnboardingBigTechInformationText" = "%1$@ og %2$lld annonser og sporere til er blokkert";
 
-/* The footnote indicating what Asil Browser shields is blocking */
-"onboarding.blockedAdsOnboardingFootnoteText" = "Se alle de kjipe tingene Asil Browser har blokkert, på hver side, med Shields.";
+/* The footnote indicating what Kahf Browser shields is blocking */
+"onboarding.blockedAdsOnboardingFootnoteText" = "Se alle de kjipe tingene Kahf Browser har blokkert, på hver side, med Shields.";
 
 /* The text describing user where they should press in order to open Shield panel */
-"onboarding.blockedAdsOnboardingInstructionsText" = "Trykk for å vise Asil Browser Shields";
+"onboarding.blockedAdsOnboardingInstructionsText" = "Trykk for å vise Kahf Browser Shields";
 
 /* The description text shown when there is no big tech tracker among trackers. Example usage: 31 Ads & trackers blocked. The number here is presented separately so it is not in translation. */
 "onboarding.blockedAdsOnboardingNoBigTechInformationText" = "Blokkerte sporere og annonser";
@@ -1235,13 +1235,13 @@
 "onboarding.ntpOnboardingPopOverTrackerDescription" = "Ved å blokkere trackere og annonser bruker nettsidene mindre data og lastes mye raskere inn.";
 
 /* Description for the Omnibox (URL Bar) pop-over that describes faster load times. */
-"onboarding.omniboxOnboardingPopOverDescription" = "Se forskjellen med Asil Browser:\nIngen annonser. Ingen sporere. Mye raskere sideinnlasting.";
+"onboarding.omniboxOnboardingPopOverDescription" = "Se forskjellen med Kahf Browser:\nIngen annonser. Ingen sporere. Mye raskere sideinnlasting.";
 
 /* Title for the Omnibox (URL Bar) pop-over that describes faster load times. */
 "onboarding.omniboxOnboardingPopOverTitle" = "Skriv inn navnet på et nettsted eller en nettadresse";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "Velkommen til Asil Browser";
+"onboarding.welcomeScreenTitle" = "Velkommen til Kahf Browser";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "Fortsett";
@@ -1255,8 +1255,8 @@
 /* Context menu item for opening all folder bookmarks */
 "OpenAllBookmarks" = "Åpne alle (%i)";
 
-/* Button title for opening the Asil Browser Rewards panel to settings */
-"OpenBraveRewardsSettings" = "Åpne Asil Browser Rewards-innstillinger";
+/* Button title for opening the Kahf Browser Rewards panel to settings */
+"OpenBraveRewardsSettings" = "Åpne Kahf Browser Rewards-innstillinger";
 
 /* Error description when there is an error while navigating to Files App */
 "OpenDownloadsFolderErrorDescription" = "En ukjent feil oppstod ved åpning av Nedlastinger-mappen i Filer-appen.";
@@ -1301,13 +1301,13 @@
 "opentabs.noSyncChainPlaceHolderViewDescription" = "For å komme i gang kan du sette opp en synkroniseringskjede og veksle mellom «Åpne faner» i synkroniseringsinnstillinger.";
 
 /* The additional description of the view describing tab syncing should be enabled. */
-"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Administrer hva Asil Browser synkroniserer i Innstillinger.";
+"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Administrer hva Kahf Browser synkroniserer i Innstillinger.";
 
 /* The description of the view describing no other sessions are active in sync. */
 "opentabs.noSyncSessionPlaceHolderViewDescription" = "Det er ingen aktive økter å vise fra de andre enhetene dine.";
 
 /* The title of the view showing no synced sessions */
-"opentabs.noSyncSessionPlaceHolderViewTitle" = "Dette området viser Asil Browser-faner som er åpne på andre enheter";
+"opentabs.noSyncSessionPlaceHolderViewTitle" = "Dette området viser Kahf Browser-faner som er åpne på andre enheter";
 
 /* The title for the action to hide open session with all tabs */
 "opentabs.openSessionHideAllActionTitle" = "Skjul inntil videre";
@@ -1360,35 +1360,35 @@
 /* Button title to that opens a website. */
 "OpenWebsite" = "Åpne nettsted";
 
-/* The subtitle description of menu item Asil Browser News */
+/* The subtitle description of menu item Kahf Browser News */
 "optionsMenu.braveNewsItemDescription" = "Dagens toppsaker i en privat nyhetsfeed";
 
-/* Asil Browser News Item Menu title */
+/* Kahf Browser News Item Menu title */
 "optionsMenu.braveNewsItemTitle" = "Nyheter";
 
-/* The subtitle description of menu item Asil Browser Playlist */
+/* The subtitle description of menu item Kahf Browser Playlist */
 "optionsMenu.bravePlaylistItemDescription" = "Lagre en offline-spilleliste av alle videoer/strømmer du vil";
 
-/* Asil Browser News Item Menu title */
+/* Kahf Browser News Item Menu title */
 "optionsMenu.bravePlaylistItemTitle" = "Spilleliste";
 
-/* The subtitle description of menu item Asil Browser Talk */
+/* The subtitle description of menu item Kahf Browser Talk */
 "optionsMenu.braveTalkItemDescription" = "Private videosamtaler direkte i nettleseren";
 
-/* Asil Browser Talk Item Menu title */
+/* Kahf Browser Talk Item Menu title */
 "optionsMenu.braveTalkItemTitle" = "Prat";
 
-/* The subtitle description of menu item Asil Browser VPN */
+/* The subtitle description of menu item Kahf Browser VPN */
 "optionsMenu.braveVPNItemDescription" = "Beskytt hele enheten din på nettet";
 
-/* Asil Browser VPN Item Menu title */
+/* Kahf Browser VPN Item Menu title */
 "optionsMenu.braveVPNItemTitle" = "VPN";
 
-/* The subtitle description of menu item Asil Browser Wallet */
+/* The subtitle description of menu item Kahf Browser Wallet */
 "optionsMenu.braveWalletItemDescription" = "Den sikre kryptolommeboken – ingen utvidelser kreves";
 
 /* Privacy Features Section title */
-"optionsMenu.menuSectionTitle" = "Funksjoner i Asil Browser";
+"optionsMenu.menuSectionTitle" = "Funksjoner i Kahf Browser";
 
 /* Section name for other privacy settings */
 "OtherPrivacySettingsSection" = "Andre personverninnstillinger";
@@ -1396,10 +1396,10 @@
 /* Section name for other settings. */
 "OtherSettingsSection" = "Andre innstillinger";
 
-/* A subtitle shown on the setting that toggles analytics on Asil Browser. */
-"p3a.settingSubtitle" = "Anonymisert P3A-informasjon gjør Asil Browser i stand til å beregne den samlede bruken og sørge for at vi forbedrer de mest populære funksjonene.";
+/* A subtitle shown on the setting that toggles analytics on Kahf Browser. */
+"p3a.settingSubtitle" = "Anonymisert P3A-informasjon gjør Kahf Browser i stand til å beregne den samlede bruken og sørge for at vi forbedrer de mest populære funksjonene.";
 
-/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
+/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Kahf Browser. */
 "p3a.settingTitle" = "Tillat personvernbevarende produktanalyse (P3A)";
 
 /* Title for the section for the global/default zoom level */
@@ -1445,7 +1445,7 @@
 "playList.addToPlayListAlertDescription" = "Vil du legge til denne videoen i spillelisten din?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Legg til i Asil Browser Playlist";
+"playList.addToPlayListAlertTitle" = "Legg til i Kahf Browser Playlist";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "Avspillingsalternativer";
@@ -1466,7 +1466,7 @@
 "playlist.carplaySettingsSectionTitle" = "Innstillinger";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Asil Browser-spilleliste";
+"playlist.carplayTitle" = "Kahf Browser-spilleliste";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Slett offline-bufferdata";
@@ -1484,7 +1484,7 @@
 "playList.loadResourcesErrorAlertDescription" = "Det oppstod et problem under innlastingen av ressursen!";
 
 /* Description footer for playlist menu badge option */
-"playlist.menuBadgeOptionFooterText" = "Etter aktivering vil et merke vises på hovedmenyikonet, hvilket indikerer at videoen på siden kan legges til i Asil Browser-spillelisten.";
+"playlist.menuBadgeOptionFooterText" = "Etter aktivering vil et merke vises på hovedmenyikonet, hvilket indikerer at videoen på siden kan legges til i Kahf Browser-spillelisten.";
 
 /* Title for playlist menu badge option */
 "playlist.menuBadgeOptionTitle" = "Vis menyvarselmerke";
@@ -1493,7 +1493,7 @@
 "playlist.movePlaylistShareActionMenuTitle" = "Flytt …";
 
 /* Detail Text when there are no items in the playlist */
-"playList.noItemLabelDetailLabel" = "Du kan legge til elementer i Asil Browser-spillelisten din inne i nettleseren";
+"playList.noItemLabelDetailLabel" = "Du kan legge til elementer i Kahf Browser-spillelisten din inne i nettleseren";
 
 /* Text when there are no items in the playlist */
 "playList.noItemLabelTitle" = "Ingen tilgjengelige elementer";
@@ -1571,7 +1571,7 @@
 "playList.playListSettingTitle" = "Spilleliste";
 
 /* Body for the error message that shows when a playlist folder already exists */
-"playList.playlistSharedFolderAlreadyExistsBody" = "Denne mappen er allerede i Asil Browser-spillelisten din";
+"playList.playlistSharedFolderAlreadyExistsBody" = "Denne mappen er allerede i Kahf Browser-spillelisten din";
 
 /* Title for the error message that shows when a playlist folder already exists */
 "playList.playlistSharedFolderAlreadyExistsTitle" = "Beklager";
@@ -1607,16 +1607,16 @@
 "playlist.playlistWebCompatibilityTitle" = "Nettkompatibilitet";
 
 /* Body of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddBody" = "Asil Browser-spillelister støtter frakoblet avspilling, bilde-i-bilde, kontinuerlig avspilling og gjentagelsesmoduser.";
+"playlist.popoverAddBody" = "Kahf Browser-spillelister støtter frakoblet avspilling, bilde-i-bilde, kontinuerlig avspilling og gjentagelsesmoduser.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Denne videoen er i Asil Browser-spillelisten din";
+"playlist.popoverAddedTitle" = "Denne videoen er i Kahf Browser-spillelisten din";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "Vil du legge til denne videoen i spillelisten din?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Åpne i Asil Browser-spilleliste";
+"playlist.popoverOpenInBravePlaylist" = "Åpne i Kahf Browser-spilleliste";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Fjern";
@@ -1658,7 +1658,7 @@
 "playlist.sharePlaylistActionDetailsTitle" = "Du kan åpne det gjeldende elementet i en ny fane, eller dele det via systemdelingsmenyen";
 
 /* Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
-"playlist.sharePlaylistActionTitle" = "Asil Browser-spillelistemeny";
+"playlist.sharePlaylistActionTitle" = "Kahf Browser-spillelistemeny";
 
 /* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
 "playlist.sharePlaylistOpenInNewPrivateTabTitle" = "Åpne i privat fane";
@@ -1673,19 +1673,19 @@
 "playList.sorryAlertTitle" = "Beklager";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Lagt til i Asil Browser-spilleliste";
+"playList.toastAddedToPlaylistTitle" = "Lagt til i Kahf Browser-spilleliste";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "Åpne";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Legg til i Asil Browser Playlist";
+"playList.toastAddToPlaylistTitle" = "Legg til i Kahf Browser Playlist";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
-"playList.toastExitingItemPlaylistTitle" = "Vis i Asil Browser Playlist";
+"playList.toastExitingItemPlaylistTitle" = "Vis i Kahf Browser Playlist";
 
 /* Footer for option to disable URL-Bar button */
-"playlist.urlBarButtonOptionFooter" = "Legger til en spilleliste-knapp (den ser ut som 4 linjer med et +-symbol) ved siden av adresselinjen i Asil Browser-nettleseren. Denne knappen gir deg rask tilgang til å åpne spillelisten, eller legge til eller fjerne medier.";
+"playlist.urlBarButtonOptionFooter" = "Legger til en spilleliste-knapp (den ser ut som 4 linjer med et +-symbol) ved siden av adresselinjen i Kahf Browser-nettleseren. Denne knappen gir deg rask tilgang til å åpne spillelisten, eller legge til eller fjerne medier.";
 
 /* Title for option to disable URL-Bar button */
 "playlist.urlBarButtonOptionTitle" = "Aktiver hurtigtilgangsknapp";
@@ -1714,7 +1714,7 @@
 /* The title of the screen where the user will move an item from one folder to another folder. */
 "playlistFolders.moveFolderScreenTitle" = "Flytt";
 
-/* %@ Should NOT be localized. It is a placeholder. Example: Asil Browser Folder and 1 more item. */
+/* %@ Should NOT be localized. It is a placeholder. Example: Kahf Browser Folder and 1 more item. */
 "playlistFolders.moveItemDescription" = "%@ og 1 element til";
 
 /* %lld is a placeholder and should not be localized. Sometimes items can have no name. So this is a generic title to use */
@@ -1723,7 +1723,7 @@
 /* Sometimes an item can have no name. So this is a generic title to use */
 "playlistFolders.moveItemWithNoNameTitle" = "1 element";
 
-/* %@ and %lld Should NOT be localized. They are placeholders. Example: Asil Browser Folder and 3 more items. Music and 2 more items. */
+/* %@ and %lld Should NOT be localized. They are placeholders. Example: Kahf Browser Folder and 3 more items. Music and 2 more items. */
 "playlistFolders.moveMultipleItemDescription" = "%1$@ og %2$lld flere enheter";
 
 /* The title of the button to create a new folder */
@@ -1757,7 +1757,7 @@
 "playlistFolders.untitledFolderTitle" = "Mappe uten navn";
 
 /* Accessibility Title for the button that adds the playlist to the database. */
-"playlistFolderSharing.addButtonAccessibilityTitle" = "Legg til i Asil Browser Playlist-knapp";
+"playlistFolderSharing.addButtonAccessibilityTitle" = "Legg til i Kahf Browser Playlist-knapp";
 
 /* Title for the button that adds the playlist to the database. */
 "playlistFolderSharing.addButtonTitle" = "Legg til";
@@ -1801,7 +1801,7 @@
 /* Description for closing a popover menu that is displayed. */
 "PopoverDefaultClose" = "Lukk kontekstmenyen";
 
-/* Description for closing the `Asil Browser Shields` popover menu that is displayed. */
+/* Description for closing the `Kahf Browser Shields` popover menu that is displayed. */
 "PopoverShieldsMenuClose" = "Lukk Skjold-menyen";
 
 /* Label for preview action on Tab Tray Tab to add current tab to Bookmarks */
@@ -1825,7 +1825,7 @@
 /* Header text, under it we show items blocked by our ad blocker. 'All  time' sentence context is like 'All time items blocked by our ad blocker. */
 "privacyHub.allTimeListsHeader" = "Totalt";
 
-/* Title of a section to show total count of trackers blocked by Asil Browser */
+/* Title of a section to show total count of trackers blocked by Kahf Browser */
 "privacyHub.allTimeListsTrackersView" = "Sporere og annonser";
 
 /* Title of a section to show websites containing highest amount of trackers */
@@ -1849,10 +1849,10 @@
 /* Title under which we display a website on which there's the highest number of trackers or ads. */
 "privacyHub.allTimeWebsiteTitle" = "Nettsted";
 
-/* Text for a button to display a list of all alerts caught by the Asil Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
+/* Text for a button to display a list of all alerts caught by the Kahf Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
 "privacyHub.allVPNAlertsButtonText" = "Alle varsler";
 
-/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Asil Browser Shields', 'Blocked by BraveVPN */
+/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Kahf Browser Shields', 'Blocked by BraveVPN */
 "privacyHub.blockedBy" = "Blokkert av";
 
 /* It says that a ad or tracker was blocked. Think of it in context of 'A tracker X was blocked' */
@@ -1870,8 +1870,8 @@
 /* Header text, under it we display blocked items from last week */
 "privacyHub.lastWeekHeader" = "Siste uke";
 
-/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Asil Browser Shields on 42 sites' */
-"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** ble blokkert av Asil Browser-skjold på **%2$lld** sider";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Kahf Browser Shields on 42 sites' */
+"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** ble blokkert av Kahf Browser-skjold på **%2$lld** sider";
 
 /* Title under which we display a tracker which was most frequently detected by our ad blocking mechanism. */
 "privacyHub.mostFrequentTrackerAndAdTitle" = "Vanligste sporer & annonse";
@@ -1889,7 +1889,7 @@
 "privacyHub.notificationCalloutButtonText" = "Slå på varsler";
 
 /* Message of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
-"privacyHub.notificationMessage" = "En oppsummering over hvordan Asil Browser har beskyttet deg på nettet denne uken.";
+"privacyHub.notificationMessage" = "En oppsummering over hvordan Kahf Browser har beskyttet deg på nettet denne uken.";
 
 /* Title of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
 "privacyHub.notificationTitle" = "Ukentlig personvernrapport";
@@ -1903,7 +1903,7 @@
 /* Text of a disclaimer that explains how the data for generating privacy reprots is stored. */
 "privacyHub.privacyReportsDisclaimer" = "Privacy Hub-data lagres lokalt og sendes aldri noen steder.";
 
-/* Title of main privacy hub screen. This screen shows various stats caught by Asil Browser's ad blockers. */
+/* Title of main privacy hub screen. This screen shows various stats caught by Kahf Browser's ad blockers. */
 "privacyHub.privacyReportsTitle" = "Privacy Hub";
 
 /* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which website had the most tracker per visit, example usage: 'example.com had an average of 10 trackers & ads blocked per visit ' */
@@ -1912,22 +1912,22 @@
 /* Title of a website that contained the most trackers per visit. */
 "privacyHub.riskiestWebsiteTitle" = "Siden med flest sporere";
 
-/* This text explains a setting that lets Asil Browser monitor blocked network requests */
-"privacyHub.settingsEnableShieldsFooter" = "I Privacy Hub ser du et tall for hvor mange ting Asil Browser-skjoldet har blokkert. Innstillingen påvirker ikke Skjold-telleren på nye faner, og Skjold-data telles ikke i private vinduer.";
+/* This text explains a setting that lets Kahf Browser monitor blocked network requests */
+"privacyHub.settingsEnableShieldsFooter" = "I Privacy Hub ser du et tall for hvor mange ting Kahf Browser-skjoldet har blokkert. Innstillingen påvirker ikke Skjold-telleren på nye faner, og Skjold-data telles ikke i private vinduer.";
 
-/* Title of a setting that lets Asil Browser monitor blocked network requests */
+/* Title of a setting that lets Kahf Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsTitle" = "Vis Skjold-data";
 
-/* This text explains a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+/* This text explains a setting that lets Kahf Browser monitor blocked network requests captured by Kahf Browser VPN */
 "privacyHub.settingsEnableVPNAlertsFooter" = "Innstillingen gjelder bare hvis du har kjøpt et VPN-abonnement.";
 
-/* Title of a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+/* Title of a setting that lets Kahf Browser monitor blocked network requests captured by Kahf Browser VPN */
 "privacyHub.settingsEnableVPNAlertsTitle" = "Vis VPN-varsler";
 
 /* This text explains what the button to clear datain the Privacy Hub is for. */
 "privacyHub.settingsSlearDataFooter" = "Tilbakestiller tallet for alt Skjoldet har blokkert.";
 
-/* Button that lets user clear all blocked requests and vpn alerts data that Asil Browser captured for them. */
+/* Button that lets user clear all blocked requests and vpn alerts data that Kahf Browser captured for them. */
 "privacyHub.settingsSlearDataTitle" = "Slett Skjold-data";
 
 /* This label says shields, as a source of by what a resource was blocked. Think of it in context of 'Blocked by Shields' */
@@ -1952,15 +1952,15 @@
 "privacyHub.vpnAlertRegularTrackerTypeSingular" = "Sporer eller annonse";
 
 /* Section title, this section displays vpn alerts: items which the vpn managed to block on users behalf. */
-"privacyHub.vpnAlertsHeader" = "Asil Browser Firewall + VPN-varsler";
+"privacyHub.vpnAlertsHeader" = "Kahf Browser Firewall + VPN-varsler";
 
-/* This label says about Asil Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
+/* This label says about Kahf Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
 "privacyHub.vpnLabel" = "Firewall + VPN";
 
 /* It shows a total count of items blocked by our VPN shields */
 "privacyHub.vpvnAlertsTotalCount" = "Totalt antall";
 
-/* Show Asil Browser Browser Privacy Policy page from the Privacy section in the settings. */
+/* Show Kahf Browser Browser Privacy Policy page from the Privacy section in the settings. */
 "PrivacyPolicy" = "Personvernreglene";
 
 /* Private button title */
@@ -1976,10 +1976,10 @@
 "PrivateBrowsingOnlyWarning" = "Modusen Kun privat nettlesing vil lukke alle de gjeldende fanene og logge deg ut av alle nettstedene.";
 
 /* Private tab details */
-"PrivateTabBody" = "Private faner blir ikke lagret i Asil Browser, men de gjør deg ikke anonym på nett. Sidene du besøker i private faner, vises ikke i historikken din, og informasjonskapslene deres forsvinner alltid når du lukker dem – det vil ikke være spor etter dem i Asil Browser. Nedlastinger vil derimot lagres.\nMobilleverandøren din (eller eieren av Wi-Fi-nettverket eller VPN-en du er tilkoblet) kan se hvilke sider du besøker, og disse sidene vil ha din offentlige IP-adresse, selv i private faner.";
+"PrivateTabBody" = "Private faner blir ikke lagret i Kahf Browser, men de gjør deg ikke anonym på nett. Sidene du besøker i private faner, vises ikke i historikken din, og informasjonskapslene deres forsvinner alltid når du lukker dem – det vil ikke være spor etter dem i Kahf Browser. Nedlastinger vil derimot lagres.\nMobilleverandøren din (eller eieren av Wi-Fi-nettverket eller VPN-en du er tilkoblet) kan se hvilke sider du besøker, og disse sidene vil ha din offentlige IP-adresse, selv i private faner.";
 
 /* Private tab detail text */
-"PrivateTabDetails" = "Det å bruke private faner påvirker kun det Asil Browser gjør på enheten din, det forandrer ikke andres adferd.\n\nNettsteder får alltid vite IP-adressen din når du besøker dem. Ut ifra dette kan de ofte gjette omtrent hvor du befinner deg, men vanligvis er ikke dette mer nøyaktig enn hvilken by du er i. Noen ganger kan imidlertid posisjonen de anslår, være mer spesifikk. Nettsteder får også vite alt du spesifikt oppgir til dem, som søkeord. Hvis du logger på et nettsted, vet nettstedet at du eier den gjeldende kontoen. Du blir likevel logget ut når du lukker de private fanene, for Asil Browser kaster informasjonskapselen som holder deg pålogget.\n\nDen som kobler deg til internett (vanligvis internettleverandøren din) kan se all aktiviteten på nettverket ditt. Ofte er internettleverandøren mobilleverandøren din. Hvis du er koblet til et Wi-Fi-nettverk, er internettleverandøren eieren av nettverket, og hvis du bruker en VPN, er det den som drifter VPN-en. Internettleverandøren din kan se hvilke nettsteder du besøker, samtidig som du besøker dem. Hvis disse nettstedene bruker HTTPS, kan internettleverandøren gjøre mer enn en kvalifisert gjetning angående hva du foretar deg på slike nettsteder. Hvis et nettsted kun bruker HTTP, kan imidlertid internettleverandøren din se alt: søkeordene dine, hvilke sider du leser, og hvilke lenker du følger.\n\nHvis arbeidsgiveren din administrerer enheten din, kan arbeidsgiveren også se hva du gjør med den. Det å bruke private faner vil sannsynligvis ikke hindre at de finner ut hvilke nettsteder du har besøkt. Andre som har tilgang til enheten din, kan også ha installert programvare som overvåker aktiviteten din, og private faner beskytter deg heller ikke mot dette.";
+"PrivateTabDetails" = "Det å bruke private faner påvirker kun det Kahf Browser gjør på enheten din, det forandrer ikke andres adferd.\n\nNettsteder får alltid vite IP-adressen din når du besøker dem. Ut ifra dette kan de ofte gjette omtrent hvor du befinner deg, men vanligvis er ikke dette mer nøyaktig enn hvilken by du er i. Noen ganger kan imidlertid posisjonen de anslår, være mer spesifikk. Nettsteder får også vite alt du spesifikt oppgir til dem, som søkeord. Hvis du logger på et nettsted, vet nettstedet at du eier den gjeldende kontoen. Du blir likevel logget ut når du lukker de private fanene, for Kahf Browser kaster informasjonskapselen som holder deg pålogget.\n\nDen som kobler deg til internett (vanligvis internettleverandøren din) kan se all aktiviteten på nettverket ditt. Ofte er internettleverandøren mobilleverandøren din. Hvis du er koblet til et Wi-Fi-nettverk, er internettleverandøren eieren av nettverket, og hvis du bruker en VPN, er det den som drifter VPN-en. Internettleverandøren din kan se hvilke nettsteder du besøker, samtidig som du besøker dem. Hvis disse nettstedene bruker HTTPS, kan internettleverandøren gjøre mer enn en kvalifisert gjetning angående hva du foretar deg på slike nettsteder. Hvis et nettsted kun bruker HTTP, kan imidlertid internettleverandøren din se alt: søkeordene dine, hvilke sider du leser, og hvilke lenker du følger.\n\nHvis arbeidsgiveren din administrerer enheten din, kan arbeidsgiveren også se hva du gjør med den. Det å bruke private faner vil sannsynligvis ikke hindre at de finner ut hvilke nettsteder du har besøkt. Andre som har tilgang til enheten din, kan også ha installert programvare som overvåker aktiviteten din, og private faner beskytter deg heller ikke mot dette.";
 
 /* Private tab information link */
 "PrivateTabLink" = "Lær om private faner.";
@@ -1993,8 +1993,8 @@
 /* Title for quick-search engines settings section. */
 "QuickSearchEngines" = "Søkemotorer for raske søk";
 
-/* Open the App Store to rate Asil Browser. */
-"RateBrave" = "Vurder Asil Browser";
+/* Open the App Store to rate Kahf Browser. */
+"RateBrave" = "Vurder Kahf Browser";
 
 /* Accessibility label for button increasing font size in display settings of reader mode */
 "ReaderModeBiggerFontButtonAccessibilityLabel" = "Øk tekststørrelse";
@@ -2023,13 +2023,13 @@
 /* Accessibility hint for the font type buttons in reader mode display settings */
 "ReaderModeFontTypeButtonAccessibilityHint" = "Endrer fonttypen.";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModeLoadingContentDisplayText" = "Laster inn innhold …";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModeLoadOriginalLinkText" = "Last inn original side";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModePageCantShowDisplayText" = "Siden kunne ikke vises i lesevisning.";
 
 /* Title of a bar that show up when you enter reader mode. */
@@ -2117,7 +2117,7 @@
 "ReportBrokenSiteBody1" = "Fortell Braves utviklere at dette nettstedet ikke funker ordentlig med Shields:";
 
 /* No comment provided by engineer. */
-"ReportBrokenSiteBody2" = "Merk: Denne nettadressen vil sendes inn med Asil Browser-versjonsnummeret ditt og IP-adressen din (som ikke vil bli lagret).";
+"ReportBrokenSiteBody2" = "Merk: Denne nettadressen vil sendes inn med Kahf Browser-versjonsnummeret ditt og IP-adressen din (som ikke vil bli lagret).";
 
 /* No comment provided by engineer. */
 "ReportBrokenSubmitButtonTitle" = "Send inn";
@@ -2135,33 +2135,33 @@
 "RestoreTabNegativeButtonTitle" = "Nei";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Det ser ut til at Asil Browser krasjet. Vil du gjenopprette fanene dine?";
+"RestoreTabOnCrashAlertMessage" = "Det ser ut til at Kahf Browser krasjet. Vil du gjenopprette fanene dine?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "Dette er litt flaut.";
 
-/* Body for Asil Browser Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInBody" = "Med Asil Browser Rewards kan du se annonser fra Asil Browser Ads-nettverket som respekterer personvernet ditt. Ingen sporere. Ingen forsinkelser. Og dataene dine forblir helt trygge.";
+/* Body for Kahf Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInBody" = "Med Kahf Browser Rewards kan du se annonser fra Kahf Browser Ads-nettverket som respekterer personvernet ditt. Ingen sporere. Ingen forsinkelser. Og dataene dine forblir helt trygge.";
 
-/* Title for Asil Browser Talk rewards opt-in screen button */
+/* Title for Kahf Browser Talk rewards opt-in screen button */
 "rewards.braveTalkRewardsOptInButtonTitle" = "Slå på Rewards";
 
-/* Body for successful Asil Browser Talk rewards opt-in */
-"rewards.braveTalkRewardsOptInSuccessBody" = "Klikk hvor som helst på skjermen for å fortsette til Asil Browser Talk.";
+/* Body for successful Kahf Browser Talk rewards opt-in */
+"rewards.braveTalkRewardsOptInSuccessBody" = "Klikk hvor som helst på skjermen for å fortsette til Kahf Browser Talk.";
 
-/* Title for successful Asil Browser Talk rewards opt-in */
+/* Title for successful Kahf Browser Talk rewards opt-in */
 "rewards.braveTalkRewardsOptInSuccessTitle" = "Du kan nå starte et gratis anrop";
 
-/* Title for Asil Browser Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInTitle" = "For å starte et gratis anrop, må du slå på Asil Browser Rewards";
+/* Title for Kahf Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInTitle" = "For å starte et gratis anrop, må du slå på Kahf Browser Rewards";
 
-/* Displayed when Asil Browser Rewards is disabled */
+/* Displayed when Kahf Browser Rewards is disabled */
 "rewards.disabledBody" = "Skru på for å støtte innholdsskapere";
 
 /* Displayed in the status container when rewards is disabled */
-"rewards.disabledStatusBody" = "Ved å bruke Asil Browser Rewards støtter du innholdsskapere mens du er på nettet.";
+"rewards.disabledStatusBody" = "Ved å bruke Kahf Browser Rewards støtter du innholdsskapere mens du er på nettet.";
 
-/* Displayed when Asil Browser Rewards is enabled */
+/* Displayed when Kahf Browser Rewards is enabled */
 "rewards.enabledBody" = "Du bidrar til å støtte innholdsskapere";
 
 /* Displayed in the status container when rewards is enabled but you're not currently supporting any publishers (0 AC count) */
@@ -2186,7 +2186,7 @@
 "rewards.legacyWalletTransferStatusButtonPendingTitle" = "Din overføring til Legacy-lommeboken venter";
 
 /* No comment provided by engineer. */
-"rewards.legacyWalletTransferStatusCompletedBody" = "Din overføring til Legacy-lommeboken er ferdig! Det kan fortsatt ta flere minutter før den eksisterende saldoen din vises i Asil Browser Rewards-lommeboken på skrivebordet.";
+"rewards.legacyWalletTransferStatusCompletedBody" = "Din overføring til Legacy-lommeboken er ferdig! Det kan fortsatt ta flere minutter før den eksisterende saldoen din vises i Kahf Browser Rewards-lommeboken på skrivebordet.";
 
 /* Title shown above body of text explaining that their transfer is completed */
 "rewards.legacyWalletTransferStatusCompletedTitle" = "Overføring fullført!";
@@ -2237,13 +2237,13 @@
 "rewards.optInDisclaimer" = "Ved å klikke, samtykker du til %1$@ og %2$@. Deaktiver dette når som helst i innstillingene.";
 
 /* No comment provided by engineer. */
-"rewards.settingsFooterMessage" = "Asil Browser Rewards-utbetalinger er midlertidig utilgjengelige på denne enheten. Overfør midler fra din eksisterende lommebok til en stasjonær lommebok for å beholde tokener.";
+"rewards.settingsFooterMessage" = "Kahf Browser Rewards-utbetalinger er midlertidig utilgjengelige på denne enheten. Overfør midler fra din eksisterende lommebok til en stasjonær lommebok for å beholde tokener.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleMessage" = "Støtt innholdsskapere og utgivere automatisk ved å aktivere Asil Browser Private Ads. Asil Browser Private Ads er annonser som respekterer personvern og som gir tilbake til innholdsskapere.";
+"rewards.settingsToggleMessage" = "Støtt innholdsskapere og utgivere automatisk ved å aktivere Kahf Browser Private Ads. Kahf Browser Private Ads er annonser som respekterer personvern og som gir tilbake til innholdsskapere.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleTitle" = "Aktiver Asil Browser Rewards";
+"rewards.settingsToggleTitle" = "Aktiver Kahf Browser Rewards";
 
 /* Displayed under verified publishers */
 "rewards.supportingPublisher" = "Du støtter innholdsskapere som denne.";
@@ -2258,19 +2258,19 @@
 "rewards.unverifiedPublisher" = "Denne skaperen har ikke blitt verifisert og vil ikke bli inkludert i skaperstøtten";
 
 /* A confirmation message shown to the user after completing a wallet transfer successfully */
-"rewards.walletTransferCompleteBody" = "Overføringen din har startet. En eksisterende BAT-saldo kan ta flere minutter før den vises på Asil Browser Rewards-lommeboken din på skrivebordet. Sjekk Rewards-sammendraget ditt på skrivebordet for detaljer når overføringen er fullført.\n\nDu kan lukke dette vinduet og fortsette å bruke Asil Browser mens overføringen pågår.";
+"rewards.walletTransferCompleteBody" = "Overføringen din har startet. En eksisterende BAT-saldo kan ta flere minutter før den vises på Kahf Browser Rewards-lommeboken din på skrivebordet. Sjekk Rewards-sammendraget ditt på skrivebordet for detaljer når overføringen er fullført.\n\nDu kan lukke dette vinduet og fortsette å bruke Kahf Browser mens overføringen pågår.";
 
 /* Title shown above the confirmation message after completing a wallet transfer successfully */
 "rewards.walletTransferCompleteTitle" = "Saldooverføring er igangsatt";
 
 /* Message on the alert presented if wallet transfer fails */
-"rewards.walletTransferFailureAlertMessage" = "Asil Browser Rewards-serveren svarte ikke. Prøv igjen om et øyeblikk.";
+"rewards.walletTransferFailureAlertMessage" = "Kahf Browser Rewards-serveren svarte ikke. Prøv igjen om et øyeblikk.";
 
 /* Title on the alert presented if wallet transfer fails */
 "rewards.walletTransferFailureAlertTitle" = "Kommunikasjonsfeil";
 
 /* Describes the steps for using wallet transfer */
-"rewards.walletTransferStepsBody" = "Asil Browser Rewards-saldoen din kan overføres til en eksisterende stasjonær Asil Browser Rewards-lommebok, én gang.\n\n1. Åpne Asil Browser Browser på skrivebordet\n2. Gå til Asil Browser://rewards\n3. Klikk på “QR-kode”\n4. Skann QR-kode med enheten din";
+"rewards.walletTransferStepsBody" = "Kahf Browser Rewards-saldoen din kan overføres til en eksisterende stasjonær Kahf Browser Rewards-lommebok, én gang.\n\n1. Åpne Kahf Browser Browser på skrivebordet\n2. Gå til Kahf Browser://rewards\n3. Klikk på “QR-kode”\n4. Skann QR-kode med enheten din";
 
 /* Title above the steps to use wallet transfer */
 "rewards.walletTransferStepsTitle" = "Skann engangskode for overføring";
@@ -2303,7 +2303,7 @@
 "RewardsInternalsContributionAmount" = "Bidragsbeløp";
 
 /* No comment provided by engineer. */
-"RewardsInternalsContributionProcessorBraveTokens" = "Asil Browser-tokener";
+"RewardsInternalsContributionProcessorBraveTokens" = "Kahf Browser-tokener";
 
 /* No comment provided by engineer. */
 "RewardsInternalsContributionProcessorNone" = "Ingen";
@@ -2455,7 +2455,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsShare" = "Del";
 
-/* 'Rewards' as in 'Asil Browser Rewards' */
+/* 'Rewards' as in 'Kahf Browser Rewards' */
 "RewardsInternalsShareInternalsTitle" = "Del Rewards Internals";
 
 /* No comment provided by engineer. */
@@ -2473,7 +2473,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsSupported" = "Støttet";
 
-/* 'Rewards' as in 'Asil Browser Rewards' */
+/* 'Rewards' as in 'Kahf Browser Rewards' */
 "RewardsInternalsTitle" = "Rewards Internals";
 
 /* No comment provided by engineer. */
@@ -2588,24 +2588,24 @@
 "SearchSuggestionsSectionHeader" = "Søkeforslag";
 
 /* Title of an action that allows user to perform a one-click web search for selected text */
-"SearchWithBrave" = "Søk med Asil Browser";
+"SearchWithBrave" = "Søk med Kahf Browser";
 
 /* Settings security section title */
 "Security" = "Sikkerhet";
 
 /* Message displayed in the crash dialog above the buttons used to select when sending reports */
-"SendCrashReportAlertMessage" = "Sende en krasjrapport, slik at Asil Browser kan fikse problemet?";
+"SendCrashReportAlertMessage" = "Sende en krasjrapport, slik at Kahf Browser kan fikse problemet?";
 
 /* Title for prompt displayed to user after the app crashes */
-"SendCrashReportAlertTitle" = "Oi! Asil Browser krasjet";
+"SendCrashReportAlertTitle" = "Oi! Kahf Browser krasjet";
 
 /* Used as a button label for crash dialog prompt */
 "SendReportButtonTitle" = "Send rapport";
 
 /* No comment provided by engineer. */
-"setDefaultBrowserCalloutTitle" = "Asil Browser kan nå angis som standard nettleser i iOS. Trykk her for å åpne innstillingene.";
+"setDefaultBrowserCalloutTitle" = "Kahf Browser kan nå angis som standard nettleser i iOS. Trykk her for å åpne innstillingene.";
 
-/* Settings item to set the Asil Browser as a default browser on the iOS device. */
+/* Settings item to set the Kahf Browser as a default browser on the iOS device. */
 "setDefaultBrowserSettingsCell" = "Angi som standard nettleser";
 
 /* No comment provided by engineer. */
@@ -2627,7 +2627,7 @@
 "settings.autocloseTabsSetting" = "Lukk faner";
 
 /* Description of autoclose tabs feature. */
-"settings.autocloseTabsSettingFooter" = "La Asil Browser automatisk lukke faner som ikke har blitt vist i det siste.";
+"settings.autocloseTabsSettingFooter" = "La Kahf Browser automatisk lukke faner som ikke har blitt vist i det siste.";
 
 /* Error message that is shown in settings when there was a problem loading */
 "SettingsContentLoadErrorMessage" = "Kunne ikke laste inn side.";
@@ -2687,7 +2687,7 @@
 "shieldEducation.shareTheNewsTitle" = "Del nyhetene";
 
 /* Subtitle for Shield Education Tracker Ad Warning */
-"shieldEducation.trackerAdWarningSubTitle" = "Asil Browser Shields beskyttet nettopp personvernet ditt på nettet.";
+"shieldEducation.trackerAdWarningSubTitle" = "Kahf Browser Shields beskyttet nettopp personvernet ditt på nettet.";
 
 /* Subtitle for Shield Education Tracker Count Share */
 "shieldEducation.trackerCountShareSubtitle" = "Gratulerer. Du er noe for deg selv.";
@@ -2702,7 +2702,7 @@
 "shieldEducation.videoAdBlockTitle" = "Annonser blokkeres mens du ser på videoer på dette nettstedet.";
 
 /* Section title for adbblock, tracking protection, HTTPS-E, and cookies */
-"ShieldsDefaults" = "Globale standarder for Asil Browser Shields";
+"ShieldsDefaults" = "Globale standarder for Kahf Browser Shields";
 
 /* Section footer for global shields defaults */
 "ShieldsDefaultsFooter" = "Dette er standard Shields-innstillinger for nye nettsteder. Å endre disse påvirker ikke de eksisterende innstillingene per nettsted.";
@@ -2738,7 +2738,7 @@
 "ShortcutItemTitleQRCode" = "Skann QR-kode";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeBraveNewsDescription" = "Åpne Asil Browser News og sjekk dagens nyheter";
+"shortcuts.activityTypeBraveNewsDescription" = "Åpne Kahf Browser News og sjekk dagens nyheter";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeClearHistoryDescription" = "Åpne nettleseren i en ny fane og slett den private nettleserens historikk";
@@ -2747,7 +2747,7 @@
 "shortcuts.activityTypeClearHistorySuggestedPhrase" = "Slett nettleserhistorikk";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeClearHistoryTitle" = "Slett Asil Browser-nettleserhistorikk";
+"shortcuts.activityTypeClearHistoryTitle" = "Slett Kahf Browser-nettleserhistorikk";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeEnableVPNDescription" = "Åpne nettleseren i en ny fane og aktiver VPN";
@@ -2756,7 +2756,7 @@
 "shortcuts.activityTypeEnableVPNSuggestedPhrase" = "Aktiver VPN";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeEnableVPNTitle" = "Åpne Asil Browser-nettleseren og aktiver VPN";
+"shortcuts.activityTypeEnableVPNTitle" = "Åpne Kahf Browser-nettleseren og aktiver VPN";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeNewPrivateTabSuggestedPhrase" = "Åpne en ny privat fane";
@@ -2771,10 +2771,10 @@
 "shortcuts.activityTypeNewTabTitle" = "Åpne en ny nettleserfane";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveNewsTitle" = "Åpne Asil Browser News";
+"shortcuts.activityTypeOpenBraveNewsTitle" = "Åpne Kahf Browser News";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Åpne Asil Browser News";
+"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Åpne Kahf Browser News";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeOpenPlaylistDescription" = "Begynn å spille av videoene i spillelisten";
@@ -2786,7 +2786,7 @@
 "shortcuts.activityTypeOpenPlaylistTitle" = "Åpne spilleliste";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeTabDescription" = "Begynn å søke på nettet på trygt vis med Asil Browser";
+"shortcuts.activityTypeTabDescription" = "Begynn å søke på nettet på trygt vis med Kahf Browser";
 
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenBookmarkSuggestedPhrase" = "Åpne det bokmerkede nettstedet";
@@ -2797,8 +2797,8 @@
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenWebsiteSuggestedPhrase" = "Åpne nettsted";
 
-/* Description for opening Asil Browser Settings for altering Siri shortcut. */
-"shortcuts.shortcutOpenApplicationSettingsDescription" = "Dette alternativet åpner Asil Browser-innstillinger. For å endre forskjellige Siri-alternativer, kan du velge 'Siri og søk' i menyen og tilpasse valgene dine.";
+/* Description for opening Kahf Browser Settings for altering Siri shortcut. */
+"shortcuts.shortcutOpenApplicationSettingsDescription" = "Dette alternativet åpner Kahf Browser-innstillinger. For å endre forskjellige Siri-alternativer, kan du velge 'Siri og søk' i menyen og tilpasse valgene dine.";
 
 /* Button title that open application settings */
 "shortcuts.shortcutOpenApplicationSettingsTitle" = "Åpne innstillinger";
@@ -2810,16 +2810,16 @@
 "shortcuts.shortcutSettingsClearBrowserHistoryTitle" = "Slett nettleserhistorikk";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsEnableVPNDescription" = "Bruk snarveier for å aktivere Asil Browser VPN via Siri – Stemmeassistent";
+"shortcuts.shortcutSettingsEnableVPNDescription" = "Bruk snarveier for å aktivere Kahf Browser VPN via Siri – Stemmeassistent";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsEnableVPNTitle" = "Aktiver VPN";
 
-/* Description of Open Asil Browser News Siri Shortcut in Settings Screen */
-"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Bruk snarveier for å åpne en ny fane og vise Asil Browser-nyhetsfeeden via Siri – Stemmeassistent";
+/* Description of Open Kahf Browser News Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Bruk snarveier for å åpne en ny fane og vise Kahf Browser-nyhetsfeeden via Siri – Stemmeassistent";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Åpne Asil Browser News";
+"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Åpne Kahf Browser News";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsOpenNewPrivateTabDescription" = "Bruk snarveier for å åpne en ny privat fane via Siri – Stemmeassistent";
@@ -2878,14 +2878,14 @@
 /* No comment provided by engineer. */
 "SiteReportedTitle" = "Takk skal du ha";
 
-/* Asil Browser panel topmost title */
+/* Kahf Browser panel topmost title */
 "SiteShieldSettings" = "Skjold";
 
 /* Title used when in warning pop-over when domain specific data save appears */
-"socialSharing.domainSpecificDataSavedTitle" = "Hver dag sparer jeg data ved å surfe på nettet med Asil Browser.";
+"socialSharing.domainSpecificDataSavedTitle" = "Hver dag sparer jeg data ved å surfe på nettet med Kahf Browser.";
 
-/* Text used for social sharing together with Asil Browser Shield values */
-"socialSharing.shareDescriptionTitle" = "Hver dag sparer jeg data ved å surfe på nettet med Asil Browser.";
+/* Text used for social sharing together with Kahf Browser Shield values */
+"socialSharing.shareDescriptionTitle" = "Hver dag sparer jeg data ved å surfe på nettet med Kahf Browser.";
 
 /* Open search section of settings */
 "StandardTabSearch" = "Standard fane";
@@ -2917,8 +2917,8 @@
 /* Title for Sync Settings Toggle Header */
 "sync.syncSettingsTitle" = "Synkroniser innstillinger";
 
-/* Text that informs a user about Asil Browser Sync service deprecation. */
-"sync.syncV1DeprecationText" = "En ny versjon av Asil Browser Sync er på vei, og dette vil påvirke oppsettet ditt. Gjør deg klar for oppgraderingen.";
+/* Text that informs a user about Kahf Browser Sync service deprecation. */
+"sync.syncV1DeprecationText" = "En ny versjon av Kahf Browser Sync er på vei, og dette vil påvirke oppsettet ditt. Gjør deg klar for oppgraderingen.";
 
 /* Message for popup when the bookmark migration fails */
 "sync.v2MigrationErrorMessage" = "Kunne ikke flytte bokmerkene. Prøv igjen senere.";
@@ -2933,7 +2933,7 @@
 "sync.v2MigrationInterstitialTitle" = "Flytting av bokmerker";
 
 /* Message for popup to inform the user that bookmarks migration is required for sync */
-"sync.v2MigrationMessage" = "For å kunne bruke Asil Browser Sync, må dine eksisterende bokmerker overføres for å kunne benytte det nye systemet. Denne handlingen vil ikke slette bokmerkene dine.";
+"sync.v2MigrationMessage" = "For å kunne bruke Kahf Browser Sync, må dine eksisterende bokmerker overføres for å kunne benytte det nye systemet. Denne handlingen vil ikke slette bokmerkene dine.";
 
 /* Button to perform bookmarks migration in order to support sync */
 "sync.v2MigrationOKButton" = "Flytt";
@@ -2975,7 +2975,7 @@
 "SyncComputerDevice" = "Datamaskin";
 
 /* Sync Error Description */
-"syncDeprecatedVersionError" = "Denne synkroniseringskoden er generert av en utdatert versjon av Asil Browser på en annen enhet. Oppdater Asil Browser på alle synkroniserte enheter og prøv på nytt.";
+"syncDeprecatedVersionError" = "Denne synkroniseringskoden er generert av en utdatert versjon av Kahf Browser på en annen enhet. Oppdater Kahf Browser på alle synkroniserte enheter og prøv på nytt.";
 
 /* Sync you browser settings across devices. */
 "SyncDevices" = "Enheter og innstillinger";
@@ -2996,10 +2996,10 @@
 "SyncInitErrorTitle" = "Kommunikasjonsfeil ved synkronisering";
 
 /* Default name for a device */
-"syncJoinChainCameraWarning" = "Dette gjør at Asil Browser-dataene dine, potensielt inkludert passordene dine, deles med enheten som genererte denne QR-koden. Dobbeltsjekk at denne QR-koden ble generert av en av dine egne enheter. Er du sikker på at du vil gjøre dette?";
+"syncJoinChainCameraWarning" = "Dette gjør at Kahf Browser-dataene dine, potensielt inkludert passordene dine, deles med enheten som genererte denne QR-koden. Dobbeltsjekk at denne QR-koden ble generert av en av dine egne enheter. Er du sikker på at du vil gjøre dette?";
 
 /* Default name for a device */
-"syncJoinChainCodewordsWarning" = "Dette gjør at Asil Browser-dataene dine, potensielt inkludert passordene dine, deles med enheten som genererte disse kodeordene. Dobbeltsjekk at disse kodeordene ble generert av en av dine egne enheter. Er du sikker på at du vil gjøre dette?";
+"syncJoinChainCodewordsWarning" = "Dette gjør at Kahf Browser-dataene dine, potensielt inkludert passordene dine, deles med enheten som genererte disse kodeordene. Dobbeltsjekk at disse kodeordene ble generert av en av dine egne enheter. Er du sikker på at du vil gjøre dette?";
 
 /* Title for pairing sync device */
 "syncJoinChainWarningTitle" = "Advarsel";
@@ -3062,7 +3062,7 @@
 "SyncToDevice" = "Synkroniser til enhet";
 
 /* Sync to existing device description */
-"SyncToDeviceDescription" = "Bruk en enhet som allerede er synkronisert. Åpne innstillingene for Asil Browser, og naviger til Innstillinger -> Synkronisering. Velg «Legg til enhet», og skann koden som vises på skjermen.";
+"SyncToDeviceDescription" = "Bruk en enhet som allerede er synkronisert. Åpne innstillingene for Kahf Browser, og naviger til Innstillinger -> Synkronisering. Velg «Legg til enhet», og skann koden som vises på skjermen.";
 
 /* Description on popup when setting up a sync group fails */
 "SyncUnableCreateGroup" = "Kan ikke synkronisere denne enheten";
@@ -3160,14 +3160,14 @@
 /* No comment provided by engineer. */
 "TermsOfService" = "Vilkår for bruk";
 
-/* Show Asil Browser Browser TOS page from the Privacy section in the settings. */
+/* Show Kahf Browser Browser TOS page from the Privacy section in the settings. */
 "TermsOfUse" = "Bruksvilkår";
 
 /* Text for button to share referral's QR code. */
 "themeQRCodeShareButton" = "Del ...";
 
 /* Title for QR popup encouraging users to share the code with their friends. */
-"themeQRCodeShareTitle" = "Del Asil Browser med vennene dine!";
+"themeQRCodeShareTitle" = "Del Kahf Browser med vennene dine!";
 
 /* Selection to automatically color/style the user interface. */
 "ThemesAutomaticOption" = "Automatisk";
@@ -3209,13 +3209,13 @@
 "today.addSourceNoFeedsFoundMessage" = "Beklager, den feed-adressen er uten innhold.";
 
 /* The action title displayed in the iOS share menu */
-"today.addSourceShareTitle" = "Legg til kilde i Asil Browser News";
+"today.addSourceShareTitle" = "Legg til kilde i Kahf Browser News";
 
 /* A header title shown above a button that will allow the user to fetch RSS feeds for a website they have typed in */
 "today.availableRSSFeedsHeaderTitle" = "Tilgjengelige RSS-feeder";
 
 /* The name of the feature */
-"today.braveToday" = "Asil Browser News";
+"today.braveToday" = "Kahf Browser News";
 
 /* Shown below 'Channels' explaining what will be shown when tapping on it. */
 "today.channelsButtonSubtitle" = "Følg emner som interesserer deg";
@@ -3235,13 +3235,13 @@
 /* No comment provided by engineer. */
 "today.deals" = "Tilbud";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
-"today.disabledAlertBody" = "Asil Browser News slutter å vise innhold fra %@";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
+"today.disabledAlertBody" = "Kahf Browser News slutter å vise innhold fra %@";
 
 /* No comment provided by engineer. */
 "today.disabledAlertTitle" = "Deaktivert";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
 "today.disablePublisherContent" = "Skjul innhold fra %@";
 
 /* No comment provided by engineer. */
@@ -3250,11 +3250,11 @@
 /* No comment provided by engineer. */
 "today.emptyFeedTitle" = "Ingen artikler å vise";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
 "today.enablePublisherContent" = "Tillat innhold fra %@";
 
 /* No comment provided by engineer. */
-"today.errorGeneralBody" = "Asil Browser News opplever for øyeblikket problemer. Prøv igjen.";
+"today.errorGeneralBody" = "Kahf Browser News opplever for øyeblikket problemer. Prøv igjen.";
 
 /* No comment provided by engineer. */
 "today.errorGeneralTitle" = "Oops …";
@@ -3271,7 +3271,7 @@
 /* A toggle title shown next to a source or channel that the user can follow. When tapped switches to 'Unfollow' */
 "today.followToggleTitle" = "Følg";
 
-/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Asil Browser.com'. */
+/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Kahf Browser.com'. */
 "today.getFeedsFromSiteButtonTitle" = "Få feeder fra";
 
 /* \"OPML\" is a file extension that contains a list of rss feeds. */
@@ -3280,20 +3280,20 @@
 /* The header above the list of insecure sources */
 "today.insecureSourcesHeader" = "Usikre kilder – legg til på egen risiko";
 
-/* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "Følg de mest interessante kildene direkte i din egen feed. Bare åpne en fane i Asil Browser, rull ned, og – voilà!\nAsilBrowser News er en annonsestøttet tjeneste med private og anonymiserte annonser.";
+/* Shown above a button that turns on the \"Kahf Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
+"today.introCardBody" = "Følg de mest interessante kildene direkte i din egen feed. Bare åpne en fane i Kahf Browser, rull ned, og – voilà!\nKahf Browser News er en annonsestøttet tjeneste med private og anonymiserte annonser.";
 
-/* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
-"today.introCardTitle" = "Slå på Asil Browser News, og gå aldri glipp av de mest interessante nyhetene igjen!";
+/* Shown above a button that turns on the \"Kahf Browser News\" product in the app. */
+"today.introCardTitle" = "Slå på Kahf Browser News, og gå aldri glipp av de mest interessante nyhetene igjen!";
 
 /* No comment provided by engineer. */
-"today.isEnabledToggleLabel" = "Vis Asil Browser News";
+"today.isEnabledToggleLabel" = "Vis Kahf Browser News";
 
 /* No comment provided by engineer. */
 "today.learnMoreTitle" = "Lær mer om dataene dine";
 
-/* 'Asil Browser Offers' is a product name */
-"today.moreBraveOffers" = "Flere tilbud fra Asil Browser";
+/* 'Kahf Browser Offers' is a product name */
+"today.moreBraveOffers" = "Flere tilbud fra Kahf Browser";
 
 /* No comment provided by engineer. */
 "today.noInternet" = "Ingen Internett-tilkobling";
@@ -3341,7 +3341,7 @@
 "today.suggestedTitle" = "Foreslått";
 
 /* No comment provided by engineer. */
-"today.turnOnBraveToday" = "Skru på Asil Browser News";
+"today.turnOnBraveToday" = "Skru på Kahf Browser News";
 
 /* A toggle title shown next to a source or channel that the user can unfollow. When tapped switches to 'Follow' */
 "today.unfollowToggleTitle" = "Avfølg";
@@ -3388,34 +3388,34 @@
 /* No comment provided by engineer. */
 "UserWalletGenericErrorTitle" = "Beklager, en feil har oppstått";
 
-/* Version number of Asil Browser shown in settings */
+/* Version number of Kahf Browser shown in settings */
 "VersionTemplate" = "Versjon %1$@ (%2$@)";
 
 /* Label that says where to view an item. '%@' is a placeholder and will include things like 'Instagram', 'unsplash'. The full label will look like 'View  on Instagram'. */
 "ViewOn" = "Vis på %@";
 
-/* Button text to buy Asil Browser VPN */
+/* Button text to buy Kahf Browser VPN */
 "vpn.buyButton" = "Kjøp";
 
 /* Title for screen to buy the VPN. */
-"vpn.buyVPNTitle" = "Asil Browser-brannmur + VPN";
+"vpn.buyVPNTitle" = "Kahf Browser-brannmur + VPN";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxBlockAds" = "Blokkerer uønskede nettverkstilkoblinger";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxEncryption" = "Bruker VPN-tunnel trygt kryptert med IKEv2";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxFast" = "Støtter hastigheter på opptil 100 Mbit/s";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxGeoSelector" = "Velg geografisk beliggenhet/land";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxNoIPLog" = "Holder deg anonym på nettet";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxNoSellout" = "Vi vil aldri dele eller selge informasjonen din";
 
 /* AppStore Receipt field for customer support contact form. */
@@ -3428,7 +3428,7 @@
 "vpn.contactFormCarrier" = "teleselskap";
 
 /* Text to tell user to not modify support info below email's body. */
-"vpn.contactFormDoNotEditText" = "Asil Browser sporer deg ikke og følger ikke med på hvordan du bruker appen, så vi vet ikke hvordan du har satt opp VPN-en. Fortell oss mer om problemet du opplever, så skal vi gjøre vårt beste for å løse det snarest.";
+"vpn.contactFormDoNotEditText" = "Kahf Browser sporer deg ikke og følger ikke med på hvordan du bruker appen, så vi vet ikke hvordan du har satt opp VPN-en. Fortell oss mer om problemet du opplever, så skal vi gjøre vårt beste for å løse det snarest.";
 
 /* Button name to send contact form. */
 "vpn.contactFormEmailNotConfiguredBody" = "Kan ikke sende e-post. Kontroller e-postkonfigurasjonen.";
@@ -3482,9 +3482,9 @@
 "vpn.contactFormTimezone" = "iOS-tidssone";
 
 /* Title for contact form email. */
-"vpn.contactFormTitle" = "Problem med Asil Browser-brannmur + VPN";
+"vpn.contactFormTitle" = "Problem med Kahf Browser-brannmur + VPN";
 
-/* Button text to enable Asil Browser VPN */
+/* Button text to enable Kahf Browser VPN */
 "vpn.enableButton" = "Aktiver";
 
 /* Message for an alert when the VPN can't get prices from the App Store */
@@ -3509,15 +3509,15 @@
 "vpn.installProfileButtonText" = "Installer VPN-profil";
 
 /* No comment provided by engineer. */
-"vpn.installProfileTitle" = "Asil Browser vil nå installere en VPN-profil.";
+"vpn.installProfileTitle" = "Kahf Browser vil nå installere en VPN-profil.";
 
 /* Popup that shows after user installs the vpn for the first time. */
-"vpn.installSuccessPopup" = "Asil Browser er nå aktivert";
+"vpn.installSuccessPopup" = "Kahf Browser er nå aktivert";
 
 /* Title for screen to install the VPN. */
 "vpn.installTitle" = "Installer VPN";
 
-/* Button text to try free Asil Browser VPN */
+/* Button text to try free Kahf Browser VPN */
 "vpn.learnMore" = "Prøv GRATIS";
 
 /* Used in context: 'Monthly subscription, (it) renews monthly' */
@@ -3529,10 +3529,10 @@
 /* Text to show user when their vpn plan has expired */
 "vpn.planExpired" = "Utløpt";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.popupCheckmark247Support" = "Kundestøtte døgnet rundt";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.popupCheckmarkSecureConnections" = "Sikrer alle tilkoblinger";
 
 /* It is used in context: 'Powered by BRAND_NAME' */
@@ -3581,10 +3581,10 @@
 "vpn.settingsFAQ" = "VPN-kundestøtte";
 
 /* Button to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceipt" = "Koble kjøpet til Asil Browser-kontoen din";
+"vpn.settingsLinkReceipt" = "Koble kjøpet til Kahf Browser-kontoen din";
 
 /* Footer text to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceiptFooter" = "Koble App Store-kjøpet til Asil Browser-kontoen din for å bruke Asil Browser VPN på andre enheter.";
+"vpn.settingsLinkReceiptFooter" = "Koble App Store-kjøpet til Kahf Browser-kontoen din for å bruke Kahf Browser VPN på andre enheter.";
 
 /* Button to manage your VPN subscription */
 "vpn.settingsManageSubscription" = "Administrer abonnement";
@@ -3620,10 +3620,10 @@
 "vpn.settingsVPNExpired" = "Utløpt";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationBody" = "Selv i bakgrunnen vil Asil Browser fortsette å beskytte deg.";
+"vpn.vpnBackgroundNotificationBody" = "Selv i bakgrunnen vil Kahf Browser fortsette å beskytte deg.";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationTitle" = "Asil Browser-brannmur + VPN er PÅ";
+"vpn.vpnBackgroundNotificationTitle" = "Kahf Browser-brannmur + VPN er PÅ";
 
 /* Message for an alert when the VPN can't be configured. */
 "vpn.vpnConfigGenericErrorBody" = "Det oppstod et problem med å initialisere VPN. Vennligst prøv igjen eller prøv å tilbakestille konfigurasjonen på VPN-innstillingssiden.";
@@ -3632,7 +3632,7 @@
 "vpn.vpnConfigGenericErrorTitle" = "Feil";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
-"vpn.vpnConfigPermissionDeniedErrorBody" = "Asil Browser-brannmur + VPN krever at det installeres en VPN-profil på enheten din for å fungere.";
+"vpn.vpnConfigPermissionDeniedErrorBody" = "Kahf Browser-brannmur + VPN krever at det installeres en VPN-profil på enheten din for å fungere.";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
 "vpn.vpnConfigPermissionDeniedErrorTitle" = "Tillatelse nektet";
@@ -3644,10 +3644,10 @@
 "vpn.vpnErrorPurchaseFailedTitle" = "Feil";
 
 /* Disclaimer for user purchasing the VPN plan. */
-"vpn.vpnIAPBoilerPlate" = "Abonnementer belastes via iTunes-kontoen din.\n\nEnhver ubrukt del av den gratis prøveperioden, hvis den tilbys, går tapt når du kjøper et abonnement.\n\nAbonnementet ditt fornyes automatisk med mindre det blir kansellert minst 24 timer før inneværende periode utløper.\n\nDu kan administrere abonnementene dine i innstillingene.\n\nVed å bruke Asil Browser godtar du bruksvilkårene og retningslinjene for personvern.";
+"vpn.vpnIAPBoilerPlate" = "Abonnementer belastes via iTunes-kontoen din.\n\nEnhver ubrukt del av den gratis prøveperioden, hvis den tilbys, går tapt når du kjøper et abonnement.\n\nAbonnementet ditt fornyes automatisk med mindre det blir kansellert minst 24 timer før inneværende periode utløper.\n\nDu kan administrere abonnementene dine i innstillingene.\n\nVed å bruke Kahf Browser godtar du bruksvilkårene og retningslinjene for personvern.";
 
 /* Message for alert to reset vpn configuration */
-"vpn.vpnResetAlertBody" = "Dette vil tilbakestille Asil Browser-brannmuren + VPN-konfigurasjonen din og fikse eventuelle feil. Denne prosessen kan ta et øyeblikk.";
+"vpn.vpnResetAlertBody" = "Dette vil tilbakestille Kahf Browser-brannmuren + VPN-konfigurasjonen din og fikse eventuelle feil. Denne prosessen kan ta et øyeblikk.";
 
 /* Title for alert to reset vpn configuration */
 "vpn.vpnResetAlertTitle" = "Tilbakestill konfigurasjon";
@@ -3713,18 +3713,18 @@
 "widgets.favoritesWidgetTitle" = "Favoritter";
 
 /* This shows when you add a widget but have no favorites added in your app */
-"widgets.noFavoritesFound" = "Åpne Asil Browser for å se favorittene dine her";
+"widgets.noFavoritesFound" = "Åpne Kahf Browser for å se favorittene dine her";
 
 /* Description for the search option on the 'shortcuts' widget. */
 "widgets.searchShortcutTitle" = "Søk";
 
-/* Description for Asil Browser Shields widget on 'add widget' screen. */
-"widgets.shieldStatsDescription" = "En oversikt over hvordan Asil Browser beskytter deg på nettet og gjør at du sparer tid.";
+/* Description for Kahf Browser Shields widget on 'add widget' screen. */
+"widgets.shieldStatsDescription" = "En oversikt over hvordan Kahf Browser beskytter deg på nettet og gjør at du sparer tid.";
 
-/* Title for Asil Browser Shields widget on 'add widget' screen. */
+/* Title for Kahf Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsTitle" = "Personvernstatistikk";
 
-/* Title of Asil Browser Shields widget shown above stat numbers. */
+/* Title of Kahf Browser Shields widget shown above stat numbers. */
 "widgets.shieldStatsWidgetTitle" = "Personvernstatistikk";
 
 /* Button to the browser and enter URL or make a search query there. */
@@ -3740,19 +3740,19 @@
 "widgets.shortcutsPrivateTabButton" = "Privat fane";
 
 /* Description for shortcuts widget on 'add widget' screen. */
-"widgets.shortcutsWidgetDescription" = "Rask tilgang til å søke på nettet eller åpne nettsider i Asil Browser.";
+"widgets.shortcutsWidgetDescription" = "Rask tilgang til å søke på nettet eller åpne nettsider i Kahf Browser.";
 
 /* Title for shortcuts widget on 'add widget' screen. */
 "widgets.shortcutsWidgetTitle" = "Snarveier";
 
-/* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
-"widgets.singleStatDescription" = "En oversikt over hvordan Asil Browser beskytter deg på nettet.";
+/* Description for Kahf Browser Shields single stat widget on 'add widget' screen. */
+"widgets.singleStatDescription" = "En oversikt over hvordan Kahf Browser beskytter deg på nettet.";
 
-/* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
+/* Title for Kahf Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatTitle" = "Personvernstatistikk";
 
-/* Description for the Asil Browser Wallet option on the 'shortcuts' widget. */
-"widgets.walletShortcutTitle" = "Asil Browser-lommebok";
+/* Description for the Kahf Browser Wallet option on the 'shortcuts' widget. */
+"widgets.walletShortcutTitle" = "Kahf Browser-lommebok";
 
 /* Title of the settings for widgets part */
 "widgets.widgetTitle" = "Widgeter";
@@ -3775,3 +3775,51 @@
 /* History tableview section header */
 "Yesterday" = "I går";
 
+"safegaze.popup.report.title1" = "Vennligst rapporter eventuelle feil eller forslag til ";
+"safegaze.popup.report.title2" = "dette skjemaet";
+"safegaze.popup.support.title" = "Støtt dette prosjektet";
+"safegaze.popup.woman.title" = "Jeg er kvinne";
+"safegaze.popup.man.title" = "Jeg er mann";
+"safegaze.popup.comingsoon.title" = "Kommer snart";
+"safegaze.popup.gendermode.title" = "Kjønnsmodus";
+"safegaze.popup.sinfulacts.title" = "Syndige handlinger unngått";
+"safegaze.popup.thispage.title" = "Denne siden";
+"safegaze.popup.lifetime.title" = "Livstid";
+"safegaze.popup.alwayspurify.title" = "Alltid rense";
+"safegaze.popup.neverpurify.title" = "Aldri rense";
+"safegaze.popup.safegazeup.title" = "SafeGaze OPP";
+"safegaze.popup.imageblur.title" = "Bildeblur-intensitet";
+"safegaze.popup.takecontrol.title" = "Forbedre din online opplevelse med SafeGaze, vår bildepurifikatorutvidelse som beskytter synet ditt mot upassende innhold.";
+"safegaze.popup.turnon.title" = "Slå på SafeGaze";
+
+/* Kjønnstitler */
+"kahftube.gender.all.title" = "Alle";
+"kahftube.gender.male.title" = "Mann";
+"kahftube.gender.female.title" = "Kvinne";
+"kahftube.gender.child.title" = "Barn";
+"kahftube.gender.except.title" = "Unntatt";
+
+/* Religionstitler */
+"kahftube.religion.haram.title" = "Haram";
+"kahftube.religion.practicingMuslim.title" = "Praktiserende Muslim";
+"kahftube.religion.liberalMuslim.title" = "Liberal Muslim";
+"kahftube.religion.moderateMuslim.title" = "Moderat Muslim";
+
+/* Popup-titler */
+"kahftube.popup.name.title" = "Navn";
+"kahftube.popup.connectedAccount.title" = "Tilkoblet Konto";
+"kahftube.popup.preferences.title" = "Innstillinger";
+"kahftube.popup.gender.title" = "Kjønn";
+"kahftube.popup.religionStatus.title" = "Religionsstatus";
+"kahftube.popup.unsubHaramChannels.title" = "Avslutt abonnement på Haram-kanaler";
+"kahftube.popup.unsubscribeSuccessful.title1" = "Abonnementet på Haram-kanaler er avsluttet";
+"kahftube.popup.unsubscribeSuccessful.title2" = "vellykket";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "Greit";
+"kahftube.popup.openToUse.title" = "Åpen for bruk";
+"kahftube.popup.explore.title" = "Utforsk denne funksjonen etter pålogging på YouTube";
+"kahftube.popup.haramChannelsFound.title" = "%d Haram-kanaler funnet";
+"kahftube.popup.refreshAgain.title" = "Oppdater igjen";
+"kahftube.popup.unsubscribeNow.title" = "Avslutt abonnement nå";
+"kahftube.popup.noHaramSubscribed.title" = "Ingen Haram-kanaler abonnert";
+"kahftube.popup.channelFound.title" = "Kanal funnet";
+"kahftube.popup.alright.title" = "Greit";

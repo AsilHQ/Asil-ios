@@ -75,7 +75,6 @@ public class PopoverController: UIViewController {
 
   /// Outer margins around the presented popover to the edge of the screen (or safe area)
   public var outerMargins = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
-
   /// Whether or not to automatically add a margins when the popover is presented so the user can dismiss it more
   /// easily.
   ///
@@ -112,10 +111,9 @@ public class PopoverController: UIViewController {
   private var containerViewWidthConstraint: NSLayoutConstraint?
 
   /// Create a popover displaying a content controller
-  public init(contentController: UIViewController & PopoverContentComponent, contentSizeBehavior: ContentSizeBehavior = .autoLayout()) {
+    public init(contentController: UIViewController & PopoverContentComponent, contentSizeBehavior: ContentSizeBehavior = .autoLayout()) {
     self.contentController = contentController
     self.contentSizeBehavior = contentSizeBehavior
-
     super.init(nibName: nil, bundle: nil)
 
     if let navigationController = contentController as? UINavigationController {

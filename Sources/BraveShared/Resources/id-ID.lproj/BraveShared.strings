@@ -1,17 +1,17 @@
 /* About settings section title */
 "About" = "Tentang";
 
-/* The title of the screen explaining Asil Browser Shields */
-"AboutBraveShields" = "Tentang Perisai Asil Browser";
+/* The title of the screen explaining Kahf Browser Shields */
+"AboutBraveShields" = "Tentang Perisai Kahf Browser";
 
-/* The body of the screen explaining Asil Browser Shields */
-"AboutBraveShieldsBody" = "Sering kali saat membuka situs terdapat cookies dan skrip yang berusaha mengidentifikasi pengguna dan perangkatnya.  Mereka ingin mengetahui siapa Anda dan mengikuti Anda di seluruh situs - melacak apa yang Anda lakukan di setiap situs.\n\nAsilBrowser memblokir hal-hal tersebut sehingga Anda dapat menjelajah tanpa merasa diikuti.";
+/* The body of the screen explaining Kahf Browser Shields */
+"AboutBraveShieldsBody" = "Sering kali saat membuka situs terdapat cookies dan skrip yang berusaha mengidentifikasi pengguna dan perangkatnya.  Mereka ingin mengetahui siapa Anda dan mengikuti Anda di seluruh situs - melacak apa yang Anda lakukan di setiap situs.\n\nKahf Browser memblokir hal-hal tersebut sehingga Anda dapat menjelajah tanpa merasa diikuti.";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "Ini memungkinkan Anda menyimpan gambar ke Rol Kamera Anda.";
 
 /* See http://mzl.la/1G7uHo7 */
-"AccessPhotoDeniedAlertTitle" = "Asil Browser ingin mengakses Foto Anda";
+"AccessPhotoDeniedAlertTitle" = "Kahf Browser ingin mengakses Foto Anda";
 
 /* Button to add a bookmark */
 "AddBookmark" = "Tambahkan Markah";
@@ -52,8 +52,8 @@
 /* Label for the Face ID/Passcode item in Settings */
 "AuthenticationFaceIDPasscodeSetting" = "Face ID & Kode Akses";
 
-/* Touch ID or PIN entry prompt subtitle when accessing Asil Browser with the Browser Lock feature enabled */
-"AuthenticationLoginsTouchReason" = "Ini akan mengautentikasi akses Anda ke Asil Browser";
+/* Touch ID or PIN entry prompt subtitle when accessing Kahf Browser with the Browser Lock feature enabled */
+"AuthenticationLoginsTouchReason" = "Ini akan mengautentikasi akses Anda ke Kahf Browser";
 
 /* Label for the Passcode item in Settings */
 "AuthenticationPasscode" = "Kode Sandi";
@@ -116,7 +116,7 @@
 "BlockCookieConsentNotices" = "Memblokir Pemberitahuan Izin Kuki";
 
 /* A description for a popup that notifies the user that we can block cookie consent notices */
-"BlockCookieConsentNoticesPopupDescription" = "Asil Browser sudah memblokir kuki pihak ketiga. Kami juga dapat memblokir pemberitahuan persetujuan kuki.";
+"BlockCookieConsentNoticesPopupDescription" = "Kahf Browser sudah memblokir kuki pihak ketiga. Kami juga dapat memblokir pemberitahuan persetujuan kuki.";
 
 /* A title for a popup that notifies the user that we can block cookie consent notices */
 "BlockCookieConsentNoticesPopupTitle" = "Bosan dengan pemberitahuan persetujuan kuki?";
@@ -130,7 +130,7 @@
 /* A title for setting which blocks 'switch to app' popups */
 "blockMobileAnnoyances" = "Pemberitahuan Blokir 'Beralih ke Aplikasi'";
 
-/* Asil Browser panel individual toggle title */
+/* Kahf Browser panel individual toggle title */
 "BlockPhishing" = "Blokir Phishing";
 
 /* No comment provided by engineer. */
@@ -175,38 +175,38 @@
 /* Placeholder text for adding or editing a bookmark */
 "BookmarkUrlPlaceholderText" = "Alamat";
 
-/* Button to show the Asil Browser panel */
-"BravePanel" = "Panel Asil Browser";
+/* Button to show the Kahf Browser panel */
+"BravePanel" = "Panel Kahf Browser";
 
 /* No comment provided by engineer. */
-"BraveRewardsAdNotificationTitle" = "Imbalan Asil Browser";
+"BraveRewardsAdNotificationTitle" = "Imbalan Kahf Browser";
 
 /* No comment provided by engineer. */
 "BraveRewardsOpen" = "Buka";
 
-/* Asil Browser Rewards settings title */
-"BraveRewardsTitle" = "Imbalan Asil Browser";
+/* Kahf Browser Rewards settings title */
+"BraveRewardsTitle" = "Imbalan Kahf Browser";
 
-/* Asil Browser Search Banner Promotion description content in Search Suggestions */
-"braveSearchPromotion.bannerDescription" = "Pencarian Asil Browser tidak melacak Anda, pertanyaan Anda, atau klik Anda.";
+/* Kahf Browser Search Banner Promotion description content in Search Suggestions */
+"braveSearchPromotion.bannerDescription" = "Pencarian Kahf Browser tidak melacak Anda, pertanyaan Anda, atau klik Anda.";
 
-/* Asil Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
 "braveSearchPromotion.bannerMaybeLaterButtonTitle" = "Mungkin nanti";
 
-/* Asil Browser Search Banner Promotion title in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title in Search Suggestions */
 "braveSearchPromotion.bannerTitle" = "Mendukung pencarian independen dengan privasi yang lebih baik";
 
-/* Asil Browser Search Banner Promotion title for try button in Search Suggestions */
-"braveSearchPromotion.bannerTryButtonTitle" = "Coba Pencarian Asil Browser";
+/* Kahf Browser Search Banner Promotion title for try button in Search Suggestions */
+"braveSearchPromotion.bannerTryButtonTitle" = "Coba Pencarian Kahf Browser";
 
-/* Asil Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
 "braveSearchPromotion.braveSearchPromotionBannerDismissButtonTitle" = "Tutup";
 
 /* No comment provided by engineer. */
 "BraveShieldsAdvancedControls" = "Kontrol Tingkat Lanjut";
 
 /* No comment provided by engineer. */
-"BraveShieldsAndPrivacy" = "Asil Browser Shields & Privasi";
+"BraveShieldsAndPrivacy" = "Kahf Browser Shields & Privasi";
 
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "Iklan dan hal mengerikan lainnya diblokir";
@@ -215,7 +215,7 @@
 "SafegazeBlockedCountLabel" = "Tindakan dosa dihindari";
 
 /* "The number of total sinful acts avoided will be next to this" */
-"SafegazeTotalBlockedCountLabel" = "Total %@ tindakan dosa dihindari sejak awal"
+"SafegazeTotalBlockedCountLabel" = "Total %@ tindakan dosa dihindari sejak awal";
 
 /* What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel */
 "BraveShieldsBlockedInfoButtonAccessibilityLabel" = "Pelajari lebih lanjut";
@@ -229,17 +229,17 @@
 /* No comment provided by engineer. */
 "BraveShieldsSiteBroken" = "Jika situs ini tampak rusak, coba turunkan Perisai";
 
-/* Context: 'Asil Browser Shields Up' or 'Asil Browser Shields Down' */
-"BraveShieldsStatusTitle" = "Perisai Asil Browser";
+/* Context: 'Kahf Browser Shields Up' or 'Kahf Browser Shields Down' */
+"BraveShieldsStatusTitle" = "Perisai Kahf Browser";
 
-/* Context: The 'Down' in 'Asil Browser Shields Down' */
+/* Context: The 'Down' in 'Kahf Browser Shields Down' */
 "BraveShieldsStatusValueDown" = "Turun";
 
-/* Context: The 'Up' in 'Asil Browser Shields Up' */
+/* Context: The 'Up' in 'Kahf Browser Shields Up' */
 "BraveShieldsStatusValueUp" = "Naik";
 
 /* The accessibility hint spoken when focused on the main shields toggle */
-"BraveShieldsToggleHint" = "Ketuk dua kali untuk mengalihkan Asil Browser Shields";
+"BraveShieldsToggleHint" = "Ketuk dua kali untuk mengalihkan Kahf Browser Shields";
 
 /* Sync page title */
 "BraveSync" = "Sinkronisasi";
@@ -248,16 +248,16 @@
 "BraveSyncInternalsTitle" = "Sinkronkan Internal";
 
 /* Sync settings welcome */
-"BraveSyncWelcome" = "Untuk memulai, Anda perlu memasang Asil Browser di semua perangkat yang ingin disinkronisasi. Untuk menyinkronkan, mulai rantai sinkronisasi yang akan Anda gunakan untuk menghubungkan semua perangkat dengan aman.";
+"BraveSyncWelcome" = "Untuk memulai, Anda perlu memasang Kahf Browser di semua perangkat yang ingin disinkronisasi. Untuk menyinkronkan, mulai rantai sinkronisasi yang akan Anda gunakan untuk menghubungkan semua perangkat dengan aman.";
 
 /* The name of the feature */
-"bravetalk.braveTalkTitle" = "Obrolan Asil Browser";
+"bravetalk.braveTalkTitle" = "Obrolan Kahf Browser";
 
 /* Setting to enable the browser lock privacy feature */
 "BrowserLock" = "Kunci Peramban";
 
 /* No comment provided by engineer. */
-"BrowserLockDescription" = "Buka kunci Asil Browser dengan ID Sentuh, ID Wajah, atau kode sandi sistem.";
+"BrowserLockDescription" = "Buka kunci Kahf Browser dengan ID Sentuh, ID Wajah, atau kode sandi sistem.";
 
 /* A button title for the action to move to the next step of the browser lock migration process. */
 "browserLockMigrationContinueButtonTitle" = "Lanjutkan";
@@ -266,10 +266,10 @@
 "browserLockMigrationNoPasscodeSetup" = "Belum mengatur ID atau kode sandi? Buka Pengaturan, lalu ketuk \"%@\"";
 
 /* Subtitle on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationSubtitle" = "Kami telah menyederhanakan Kode Sandi Asil Browser. Kini Anda dapat mengakses Asil Browser dengan menggunakan ID atau kode sandi yang sama dengan yang Anda gunakan di ponsel Anda.";
+"browserLockMigrationSubtitle" = "Kami telah menyederhanakan Kode Sandi Kahf Browser. Kini Anda dapat mengakses Kahf Browser dengan menggunakan ID atau kode sandi yang sama dengan yang Anda gunakan di ponsel Anda.";
 
 /* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationTitle" = "Buka Asil Browser dengan ID Wajah, ID Sentuh, atau kode sandi Apple Anda";
+"browserLockMigrationTitle" = "Buka Kahf Browser dengan ID Wajah, ID Sentuh, atau kode sandi Apple Anda";
 
 /* Settings item for clearing browsing history */
 "BrowsingHistory" = "Riwayat Penelusuran";
@@ -278,7 +278,7 @@
 "Cache" = "Cache";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Dengan Asil Browser sebagai bawaan, setiap tautan yang Anda ketuk akan terbuka dengan perlindungan privasi Asil Browser.";
+"callout.defaultBrowserCalloutDescription" = "Dengan Kahf Browser sebagai bawaan, setiap tautan yang Anda ketuk akan terbuka dengan perlindungan privasi Kahf Browser.";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "Siapkan sebagai peramban bawaan";
@@ -293,13 +293,13 @@
 "callout.defaultBrowserTitle" = "Privasi. Yang Disederhanakan.";
 
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "Ini membantu kami mempelajari fitur Asil Browser mana yang paling sering digunakan. Anda dapat mengubahnya kapan saja di Pengaturan Asil Browser pada bagian 'Perisai Asil Browser dan Privasi'.";
+"callout.p3aCalloutDescription" = "Ini membantu kami mempelajari fitur Kahf Browser mana yang paling sering digunakan. Anda dapat mengubahnya kapan saja di Pengaturan Kahf Browser pada bagian 'Perisai Kahf Browser dan Privasi'.";
 
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "Pelajari lebih lanjut tentang Analitik Produk yang Menjaga Privasi (P3A) milik kami.";
 
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutTitle" = "Bantulah membuat Asil Browser lebih baik.";
+"callout.p3aCalloutTitle" = "Bantulah membuat Kahf Browser lebih baik.";
 
 /* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
 "callout.p3aCalloutToggleTitle" = "Membagikan wawasan produk secara privat dan anonim.";
@@ -314,7 +314,7 @@
 "callout.playlistOnboardingViewTitle" = "Tambahkan video ke Daftar Putar...";
 
 /* Subtitle - Description for Privacy Everywhere Full Screen Callout */
-"callout.privacyEverywhereCalloutDescription" = "Dapatkan privasi Asil Browser pada komputer atau tablet Anda, dan sinkronisasikan markah & ekstensi antar perangkat.";
+"callout.privacyEverywhereCalloutDescription" = "Dapatkan privasi Kahf Browser pada komputer atau tablet Anda, dan sinkronisasikan markah & ekstensi antar perangkat.";
 
 /* Title for button in Default Browser Full Screen Callout */
 "callout.privacyEverywhereCalloutPrimaryButtonTitle" = "Sinkronikasikan sekarang";
@@ -355,7 +355,7 @@
 /* Title indicating whether or not a private key can be used to derive some data from another piece of data. IE: Use one key to generate another */
 "certificateViewer.deriveTitle" = "Ambil";
 
-/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
+/* Title of the section for the Domain Component such as: DNS or Kahf Browser.com or a website's domain. */
 "certificateViewer.domainComponentTitle" = "Komponen Domain";
 
 /* Title of the section indication which 'Encryption' algorithm was used. */
@@ -394,7 +394,7 @@
 /* Title of the section for Department of the Company. Example: Human Resources. */
 "certificateViewer.organizationalUnitTitle" = "Unit Organisasi";
 
-/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
+/* Title of the section for Name of the Company. Example: Kahf Browser Inc. */
 "certificateViewer.organizationTitle" = "Organisasi";
 
 /* Title indicating 'Parameters' or Input passed to a function/algorithm. */
@@ -605,25 +605,25 @@
 "defaultBrowserCallout.introOpenSettingsButtonText" = "Buka Pengaturan";
 
 /* Primary text on default browser popup screen */
-"defaultBrowserCallout.introPrimaryText" = "Buka semua tautan dengan Asil Browser untuk menjaga privasi Anda";
+"defaultBrowserCallout.introPrimaryText" = "Buka semua tautan dengan Kahf Browser untuk menjaga privasi Anda";
 
 /* Secondary text on default browser popup. */
-"defaultBrowserCallout.introSecondaryText" = "Asil Browser Shields dirancang untuk memblokir pelacak & iklan, menghemat data dan waktu Anda di setiap situs yang Anda kunjungi";
+"defaultBrowserCallout.introSecondaryText" = "Kahf Browser Shields dirancang untuk memblokir pelacak & iklan, menghemat data dan waktu Anda di setiap situs yang Anda kunjungi";
 
 /* Tertiary text on default browser popup screen */
-"defaultBrowserCallout.introTertiaryText" = "Buka pengaturan, ketuk Default Browser App, dan pilih Asil Browser.";
+"defaultBrowserCallout.introTertiaryText" = "Buka pengaturan, ketuk Default Browser App, dan pilih Kahf Browser.";
 
-/* Notification body to promote setting Asil Browser app as default browser */
-"defaultBrowserCallout.notificationBody" = "Telah dioptimalkan untuk iOS %@. Jadikan Asil Browser peramban utama Anda sekarang juga.";
+/* Notification body to promote setting Kahf Browser app as default browser */
+"defaultBrowserCallout.notificationBody" = "Telah dioptimalkan untuk iOS %@. Jadikan Kahf Browser peramban utama Anda sekarang juga.";
 
-/* Notification title to promote setting Asil Browser app as default browser */
-"defaultBrowserCallout.notificationTitle" = "Asil Browser Peramban Web";
+/* Notification title to promote setting Kahf Browser app as default browser */
+"defaultBrowserCallout.notificationTitle" = "Kahf Browser Peramban Web";
 
 /* No comment provided by engineer. */
 "defaultBrowserCalloutCloseAccesabilityLabel" = "Tutup penyorot peramban bawaan";
 
-/* Name for default Asil Browser theme. */
-"defaultThemeName" = "Default Asil Browser";
+/* Name for default Kahf Browser theme. */
+"defaultThemeName" = "Default Kahf Browser";
 
 /* No comment provided by engineer. */
 "Delete" = "Hapus";
@@ -778,10 +778,10 @@
 /* Allow link to switch apps? */
 "ExternalAppURLAlertTitle" = "Izinkan tautan untuk menukar aplikasi?";
 
-/* Allow Asil Browser to open the external app URL */
+/* Allow Kahf Browser to open the external app URL */
 "ExternalAppURLAllow" = "Izinkan";
 
-/* Don't allow Asil Browser to open the external app URL */
+/* Don't allow Kahf Browser to open the external app URL */
 "ExternalAppURLDontAllow" = "Jangan Izinkan";
 
 /* Footer text when user selects to save to favorites when editing a bookmark */
@@ -860,10 +860,10 @@
 "HideLinkPreviewsActionTitle" = "Sembunyikan Pratinjau Tautan";
 
 /* Hides the rewards icon */
-"HideRewardsIcon" = "Sembunyikan Ikon Asil Browser Rewards";
+"HideRewardsIcon" = "Sembunyikan Ikon Kahf Browser Rewards";
 
 /* Hide the rewards icon explination. */
-"HideRewardsIconSubtitle" = "Menyembunyikan ikon Asil Browser Rewards saat Asil Browser Rewards tidak diaktifkan";
+"HideRewardsIconSubtitle" = "Menyembunyikan ikon Kahf Browser Rewards saat Kahf Browser Rewards tidak diaktifkan";
 
 /* Title for history menu item */
 "HistortMenuItem" = "Riwayat";
@@ -1001,13 +1001,13 @@
 "MonthlyAdsClaimNotificationBody" = "Ketuk untuk mengklaim token gratis Anda.";
 
 /* The title of the notification that goes out monthly to users who can claim an ads grant */
-"MonthlyAdsClaimNotificationTitle" = "Imbalan Asil Browser 💵🎁";
+"MonthlyAdsClaimNotificationTitle" = "Imbalan Kahf Browser 💵🎁";
 
 /* No comment provided by engineer. */
 "MyFirstAdBody" = "Ketuk di sini untuk mempelajari selengkapnya.";
 
 /* No comment provided by engineer. */
-"MyFirstAdTitle" = "Ini adalah iklan Asil Browser perdana Anda";
+"MyFirstAdTitle" = "Ini adalah iklan Kahf Browser perdana Anda";
 
 /* Bookmark title / Device name */
 "Name" = "Nama";
@@ -1069,14 +1069,14 @@
 /* Setting title for option to automatically redirect a url to another url */
 "nprRedirectFooter" = "Mengarahkan ulang tautan NPR secara otomatis ke versi berbasis teks mereka (di text.npr.org).";
 
-/* Bookmark title for Asil Browser Support */
-"ntp.braveSupportFavoriteTitle" = "Dukungan Asil Browser";
+/* Bookmark title for Kahf Browser Support */
+"ntp.braveSupportFavoriteTitle" = "Dukungan Kahf Browser";
 
 /* No comment provided by engineer. */
 "ntp.claimRewards" = "Klaim Token";
 
-/* Placeholder example: 'You earned 42 BAT by browsing with Asil Browser.' */
-"ntp.earningsReport" = "Anda memperoleh %@ dengan menjelajahi dengan Asil Browser.";
+/* Placeholder example: 'You earned 42 BAT by browsing with Kahf Browser.' */
+"ntp.earningsReport" = "Anda memperoleh %@ dengan menjelajahi dengan Kahf Browser.";
 
 /* The context is to praise the user that they did a good job, to keep it up. It is used in full sentence like: 'Way to go! You earned 40 BAT last month.' */
 "ntp.goodJob" = "Berhasil!";
@@ -1085,10 +1085,10 @@
 "ntp.hideSponsoredImages" = "Sembunyikan gambar bersponsor";
 
 /* The text description of image type which is being used NTP */
-"ntp.imageTypeSelectionDescription" = "'Disponsori' adalah latar belakang bermerek tambahan yang bisa Anda dapatkan dengan diaktifkannya Imbalan Asil Browser.";
+"ntp.imageTypeSelectionDescription" = "'Disponsori' adalah latar belakang bermerek tambahan yang bisa Anda dapatkan dengan diaktifkannya Imbalan Kahf Browser.";
 
 /* No comment provided by engineer. */
-"ntp.learnMoreAboutRewards" = "Pelajari lebih lanjut tentang Asil Browser Rewards";
+"ntp.learnMoreAboutRewards" = "Pelajari lebih lanjut tentang Kahf Browser Rewards";
 
 /* No comment provided by engineer. */
 "ntp.learnMoreAboutSI" = "Pelajari lebih lanjut tentang gambar bersponsor";
@@ -1120,17 +1120,17 @@
 /* The placeholder says 'Terms of Service'. So full sentence goes like: 'By turning Rewards, you agree to the Terms of Service'. */
 "ntp.turnRewardsTos" = "Dengan mengaktifkan Rewards, berarti Anda setuju dengan %@.";
 
-/* Message when opting into Asil Browser Ads when region becomes available */
+/* Message when opting into Kahf Browser Ads when region becomes available */
 "OBAdsOptInMessage" = "Dapatkan token dan beri reward pada pembuat konten atas konten hebat selagi Anda menjelajahi";
 
-/* Message when opting into Asil Browser Ads when region becomes available */
+/* Message when opting into Kahf Browser Ads when region becomes available */
 "OBAdsOptInMessageJapan" = "Dapatkan poin dan beri reward pada pembuat konten atas konten hebat selagi Anda menjelajahi";
 
-/* Title when opting into Asil Browser Ads when region becomes available */
-"OBAdsOptInTitle" = "Iklan Asil Browser telah hadir!";
+/* Title when opting into Kahf Browser Ads when region becomes available */
+"OBAdsOptInTitle" = "Iklan Kahf Browser telah hadir!";
 
 /* Title for ads onboarding screen */
-"OBAdsTitle" = "Asil Browser akan menampilkan iklan pertama Anda di";
+"OBAdsTitle" = "Kahf Browser akan menampilkan iklan pertama Anda di";
 
 /* Title for when the user completes onboarding */
 "OBCompleteTitle" = "Sekarang Anda telah siap.";
@@ -1150,14 +1150,14 @@
 /* Button to finish onboarding and start using the app. */
 "OBFinishButton" = "Mulai penjelajahan";
 
-/* Button to join Asil Browser Rewards. */
+/* Button to join Kahf Browser Rewards. */
 "OBJoinButton" = "Bergabung";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentClipboardPermission" = "Izinkan Asil Browser memeriksa clipboard saya atas kode rujukan yang cocok";
+"OBPrivacyConsentClipboardPermission" = "Izinkan Kahf Browser memeriksa clipboard saya atas kode rujukan yang cocok";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentDetail" = "Anda mungkin telah mengunduh Asil Browser untuk mendukung pemberi rujukan Anda. Untuk mendeteksi pemberi rujukan tersebut, Asil Browser melakukan pemeriksaan satu kali di clipboard Anda atas kode rujukan yang cocok. Pemeriksaan ini terbatas hanya pada kode dan tidak ada data pribadi yang akan ditransfer. Jika Anda memilih untuk tidak ikut, pemberi rujukan Anda tidak akan menerima reward dari Asil Browser.";
+"OBPrivacyConsentDetail" = "Anda mungkin telah mengunduh Kahf Browser untuk mendukung pemberi rujukan Anda. Untuk mendeteksi pemberi rujukan tersebut, Kahf Browser melakukan pemeriksaan satu kali di clipboard Anda atas kode rujukan yang cocok. Pemeriksaan ini terbatas hanya pada kode dan tidak ada data pribadi yang akan ditransfer. Jika Anda memilih untuk tidak ikut, pemberi rujukan Anda tidak akan menerima reward dari Kahf Browser.";
 
 /* No comment provided by engineer. */
 "OBPrivacyConsentNoButton" = "Jangan izinkan pemeriksaan ini";
@@ -1178,10 +1178,10 @@
 "OBRewardsAgreementDetailsAnd" = "dan";
 
 /* Title for rewards agreement onboarding screen */
-"OBRewardsAgreementTitle" = "Imbalan Asil Browser";
+"OBRewardsAgreementTitle" = "Imbalan Kahf Browser";
 
 /* Detail text for rewards onboarding screen */
-"OBRewardsDetail" = "Memilih untuk menggunakan Asil Browser Private Ads akan mendukung penerbit dan pembuat konten melalui setiap iklan yang dilihat.";
+"OBRewardsDetail" = "Memilih untuk menggunakan Kahf Browser Private Ads akan mendukung penerbit dan pembuat konten melalui setiap iklan yang dilihat.";
 
 /* Detail text for rewards onboarding screen */
 "OBRewardsDetailInAdRegion" = "Dapatkan token dan beri reward pada pembuat konten atas konten hebat selagi Anda menjelajahi";
@@ -1190,7 +1190,7 @@
 "OBRewardsPrivacyPolicyDetailLink" = "Kebijakan Privasi";
 
 /* Title for rewards onboarding screen */
-"OBRewardsTitle" = "Imbalan Asil Browser";
+"OBRewardsTitle" = "Imbalan Kahf Browser";
 
 /* Save button to save current selection */
 "OBSaveButton" = "Simpan";
@@ -1199,28 +1199,28 @@
 "OBSearchEngineDetail" = "Pilih mesin pencari baku Anda";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Selamat Datang di Peramban Asil Browser";
+"OBSearchEngineTitle" = "Selamat Datang di Peramban Kahf Browser";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "Blokir pelacak privasi yang menginvasi agar Anda dapat menjelajahi di web tanpa dikuntit.";
 
 /* Title for shields onboarding screen */
-"OBShieldsTitle" = "Perisai Asil Browser";
+"OBShieldsTitle" = "Perisai Kahf Browser";
 
-/* Button to show the Asil Browser Rewards Ads. */
+/* Button to show the Kahf Browser Rewards Ads. */
 "OBShowMeButton" = "Tampilkan Kepada Saya";
 
-/* Button to show Asil Browser Rewards. */
+/* Button to show Kahf Browser Rewards. */
 "OBTurnOnButton" = "Mulai";
 
 /* The description text shown when there is big tech tracker among trackers. Example usage: Google, Amazon and 32 other trackers blocked */
 "onboarding.blockedAdsOnboardingBigTechInformationText" = "Iklan & pelacak %1$@ dan %2$lld lain telah diblokir";
 
-/* The footnote indicating what Asil Browser shields is blocking */
-"onboarding.blockedAdsOnboardingFootnoteText" = "Lihatlah semua hal buruk yang telah diblokir Asil Browser, di setiap halaman, dengan Perisai.";
+/* The footnote indicating what Kahf Browser shields is blocking */
+"onboarding.blockedAdsOnboardingFootnoteText" = "Lihatlah semua hal buruk yang telah diblokir Kahf Browser, di setiap halaman, dengan Perisai.";
 
 /* The text describing user where they should press in order to open Shield panel */
-"onboarding.blockedAdsOnboardingInstructionsText" = "Ketuk untuk melihat Perisai Asil Browser";
+"onboarding.blockedAdsOnboardingInstructionsText" = "Ketuk untuk melihat Perisai Kahf Browser";
 
 /* The description text shown when there is no big tech tracker among trackers. Example usage: 31 Ads & trackers blocked. The number here is presented separately so it is not in translation. */
 "onboarding.blockedAdsOnboardingNoBigTechInformationText" = "Iklan & pelacak yang diblokir";
@@ -1235,13 +1235,13 @@
 "onboarding.ntpOnboardingPopOverTrackerDescription" = "Dengan memblokir pelacak & iklan, situs web menggunakan lebih sedikit data dan memuat lebih cepat.";
 
 /* Description for the Omnibox (URL Bar) pop-over that describes faster load times. */
-"onboarding.omniboxOnboardingPopOverDescription" = "Lihat perbedaan Asil Browser:\nTanpa iklan. Tanpa pelacak. Pemuatan halaman yang jauh lebih cepat.";
+"onboarding.omniboxOnboardingPopOverDescription" = "Lihat perbedaan Kahf Browser:\nTanpa iklan. Tanpa pelacak. Pemuatan halaman yang jauh lebih cepat.";
 
 /* Title for the Omnibox (URL Bar) pop-over that describes faster load times. */
 "onboarding.omniboxOnboardingPopOverTitle" = "Ketik nama situs web atau URL";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "Selamat Datang di Asil Browser";
+"onboarding.welcomeScreenTitle" = "Selamat Datang di Kahf Browser";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "Lanjutkan";
@@ -1255,8 +1255,8 @@
 /* Context menu item for opening all folder bookmarks */
 "OpenAllBookmarks" = "Buka Semua (%i)";
 
-/* Button title for opening the Asil Browser Rewards panel to settings */
-"OpenBraveRewardsSettings" = "Buka Pengaturan Asil Browser Rewards";
+/* Button title for opening the Kahf Browser Rewards panel to settings */
+"OpenBraveRewardsSettings" = "Buka Pengaturan Kahf Browser Rewards";
 
 /* Error description when there is an error while navigating to Files App */
 "OpenDownloadsFolderErrorDescription" = "Terjadi kesalahan yang tidak diketahui saat membuka folder Unduhan di aplikasi Berkas.";
@@ -1301,13 +1301,13 @@
 "opentabs.noSyncChainPlaceHolderViewDescription" = "Untuk memulai, siapkan rantai sinkronisasi dan alihkan ke \"Buka Tab\" pada Pengaturan Sinkronisasi.";
 
 /* The additional description of the view describing tab syncing should be enabled. */
-"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Mengelola tab yang disinkronisasikan Asil Browser pada Pengaturan.";
+"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "Mengelola tab yang disinkronisasikan Kahf Browser pada Pengaturan.";
 
 /* The description of the view describing no other sessions are active in sync. */
 "opentabs.noSyncSessionPlaceHolderViewDescription" = "Tidak ada sesi aktif yang dapat ditampilkan dari perangkat Anda yang lain.";
 
 /* The title of the view showing no synced sessions */
-"opentabs.noSyncSessionPlaceHolderViewTitle" = "Bidang ini menunjukkan tab Asil Browser yang dibuka di perangkat lain";
+"opentabs.noSyncSessionPlaceHolderViewTitle" = "Bidang ini menunjukkan tab Kahf Browser yang dibuka di perangkat lain";
 
 /* The title for the action to hide open session with all tabs */
 "opentabs.openSessionHideAllActionTitle" = "Sembunyikan sekarang";
@@ -1360,35 +1360,35 @@
 /* Button title to that opens a website. */
 "OpenWebsite" = "Buka Situs Web";
 
-/* The subtitle description of menu item Asil Browser News */
+/* The subtitle description of menu item Kahf Browser News */
 "optionsMenu.braveNewsItemDescription" = "Berita utama hari ini dalam umpan berita pribadi";
 
-/* Asil Browser News Item Menu title */
+/* Kahf Browser News Item Menu title */
 "optionsMenu.braveNewsItemTitle" = "Berita";
 
-/* The subtitle description of menu item Asil Browser Playlist */
+/* The subtitle description of menu item Kahf Browser Playlist */
 "optionsMenu.bravePlaylistItemDescription" = "Pertahankan daftar putar luring setiap video/aliran";
 
-/* Asil Browser News Item Menu title */
+/* Kahf Browser News Item Menu title */
 "optionsMenu.bravePlaylistItemTitle" = "Daftar Putar";
 
-/* The subtitle description of menu item Asil Browser Talk */
+/* The subtitle description of menu item Kahf Browser Talk */
 "optionsMenu.braveTalkItemDescription" = "Panggilan video pribadi, langsung di peramban Anda";
 
-/* Asil Browser Talk Item Menu title */
+/* Kahf Browser Talk Item Menu title */
 "optionsMenu.braveTalkItemTitle" = "Bicara";
 
-/* The subtitle description of menu item Asil Browser VPN */
+/* The subtitle description of menu item Kahf Browser VPN */
 "optionsMenu.braveVPNItemDescription" = "Lindungi semua perangkat Anda secara daring";
 
-/* Asil Browser VPN Item Menu title */
+/* Kahf Browser VPN Item Menu title */
 "optionsMenu.braveVPNItemTitle" = "VPN";
 
-/* The subtitle description of menu item Asil Browser Wallet */
+/* The subtitle description of menu item Kahf Browser Wallet */
 "optionsMenu.braveWalletItemDescription" = "Dompet kripto aman, tidak memerlukan perluasan";
 
 /* Privacy Features Section title */
-"optionsMenu.menuSectionTitle" = "Fitur Asil Browser";
+"optionsMenu.menuSectionTitle" = "Fitur Kahf Browser";
 
 /* Section name for other privacy settings */
 "OtherPrivacySettingsSection" = "Pengaturan Privasi Lain";
@@ -1396,10 +1396,10 @@
 /* Section name for other settings. */
 "OtherSettingsSection" = "Pengaturan Lain";
 
-/* A subtitle shown on the setting that toggles analytics on Asil Browser. */
-"p3a.settingSubtitle" = "Info P3A yang anonim membantu Asil Browser memperkirakan penggunaan keseluruhan dan memastikan kami meningkatkan fitur yang populer.";
+/* A subtitle shown on the setting that toggles analytics on Kahf Browser. */
+"p3a.settingSubtitle" = "Info P3A yang anonim membantu Kahf Browser memperkirakan penggunaan keseluruhan dan memastikan kami meningkatkan fitur yang populer.";
 
-/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
+/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Kahf Browser. */
 "p3a.settingTitle" = "Memungkinkan Analitik Produk yang Menjaga Privasi (P3A)";
 
 /* Title for the section for the global/default zoom level */
@@ -1445,7 +1445,7 @@
 "playList.addToPlayListAlertDescription" = "Apakah Anda ingin menambahkan video ini ke daftar putar Anda?";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Tambahkan ke Asil Browser Playlist";
+"playList.addToPlayListAlertTitle" = "Tambahkan ke Kahf Browser Playlist";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "Opsi Putar Kembali";
@@ -1466,7 +1466,7 @@
 "playlist.carplaySettingsSectionTitle" = "Pengaturan";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Daftar Putar Asil Browser";
+"playlist.carplayTitle" = "Daftar Putar Kahf Browser";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "Hapus Cache Luring";
@@ -1484,7 +1484,7 @@
 "playList.loadResourcesErrorAlertDescription" = "Terjadi masalah saat memuat sumber!";
 
 /* Description footer for playlist menu badge option */
-"playlist.menuBadgeOptionFooterText" = "Saat diaktifkan, sebuah emblem akan ditampilkan pada lambang menu utama, yang menunjukkan bahwa media pada halaman tersebut dapat ditambahkan ke Daftar Putar Asil Browser.";
+"playlist.menuBadgeOptionFooterText" = "Saat diaktifkan, sebuah emblem akan ditampilkan pada lambang menu utama, yang menunjukkan bahwa media pada halaman tersebut dapat ditambahkan ke Daftar Putar Kahf Browser.";
 
 /* Title for playlist menu badge option */
 "playlist.menuBadgeOptionTitle" = "Tampilkan Emblem Notifikasi Menu";
@@ -1493,7 +1493,7 @@
 "playlist.movePlaylistShareActionMenuTitle" = "Pindahkan...";
 
 /* Detail Text when there are no items in the playlist */
-"playList.noItemLabelDetailLabel" = "Anda dapat menambahkan media ke Asil Browser Playlist Anda di dalam peramban";
+"playList.noItemLabelDetailLabel" = "Anda dapat menambahkan media ke Kahf Browser Playlist Anda di dalam peramban";
 
 /* Text when there are no items in the playlist */
 "playList.noItemLabelTitle" = "Video Tidak Tersedia";
@@ -1571,7 +1571,7 @@
 "playList.playListSettingTitle" = "Daftar Putar";
 
 /* Body for the error message that shows when a playlist folder already exists */
-"playList.playlistSharedFolderAlreadyExistsBody" = "Folder ini telah ada di Daftar Putar Asil Browser Anda";
+"playList.playlistSharedFolderAlreadyExistsBody" = "Folder ini telah ada di Daftar Putar Kahf Browser Anda";
 
 /* Title for the error message that shows when a playlist folder already exists */
 "playList.playlistSharedFolderAlreadyExistsTitle" = "Maaf";
@@ -1607,16 +1607,16 @@
 "playlist.playlistWebCompatibilityTitle" = "Kompatibilitas Web";
 
 /* Body of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddBody" = "Daftar Putar Asil Browser mendukung Putar Kembali Luring, Gambar dalam Gambar, putar kembali terus-menerus, serta mode pengulangan.";
+"playlist.popoverAddBody" = "Daftar Putar Kahf Browser mendukung Putar Kembali Luring, Gambar dalam Gambar, putar kembali terus-menerus, serta mode pengulangan.";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "Media ini ada di Daftar Putar Asil Browser Anda";
+"playlist.popoverAddedTitle" = "Media ini ada di Daftar Putar Kahf Browser Anda";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddTitle" = "Apakah Anda ingin menambahkan media ini ke Daftar Putar Asil Browser Anda?";
+"playlist.popoverAddTitle" = "Apakah Anda ingin menambahkan media ini ke Daftar Putar Kahf Browser Anda?";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Buka di Daftar Putar Asil Browser";
+"playlist.popoverOpenInBravePlaylist" = "Buka di Daftar Putar Kahf Browser";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "Hapus";
@@ -1658,7 +1658,7 @@
 "playlist.sharePlaylistActionDetailsTitle" = "Anda dapat membuka media saat ini di Tab Baru, atau membagikannya melalui Menu Pembagian Sistem";
 
 /* Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
-"playlist.sharePlaylistActionTitle" = "Menu Asil Browser Playlist";
+"playlist.sharePlaylistActionTitle" = "Menu Kahf Browser Playlist";
 
 /* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
 "playlist.sharePlaylistOpenInNewPrivateTabTitle" = "Buka di Tab Privat";
@@ -1673,19 +1673,19 @@
 "playList.sorryAlertTitle" = "Maaf";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Ditambahkan ke Daftar Putar Asil Browser";
+"playList.toastAddedToPlaylistTitle" = "Ditambahkan ke Daftar Putar Kahf Browser";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "Buka";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Tambahkan ke Asil Browser Playlist";
+"playList.toastAddToPlaylistTitle" = "Tambahkan ke Kahf Browser Playlist";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
-"playList.toastExitingItemPlaylistTitle" = "Lihat di Asil Browser Playlist";
+"playList.toastExitingItemPlaylistTitle" = "Lihat di Kahf Browser Playlist";
 
 /* Footer for option to disable URL-Bar button */
-"playlist.urlBarButtonOptionFooter" = "Tambahkan tombol daftar putar (seperti 4 garis dengan simbol +) di samping bilah alamat pada peramban Asil Browser. Tombol ini memberikan Anda akses cepat untuk membuka Daftar Putar, atau menambahkan atau menyingkirkan media.";
+"playlist.urlBarButtonOptionFooter" = "Tambahkan tombol daftar putar (seperti 4 garis dengan simbol +) di samping bilah alamat pada peramban Kahf Browser. Tombol ini memberikan Anda akses cepat untuk membuka Daftar Putar, atau menambahkan atau menyingkirkan media.";
 
 /* Title for option to disable URL-Bar button */
 "playlist.urlBarButtonOptionTitle" = "Aktifkan tombol akses cepat";
@@ -1714,7 +1714,7 @@
 /* The title of the screen where the user will move an item from one folder to another folder. */
 "playlistFolders.moveFolderScreenTitle" = "Pindahkan";
 
-/* %@ Should NOT be localized. It is a placeholder. Example: Asil Browser Folder and 1 more item. */
+/* %@ Should NOT be localized. It is a placeholder. Example: Kahf Browser Folder and 1 more item. */
 "playlistFolders.moveItemDescription" = "%@ dan 1 hal lagi";
 
 /* %lld is a placeholder and should not be localized. Sometimes items can have no name. So this is a generic title to use */
@@ -1723,7 +1723,7 @@
 /* Sometimes an item can have no name. So this is a generic title to use */
 "playlistFolders.moveItemWithNoNameTitle" = "1 hal";
 
-/* %@ and %lld Should NOT be localized. They are placeholders. Example: Asil Browser Folder and 3 more items. Music and 2 more items. */
+/* %@ and %lld Should NOT be localized. They are placeholders. Example: Kahf Browser Folder and 3 more items. Music and 2 more items. */
 "playlistFolders.moveMultipleItemDescription" = "%1$@ dan %2$lld hal lagi";
 
 /* The title of the button to create a new folder */
@@ -1757,7 +1757,7 @@
 "playlistFolders.untitledFolderTitle" = "Folder Tanpa Nama";
 
 /* Accessibility Title for the button that adds the playlist to the database. */
-"playlistFolderSharing.addButtonAccessibilityTitle" = "Tambahkan ke Tombol Daftar Putar Asil Browser";
+"playlistFolderSharing.addButtonAccessibilityTitle" = "Tambahkan ke Tombol Daftar Putar Kahf Browser";
 
 /* Title for the button that adds the playlist to the database. */
 "playlistFolderSharing.addButtonTitle" = "Tambahkan";
@@ -1801,7 +1801,7 @@
 /* Description for closing a popover menu that is displayed. */
 "PopoverDefaultClose" = "Tutup Menu Konteks";
 
-/* Description for closing the `Asil Browser Shields` popover menu that is displayed. */
+/* Description for closing the `Kahf Browser Shields` popover menu that is displayed. */
 "PopoverShieldsMenuClose" = "Tutup Menu Perisai";
 
 /* Label for preview action on Tab Tray Tab to add current tab to Bookmarks */
@@ -1825,7 +1825,7 @@
 /* Header text, under it we show items blocked by our ad blocker. 'All  time' sentence context is like 'All time items blocked by our ad blocker. */
 "privacyHub.allTimeListsHeader" = "Sepanjang waktu";
 
-/* Title of a section to show total count of trackers blocked by Asil Browser */
+/* Title of a section to show total count of trackers blocked by Kahf Browser */
 "privacyHub.allTimeListsTrackersView" = "Pelacak & iklan";
 
 /* Title of a section to show websites containing highest amount of trackers */
@@ -1849,10 +1849,10 @@
 /* Title under which we display a website on which there's the highest number of trackers or ads. */
 "privacyHub.allTimeWebsiteTitle" = "Situs Web";
 
-/* Text for a button to display a list of all alerts caught by the Asil Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
+/* Text for a button to display a list of all alerts caught by the Kahf Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
 "privacyHub.allVPNAlertsButtonText" = "Semua peringatan";
 
-/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Asil Browser Shields', 'Blocked by BraveVPN */
+/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Kahf Browser Shields', 'Blocked by BraveVPN */
 "privacyHub.blockedBy" = "Diblokir oleh";
 
 /* It says that a ad or tracker was blocked. Think of it in context of 'A tracker X was blocked' */
@@ -1870,8 +1870,8 @@
 /* Header text, under it we display blocked items from last week */
 "privacyHub.lastWeekHeader" = "Minggu lalu";
 
-/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Asil Browser Shields on 42 sites' */
-"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** diblokir oleh Perisai Asil Browser pada situs **%2$lld**";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Kahf Browser Shields on 42 sites' */
+"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** diblokir oleh Perisai Kahf Browser pada situs **%2$lld**";
 
 /* Title under which we display a tracker which was most frequently detected by our ad blocking mechanism. */
 "privacyHub.mostFrequentTrackerAndAdTitle" = "Pelacak & Iklan Paling Sering";
@@ -1889,7 +1889,7 @@
 "privacyHub.notificationCalloutButtonText" = "Aktifkan notifikasi";
 
 /* Message of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
-"privacyHub.notificationMessage" = "Rangkuman tentang cara Asil Browser telah melindungi Anda secara daring minggu ini.";
+"privacyHub.notificationMessage" = "Rangkuman tentang cara Kahf Browser telah melindungi Anda secara daring minggu ini.";
 
 /* Title of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
 "privacyHub.notificationTitle" = "Laporan Privasi Mingguan";
@@ -1903,7 +1903,7 @@
 /* Text of a disclaimer that explains how the data for generating privacy reprots is stored. */
 "privacyHub.privacyReportsDisclaimer" = "Data Hub Privasi disimpan secara lokal dan tidak pernah dikirimkan ke mana pun.";
 
-/* Title of main privacy hub screen. This screen shows various stats caught by Asil Browser's ad blockers. */
+/* Title of main privacy hub screen. This screen shows various stats caught by Kahf Browser's ad blockers. */
 "privacyHub.privacyReportsTitle" = "Hub Privasi";
 
 /* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which website had the most tracker per visit, example usage: 'example.com had an average of 10 trackers & ads blocked per visit ' */
@@ -1912,22 +1912,22 @@
 /* Title of a website that contained the most trackers per visit. */
 "privacyHub.riskiestWebsiteTitle" = "Situs dengan pelacak paling banyak";
 
-/* This text explains a setting that lets Asil Browser monitor blocked network requests */
+/* This text explains a setting that lets Kahf Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsFooter" = "Hub Privasi menunjukkan jumlah hal yang diblokir Perisai. Pengaturan tidak akan memengaruhi penghitungan Perisai pada halaman tab yang baru. Data Perisai tidak dihitung pada jendela privat.";
 
-/* Title of a setting that lets Asil Browser monitor blocked network requests */
+/* Title of a setting that lets Kahf Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsTitle" = "Menampilkan Data Perisai";
 
-/* This text explains a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+/* This text explains a setting that lets Kahf Browser monitor blocked network requests captured by Kahf Browser VPN */
 "privacyHub.settingsEnableVPNAlertsFooter" = "Pengaturan hanya berlaku jika Anda telah membeli paket langganan VPN.";
 
-/* Title of a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+/* Title of a setting that lets Kahf Browser monitor blocked network requests captured by Kahf Browser VPN */
 "privacyHub.settingsEnableVPNAlertsTitle" = "Tampilkan Peringatan VPN";
 
 /* This text explains what the button to clear datain the Privacy Hub is for. */
 "privacyHub.settingsSlearDataFooter" = "Mengatur penghitung semua hal yang telah diblokir Perisai.";
 
-/* Button that lets user clear all blocked requests and vpn alerts data that Asil Browser captured for them. */
+/* Button that lets user clear all blocked requests and vpn alerts data that Kahf Browser captured for them. */
 "privacyHub.settingsSlearDataTitle" = "Hapus Data Perisai";
 
 /* This label says shields, as a source of by what a resource was blocked. Think of it in context of 'Blocked by Shields' */
@@ -1952,15 +1952,15 @@
 "privacyHub.vpnAlertRegularTrackerTypeSingular" = "Pelacak atau Iklan";
 
 /* Section title, this section displays vpn alerts: items which the vpn managed to block on users behalf. */
-"privacyHub.vpnAlertsHeader" = "Peringatan Dinding Api Asil Browser + VPN";
+"privacyHub.vpnAlertsHeader" = "Peringatan Dinding Api Kahf Browser + VPN";
 
-/* This label says about Asil Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
+/* This label says about Kahf Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
 "privacyHub.vpnLabel" = "Dinding Api + VPN";
 
 /* It shows a total count of items blocked by our VPN shields */
 "privacyHub.vpvnAlertsTotalCount" = "Hitungan total";
 
-/* Show Asil Browser Browser Privacy Policy page from the Privacy section in the settings. */
+/* Show Kahf Browser Browser Privacy Policy page from the Privacy section in the settings. */
 "PrivacyPolicy" = "Kebijakan Privasi";
 
 /* Private button title */
@@ -1976,10 +1976,10 @@
 "PrivateBrowsingOnlyWarning" = "Moda Hanya Peramban Pribadi akan menutup semua tab Anda saat ini dan mengeluarkan Anda dari semua situs.";
 
 /* Private tab details */
-"PrivateTabBody" = "Tab Pribadi tidak disimpan di Asil Browser, tetapi tab tersebut tidak menjadikan Anda anonim secara online. Situs-situs yang Anda kunjungi di tab pribadi tidak akan muncul di riwayat Anda dan kukinya selalu terhapus saat Anda menutup situs, tidak akan ada jejak situs tersebut yang tertinggal di Asil Browser. Namun unduhan Anda akan disimpan.\nOperator seluler Anda (atau pemilik jaringan WiFi atau VPN yang terhubung) dapat melihat situs apa yang Anda kunjungi dan situs tersebut akan mengetahui alamat IP publik Anda, bahkan dalam Tab Pribadi.";
+"PrivateTabBody" = "Tab Pribadi tidak disimpan di Kahf Browser, tetapi tab tersebut tidak menjadikan Anda anonim secara online. Situs-situs yang Anda kunjungi di tab pribadi tidak akan muncul di riwayat Anda dan kukinya selalu terhapus saat Anda menutup situs, tidak akan ada jejak situs tersebut yang tertinggal di Kahf Browser. Namun unduhan Anda akan disimpan.\nOperator seluler Anda (atau pemilik jaringan WiFi atau VPN yang terhubung) dapat melihat situs apa yang Anda kunjungi dan situs tersebut akan mengetahui alamat IP publik Anda, bahkan dalam Tab Pribadi.";
 
 /* Private tab detail text */
-"PrivateTabDetails" = "Menggunakan Tab Pribadi hanya akan mengubah fungsi Asil Browser di perangkat Anda, namun tidak mengubah perilaku orang lain.\n\nSitus selalu mengetahui alamat IP Anda saat mengunjunginya. Dari sini, mereka sering kali dapat selalu menebak lokasi Anda, terutama kota. Terkadang lokasi yang diketahui dapat lebih spesifik. Situs juga mengetahui semua yang Anda beri tahu secara spesifik kepada mereka seperti istilah pencarian. Jika masuk, situs akan mengetahui bahwa Anda adalah pemilik akun tersebut. Anda tetap akan keluar saat menutup Tab Pribadi karena Asil Browser akan menghapus kuki yang Anda gunakan untuk masuk.\n\nSiapa pun yang menyambungkan Anda ke Internet (ISP Anda) dapat melihat semua aktivitas jaringan Anda. Sering kali, operator seluler Anda yang melihatnya. Jika Anda tersambung ke jaringan WiFi, maka pemilik jaringan tersebut yang dapat melihat aktivitas jaringan, dan jika Anda menggunakan VPN, maka siapa pun yang menjalankan VPN tersebut yang dapat melihat aktivitas jaringan. ISP Anda dapat melihat situs yang dikunjungi saat Anda mengunjunginya. Jika situs tersebut menggunakan HTTPS, situs tersebut hanya dapat menebak aktivitas Anda di situs tersebut. Namun jika situs hanya menggunakan HTTP, maka ISP dapat melihat semuanya: istilah pencarian Anda, halaman yang dibaca, dan tautan yang diikuti.\n\nJika perusahaan mengelola perangkat Anda, mereka juga dapat melacak aktivitas perangkat Anda. Menggunakan Tab Pribadi mungkin tidak akan menghentikan mereka untuk mengetahui situs yang Anda kunjungi. Orang lain yang memiliki akses ke perangkat Anda juga dapat memasang perangkat lunak yang memantau aktivitas Anda, dan Tab Pribadi tidak akan dapat melindungi Anda dari hal ini.";
+"PrivateTabDetails" = "Menggunakan Tab Pribadi hanya akan mengubah fungsi Kahf Browser di perangkat Anda, namun tidak mengubah perilaku orang lain.\n\nSitus selalu mengetahui alamat IP Anda saat mengunjunginya. Dari sini, mereka sering kali dapat selalu menebak lokasi Anda, terutama kota. Terkadang lokasi yang diketahui dapat lebih spesifik. Situs juga mengetahui semua yang Anda beri tahu secara spesifik kepada mereka seperti istilah pencarian. Jika masuk, situs akan mengetahui bahwa Anda adalah pemilik akun tersebut. Anda tetap akan keluar saat menutup Tab Pribadi karena Kahf Browser akan menghapus kuki yang Anda gunakan untuk masuk.\n\nSiapa pun yang menyambungkan Anda ke Internet (ISP Anda) dapat melihat semua aktivitas jaringan Anda. Sering kali, operator seluler Anda yang melihatnya. Jika Anda tersambung ke jaringan WiFi, maka pemilik jaringan tersebut yang dapat melihat aktivitas jaringan, dan jika Anda menggunakan VPN, maka siapa pun yang menjalankan VPN tersebut yang dapat melihat aktivitas jaringan. ISP Anda dapat melihat situs yang dikunjungi saat Anda mengunjunginya. Jika situs tersebut menggunakan HTTPS, situs tersebut hanya dapat menebak aktivitas Anda di situs tersebut. Namun jika situs hanya menggunakan HTTP, maka ISP dapat melihat semuanya: istilah pencarian Anda, halaman yang dibaca, dan tautan yang diikuti.\n\nJika perusahaan mengelola perangkat Anda, mereka juga dapat melacak aktivitas perangkat Anda. Menggunakan Tab Pribadi mungkin tidak akan menghentikan mereka untuk mengetahui situs yang Anda kunjungi. Orang lain yang memiliki akses ke perangkat Anda juga dapat memasang perangkat lunak yang memantau aktivitas Anda, dan Tab Pribadi tidak akan dapat melindungi Anda dari hal ini.";
 
 /* Private tab information link */
 "PrivateTabLink" = "Pelajari tentang Tab Pribadi.";
@@ -1993,8 +1993,8 @@
 /* Title for quick-search engines settings section. */
 "QuickSearchEngines" = "Mesin Pencari Cepat";
 
-/* Open the App Store to rate Asil Browser. */
-"RateBrave" = "Beri Rating pada Asil Browser";
+/* Open the App Store to rate Kahf Browser. */
+"RateBrave" = "Beri Rating pada Kahf Browser";
 
 /* Accessibility label for button increasing font size in display settings of reader mode */
 "ReaderModeBiggerFontButtonAccessibilityLabel" = "Perbesar ukuran teks";
@@ -2023,13 +2023,13 @@
 /* Accessibility hint for the font type buttons in reader mode display settings */
 "ReaderModeFontTypeButtonAccessibilityHint" = "Ubah jenis fon.";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModeLoadingContentDisplayText" = "Memuat konten...";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModeLoadOriginalLinkText" = "Muat laman asli";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModePageCantShowDisplayText" = "Laman tidak dapat ditampilkan pada Tampilan Baca";
 
 /* Title of a bar that show up when you enter reader mode. */
@@ -2114,10 +2114,10 @@
 "ReportABug" = "Laporkan Bug";
 
 /* First part of the report a broken site copy. After the colon is a new line and then a website address */
-"ReportBrokenSiteBody1" = "Memungkinkan pengembang Asil Browser mengetahui bahwa situs ini tidak bekerja dengan benar dengan Shields:";
+"ReportBrokenSiteBody1" = "Memungkinkan pengembang Kahf Browser mengetahui bahwa situs ini tidak bekerja dengan benar dengan Shields:";
 
 /* No comment provided by engineer. */
-"ReportBrokenSiteBody2" = "Catatan: Alamat situs ini akan dikirimkan bersama nomor versi Asil Browser Anda dan alamat IP Anda (yang tidak akan disimpan).";
+"ReportBrokenSiteBody2" = "Catatan: Alamat situs ini akan dikirimkan bersama nomor versi Kahf Browser Anda dan alamat IP Anda (yang tidak akan disimpan).";
 
 /* No comment provided by engineer. */
 "ReportBrokenSubmitButtonTitle" = "Kirim";
@@ -2135,33 +2135,33 @@
 "RestoreTabNegativeButtonTitle" = "Tidak";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "Sepertinya Asil Browser mogok. Ingin mengembalikan tab Anda?";
+"RestoreTabOnCrashAlertMessage" = "Sepertinya Kahf Browser mogok. Ingin mengembalikan tab Anda?";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "Terjadi masalah.";
 
-/* Body for Asil Browser Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInBody" = "Dengan Asil Browser Rewards, Anda dapat melihat iklan yang menghormati privasi dari jaringan Asil Browser Ads. Tanpa pelacak. Tanpa hambatan. Dan data Anda akan tetap aman sepenuhnya.";
+/* Body for Kahf Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInBody" = "Dengan Kahf Browser Rewards, Anda dapat melihat iklan yang menghormati privasi dari jaringan Kahf Browser Ads. Tanpa pelacak. Tanpa hambatan. Dan data Anda akan tetap aman sepenuhnya.";
 
-/* Title for Asil Browser Talk rewards opt-in screen button */
+/* Title for Kahf Browser Talk rewards opt-in screen button */
 "rewards.braveTalkRewardsOptInButtonTitle" = "Aktifkan Imbalan";
 
-/* Body for successful Asil Browser Talk rewards opt-in */
-"rewards.braveTalkRewardsOptInSuccessBody" = "Klik di mana saja pada layar untuk melanjutkan ke Asil Browser Talk.";
+/* Body for successful Kahf Browser Talk rewards opt-in */
+"rewards.braveTalkRewardsOptInSuccessBody" = "Klik di mana saja pada layar untuk melanjutkan ke Kahf Browser Talk.";
 
-/* Title for successful Asil Browser Talk rewards opt-in */
+/* Title for successful Kahf Browser Talk rewards opt-in */
 "rewards.braveTalkRewardsOptInSuccessTitle" = "Kini, Anda dapat mulai melakukan panggilan gratis";
 
-/* Title for Asil Browser Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInTitle" = "Untuk memulai panggilan gratis, aktifkan Asil Browser Rewards";
+/* Title for Kahf Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInTitle" = "Untuk memulai panggilan gratis, aktifkan Kahf Browser Rewards";
 
-/* Displayed when Asil Browser Rewards is disabled */
+/* Displayed when Kahf Browser Rewards is disabled */
 "rewards.disabledBody" = "Aktifkan untuk membantu mendukung para kreator konten";
 
 /* Displayed in the status container when rewards is disabled */
-"rewards.disabledStatusBody" = "Menggunakan Asil Browser Rewards akan membantu mendukung kreator konten sembari Anda meramban.";
+"rewards.disabledStatusBody" = "Menggunakan Kahf Browser Rewards akan membantu mendukung kreator konten sembari Anda meramban.";
 
-/* Displayed when Asil Browser Rewards is enabled */
+/* Displayed when Kahf Browser Rewards is enabled */
 "rewards.enabledBody" = "Anda membantu mendukung para kreator konten";
 
 /* Displayed in the status container when rewards is enabled but you're not currently supporting any publishers (0 AC count) */
@@ -2186,7 +2186,7 @@
 "rewards.legacyWalletTransferStatusButtonPendingTitle" = "Status transfer dompet lama Anda ditangguhkan";
 
 /* No comment provided by engineer. */
-"rewards.legacyWalletTransferStatusCompletedBody" = "Transfer dompet lama Anda telah selesai! Mungkin perlu beberapa waktu untuk menampilkan saldo Anda saat ini  di desktop dompet Asil Browser Rewards Anda.";
+"rewards.legacyWalletTransferStatusCompletedBody" = "Transfer dompet lama Anda telah selesai! Mungkin perlu beberapa waktu untuk menampilkan saldo Anda saat ini  di desktop dompet Kahf Browser Rewards Anda.";
 
 /* Title shown above body of text explaining that their transfer is completed */
 "rewards.legacyWalletTransferStatusCompletedTitle" = "Transfer Selesai!";
@@ -2237,13 +2237,13 @@
 "rewards.optInDisclaimer" = "Dengan mengklik, Anda menyetujui %1$@ dan %2$@. Nonaktifkan kapan saja di Pengaturan.";
 
 /* No comment provided by engineer. */
-"rewards.settingsFooterMessage" = "Pembayaran Asil Browser Rewards sedang tidak tersedia di perangkat ini. Transfer dana dompet Anda yang ada ke dompet desktop untuk tetap menyimpan token Anda.";
+"rewards.settingsFooterMessage" = "Pembayaran Kahf Browser Rewards sedang tidak tersedia di perangkat ini. Transfer dana dompet Anda yang ada ke dompet desktop untuk tetap menyimpan token Anda.";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleMessage" = "Dukung para kreator dan penerbit konten secara otomatis dengan mengaktifkan Asil Browser Private Ads. Asil Browser Private Ads adalah iklan yang menjaga privasi dan yang memberi imbalan kepada kreator konten. ";
+"rewards.settingsToggleMessage" = "Dukung para kreator dan penerbit konten secara otomatis dengan mengaktifkan Kahf Browser Private Ads. Kahf Browser Private Ads adalah iklan yang menjaga privasi dan yang memberi imbalan kepada kreator konten. ";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleTitle" = "Aktifkan Asil Browser Rewards";
+"rewards.settingsToggleTitle" = "Aktifkan Kahf Browser Rewards";
 
 /* Displayed under verified publishers */
 "rewards.supportingPublisher" = "Anda membantu mendukung para kreator konten seperti yang satu ini.";
@@ -2258,19 +2258,19 @@
 "rewards.unverifiedPublisher" = "Kreator ini belum diverifikasi dan tidak akan disertakan dalam dukungan kreator.";
 
 /* A confirmation message shown to the user after completing a wallet transfer successfully */
-"rewards.walletTransferCompleteBody" = "Transfer Anda telah dimulai. Semua saldo BAT yang ada mungkin memerlukan beberapa menit untuk muncul di dompet Asil Browser Rewards pada desktop Anda. Periksa ringkasan Rewards Anda pada Desktop untuk mengetahui detail saat proses transfer telah selesai.\n\nAnda dapat menutup jendela ini dan lanjut menggunakan Asil Browser saat transfer Anda sedang berlangsung.";
+"rewards.walletTransferCompleteBody" = "Transfer Anda telah dimulai. Semua saldo BAT yang ada mungkin memerlukan beberapa menit untuk muncul di dompet Kahf Browser Rewards pada desktop Anda. Periksa ringkasan Rewards Anda pada Desktop untuk mengetahui detail saat proses transfer telah selesai.\n\nAnda dapat menutup jendela ini dan lanjut menggunakan Kahf Browser saat transfer Anda sedang berlangsung.";
 
 /* Title shown above the confirmation message after completing a wallet transfer successfully */
 "rewards.walletTransferCompleteTitle" = "Transfer saldo telah dimulai";
 
 /* Message on the alert presented if wallet transfer fails */
-"rewards.walletTransferFailureAlertMessage" = "Server Asil Browser Rewards tidak merespon. Silakan coba beberapa saat lagi.";
+"rewards.walletTransferFailureAlertMessage" = "Server Kahf Browser Rewards tidak merespon. Silakan coba beberapa saat lagi.";
 
 /* Title on the alert presented if wallet transfer fails */
 "rewards.walletTransferFailureAlertTitle" = "Koneksi Gagal";
 
 /* Describes the steps for using wallet transfer */
-"rewards.walletTransferStepsBody" = "Saldo token Asil Browser Rewards Anda dapat ditransfer to dompet desktop Asil Browser Rewards yang ada, satu demi satu.\n\n1. Buka Peramban Asil Browser pada desktop Anda\n2. Navigasi ke Asil Browser://rewards\n3. Klik \"Kode QR\"'\n4. Pindai Kode QR dengan perangkat Anda";
+"rewards.walletTransferStepsBody" = "Saldo token Kahf Browser Rewards Anda dapat ditransfer to dompet desktop Kahf Browser Rewards yang ada, satu demi satu.\n\n1. Buka Peramban Kahf Browser pada desktop Anda\n2. Navigasi ke Kahf Browser://rewards\n3. Klik \"Kode QR\"'\n4. Pindai Kode QR dengan perangkat Anda";
 
 /* Title above the steps to use wallet transfer */
 "rewards.walletTransferStepsTitle" = "Pindai Kode Sekali Transfer";
@@ -2303,7 +2303,7 @@
 "RewardsInternalsContributionAmount" = "Jumlah kontribusi";
 
 /* No comment provided by engineer. */
-"RewardsInternalsContributionProcessorBraveTokens" = "Token Asil Browser";
+"RewardsInternalsContributionProcessorBraveTokens" = "Token Kahf Browser";
 
 /* No comment provided by engineer. */
 "RewardsInternalsContributionProcessorNone" = "Tidak ada";
@@ -2455,7 +2455,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsShare" = "Bagikan";
 
-/* 'Rewards' as in 'Asil Browser Rewards' */
+/* 'Rewards' as in 'Kahf Browser Rewards' */
 "RewardsInternalsShareInternalsTitle" = "Bagikan Info Internal Reward";
 
 /* No comment provided by engineer. */
@@ -2473,7 +2473,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsSupported" = "Didukung";
 
-/* 'Rewards' as in 'Asil Browser Rewards' */
+/* 'Rewards' as in 'Kahf Browser Rewards' */
 "RewardsInternalsTitle" = "Reward Internal";
 
 /* No comment provided by engineer. */
@@ -2588,24 +2588,24 @@
 "SearchSuggestionsSectionHeader" = "Saran Pencarian";
 
 /* Title of an action that allows user to perform a one-click web search for selected text */
-"SearchWithBrave" = "Cari dengan Asil Browser";
+"SearchWithBrave" = "Cari dengan Kahf Browser";
 
 /* Settings security section title */
 "Security" = "Keamanan";
 
 /* Message displayed in the crash dialog above the buttons used to select when sending reports */
-"SendCrashReportAlertMessage" = "Kirim laporan mogok agar Asil Browser dapat memperbaikinya?";
+"SendCrashReportAlertMessage" = "Kirim laporan mogok agar Kahf Browser dapat memperbaikinya?";
 
 /* Title for prompt displayed to user after the app crashes */
-"SendCrashReportAlertTitle" = "Duh! Asil Browser mogok";
+"SendCrashReportAlertTitle" = "Duh! Kahf Browser mogok";
 
 /* Used as a button label for crash dialog prompt */
 "SendReportButtonTitle" = "Kirim Laporan";
 
 /* No comment provided by engineer. */
-"setDefaultBrowserCalloutTitle" = "Kini, Asil Browser dapat diatur sebagai peramban bawaan Anda di iOS. Ketuk di sini untuk membuka pengaturan.";
+"setDefaultBrowserCalloutTitle" = "Kini, Kahf Browser dapat diatur sebagai peramban bawaan Anda di iOS. Ketuk di sini untuk membuka pengaturan.";
 
-/* Settings item to set the Asil Browser as a default browser on the iOS device. */
+/* Settings item to set the Kahf Browser as a default browser on the iOS device. */
 "setDefaultBrowserSettingsCell" = "Atur sebagai Peramban Bawaan";
 
 /* No comment provided by engineer. */
@@ -2627,7 +2627,7 @@
 "settings.autocloseTabsSetting" = "Tutup Tab";
 
 /* Description of autoclose tabs feature. */
-"settings.autocloseTabsSettingFooter" = "Izinkan Asil Browser untuk secara otomatis menutup tab yang belum ditonton baru-baru ini.";
+"settings.autocloseTabsSettingFooter" = "Izinkan Kahf Browser untuk secara otomatis menutup tab yang belum ditonton baru-baru ini.";
 
 /* Error message that is shown in settings when there was a problem loading */
 "SettingsContentLoadErrorMessage" = "Tidak dapat memuat halaman.";
@@ -2687,7 +2687,7 @@
 "shieldEducation.shareTheNewsTitle" = "Bagikan berita";
 
 /* Subtitle for Shield Education Tracker Ad Warning */
-"shieldEducation.trackerAdWarningSubTitle" = "Asil Browser Shield telah menjaga privasi online Anda.";
+"shieldEducation.trackerAdWarningSubTitle" = "Kahf Browser Shield telah menjaga privasi online Anda.";
 
 /* Subtitle for Shield Education Tracker Count Share */
 "shieldEducation.trackerCountShareSubtitle" = "Selamat. Anda cukup spesial.";
@@ -2702,13 +2702,13 @@
 "shieldEducation.videoAdBlockTitle" = "Iklan diblok selagi melihat video pada situs ini.";
 
 /* Section title for adbblock, tracking protection, HTTPS-E, and cookies */
-"ShieldsDefaults" = "Default Global Perisai Asil Browser";
+"ShieldsDefaults" = "Default Global Perisai Kahf Browser";
 
 /* Section footer for global shields defaults */
 "ShieldsDefaultsFooter" = "Ini adalah pengaturan Shields default untuk situs baru. Mengubah nilai ini tidak akan memengaruhi pengaturan masing-masing situs yang telah ada.";
 
 /* No comment provided by engineer. */
-"ShieldsDownDisclaimer" = "Anda menjelajahi situs ini tanpa perlindungan privasi Asil Browser. Apakah situs tidak berfungsi benar dengan Perisai?";
+"ShieldsDownDisclaimer" = "Anda menjelajahi situs ini tanpa perlindungan privasi Kahf Browser. Apakah situs tidak berfungsi benar dengan Perisai?";
 
 /* shields overview message */
 "ShieldsOverview" = "Perisai Situs memungkinkan Anda mengontrol saat iklan dan pelacak diblokir untuk setiap situs yang dikunjungi. Jika memilih untuk melihat iklan pada situs tertentu, Anda dapat mengaktifkannya di sini.";
@@ -2738,7 +2738,7 @@
 "ShortcutItemTitleQRCode" = "Pindai Kode QR";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeBraveNewsDescription" = "Buka Asil Browser News dan Dapatkan Kabar Terpopuler Hari Ini";
+"shortcuts.activityTypeBraveNewsDescription" = "Buka Kahf Browser News dan Dapatkan Kabar Terpopuler Hari Ini";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeClearHistoryDescription" = "Buka Peramban di Tab Baru dan Hapus Semua Data Riwayat Peramban Privat";
@@ -2747,7 +2747,7 @@
 "shortcuts.activityTypeClearHistorySuggestedPhrase" = "Hapus Riwayat Perambanan";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeClearHistoryTitle" = "Hapus Riwayat Peramban Asil Browser";
+"shortcuts.activityTypeClearHistoryTitle" = "Hapus Riwayat Peramban Kahf Browser";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeEnableVPNDescription" = "Buka Peramban di Tab Baru dan Aktfkan VPN";
@@ -2756,7 +2756,7 @@
 "shortcuts.activityTypeEnableVPNSuggestedPhrase" = "Aktifkan VPN";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeEnableVPNTitle" = "Buka Peramban Asil Browser dan Aktifkan VPN";
+"shortcuts.activityTypeEnableVPNTitle" = "Buka Peramban Kahf Browser dan Aktifkan VPN";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeNewPrivateTabSuggestedPhrase" = "Buka Tab Privat Baru";
@@ -2771,10 +2771,10 @@
 "shortcuts.activityTypeNewTabTitle" = "Buka Tab Peramban Baru";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveNewsTitle" = "Buka Asil Browser News";
+"shortcuts.activityTypeOpenBraveNewsTitle" = "Buka Kahf Browser News";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Buka Asil Browser News";
+"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Buka Kahf Browser News";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeOpenPlaylistDescription" = "Mulai Memutar Video Anda di Daftar Putar";
@@ -2786,7 +2786,7 @@
 "shortcuts.activityTypeOpenPlaylistTitle" = "Buka Daftar Putar";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeTabDescription" = "Mulai Mencari di Web Dengan Aman Bersama Asil Browser";
+"shortcuts.activityTypeTabDescription" = "Mulai Mencari di Web Dengan Aman Bersama Kahf Browser";
 
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenBookmarkSuggestedPhrase" = "Buka Situs Web Markah";
@@ -2797,8 +2797,8 @@
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenWebsiteSuggestedPhrase" = "Buka Situs Web";
 
-/* Description for opening Asil Browser Settings for altering Siri shortcut. */
-"shortcuts.shortcutOpenApplicationSettingsDescription" = "Pilihan ini akan membuka Pengaturan Asil Browser. Untuk mengubah berbagai pilihan Siri, silakan pilih menu 'Siri & Cari' dan sesuaikan pilihan Anda.";
+/* Description for opening Kahf Browser Settings for altering Siri shortcut. */
+"shortcuts.shortcutOpenApplicationSettingsDescription" = "Pilihan ini akan membuka Pengaturan Kahf Browser. Untuk mengubah berbagai pilihan Siri, silakan pilih menu 'Siri & Cari' dan sesuaikan pilihan Anda.";
 
 /* Button title that open application settings */
 "shortcuts.shortcutOpenApplicationSettingsTitle" = "Buka Pengaturan";
@@ -2810,16 +2810,16 @@
 "shortcuts.shortcutSettingsClearBrowserHistoryTitle" = "Hapus Riwayat Perambanan";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsEnableVPNDescription" = "Gunakan Jalan Pintas untuk mengaktifkan VPN Asil Browser melalui Siri - Bantuan Suara";
+"shortcuts.shortcutSettingsEnableVPNDescription" = "Gunakan Jalan Pintas untuk mengaktifkan VPN Kahf Browser melalui Siri - Bantuan Suara";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsEnableVPNTitle" = "Aktifkan VPN";
 
-/* Description of Open Asil Browser News Siri Shortcut in Settings Screen */
-"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Gunakan Jalan Pintas untuk membuka tab baru & menampilkan Umpan Berita Asil Browser melalui Siri - Bantuan Suara";
+/* Description of Open Kahf Browser News Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Gunakan Jalan Pintas untuk membuka tab baru & menampilkan Umpan Berita Kahf Browser melalui Siri - Bantuan Suara";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Buka Asil Browser News";
+"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Buka Kahf Browser News";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsOpenNewPrivateTabDescription" = "Gunakan Jalan Pintas untuk membuka tab privat baru melalui Siri - Bantuan Suara";
@@ -2873,19 +2873,19 @@
 "ShowTabsBar" = "Bilah Tab";
 
 /* No comment provided by engineer. */
-"SiteReportedBody" = "Terima kasih telah memberi tahu pengembang Asil Browser bahwa ada yang tidak berfungsi dengan benar di situs ini. Kami akan membetulkannya sejauh yang kami bisa!";
+"SiteReportedBody" = "Terima kasih telah memberi tahu pengembang Kahf Browser bahwa ada yang tidak berfungsi dengan benar di situs ini. Kami akan membetulkannya sejauh yang kami bisa!";
 
 /* No comment provided by engineer. */
 "SiteReportedTitle" = "Terima Kasih";
 
-/* Asil Browser panel topmost title */
+/* Kahf Browser panel topmost title */
 "SiteShieldSettings" = "Perisai";
 
 /* Title used when in warning pop-over when domain specific data save appears */
-"socialSharing.domainSpecificDataSavedTitle" = "Setiap hari saya menghemat data karena melakukan penelusuran web dengan Asil Browser.";
+"socialSharing.domainSpecificDataSavedTitle" = "Setiap hari saya menghemat data karena melakukan penelusuran web dengan Kahf Browser.";
 
-/* Text used for social sharing together with Asil Browser Shield values */
-"socialSharing.shareDescriptionTitle" = "Setiap hari saya menghemat data karena melakukan penelusuran web dengan Asil Browser.";
+/* Text used for social sharing together with Kahf Browser Shield values */
+"socialSharing.shareDescriptionTitle" = "Setiap hari saya menghemat data karena melakukan penelusuran web dengan Kahf Browser.";
 
 /* Open search section of settings */
 "StandardTabSearch" = "Tab Standar";
@@ -2917,8 +2917,8 @@
 /* Title for Sync Settings Toggle Header */
 "sync.syncSettingsTitle" = "Pengaturan Sinkronisasi";
 
-/* Text that informs a user about Asil Browser Sync service deprecation. */
-"sync.syncV1DeprecationText" = "Asil Browser Sync baru segera tiba dan akan mempengaruhi pengaturan Anda. Bersiaplah untuk peningkatan.";
+/* Text that informs a user about Kahf Browser Sync service deprecation. */
+"sync.syncV1DeprecationText" = "Kahf Browser Sync baru segera tiba dan akan mempengaruhi pengaturan Anda. Bersiaplah untuk peningkatan.";
 
 /* Message for popup when the bookmark migration fails */
 "sync.v2MigrationErrorMessage" = "Gagal memigrasi markah buku, Coba lagi nanti.";
@@ -2933,7 +2933,7 @@
 "sync.v2MigrationInterstitialTitle" = "Migrasi markah buku";
 
 /* Message for popup to inform the user that bookmarks migration is required for sync */
-"sync.v2MigrationMessage" = "Untuk menggunakan Asil Browser Sync, markah buku Anda yang ada harus dimigrasikan menjadi menggunakan sistem yang baru. Proses ini tidak akan menghapus markah buku Anda.";
+"sync.v2MigrationMessage" = "Untuk menggunakan Kahf Browser Sync, markah buku Anda yang ada harus dimigrasikan menjadi menggunakan sistem yang baru. Proses ini tidak akan menghapus markah buku Anda.";
 
 /* Button to perform bookmarks migration in order to support sync */
 "sync.v2MigrationOKButton" = "Migrasikan";
@@ -2975,7 +2975,7 @@
 "SyncComputerDevice" = "Komputer";
 
 /* Sync Error Description */
-"syncDeprecatedVersionError" = "Kode sinkronisasi ini dihasilkan oleh versi Asil Browser lama di perangkat lain. Silakan perbarui Asil Browser di semua perangkat yang tersinkronisasi dan coba lagi.";
+"syncDeprecatedVersionError" = "Kode sinkronisasi ini dihasilkan oleh versi Kahf Browser lama di perangkat lain. Silakan perbarui Kahf Browser di semua perangkat yang tersinkronisasi dan coba lagi.";
 
 /* Sync you browser settings across devices. */
 "SyncDevices" = "Perangkat & Pengaturan";
@@ -2996,10 +2996,10 @@
 "SyncInitErrorTitle" = "Kesalahan Komunikasi Sinkronisasi";
 
 /* Default name for a device */
-"syncJoinChainCameraWarning" = "Ini akan membagikan data Asil Browser Anda, termasuk kemungkinan kata sandi Anda, dengan menggunakan perangkat yang menghasilkan kode QR ini. Silakan periksa kembali jika kode QR ini dihasilkan oleh perangkat yang Anda miliki. Anda yakin ingin melakukan ini?";
+"syncJoinChainCameraWarning" = "Ini akan membagikan data Kahf Browser Anda, termasuk kemungkinan kata sandi Anda, dengan menggunakan perangkat yang menghasilkan kode QR ini. Silakan periksa kembali jika kode QR ini dihasilkan oleh perangkat yang Anda miliki. Anda yakin ingin melakukan ini?";
 
 /* Default name for a device */
-"syncJoinChainCodewordsWarning" = "Ini akan membagikan data Asil Browser Anda, termasuk kemungkinan kata sandi Anda, dengan menggunakan perangkat yang menghasilkan kata kode ini. Silakan periksa kembali jika kata kode ini dihasilkan oleh perangkat yang Anda miliki. Anda yakin ingin melakukan ini?";
+"syncJoinChainCodewordsWarning" = "Ini akan membagikan data Kahf Browser Anda, termasuk kemungkinan kata sandi Anda, dengan menggunakan perangkat yang menghasilkan kata kode ini. Silakan periksa kembali jika kata kode ini dihasilkan oleh perangkat yang Anda miliki. Anda yakin ingin melakukan ini?";
 
 /* Title for pairing sync device */
 "syncJoinChainWarningTitle" = "Peringatan";
@@ -3023,7 +3023,7 @@
 "SyncRemoveDeviceDefaultName" = "Perangkat";
 
 /* Message for removing last device from Sync */
-"SyncRemoveLastDeviceMessage" = "Data yang saat ini disinkronisasi akan disimpan, namun semua data dalam tembolok Sinkronisasi Asil Browser akan dihapus. Anda harus memulai rantai sinkronisasi baru agar dapat menyinkronkan data perangkat lagi.";
+"SyncRemoveLastDeviceMessage" = "Data yang saat ini disinkronisasi akan disimpan, namun semua data dalam tembolok Sinkronisasi Kahf Browser akan dihapus. Anda harus memulai rantai sinkronisasi baru agar dapat menyinkronkan data perangkat lagi.";
 
 /* Button name for removing last device from Sync */
 "SyncRemoveLastDeviceRemoveButtonName" = "Hapus Rantai Sinkronisasi";
@@ -3062,7 +3062,7 @@
 "SyncToDevice" = "Sinkronisasikan dengan perangkat";
 
 /* Sync to existing device description */
-"SyncToDeviceDescription" = "Dengan menggunakan perangkat sinkronisasi yang telah ada, buka Pengaturan Asil Browser dan navigasilah ke Pengaturan > Sinkronisasi. Pilih \"Tambahkan Perangkat\" dan pindai kode yang ditampilkan di layar.";
+"SyncToDeviceDescription" = "Dengan menggunakan perangkat sinkronisasi yang telah ada, buka Pengaturan Kahf Browser dan navigasilah ke Pengaturan > Sinkronisasi. Pilih \"Tambahkan Perangkat\" dan pindai kode yang ditampilkan di layar.";
 
 /* Description on popup when setting up a sync group fails */
 "SyncUnableCreateGroup" = "Tidak dapat mensinkronkan perangkat ini";
@@ -3160,14 +3160,14 @@
 /* No comment provided by engineer. */
 "TermsOfService" = "Persyaratan Layanan";
 
-/* Show Asil Browser Browser TOS page from the Privacy section in the settings. */
+/* Show Kahf Browser Browser TOS page from the Privacy section in the settings. */
 "TermsOfUse" = "Persyaratan Penggunaan";
 
 /* Text for button to share referral's QR code. */
 "themeQRCodeShareButton" = "Bagikan...";
 
 /* Title for QR popup encouraging users to share the code with their friends. */
-"themeQRCodeShareTitle" = "Bagikan Asil Browser dengan teman Anda!";
+"themeQRCodeShareTitle" = "Bagikan Kahf Browser dengan teman Anda!";
 
 /* Selection to automatically color/style the user interface. */
 "ThemesAutomaticOption" = "Otomatis";
@@ -3209,13 +3209,13 @@
 "today.addSourceNoFeedsFoundMessage" = "Maaf, alamat umpan tersebut tidak memiliki konten.";
 
 /* The action title displayed in the iOS share menu */
-"today.addSourceShareTitle" = "Tambahkan Sumber ke Berita Asil Browser";
+"today.addSourceShareTitle" = "Tambahkan Sumber ke Berita Kahf Browser";
 
 /* A header title shown above a button that will allow the user to fetch RSS feeds for a website they have typed in */
 "today.availableRSSFeedsHeaderTitle" = "Umpan RSS yang Tersedia";
 
 /* The name of the feature */
-"today.braveToday" = "Berita Asil Browser";
+"today.braveToday" = "Berita Kahf Browser";
 
 /* Shown below 'Channels' explaining what will be shown when tapping on it. */
 "today.channelsButtonSubtitle" = "Ikuti topik yang menarik bagi Anda";
@@ -3235,13 +3235,13 @@
 /* No comment provided by engineer. */
 "today.deals" = "Penawaran Khusus";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
-"today.disabledAlertBody" = "Berita Asil Browser akan berhenti menampilkan konten dari %@";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
+"today.disabledAlertBody" = "Berita Kahf Browser akan berhenti menampilkan konten dari %@";
 
 /* No comment provided by engineer. */
 "today.disabledAlertTitle" = "Dinonaktifkan";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
 "today.disablePublisherContent" = "Sembunyikan konten dari %@";
 
 /* No comment provided by engineer. */
@@ -3250,11 +3250,11 @@
 /* No comment provided by engineer. */
 "today.emptyFeedTitle" = "Tidak ada artikel yang dapat ditampilkan";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
 "today.enablePublisherContent" = "Izinkan konten dari %@";
 
 /* No comment provided by engineer. */
-"today.errorGeneralBody" = "Berita Asil Browser mengalami beberapa masalah. Coba lagi.";
+"today.errorGeneralBody" = "Berita Kahf Browser mengalami beberapa masalah. Coba lagi.";
 
 /* No comment provided by engineer. */
 "today.errorGeneralTitle" = "Aduh...";
@@ -3271,7 +3271,7 @@
 /* A toggle title shown next to a source or channel that the user can follow. When tapped switches to 'Unfollow' */
 "today.followToggleTitle" = "Ikuti";
 
-/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Asil Browser.com'. */
+/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Kahf Browser.com'. */
 "today.getFeedsFromSiteButtonTitle" = "Dapatkan umpan dari";
 
 /* \"OPML\" is a file extension that contains a list of rss feeds. */
@@ -3280,20 +3280,20 @@
 /* The header above the list of insecure sources */
 "today.insecureSourcesHeader" = "Sumber Tidak Aman - Risiko Tanggung Sendiri";
 
-/* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "Ikuti sumber favorit Anda, dalam umpan tunggal. Cukup buka tab di Asil Browser, gulir turun, dan... tara!\nBerita Asil Browser didukung iklan dengan iklan privat yang anonim.";
+/* Shown above a button that turns on the \"Kahf Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
+"today.introCardBody" = "Ikuti sumber favorit Anda, dalam umpan tunggal. Cukup buka tab di Kahf Browser, gulir turun, dan... tara!\nBerita Kahf Browser didukung iklan dengan iklan privat yang anonim.";
 
-/* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
-"today.introCardTitle" = "Aktifkan Berita Asil Browser, dan jangan lewatkan cerita apa pun";
+/* Shown above a button that turns on the \"Kahf Browser News\" product in the app. */
+"today.introCardTitle" = "Aktifkan Berita Kahf Browser, dan jangan lewatkan cerita apa pun";
 
 /* No comment provided by engineer. */
-"today.isEnabledToggleLabel" = "Tampilkan Berita Asil Browser";
+"today.isEnabledToggleLabel" = "Tampilkan Berita Kahf Browser";
 
 /* No comment provided by engineer. */
 "today.learnMoreTitle" = "Pelajari lebih lanjut tentang data Anda";
 
-/* 'Asil Browser Offers' is a product name */
-"today.moreBraveOffers" = "Lebih Banyak Tawaran dari Asil Browser";
+/* 'Kahf Browser Offers' is a product name */
+"today.moreBraveOffers" = "Lebih Banyak Tawaran dari Kahf Browser";
 
 /* No comment provided by engineer. */
 "today.noInternet" = "Tidak ada internet";
@@ -3341,7 +3341,7 @@
 "today.suggestedTitle" = "Diusulkan";
 
 /* No comment provided by engineer. */
-"today.turnOnBraveToday" = "Aktifkan Berita Asil Browser";
+"today.turnOnBraveToday" = "Aktifkan Berita Kahf Browser";
 
 /* A toggle title shown next to a source or channel that the user can unfollow. When tapped switches to 'Follow' */
 "today.unfollowToggleTitle" = "Batal ikuti";
@@ -3388,34 +3388,34 @@
 /* No comment provided by engineer. */
 "UserWalletGenericErrorTitle" = "Maaf, telah terjadi kesalahan";
 
-/* Version number of Asil Browser shown in settings */
+/* Version number of Kahf Browser shown in settings */
 "VersionTemplate" = "Versi %1$@ (%2$@)";
 
 /* Label that says where to view an item. '%@' is a placeholder and will include things like 'Instagram', 'unsplash'. The full label will look like 'View  on Instagram'. */
 "ViewOn" = "Lihat di %@";
 
-/* Button text to buy Asil Browser VPN */
+/* Button text to buy Kahf Browser VPN */
 "vpn.buyButton" = "Beli";
 
 /* Title for screen to buy the VPN. */
-"vpn.buyVPNTitle" = "Firewall Asil Browser + VPN";
+"vpn.buyVPNTitle" = "Firewall Kahf Browser + VPN";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxBlockAds" = "Memblokir koneksi jaringan yang tak diinginkan";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxEncryption" = "Menggunakan saluran VPN terenkripsi yang aman dengan IKEv2";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxFast" = "Mendukung kecepatan hingga 100 Mbps";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxGeoSelector" = "Pilih lokasi geo/negara Anda";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxNoIPLog" = "Menjaga Anda tetap anonim selama online";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxNoSellout" = "Kami tidak pernah membagikan atau menjual informasi Anda";
 
 /* AppStore Receipt field for customer support contact form. */
@@ -3428,7 +3428,7 @@
 "vpn.contactFormCarrier" = "Operator Telepon Seluler";
 
 /* Text to tell user to not modify support info below email's body. */
-"vpn.contactFormDoNotEditText" = "Asil Browser tidak melacak Anda atau mengetahui cara Anda menggunakan aplikasi kami, sehingga kami tidak tahu cara Anda memasang VPN. Silakan bagikan info tentang masalah yang Anda alami dan kami akan melakukan yang terbaik untuk memecahkannya secepat mungkin.";
+"vpn.contactFormDoNotEditText" = "Kahf Browser tidak melacak Anda atau mengetahui cara Anda menggunakan aplikasi kami, sehingga kami tidak tahu cara Anda memasang VPN. Silakan bagikan info tentang masalah yang Anda alami dan kami akan melakukan yang terbaik untuk memecahkannya secepat mungkin.";
 
 /* Button name to send contact form. */
 "vpn.contactFormEmailNotConfiguredBody" = "Tidak dapat mengirim surel. Silakan periksa kembali konfigurasi surel Anda.";
@@ -3482,9 +3482,9 @@
 "vpn.contactFormTimezone" = "Timezone iOS";
 
 /* Title for contact form email. */
-"vpn.contactFormTitle" = "Masalah Firewall + VPN Asil Browser";
+"vpn.contactFormTitle" = "Masalah Firewall + VPN Kahf Browser";
 
-/* Button text to enable Asil Browser VPN */
+/* Button text to enable Kahf Browser VPN */
 "vpn.enableButton" = "Aktifkan";
 
 /* Message for an alert when the VPN can't get prices from the App Store */
@@ -3503,13 +3503,13 @@
 "vpn.iapDisclaimer" = "Semua paket berlangganan diperbarui secara otomatis namun dapat dibatalkan sebelum diperbarui.";
 
 /* Text explaining how the VPN works. */
-"vpn.installProfileBody" = "Profil ini memungkinkan VPN untuk secara otomatis tersambung dan mengamankan lalu-lintas di semua perangkat Anda setiap waktu. VPN ini akan terenkripsi dan diarahkan melalui firewall cerdas Asil Browser untuk memblokir koneksi yang berpotensi menyerang dan merusak.";
+"vpn.installProfileBody" = "Profil ini memungkinkan VPN untuk secara otomatis tersambung dan mengamankan lalu-lintas di semua perangkat Anda setiap waktu. VPN ini akan terenkripsi dan diarahkan melalui firewall cerdas Kahf Browser untuk memblokir koneksi yang berpotensi menyerang dan merusak.";
 
 /* Text for 'install vpn profile' button */
 "vpn.installProfileButtonText" = "Pasang Profil VPN";
 
 /* No comment provided by engineer. */
-"vpn.installProfileTitle" = "Asil Browser kini akan memasang profil VPN.";
+"vpn.installProfileTitle" = "Kahf Browser kini akan memasang profil VPN.";
 
 /* Popup that shows after user installs the vpn for the first time. */
 "vpn.installSuccessPopup" = "VPN kini telah diaktifkan";
@@ -3517,7 +3517,7 @@
 /* Title for screen to install the VPN. */
 "vpn.installTitle" = "Pasang VPN";
 
-/* Button text to try free Asil Browser VPN */
+/* Button text to try free Kahf Browser VPN */
 "vpn.learnMore" = "Cobalah secara GRATIS";
 
 /* Used in context: 'Monthly subscription, (it) renews monthly' */
@@ -3529,10 +3529,10 @@
 /* Text to show user when their vpn plan has expired */
 "vpn.planExpired" = "Telah Kedaluwarsa";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.popupCheckmark247Support" = "Dukungan 24/7";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.popupCheckmarkSecureConnections" = "Mengamankan semua koneksi";
 
 /* It is used in context: 'Powered by BRAND_NAME' */
@@ -3581,10 +3581,10 @@
 "vpn.settingsFAQ" = "Dukungan VPN";
 
 /* Button to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceipt" = "Tautkan pembelian ke akun Asil Browser Anda";
+"vpn.settingsLinkReceipt" = "Tautkan pembelian ke akun Kahf Browser Anda";
 
 /* Footer text to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceiptFooter" = "Tautkan pembelian Toko Aplikasi Anda ke akun Asil Browser Anda untuk menggunakan VPN Asil Browser pada perangkat lain.";
+"vpn.settingsLinkReceiptFooter" = "Tautkan pembelian Toko Aplikasi Anda ke akun Kahf Browser Anda untuk menggunakan VPN Kahf Browser pada perangkat lain.";
 
 /* Button to manage your VPN subscription */
 "vpn.settingsManageSubscription" = "Kelola Langganan";
@@ -3620,10 +3620,10 @@
 "vpn.settingsVPNExpired" = "Telah Kedaluwarsa";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationBody" = "Bahkan di belakang layar, Asil Browser akan tetap melindungi Anda.";
+"vpn.vpnBackgroundNotificationBody" = "Bahkan di belakang layar, Kahf Browser akan tetap melindungi Anda.";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationTitle" = "Firewall + VPN Asil Browser telah AKTIF";
+"vpn.vpnBackgroundNotificationTitle" = "Firewall + VPN Kahf Browser telah AKTIF";
 
 /* Message for an alert when the VPN can't be configured. */
 "vpn.vpnConfigGenericErrorBody" = "Terjadi masalah saat mulai mengaktifkan VPN. Silakan coba lagi atau cobalah untuk mengatur ulang konfigurasi di halaman pengaturan VPN.";
@@ -3632,7 +3632,7 @@
 "vpn.vpnConfigGenericErrorTitle" = "Kesalahan";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
-"vpn.vpnConfigPermissionDeniedErrorBody" = "Firewall + VPN Asil Browser memerlukan pemasangan profil VPN di perangkat Anda agar dapat bekerja.";
+"vpn.vpnConfigPermissionDeniedErrorBody" = "Firewall + VPN Kahf Browser memerlukan pemasangan profil VPN di perangkat Anda agar dapat bekerja.";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
 "vpn.vpnConfigPermissionDeniedErrorTitle" = "Izin tidak diberikan";
@@ -3644,10 +3644,10 @@
 "vpn.vpnErrorPurchaseFailedTitle" = "Kesalahan";
 
 /* Disclaimer for user purchasing the VPN plan. */
-"vpn.vpnIAPBoilerPlate" = "Biaya berlangganan akan ditagihkan melalui akun iTunes Anda.\n\nBagian dari uji coba gratis yang tidak digunakan, jika ditawarkan, akan hangus saat Anda berlangganan.\n\nLangganan Anda akan diperbarui secara otomatis kecuali jika dibatalkan dalam minimum 24 jam sebelum akhir periode berjalanan.\n\nAnda dapat mengelola langganan Anda di Pengaturan.\n\nDengan menggunakan Asil Browser, anda menyetujui Syarat Penggunaan dan Kebijakan Privasi ini.";
+"vpn.vpnIAPBoilerPlate" = "Biaya berlangganan akan ditagihkan melalui akun iTunes Anda.\n\nBagian dari uji coba gratis yang tidak digunakan, jika ditawarkan, akan hangus saat Anda berlangganan.\n\nLangganan Anda akan diperbarui secara otomatis kecuali jika dibatalkan dalam minimum 24 jam sebelum akhir periode berjalanan.\n\nAnda dapat mengelola langganan Anda di Pengaturan.\n\nDengan menggunakan Kahf Browser, anda menyetujui Syarat Penggunaan dan Kebijakan Privasi ini.";
 
 /* Message for alert to reset vpn configuration */
-"vpn.vpnResetAlertBody" = "Ini akan mengatur ulang konfigurasi Firewall + VPN Asil Browser Anda dan memperbaiki kesalahan apa pun. Proses ini dapat memakan waktu beberapa saat.";
+"vpn.vpnResetAlertBody" = "Ini akan mengatur ulang konfigurasi Firewall + VPN Kahf Browser Anda dan memperbaiki kesalahan apa pun. Proses ini dapat memakan waktu beberapa saat.";
 
 /* Title for alert to reset vpn configuration */
 "vpn.vpnResetAlertTitle" = "Atur ulang konfigurasi";
@@ -3713,18 +3713,18 @@
 "widgets.favoritesWidgetTitle" = "Favorit";
 
 /* This shows when you add a widget but have no favorites added in your app */
-"widgets.noFavoritesFound" = "Silakan buka Asil Browser untuk melihat favorit Anda di sini";
+"widgets.noFavoritesFound" = "Silakan buka Kahf Browser untuk melihat favorit Anda di sini";
 
 /* Description for the search option on the 'shortcuts' widget. */
 "widgets.searchShortcutTitle" = "Cari";
 
-/* Description for Asil Browser Shields widget on 'add widget' screen. */
-"widgets.shieldStatsDescription" = "Rangkuman cara Asil Browser menghemat waktu Anda dan melindungi Anda secara daring.";
+/* Description for Kahf Browser Shields widget on 'add widget' screen. */
+"widgets.shieldStatsDescription" = "Rangkuman cara Kahf Browser menghemat waktu Anda dan melindungi Anda secara daring.";
 
-/* Title for Asil Browser Shields widget on 'add widget' screen. */
+/* Title for Kahf Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsTitle" = "Statistik Kerahasiaan";
 
-/* Title of Asil Browser Shields widget shown above stat numbers. */
+/* Title of Kahf Browser Shields widget shown above stat numbers. */
 "widgets.shieldStatsWidgetTitle" = "Statistik Kerahasiaan";
 
 /* Button to the browser and enter URL or make a search query there. */
@@ -3740,19 +3740,19 @@
 "widgets.shortcutsPrivateTabButton" = "Tab Pribadi";
 
 /* Description for shortcuts widget on 'add widget' screen. */
-"widgets.shortcutsWidgetDescription" = "Akses cepat untuk mencari situs web atau membuka halaman web di Asil Browser.";
+"widgets.shortcutsWidgetDescription" = "Akses cepat untuk mencari situs web atau membuka halaman web di Kahf Browser.";
 
 /* Title for shortcuts widget on 'add widget' screen. */
 "widgets.shortcutsWidgetTitle" = "Jalan Pintas";
 
-/* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
-"widgets.singleStatDescription" = "Rangkuman cara Asil Browser telah melindungi Anda secara daring.";
+/* Description for Kahf Browser Shields single stat widget on 'add widget' screen. */
+"widgets.singleStatDescription" = "Rangkuman cara Kahf Browser telah melindungi Anda secara daring.";
 
-/* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
+/* Title for Kahf Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatTitle" = "Statistik Kerahasiaan";
 
-/* Description for the Asil Browser Wallet option on the 'shortcuts' widget. */
-"widgets.walletShortcutTitle" = "Dompet Asil Browser";
+/* Description for the Kahf Browser Wallet option on the 'shortcuts' widget. */
+"widgets.walletShortcutTitle" = "Dompet Kahf Browser";
 
 /* Title of the settings for widgets part */
 "widgets.widgetTitle" = "Tombol";
@@ -3775,3 +3775,51 @@
 /* History tableview section header */
 "Yesterday" = "Kemarin";
 
+"safegaze.popup.report.title1" = "Mohon laporkan segala bug atau saran ke ";
+"safegaze.popup.report.title2" = "formulir ini";
+"safegaze.popup.support.title" = "Dukung proyek ini";
+"safegaze.popup.woman.title" = "Saya Wanita";
+"safegaze.popup.man.title" = "Saya Pria";
+"safegaze.popup.comingsoon.title" = "Akan Datang";
+"safegaze.popup.gendermode.title" = "Mode Gender";
+"safegaze.popup.sinfulacts.title" = "Tindakan berdosa dihindari";
+"safegaze.popup.thispage.title" = "Halaman Ini";
+"safegaze.popup.lifetime.title" = "Seumur Hidup";
+"safegaze.popup.alwayspurify.title" = "Selalu Bersihkan";
+"safegaze.popup.neverpurify.title" = "Jangan Pernah Bersihkan";
+"safegaze.popup.safegazeup.title" = "SafeGaze ATAS";
+"safegaze.popup.imageblur.title" = "Intensitas Blur Gambar";
+"safegaze.popup.takecontrol.title" = "Perbaiki pengalaman online Anda dengan SafeGaze, ekstensi Pemurnian Gambar kami yang melindungi penglihatan Anda dari konten yang tidak pantas.";
+"safegaze.popup.turnon.title" = "Aktifkan SafeGaze";
+
+/* Judul Gender */
+"kahftube.gender.all.title" = "Semua";
+"kahftube.gender.male.title" = "Laki-laki";
+"kahftube.gender.female.title" = "Perempuan";
+"kahftube.gender.child.title" = "Anak-anak";
+"kahftube.gender.except.title" = "Kecuali";
+
+/* Judul Agama */
+"kahftube.religion.haram.title" = "Haram";
+"kahftube.religion.practicingMuslim.title" = "Muslim Praktik";
+"kahftube.religion.liberalMuslim.title" = "Muslim Liberal";
+"kahftube.religion.moderateMuslim.title" = "Muslim Moderat";
+
+/* Judul Popup */
+"kahftube.popup.name.title" = "Nama";
+"kahftube.popup.connectedAccount.title" = "Akun Terhubung";
+"kahftube.popup.preferences.title" = "Preferensi";
+"kahftube.popup.gender.title" = "Jenis Kelamin";
+"kahftube.popup.religionStatus.title" = "Status Agama";
+"kahftube.popup.unsubHaramChannels.title" = "Berhenti Berlangganan Saluran Haram";
+"kahftube.popup.unsubscribeSuccessful.title1" = "Saluran Haram sudah dihentikan berlangganan";
+"kahftube.popup.unsubscribeSuccessful.title2" = "berhasil";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "Baik";
+"kahftube.popup.openToUse.title" = "Buka untuk digunakan";
+"kahftube.popup.explore.title" = "Jelajahi fitur ini setelah masuk ke YouTube";
+"kahftube.popup.haramChannelsFound.title" = "%d Saluran Haram ditemukan";
+"kahftube.popup.refreshAgain.title" = "Segarkan lagi";
+"kahftube.popup.unsubscribeNow.title" = "Berhenti Berlangganan Sekarang";
+"kahftube.popup.noHaramSubscribed.title" = "Tidak Ada yang Berlangganan Saluran Haram";
+"kahftube.popup.channelFound.title" = "Saluran Ditemukan";
+"kahftube.popup.alright.title" = "Baik";

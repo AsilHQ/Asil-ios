@@ -66,11 +66,11 @@
 	<key>NSCameraUsageDescription</key>
 	<string>This lets you take and upload photos.</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>This authenticates your access to Asil Browser</string>
+	<string>This authenticates your access to Kahf Browser</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Websites you visit may request your location.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>This allows use of your microphone when using Asil Browser.</string>
+	<string>This allows use of your microphone when using Kahf Browser.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>This lets you save photos.</string>
 	<key>NSUserActivityTypes</key>

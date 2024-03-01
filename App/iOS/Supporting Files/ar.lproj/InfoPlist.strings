@@ -8,13 +8,13 @@
 "NSCameraUsageDescription" = "هذا يسمح لك بالتقاط الصور وتحميلها.";
 
 /* Privacy - Face ID Usage Description */
-"NSFaceIDUsageDescription" = "تقوم هذه العملية بتوثيق وصولك إلى متصفح Asil";
+"NSFaceIDUsageDescription" = "تقوم هذه العملية بتوثيق وصولك إلى متصفح Kahf";
 
 /* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "قد تطلب مواقع الويب التي تزورها موقعك.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "يتيح ذلك استخدام الميكروفون الخاص بك أثناء استخدام متصفح Asil.";
+"NSMicrophoneUsageDescription" = "يتيح ذلك استخدام الميكروفون الخاص بك أثناء استخدام متصفح Kahf.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "هذا يسمح لك بحفظ الصور.";

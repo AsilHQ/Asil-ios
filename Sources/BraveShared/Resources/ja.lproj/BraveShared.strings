@@ -1,17 +1,17 @@
 /* About settings section title */
-"About" = "Asil Browser について";
+"About" = "Kahf Browser について";
 
-/* The title of the screen explaining Asil Browser Shields */
-"AboutBraveShields" = "Asil Browser Shieldについて";
+/* The title of the screen explaining Kahf Browser Shields */
+"AboutBraveShields" = "Kahf Browser Shieldについて";
 
-/* The body of the screen explaining Asil Browser Shields */
-"AboutBraveShieldsBody" = "多くのサイトには、お客様とお客様のデバイスを識別するためのクッキーやスクリプトが含まれています。これによってインターネット上のいたる所であなたを特定・追跡し、行動データを収集しようとしています。\n\nAsilBrowserはそういったものをブロックするので、あなたが追跡されることなくブラウジングすることが可能になります。";
+/* The body of the screen explaining Kahf Browser Shields */
+"AboutBraveShieldsBody" = "多くのサイトには、お客様とお客様のデバイスを識別するためのクッキーやスクリプトが含まれています。これによってインターネット上のいたる所であなたを特定・追跡し、行動データを収集しようとしています。\n\nKahf Browserはそういったものをブロックするので、あなたが追跡されることなくブラウジングすることが可能になります。";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "カメラロールに画像を保存します。";
 
 /* See http://mzl.la/1G7uHo7 */
-"AccessPhotoDeniedAlertTitle" = "Asil Browser が写真にアクセスしようとしています";
+"AccessPhotoDeniedAlertTitle" = "Kahf Browser が写真にアクセスしようとしています";
 
 /* Button to add a bookmark */
 "AddBookmark" = "ブックマークに追加";
@@ -52,7 +52,7 @@
 /* Label for the Face ID/Passcode item in Settings */
 "AuthenticationFaceIDPasscodeSetting" = "Face ID とパスコード";
 
-/* Touch ID or PIN entry prompt subtitle when accessing Asil Browser with the Browser Lock feature enabled */
+/* Touch ID or PIN entry prompt subtitle when accessing Kahf Browser with the Browser Lock feature enabled */
 "AuthenticationLoginsTouchReason" = "これによりBraveへのアクセスを認証します";
 
 /* Label for the Passcode item in Settings */
@@ -130,7 +130,7 @@
 /* A title for setting which blocks 'switch to app' popups */
 "blockMobileAnnoyances" = "「アプリに切り替える」通知をブロック";
 
-/* Asil Browser panel individual toggle title */
+/* Kahf Browser panel individual toggle title */
 "BlockPhishing" = "フィッシングをブロック";
 
 /* No comment provided by engineer. */
@@ -175,8 +175,8 @@
 /* Placeholder text for adding or editing a bookmark */
 "BookmarkUrlPlaceholderText" = "住所";
 
-/* Button to show the Asil Browser panel */
-"BravePanel" = "Asil Browser パネル";
+/* Button to show the Kahf Browser panel */
+"BravePanel" = "Kahf Browser パネル";
 
 /* No comment provided by engineer. */
 "BraveRewardsAdNotificationTitle" = "Braveリワード";
@@ -184,29 +184,29 @@
 /* No comment provided by engineer. */
 "BraveRewardsOpen" = "開く";
 
-/* Asil Browser Rewards settings title */
+/* Kahf Browser Rewards settings title */
 "BraveRewardsTitle" = "Braveリワード";
 
-/* Asil Browser Search Banner Promotion description content in Search Suggestions */
+/* Kahf Browser Search Banner Promotion description content in Search Suggestions */
 "braveSearchPromotion.bannerDescription" = "Brave検索はあなたの個人情報、クエリ、クリックした内容を追跡しません。";
 
-/* Asil Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
 "braveSearchPromotion.bannerMaybeLaterButtonTitle" = "あとで";
 
-/* Asil Browser Search Banner Promotion title in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title in Search Suggestions */
 "braveSearchPromotion.bannerTitle" = "独立型検索でより良いプライバシーを確保";
 
-/* Asil Browser Search Banner Promotion title for try button in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title for try button in Search Suggestions */
 "braveSearchPromotion.bannerTryButtonTitle" = "Brave検索を試す";
 
-/* Asil Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
 "braveSearchPromotion.braveSearchPromotionBannerDismissButtonTitle" = "表示しない";
 
 /* No comment provided by engineer. */
 "BraveShieldsAdvancedControls" = "詳細設定";
 
 /* No comment provided by engineer. */
-"BraveShieldsAndPrivacy" = "Asil Browser Shields & プライバシー";
+"BraveShieldsAndPrivacy" = "Kahf Browser Shields & プライバシー";
 
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "ブロック済みの広告やトラッカー";
@@ -215,7 +215,7 @@
 "SafegazeBlockedCountLabel" = "つの罪深い行為を回避しました";
 
 /* "The number of total sinful acts avoided will be next to this" */
-"SafegazeTotalBlockedCountLabel" =   "開始以来の合計%@の罪深い行為を回避しました"
+"SafegazeTotalBlockedCountLabel" =   "開始以来の合計%@の罪深い行為を回避しました";
 
 /* What the screen reader will read out when the user has VoiceOver on and taps on the question-mark info button on the shields panel */
 "BraveShieldsBlockedInfoButtonAccessibilityLabel" = "詳細はこちら";
@@ -229,20 +229,20 @@
 /* No comment provided by engineer. */
 "BraveShieldsSiteBroken" = "サイトの表示が崩れている場合は、Shieldをオフにしてみてください";
 
-/* Context: 'Asil Browser Shields Up' or 'Asil Browser Shields Down' */
-"BraveShieldsStatusTitle" = "Asil Browser Shields";
+/* Context: 'Kahf Browser Shields Up' or 'Kahf Browser Shields Down' */
+"BraveShieldsStatusTitle" = "Kahf Browser Shields";
 
-/* Context: The 'Down' in 'Asil Browser Shields Down' */
+/* Context: The 'Down' in 'Kahf Browser Shields Down' */
 "BraveShieldsStatusValueDown" = "オフ";
 
-/* Context: The 'Up' in 'Asil Browser Shields Up' */
+/* Context: The 'Up' in 'Kahf Browser Shields Up' */
 "BraveShieldsStatusValueUp" = "オン";
 
 /* The accessibility hint spoken when focused on the main shields toggle */
 "BraveShieldsToggleHint" = "ダブルタップでBrave Shieldを切り替える";
 
 /* Sync page title */
-"BraveSync" = "Asil Browser Sync";
+"BraveSync" = "Kahf Browser Sync";
 
 /* Sync-Internals screen title (Sync Internals or Sync Debugging is fine). */
 "BraveSyncInternalsTitle" = "内部同期";
@@ -251,7 +251,7 @@
 "BraveSyncWelcome" = "はじめに、同期させたいすべてのデバイスにBraveをインストールする必要があります。そして、同期チェーンを開始してすべてのデバイスを安全にリンクできます。";
 
 /* The name of the feature */
-"bravetalk.braveTalkTitle" = "Asil Browser Talk";
+"bravetalk.braveTalkTitle" = "Kahf Browser Talk";
 
 /* Setting to enable the browser lock privacy feature */
 "BrowserLock" = "ブラウザのロック";
@@ -266,7 +266,7 @@
 "browserLockMigrationNoPasscodeSetup" = "まだIDやパスコードを設定していませんか？設定を開いて、「%@」をタップしてください。";
 
 /* Subtitle on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationSubtitle" = "Asil Browser Passcodeをシンプルにしました。これからは、あなたのデバイスに使用しているのと同じIDやパスコードでBraveにアクセスできます。";
+"browserLockMigrationSubtitle" = "Kahf Browser Passcodeをシンプルにしました。これからは、あなたのデバイスに使用しているのと同じIDやパスコードでBraveにアクセスできます。";
 
 /* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
 "browserLockMigrationTitle" = "Apple Face IDやTouch IDやパスコードでBraveを開く";
@@ -278,7 +278,7 @@
 "Cache" = "キャッシュ";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "Asil Browserをデフォルトに設定すると、すべてのリンクをAsil Browserのプライバシー保護により開くことができます。";
+"callout.defaultBrowserCalloutDescription" = "Kahf Browserをデフォルトに設定すると、すべてのリンクをKahf Browserのプライバシー保護により開くことができます。";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "デフォルトブラウザに設定する";
@@ -293,13 +293,13 @@
 "callout.defaultBrowserTitle" = "シンプルに、プライバシー保護。";
 
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "これにより、Asil Browserのどの機能が最も頻繁に使用されているかを知ることができます。Asil Browserの設定の「Asil Browserシールド & プライバシー」でいつでも変更できます。";
+"callout.p3aCalloutDescription" = "これにより、Kahf Browserのどの機能が最も頻繁に使用されているかを知ることができます。Kahf Browserの設定の「Kahf Browserシールド & プライバシー」でいつでも変更できます。";
 
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "プライバシーを保護したプロダクト分析 (P3A) についてはこちらをご覧ください。";
 
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutTitle" = "Asil Browserの品質向上にご協力ください。";
+"callout.p3aCalloutTitle" = "Kahf Browserの品質向上にご協力ください。";
 
 /* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
 "callout.p3aCalloutToggleTitle" = "匿名かつプライバシーに配慮した形で製品のインサイトを共有します。";
@@ -355,7 +355,7 @@
 /* Title indicating whether or not a private key can be used to derive some data from another piece of data. IE: Use one key to generate another */
 "certificateViewer.deriveTitle" = "派生";
 
-/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
+/* Title of the section for the Domain Component such as: DNS or Kahf Browser.com or a website's domain. */
 "certificateViewer.domainComponentTitle" = "ドメインコンポーネント";
 
 /* Title of the section indication which 'Encryption' algorithm was used. */
@@ -394,7 +394,7 @@
 /* Title of the section for Department of the Company. Example: Human Resources. */
 "certificateViewer.organizationalUnitTitle" = "組織内部署";
 
-/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
+/* Title of the section for Name of the Company. Example: Kahf Browser Inc. */
 "certificateViewer.organizationTitle" = "組織";
 
 /* Title indicating 'Parameters' or Input passed to a function/algorithm. */
@@ -608,22 +608,22 @@
 "defaultBrowserCallout.introPrimaryText" = "プライバシーを保護するためすべてのリンクをBraveで開く";
 
 /* Secondary text on default browser popup. */
-"defaultBrowserCallout.introSecondaryText" = "Asil Browser Shieldはすべてのサイトでトラッカーと広告をブロックし、データ通信量と時間を節約します。";
+"defaultBrowserCallout.introSecondaryText" = "Kahf Browser Shieldはすべてのサイトでトラッカーと広告をブロックし、データ通信量と時間を節約します。";
 
 /* Tertiary text on default browser popup screen */
 "defaultBrowserCallout.introTertiaryText" = "アプリ設定画面で、「デフォルトのブラウザApp」をタップし、Braveを選択してください。";
 
-/* Notification body to promote setting Asil Browser app as default browser */
+/* Notification body to promote setting Kahf Browser app as default browser */
 "defaultBrowserCallout.notificationBody" = "iOS %@ に最適化されています。Braveを今すぐデフォルトブラウザにしましょう。";
 
-/* Notification title to promote setting Asil Browser app as default browser */
+/* Notification title to promote setting Kahf Browser app as default browser */
 "defaultBrowserCallout.notificationTitle" = "Braveブラウザ";
 
 /* No comment provided by engineer. */
 "defaultBrowserCalloutCloseAccesabilityLabel" = "デフォルトブラウザの設定メッセージを閉じる";
 
-/* Name for default Asil Browser theme. */
-"defaultThemeName" = "Asil Browser デフォルト";
+/* Name for default Kahf Browser theme. */
+"defaultThemeName" = "Kahf Browser デフォルト";
 
 /* No comment provided by engineer. */
 "Delete" = "削除する";
@@ -778,10 +778,10 @@
 /* Allow link to switch apps? */
 "ExternalAppURLAlertTitle" = "アプリを切り替えるリンクを許可しますか？";
 
-/* Allow Asil Browser to open the external app URL */
+/* Allow Kahf Browser to open the external app URL */
 "ExternalAppURLAllow" = "許可する";
 
-/* Don't allow Asil Browser to open the external app URL */
+/* Don't allow Kahf Browser to open the external app URL */
 "ExternalAppURLDontAllow" = "許可しない";
 
 /* Footer text when user selects to save to favorites when editing a bookmark */
@@ -860,10 +860,10 @@
 "HideLinkPreviewsActionTitle" = "リンクプレビューを非表示にする";
 
 /* Hides the rewards icon */
-"HideRewardsIcon" = "Asil Browser Rewardsのアイコンを非表示にする";
+"HideRewardsIcon" = "Kahf Browser Rewardsのアイコンを非表示にする";
 
 /* Hide the rewards icon explination. */
-"HideRewardsIconSubtitle" = "Asil Browser Rewardsに参加していないページではBrave Rewardsのアイコンを非表示にする";
+"HideRewardsIconSubtitle" = "Kahf Browser Rewardsに参加していないページではBrave Rewardsのアイコンを非表示にする";
 
 /* Title for history menu item */
 "HistortMenuItem" = "履歴";
@@ -1069,13 +1069,13 @@
 /* Setting title for option to automatically redirect a url to another url */
 "nprRedirectFooter" = "NPRのリンクをテキストベースのバージョン (text.npr.org) に自動でリダイレクトします。";
 
-/* Bookmark title for Asil Browser Support */
+/* Bookmark title for Kahf Browser Support */
 "ntp.braveSupportFavoriteTitle" = "サポート";
 
 /* No comment provided by engineer. */
 "ntp.claimRewards" = "BATポイントを受け取る";
 
-/* Placeholder example: 'You earned 42 BAT by browsing with Asil Browser.' */
+/* Placeholder example: 'You earned 42 BAT by browsing with Kahf Browser.' */
 "ntp.earningsReport" = "Braveをブラウジングで%@ BATポイント獲得しました";
 
 /* The context is to praise the user that they did a good job, to keep it up. It is used in full sentence like: 'Way to go! You earned 40 BAT last month.' */
@@ -1085,10 +1085,10 @@
 "ntp.hideSponsoredImages" = "スポンサードイメージを非表示にする";
 
 /* The text description of image type which is being used NTP */
-"ntp.imageTypeSelectionDescription" = "「スポンサー付き」は、Asil Browser Rewardsを有効にすると入手できる追加のブランド背景です。";
+"ntp.imageTypeSelectionDescription" = "「スポンサー付き」は、Kahf Browser Rewardsを有効にすると入手できる追加のブランド背景です。";
 
 /* No comment provided by engineer. */
-"ntp.learnMoreAboutRewards" = "Asil Browser Rewardsについて詳しく知る";
+"ntp.learnMoreAboutRewards" = "Kahf Browser Rewardsについて詳しく知る";
 
 /* No comment provided by engineer. */
 "ntp.learnMoreAboutSI" = "スポンサーイメージについて詳しく知る";
@@ -1120,14 +1120,14 @@
 /* The placeholder says 'Terms of Service'. So full sentence goes like: 'By turning Rewards, you agree to the Terms of Service'. */
 "ntp.turnRewardsTos" = "Rewardsを有効にすると、以下に同意したものとみなされます: %@";
 
-/* Message when opting into Asil Browser Ads when region becomes available */
+/* Message when opting into Kahf Browser Ads when region becomes available */
 "OBAdsOptInMessage" = "ブラウジング中にBATポイントを獲得し、同時にコンテンツクリエイターに還元することができます";
 
-/* Message when opting into Asil Browser Ads when region becomes available */
+/* Message when opting into Kahf Browser Ads when region becomes available */
 "OBAdsOptInMessageJapan" = "ブラウジング中にBATポイントを獲得し、同時にコンテンツクリエイターに還元することができます";
 
-/* Title when opting into Asil Browser Ads when region becomes available */
-"OBAdsOptInTitle" = "Asil Browser Adsが有効になりました！";
+/* Title when opting into Kahf Browser Ads when region becomes available */
+"OBAdsOptInTitle" = "Kahf Browser Adsが有効になりました！";
 
 /* Title for ads onboarding screen */
 "OBAdsTitle" = "この後、初めての広告を表示します";
@@ -1150,7 +1150,7 @@
 /* Button to finish onboarding and start using the app. */
 "OBFinishButton" = "ブラウジングを開始する";
 
-/* Button to join Asil Browser Rewards. */
+/* Button to join Kahf Browser Rewards. */
 "OBJoinButton" = "参加する";
 
 /* No comment provided by engineer. */
@@ -1199,28 +1199,28 @@
 "OBSearchEngineDetail" = "デフォルトの検索エンジンを設定する";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Asil Browserブラウザにようこそ！";
+"OBSearchEngineTitle" = "Kahf Browserブラウザにようこそ！";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "プライバシーを侵害するトラッカーをブロックすることで、インターネット上でつきまとわれずにブラウジングすることができます。";
 
 /* Title for shields onboarding screen */
-"OBShieldsTitle" = "Asil Browser Shields";
+"OBShieldsTitle" = "Kahf Browser Shields";
 
-/* Button to show the Asil Browser Rewards Ads. */
+/* Button to show the Kahf Browser Rewards Ads. */
 "OBShowMeButton" = "表示する";
 
-/* Button to show Asil Browser Rewards. */
+/* Button to show Kahf Browser Rewards. */
 "OBTurnOnButton" = "開始する";
 
 /* The description text shown when there is big tech tracker among trackers. Example usage: Google, Amazon and 32 other trackers blocked */
 "onboarding.blockedAdsOnboardingBigTechInformationText" = "%1$@ほか%2$lld個の広告およびトラッカーをブロック";
 
-/* The footnote indicating what Asil Browser shields is blocking */
-"onboarding.blockedAdsOnboardingFootnoteText" = "Asil BrowserのShieldによりあらゆるページでブロックされたすべての不要なアイテムを確認。";
+/* The footnote indicating what Kahf Browser shields is blocking */
+"onboarding.blockedAdsOnboardingFootnoteText" = "Kahf BrowserのShieldによりあらゆるページでブロックされたすべての不要なアイテムを確認。";
 
 /* The text describing user where they should press in order to open Shield panel */
-"onboarding.blockedAdsOnboardingInstructionsText" = "Asil Browser Shieldを表示するにはタップ";
+"onboarding.blockedAdsOnboardingInstructionsText" = "Kahf Browser Shieldを表示するにはタップ";
 
 /* The description text shown when there is no big tech tracker among trackers. Example usage: 31 Ads & trackers blocked. The number here is presented separately so it is not in translation. */
 "onboarding.blockedAdsOnboardingNoBigTechInformationText" = "個の広告およびトラッカーをブロック";
@@ -1241,7 +1241,7 @@
 "onboarding.omniboxOnboardingPopOverTitle" = "ウェブサイト名またはURLを入力";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "Asil Browserへようこそ";
+"onboarding.welcomeScreenTitle" = "Kahf Browserへようこそ";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "続ける";
@@ -1255,8 +1255,8 @@
 /* Context menu item for opening all folder bookmarks */
 "OpenAllBookmarks" = "すべて開く (%i)";
 
-/* Button title for opening the Asil Browser Rewards panel to settings */
-"OpenBraveRewardsSettings" = "Asil Browser Rewardsの設定を開く";
+/* Button title for opening the Kahf Browser Rewards panel to settings */
+"OpenBraveRewardsSettings" = "Kahf Browser Rewardsの設定を開く";
 
 /* Error description when there is an error while navigating to Files App */
 "OpenDownloadsFolderErrorDescription" = "「ファイル」アプリの「ダウンロード」フォルダを開く際に不明なエラーが発生しました。";
@@ -1360,31 +1360,31 @@
 /* Button title to that opens a website. */
 "OpenWebsite" = "ウェブサイトを開く";
 
-/* The subtitle description of menu item Asil Browser News */
+/* The subtitle description of menu item Kahf Browser News */
 "optionsMenu.braveNewsItemDescription" = "プライバシーが保護されたニュースフィードで今日のトップニュースを。";
 
-/* Asil Browser News Item Menu title */
+/* Kahf Browser News Item Menu title */
 "optionsMenu.braveNewsItemTitle" = "News";
 
-/* The subtitle description of menu item Asil Browser Playlist */
+/* The subtitle description of menu item Kahf Browser Playlist */
 "optionsMenu.bravePlaylistItemDescription" = "どんな動画/ストリーミングでもオフライン再生可能なプレイリストに追加しよう。";
 
-/* Asil Browser News Item Menu title */
+/* Kahf Browser News Item Menu title */
 "optionsMenu.bravePlaylistItemTitle" = "Playlist";
 
-/* The subtitle description of menu item Asil Browser Talk */
+/* The subtitle description of menu item Kahf Browser Talk */
 "optionsMenu.braveTalkItemDescription" = "プライバシーが保護されたビデオ通話を、あなたのブラウザで。";
 
-/* Asil Browser Talk Item Menu title */
+/* Kahf Browser Talk Item Menu title */
 "optionsMenu.braveTalkItemTitle" = "Talk";
 
-/* The subtitle description of menu item Asil Browser VPN */
+/* The subtitle description of menu item Kahf Browser VPN */
 "optionsMenu.braveVPNItemDescription" = "デバイス全体でインターネット接続を保護";
 
-/* Asil Browser VPN Item Menu title */
+/* Kahf Browser VPN Item Menu title */
 "optionsMenu.braveVPNItemTitle" = "VPN";
 
-/* The subtitle description of menu item Asil Browser Wallet */
+/* The subtitle description of menu item Kahf Browser Wallet */
 "optionsMenu.braveWalletItemDescription" = "安全な暗号資産ウォレット。拡張機能は必要ありません";
 
 /* Privacy Features Section title */
@@ -1396,10 +1396,10 @@
 /* Section name for other settings. */
 "OtherSettingsSection" = "その他の設定";
 
-/* A subtitle shown on the setting that toggles analytics on Asil Browser. */
+/* A subtitle shown on the setting that toggles analytics on Kahf Browser. */
 "p3a.settingSubtitle" = "匿名化されたP3A情報は、Braveが全体的な使用状況を推定し、よく使われている機能を改善するために役立ちます。";
 
-/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
+/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Kahf Browser. */
 "p3a.settingTitle" = "プライバシーを保護したプロダクト分析 (P3A) を許可する";
 
 /* Title for the section for the global/default zoom level */
@@ -1445,7 +1445,7 @@
 "playList.addToPlayListAlertDescription" = "この動画をPlaylistに追加しますか？";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "Asil Browser Playlistに追加する";
+"playList.addToPlayListAlertTitle" = "Kahf Browser Playlistに追加する";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "再生オプション";
@@ -1466,7 +1466,7 @@
 "playlist.carplaySettingsSectionTitle" = "設定";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Asil Browser Playlist";
+"playlist.carplayTitle" = "Kahf Browser Playlist";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "オフラインキャッシュを削除";
@@ -1493,7 +1493,7 @@
 "playlist.movePlaylistShareActionMenuTitle" = "フォルダ移動…";
 
 /* Detail Text when there are no items in the playlist */
-"playList.noItemLabelDetailLabel" = "ブラウザ内で、Asil Browser Playlistにアイテムを追加することができます。";
+"playList.noItemLabelDetailLabel" = "ブラウザ内で、Kahf Browser Playlistにアイテムを追加することができます。";
 
 /* Text when there are no items in the playlist */
 "playList.noItemLabelTitle" = "利用可能なアイテムがありません";
@@ -1607,16 +1607,16 @@
 "playlist.playlistWebCompatibilityTitle" = "Web互換性";
 
 /* Body of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddBody" = "Asil Browser Playlistにより、オフライン再生、ピクチャー・イン・ピクチャー再生、連続再生、リピート再生ができるようになります。";
+"playlist.popoverAddBody" = "Kahf Browser Playlistにより、オフライン再生、ピクチャー・イン・ピクチャー再生、連続再生、リピート再生ができるようになります。";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "このメディアはAsil Browser Playlistに追加されています。";
+"playlist.popoverAddedTitle" = "このメディアはKahf Browser Playlistに追加されています。";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
 "playlist.popoverAddTitle" = "このメディアをBrave Playlistに追加しますか？";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "Asil Browser Playlistで開く";
+"playlist.popoverOpenInBravePlaylist" = "Kahf Browser Playlistで開く";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "削除";
@@ -1658,7 +1658,7 @@
 "playlist.sharePlaylistActionDetailsTitle" = "システムの共有メニューから、現在のアイテムを新タブで開いたり、シェアすることができます。";
 
 /* Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
-"playlist.sharePlaylistActionTitle" = "Asil Browser Playlist Menu";
+"playlist.sharePlaylistActionTitle" = "Kahf Browser Playlist Menu";
 
 /* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
 "playlist.sharePlaylistOpenInNewPrivateTabTitle" = "プライベートタブで開く";
@@ -1673,16 +1673,16 @@
 "playList.sorryAlertTitle" = "申し訳ありません";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "Asil Browser Playlistに追加されました";
+"playList.toastAddedToPlaylistTitle" = "Kahf Browser Playlistに追加されました";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "開く";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "Asil Browser Playlistに追加する";
+"playList.toastAddToPlaylistTitle" = "Kahf Browser Playlistに追加する";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
-"playList.toastExitingItemPlaylistTitle" = "Asil Browser Playlistで見る";
+"playList.toastExitingItemPlaylistTitle" = "Kahf Browser Playlistで見る";
 
 /* Footer for option to disable URL-Bar button */
 "playlist.urlBarButtonOptionFooter" = "Braveブラウザのアドレスバーの横に、Playlistボタンを追加します。（4本の線と+が組み合わさったような見た目です。）このボタンにより、Playlistを開いたり、メディアを追加したり削除したりすることが素早く行えるようになります。";
@@ -1714,7 +1714,7 @@
 /* The title of the screen where the user will move an item from one folder to another folder. */
 "playlistFolders.moveFolderScreenTitle" = "移動";
 
-/* %@ Should NOT be localized. It is a placeholder. Example: Asil Browser Folder and 1 more item. */
+/* %@ Should NOT be localized. It is a placeholder. Example: Kahf Browser Folder and 1 more item. */
 "playlistFolders.moveItemDescription" = "%@ほか1件のアイテム";
 
 /* %lld is a placeholder and should not be localized. Sometimes items can have no name. So this is a generic title to use */
@@ -1723,7 +1723,7 @@
 /* Sometimes an item can have no name. So this is a generic title to use */
 "playlistFolders.moveItemWithNoNameTitle" = "1件のアイテム";
 
-/* %@ and %lld Should NOT be localized. They are placeholders. Example: Asil Browser Folder and 3 more items. Music and 2 more items. */
+/* %@ and %lld Should NOT be localized. They are placeholders. Example: Kahf Browser Folder and 3 more items. Music and 2 more items. */
 "playlistFolders.moveMultipleItemDescription" = "%1$@ほか%2$lld件のアイテム";
 
 /* The title of the button to create a new folder */
@@ -1801,7 +1801,7 @@
 /* Description for closing a popover menu that is displayed. */
 "PopoverDefaultClose" = "コンテキストメニューを閉じる";
 
-/* Description for closing the `Asil Browser Shields` popover menu that is displayed. */
+/* Description for closing the `Kahf Browser Shields` popover menu that is displayed. */
 "PopoverShieldsMenuClose" = "Shieldメニューを閉じる";
 
 /* Label for preview action on Tab Tray Tab to add current tab to Bookmarks */
@@ -1825,7 +1825,7 @@
 /* Header text, under it we show items blocked by our ad blocker. 'All  time' sentence context is like 'All time items blocked by our ad blocker. */
 "privacyHub.allTimeListsHeader" = "全期間";
 
-/* Title of a section to show total count of trackers blocked by Asil Browser */
+/* Title of a section to show total count of trackers blocked by Kahf Browser */
 "privacyHub.allTimeListsTrackersView" = "トラッカー&広告";
 
 /* Title of a section to show websites containing highest amount of trackers */
@@ -1849,10 +1849,10 @@
 /* Title under which we display a website on which there's the highest number of trackers or ads. */
 "privacyHub.allTimeWebsiteTitle" = "ウェブサイト";
 
-/* Text for a button to display a list of all alerts caught by the Asil Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
+/* Text for a button to display a list of all alerts caught by the Kahf Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
 "privacyHub.allVPNAlertsButtonText" = "すべてのアラート";
 
-/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Asil Browser Shields', 'Blocked by BraveVPN */
+/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Kahf Browser Shields', 'Blocked by BraveVPN */
 "privacyHub.blockedBy" = "ブロック:";
 
 /* It says that a ad or tracker was blocked. Think of it in context of 'A tracker X was blocked' */
@@ -1870,8 +1870,8 @@
 /* Header text, under it we display blocked items from last week */
 "privacyHub.lastWeekHeader" = "先週";
 
-/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Asil Browser Shields on 42 sites' */
-"privacyHub.mostFrequentTrackerAndAdBody" = "Asil Browser Shieldsにより、**%1$@** が **%2$lld** 件のサイトでブロックされました";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Kahf Browser Shields on 42 sites' */
+"privacyHub.mostFrequentTrackerAndAdBody" = "Kahf Browser Shieldsにより、**%1$@** が **%2$lld** 件のサイトでブロックされました";
 
 /* Title under which we display a tracker which was most frequently detected by our ad blocking mechanism. */
 "privacyHub.mostFrequentTrackerAndAdTitle" = "最もよく検出されたトラッカー&広告";
@@ -1903,7 +1903,7 @@
 /* Text of a disclaimer that explains how the data for generating privacy reprots is stored. */
 "privacyHub.privacyReportsDisclaimer" = "プライバシーハブのデータはローカルで保存され、別の場所に送信されることはありません。";
 
-/* Title of main privacy hub screen. This screen shows various stats caught by Asil Browser's ad blockers. */
+/* Title of main privacy hub screen. This screen shows various stats caught by Kahf Browser's ad blockers. */
 "privacyHub.privacyReportsTitle" = "プライバシーハブ";
 
 /* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which website had the most tracker per visit, example usage: 'example.com had an average of 10 trackers & ads blocked per visit ' */
@@ -1912,22 +1912,22 @@
 /* Title of a website that contained the most trackers per visit. */
 "privacyHub.riskiestWebsiteTitle" = "最もトラッカーの多いサイト";
 
-/* This text explains a setting that lets Asil Browser monitor blocked network requests */
+/* This text explains a setting that lets Kahf Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsFooter" = "プライバシーハブには、Shieldsによりブロックされた数が表示されます。設定は、新しいタブページのShieldsカウントに影響しません。プライベートウィンドウではShieldsのデータはカウントされません。";
 
-/* Title of a setting that lets Asil Browser monitor blocked network requests */
+/* Title of a setting that lets Kahf Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsTitle" = "Shieldsデータを表示";
 
-/* This text explains a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+/* This text explains a setting that lets Kahf Browser monitor blocked network requests captured by Kahf Browser VPN */
 "privacyHub.settingsEnableVPNAlertsFooter" = "設定は、VPNサブスクリプションをご利用の場合のみ適用されます。";
 
-/* Title of a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+/* Title of a setting that lets Kahf Browser monitor blocked network requests captured by Kahf Browser VPN */
 "privacyHub.settingsEnableVPNAlertsTitle" = "VPNアラートを表示";
 
 /* This text explains what the button to clear datain the Privacy Hub is for. */
 "privacyHub.settingsSlearDataFooter" = "Shieldsによりブロックされたすべてのカウント数をリセットします。";
 
-/* Button that lets user clear all blocked requests and vpn alerts data that Asil Browser captured for them. */
+/* Button that lets user clear all blocked requests and vpn alerts data that Kahf Browser captured for them. */
 "privacyHub.settingsSlearDataTitle" = "Shieldsデータをクリア";
 
 /* This label says shields, as a source of by what a resource was blocked. Think of it in context of 'Blocked by Shields' */
@@ -1954,13 +1954,13 @@
 /* Section title, this section displays vpn alerts: items which the vpn managed to block on users behalf. */
 "privacyHub.vpnAlertsHeader" = "Braveファイアウォール + VPNアラート";
 
-/* This label says about Asil Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
+/* This label says about Kahf Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
 "privacyHub.vpnLabel" = "ファイアウォール + VPN";
 
 /* It shows a total count of items blocked by our VPN shields */
 "privacyHub.vpvnAlertsTotalCount" = "総数";
 
-/* Show Asil Browser Browser Privacy Policy page from the Privacy section in the settings. */
+/* Show Kahf Browser Browser Privacy Policy page from the Privacy section in the settings. */
 "PrivacyPolicy" = "プライバシーポリシー";
 
 /* Private button title */
@@ -1993,7 +1993,7 @@
 /* Title for quick-search engines settings section. */
 "QuickSearchEngines" = "クイック検索エンジン";
 
-/* Open the App Store to rate Asil Browser. */
+/* Open the App Store to rate Kahf Browser. */
 "RateBrave" = "Braveを評価する";
 
 /* Accessibility label for button increasing font size in display settings of reader mode */
@@ -2023,13 +2023,13 @@
 /* Accessibility hint for the font type buttons in reader mode display settings */
 "ReaderModeFontTypeButtonAccessibilityHint" = "フォントの種類を変更します。";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModeLoadingContentDisplayText" = "コンテンツの読み込み中…";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModeLoadOriginalLinkText" = "元のページを読み込む";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModePageCantShowDisplayText" = "ページをリーダービューで表示できませんでした。";
 
 /* Title of a bar that show up when you enter reader mode. */
@@ -2135,33 +2135,33 @@
 "RestoreTabNegativeButtonTitle" = "いいえ";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "前回 Asil Browser はクラッシュしたようです。タブを復元しますか？";
+"RestoreTabOnCrashAlertMessage" = "前回 Kahf Browser はクラッシュしたようです。タブを復元しますか？";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "申し訳ありません";
 
-/* Body for Asil Browser Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInBody" = "Asil Browser Rewardsにより、あなたはBrave Adsネットワークから提供される、プライバシーを保護した形の広告を閲覧することができます。トラッキングも、読み込み遅延もありません。あなたのデータが外部に漏れることもありません。";
+/* Body for Kahf Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInBody" = "Kahf Browser Rewardsにより、あなたはBrave Adsネットワークから提供される、プライバシーを保護した形の広告を閲覧することができます。トラッキングも、読み込み遅延もありません。あなたのデータが外部に漏れることもありません。";
 
-/* Title for Asil Browser Talk rewards opt-in screen button */
+/* Title for Kahf Browser Talk rewards opt-in screen button */
 "rewards.braveTalkRewardsOptInButtonTitle" = "Rewardsをオンにする";
 
-/* Body for successful Asil Browser Talk rewards opt-in */
+/* Body for successful Kahf Browser Talk rewards opt-in */
 "rewards.braveTalkRewardsOptInSuccessBody" = "続いてBrave Talkに移動するにはスクリーンのどこかをタップしてください";
 
-/* Title for successful Asil Browser Talk rewards opt-in */
+/* Title for successful Kahf Browser Talk rewards opt-in */
 "rewards.braveTalkRewardsOptInSuccessTitle" = "無料の通話を開始することができます";
 
-/* Title for Asil Browser Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInTitle" = "無料の通話を開始するには、Asil Browser Rewardsをオンにしてください";
+/* Title for Kahf Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInTitle" = "無料の通話を開始するには、Kahf Browser Rewardsをオンにしてください";
 
-/* Displayed when Asil Browser Rewards is disabled */
+/* Displayed when Kahf Browser Rewards is disabled */
 "rewards.disabledBody" = "有効にしてコンテンツクリエイターを支援";
 
 /* Displayed in the status container when rewards is disabled */
-"rewards.disabledStatusBody" = "Asil Browser Rewardsを使うと、ブラウジングすることででクリエイターを支援";
+"rewards.disabledStatusBody" = "Kahf Browser Rewardsを使うと、ブラウジングすることででクリエイターを支援";
 
-/* Displayed when Asil Browser Rewards is enabled */
+/* Displayed when Kahf Browser Rewards is enabled */
 "rewards.enabledBody" = "あなたはコンテンツクリエイターを支援中です";
 
 /* Displayed in the status container when rewards is enabled but you're not currently supporting any publishers (0 AC count) */
@@ -2237,13 +2237,13 @@
 "rewards.optInDisclaimer" = "クリックすることで %1$@ と %2$@ に同意したことになります。設定からいつでも無効にすることができます。";
 
 /* No comment provided by engineer. */
-"rewards.settingsFooterMessage" = "Asil Browser Rewardsの支払いは現在ご利用いただけません。既存のウォレットの資金はデスクトップ版Braveウォレットに移行することで、トークンを保持することができます。";
+"rewards.settingsFooterMessage" = "Kahf Browser Rewardsの支払いは現在ご利用いただけません。既存のウォレットの資金はデスクトップ版Braveウォレットに移行することで、トークンを保持することができます。";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleMessage" = "Braveのプライバシー重視型の広告を有効にすることで、コンテンツクリエイターやパブリッシャーを自動的にサポートすることができます。Asil Browser Ads広告はプライバシーを尊重しつつコンテンツクリエイターに還元することを目指した新しい広告の仕組みです。";
+"rewards.settingsToggleMessage" = "Braveのプライバシー重視型の広告を有効にすることで、コンテンツクリエイターやパブリッシャーを自動的にサポートすることができます。Kahf Browser Ads広告はプライバシーを尊重しつつコンテンツクリエイターに還元することを目指した新しい広告の仕組みです。";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleTitle" = "Asil Browser Rewardsを有効にする";
+"rewards.settingsToggleTitle" = "Kahf Browser Rewardsを有効にする";
 
 /* Displayed under verified publishers */
 "rewards.supportingPublisher" = "あなたはコンテンツクリエイターを支援中です";
@@ -2264,13 +2264,13 @@
 "rewards.walletTransferCompleteTitle" = "残高の移行が開始されました";
 
 /* Message on the alert presented if wallet transfer fails */
-"rewards.walletTransferFailureAlertMessage" = "Asil Browser Rewardsのサーバーが応答しませんでした。しばらく経ってからもう一度お試しください。";
+"rewards.walletTransferFailureAlertMessage" = "Kahf Browser Rewardsのサーバーが応答しませんでした。しばらく経ってからもう一度お試しください。";
 
 /* Title on the alert presented if wallet transfer fails */
 "rewards.walletTransferFailureAlertTitle" = "接続エラー";
 
 /* Describes the steps for using wallet transfer */
-"rewards.walletTransferStepsBody" = "Asil Browser Rewardsの残高は、一度限りデスクトップ版のBraveのウォレットに移行することができます。\n\n1.   デスクトップでBraveブラウザを開く\n2.  Asil Browser://rewards に移動\n3. 「QRコード」をクリック\n4.  QRコードを端末でスキャン";
+"rewards.walletTransferStepsBody" = "Kahf Browser Rewardsの残高は、一度限りデスクトップ版のBraveのウォレットに移行することができます。\n\n1.   デスクトップでBraveブラウザを開く\n2.  Kahf Browser://rewards に移動\n3. 「QRコード」をクリック\n4.  QRコードを端末でスキャン";
 
 /* Title above the steps to use wallet transfer */
 "rewards.walletTransferStepsTitle" = "一度限りの転送用のQRコードをスキャンする";
@@ -2455,7 +2455,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsShare" = "共有";
 
-/* 'Rewards' as in 'Asil Browser Rewards' */
+/* 'Rewards' as in 'Kahf Browser Rewards' */
 "RewardsInternalsShareInternalsTitle" = "Rewards内部情報を共有";
 
 /* No comment provided by engineer. */
@@ -2473,7 +2473,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsSupported" = "支援済";
 
-/* 'Rewards' as in 'Asil Browser Rewards' */
+/* 'Rewards' as in 'Kahf Browser Rewards' */
 "RewardsInternalsTitle" = "Rewards内部情報";
 
 /* No comment provided by engineer. */
@@ -2597,7 +2597,7 @@
 "SendCrashReportAlertMessage" = "Braveが問題を解決できるようにクラッシュレポートを送信しますか？";
 
 /* Title for prompt displayed to user after the app crashes */
-"SendCrashReportAlertTitle" = "申し訳ございません。Asil Browser がクラッシュしました";
+"SendCrashReportAlertTitle" = "申し訳ございません。Kahf Browser がクラッシュしました";
 
 /* Used as a button label for crash dialog prompt */
 "SendReportButtonTitle" = "レポートを送信";
@@ -2605,7 +2605,7 @@
 /* No comment provided by engineer. */
 "setDefaultBrowserCalloutTitle" = "Braveをデフォルトのブラウザに設定できるようになりました。こちらをタップして設定を開始しましょう。";
 
-/* Settings item to set the Asil Browser as a default browser on the iOS device. */
+/* Settings item to set the Kahf Browser as a default browser on the iOS device. */
 "setDefaultBrowserSettingsCell" = "デフォルトブラウザに設定する";
 
 /* No comment provided by engineer. */
@@ -2687,7 +2687,7 @@
 "shieldEducation.shareTheNewsTitle" = "お知らせをシェアする";
 
 /* Subtitle for Shield Education Tracker Ad Warning */
-"shieldEducation.trackerAdWarningSubTitle" = "Asil Browser Shieldsがあなたのオンラインでのプライバシーを保護しました。";
+"shieldEducation.trackerAdWarningSubTitle" = "Kahf Browser Shieldsがあなたのオンラインでのプライバシーを保護しました。";
 
 /* Subtitle for Shield Education Tracker Count Share */
 "shieldEducation.trackerCountShareSubtitle" = "おめでとうございます。あなたは特別な存在です。いつもBraveをご利用いただきありがとうございます。";
@@ -2702,7 +2702,7 @@
 "shieldEducation.videoAdBlockTitle" = "このサイトで動画を見ているとき広告はブロックされています。";
 
 /* Section title for adbblock, tracking protection, HTTPS-E, and cookies */
-"ShieldsDefaults" = "Asil Browser Shieldsの全体のデフォルト設定";
+"ShieldsDefaults" = "Kahf Browser Shieldsの全体のデフォルト設定";
 
 /* Section footer for global shields defaults */
 "ShieldsDefaultsFooter" = "今後アクセスするサイトに適用されるデフォルトのShield設定です。こちらを変更しても個別サイトの設定には影響しません。";
@@ -2738,7 +2738,7 @@
 "ShortcutItemTitleQRCode" = "QRコードをスキャン";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeBraveNewsDescription" = "Asil Browser Newsを開いて今日のトップストーリーズをチェックする";
+"shortcuts.activityTypeBraveNewsDescription" = "Kahf Browser Newsを開いて今日のトップストーリーズをチェックする";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeClearHistoryDescription" = "新しいタブでブラウザを立ち上げ、プライベートブラウジングの履歴を全て消去する";
@@ -2771,10 +2771,10 @@
 "shortcuts.activityTypeNewTabTitle" = "新しくブラウザタブを開く";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveNewsTitle" = "Asil Browser Newsを開く";
+"shortcuts.activityTypeOpenBraveNewsTitle" = "Kahf Browser Newsを開く";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Asil Browser Newsを開く";
+"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "Kahf Browser Newsを開く";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeOpenPlaylistDescription" = "Playlist内の動画を再生開始する";
@@ -2797,7 +2797,7 @@
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenWebsiteSuggestedPhrase" = "ウェブサイトを開く";
 
-/* Description for opening Asil Browser Settings for altering Siri shortcut. */
+/* Description for opening Kahf Browser Settings for altering Siri shortcut. */
 "shortcuts.shortcutOpenApplicationSettingsDescription" = "この項目は、Braveの設定を開きます。様々なSiriオプションを変更するには、「Siriと検索」メニューを選択し、設定をカスタマイズしてください。";
 
 /* Button title that open application settings */
@@ -2815,11 +2815,11 @@
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsEnableVPNTitle" = "VPNを有効化する";
 
-/* Description of Open Asil Browser News Siri Shortcut in Settings Screen */
+/* Description of Open Kahf Browser News Siri Shortcut in Settings Screen */
 "shortcuts.shortcutSettingsOpenBraveNewsDescription" = "Siri 音声アシスタントで、新しいタブを開きBrave Newsのフィードを表示するショートカットを利用";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Asil Browser Newsを開く";
+"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "Kahf Browser Newsを開く";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsOpenNewPrivateTabDescription" = "Siri 音声アシスタントで新しくプライベートタブを開くショートカットを利用する";
@@ -2878,13 +2878,13 @@
 /* No comment provided by engineer. */
 "SiteReportedTitle" = "ありがとうございます";
 
-/* Asil Browser panel topmost title */
+/* Kahf Browser panel topmost title */
 "SiteShieldSettings" = "Shield (保護機能)";
 
 /* Title used when in warning pop-over when domain specific data save appears */
 "socialSharing.domainSpecificDataSavedTitle" = "Braveでwebを閲覧してデータ通信量を節約しています";
 
-/* Text used for social sharing together with Asil Browser Shield values */
+/* Text used for social sharing together with Kahf Browser Shield values */
 "socialSharing.shareDescriptionTitle" = "Braveでwebを閲覧してデータ通信量を節約しています";
 
 /* Open search section of settings */
@@ -2900,7 +2900,7 @@
 "SuppressAlertsActionTitle" = "アラートを抑える";
 
 /* Sync settings section title */
-"Sync" = "Asil Browser Sync";
+"Sync" = "Kahf Browser Sync";
 
 /* Title of the bookmark import popup. */
 "sync.bookmarksImportPopupErrorTitle" = "ブックマーク";
@@ -2917,8 +2917,8 @@
 /* Title for Sync Settings Toggle Header */
 "sync.syncSettingsTitle" = "Sync設定";
 
-/* Text that informs a user about Asil Browser Sync service deprecation. */
-"sync.syncV1DeprecationText" = "Asil Browser Syncがリニューアルされます。ご利用の環境にも影響がございますのでアップグレードに向けてご準備ください。";
+/* Text that informs a user about Kahf Browser Sync service deprecation. */
+"sync.syncV1DeprecationText" = "Kahf Browser Syncがリニューアルされます。ご利用の環境にも影響がございますのでアップグレードに向けてご準備ください。";
 
 /* Message for popup when the bookmark migration fails */
 "sync.v2MigrationErrorMessage" = "ブックマークの移行に失敗しました。再度お試しください。";
@@ -2933,7 +2933,7 @@
 "sync.v2MigrationInterstitialTitle" = "ブックマークの新形式への移行";
 
 /* Message for popup to inform the user that bookmarks migration is required for sync */
-"sync.v2MigrationMessage" = "Asil Browser Syncを使用するには、既存のブックマークを新しいシステムに移行する必要があります。この操作を実行してもブックマークは削除されません。";
+"sync.v2MigrationMessage" = "Kahf Browser Syncを使用するには、既存のブックマークを新しいシステムに移行する必要があります。この操作を実行してもブックマークは削除されません。";
 
 /* Button to perform bookmarks migration in order to support sync */
 "sync.v2MigrationOKButton" = "新形式に移行";
@@ -3023,7 +3023,7 @@
 "SyncRemoveDeviceDefaultName" = "デバイス";
 
 /* Message for removing last device from Sync */
-"SyncRemoveLastDeviceMessage" = "現在同期されているデータは残りますが、Asil Browser Syncにキャッシュされたすべてのデータは消去されます。もう一度同期をしたい場合は新しいチェーンを開始する必要があります。";
+"SyncRemoveLastDeviceMessage" = "現在同期されているデータは残りますが、Kahf Browser Syncにキャッシュされたすべてのデータは消去されます。もう一度同期をしたい場合は新しいチェーンを開始する必要があります。";
 
 /* Button name for removing last device from Sync */
 "SyncRemoveLastDeviceRemoveButtonName" = "同期チェーンを削除";
@@ -3160,7 +3160,7 @@
 /* No comment provided by engineer. */
 "TermsOfService" = "利用規約";
 
-/* Show Asil Browser Browser TOS page from the Privacy section in the settings. */
+/* Show Kahf Browser Browser TOS page from the Privacy section in the settings. */
 "TermsOfUse" = "利用規約";
 
 /* Text for button to share referral's QR code. */
@@ -3209,7 +3209,7 @@
 "today.addSourceNoFeedsFoundMessage" = "すみません、そのフィードアドレスにはコンテンツがありません。";
 
 /* The action title displayed in the iOS share menu */
-"today.addSourceShareTitle" = "Asil Browser Newsにソースを追加する";
+"today.addSourceShareTitle" = "Kahf Browser Newsにソースを追加する";
 
 /* A header title shown above a button that will allow the user to fetch RSS feeds for a website they have typed in */
 "today.availableRSSFeedsHeaderTitle" = "利用可能なRSSフィード";
@@ -3235,13 +3235,13 @@
 /* No comment provided by engineer. */
 "today.deals" = "お得な情報";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
-"today.disabledAlertBody" = "Asil Browser Newsで %@ からのコンテンツは表示されなくなります";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
+"today.disabledAlertBody" = "Kahf Browser Newsで %@ からのコンテンツは表示されなくなります";
 
 /* No comment provided by engineer. */
 "today.disabledAlertTitle" = "無効";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
 "today.disablePublisherContent" = "%@からのコンテンツを非表示にする";
 
 /* No comment provided by engineer. */
@@ -3250,11 +3250,11 @@
 /* No comment provided by engineer. */
 "today.emptyFeedTitle" = "表示する記事はありません";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
 "today.enablePublisherContent" = "%@からのコンテンツを許可する";
 
 /* No comment provided by engineer. */
-"today.errorGeneralBody" = "Asil Browser Newsに問題が発生しています。もう一度お試しください。";
+"today.errorGeneralBody" = "Kahf Browser Newsに問題が発生しています。もう一度お試しください。";
 
 /* No comment provided by engineer. */
 "today.errorGeneralTitle" = "うーん...";
@@ -3271,7 +3271,7 @@
 /* A toggle title shown next to a source or channel that the user can follow. When tapped switches to 'Unfollow' */
 "today.followToggleTitle" = "フォロー";
 
-/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Asil Browser.com'. */
+/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Kahf Browser.com'. */
 "today.getFeedsFromSiteButtonTitle" = "次からフィードを取得する:";
 
 /* \"OPML\" is a file extension that contains a list of rss feeds. */
@@ -3280,20 +3280,20 @@
 /* The header above the list of insecure sources */
 "today.insecureSourcesHeader" = "安全でないソースです - ユーザー自身の責任で追加してください";
 
-/* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "お気に入りのソースを1つのフィードでフォロー。Braveのタブを開いて、下にスクロールすればすぐに設定できます！\nAsilBrowser Newsは、匿名化されたプライベート広告で広告サポートされています。";
+/* Shown above a button that turns on the \"Kahf Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
+"today.introCardBody" = "お気に入りのソースを1つのフィードでフォロー。Braveのタブを開いて、下にスクロールすればすぐに設定できます！\nKahf Browser Newsは、匿名化されたプライベート広告で広告サポートされています。";
 
-/* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
+/* Shown above a button that turns on the \"Kahf Browser News\" product in the app. */
 "today.introCardTitle" = "Braveニュースをオンにして、最新情報を見逃さないようにしましょう";
 
 /* No comment provided by engineer. */
-"today.isEnabledToggleLabel" = "Asil Browser Newsを表示する";
+"today.isEnabledToggleLabel" = "Kahf Browser Newsを表示する";
 
 /* No comment provided by engineer. */
 "today.learnMoreTitle" = "あなたのデータについて詳しく";
 
-/* 'Asil Browser Offers' is a product name */
-"today.moreBraveOffers" = "Asil Browser Offersをもっと見る";
+/* 'Kahf Browser Offers' is a product name */
+"today.moreBraveOffers" = "Kahf Browser Offersをもっと見る";
 
 /* No comment provided by engineer. */
 "today.noInternet" = "インターネット接続がありません";
@@ -3341,7 +3341,7 @@
 "today.suggestedTitle" = "提案";
 
 /* No comment provided by engineer. */
-"today.turnOnBraveToday" = "Asil Browser Newsを使う";
+"today.turnOnBraveToday" = "Kahf Browser Newsを使う";
 
 /* A toggle title shown next to a source or channel that the user can unfollow. When tapped switches to 'Follow' */
 "today.unfollowToggleTitle" = "フォローを解除";
@@ -3388,34 +3388,34 @@
 /* No comment provided by engineer. */
 "UserWalletGenericErrorTitle" = "すみません。問題が発生しました";
 
-/* Version number of Asil Browser shown in settings */
+/* Version number of Kahf Browser shown in settings */
 "VersionTemplate" = "バージョン %1$@ (%2$@)";
 
 /* Label that says where to view an item. '%@' is a placeholder and will include things like 'Instagram', 'unsplash'. The full label will look like 'View  on Instagram'. */
 "ViewOn" = "View on %@";
 
-/* Button text to buy Asil Browser VPN */
+/* Button text to buy Kahf Browser VPN */
 "vpn.buyButton" = "購入する";
 
 /* Title for screen to buy the VPN. */
-"vpn.buyVPNTitle" = "Asil Browser ファイアーウォール+VPN";
+"vpn.buyVPNTitle" = "Kahf Browser ファイアーウォール+VPN";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxBlockAds" = "不要な通信をブロック";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxEncryption" = "IKEv2セキュア暗号化VPNトンネルを使用";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxFast" = "最大100Mbpsの速度をサポート";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxGeoSelector" = "あなたの位置/国を選択する";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxNoIPLog" = "オンラインでの匿名性を維持";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxNoSellout" = "あなたの情報を第三者に共有・販売しません";
 
 /* AppStore Receipt field for customer support contact form. */
@@ -3482,9 +3482,9 @@
 "vpn.contactFormTimezone" = "タイムゾーン";
 
 /* Title for contact form email. */
-"vpn.contactFormTitle" = "Asil Browser ファイアーウォール+VPNに関わる問題";
+"vpn.contactFormTitle" = "Kahf Browser ファイアーウォール+VPNに関わる問題";
 
-/* Button text to enable Asil Browser VPN */
+/* Button text to enable Kahf Browser VPN */
 "vpn.enableButton" = "有効にする";
 
 /* Message for an alert when the VPN can't get prices from the App Store */
@@ -3517,7 +3517,7 @@
 /* Title for screen to install the VPN. */
 "vpn.installTitle" = "VPNをインストール";
 
-/* Button text to try free Asil Browser VPN */
+/* Button text to try free Kahf Browser VPN */
 "vpn.learnMore" = "無料で試してみる";
 
 /* Used in context: 'Monthly subscription, (it) renews monthly' */
@@ -3529,10 +3529,10 @@
 /* Text to show user when their vpn plan has expired */
 "vpn.planExpired" = "期限切れ";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.popupCheckmark247Support" = "24時間365日のサポート";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.popupCheckmarkSecureConnections" = "すべての接続を保護";
 
 /* It is used in context: 'Powered by BRAND_NAME' */
@@ -3623,7 +3623,7 @@
 "vpn.vpnBackgroundNotificationBody" = "バックグラウンドでもBraveはあなたを保護します";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationTitle" = "Asil Browser ファイアウォール+VPNは有効です";
+"vpn.vpnBackgroundNotificationTitle" = "Kahf Browser ファイアウォール+VPNは有効です";
 
 /* Message for an alert when the VPN can't be configured. */
 "vpn.vpnConfigGenericErrorBody" = "VPNの初期化に問題がありました。再度お試しいただくか、VPN設定画面で設定をリセットしてみてください。";
@@ -3632,7 +3632,7 @@
 "vpn.vpnConfigGenericErrorTitle" = "エラー";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
-"vpn.vpnConfigPermissionDeniedErrorBody" = "Asil Browser ファイアウォール+VPNは、動作するためには、お使いのデバイスにVPNプロファイルをインストールする必要があります。";
+"vpn.vpnConfigPermissionDeniedErrorBody" = "Kahf Browser ファイアウォール+VPNは、動作するためには、お使いのデバイスにVPNプロファイルをインストールする必要があります。";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
 "vpn.vpnConfigPermissionDeniedErrorTitle" = "パーミッションが拒否されました";
@@ -3644,7 +3644,7 @@
 "vpn.vpnErrorPurchaseFailedTitle" = "エラー";
 
 /* Disclaimer for user purchasing the VPN plan. */
-"vpn.vpnIAPBoilerPlate" = "サブスクリプションはiTunesアカウントを通じて課金されます。\n無料トライアルが提供されている場合、未使用の部分は、サブスクリプションを購入した時点で無効になります。\nサブスクリプションは、現在の期間終了の少なくとも24時間前にキャンセルされない限り、自動的に更新されます。\nサブスクリプションは「設定」で管理できます。\nAsilBrowserを使用することで、利用規約とプライバシーポリシーに同意したことになります。";
+"vpn.vpnIAPBoilerPlate" = "サブスクリプションはiTunesアカウントを通じて課金されます。\n無料トライアルが提供されている場合、未使用の部分は、サブスクリプションを購入した時点で無効になります。\nサブスクリプションは、現在の期間終了の少なくとも24時間前にキャンセルされない限り、自動的に更新されます。\nサブスクリプションは「設定」で管理できます。\nKahf Browserを使用することで、利用規約とプライバシーポリシーに同意したことになります。";
 
 /* Message for alert to reset vpn configuration */
 "vpn.vpnResetAlertBody" = "この操作を実行するとBrave ファイアウォール+ VPNの構成はリセットされ、すべてのエラーが修正されます。このプロセスには1分かかる場合があります。";
@@ -3718,13 +3718,13 @@
 /* Description for the search option on the 'shortcuts' widget. */
 "widgets.searchShortcutTitle" = "検索";
 
-/* Description for Asil Browser Shields widget on 'add widget' screen. */
+/* Description for Kahf Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsDescription" = "Braveによって時間がどれだけ節約され、オンライン上でプライバシーが保護されたかのまとめです。";
 
-/* Title for Asil Browser Shields widget on 'add widget' screen. */
+/* Title for Kahf Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsTitle" = "プライバシー統計";
 
-/* Title of Asil Browser Shields widget shown above stat numbers. */
+/* Title of Kahf Browser Shields widget shown above stat numbers. */
 "widgets.shieldStatsWidgetTitle" = "プライバシー統計";
 
 /* Button to the browser and enter URL or make a search query there. */
@@ -3745,14 +3745,14 @@
 /* Title for shortcuts widget on 'add widget' screen. */
 "widgets.shortcutsWidgetTitle" = "ショートカット";
 
-/* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
+/* Description for Kahf Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatDescription" = "Braveがオンライン上でどれくらいプライバシーを保護したかのまとめです。";
 
-/* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
+/* Title for Kahf Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatTitle" = "プライバシー統計";
 
-/* Description for the Asil Browser Wallet option on the 'shortcuts' widget. */
-"widgets.walletShortcutTitle" = "Asil Browserウォレット";
+/* Description for the Kahf Browser Wallet option on the 'shortcuts' widget. */
+"widgets.walletShortcutTitle" = "Kahf Browserウォレット";
 
 /* Title of the settings for widgets part */
 "widgets.widgetTitle" = "ウィジェット";
@@ -3775,3 +3775,51 @@
 /* History tableview section header */
 "Yesterday" = "昨日";
 
+"safegaze.popup.report.title1" = "バグや提案があれば、こちらに報告してください：";
+"safegaze.popup.report.title2" = "このフォーム";
+"safegaze.popup.support.title" = "このプロジェクトをサポート";
+"safegaze.popup.woman.title" = "私は女性です";
+"safegaze.popup.man.title" = "私は男性です";
+"safegaze.popup.comingsoon.title" = "近日公開";
+"safegaze.popup.gendermode.title" = "ジェンダーモード";
+"safegaze.popup.sinfulacts.title" = "避けられる罪深い行為";
+"safegaze.popup.thispage.title" = "このページ";
+"safegaze.popup.lifetime.title" = "一生";
+"safegaze.popup.alwayspurify.title" = "常に浄化";
+"safegaze.popup.neverpurify.title" = "決して浄化しない";
+"safegaze.popup.safegazeup.title" = "SafeGaze UP";
+"safegaze.popup.imageblur.title" = "画像のぼかし強度";
+"safegaze.popup.takecontrol.title" = "SafeGazeを使用してオンライン体験を向上させ、不適切なコンテンツから視力を保護します。";
+"safegaze.popup.turnon.title" = "SafeGazeをオンにする";
+
+/* ジェンダータイトル */
+"kahftube.gender.all.title" = "すべて";
+"kahftube.gender.male.title" = "男性";
+"kahftube.gender.female.title" = "女性";
+"kahftube.gender.child.title" = "子供";
+"kahftube.gender.except.title" = "除外";
+
+/* 宗教タイトル */
+"kahftube.religion.haram.title" = "ハラム";
+"kahftube.religion.practicingMuslim.title" = "実践するムスリム";
+"kahftube.religion.liberalMuslim.title" = "リベラルなムスリム";
+"kahftube.religion.moderateMuslim.title" = "穏健なムスリム";
+
+/* ポップアップタイトル */
+"kahftube.popup.name.title" = "名前";
+"kahftube.popup.connectedAccount.title" = "接続されたアカウント";
+"kahftube.popup.preferences.title" = "設定";
+"kahftube.popup.gender.title" = "ジェンダー";
+"kahftube.popup.religionStatus.title" = "宗教の状態";
+"kahftube.popup.unsubHaramChannels.title" = "ハラムなチャンネルの購読解除";
+"kahftube.popup.unsubscribeSuccessful.title1" = "ハラムなチャンネルの購読が解除されました";
+"kahftube.popup.unsubscribeSuccessful.title2" = "成功";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "了解";
+"kahftube.popup.openToUse.title" = "使用可能";
+"kahftube.popup.explore.title" = "YouTubeにサインインした後、この機能を探索";
+"kahftube.popup.haramChannelsFound.title" = "ハラムなチャンネルが %d 件見つかりました";
+"kahftube.popup.refreshAgain.title" = "再度リフレッシュ";
+"kahftube.popup.unsubscribeNow.title" = "今すぐ購読解除";
+"kahftube.popup.noHaramSubscribed.title" = "ハラムなチャンネルに購読していません";
+"kahftube.popup.channelFound.title" = "チャンネルが見つかりました";
+"kahftube.popup.alright.title" = "了解";

@@ -1,17 +1,17 @@
 /* About settings section title */
 "About" = "關於";
 
-/* The title of the screen explaining Asil Browser Shields */
-"AboutBraveShields" = "關於 Asil Browser Shields";
+/* The title of the screen explaining Kahf Browser Shields */
+"AboutBraveShields" = "關於 Kahf Browser Shields";
 
-/* The body of the screen explaining Asil Browser Shields */
-"AboutBraveShieldsBody" = "網站通常會透過 Cookie 和指令碼嘗試識別您和您使用的裝置，藉此掌握您的身分及瞭解您使用網路的情形，進而追蹤您在每個網站上的行為。\n\nAsilBrowser 會封鎖這些項目，讓您能在不受追蹤的情況下自在瀏覽。";
+/* The body of the screen explaining Kahf Browser Shields */
+"AboutBraveShieldsBody" = "網站通常會透過 Cookie 和指令碼嘗試識別您和您使用的裝置，藉此掌握您的身分及瞭解您使用網路的情形，進而追蹤您在每個網站上的行為。\n\nKahf Browser 會封鎖這些項目，讓您能在不受追蹤的情況下自在瀏覽。";
 
 /* See http://mzl.la/1G7uHo7 */
 "AccessPhotoDeniedAlertMessage" = "這可讓您將影像儲存至您的相機膠卷。";
 
 /* See http://mzl.la/1G7uHo7 */
-"AccessPhotoDeniedAlertTitle" = "Asil Browser 希望能存取您的相片";
+"AccessPhotoDeniedAlertTitle" = "Kahf Browser 希望能存取您的相片";
 
 /* Button to add a bookmark */
 "AddBookmark" = "新增書籤";
@@ -52,8 +52,8 @@
 /* Label for the Face ID/Passcode item in Settings */
 "AuthenticationFaceIDPasscodeSetting" = "Face ID 和密碼";
 
-/* Touch ID or PIN entry prompt subtitle when accessing Asil Browser with the Browser Lock feature enabled */
-"AuthenticationLoginsTouchReason" = "這會驗證您對 Asil Browser 的存取權限";
+/* Touch ID or PIN entry prompt subtitle when accessing Kahf Browser with the Browser Lock feature enabled */
+"AuthenticationLoginsTouchReason" = "這會驗證您對 Kahf Browser 的存取權限";
 
 /* Label for the Passcode item in Settings */
 "AuthenticationPasscode" = "密碼";
@@ -116,7 +116,7 @@
 "BlockCookieConsentNotices" = "封鎖 Cookie 同意通知";
 
 /* A description for a popup that notifies the user that we can block cookie consent notices */
-"BlockCookieConsentNoticesPopupDescription" = "Asil Browser 已經封鎖了第三方 Cookie。我們也可以封鎖 Cookie 同意通知。";
+"BlockCookieConsentNoticesPopupDescription" = "Kahf Browser 已經封鎖了第三方 Cookie。我們也可以封鎖 Cookie 同意通知。";
 
 /* A title for a popup that notifies the user that we can block cookie consent notices */
 "BlockCookieConsentNoticesPopupTitle" = "不想再收到 Cookie 同意通知了嗎？";
@@ -130,7 +130,7 @@
 /* A title for setting which blocks 'switch to app' popups */
 "blockMobileAnnoyances" = "封鎖「切換至應用程式」通知";
 
-/* Asil Browser panel individual toggle title */
+/* Kahf Browser panel individual toggle title */
 "BlockPhishing" = "封鎖網路釣魚";
 
 /* No comment provided by engineer. */
@@ -175,38 +175,38 @@
 /* Placeholder text for adding or editing a bookmark */
 "BookmarkUrlPlaceholderText" = "地址";
 
-/* Button to show the Asil Browser panel */
-"BravePanel" = "Asil Browser 面板";
+/* Button to show the Kahf Browser panel */
+"BravePanel" = "Kahf Browser 面板";
 
 /* No comment provided by engineer. */
-"BraveRewardsAdNotificationTitle" = "Asil Browser Rewards";
+"BraveRewardsAdNotificationTitle" = "Kahf Browser Rewards";
 
 /* No comment provided by engineer. */
 "BraveRewardsOpen" = "開啟";
 
-/* Asil Browser Rewards settings title */
-"BraveRewardsTitle" = "Asil Browser Rewards";
+/* Kahf Browser Rewards settings title */
+"BraveRewardsTitle" = "Kahf Browser Rewards";
 
-/* Asil Browser Search Banner Promotion description content in Search Suggestions */
-"braveSearchPromotion.bannerDescription" = "Asil Browser 搜尋不會追蹤您、您的查詢內容或點擊項目。";
+/* Kahf Browser Search Banner Promotion description content in Search Suggestions */
+"braveSearchPromotion.bannerDescription" = "Kahf Browser 搜尋不會追蹤您、您的查詢內容或點擊項目。";
 
-/* Asil Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title for maybe later button to activate promotion later in Search Suggestions */
 "braveSearchPromotion.bannerMaybeLaterButtonTitle" = "稍後再說";
 
-/* Asil Browser Search Banner Promotion title in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title in Search Suggestions */
 "braveSearchPromotion.bannerTitle" = "支援獨立搜尋並提供更棒的隱私保護";
 
-/* Asil Browser Search Banner Promotion title for try button in Search Suggestions */
-"braveSearchPromotion.bannerTryButtonTitle" = "試用 Asil Browser 搜尋";
+/* Kahf Browser Search Banner Promotion title for try button in Search Suggestions */
+"braveSearchPromotion.bannerTryButtonTitle" = "試用 Kahf Browser 搜尋";
 
-/* Asil Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
+/* Kahf Browser Search Banner Promotion title for dismiss button to remove promotion in Search Suggestions */
 "braveSearchPromotion.braveSearchPromotionBannerDismissButtonTitle" = "關閉";
 
 /* No comment provided by engineer. */
 "BraveShieldsAdvancedControls" = "進階控制項";
 
 /* No comment provided by engineer. */
-"BraveShieldsAndPrivacy" = "Asil Browser Shields 和隱私";
+"BraveShieldsAndPrivacy" = "Kahf Browser Shields 和隱私";
 
 /* The number of ads and trackers blocked will be next to this */
 "BraveShieldsBlockedCountLabel" = "封鎖廣告和其他討人厭的追蹤程式";
@@ -229,17 +229,17 @@
 /* No comment provided by engineer. */
 "BraveShieldsSiteBroken" = "如果這個網站貌似無法正常運作，請嘗試關閉 Shields";
 
-/* Context: 'Asil Browser Shields Up' or 'Asil Browser Shields Down' */
-"BraveShieldsStatusTitle" = "Asil Browser Shields";
+/* Context: 'Kahf Browser Shields Up' or 'Kahf Browser Shields Down' */
+"BraveShieldsStatusTitle" = "Kahf Browser Shields";
 
-/* Context: The 'Down' in 'Asil Browser Shields Down' */
+/* Context: The 'Down' in 'Kahf Browser Shields Down' */
 "BraveShieldsStatusValueDown" = "關閉";
 
-/* Context: The 'Up' in 'Asil Browser Shields Up' */
+/* Context: The 'Up' in 'Kahf Browser Shields Up' */
 "BraveShieldsStatusValueUp" = "開啟";
 
 /* The accessibility hint spoken when focused on the main shields toggle */
-"BraveShieldsToggleHint" = "點兩下即可切換 Asil Browser Shields";
+"BraveShieldsToggleHint" = "點兩下即可切換 Kahf Browser Shields";
 
 /* Sync page title */
 "BraveSync" = "同步";
@@ -248,16 +248,16 @@
 "BraveSyncInternalsTitle" = "同步 Internals";
 
 /* Sync settings welcome */
-"BraveSyncWelcome" = "首先，您需要將 Asil Browser 安裝在您計畫同步的所有裝置中。如要將裝置鏈接一起，請啟用一個同步鏈，用於將所有裝置安全鏈接。";
+"BraveSyncWelcome" = "首先，您需要將 Kahf Browser 安裝在您計畫同步的所有裝置中。如要將裝置鏈接一起，請啟用一個同步鏈，用於將所有裝置安全鏈接。";
 
 /* The name of the feature */
-"bravetalk.braveTalkTitle" = "Asil Browser Talk";
+"bravetalk.braveTalkTitle" = "Kahf Browser Talk";
 
 /* Setting to enable the browser lock privacy feature */
 "BrowserLock" = "瀏覽器鎖定";
 
 /* No comment provided by engineer. */
-"BrowserLockDescription" = "以 Touch ID、Face ID 或系統密碼解鎖 Asil Browser";
+"BrowserLockDescription" = "以 Touch ID、Face ID 或系統密碼解鎖 Kahf Browser";
 
 /* A button title for the action to move to the next step of the browser lock migration process. */
 "browserLockMigrationContinueButtonTitle" = "繼續";
@@ -266,10 +266,10 @@
 "browserLockMigrationNoPasscodeSetup" = "尚未設定 ID 或密碼嗎？請開啟「設定」，接著輕觸「%@」。";
 
 /* Subtitle on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationSubtitle" = "我們已將 Asil Browser 密碼簡化，現在您可以使用您在手機上使用的同一組 ID 或密碼來存取 Asil Browser 了。";
+"browserLockMigrationSubtitle" = "我們已將 Kahf Browser 密碼簡化，現在您可以使用您在手機上使用的同一組 ID 或密碼來存取 Kahf Browser 了。";
 
 /* Title on the screen shown to the user when they are being migrated from the old Passcode feature to the new Browser Lock feature */
-"browserLockMigrationTitle" = "以您的 Apple Face ID、Touch ID 或密碼開啟 Asil Browser";
+"browserLockMigrationTitle" = "以您的 Apple Face ID、Touch ID 或密碼開啟 Kahf Browser";
 
 /* Settings item for clearing browsing history */
 "BrowsingHistory" = "瀏覽記錄";
@@ -278,7 +278,7 @@
 "Cache" = "快取";
 
 /* Subtitle - Description for Default Browser Full Screen Callout */
-"callout.defaultBrowserCalloutDescription" = "將 Asil Browser 設為預設瀏覽器的話，您所輕觸的每個連結都會在 Asil Browser 的隱私保護下開啟。";
+"callout.defaultBrowserCalloutDescription" = "將 Kahf Browser 設為預設瀏覽器的話，您所輕觸的每個連結都會在 Kahf Browser 的隱私保護下開啟。";
 
 /* Title for main button in Default Browser Full Screen Callout */
 "callout.defaultBrowserCalloutPrimaryButtonTitle" = "設為預設瀏覽器";
@@ -293,13 +293,13 @@
 "callout.defaultBrowserTitle" = "隱私不再遙不可及。";
 
 /* Subtitle - Description for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutDescription" = "這有助於我們瞭解哪些 Asil Browser 功能的使用率最高。您隨時可以在 Asil Browser 設定中的「Asil Browser Shields 和隱私」下變更這項設定。";
+"callout.p3aCalloutDescription" = "這有助於我們瞭解哪些 Kahf Browser 功能的使用率最高。您隨時可以在 Kahf Browser 設定中的「Kahf Browser Shields 和隱私」下變更這項設定。";
 
 /* Title for the link that navigates to a webpage showing information about p3a (Privacy Preserving Analytics) */
 "callout.p3aCalloutLinkTitle" = "深入瞭解保護隱私的產品分析 (P3A)。";
 
 /* Title for p3a (Privacy Preserving Analytics) Full Screen Callout */
-"callout.p3aCalloutTitle" = "協助提升 Asil Browser 品質。";
+"callout.p3aCalloutTitle" = "協助提升 Kahf Browser 品質。";
 
 /* Title for toggle for enabling p3a (Privacy Preserving Analytics) Full Screen Callout */
 "callout.p3aCalloutToggleTitle" = "分享匿名、不公開的產品深入分析。";
@@ -314,7 +314,7 @@
 "callout.playlistOnboardingViewTitle" = "將影片新增至播放清單…";
 
 /* Subtitle - Description for Privacy Everywhere Full Screen Callout */
-"callout.privacyEverywhereCalloutDescription" = "在您的電腦或平板電腦上享有 Asil Browser 隱私保護，並且讓各裝置上的書籤和擴充功能保持同步。";
+"callout.privacyEverywhereCalloutDescription" = "在您的電腦或平板電腦上享有 Kahf Browser 隱私保護，並且讓各裝置上的書籤和擴充功能保持同步。";
 
 /* Title for button in Default Browser Full Screen Callout */
 "callout.privacyEverywhereCalloutPrimaryButtonTitle" = "立即同步";
@@ -355,7 +355,7 @@
 /* Title indicating whether or not a private key can be used to derive some data from another piece of data. IE: Use one key to generate another */
 "certificateViewer.deriveTitle" = "衍生";
 
-/* Title of the section for the Domain Component such as: DNS or Asil Browser.com or a website's domain. */
+/* Title of the section for the Domain Component such as: DNS or Kahf Browser.com or a website's domain. */
 "certificateViewer.domainComponentTitle" = "網域元件";
 
 /* Title of the section indication which 'Encryption' algorithm was used. */
@@ -394,7 +394,7 @@
 /* Title of the section for Department of the Company. Example: Human Resources. */
 "certificateViewer.organizationalUnitTitle" = "公司部門";
 
-/* Title of the section for Name of the Company. Example: Asil Browser Inc. */
+/* Title of the section for Name of the Company. Example: Kahf Browser Inc. */
 "certificateViewer.organizationTitle" = "公司";
 
 /* Title indicating 'Parameters' or Input passed to a function/algorithm. */
@@ -605,25 +605,25 @@
 "defaultBrowserCallout.introOpenSettingsButtonText" = "開啟設定";
 
 /* Primary text on default browser popup screen */
-"defaultBrowserCallout.introPrimaryText" = "使用 Asil Browser 開啟所有連結以保護隱私";
+"defaultBrowserCallout.introPrimaryText" = "使用 Kahf Browser 開啟所有連結以保護隱私";
 
 /* Secondary text on default browser popup. */
 "defaultBrowserCallout.introSecondaryText" = "dBrave Shields 會在您造訪網站時，封鎖網站上的追蹤程式和廣告，為您節省數據用量和寶貴時間";
 
 /* Tertiary text on default browser popup screen */
-"defaultBrowserCallout.introTertiaryText" = "開啟「設定」，點選「預設瀏覽器應用程序」，然後選取「Asil Browser」。";
+"defaultBrowserCallout.introTertiaryText" = "開啟「設定」，點選「預設瀏覽器應用程序」，然後選取「Kahf Browser」。";
 
-/* Notification body to promote setting Asil Browser app as default browser */
-"defaultBrowserCallout.notificationBody" = "已針對 iOS %@ 最佳化。立即將 Asil Browser 設為預設瀏覽器。";
+/* Notification body to promote setting Kahf Browser app as default browser */
+"defaultBrowserCallout.notificationBody" = "已針對 iOS %@ 最佳化。立即將 Kahf Browser 設為預設瀏覽器。";
 
-/* Notification title to promote setting Asil Browser app as default browser */
-"defaultBrowserCallout.notificationTitle" = "Asil Browser 網頁瀏覽器";
+/* Notification title to promote setting Kahf Browser app as default browser */
+"defaultBrowserCallout.notificationTitle" = "Kahf Browser 網頁瀏覽器";
 
 /* No comment provided by engineer. */
 "defaultBrowserCalloutCloseAccesabilityLabel" = "關閉預設瀏覽器標註";
 
-/* Name for default Asil Browser theme. */
-"defaultThemeName" = "Asil Browser 預設";
+/* Name for default Kahf Browser theme. */
+"defaultThemeName" = "Kahf Browser 預設";
 
 /* No comment provided by engineer. */
 "Delete" = "刪除";
@@ -778,10 +778,10 @@
 /* Allow link to switch apps? */
 "ExternalAppURLAlertTitle" = "要允許連結切換應用程序嗎？";
 
-/* Allow Asil Browser to open the external app URL */
+/* Allow Kahf Browser to open the external app URL */
 "ExternalAppURLAllow" = "允許";
 
-/* Don't allow Asil Browser to open the external app URL */
+/* Don't allow Kahf Browser to open the external app URL */
 "ExternalAppURLDontAllow" = "不允許";
 
 /* Footer text when user selects to save to favorites when editing a bookmark */
@@ -860,10 +860,10 @@
 "HideLinkPreviewsActionTitle" = "隱藏連結預覽";
 
 /* Hides the rewards icon */
-"HideRewardsIcon" = "隱藏 Asil Browser Rewards 圖示";
+"HideRewardsIcon" = "隱藏 Kahf Browser Rewards 圖示";
 
 /* Hide the rewards icon explination. */
-"HideRewardsIconSubtitle" = "未啟用 Asil Browser Rewards 時隱藏 Asil Browser Rewards 圖示";
+"HideRewardsIconSubtitle" = "未啟用 Kahf Browser Rewards 時隱藏 Kahf Browser Rewards 圖示";
 
 /* Title for history menu item */
 "HistortMenuItem" = "歷史記錄";
@@ -1001,13 +1001,13 @@
 "MonthlyAdsClaimNotificationBody" = "輕觸即可免費領取代幣。";
 
 /* The title of the notification that goes out monthly to users who can claim an ads grant */
-"MonthlyAdsClaimNotificationTitle" = "Asil Browser Rewards 💵🎁";
+"MonthlyAdsClaimNotificationTitle" = "Kahf Browser Rewards 💵🎁";
 
 /* No comment provided by engineer. */
 "MyFirstAdBody" = "點選此處以瞭解詳細資訊。";
 
 /* No comment provided by engineer. */
-"MyFirstAdTitle" = "這是您的第一則 Asil Browser 廣告";
+"MyFirstAdTitle" = "這是您的第一則 Kahf Browser 廣告";
 
 /* Bookmark title / Device name */
 "Name" = "名稱";
@@ -1069,14 +1069,14 @@
 /* Setting title for option to automatically redirect a url to another url */
 "nprRedirectFooter" = "自動將 NPR 連結重新導向其文字版本 (位址：text.npr.org)。";
 
-/* Bookmark title for Asil Browser Support */
-"ntp.braveSupportFavoriteTitle" = "Asil Browser 支援";
+/* Bookmark title for Kahf Browser Support */
+"ntp.braveSupportFavoriteTitle" = "Kahf Browser 支援";
 
 /* No comment provided by engineer. */
 "ntp.claimRewards" = "領取代幣";
 
-/* Placeholder example: 'You earned 42 BAT by browsing with Asil Browser.' */
-"ntp.earningsReport" = "您使用 Asil Browser 瀏覽期間，一共賺取了 %@。";
+/* Placeholder example: 'You earned 42 BAT by browsing with Kahf Browser.' */
+"ntp.earningsReport" = "您使用 Kahf Browser 瀏覽期間，一共賺取了 %@。";
 
 /* The context is to praise the user that they did a good job, to keep it up. It is used in full sentence like: 'Way to go! You earned 40 BAT last month.' */
 "ntp.goodJob" = "做得很好！";
@@ -1085,10 +1085,10 @@
 "ntp.hideSponsoredImages" = "隱藏贊助圖片";
 
 /* The text description of image type which is being used NTP */
-"ntp.imageTypeSelectionDescription" = "「贊助」是您可透過啟用 Asil Browser Rewards 獲得的額外品牌背景。";
+"ntp.imageTypeSelectionDescription" = "「贊助」是您可透過啟用 Kahf Browser Rewards 獲得的額外品牌背景。";
 
 /* No comment provided by engineer. */
-"ntp.learnMoreAboutRewards" = "深入了解 Asil Browser Rewards";
+"ntp.learnMoreAboutRewards" = "深入了解 Kahf Browser Rewards";
 
 /* No comment provided by engineer. */
 "ntp.learnMoreAboutSI" = "深入了解贊助圖片";
@@ -1120,17 +1120,17 @@
 /* The placeholder says 'Terms of Service'. So full sentence goes like: 'By turning Rewards, you agree to the Terms of Service'. */
 "ntp.turnRewardsTos" = "開啟「獎勵」即表示您同意%@。";
 
-/* Message when opting into Asil Browser Ads when region becomes available */
+/* Message when opting into Kahf Browser Ads when region becomes available */
 "OBAdsOptInMessage" = "一邊瀏覽，一邊賺取代幣，獎勵優質的內容創作者。";
 
-/* Message when opting into Asil Browser Ads when region becomes available */
+/* Message when opting into Kahf Browser Ads when region becomes available */
 "OBAdsOptInMessageJapan" = "一邊瀏覽，一邊賺取點數，獎勵優質的內容創作者。";
 
-/* Title when opting into Asil Browser Ads when region becomes available */
-"OBAdsOptInTitle" = "Asil Browser Ads 在這裡！";
+/* Title when opting into Kahf Browser Ads when region becomes available */
+"OBAdsOptInTitle" = "Kahf Browser Ads 在這裡！";
 
 /* Title for ads onboarding screen */
-"OBAdsTitle" = "Asil Browser 會在時限內展示您的第一個廣告";
+"OBAdsTitle" = "Kahf Browser 會在時限內展示您的第一個廣告";
 
 /* Title for when the user completes onboarding */
 "OBCompleteTitle" = "你現在可以開始了。";
@@ -1150,14 +1150,14 @@
 /* Button to finish onboarding and start using the app. */
 "OBFinishButton" = "開始瀏覽";
 
-/* Button to join Asil Browser Rewards. */
+/* Button to join Kahf Browser Rewards. */
 "OBJoinButton" = "加入";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentClipboardPermission" = "允許 Asil Browser 查看我的剪貼簿，尋找相符的推薦代碼";
+"OBPrivacyConsentClipboardPermission" = "允許 Kahf Browser 查看我的剪貼簿，尋找相符的推薦代碼";
 
 /* No comment provided by engineer. */
-"OBPrivacyConsentDetail" = "您可能為了支持推薦者而下載 Asil Browser。為偵測您的推薦者，Asil Browser 會查看您的剪貼簿一次，尋找相符的推薦代碼。Asil Browser 只會檢查代碼，不會傳輸其他任何個人資料。如果您不允許查看，您的推薦者將無法獲得 Asil Browser 獎勵。";
+"OBPrivacyConsentDetail" = "您可能為了支持推薦者而下載 Kahf Browser。為偵測您的推薦者，Kahf Browser 會查看您的剪貼簿一次，尋找相符的推薦代碼。Kahf Browser 只會檢查代碼，不會傳輸其他任何個人資料。如果您不允許查看，您的推薦者將無法獲得 Kahf Browser 獎勵。";
 
 /* No comment provided by engineer. */
 "OBPrivacyConsentNoButton" = "不允許查看";
@@ -1178,10 +1178,10 @@
 "OBRewardsAgreementDetailsAnd" = "和";
 
 /* Title for rewards agreement onboarding screen */
-"OBRewardsAgreementTitle" = "Asil Browser Rewards";
+"OBRewardsAgreementTitle" = "Kahf Browser Rewards";
 
 /* Detail text for rewards onboarding screen */
-"OBRewardsDetail" = "啟用 Asil Browser Private Ads 後，瀏覽的所有廣告都是對發佈者和內容創作者的支持。";
+"OBRewardsDetail" = "啟用 Kahf Browser Private Ads 後，瀏覽的所有廣告都是對發佈者和內容創作者的支持。";
 
 /* Detail text for rewards onboarding screen */
 "OBRewardsDetailInAdRegion" = "一邊瀏覽，一邊賺取代幣，獎勵優質的內容創作者。";
@@ -1190,7 +1190,7 @@
 "OBRewardsPrivacyPolicyDetailLink" = "隱私政策";
 
 /* Title for rewards onboarding screen */
-"OBRewardsTitle" = "Asil Browser Rewards";
+"OBRewardsTitle" = "Kahf Browser Rewards";
 
 /* Save button to save current selection */
 "OBSaveButton" = "儲存";
@@ -1199,28 +1199,28 @@
 "OBSearchEngineDetail" = "選擇您預設的搜尋引擎";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "歡迎使用 Asil 瀏覽器";
+"OBSearchEngineTitle" = "歡迎使用 Kahf 瀏覽器";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "封鎖侵犯隱私的追蹤器，如此一來您就能在不被追蹤的情況下瀏覽網站。";
 
 /* Title for shields onboarding screen */
-"OBShieldsTitle" = "Asil Browser Shields";
+"OBShieldsTitle" = "Kahf Browser Shields";
 
-/* Button to show the Asil Browser Rewards Ads. */
+/* Button to show the Kahf Browser Rewards Ads. */
 "OBShowMeButton" = "讓我看看";
 
-/* Button to show Asil Browser Rewards. */
+/* Button to show Kahf Browser Rewards. */
 "OBTurnOnButton" = "開始";
 
 /* The description text shown when there is big tech tracker among trackers. Example usage: Google, Amazon and 32 other trackers blocked */
 "onboarding.blockedAdsOnboardingBigTechInformationText" = "已封鎖 %1$@ 和其他 %2$lld 個廣告和追蹤器";
 
-/* The footnote indicating what Asil Browser shields is blocking */
-"onboarding.blockedAdsOnboardingFootnoteText" = "在每個頁面上都能使用 Shields 查看 Asil Browser 封鎖的所有不速之客。";
+/* The footnote indicating what Kahf Browser shields is blocking */
+"onboarding.blockedAdsOnboardingFootnoteText" = "在每個頁面上都能使用 Shields 查看 Kahf Browser 封鎖的所有不速之客。";
 
 /* The text describing user where they should press in order to open Shield panel */
-"onboarding.blockedAdsOnboardingInstructionsText" = "輕觸即可查看 Asil Browser Shields";
+"onboarding.blockedAdsOnboardingInstructionsText" = "輕觸即可查看 Kahf Browser Shields";
 
 /* The description text shown when there is no big tech tracker among trackers. Example usage: 31 Ads & trackers blocked. The number here is presented separately so it is not in translation. */
 "onboarding.blockedAdsOnboardingNoBigTechInformationText" = "個廣告和追蹤器遭到封鎖";
@@ -1235,13 +1235,13 @@
 "onboarding.ntpOnboardingPopOverTrackerDescription" = "封鎖追蹤器和廣告可讓網站的數據用量減少，載入速度加快。";
 
 /* Description for the Omnibox (URL Bar) pop-over that describes faster load times. */
-"onboarding.omniboxOnboardingPopOverDescription" = "體驗 Asil Browser 的與眾不同：\n沒有廣告，沒有追蹤器，頁面載入速度大幅提升。";
+"onboarding.omniboxOnboardingPopOverDescription" = "體驗 Kahf Browser 的與眾不同：\n沒有廣告，沒有追蹤器，頁面載入速度大幅提升。";
 
 /* Title for the Omnibox (URL Bar) pop-over that describes faster load times. */
 "onboarding.omniboxOnboardingPopOverTitle" = "輸入網站名稱或 URL";
 
 /* Title for Welcome Screen in Onboarding */
-"onboarding.welcomeScreenTitle" = "歡迎使用 Asil Browser";
+"onboarding.welcomeScreenTitle" = "歡迎使用 Kahf Browser";
 
 /* Continue button to navigate to next onboarding screen. */
 "OnboardingContinueButton" = "繼續";
@@ -1255,8 +1255,8 @@
 /* Context menu item for opening all folder bookmarks */
 "OpenAllBookmarks" = "開啟全部 (%i)";
 
-/* Button title for opening the Asil Browser Rewards panel to settings */
-"OpenBraveRewardsSettings" = "開啟 Asil Browser 獎勵設定";
+/* Button title for opening the Kahf Browser Rewards panel to settings */
+"OpenBraveRewardsSettings" = "開啟 Kahf Browser 獎勵設定";
 
 /* Error description when there is an error while navigating to Files App */
 "OpenDownloadsFolderErrorDescription" = "在「檔案」應用程式中開啟「下載」資料夾時發生不明錯誤。";
@@ -1301,13 +1301,13 @@
 "opentabs.noSyncChainPlaceHolderViewDescription" = "如要開始，設定同步鏈結並在「同步設定」中切換「開啟的分頁」。";
 
 /* The additional description of the view describing tab syncing should be enabled. */
-"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "在「設定」中管理 Asil Browser 要同步的項目。 ";
+"opentabs.noSyncSessionPlaceHolderViewAdditionalDescription" = "在「設定」中管理 Kahf Browser 要同步的項目。 ";
 
 /* The description of the view describing no other sessions are active in sync. */
 "opentabs.noSyncSessionPlaceHolderViewDescription" = "您的其他裝置上沒有可顯示的進行中工作階段。";
 
 /* The title of the view showing no synced sessions */
-"opentabs.noSyncSessionPlaceHolderViewTitle" = "此空間顯示在其他裝置中開啟的 Asil Browser 分頁。";
+"opentabs.noSyncSessionPlaceHolderViewTitle" = "此空間顯示在其他裝置中開啟的 Kahf Browser 分頁。";
 
 /* The title for the action to hide open session with all tabs */
 "opentabs.openSessionHideAllActionTitle" = "暫時隱藏";
@@ -1360,35 +1360,35 @@
 /* Button title to that opens a website. */
 "OpenWebsite" = "開啟網站";
 
-/* The subtitle description of menu item Asil Browser News */
+/* The subtitle description of menu item Kahf Browser News */
 "optionsMenu.braveNewsItemDescription" = "以私密新聞摘要提供今日熱門報導";
 
-/* Asil Browser News Item Menu title */
+/* Kahf Browser News Item Menu title */
 "optionsMenu.braveNewsItemTitle" = "News";
 
-/* The subtitle description of menu item Asil Browser Playlist */
+/* The subtitle description of menu item Kahf Browser Playlist */
 "optionsMenu.bravePlaylistItemDescription" = "保留任何影片/直播的離線播放清單";
 
-/* Asil Browser News Item Menu title */
+/* Kahf Browser News Item Menu title */
 "optionsMenu.bravePlaylistItemTitle" = "播放清單";
 
-/* The subtitle description of menu item Asil Browser Talk */
+/* The subtitle description of menu item Kahf Browser Talk */
 "optionsMenu.braveTalkItemDescription" = "直接在瀏覽器中展開私密視訊通話";
 
-/* Asil Browser Talk Item Menu title */
+/* Kahf Browser Talk Item Menu title */
 "optionsMenu.braveTalkItemTitle" = "Talk";
 
-/* The subtitle description of menu item Asil Browser VPN */
+/* The subtitle description of menu item Kahf Browser VPN */
 "optionsMenu.braveVPNItemDescription" = "線上保護整體裝置安全";
 
-/* Asil Browser VPN Item Menu title */
+/* Kahf Browser VPN Item Menu title */
 "optionsMenu.braveVPNItemTitle" = "VPN";
 
-/* The subtitle description of menu item Asil Browser Wallet */
+/* The subtitle description of menu item Kahf Browser Wallet */
 "optionsMenu.braveWalletItemDescription" = "安全加密錢包，不需擴充功能";
 
 /* Privacy Features Section title */
-"optionsMenu.menuSectionTitle" = "Asil Browser 功能";
+"optionsMenu.menuSectionTitle" = "Kahf Browser 功能";
 
 /* Section name for other privacy settings */
 "OtherPrivacySettingsSection" = "其他隱私設定";
@@ -1396,10 +1396,10 @@
 /* Section name for other settings. */
 "OtherSettingsSection" = "其他設定";
 
-/* A subtitle shown on the setting that toggles analytics on Asil Browser. */
-"p3a.settingSubtitle" = "匿名的 P3A 資訊可協助 Asil Browser 預估整體使用量，並確保我們改進受歡迎的功能。";
+/* A subtitle shown on the setting that toggles analytics on Kahf Browser. */
+"p3a.settingSubtitle" = "匿名的 P3A 資訊可協助 Kahf Browser 預估整體使用量，並確保我們改進受歡迎的功能。";
 
-/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Asil Browser. */
+/* The title for the setting that will allow a user to toggle sending privacy preserving analytics to Kahf Browser. */
 "p3a.settingTitle" = "允許保護隱私的產品分析 (P3A)";
 
 /* Title for the section for the global/default zoom level */
@@ -1445,7 +1445,7 @@
 "playList.addToPlayListAlertDescription" = "你想新增此影片至播放清單嗎？";
 
 /* Alert Title for adding videos to playlist */
-"playList.addToPlayListAlertTitle" = "新增至 Asil Browser Playlist";
+"playList.addToPlayListAlertTitle" = "新增至 Kahf Browser Playlist";
 
 /* The title of the screen in CarPlay that contains all the audio/playback options */
 "playlist.carplayOptionsScreenTitle" = "播放選項";
@@ -1466,7 +1466,7 @@
 "playlist.carplaySettingsSectionTitle" = "設定";
 
 /* The title of the playlist when in Carplay mode */
-"playlist.carplayTitle" = "Asil Browser 播放清單";
+"playlist.carplayTitle" = "Kahf Browser 播放清單";
 
 /* The title of the button indicating that the user delete the offline data. (deletes the data that allows them to play offline) */
 "playlist.deleteForOfflineButtonTitle" = "刪除離線快取";
@@ -1484,7 +1484,7 @@
 "playList.loadResourcesErrorAlertDescription" = "加載資源時出現問題！";
 
 /* Description footer for playlist menu badge option */
-"playlist.menuBadgeOptionFooterText" = "啟用後，主選單圖示上將顯示一個標章，表示頁面上的媒體可以新增至 Asil Browser 播放清單。";
+"playlist.menuBadgeOptionFooterText" = "啟用後，主選單圖示上將顯示一個標章，表示頁面上的媒體可以新增至 Kahf Browser 播放清單。";
 
 /* Title for playlist menu badge option */
 "playlist.menuBadgeOptionTitle" = "顯示選單通知標章";
@@ -1493,7 +1493,7 @@
 "playlist.movePlaylistShareActionMenuTitle" = "移動...";
 
 /* Detail Text when there are no items in the playlist */
-"playList.noItemLabelDetailLabel" = "您可以在瀏覽器中將項目新增至 Asil Browser 播放清單";
+"playList.noItemLabelDetailLabel" = "您可以在瀏覽器中將項目新增至 Kahf Browser 播放清單";
 
 /* Text when there are no items in the playlist */
 "playList.noItemLabelTitle" = "沒有可用項目";
@@ -1571,7 +1571,7 @@
 "playList.playListSettingTitle" = "播放清單";
 
 /* Body for the error message that shows when a playlist folder already exists */
-"playList.playlistSharedFolderAlreadyExistsBody" = "此資料夾已存在您的 Asil Browser 播放清單中";
+"playList.playlistSharedFolderAlreadyExistsBody" = "此資料夾已存在您的 Kahf Browser 播放清單中";
 
 /* Title for the error message that shows when a playlist folder already exists */
 "playList.playlistSharedFolderAlreadyExistsTitle" = "抱歉";
@@ -1607,16 +1607,16 @@
 "playlist.playlistWebCompatibilityTitle" = "網路相容性";
 
 /* Body of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddBody" = "Asil Browser 播放清單支援離線播放、子母畫面、連續播放和重複模式。";
+"playlist.popoverAddBody" = "Kahf Browser 播放清單支援離線播放、子母畫面、連續播放和重複模式。";
 
 /* Title of the popover that shows when you already have the current media item in your playlist and you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddedTitle" = "此媒體已在您的 Asil Browser 播放清單";
+"playlist.popoverAddedTitle" = "此媒體已在您的 Kahf Browser 播放清單";
 
 /* Title of the popover that shows when you tap on the 'Add to Playlist' button in the URL bar */
-"playlist.popoverAddTitle" = "想把此媒體新至您的 Asil Browser 播放清單嗎？";
+"playlist.popoverAddTitle" = "想把此媒體新至您的 Kahf Browser 播放清單嗎？";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
-"playlist.popoverOpenInBravePlaylist" = "在 Asil Browser 播放清單中開啟";
+"playlist.popoverOpenInBravePlaylist" = "在 Kahf Browser 播放清單中開啟";
 
 /* Button title in the popover when an item is already in your playlist and you tap the 'Add to Playlist' button in the URL bar */
 "playlist.popoverRemoveFromBravePlaylist" = "移除";
@@ -1658,7 +1658,7 @@
 "playlist.sharePlaylistActionDetailsTitle" = "您可以在新分頁中開啟目前的項目，或透過系統分享選單來分享";
 
 /* Title of the ActionSheet/Alert when sharing a playlist item from the Swipe-Action */
-"playlist.sharePlaylistActionTitle" = "Asil Browser 播放清單選單";
+"playlist.sharePlaylistActionTitle" = "Kahf Browser 播放清單選單";
 
 /* Button Title of the ActionSheet/Alert Button when sharing a playlist item from the Swipe-Action */
 "playlist.sharePlaylistOpenInNewPrivateTabTitle" = "在私人標籤中開啟";
@@ -1673,19 +1673,19 @@
 "playList.sorryAlertTitle" = "抱歉";
 
 /* The title for the toast that shows up on a page containing a playlist item that was added to playlist */
-"playList.toastAddedToPlaylistTitle" = "新增至 Asil Browser 播放清單";
+"playList.toastAddedToPlaylistTitle" = "新增至 Kahf Browser 播放清單";
 
 /* The title for the toast button when an item was added to playlist */
 "playList.toastAddToPlaylistOpenButton" = "開啟";
 
 /* The title for the toast that shows up on a page containing a playlist item */
-"playList.toastAddToPlaylistTitle" = "新增至 Asil Browser Playlist";
+"playList.toastAddToPlaylistTitle" = "新增至 Kahf Browser Playlist";
 
 /* The title for the toast that shows up on a page when an item that has already been added, was updated. */
-"playList.toastExitingItemPlaylistTitle" = "檢視 Asil Browser Playlist";
+"playList.toastExitingItemPlaylistTitle" = "檢視 Kahf Browser Playlist";
 
 /* Footer for option to disable URL-Bar button */
-"playlist.urlBarButtonOptionFooter" = "在 Asil Browser 瀏覽器的網址列旁邊新增一個播放清單按鈕 (看起來像 4 行附 + 符號)。此按鈕可讓您快速存取，以開啟播放清單，或者新增或移除媒體。";
+"playlist.urlBarButtonOptionFooter" = "在 Kahf Browser 瀏覽器的網址列旁邊新增一個播放清單按鈕 (看起來像 4 行附 + 符號)。此按鈕可讓您快速存取，以開啟播放清單，或者新增或移除媒體。";
 
 /* Title for option to disable URL-Bar button */
 "playlist.urlBarButtonOptionTitle" = "啟用快速存取按鈕";
@@ -1714,7 +1714,7 @@
 /* The title of the screen where the user will move an item from one folder to another folder. */
 "playlistFolders.moveFolderScreenTitle" = "移動";
 
-/* %@ Should NOT be localized. It is a placeholder. Example: Asil Browser Folder and 1 more item. */
+/* %@ Should NOT be localized. It is a placeholder. Example: Kahf Browser Folder and 1 more item. */
 "playlistFolders.moveItemDescription" = "%@ 和另外 1 個項目";
 
 /* %lld is a placeholder and should not be localized. Sometimes items can have no name. So this is a generic title to use */
@@ -1723,7 +1723,7 @@
 /* Sometimes an item can have no name. So this is a generic title to use */
 "playlistFolders.moveItemWithNoNameTitle" = "1 個項目";
 
-/* %@ and %lld Should NOT be localized. They are placeholders. Example: Asil Browser Folder and 3 more items. Music and 2 more items. */
+/* %@ and %lld Should NOT be localized. They are placeholders. Example: Kahf Browser Folder and 3 more items. Music and 2 more items. */
 "playlistFolders.moveMultipleItemDescription" = "%1$@ 和另外 %2$lld 個項目";
 
 /* The title of the button to create a new folder */
@@ -1757,7 +1757,7 @@
 "playlistFolders.untitledFolderTitle" = "無標題資料夾";
 
 /* Accessibility Title for the button that adds the playlist to the database. */
-"playlistFolderSharing.addButtonAccessibilityTitle" = "新增至 Asil Browser 播放清單按鈕";
+"playlistFolderSharing.addButtonAccessibilityTitle" = "新增至 Kahf Browser 播放清單按鈕";
 
 /* Title for the button that adds the playlist to the database. */
 "playlistFolderSharing.addButtonTitle" = "新增";
@@ -1801,7 +1801,7 @@
 /* Description for closing a popover menu that is displayed. */
 "PopoverDefaultClose" = "關閉內容選單";
 
-/* Description for closing the `Asil Browser Shields` popover menu that is displayed. */
+/* Description for closing the `Kahf Browser Shields` popover menu that is displayed. */
 "PopoverShieldsMenuClose" = "關閉 Shields 選單";
 
 /* Label for preview action on Tab Tray Tab to add current tab to Bookmarks */
@@ -1825,7 +1825,7 @@
 /* Header text, under it we show items blocked by our ad blocker. 'All  time' sentence context is like 'All time items blocked by our ad blocker. */
 "privacyHub.allTimeListsHeader" = "有史以來";
 
-/* Title of a section to show total count of trackers blocked by Asil Browser */
+/* Title of a section to show total count of trackers blocked by Kahf Browser */
 "privacyHub.allTimeListsTrackersView" = "追蹤器和廣告數量";
 
 /* Title of a section to show websites containing highest amount of trackers */
@@ -1849,10 +1849,10 @@
 /* Title under which we display a website on which there's the highest number of trackers or ads. */
 "privacyHub.allTimeWebsiteTitle" = "網站";
 
-/* Text for a button to display a list of all alerts caught by the Asil Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
+/* Text for a button to display a list of all alerts caught by the Kahf Browser VPN. VPN alert is a notificaion of what item has been blocked by the vpn, similar to a regular adblocker */
 "privacyHub.allVPNAlertsButtonText" = "所有通知";
 
-/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Asil Browser Shields', 'Blocked by BraveVPN */
+/* Text which explain by what type of ad blocker a given resource was blocked. Context is like: 'Blocked by Kahf Browser Shields', 'Blocked by BraveVPN */
 "privacyHub.blockedBy" = "封鎖操作方";
 
 /* It says that a ad or tracker was blocked. Think of it in context of 'A tracker X was blocked' */
@@ -1870,8 +1870,8 @@
 /* Header text, under it we display blocked items from last week */
 "privacyHub.lastWeekHeader" = "上週";
 
-/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Asil Browser Shields on 42 sites' */
-"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** 在 **%2$lld** 個網站上遭 Asil Browser 防護封鎖";
+/* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which tracker was blocked on how many websites, example usage: 'Google Analytics was blocked by Kahf Browser Shields on 42 sites' */
+"privacyHub.mostFrequentTrackerAndAdBody" = "**%1$@** 在 **%2$lld** 個網站上遭 Kahf Browser 防護封鎖";
 
 /* Title under which we display a tracker which was most frequently detected by our ad blocking mechanism. */
 "privacyHub.mostFrequentTrackerAndAdTitle" = "最常見的追蹤器和廣告";
@@ -1889,7 +1889,7 @@
 "privacyHub.notificationCalloutButtonText" = "開啟通知";
 
 /* Message of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
-"privacyHub.notificationMessage" = "回顧本週 Asil Browser 如何在線上保護您。";
+"privacyHub.notificationMessage" = "回顧本週 Kahf Browser 如何在線上保護您。";
 
 /* Title of a notification we show to the user, on tapping it, the Privacy Hub screen will open. */
 "privacyHub.notificationTitle" = "每週隱私報告";
@@ -1903,7 +1903,7 @@
 /* Text of a disclaimer that explains how the data for generating privacy reprots is stored. */
 "privacyHub.privacyReportsDisclaimer" = "隱私中心資料會儲存在本機，不會傳送至其他地方。";
 
-/* Title of main privacy hub screen. This screen shows various stats caught by Asil Browser's ad blockers. */
+/* Title of main privacy hub screen. This screen shows various stats caught by Kahf Browser's ad blockers. */
 "privacyHub.privacyReportsTitle" = "隱私中心";
 
 /* Do NOT localize asterisk('*') characters, they are used to make the text bold in the app. It says which website had the most tracker per visit, example usage: 'example.com had an average of 10 trackers & ads blocked per visit ' */
@@ -1912,22 +1912,22 @@
 /* Title of a website that contained the most trackers per visit. */
 "privacyHub.riskiestWebsiteTitle" = "追蹤器最多的網站";
 
-/* This text explains a setting that lets Asil Browser monitor blocked network requests */
+/* This text explains a setting that lets Kahf Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsFooter" = "隱私中心會顯示防護封鎖的數量。設定不會影響新分頁上的防護計數器。防護資料不會計入隱私視窗。";
 
-/* Title of a setting that lets Asil Browser monitor blocked network requests */
+/* Title of a setting that lets Kahf Browser monitor blocked network requests */
 "privacyHub.settingsEnableShieldsTitle" = "顯示防護資料";
 
-/* This text explains a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+/* This text explains a setting that lets Kahf Browser monitor blocked network requests captured by Kahf Browser VPN */
 "privacyHub.settingsEnableVPNAlertsFooter" = "設定僅適用於您已購買 VPN 訂閱的情況。";
 
-/* Title of a setting that lets Asil Browser monitor blocked network requests captured by Asil Browser VPN */
+/* Title of a setting that lets Kahf Browser monitor blocked network requests captured by Kahf Browser VPN */
 "privacyHub.settingsEnableVPNAlertsTitle" = "顯示 VPN 通知";
 
 /* This text explains what the button to clear datain the Privacy Hub is for. */
 "privacyHub.settingsSlearDataFooter" = "重設防護已封鎖的所有項目數量。";
 
-/* Button that lets user clear all blocked requests and vpn alerts data that Asil Browser captured for them. */
+/* Button that lets user clear all blocked requests and vpn alerts data that Kahf Browser captured for them. */
 "privacyHub.settingsSlearDataTitle" = "清除防護資料";
 
 /* This label says shields, as a source of by what a resource was blocked. Think of it in context of 'Blocked by Shields' */
@@ -1952,15 +1952,15 @@
 "privacyHub.vpnAlertRegularTrackerTypeSingular" = "追蹤器或廣告";
 
 /* Section title, this section displays vpn alerts: items which the vpn managed to block on users behalf. */
-"privacyHub.vpnAlertsHeader" = "Asil Browser 防火牆 + VPN 通知";
+"privacyHub.vpnAlertsHeader" = "Kahf Browser 防火牆 + VPN 通知";
 
-/* This label says about Asil Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
+/* This label says about Kahf Browser VPN, as a source of by what the resource was blocked by. Think of it in context of 'Blocked by VPN' */
 "privacyHub.vpnLabel" = "防火牆 + VPN";
 
 /* It shows a total count of items blocked by our VPN shields */
 "privacyHub.vpvnAlertsTotalCount" = "總計";
 
-/* Show Asil Browser Browser Privacy Policy page from the Privacy section in the settings. */
+/* Show Kahf Browser Browser Privacy Policy page from the Privacy section in the settings. */
 "PrivacyPolicy" = "隱私政策";
 
 /* Private button title */
@@ -1976,10 +1976,10 @@
 "PrivateBrowsingOnlyWarning" = "「僅限私人瀏覽」模式將關閉所有當前分頁，將您登出所有網站。";
 
 /* Private tab details */
-"PrivateTabBody" = "Asil Browser 不會儲存隱私分頁，但這並不代表您在網路上為匿名狀態。您使用隱私分頁造訪的網站不會顯示在您的瀏覽記錄中，且一旦您關閉分頁，網站的 Cookie 也將一律刪除，也就是說，Asil Browser 不會留下任何瀏覽記錄。不過，下載項目仍會儲存。即便使用隱私分頁，您的行動網路業者 (或是您所連線的 Wi-Fi 網路或 VPN 擁有者) 仍能看見您造訪哪些網站，而這些網站亦將取得您的公開 IP 位址。";
+"PrivateTabBody" = "Kahf Browser 不會儲存隱私分頁，但這並不代表您在網路上為匿名狀態。您使用隱私分頁造訪的網站不會顯示在您的瀏覽記錄中，且一旦您關閉分頁，網站的 Cookie 也將一律刪除，也就是說，Kahf Browser 不會留下任何瀏覽記錄。不過，下載項目仍會儲存。即便使用隱私分頁，您的行動網路業者 (或是您所連線的 Wi-Fi 網路或 VPN 擁有者) 仍能看見您造訪哪些網站，而這些網站亦將取得您的公開 IP 位址。";
 
 /* Private tab detail text */
-"PrivateTabDetails" = "使用隱私分頁只會變更 Asil Browser 可在您裝置上執行的作業，無法改變他人行為。\n\n當您造訪網站時，網站能得知您的 IP 位址。根據這項資訊，網站可以大略猜出您的所在位置，通常能知道您所在的城市，有時猜測的位置會更精確。網站也會知道您明確提供的所有內容，像是搜尋內容。當您登入網站時，網站也會知道您是該帳戶的所有人。若關閉隱私分頁，Asil Browser 會捨棄那些將您保持登入的 Cookie，因此系統依然會將您隨即登出。\n\n將您連線至網際網路的公司 (您的 ISP 業者) 可以查看您在網路上的所有活動。這通常會是您的行動網路業者。如果您連線至 Wi-Fi 網路，該網路的所有者可以看到您的活動；如果您是使用 VPN，則是營運該 VPN 的一方。您的 ISP 業者可以在您造訪網站時，瞭解您瀏覽了哪些網站。如果這些網站使用 HTTPS，ISP 業者只能大略猜測您在網站上的活動；但如果網站僅使用 HTTP，則 ISP 業者可以看到所有活動，包括搜尋內容、讀取的頁面以及點選的連結。\n\n如果您的裝置是由雇主所管理，他們可能會追蹤您的裝置使用情形。即使您使用隱私分頁，雇主仍可知道您曾瀏覽過哪些網站。能存取您裝置的其他人士，可能也會安裝軟體以監控您的活動。這類情形下，即使使用隱私分頁，也無法保護您。";
+"PrivateTabDetails" = "使用隱私分頁只會變更 Kahf Browser 可在您裝置上執行的作業，無法改變他人行為。\n\n當您造訪網站時，網站能得知您的 IP 位址。根據這項資訊，網站可以大略猜出您的所在位置，通常能知道您所在的城市，有時猜測的位置會更精確。網站也會知道您明確提供的所有內容，像是搜尋內容。當您登入網站時，網站也會知道您是該帳戶的所有人。若關閉隱私分頁，Kahf Browser 會捨棄那些將您保持登入的 Cookie，因此系統依然會將您隨即登出。\n\n將您連線至網際網路的公司 (您的 ISP 業者) 可以查看您在網路上的所有活動。這通常會是您的行動網路業者。如果您連線至 Wi-Fi 網路，該網路的所有者可以看到您的活動；如果您是使用 VPN，則是營運該 VPN 的一方。您的 ISP 業者可以在您造訪網站時，瞭解您瀏覽了哪些網站。如果這些網站使用 HTTPS，ISP 業者只能大略猜測您在網站上的活動；但如果網站僅使用 HTTP，則 ISP 業者可以看到所有活動，包括搜尋內容、讀取的頁面以及點選的連結。\n\n如果您的裝置是由雇主所管理，他們可能會追蹤您的裝置使用情形。即使您使用隱私分頁，雇主仍可知道您曾瀏覽過哪些網站。能存取您裝置的其他人士，可能也會安裝軟體以監控您的活動。這類情形下，即使使用隱私分頁，也無法保護您。";
 
 /* Private tab information link */
 "PrivateTabLink" = "深入了解隱私分頁。";
@@ -1993,8 +1993,8 @@
 /* Title for quick-search engines settings section. */
 "QuickSearchEngines" = "快速搜尋引擎";
 
-/* Open the App Store to rate Asil Browser. */
-"RateBrave" = "為 Asil Browser 評分";
+/* Open the App Store to rate Kahf Browser. */
+"RateBrave" = "為 Kahf Browser 評分";
 
 /* Accessibility label for button increasing font size in display settings of reader mode */
 "ReaderModeBiggerFontButtonAccessibilityLabel" = "調大字體";
@@ -2023,13 +2023,13 @@
 /* Accessibility hint for the font type buttons in reader mode display settings */
 "ReaderModeFontTypeButtonAccessibilityHint" = "變更字型。";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModeLoadingContentDisplayText" = "正在載入內容…";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModeLoadOriginalLinkText" = "載入原始頁面";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Asil Browser reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Kahf Browser reader mode from another app. */
 "ReaderModePageCantShowDisplayText" = "頁面無法以閱讀檢視顯示。";
 
 /* Title of a bar that show up when you enter reader mode. */
@@ -2114,10 +2114,10 @@
 "ReportABug" = "回報 Bug";
 
 /* First part of the report a broken site copy. After the colon is a new line and then a website address */
-"ReportBrokenSiteBody1" = "讓 Asil Browser 的開發人員知悉此網站無法在 Shields 中正常運作：";
+"ReportBrokenSiteBody1" = "讓 Kahf Browser 的開發人員知悉此網站無法在 Shields 中正常運作：";
 
 /* No comment provided by engineer. */
-"ReportBrokenSiteBody2" = "注意：此網址將與您的 Asil Browser 版本號碼和 IP 位址一併提交 (不會留存記錄)。";
+"ReportBrokenSiteBody2" = "注意：此網址將與您的 Kahf Browser 版本號碼和 IP 位址一併提交 (不會留存記錄)。";
 
 /* No comment provided by engineer. */
 "ReportBrokenSubmitButtonTitle" = "提交";
@@ -2135,33 +2135,33 @@
 "RestoreTabNegativeButtonTitle" = "否";
 
 /* Restore Tabs Prompt Description */
-"RestoreTabOnCrashAlertMessage" = "很抱歉，Asil Browser 之前當機了。是否要回復之前開啟的分頁？";
+"RestoreTabOnCrashAlertMessage" = "很抱歉，Kahf Browser 之前當機了。是否要回復之前開啟的分頁？";
 
 /* Restore Tabs Prompt Title */
 "RestoreTabOnCrashAlertTitle" = "哎呀，真抱歉。";
 
-/* Body for Asil Browser Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInBody" = "有了 Asil Browser Rewards，您可以查看來自 Asil Browser Ads 網路的隱私保護廣告。無須追蹤器，無須減速，且您的資料也能絕對安全。";
+/* Body for Kahf Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInBody" = "有了 Kahf Browser Rewards，您可以查看來自 Kahf Browser Ads 網路的隱私保護廣告。無須追蹤器，無須減速，且您的資料也能絕對安全。";
 
-/* Title for Asil Browser Talk rewards opt-in screen button */
+/* Title for Kahf Browser Talk rewards opt-in screen button */
 "rewards.braveTalkRewardsOptInButtonTitle" = "開啟 Rewards";
 
-/* Body for successful Asil Browser Talk rewards opt-in */
-"rewards.braveTalkRewardsOptInSuccessBody" = "按下畫面上的任何位置以繼續 Asil Browser 聊天。";
+/* Body for successful Kahf Browser Talk rewards opt-in */
+"rewards.braveTalkRewardsOptInSuccessBody" = "按下畫面上的任何位置以繼續 Kahf Browser 聊天。";
 
-/* Title for successful Asil Browser Talk rewards opt-in */
+/* Title for successful Kahf Browser Talk rewards opt-in */
 "rewards.braveTalkRewardsOptInSuccessTitle" = "您現在可以開始免費通話了";
 
-/* Title for Asil Browser Talk rewards opt-in screen */
-"rewards.braveTalkRewardsOptInTitle" = "如要開始免費通話，請開啟 Asil Browser Rewards";
+/* Title for Kahf Browser Talk rewards opt-in screen */
+"rewards.braveTalkRewardsOptInTitle" = "如要開始免費通話，請開啟 Kahf Browser Rewards";
 
-/* Displayed when Asil Browser Rewards is disabled */
+/* Displayed when Kahf Browser Rewards is disabled */
 "rewards.disabledBody" = "開啟以立即支持內容創作者";
 
 /* Displayed in the status container when rewards is disabled */
-"rewards.disabledStatusBody" = "使用 Asil Browser Rewards 就能在瀏覽期間支持內容創作者。";
+"rewards.disabledStatusBody" = "使用 Kahf Browser Rewards 就能在瀏覽期間支持內容創作者。";
 
-/* Displayed when Asil Browser Rewards is enabled */
+/* Displayed when Kahf Browser Rewards is enabled */
 "rewards.enabledBody" = "您正在支持內容創作者";
 
 /* Displayed in the status container when rewards is enabled but you're not currently supporting any publishers (0 AC count) */
@@ -2186,7 +2186,7 @@
 "rewards.legacyWalletTransferStatusButtonPendingTitle" = "地址格式錢包轉帳狀態為等待中";
 
 /* No comment provided by engineer. */
-"rewards.legacyWalletTransferStatusCompletedBody" = "地址格式錢包轉帳完成！ 你的現有餘額可能需要幾分鐘後才會顯示在桌面 Asil Browser 獎勵錢包中。";
+"rewards.legacyWalletTransferStatusCompletedBody" = "地址格式錢包轉帳完成！ 你的現有餘額可能需要幾分鐘後才會顯示在桌面 Kahf Browser 獎勵錢包中。";
 
 /* Title shown above body of text explaining that their transfer is completed */
 "rewards.legacyWalletTransferStatusCompletedTitle" = "轉帳已完成！";
@@ -2237,13 +2237,13 @@
 "rewards.optInDisclaimer" = "按下即表示您同意 %1$@ 和 %2$@。可在設定中隨時取消。";
 
 /* No comment provided by engineer. */
-"rewards.settingsFooterMessage" = "這部裝置暫時無法轉出 Asil Browser Rewards，請將現有錢包金額轉至桌面版錢包，以便保存。";
+"rewards.settingsFooterMessage" = "這部裝置暫時無法轉出 Kahf Browser Rewards，請將現有錢包金額轉至桌面版錢包，以便保存。";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleMessage" = "啟用 Asil Browser Private Ads，即可自動支持內容創作者和發佈者。Asil Browser Private Ads 是回饋內容創作者並兼顧隱私的廣告。";
+"rewards.settingsToggleMessage" = "啟用 Kahf Browser Private Ads，即可自動支持內容創作者和發佈者。Kahf Browser Private Ads 是回饋內容創作者並兼顧隱私的廣告。";
 
 /* No comment provided by engineer. */
-"rewards.settingsToggleTitle" = "啟用 Asil Browser Rewards";
+"rewards.settingsToggleTitle" = "啟用 Kahf Browser Rewards";
 
 /* Displayed under verified publishers */
 "rewards.supportingPublisher" = "您正在支持這樣的內容創作者。";
@@ -2258,19 +2258,19 @@
 "rewards.unverifiedPublisher" = "這位創作者尚未通過驗證，不會納入您支持的創作者名單";
 
 /* A confirmation message shown to the user after completing a wallet transfer successfully */
-"rewards.walletTransferCompleteBody" = "已啟動轉帳程序。BAT 餘額可能需要幾分鐘後，才會顯示於桌面版 Asil Browser Rewards 錢包。轉帳完成後，請查看桌面版 Rewards 摘要以瞭解詳細資訊。\n\n您可以關閉此視窗，在轉帳期間繼續使用 Asil Browser。";
+"rewards.walletTransferCompleteBody" = "已啟動轉帳程序。BAT 餘額可能需要幾分鐘後，才會顯示於桌面版 Kahf Browser Rewards 錢包。轉帳完成後，請查看桌面版 Rewards 摘要以瞭解詳細資訊。\n\n您可以關閉此視窗，在轉帳期間繼續使用 Kahf Browser。";
 
 /* Title shown above the confirmation message after completing a wallet transfer successfully */
 "rewards.walletTransferCompleteTitle" = "已啟動餘額轉帳程序";
 
 /* Message on the alert presented if wallet transfer fails */
-"rewards.walletTransferFailureAlertMessage" = "Asil Browser Rewards 伺服器未回應，請稍後再試。";
+"rewards.walletTransferFailureAlertMessage" = "Kahf Browser Rewards 伺服器未回應，請稍後再試。";
 
 /* Title on the alert presented if wallet transfer fails */
 "rewards.walletTransferFailureAlertTitle" = "連線錯誤";
 
 /* Describes the steps for using wallet transfer */
-"rewards.walletTransferStepsBody" = "您可將 Asil Browser Rewards 代幣餘額一次轉至現有 Asil Browser Rewards 桌面版錢包。\n\n1. 在桌上型電腦上開啟 Asil Browser 瀏覽器\n2. 瀏覽至 Asil Browser://rewards\n3. 按一下「QR 碼」\n4. 以裝置掃描 QR 碼";
+"rewards.walletTransferStepsBody" = "您可將 Kahf Browser Rewards 代幣餘額一次轉至現有 Kahf Browser Rewards 桌面版錢包。\n\n1. 在桌上型電腦上開啟 Kahf Browser 瀏覽器\n2. 瀏覽至 Kahf Browser://rewards\n3. 按一下「QR 碼」\n4. 以裝置掃描 QR 碼";
 
 /* Title above the steps to use wallet transfer */
 "rewards.walletTransferStepsTitle" = "掃描一次性轉帳碼";
@@ -2303,7 +2303,7 @@
 "RewardsInternalsContributionAmount" = "贊助金額";
 
 /* No comment provided by engineer. */
-"RewardsInternalsContributionProcessorBraveTokens" = "Asil Browser 代幣";
+"RewardsInternalsContributionProcessorBraveTokens" = "Kahf Browser 代幣";
 
 /* No comment provided by engineer. */
 "RewardsInternalsContributionProcessorNone" = "無";
@@ -2455,7 +2455,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsShare" = "分享";
 
-/* 'Rewards' as in 'Asil Browser Rewards' */
+/* 'Rewards' as in 'Kahf Browser Rewards' */
 "RewardsInternalsShareInternalsTitle" = "分享 Rewards Internals";
 
 /* No comment provided by engineer. */
@@ -2473,7 +2473,7 @@
 /* No comment provided by engineer. */
 "RewardsInternalsSupported" = "已支持";
 
-/* 'Rewards' as in 'Asil Browser Rewards' */
+/* 'Rewards' as in 'Kahf Browser Rewards' */
 "RewardsInternalsTitle" = "Rewards Internals";
 
 /* No comment provided by engineer. */
@@ -2588,24 +2588,24 @@
 "SearchSuggestionsSectionHeader" = "搜尋建議";
 
 /* Title of an action that allows user to perform a one-click web search for selected text */
-"SearchWithBrave" = "使用 Asil Browser 搜尋";
+"SearchWithBrave" = "使用 Kahf Browser 搜尋";
 
 /* Settings security section title */
 "Security" = "安全";
 
 /* Message displayed in the crash dialog above the buttons used to select when sending reports */
-"SendCrashReportAlertMessage" = "傳送當機報告協助 Asil Browser 修正問題？";
+"SendCrashReportAlertMessage" = "傳送當機報告協助 Kahf Browser 修正問題？";
 
 /* Title for prompt displayed to user after the app crashes */
-"SendCrashReportAlertTitle" = "糟糕，Asil Browser 當機了！";
+"SendCrashReportAlertTitle" = "糟糕，Kahf Browser 當機了！";
 
 /* Used as a button label for crash dialog prompt */
 "SendReportButtonTitle" = "傳送報告";
 
 /* No comment provided by engineer. */
-"setDefaultBrowserCalloutTitle" = "現在能夠在 iOS 將 Asil Browser 設定為預設瀏覽器。請點選此處以開啟設定。";
+"setDefaultBrowserCalloutTitle" = "現在能夠在 iOS 將 Kahf Browser 設定為預設瀏覽器。請點選此處以開啟設定。";
 
-/* Settings item to set the Asil Browser as a default browser on the iOS device. */
+/* Settings item to set the Kahf Browser as a default browser on the iOS device. */
 "setDefaultBrowserSettingsCell" = "設定為預設瀏覽器";
 
 /* No comment provided by engineer. */
@@ -2627,7 +2627,7 @@
 "settings.autocloseTabsSetting" = "關閉分頁";
 
 /* Description of autoclose tabs feature. */
-"settings.autocloseTabsSettingFooter" = "允許 Asil Browser 自動關閉最近未檢視的分頁。";
+"settings.autocloseTabsSettingFooter" = "允許 Kahf Browser 自動關閉最近未檢視的分頁。";
 
 /* Error message that is shown in settings when there was a problem loading */
 "SettingsContentLoadErrorMessage" = "無法載入頁面。";
@@ -2687,7 +2687,7 @@
 "shieldEducation.shareTheNewsTitle" = "分享消息";
 
 /* Subtitle for Shield Education Tracker Ad Warning */
-"shieldEducation.trackerAdWarningSubTitle" = "Asil Browser Shields 剛剛保護了您線上活動的隱私。";
+"shieldEducation.trackerAdWarningSubTitle" = "Kahf Browser Shields 剛剛保護了您線上活動的隱私。";
 
 /* Subtitle for Shield Education Tracker Count Share */
 "shieldEducation.trackerCountShareSubtitle" = "恭喜，您已具有特別的地位。";
@@ -2702,13 +2702,13 @@
 "shieldEducation.videoAdBlockTitle" = "當您在此網站上觀看影片時，為您封鎖廣告。";
 
 /* Section title for adbblock, tracking protection, HTTPS-E, and cookies */
-"ShieldsDefaults" = "Asil Browser Shields 全域預設";
+"ShieldsDefaults" = "Kahf Browser Shields 全域預設";
 
 /* Section footer for global shields defaults */
 "ShieldsDefaultsFooter" = "這些是 Shields 對新網站的預設設定。變更這些設定不會影響現有的個別網站設定。";
 
 /* No comment provided by engineer. */
-"ShieldsDownDisclaimer" = "您目前是在沒有 Asil Browser 隱私防護的情況下瀏覽此網站。開啟 Shields 時無法正常瀏覽嗎？";
+"ShieldsDownDisclaimer" = "您目前是在沒有 Kahf Browser 隱私防護的情況下瀏覽此網站。開啟 Shields 時無法正常瀏覽嗎？";
 
 /* shields overview message */
 "ShieldsOverview" = "「網站防護」可控制您在造訪每個網站時，是否直接封鎖網站上的廣告與追踪器。若您希望在特定網站上顯示廣告，可以在這裡啟用廣告。";
@@ -2738,7 +2738,7 @@
 "ShortcutItemTitleQRCode" = "掃描 QR 碼";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeBraveNewsDescription" = "開啟 Asil Browser News 並查閱今天的熱門新聞";
+"shortcuts.activityTypeBraveNewsDescription" = "開啟 Kahf Browser News 並查閱今天的熱門新聞";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeClearHistoryDescription" = "在新標籤中開啟瀏覽器並刪除所有私人瀏覽器歷史資料";
@@ -2747,7 +2747,7 @@
 "shortcuts.activityTypeClearHistorySuggestedPhrase" = "清除瀏覽器記錄";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeClearHistoryTitle" = "清除 Asil Browser 瀏覽記錄";
+"shortcuts.activityTypeClearHistoryTitle" = "清除 Kahf Browser 瀏覽記錄";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeEnableVPNDescription" = "在新標籤中開啟瀏覽器並啟用 VPN";
@@ -2756,7 +2756,7 @@
 "shortcuts.activityTypeEnableVPNSuggestedPhrase" = "啟用 VPN";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeEnableVPNTitle" = "開啟 Asil Browser 瀏覽器並啟用 VPN";
+"shortcuts.activityTypeEnableVPNTitle" = "開啟 Kahf Browser 瀏覽器並啟用 VPN";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeNewPrivateTabSuggestedPhrase" = "開啟新私人標籤";
@@ -2771,10 +2771,10 @@
 "shortcuts.activityTypeNewTabTitle" = "開啟新瀏覽器標籤";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveNewsTitle" = "開啟 Asil Browser News";
+"shortcuts.activityTypeOpenBraveNewsTitle" = "開啟 Kahf Browser News";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "開啟 Asil Browser News";
+"shortcuts.activityTypeOpenBraveTodaySuggestedPhrase" = "開啟 Kahf Browser News";
 
 /* No comment provided by engineer. */
 "shortcuts.activityTypeOpenPlaylistDescription" = "開始播放您在播放清單中的影片";
@@ -2786,7 +2786,7 @@
 "shortcuts.activityTypeOpenPlaylistTitle" = "開啟播放清單";
 
 /* No comment provided by engineer. */
-"shortcuts.activityTypeTabDescription" = "開始使用 Asil Browser 安全地搜尋 Web";
+"shortcuts.activityTypeTabDescription" = "開始使用 Kahf Browser 安全地搜尋 Web";
 
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenBookmarkSuggestedPhrase" = "開啟書籤網站";
@@ -2797,8 +2797,8 @@
 /* No comment provided by engineer. */
 "shortcuts.customIntentOpenWebsiteSuggestedPhrase" = "開啟網站";
 
-/* Description for opening Asil Browser Settings for altering Siri shortcut. */
-"shortcuts.shortcutOpenApplicationSettingsDescription" = "此選項將開啟 Asil Browser 設定。若要變更各個 Siri 選項，請選取「Siri 與搜尋」功能表項目，然後自訂您的選擇。";
+/* Description for opening Kahf Browser Settings for altering Siri shortcut. */
+"shortcuts.shortcutOpenApplicationSettingsDescription" = "此選項將開啟 Kahf Browser 設定。若要變更各個 Siri 選項，請選取「Siri 與搜尋」功能表項目，然後自訂您的選擇。";
 
 /* Button title that open application settings */
 "shortcuts.shortcutOpenApplicationSettingsTitle" = "開啟設定";
@@ -2810,16 +2810,16 @@
 "shortcuts.shortcutSettingsClearBrowserHistoryTitle" = "清除瀏覽器記錄";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsEnableVPNDescription" = "使用快速鍵透過 Siri - Voice Assistant 啟用 Asil Browser VPN";
+"shortcuts.shortcutSettingsEnableVPNDescription" = "使用快速鍵透過 Siri - Voice Assistant 啟用 Kahf Browser VPN";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsEnableVPNTitle" = "啟用 VPN";
 
-/* Description of Open Asil Browser News Siri Shortcut in Settings Screen */
-"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "使用快速鍵即可透過 Siri 語音助理開啟新分頁及顯示 Asil Browser News 摘要";
+/* Description of Open Kahf Browser News Siri Shortcut in Settings Screen */
+"shortcuts.shortcutSettingsOpenBraveNewsDescription" = "使用快速鍵即可透過 Siri 語音助理開啟新分頁及顯示 Kahf Browser News 摘要";
 
 /* No comment provided by engineer. */
-"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "開啟 Asil Browser News";
+"shortcuts.shortcutSettingsOpenBraveNewsTitle" = "開啟 Kahf Browser News";
 
 /* No comment provided by engineer. */
 "shortcuts.shortcutSettingsOpenNewPrivateTabDescription" = "使用快速鍵透過 Siri - Voice Assistant 開啟新私人標籤";
@@ -2873,19 +2873,19 @@
 "ShowTabsBar" = "分頁列";
 
 /* No comment provided by engineer. */
-"SiteReportedBody" = "感謝您讓 Asil Browser 的開發人員知悉此網站發生錯誤。我們將盡力予以修正！";
+"SiteReportedBody" = "感謝您讓 Kahf Browser 的開發人員知悉此網站發生錯誤。我們將盡力予以修正！";
 
 /* No comment provided by engineer. */
 "SiteReportedTitle" = "謝謝";
 
-/* Asil Browser panel topmost title */
+/* Kahf Browser panel topmost title */
 "SiteShieldSettings" = "防護";
 
 /* Title used when in warning pop-over when domain specific data save appears */
-"socialSharing.domainSpecificDataSavedTitle" = "我每天使用 Asil Browser 瀏覽網頁來節省數據用量。";
+"socialSharing.domainSpecificDataSavedTitle" = "我每天使用 Kahf Browser 瀏覽網頁來節省數據用量。";
 
-/* Text used for social sharing together with Asil Browser Shield values */
-"socialSharing.shareDescriptionTitle" = "我每天使用 Asil Browser 瀏覽網頁來節省數據用量。";
+/* Text used for social sharing together with Kahf Browser Shield values */
+"socialSharing.shareDescriptionTitle" = "我每天使用 Kahf Browser 瀏覽網頁來節省數據用量。";
 
 /* Open search section of settings */
 "StandardTabSearch" = "標準分頁";
@@ -2917,8 +2917,8 @@
 /* Title for Sync Settings Toggle Header */
 "sync.syncSettingsTitle" = "同步設定";
 
-/* Text that informs a user about Asil Browser Sync service deprecation. */
-"sync.syncV1DeprecationText" = "最新 Asil Browser Sync 即將推出，屆時您的設定將會受到影響。敬請準備升級。";
+/* Text that informs a user about Kahf Browser Sync service deprecation. */
+"sync.syncV1DeprecationText" = "最新 Kahf Browser Sync 即將推出，屆時您的設定將會受到影響。敬請準備升級。";
 
 /* Message for popup when the bookmark migration fails */
 "sync.v2MigrationErrorMessage" = "無法移轉書籤，請稍後再試。";
@@ -2933,7 +2933,7 @@
 "sync.v2MigrationInterstitialTitle" = "書籤移轉";
 
 /* Message for popup to inform the user that bookmarks migration is required for sync */
-"sync.v2MigrationMessage" = "若要使用 Asil Browser Sync，您必須先移轉現有書籤，改用新系統。此作業不會刪除書籤。";
+"sync.v2MigrationMessage" = "若要使用 Kahf Browser Sync，您必須先移轉現有書籤，改用新系統。此作業不會刪除書籤。";
 
 /* Button to perform bookmarks migration in order to support sync */
 "sync.v2MigrationOKButton" = "移轉";
@@ -2975,7 +2975,7 @@
 "SyncComputerDevice" = "電腦";
 
 /* Sync Error Description */
-"syncDeprecatedVersionError" = "這是由其他裝置上版本過舊的 Asil Browser 所產生的同步代碼。請在所有同步的裝置上更新 Asil Browser，然後再試一次。";
+"syncDeprecatedVersionError" = "這是由其他裝置上版本過舊的 Kahf Browser 所產生的同步代碼。請在所有同步的裝置上更新 Kahf Browser，然後再試一次。";
 
 /* Sync you browser settings across devices. */
 "SyncDevices" = "裝置與設定";
@@ -2996,10 +2996,10 @@
 "SyncInitErrorTitle" = "同步通訊錯誤";
 
 /* Default name for a device */
-"syncJoinChainCameraWarning" = "這樣會與產生此 QR 碼的裝置分享您的 Asil Browser 資料，可能包括您的密碼。請再次確認此 QR 碼是由您所擁有的裝置產生。您確定要這麼做嗎？";
+"syncJoinChainCameraWarning" = "這樣會與產生此 QR 碼的裝置分享您的 Kahf Browser 資料，可能包括您的密碼。請再次確認此 QR 碼是由您所擁有的裝置產生。您確定要這麼做嗎？";
 
 /* Default name for a device */
-"syncJoinChainCodewordsWarning" = "這樣會與產生這些代碼詞的裝置分享您的 Asil Browser 資料，可能包括您的密碼。請再次確認這些代碼詞是由您所擁有的裝置產生。您確定要這麼做嗎？";
+"syncJoinChainCodewordsWarning" = "這樣會與產生這些代碼詞的裝置分享您的 Kahf Browser 資料，可能包括您的密碼。請再次確認這些代碼詞是由您所擁有的裝置產生。您確定要這麼做嗎？";
 
 /* Title for pairing sync device */
 "syncJoinChainWarningTitle" = "警告";
@@ -3023,7 +3023,7 @@
 "SyncRemoveDeviceDefaultName" = "裝置";
 
 /* Message for removing last device from Sync */
-"SyncRemoveLastDeviceMessage" = "目前同步的資料將被保留，但 Asil Browser 同步快取中的所有資料將被刪除。您將需要啟動新的同步鏈以再次同步裝置資料。";
+"SyncRemoveLastDeviceMessage" = "目前同步的資料將被保留，但 Kahf Browser 同步快取中的所有資料將被刪除。您將需要啟動新的同步鏈以再次同步裝置資料。";
 
 /* Button name for removing last device from Sync */
 "SyncRemoveLastDeviceRemoveButtonName" = "刪除同步鏈接";
@@ -3062,7 +3062,7 @@
 "SyncToDevice" = "同步至裝置";
 
 /* Sync to existing device description */
-"SyncToDeviceDescription" = "使用現有同步的裝置開啟 Asil Browser 設定並導向至設定 -> 同步。 選擇「新增裝置」並掃描螢幕上顯示的代碼。";
+"SyncToDeviceDescription" = "使用現有同步的裝置開啟 Kahf Browser 設定並導向至設定 -> 同步。 選擇「新增裝置」並掃描螢幕上顯示的代碼。";
 
 /* Description on popup when setting up a sync group fails */
 "SyncUnableCreateGroup" = "無法同步此裝置";
@@ -3160,14 +3160,14 @@
 /* No comment provided by engineer. */
 "TermsOfService" = "服務條款";
 
-/* Show Asil Browser Browser TOS page from the Privacy section in the settings. */
+/* Show Kahf Browser Browser TOS page from the Privacy section in the settings. */
 "TermsOfUse" = "使用條款";
 
 /* Text for button to share referral's QR code. */
 "themeQRCodeShareButton" = "分享...";
 
 /* Title for QR popup encouraging users to share the code with their friends. */
-"themeQRCodeShareTitle" = "與好友分享 Asil Browser！";
+"themeQRCodeShareTitle" = "與好友分享 Kahf Browser！";
 
 /* Selection to automatically color/style the user interface. */
 "ThemesAutomaticOption" = "自動";
@@ -3209,13 +3209,13 @@
 "today.addSourceNoFeedsFoundMessage" = "很抱歉，該摘要網址沒有任何內容。";
 
 /* The action title displayed in the iOS share menu */
-"today.addSourceShareTitle" = "新增來源至 Asil Browser News";
+"today.addSourceShareTitle" = "新增來源至 Kahf Browser News";
 
 /* A header title shown above a button that will allow the user to fetch RSS feeds for a website they have typed in */
 "today.availableRSSFeedsHeaderTitle" = "可用的 RSS 摘要";
 
 /* The name of the feature */
-"today.braveToday" = "Asil Browser News";
+"today.braveToday" = "Kahf Browser News";
 
 /* Shown below 'Channels' explaining what will be shown when tapping on it. */
 "today.channelsButtonSubtitle" = "關注您感興趣的主題";
@@ -3235,13 +3235,13 @@
 /* No comment provided by engineer. */
 "today.deals" = "優惠";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
-"today.disabledAlertBody" = "Asil Browser News 將停止顯示來自 %@ 的內容";
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
+"today.disabledAlertBody" = "Kahf Browser News 將停止顯示來自 %@ 的內容";
 
 /* No comment provided by engineer. */
 "today.disabledAlertTitle" = "已停用";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
 "today.disablePublisherContent" = "隱藏來自 %@ 的內容";
 
 /* No comment provided by engineer. */
@@ -3250,11 +3250,11 @@
 /* No comment provided by engineer. */
 "today.emptyFeedTitle" = "沒有可顯示的文章";
 
-/* '%@' will turn into the name of a publisher (verbatim), for example: Asil Browser Blog */
+/* '%@' will turn into the name of a publisher (verbatim), for example: Kahf Browser Blog */
 "today.enablePublisherContent" = "允許來自 %@ 的內容";
 
 /* No comment provided by engineer. */
-"today.errorGeneralBody" = "Asil Browser News 遇到了一些問題，請再試一次。";
+"today.errorGeneralBody" = "Kahf Browser News 遇到了一些問題，請再試一次。";
 
 /* No comment provided by engineer. */
 "today.errorGeneralTitle" = "糟糕…";
@@ -3271,7 +3271,7 @@
 /* A toggle title shown next to a source or channel that the user can follow. When tapped switches to 'Unfollow' */
 "today.followToggleTitle" = "跟隨";
 
-/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Asil Browser.com'. */
+/* Shown with a website the user has typed in after the text. For example: 'Get feeds from https://Kahf Browser.com'. */
 "today.getFeedsFromSiteButtonTitle" = "取得以下來源的摘要：";
 
 /* \"OPML\" is a file extension that contains a list of rss feeds. */
@@ -3280,20 +3280,20 @@
 /* The header above the list of insecure sources */
 "today.insecureSourcesHeader" = "來源不安全 - 新增後需自行承擔風險";
 
-/* Shown above a button that turns on the \"Asil Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
-"today.introCardBody" = "透過單一摘要關注您喜愛的來源。只要在 Asil Browser 中開啟分頁、向下捲動，一切搞定！\nAsilBrowser 新聞支援匿名投放私人廣告。";
+/* Shown above a button that turns on the \"Kahf Browser News\" product in the app. by sources & feeds they mean websites & blogs. */
+"today.introCardBody" = "透過單一摘要關注您喜愛的來源。只要在 Kahf Browser 中開啟分頁、向下捲動，一切搞定！\nKahf Browser 新聞支援匿名投放私人廣告。";
 
-/* Shown above a button that turns on the \"Asil Browser News\" product in the app. */
-"today.introCardTitle" = "開啟 Asil Browser 新聞，絕不錯過每一條消息";
+/* Shown above a button that turns on the \"Kahf Browser News\" product in the app. */
+"today.introCardTitle" = "開啟 Kahf Browser 新聞，絕不錯過每一條消息";
 
 /* No comment provided by engineer. */
-"today.isEnabledToggleLabel" = "顯示 Asil Browser News";
+"today.isEnabledToggleLabel" = "顯示 Kahf Browser News";
 
 /* No comment provided by engineer. */
 "today.learnMoreTitle" = "深入了解您的資料";
 
-/* 'Asil Browser Offers' is a product name */
-"today.moreBraveOffers" = "更多 Asil Browser Offer";
+/* 'Kahf Browser Offers' is a product name */
+"today.moreBraveOffers" = "更多 Kahf Browser Offer";
 
 /* No comment provided by engineer. */
 "today.noInternet" = "沒有網際網路連線";
@@ -3341,7 +3341,7 @@
 "today.suggestedTitle" = "建議";
 
 /* No comment provided by engineer. */
-"today.turnOnBraveToday" = "開啟 Asil Browser News";
+"today.turnOnBraveToday" = "開啟 Kahf Browser News";
 
 /* A toggle title shown next to a source or channel that the user can unfollow. When tapped switches to 'Follow' */
 "today.unfollowToggleTitle" = "取消跟隨";
@@ -3388,34 +3388,34 @@
 /* No comment provided by engineer. */
 "UserWalletGenericErrorTitle" = "抱歉，發生錯誤";
 
-/* Version number of Asil Browser shown in settings */
+/* Version number of Kahf Browser shown in settings */
 "VersionTemplate" = "%1$@ 版 (%2$@)";
 
 /* Label that says where to view an item. '%@' is a placeholder and will include things like 'Instagram', 'unsplash'. The full label will look like 'View  on Instagram'. */
 "ViewOn" = "瀏覽於 %@";
 
-/* Button text to buy Asil Browser VPN */
+/* Button text to buy Kahf Browser VPN */
 "vpn.buyButton" = "購買";
 
 /* Title for screen to buy the VPN. */
-"vpn.buyVPNTitle" = "Asil Browser Firewall + VPN";
+"vpn.buyVPNTitle" = "Kahf Browser Firewall + VPN";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxBlockAds" = "封鎖不需要的網路連線";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxEncryption" = "使用 IKEv2 安全加密 VPN 通道";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxFast" = "最高可支援 100 Mbps 的速度";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxGeoSelector" = "選擇您的地理/國家/地區位置";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxNoIPLog" = "讓您在線上保持匿名狀態";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.checkboxNoSellout" = "我們絕不會洩漏或販賣您的資訊";
 
 /* AppStore Receipt field for customer support contact form. */
@@ -3428,7 +3428,7 @@
 "vpn.contactFormCarrier" = "行動通訊業者";
 
 /* Text to tell user to not modify support info below email's body. */
-"vpn.contactFormDoNotEditText" = "Asil Browser 不會追蹤您，也不會知道您使用應用程式的情形，因此不會得知您的 VPN 設定方式。請與我們分享所發生問題的相關資訊，我們會在最短時間內盡力解決問題。";
+"vpn.contactFormDoNotEditText" = "Kahf Browser 不會追蹤您，也不會知道您使用應用程式的情形，因此不會得知您的 VPN 設定方式。請與我們分享所發生問題的相關資訊，我們會在最短時間內盡力解決問題。";
 
 /* Button name to send contact form. */
 "vpn.contactFormEmailNotConfiguredBody" = "無法傳送電子郵件。請檢查電子郵件設定。";
@@ -3482,9 +3482,9 @@
 "vpn.contactFormTimezone" = "iOS 時區";
 
 /* Title for contact form email. */
-"vpn.contactFormTitle" = "Asil Browser Firewall + VPN 問題";
+"vpn.contactFormTitle" = "Kahf Browser Firewall + VPN 問題";
 
-/* Button text to enable Asil Browser VPN */
+/* Button text to enable Kahf Browser VPN */
 "vpn.enableButton" = "啟用";
 
 /* Message for an alert when the VPN can't get prices from the App Store */
@@ -3503,13 +3503,13 @@
 "vpn.iapDisclaimer" = "所有訂閱都會自動續約，但可在續約前取消。";
 
 /* Text explaining how the VPN works. */
-"vpn.installProfileBody" = "此設定檔可允許 VPN 自動連線，並隨時保障您裝置上的流量安全。此 VPN 連線會經過加密，並採用 Asil Browser 智慧型防火牆的路由規則，有效封鎖潛在的有害與侵入式連線。";
+"vpn.installProfileBody" = "此設定檔可允許 VPN 自動連線，並隨時保障您裝置上的流量安全。此 VPN 連線會經過加密，並採用 Kahf Browser 智慧型防火牆的路由規則，有效封鎖潛在的有害與侵入式連線。";
 
 /* Text for 'install vpn profile' button */
 "vpn.installProfileButtonText" = "安裝 VPN 設定檔";
 
 /* No comment provided by engineer. */
-"vpn.installProfileTitle" = "Asil Browser 現在要開始安裝 VPN 設定檔。";
+"vpn.installProfileTitle" = "Kahf Browser 現在要開始安裝 VPN 設定檔。";
 
 /* Popup that shows after user installs the vpn for the first time. */
 "vpn.installSuccessPopup" = "VPN 現已啟用";
@@ -3517,7 +3517,7 @@
 /* Title for screen to install the VPN. */
 "vpn.installTitle" = "安裝 VPN";
 
-/* Button text to try free Asil Browser VPN */
+/* Button text to try free Kahf Browser VPN */
 "vpn.learnMore" = "免費試用";
 
 /* Used in context: 'Monthly subscription, (it) renews monthly' */
@@ -3529,10 +3529,10 @@
 /* Text to show user when their vpn plan has expired */
 "vpn.planExpired" = "過期";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.popupCheckmark247Support" = "全天候支援";
 
-/* Text for a checkbox to present the user benefits for using Asil Browser VPN */
+/* Text for a checkbox to present the user benefits for using Kahf Browser VPN */
 "vpn.popupCheckmarkSecureConnections" = "確保所有連線安全無虞";
 
 /* It is used in context: 'Powered by BRAND_NAME' */
@@ -3581,10 +3581,10 @@
 "vpn.settingsFAQ" = "VPN 支援";
 
 /* Button to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceipt" = "將購買交易連結至您的 Asil Browser 帳戶";
+"vpn.settingsLinkReceipt" = "將購買交易連結至您的 Kahf Browser 帳戶";
 
 /* Footer text to link your VPN receipt to other devices. */
-"vpn.settingsLinkReceiptFooter" = "將您的 App Store 購買交易連結至 Asil Browser 帳戶，以便在其他裝置上使用 Asil Browser VPN。";
+"vpn.settingsLinkReceiptFooter" = "將您的 App Store 購買交易連結至 Kahf Browser 帳戶，以便在其他裝置上使用 Kahf Browser VPN。";
 
 /* Button to manage your VPN subscription */
 "vpn.settingsManageSubscription" = "管理訂閱";
@@ -3620,10 +3620,10 @@
 "vpn.settingsVPNExpired" = "過期";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationBody" = "即使在背景運作，Asil Browser 也會繼續為您提供防護。";
+"vpn.vpnBackgroundNotificationBody" = "即使在背景運作，Kahf Browser 也會繼續為您提供防護。";
 
 /* Notification title to tell user that the vpn is turned on even in background */
-"vpn.vpnBackgroundNotificationTitle" = "Asil Browser Firewall + VPN 已開啟";
+"vpn.vpnBackgroundNotificationTitle" = "Kahf Browser Firewall + VPN 已開啟";
 
 /* Message for an alert when the VPN can't be configured. */
 "vpn.vpnConfigGenericErrorBody" = "初始化 VPN 時發生問題。請再試一次，或嘗試在 VPN 設定頁面中重設組態。";
@@ -3632,7 +3632,7 @@
 "vpn.vpnConfigGenericErrorTitle" = "錯誤";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
-"vpn.vpnConfigPermissionDeniedErrorBody" = "Asil Browser Firewall + VPN 需要 VPN 設定檔，才能安裝到您的裝置上，發揮效用。";
+"vpn.vpnConfigPermissionDeniedErrorBody" = "Kahf Browser Firewall + VPN 需要 VPN 設定檔，才能安裝到您的裝置上，發揮效用。";
 
 /* Title for an alert when the user didn't allow to install VPN profile */
 "vpn.vpnConfigPermissionDeniedErrorTitle" = "權限遭拒";
@@ -3644,10 +3644,10 @@
 "vpn.vpnErrorPurchaseFailedTitle" = "錯誤";
 
 /* Disclaimer for user purchasing the VPN plan. */
-"vpn.vpnIAPBoilerPlate" = "我們會透過你的 iTunes 帳戶收取訂閱費用。\n\n如果您在免費試用期結束前便選擇訂閱，剩餘的試用效期即告失效。\n\n只要未在目前約期結束前 24 小時取消訂閱，系統就會自動為您續約。\n\n您可以前往「設定」管理訂閱事宜。\n\n使用 Asil Browser 即表示您同意使用條款及隱私權政策。";
+"vpn.vpnIAPBoilerPlate" = "我們會透過你的 iTunes 帳戶收取訂閱費用。\n\n如果您在免費試用期結束前便選擇訂閱，剩餘的試用效期即告失效。\n\n只要未在目前約期結束前 24 小時取消訂閱，系統就會自動為您續約。\n\n您可以前往「設定」管理訂閱事宜。\n\n使用 Kahf Browser 即表示您同意使用條款及隱私權政策。";
 
 /* Message for alert to reset vpn configuration */
-"vpn.vpnResetAlertBody" = "此程序會重設您的 Asil Browser Firewall + VPN 組態，並修正任何錯誤。這會需要一點時間，請稍候。";
+"vpn.vpnResetAlertBody" = "此程序會重設您的 Kahf Browser Firewall + VPN 組態，並修正任何錯誤。這會需要一點時間，請稍候。";
 
 /* Title for alert to reset vpn configuration */
 "vpn.vpnResetAlertTitle" = "重設組態";
@@ -3713,18 +3713,18 @@
 "widgets.favoritesWidgetTitle" = "我的最愛";
 
 /* This shows when you add a widget but have no favorites added in your app */
-"widgets.noFavoritesFound" = "請開啟 Asil Browser，以在此瀏覽您的最愛";
+"widgets.noFavoritesFound" = "請開啟 Kahf Browser，以在此瀏覽您的最愛";
 
 /* Description for the search option on the 'shortcuts' widget. */
 "widgets.searchShortcutTitle" = "搜尋";
 
-/* Description for Asil Browser Shields widget on 'add widget' screen. */
-"widgets.shieldStatsDescription" = "Asil Browser 在線上為您節省時間和保護隱私的方法摘要。";
+/* Description for Kahf Browser Shields widget on 'add widget' screen. */
+"widgets.shieldStatsDescription" = "Kahf Browser 在線上為您節省時間和保護隱私的方法摘要。";
 
-/* Title for Asil Browser Shields widget on 'add widget' screen. */
+/* Title for Kahf Browser Shields widget on 'add widget' screen. */
 "widgets.shieldStatsTitle" = "隱私統計資料";
 
-/* Title of Asil Browser Shields widget shown above stat numbers. */
+/* Title of Kahf Browser Shields widget shown above stat numbers. */
 "widgets.shieldStatsWidgetTitle" = "隱私統計資料";
 
 /* Button to the browser and enter URL or make a search query there. */
@@ -3740,19 +3740,19 @@
 "widgets.shortcutsPrivateTabButton" = "隱私分頁";
 
 /* Description for shortcuts widget on 'add widget' screen. */
-"widgets.shortcutsWidgetDescription" = "在 Asil Browser 中快速搜尋網頁或開啟新網頁。";
+"widgets.shortcutsWidgetDescription" = "在 Kahf Browser 中快速搜尋網頁或開啟新網頁。";
 
 /* Title for shortcuts widget on 'add widget' screen. */
 "widgets.shortcutsWidgetTitle" = "捷徑";
 
-/* Description for Asil Browser Shields single stat widget on 'add widget' screen. */
-"widgets.singleStatDescription" = "Asil Browser 在線上為您保護隱私的方法摘要。";
+/* Description for Kahf Browser Shields single stat widget on 'add widget' screen. */
+"widgets.singleStatDescription" = "Kahf Browser 在線上為您保護隱私的方法摘要。";
 
-/* Title for Asil Browser Shields single stat widget on 'add widget' screen. */
+/* Title for Kahf Browser Shields single stat widget on 'add widget' screen. */
 "widgets.singleStatTitle" = "隱私統計資料";
 
-/* Description for the Asil Browser Wallet option on the 'shortcuts' widget. */
-"widgets.walletShortcutTitle" = "Asil Browser 錢包";
+/* Description for the Kahf Browser Wallet option on the 'shortcuts' widget. */
+"widgets.walletShortcutTitle" = "Kahf Browser 錢包";
 
 /* Title of the settings for widgets part */
 "widgets.widgetTitle" = "小工具";
@@ -3775,3 +3775,51 @@
 /* History tableview section header */
 "Yesterday" = "昨天";
 
+"safegaze.popup.report.title1" = "請將任何錯誤或建議報告給 ";
+"safegaze.popup.report.title2" = "這個表單";
+"safegaze.popup.support.title" = "支持這個項目";
+"safegaze.popup.woman.title" = "我是女性";
+"safegaze.popup.man.title" = "我是男性";
+"safegaze.popup.comingsoon.title" = "即將推出";
+"safegaze.popup.gendermode.title" = "性別模式";
+"safegaze.popup.sinfulacts.title" = "避免的罪行";
+"safegaze.popup.thispage.title" = "此頁面";
+"safegaze.popup.lifetime.title" = "一生";
+"safegaze.popup.alwayspurify.title" = "永遠淨化";
+"safegaze.popup.neverpurify.title" = "永不淨化";
+"safegaze.popup.safegazeup.title" = "SafeGaze 上升";
+"safegaze.popup.imageblur.title" = "圖片模糊強度";
+"safegaze.popup.takecontrol.title" = "透過 SafeGaze 提升您的線上體驗，我們的圖片淨化擴充套件可保護您的視覺免受不當內容的影響。";
+"safegaze.popup.turnon.title" = "開啟 SafeGaze";
+
+/* 性別標題 */
+"kahftube.gender.all.title" = "全部";
+"kahftube.gender.male.title" = "男性";
+"kahftube.gender.female.title" = "女性";
+"kahftube.gender.child.title" = "兒童";
+"kahftube.gender.except.title" = "除外";
+
+/* 宗教標題 */
+"kahftube.religion.haram.title" = "哈拉姆";
+"kahftube.religion.practicingMuslim.title" = "虔誠的穆斯林";
+"kahftube.religion.liberalMuslim.title" = "自由派穆斯林";
+"kahftube.religion.moderateMuslim.title" = "適度的穆斯林";
+
+/* 浮動窗口標題 */
+"kahftube.popup.name.title" = "姓名";
+"kahftube.popup.connectedAccount.title" = "已連接帳戶";
+"kahftube.popup.preferences.title" = "偏好設定";
+"kahftube.popup.gender.title" = "性別";
+"kahftube.popup.religionStatus.title" = "宗教狀態";
+"kahftube.popup.unsubHaramChannels.title" = "取消訂閱哈拉姆頻道";
+"kahftube.popup.unsubscribeSuccessful.title1" = "已取消訂閱哈拉姆頻道";
+"kahftube.popup.unsubscribeSuccessful.title2" = "成功";
+"kahftube.popup.unsubscribeSuccessful.alright.title" = "好的";
+"kahftube.popup.openToUse.title" = "開放使用";
+"kahftube.popup.explore.title" = "在登入YouTube後探索此功能";
+"kahftube.popup.haramChannelsFound.title" = "發現 %d 個哈拉姆頻道";
+"kahftube.popup.refreshAgain.title" = "再次刷新";
+"kahftube.popup.unsubscribeNow.title" = "立即取消訂閱";
+"kahftube.popup.noHaramSubscribed.title" = "沒有訂閱哈拉姆頻道";
+"kahftube.popup.channelFound.title" = "發現頻道";
+"kahftube.popup.alright.title" = "好的";

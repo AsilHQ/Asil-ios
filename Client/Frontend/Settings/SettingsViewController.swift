@@ -576,7 +576,7 @@ class SettingsViewController: TableViewController {
       format: Strings.versionTemplate,
       Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "",
       Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "")
-    let coreVersion = "BraveCore \(BraveCoreVersionInfo.braveCoreVersion) (\(BraveCoreVersionInfo.chromiumVersion))"
+    let coreVersion = "(\(BraveCoreVersionInfo.chromiumVersion))"
     return Static.Section(
       header: .title(Strings.about),
       rows: [

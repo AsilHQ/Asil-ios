@@ -16,7 +16,7 @@ import BraveCore
 class SafegazeViewController: UIViewController, PopoverContentComponent {
 
   let tab: Tab
-  private lazy var url: URL? = {
+  lazy var url: URL? = {
     guard let _url = tab.url else { return nil }
 
     if InternalURL.isValid(url: _url),
@@ -28,7 +28,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
     return _url
   }()
 
-  var shieldsSettingsChanged: ((SafegazeViewController, BraveShield) -> Void)?
+  var safegazeSettingsChanged: ((SafegazeViewController, BraveShield) -> Void)?
   var showGlobalShieldsSettings: ((SafegazeViewController) -> Void)?
 
   private var statsUpdateObservable: AnyObject?
@@ -60,35 +60,6 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
 
   // MARK: - State
 
-  private func updateToggleStatus() {
-    var domain: Domain?
-    if let url = url {
-      let isPrivateBrowsing = PrivateBrowsingManager.shared.isPrivateBrowsing
-      domain = Domain.getOrCreate(forUrl: url, persistent: !isPrivateBrowsing)
-    }
-
-    if let domain = domain {
-      shieldsUpSwitch.isOn = !domain.isSafegazeAllOff(url: url, ignoredDomains: SafegazeManager.ignoredDomains)
-    } else {
-      shieldsUpSwitch.isOn = true
-    }
-
-    shieldControlMapping.forEach { shield, view, option in
-      // Updating based on global settings
-      if let option = option {
-        // Sets the default setting
-        view.toggleSwitch.isOn = option.value
-      }
-      // Domain specific overrides after defaults have already been setup
-
-      if let domain = domain {
-        // site-specific shield has been overridden, update
-        view.toggleSwitch.isOn = domain.isShieldExpected(shield, considerAllShieldsOption: false)
-      }
-    }
-    updateGlobalShieldState(shieldsUpSwitch.isOn)
-  }
-
   private func updateShieldBlockStats() {
      shieldsView.simpleShieldView.blockCountView.countLabel.attributedText = {
           let string = NSMutableAttributedString(
@@ -103,68 +74,6 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
         )
         return string
     }()
-  }
-
-  private func updateGlobalShieldState(_ on: Bool, animated: Bool = false) {
-    shieldsView.simpleShieldView.statusLabel.text = on ? Strings.Shields.statusValueUp.uppercased() : Strings.Shields.statusValueDown.uppercased()
-
-    // Whether or not shields are available for this URL.
-    let isShieldsAvailable = url?.isLocal == false
-    // If shields aren't available, we don't show the switch and show the "off" state
-    let shieldsEnabled = isShieldsAvailable ? on : false
-    if animated {
-      var partOneViews: [UIView]
-      var partTwoViews: [UIView]
-      if shieldsEnabled {
-        partOneViews = [self.shieldsView.simpleShieldView.shieldsDownStackView]
-        partTwoViews = [
-          self.shieldsView.simpleShieldView.blockCountView,
-          // self.shieldsView.advancedControlsBar,
-        ]
-        if advancedControlsShowing {
-          partTwoViews.append(self.shieldsView.advancedShieldView)
-        }
-      } else {
-        partOneViews = [
-          self.shieldsView.simpleShieldView.blockCountView,
-          self.shieldsView.simpleShieldView.totalCountView
-          // self.shieldsView.advancedControlsBar,
-        ]
-        /*if advancedControlsShowing {
-          partOneViews.append(self.shieldsView.advancedShieldView)
-        }*/
-        partTwoViews = [self.shieldsView.simpleShieldView.shieldsDownStackView]
-      }
-      // Step 1, hide
-      UIView.animate(
-        withDuration: 0.1,
-        animations: {
-          partOneViews.forEach { $0.alpha = 0.0 }
-        },
-        completion: { _ in
-          partOneViews.forEach {
-            $0.alpha = 1.0
-            $0.isHidden = true
-          }
-          partTwoViews.forEach {
-            $0.alpha = 0.0
-            $0.isHidden = false
-          }
-          UIView.animate(
-            withDuration: 0.15,
-            animations: {
-              partTwoViews.forEach { $0.alpha = 1.0 }
-            })
-
-          self.updatePreferredContentSize()
-        })
-    } else {
-      shieldsView.simpleShieldView.blockCountView.isHidden = !shieldsEnabled
-      shieldsView.simpleShieldView.totalCountView.isHidden = !shieldsEnabled
-      shieldsView.simpleShieldView.shieldsDownStackView.isHidden = shieldsEnabled
-      shieldsView.advancedControlsBar.isHidden = !shieldsEnabled
-      updatePreferredContentSize()
-    }
   }
 
   private func updateContentView(to view: UIView, animated: Bool) {
@@ -193,14 +102,14 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
     // Ensure the a static width is given to the main view so we can calculate the height
     // correctly when we force a layout
     let height = visibleView.systemLayoutSizeFitting(
-      CGSize(width: width, height: 0),
-      withHorizontalFittingPriority: .required,
-      verticalFittingPriority: .fittingSizeLevel
+        CGSize(width: width, height: 0),
+        withHorizontalFittingPriority: .required,
+        verticalFittingPriority: .fittingSizeLevel
     ).height
-
+    
     preferredContentSize = CGSize(
-      width: width,
-      height: height
+        width: width,
+        height: height
     )
   }
 
@@ -219,7 +128,30 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
   }
 
   override func loadView() {
-    view = View()
+      let newView = View(frame: .zero, url: url, tab: tab)
+      newView.updateBgView = {  updatedView, animated in
+          self.updateContentView(to: updatedView, animated: animated)
+      }
+      newView.updateBlurIntensity = {
+          let jsString =
+            """
+                window.blurIntensity = \(Preferences.Safegaze.blurIntensity.value);
+                updateBluredImageOpacity();
+            """
+          self.tab.webView?.evaluateSafeJavaScript(functionName: jsString, contentWorld: .page, asFunction: false) { object, error in
+              if let error = error {
+                  print("SafegazeContentScriptHandler coreML script\(error)")
+              } else {
+                  print("blurChanged")
+              }
+          }
+      }
+      newView.shieldsSettingsChanged = {
+          DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.safegazeSettingsChanged?(self, .AllOff)
+          }
+      }
+      view = newView
   }
 
   override func viewDidLoad() {
@@ -250,8 +182,8 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
 
     navigationController?.setNavigationBarHidden(true, animated: false)
 
-    updateToggleStatus()
-
+    updatePreferredContentSize()
+    
     if advancedControlsShowing && shieldsUpSwitch.isOn {
       shieldsView.advancedShieldView.isHidden = false
       shieldsView.advancedControlsBar.isShowingAdvancedControls = true
@@ -266,7 +198,7 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
         // Wait a fraction of a second to allow DB write to complete otherwise it will not use the
         // updated shield settings when reloading the page
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-          self.shieldsSettingsChanged?(self, shield)
+          self.safegazeSettingsChanged?(self, shield)
         }
       }
     }
@@ -285,12 +217,11 @@ class SafegazeViewController: UIViewController, PopoverContentComponent {
 
   @objc private func shieldsOverrideSwitchValueChanged() {
     let isOn = shieldsUpSwitch.isOn
-    self.updateGlobalShieldState(isOn, animated: true)
     self.updateSafegazeState(on: isOn, option: nil)
     // Wait a fraction of a second to allow DB write to complete otherwise it will not use the updated
     // shield settings when reloading the page
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-      self.shieldsSettingsChanged?(self, .AllOff)
+      self.safegazeSettingsChanged?(self, .AllOff)
     }
   }
 
@@ -383,15 +314,29 @@ extension SafegazeViewController {
 
     let reportBrokenSiteView = ReportBrokenSiteView()
     let siteReportedView = SiteReportedView()
-
-    override init(frame: CGRect) {
+    public var updateBgView: ((UIView, Bool) -> Void)?
+    public var updateBlurIntensity: (() -> Void)?
+    public var shieldsSettingsChanged: (() -> Void)?
+    var url: URL?
+    var tab: Tab
+      
+    init(frame: CGRect, url: URL?, tab: Tab) {
+      self.url = url
+      self.tab = tab
       super.init(frame: frame)
 
       backgroundColor = .braveBackground
 
-      stackView.addArrangedSubview(simpleShieldView)
-      // stackView.addArrangedSubview(advancedControlsBar)
-      // stackView.addArrangedSubview(advancedShieldView)
+      let popupView = SafegazePopUpView.redirect(url: url, updateView: { [self] in
+          setNeedsUpdateConstraints()
+          layoutIfNeeded()
+          updateBgView?(stackView, true)
+      }, updateBlurIntensity: {
+          self.updateBlurIntensity?()
+      }, shieldsSettingsChanged: {
+          self.shieldsSettingsChanged?()
+      }, tab: tab)
+      stackView.addArrangedSubview(popupView)
 
       addSubview(scrollView)
       scrollView.addSubview(stackView)

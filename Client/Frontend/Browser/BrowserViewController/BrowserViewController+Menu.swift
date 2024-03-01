@@ -31,21 +31,6 @@ extension BrowserViewController {
     }
   }
 
-  func privacyFeaturesMenuSection(_ menuController: MenuViewController) -> some View {
-    VStack(alignment: .leading, spacing: 5) {
-      Text(Strings.OptionsMenu.menuSectionTitle.capitalized)
-        .font(.callout.weight(.semibold))
-        .foregroundColor(Color(.braveLabel))
-        .padding(.horizontal, 14)
-        .padding(.bottom, 5)
-      
-        KahfTubeMenuButton(dismiss: presentYoutubeFiltrationSettingsView)
-    }
-    .fixedSize(horizontal: false, vertical: true)
-    .padding(.top, 10)
-    .padding(.bottom, 5)
-  }
-
   func destinationMenuSection(_ menuController: MenuViewController, isShownOnWebPage: Bool) -> some View {
     VStack(spacing: 0) {
       MenuItemFactory.button(for: .bookmarks) { [unowned self, unowned menuController] in
@@ -124,16 +109,6 @@ extension BrowserViewController {
     self.dismiss(animated: true) {
       self.present(vc, animated: true)
     }
-  }
-    
-  func presentYoutubeFiltrationSettingsView() {
-      let vc = KahfTubeViewController()
-      vc.dismissAction = {
-          self.tabManager.reloadSelectedTab()
-      }
-      self.dismiss(animated: true) {
-        self.present(vc, animated: true)
-      }
   }
 
   private func presentPlaylistController() {

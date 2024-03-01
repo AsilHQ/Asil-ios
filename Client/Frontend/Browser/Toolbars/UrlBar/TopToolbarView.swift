@@ -48,6 +48,7 @@ protocol TopToolbarDelegate: AnyObject {
   func topToolbarDidTapWalletButton(_ urlBar: TopToolbarView)
   func topToolbarDidTapShareButton(_ urlBar: TopToolbarView)
   func topToolbarDidTapSafegazeButton(_ topToolbar: TopToolbarView)
+  func topToolbarDidTapKahftubeButton(_ topToolbar: TopToolbarView)
 }
 
 class TopToolbarView: UIView, ToolbarProtocol {
@@ -663,6 +664,10 @@ extension TopToolbarView: TabLocationViewDelegate {
       delegate?.topToolbarDidTapSafegazeButton(self)
   }
 
+  func tabLocationViewDidTapKahftubeButton(_ urlBar: TabLocationView) {
+      delegate?.topToolbarDidTapKahftubeButton(self)
+  }
+    
   func tabLocationViewDidTapRewardsButton(_ urlBar: TabLocationView) {
     delegate?.topToolbarDidTapBraveRewardsButton(self)
   }

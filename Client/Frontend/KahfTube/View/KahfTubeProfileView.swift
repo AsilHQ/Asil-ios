@@ -1,4 +1,4 @@
-// Copyright 2023 The Asil Browser Authors. All rights reserved.
+// Copyright 2023 The Kahf Browser Authors. All rights reserved.
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -14,29 +14,25 @@ struct KahfTubeProfileView: View {
     @State private var religionSelection: Int = Preferences.KahfTube.mode.value
     @State private var profileImageUrl: String = Preferences.KahfTube.imageURL.value ?? ""
     @State private var isLoading: Bool = false
-    var dismissAction: (() -> Void)?
+    @Binding var isOpened: Bool
+    var reloadWebView: (() -> Void)?
     
     var body: some View {
         ZStack {
             VStack {
-                if #available(iOS 15.0, *) {
-                    AsyncImage(url: URL(string: profileImageUrl))
-                        .clipShape(Circle())
-                        .padding(.vertical, 30)
-                } else {
-                    Circle()
+                AsyncImage(url: URL(string: profileImageUrl))
+                    .clipShape(Circle())
                     .frame(width: 100.0, height: 100.0)
-                    .overlay(RoundedRectangle(cornerRadius: 50.0)
-                    .strokeBorder(Color.black, style: StrokeStyle(lineWidth: 0.5)))
-                    .padding(.vertical, 30)
-                }
+                    .padding(.vertical, 10)
+                
+                KahfTubeMenuButton(kafhTubeIsOn: $isOpened).padding(.bottom, 10)
                 
                 Form {
-                    Section(header: Text("Name")) {
+                    Section(header: Text(Strings.kahftubePopupNameTitle)) {
                         Text(Preferences.KahfTube.username.value ?? "")
                     }
                     
-                    Section(header: Text("Connected Account")) {
+                    Section(header: Text(Strings.kahftubePopupConnectedAccountTitle)) {
                         HStack {
                             Text(Preferences.KahfTube.email.value ?? "")
                             
@@ -44,14 +40,14 @@ struct KahfTubeProfileView: View {
                         }
                     }
                     
-                    Section(header: Text("Preferences")) {
-                        Picker(selection: $genderSelection, label: Text("Gender")) {
+                    Section(header: Text(Strings.kahftubePopupPreferencesTitle)) {
+                        Picker(selection: $genderSelection, label: Text(Strings.kahftubePopupGenderTitle)) {
                             ForEach(genders.indices, id: \.self) { index in
                                 Text(genders[index].localizedString).tag(genders[index].rawValue)
                             }
                         }
                         
-                        Picker(selection: $religionSelection, label: Text("Religion Status")) {
+                        Picker(selection: $religionSelection, label: Text(Strings.kahftubePopupReligionStatusTitle)) {
                             ForEach(religionStatus.indices, id: \.self) { index in
                                 Text(religionStatus[index].localizedString).tag(religionStatus[index].rawValue)
                             }
@@ -63,22 +59,25 @@ struct KahfTubeProfileView: View {
                             isLoading.toggle()
                             KahfTubeManager.shared.getHaramChannels()
                         } label: {
-                            Text("Unsubscribe Haram Channels")
+                            Text(Strings.kahftubePopupUnsubscribeHaramChannelsTitle)
                         }
                     }
                 }
+                
+                Spacer()
             }
             .navigationTitle(Strings.KahfTube.kahfTubeTitle)
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                Button {
-                    Preferences.KahfTube.gender.value = genderSelection
-                    Preferences.KahfTube.mode.value = religionSelection
-                    dismissAction?()
-                } label: {
-                    Text("Save")
-                }
-            }.overlay(KahfTubeManager.shared.channelsFetched ? Color.black.opacity(0.3) : .clear).edgesIgnoringSafeArea(.bottom)
+            .onChange(of: genderSelection, perform: { newValue in
+                Preferences.KahfTube.gender.value = newValue
+                reloadWebView?()
+            })
+            .onChange(of: religionSelection, perform: { newValue in
+                Preferences.KahfTube.mode.value = religionSelection
+                reloadWebView?()
+            })
+            .overlay(KahfTubeManager.shared.channelsFetched ? Color.black.opacity(0.3) : .clear)
+            .edgesIgnoringSafeArea(.bottom)
             
             if KahfTubeManager.shared.channelsFetched {
                 KahfUnsubscribeView(haramChannels: kahfTubeManager.haramChannels, isLoading: $isLoading)
@@ -102,7 +101,7 @@ private extension KahfTubeProfileView {
 #if DEBUG
 struct YoutubeFiltrationProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        KahfTubeProfileView()
+        KahfTubeProfileView(isOpened: .constant(true))
     }
 }
 #endif

@@ -71,7 +71,7 @@
 "wallet.addCustomTokenTitle" = "Token";
 
 /* The description of the view shown over a dapps website that describes what adding a new network will do. */
-"wallet.addNetworkDescription" = "Detta gör att detta nätverk kan användas inom Asil Browser Wallet.";
+"wallet.addNetworkDescription" = "Detta gör att detta nätverk kan användas inom Kahf Browser Wallet.";
 
 /* The subtitle of the view shown over a dapps website that requests permission from the user to add a new network. */
 "wallet.addNetworkSubtitle" = "Får den här webbplatsen lägga till ett nätverk?";
@@ -131,7 +131,7 @@
 "wallet.auroraPopupDontShowAgain" = "Visa inte igen.";
 
 /* The footer beneath the auto-lock title and interval duration */
-"wallet.autoLockFooter" = "Väntetid i minuter innan Asil Browser-plånboken låses automatiskt";
+"wallet.autoLockFooter" = "Väntetid i minuter innan Kahf Browser-plånboken låses automatiskt";
 
 /* The title that appears before an auto-lock interval. Example: Automatically lock after 5 minutes */
 "wallet.autoLockTitle" = "Lås automatiskt efter";
@@ -182,10 +182,10 @@
 "wallet.biometricsSetupErrorTitle" = "Kunde inte aktivera biometrisk upplåsning.";
 
 /* The title shown when a user is asked if they would like to setup biometric unlock */
-"wallet.biometricsSetupTitle" = "Lås upp Asil Browser-plånboken med Face ID, Touch ID eller lösenord.";
+"wallet.biometricsSetupTitle" = "Lås upp Kahf Browser-plånboken med Face ID, Touch ID eller lösenord.";
 
-/* A disclaimer that appears at the bottom of an swap screen which discloses the fixed Asil Browser fee included in the swap quotes. '%@' will be replaced by a percentage. For example: 'Quote includes a 0.875% Asil Browser fee' */
-"wallet.braveSwapFeeDisclaimer" = "Kursen inkluderar en Asil Browser-avgift på %@.";
+/* A disclaimer that appears at the bottom of an swap screen which discloses the fixed Kahf Browser fee included in the swap quotes. '%@' will be replaced by a percentage. For example: 'Quote includes a 0.875% Kahf Browser fee' */
+"wallet.braveSwapFeeDisclaimer" = "Kursen inkluderar en Kahf Browser-avgift på %@.";
 
 /* As in buying cryptocurrency */
 "wallet.buy" = "Köp";
@@ -290,7 +290,7 @@
 "wallet.createWalletTitle" = "Säkra dina kryptotillgångar med ett lösenord";
 
 /* The title of the crypto tab */
-"wallet.cryptoTitle" = "Asil Browser-plånbok";
+"wallet.cryptoTitle" = "Kahf Browser-plånbok";
 
 /* The title above the input fields for users to input network block explorer urls in Custom Network Details Screen. */
 "wallet.customNetworkBlockExplorerUrlsTitle" = "Blockera utforskar-URL:er";
@@ -361,14 +361,14 @@
 /* The title displayed on the add custom token screen */
 "wallet.customTokenTitle" = "Anpassad";
 
-/* The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Asil Browser Wallet. The '%@' will be the site attempting to connect. For example: \"app.uniswap.org wants to interact with Asil Browser Wallet\" */
-"wallet.dappsConnectionNotificationOriginTitle" = "%@ vill interagera med Asil Browser Wallet";
+/* The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Kahf Browser Wallet. The '%@' will be the site attempting to connect. For example: \"app.uniswap.org wants to interact with Kahf Browser Wallet\" */
+"wallet.dappsConnectionNotificationOriginTitle" = "%@ vill interagera med Kahf Browser Wallet";
 
-/* The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Asil Browser Wallet. */
-"wallet.dappsConnectionNotificationTitle" = "Den här sidan vill interagera med Asil Browser Wallet";
+/* The title of the notification which will prompt at the top of the browser when users are visiting web3 site that is not yet connected with Kahf Browser Wallet. */
+"wallet.dappsConnectionNotificationTitle" = "Den här sidan vill interagera med Kahf Browser Wallet";
 
 /* A message that will be displayed under the section header when there is no dapps have been granted wallet connection. */
-"wallet.dappsSettingsConnectedSitesSectionEmpty" = "DApps du ansluter till Asil Browser Wallet visas här";
+"wallet.dappsSettingsConnectedSitesSectionEmpty" = "DApps du ansluter till Kahf Browser Wallet visas här";
 
 /* The title of the section that will list all the permitted dapp connections */
 "wallet.dappsSettingsConnectedSitesSectionTitle" = "Anslutna DApps";
@@ -431,7 +431,7 @@
 "wallet.decimalsPrecision" = "Precisionsdecimaler";
 
 /* The message displayed when the user takes a screenshot of their dapp decrypt request. */
-"wallet.decryptMessageScreenshotDetectedMessage" = "Varning: En skärmbild av ditt meddelande kan säkerhetskopieras till en molnfiltjänst och vara läsbart av alla program med åtkomst till foton. Asil Browser rekommenderar att du inte sparar den här skärmbilden och tar bort den så snart som möjligt.";
+"wallet.decryptMessageScreenshotDetectedMessage" = "Varning: En skärmbild av ditt meddelande kan säkerhetskopieras till en molnfiltjänst och vara läsbart av alla program med åtkomst till foton. Kahf Browser rekommenderar att du inte sparar den här skärmbilden och tar bort den så snart som möjligt.";
 
 /* The title of the button to approve a decrypt request from a dapps website. */
 "wallet.decryptRequestApprove" = "Tillåt";
@@ -529,7 +529,7 @@
 /* The amount of current permitted wallet accounts to the dapp site. It is displayed below the origin url of the dapp site in edit site connection screen. '%lld' refers to a number, %@ is `account` for singular and `accounts` for plural (for example \"1 account connected\" or \"2 accounts connected\") */
 "wallet.editSiteConnectionConnectedAccount" = "%1$lld %2$@ ansluten";
 
-/* The navigation title of the screen for users to edit dapps site connection with users' Asil Browser Wallet accounts. */
+/* The navigation title of the screen for users to edit dapps site connection with users' Kahf Browser Wallet accounts. */
 "wallet.editSiteConnectionScreenTitle" = "Anslutningar";
 
 /* The error alert body when something is wrong when users try to edit transaction gas fee, priority fee, nonce value or allowance value. */
@@ -607,7 +607,7 @@
 /* The title of the button to approve a encryption public key request from a dapps website. */
 "wallet.getEncryptionPublicKeyRequestApprove" = "Förse";
 
-/* The text shown beside the URL origin of a get public encryption key request from a dapp site. Ex 'https://Asil Browser.com is requesting your wallets public encryption key. If you consent to providing this key, the site will be able to compose encrypted messages to you.' */
+/* The text shown beside the URL origin of a get public encryption key request from a dapp site. Ex 'https://Kahf Browser.com is requesting your wallets public encryption key. If you consent to providing this key, the site will be able to compose encrypted messages to you.' */
 "wallet.getEncryptionPublicKeyRequestMessage" = "begär din plånboks offentliga krypteringsnyckel. Om du samtycker till att tillhandahålla denna nyckel kan webbplatsen skriva krypterade meddelanden till dig.";
 
 /* A subtitle of the view shown over a dapps website that requests the users public encryption key. */
@@ -700,8 +700,8 @@
 /* The title of the edit gas fee screen for EIP-1559 transactions */
 "wallet.maxPriorityFeeTitle" = "Högsta prioriteringsavgift";
 
-/* The title shown on the wallet settings page, and the value shown when selecting the default wallet as Asil Browser Wallet in wallet settings. */
-"wallet.module" = "Asil Browser-plånbok";
+/* The title shown on the wallet settings page, and the value shown when selecting the default wallet as Kahf Browser Wallet in wallet settings. */
+"wallet.module" = "Kahf Browser-plånbok";
 
 /* The title displayed on the view to filter by a network / all networks. */
 "wallet.networkFilterTitle" = "Välj nätverksfilter";
@@ -715,7 +715,7 @@
 /* The title for the label that is shown above the name of the network on a request to switch networks or add a new network from a dapps website. */
 "wallet.networkNameTitle" = "Nätverksnamn";
 
-/* A placeholder in Buy Screen, when user switched to a network that Asil Browser currently doesn't support buy token with Wyre. */
+/* A placeholder in Buy Screen, when user switched to a network that Kahf Browser currently doesn't support buy token with Wyre. */
 "wallet.networkNotSupportedForBuyToken" = "Köp stöds inte för det valda nätverket";
 
 /* The title of the section for secondary networks in the network selection view. */
@@ -737,7 +737,7 @@
 "wallet.newSiteConnectFooter" = "Anslut bara till webbplatser du litar på";
 
 /* The message displayed below the dapp's origin url in new site connection screen. */
-"wallet.newSiteConnectMessage" = "Anslut Asil Browser Wallet";
+"wallet.newSiteConnectMessage" = "Anslut Kahf Browser Wallet";
 
 /* The transaction edit error alert button which will dismiss the alert. */
 "wallet.newSiteConnectScreenTitle" = "Anslut";
@@ -821,7 +821,7 @@
 "wallet.primaryCryptoAccountsTitle" = "Primära kryptokonton";
 
 /* The message displayed when the user takes a screenshot of their private key */
-"wallet.privateKeyScreenshotDetectedMessage" = "Varning: En skärmbild av din privata nyckel kan säkerhetskopieras till en molnfiltjänst och kunna läsas av alla program med åtkomst till foton. Asil Browser rekommenderar att du inte sparar den här skärmbilden och tar bort den så snart som möjligt.";
+"wallet.privateKeyScreenshotDetectedMessage" = "Varning: En skärmbild av din privata nyckel kan säkerhetskopieras till en molnfiltjänst och kunna läsas av alla program med åtkomst till foton. Kahf Browser rekommenderar att du inte sparar den här skärmbilden och tar bort den så snart som möjligt.";
 
 /* The button title for users to click. It will redirect user to that specific provider website. '%@' will be replaced provider's short name. For example, Buy with Ramp'. */
 "wallet.providerSelectionButtonTitle" = "Köp med %@";
@@ -845,7 +845,7 @@
 "wallet.rampNetworkProviderShortName" = "Ramp";
 
 /* The message displayed when the user takes a screenshot of their recovery phrase */
-"wallet.recoveryPhraseScreenshotDetectedMessage" = "Varning: En skärmbild av din återställningsfras kan säkerhetskopieras till en molnfiltjänst och kunna läsas av alla program med åtkomst till foton. Asil Browser rekommenderar att du inte sparar den här skärmbilden och tar bort den så snart som möjligt.";
+"wallet.recoveryPhraseScreenshotDetectedMessage" = "Varning: En skärmbild av din återställningsfras kan säkerhetskopieras till en molnfiltjänst och kunna läsas av alla program med åtkomst till foton. Kahf Browser rekommenderar att du inte sparar den här skärmbilden och tar bort den så snart som möjligt.";
 
 /* A description for a refresh icon that when pressed receives a new snap quote for the currently swap assets */
 "wallet.refreshMarketPriceLabel" = "Uppdatera marknadspris";
@@ -877,11 +877,11 @@
 /* The title that will be displayed when long-pressing the back button in the navigation bar. As to gain access to your assets from a different device */
 "wallet.restoreWalletBackButtonTitle" = "Återställ plånbok";
 
-/* The button title for showing the restore wallet screen. As in to use your recovery phrase to bring a wallet into Asil Browser */
+/* The button title for showing the restore wallet screen. As in to use your recovery phrase to bring a wallet into Kahf Browser */
 "wallet.restoreWalletButtonTitle" = "Återställ";
 
-/* A toggle label to ask the user if their 24-word phrase is a legacy Asil Browser crypto wallet */
-"wallet.restoreWalletImportFromLegacyBraveWallet" = "Vill du importera från äldre Asil Browser-kryptoplånböcker?";
+/* A toggle label to ask the user if their 24-word phrase is a legacy Kahf Browser crypto wallet */
+"wallet.restoreWalletImportFromLegacyBraveWallet" = "Vill du importera från äldre Kahf Browser-kryptoplånböcker?";
 
 /* A title displayed above 2 text fields for entering a new wallet password */
 "wallet.restoreWalletNewPasswordTitle" = "Nytt lösenord";
@@ -896,7 +896,7 @@
 "wallet.restoreWalletShowRecoveryPhrase" = "Visa återställningsfras";
 
 /* The subtitle on the restore wallet screen. */
-"wallet.restoreWalletSubtitle" = "Ange din återställningsfras för att återställa Asil Browser-kryptoplånbokskontot.";
+"wallet.restoreWalletSubtitle" = "Ange din återställningsfras för att återställa Kahf Browser-kryptoplånbokskontot.";
 
 /* The title on the restore wallet screen. */
 "wallet.restoreWalletTitle" = "Återställ kryptokonto";
@@ -1022,7 +1022,7 @@
 "wallet.settingsResetWalletAlertMessage" = "Det här går inte att ångra. Återställningsfrasen är ditt enda sätt att återfå kontoåtkomst till dina kryptotillgångar.";
 
 /* The title the confirmation dialog when resetting the wallet. As in to erase the users wallet from the device */
-"wallet.settingsResetWalletAlertTitle" = "Vill du verkligen återställa Asil Browser-plånboken?";
+"wallet.settingsResetWalletAlertTitle" = "Vill du verkligen återställa Kahf Browser-plånboken?";
 
 /* The title that will be displayed when long-pressing the back button in the navigation bar. As in the first step of an onboarding process is to welcome a user. */
 "wallet.setupCryptoButtonBackButtonTitle" = "Välkommen";
@@ -1031,10 +1031,10 @@
 "wallet.setupCryptoButtonTitle" = "Kom igång";
 
 /* The subtitle displayed on the 'setup crypto' onboarding screen */
-"wallet.setupCryptoSubtitle" = "Äg kryptotillgångar och ha koll på hur det går med din portfölj tack vare Asil Browser-webbläsarens integritetsskydd.";
+"wallet.setupCryptoSubtitle" = "Äg kryptotillgångar och ha koll på hur det går med din portfölj tack vare Kahf Browser-webbläsarens integritetsskydd.";
 
 /* The title displayed on the 'setup crypto' onboarding screen */
-"wallet.setupCryptoTitle" = "Välkommen till den nya Asil Browser-plånboken";
+"wallet.setupCryptoTitle" = "Välkommen till den nya Kahf Browser-plånboken";
 
 /* A button title that will make a private key visible on the screen */
 "wallet.showPrivateKeyButtonTitle" = "Visa privat nyckel";
@@ -1171,8 +1171,8 @@
 /* The title on top of a separater, and the transaction details will be displayed below the separater. */
 "wallet.solanaSignTransactionDetails" = "Detaljer";
 
-/* The warning message to let users understand the risk of using Asil Browser Wallet to sign any transaction. */
-"wallet.solanaSignTransactionWarning" = "Uppmärksamma att Asil Browser inte kan’ verifiera vad som händer om du signerar. En signatur kan godkänna nästan alla operationer på ditt konto eller för dina räkning, inklusive (men inte begränsat till) att ge fullständig kontroll över ditt konto och kryptotillgångar till webbplatsen som gör begäran. Skriv bara om du är säker på att du vill vidta denna åtgärden och lita på den begärande webbplatsen.";
+/* The warning message to let users understand the risk of using Kahf Browser Wallet to sign any transaction. */
+"wallet.solanaSignTransactionWarning" = "Uppmärksamma att Kahf Browser inte kan’ verifiera vad som händer om du signerar. En signatur kan godkänna nästan alla operationer på ditt konto eller för dina räkning, inklusive (men inte begränsat till) att ge fullständig kontroll över ditt konto och kryptotillgångar till webbplatsen som gör begäran. Skriv bara om du är säker på att du vill vidta denna åtgärden och lita på den begärande webbplatsen.";
 
 /* The title displayed above the Token Program Sync Native instruction type for Solana Instruction details. */
 "wallet.solanaSyncNativeInstructionName" = "Synka nativ";
@@ -1229,7 +1229,7 @@
 "wallet.swapCryptoToTitle" = "Till";
 
 /* The description of where user will see once a test network has been picked in swap screen. '%@' will be replaced with a network such as 'Rinkeby Test Network' or 'Ropsten Test Network' */
-"wallet.swapCryptoUnsupportNetworkBody" = "Asil Browser stöder inte byten på %@ just nu. Välj en kedja som stöds.";
+"wallet.swapCryptoUnsupportNetworkBody" = "Kahf Browser stöder inte byten på %@ just nu. Välj en kedja som stöds.";
 
 /* The title below account picker when user has selected a test network to swap cryptos */
 "wallet.swapCryptoUnsupportNetworkTitle" = "Kedjan stöds inte";
@@ -1237,11 +1237,11 @@
 /* The description of a swap button on the buy/send/swap modal */
 "wallet.swapDescription" = "Byt tokens och tillgångar.";
 
-/* A longer disclaimer about the DEX aggrigator used by Asil Browser for swap transactions. '0x' is a company name. 'DEX aggregator' is a type of blockchain-based service (decentralized exchange). 'ONLY' is emphasized to show importance of 0x's data usage. */
+/* A longer disclaimer about the DEX aggrigator used by Kahf Browser for swap transactions. '0x' is a company name. 'DEX aggregator' is a type of blockchain-based service (decentralized exchange). 'ONLY' is emphasized to show importance of 0x's data usage. */
 "wallet.swapDexAggrigatorDisclaimer" = "0x bearbetar Ethereum- och IP-adressen för att genomföra en transaktion (vilket innefattar erhållande av kurser). 0x använder bara dessa data för att bearbeta transaktioner.";
 
 /* A disclaimer note shown on the Swap screen. '0x' is a company name. 'DEX aggregator' is a type of blockchain-based service (decentralized exchange) */
-"wallet.swapDexAggrigatorNote" = "Asil Browser använder 0x som DEX-aggregator.";
+"wallet.swapDexAggrigatorNote" = "Kahf Browser använder 0x som DEX-aggregator.";
 
 /* The 'Limit' order type. Limit orders only execute when the price requirements are met */
 "wallet.swapLimitOrderType" = "Gräns";
@@ -1402,7 +1402,7 @@
 /* A button title to view a given transaction on the block explorer for the current network/chain. */
 "wallet.viewOnBlockExplorer" = "Visa i blockutforskare";
 
-/* The title shown on the menu to access Asil Browser Wallet */
+/* The title shown on the menu to access Kahf Browser Wallet */
 "wallet.wallet" = "Plånbok";
 
 /* The label read out when a user is using VoiceOver and highlights the two-arrow button on the wallet panel top left corner. */
