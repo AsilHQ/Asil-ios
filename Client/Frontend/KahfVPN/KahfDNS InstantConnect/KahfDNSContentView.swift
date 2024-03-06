@@ -57,6 +57,7 @@ struct KahfDNSContentView: View {
                     if connecting {
                         // connecting...
                         ProgressView()
+                            .tint(Color.gray)
                             .padding(.top, 30)
                     } else {
                         if error != nil {
@@ -143,18 +144,18 @@ struct KahfDNSContentView: View {
                         }
                     }
                     
-                    #if os(iOS)
-                        if showBottomBanner {
-                            if let bottomBanner = bottomBanner {
-                                BannerView(bottomBanner: bottomBanner)
-                            }
-                        }
-                    #else
-                    #endif
                 }
                 .padding(.leading, 10)
                 .padding(.trailing, 10)
                 
+                #if os(iOS)
+                    if showBottomBanner {
+                        if let bottomBanner = bottomBanner {
+                            BannerView(bottomBanner: bottomBanner)
+                        }
+                    }
+                #else
+                #endif
             }
             .frame(
                 maxWidth: .infinity,
@@ -162,7 +163,7 @@ struct KahfDNSContentView: View {
             )
         }
         .frame(
-            maxWidth: .infinity, minHeight: 400.0,
+            maxWidth: .infinity, minHeight: 480.0,
             maxHeight: .infinity
         )
         .background(background)
@@ -214,7 +215,8 @@ struct KahfDNSContentView: View {
     
     func onAppear() {
         print("Appeared")
-        
+        connected = VpnConnectObject.isVPNConnected()
+        connectSwitch = VpnConnectObject.isVPNConnected()
         // set bottom banner
         setBottomBanner()
     }

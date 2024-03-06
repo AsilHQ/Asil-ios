@@ -168,4 +168,13 @@ public class VpnConnect {
         print("VPNConnect: disconnect()")
         NEVPNManager.shared().connection.stopVPNTunnel()
     }
+    
+    func isVPNConnected() -> Bool {
+        if NEVPNManager.shared().connection.status == .connected {
+           return true
+        } else {
+           return false
+        }
+    }
+
 }
