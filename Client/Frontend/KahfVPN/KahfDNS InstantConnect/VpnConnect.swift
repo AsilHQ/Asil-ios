@@ -1,13 +1,13 @@
-// Copyright 2023 The Kahf Browser Authors. All rights reserved.
-// This Source Code Form is subject to the terms of the Mozilla Public
-// License, v. 2.0. If a copy of the MPL was not distributed with this
-// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+//
+//  KahfDNS_InstantConnectApp.swift
+//  KahfDNS InstantConnect
+//
+//  Created by Mehdi with ♥ / hi@mehssi.com
+//  on 15/02/2024.
+//
 
 import Foundation
 import NetworkExtension
-import BraveCore
-import BraveShared
-import Shared
 import KeychainAccess
 
 public class VpnConnect {
@@ -41,7 +41,7 @@ public class VpnConnect {
     )
     
     let keychainDetails = KeychainDetailsStruct(
-        serviceName: "com.kahfdns.app",
+        serviceName: "com.halalz.kahfdns",
         keySharedSecret: "sharedSecret",
         keyUsername: "username",
         keyPassword: "password"
@@ -51,7 +51,9 @@ public class VpnConnect {
     
     init() {
         print("VPNConnect: init()")
-        let keychain = Keychain(service: keychainDetails.serviceName)
+        
+        // store vpn details in keychain.
+        let keychain = Keychain(service: keychainDetails.serviceName).accessibility(.always)
         
         // these values are provided by server and is used to authenticate user.
         keychain[keychainDetails.keySharedSecret] = vpnDetails.sharedSecret
@@ -71,7 +73,7 @@ public class VpnConnect {
         print("VPNConnect: _makeProtocol()")
         
         // get username, shared secret and password from keychain
-        let keychain = Keychain(service: keychainDetails.serviceName)
+        let keychain = Keychain(service: keychainDetails.serviceName).accessibility(.always)
         let username: String = keychain[keychainDetails.keyUsername]!
         let refSharedSecret = keychain[attributes: keychainDetails.keySharedSecret]?.persistentRef
         let refPassword = keychain[attributes: keychainDetails.keyPassword]?.persistentRef
@@ -166,13 +168,4 @@ public class VpnConnect {
         print("VPNConnect: disconnect()")
         NEVPNManager.shared().connection.stopVPNTunnel()
     }
-    
-    func isVPNConnected() -> Bool {
-        if NEVPNManager.shared().connection.status == .connected {
-           return true
-        } else {
-           return false
-        }
-    }
 }
-

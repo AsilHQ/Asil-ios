@@ -59,39 +59,7 @@ class KahfVPNPopUpViewController: UIViewController, PopoverContentComponent {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    NotificationCenter.default.addObserver(self, selector: #selector(vpnStatusChanged(_:)), name: NSNotification.Name.NEVPNStatusDidChange, object: nil)
     navigationController?.setNavigationBarHidden(true, animated: false)
-    connected = vpnConnectObject.isVPNConnected()
-    updateToggleStatus()
-    
-    shieldsView.kahfVPNView.shieldsSwitch.addTarget(self, action: #selector(shieldsOverrideSwitchValueChanged), for: .valueChanged)
-    
-    if shieldsUpSwitch.isOn {
-      updatePreferredContentSize()
-    }
-  }
-
-  private var shieldsUpSwitch: ShieldsSwitch {
-    return shieldsView.kahfVPNView.shieldsSwitch
-  }
-
-  // MARK: - State
-
-  private func updateToggleStatus() {
-    shieldsUpSwitch.isOn = connected
-    updateGlobalShieldState(shieldsUpSwitch.isOn)
-  }
-
-  private func updateBraveShieldState(shield: BraveShield, on: Bool, option: Preferences.Option<Bool>?) {
-    if on {
-      connectButtonPressed()
-    } else {
-      disconnectButtonPressed()
-    }
-  }
-
-  private func updateGlobalShieldState(_ on: Bool, animated: Bool = false) {
-    shieldsView.kahfVPNView.statusLabel.text = on ? Strings.Shields.statusValueUp.uppercased() : Strings.Shields.statusValueDown.uppercased()
     updatePreferredContentSize()
   }
 
@@ -131,90 +99,6 @@ class KahfVPNPopUpViewController: UIViewController, PopoverContentComponent {
       height: height
     )
   }
-    
-  private func vpnStatusChanged(status: NEVPNStatus) {
-    switch status {
-    case NEVPNStatus.invalid:
-        print("vpnStatusChanged: Invalid")
-        error = Strings.kahfVPNInvalidTitle
-        connected = false
-        connecting = false
-    case NEVPNStatus.disconnected:
-        print("vpnStatusChanged: Disconnected")
-        if connecting && vpnConnectObject.retried {
-            showAlert(message: Strings.kahfVPNReconnectTitle)
-        }
-        connected = false
-        connecting = false
-    case NEVPNStatus.connecting:
-        print("vpnStatusChanged: Connecting")
-        connecting = true
-        connected = false
-    case NEVPNStatus.connected:
-        print("vpnStatusChanged: Connected")
-        connecting = false
-        connected = true
-    case NEVPNStatus.reasserting:
-        print("vpnStatusChanged: Reasserting")
-        connecting = true
-        connected = false
-    case NEVPNStatus.disconnecting:
-        print("vpnStatusChanged: Disconnecting")
-        connecting = true
-        connected = false
-    @unknown default:
-        print("vpnStatusChanged: Unknown status")
-        connecting = false
-        connected = false
-    }
-  }
-    
-  func connectButtonPressed() {
-    error = nil
-    connecting = true
-    connected = false
-    
-    vpnConnectObject.retried = false
-    vpnConnectObject.connect(errorCallback: connectErrorCallback)
-  }
-
-  func connectErrorCallback(connectError: String, showError: Bool) {
-    print("Connect error: \(connectError)")
-    if showError {
-        showAlert(message: Strings.kahfVPNConfigurationErrorTitle)
-        connected = false
-        connecting = false
-        updateToggleStatus()
-    }
-  }
-    
-  func showAlert(message: String) {
-    let popup = AlertPopupView(
-        imageView: nil,
-        title: "Oops",
-        message: message,
-        titleWeight: .semibold,
-        titleSize: 21
-    )
-    popup.addButton(title: Strings.OKString, fontSize: 16) { () -> PopupViewDismissType in
-        return .flyDown
-    }
-    popup.showWithType(showType: .flyUp)
-  }
-
-  func disconnectButtonPressed() {
-    error = nil
-    let VpnConnectObject = VpnConnect()
-    VpnConnectObject.disconnect()
-  }
-
-  func onAppear() {
-    print("Appeared")
-  }
-
-  func onDisappear() {
-    print("Disappeared")
-  }
 
   // MARK: -
 
@@ -224,20 +108,6 @@ class KahfVPNPopUpViewController: UIViewController, PopoverContentComponent {
 
   override func loadView() {
     view = View()
-  }
-
-  @objc private func shieldsOverrideSwitchValueChanged() {
-    let isOn = shieldsUpSwitch.isOn
-    self.updateGlobalShieldState(isOn, animated: true)
-    self.updateBraveShieldState(shield: .AllOff, on: isOn, option: nil)
-  }
-    
-  @objc func vpnStatusChanged(_ notification: Notification) {
-    guard let neVpnConnection = notification.object as? NEVPNConnection else {
-        return
-    }
-    
-    vpnStatusChanged(status: neVpnConnection.status)
   }
 
   @available(*, unavailable)
@@ -278,7 +148,7 @@ extension KahfVPNPopUpViewController {
 
       backgroundColor = .braveBackground
 
-      stackView.addArrangedSubview(kahfVPNView)
+      stackView.addArrangedSubview(KahfDNSContentView.redirect())
 
       addSubview(scrollView)
       scrollView.addSubview(stackView)
