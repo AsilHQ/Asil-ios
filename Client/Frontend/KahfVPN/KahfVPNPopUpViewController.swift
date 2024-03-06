@@ -18,7 +18,6 @@ import NetworkExtension
 /// Displays shield settings and shield stats for a given URL
 class KahfVPNPopUpViewController: UIViewController, PopoverContentComponent {
 
-  let tab: Tab
   let vpnConnectObject = VpnConnect()
   let appVersion = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String)!
   let vpnStatusNotification = NotificationCenter.default.publisher(for: NSNotification.Name.NEVPNStatusDidChange)
@@ -26,24 +25,11 @@ class KahfVPNPopUpViewController: UIViewController, PopoverContentComponent {
   private var connected = false
   private var connecting = false
   private var error: String?
-  private lazy var url: URL? = {
-    guard let _url = tab.url else { return nil }
-
-    if InternalURL.isValid(url: _url),
-      let internalURL = InternalURL(_url),
-      internalURL.isErrorPage {
-      return internalURL.originalURLFromErrorPage
-    }
-
-    return _url
-  }()
 
   private var statsUpdateObservable: AnyObject?
 
   /// Create with an initial URL and block stats (or nil if you are not on any web page)
-  init(tab: Tab) {
-    self.tab = tab
-
+  init() {
     super.init(nibName: nil, bundle: nil)
   }
 

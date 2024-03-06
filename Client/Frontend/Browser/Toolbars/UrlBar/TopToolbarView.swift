@@ -88,6 +88,7 @@ class TopToolbarView: UIView, ToolbarProtocol {
     set(newURL) {
       locationView.url = newURL
       refreshShieldsStatus()
+      refreshSafegazeStatus()
     }
   }
 
@@ -183,23 +184,30 @@ class TopToolbarView: UIView, ToolbarProtocol {
 
   /// Update the shields icon based on whether or not shields are enabled for this site
   func refreshShieldsStatus() {
-    // Default on
-    var shieldIcon = "brave.logo"
-    let shieldsOffIcon = "brave.logo.greyscale"
     if let currentURL = currentURL {
-      let isPrivateBrowsing = PrivateBrowsingManager.shared.isPrivateBrowsing
-      let domain = Domain.getOrCreate(forUrl: currentURL, persistent: !isPrivateBrowsing)
-      if domain.shield_allOff == 1 {
-        shieldIcon = shieldsOffIcon
-      }
       if currentURL.isLocal || currentURL.isLocalUtility {
-        shieldIcon = shieldsOffIcon
+        locationView.shieldsButton.isHidden = true
+        return
       }
     } else {
-      shieldIcon = shieldsOffIcon
+      locationView.shieldsButton.isHidden = true
+      return
     }
-
-    locationView.shieldsButton.setImage(UIImage(sharedNamed: shieldIcon), for: .normal)
+    locationView.shieldsButton.isHidden = false
+  }
+    
+  /// Update the safegaze icon based on whether or not safegaze are enabled for this site
+  func refreshSafegazeStatus() {
+    if let currentURL = currentURL {
+        if currentURL.isLocal || currentURL.isLocalUtility {
+            locationView.safegazeButton.isHidden = true
+            return
+        }
+    } else {
+        locationView.safegazeButton.isHidden = true
+        return
+    }
+    locationView.safegazeButton.isHidden = false
   }
 
   private var privateModeCancellable: AnyCancellable?

@@ -436,16 +436,7 @@ extension BrowserViewController: TopToolbarDelegate {
   }
     
   func presentKahfVPNViewController() {
-    guard let selectedTab = tabManager.selectedTab, var url = selectedTab.url else { return }
-    if let internalUrl = InternalURL(url), internalUrl.isErrorPage, let originalURL = internalUrl.originalURLFromErrorPage {
-        url = originalURL
-    }
-    
-    if url.isLocalUtility || InternalURL(url)?.isAboutURL == true || InternalURL(url)?.isAboutHomeURL == true {
-        return
-    }
-    
-    let shields = KahfVPNPopUpViewController(tab: selectedTab)
+    let shields = KahfVPNPopUpViewController()
     let container = PopoverNavigationController(rootViewController: shields)
     let popover = PopoverController(contentController: container, contentSizeBehavior: .preferredContentSize)
     popover.present(from: topToolbar.locationView.kahfVPNButton, on: self)
