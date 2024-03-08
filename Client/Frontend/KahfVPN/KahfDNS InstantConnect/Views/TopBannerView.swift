@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import BraveShared
 
 struct TopBannerView: View {
     let companyUrl = "https://halalz.co"
@@ -21,7 +22,7 @@ struct TopBannerView: View {
                         .frame(height: 30)
                     
                     VStack(alignment: .leading) {
-                        Text("Brought to you by:")
+                        Text(Strings.kahfDnsBroughtToYouTitle)
                             .foregroundStyle(.gray)
                             .font(.system(size: 11))
                         Text("© Halalz Ltd, Turkey.")

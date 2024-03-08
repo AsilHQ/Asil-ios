@@ -3827,3 +3827,13 @@
 "kahfVPN.invalid.title" = "Den associerade VPN-konfigurationen finns inte i nätverkstilläggets inställningar eller är inte aktiverad.";
 "kahfVPN.reconnect.title" = "Det går inte att kommunicera med servern. Försök att ansluta igen.";
 "kahfVPN.configuration.error.title" = "Det går inte att kommunicera med servern. Försök att ansluta igen.";
+
+"kafhdns.popup.disconnected.title" = "Frånkopplad";
+"kafhdns.popup.connected.title" = "Ansluten";
+"kafhdns.popup.protectfromharam.title" = "Du är inte skyddad från Haram-webbplatser.";
+"kafhdns.popup.verifyprotection.title" = "Verifiera skydd: ";
+"kafhdns.popup.communicate.error.title" = "Kunde inte kommunicera med servern.";
+"kafhdns.popup.invalid.error.title" = "Den associerade VPN-konfigurationen finns inte i nätverksutvidgningens inställningar eller är inte aktiverad.";
+"kafhdns.popup.configuration.error.title" = "Konfigurationsfel. Har du raderat VPN-konfigurationen i inställningarna? Försök att ansluta igen.";
+"kafhdns.popup.haramwebsitecount.title" = "Du är skyddad från %@ Haram-webbplatser.";
+"kafhdns.popup.broughttoyou.title" = "Presenteras av:";

@@ -71,6 +71,19 @@ extension Strings {
   public static let safegazeTurnOnTitle = NSLocalizedString("safegaze.popup.turnon.title", tableName: "BraveShared", bundle: .module, value: "Turn on SafeGaze", comment: "")
 }
 
+// MARK: - KahfDNS pop up strings
+extension Strings {
+  public static let kahfDnsPopupDisconnectedTitle = NSLocalizedString("kafhdns.popup.disconnected.title", tableName: "BraveShared", bundle: .module, value: "Disconnected", comment: "")
+  public static let kahfDnsPopupConnectedTitle = NSLocalizedString("kafhdns.popup.connected.title", tableName: "BraveShared", bundle: .module, value: "Connected", comment: "")
+  public static let kahfDnsPopupProtectFromHaramTitle = NSLocalizedString("kafhdns.popup.protectfromharam.title", tableName: "BraveShared", bundle: .module, value: "You're not protected from Haram websites.", comment: "")
+  public static let kahfDnsPopupVerifyProtectionTitle = NSLocalizedString("kafhdns.popup.verifyprotection.title", tableName: "BraveShared", bundle: .module, value: "Verify protection: ", comment: "")
+  public static let kahfDnsPopupCommunicateErrorTitle = NSLocalizedString("kafhdns.popup.communicate.error.title", tableName: "BraveShared", bundle: .module, value: "Unable to communicate with server.", comment: "")
+  public static let kahfDnsPopupInvalidErrorTitle = NSLocalizedString("kafhdns.popup.invalid.error.title", tableName: "BraveShared", bundle: .module, value: "The associated VPN configuration doesn’t exist in the Network Extension preferences or isn’t enabled.", comment: "")
+  public static let kahfDnsPopupConfigurationErrorTitle = NSLocalizedString("kafhdns.popup.configuration.error.title", tableName: "BraveShared", bundle: .module, value: "Configuration error. Have you deleted VPN configuration in settings? Try connecting again.", comment: "")
+  public static let kahfDnsPopupHaramWebsiteCountTitle = NSLocalizedString("kafhdns.popup.haramwebsitecount.title", tableName: "BraveShared", bundle: .module, value: "You're protected from %@ Haram websites.", comment: "")
+  public static let kahfDnsBroughtToYouTitle = NSLocalizedString("kafhdns.popup.broughttoyou.title", tableName: "BraveShared", bundle: .module, value: "Brought to you by:", comment: "")
+}
+
 // MARK: - Kahf tube pop up strings
 extension Strings {
   public static let kahftubeGenderAllTitle = NSLocalizedString("kahftube.gender.all.title", tableName: "BraveShared", bundle: .module, value: "All", comment: "")

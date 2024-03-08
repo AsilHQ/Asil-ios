@@ -3827,3 +3827,13 @@
 "kahfVPN.invalid.title" = "네트워크 익스텐션 환경 설정에서 연결된 VPN 구성이 없거나 활성화되어 있지 않습니다.";
 "kahfVPN.reconnect.title" = "서버와 통신할 수 없습니다. 다시 연결해 보십시오.";
 "kahfVPN.configuration.error.title" = "서버와 통신할 수 없습니다. 다시 연결해 보십시오.";
+
+"kafhdns.popup.disconnected.title" = "연결이 끊어졌습니다";
+"kafhdns.popup.connected.title" = "연결됨";
+"kafhdns.popup.protectfromharam.title" = "하람 웹사이트로부터 보호되지 않았습니다.";
+"kafhdns.popup.verifyprotection.title" = "보호 확인: ";
+"kafhdns.popup.communicate.error.title" = "서버와 통신할 수 없습니다.";
+"kafhdns.popup.invalid.error.title" = "관련된 VPN 구성이 네트워크 익스텐션 환경 설정에 없거나 사용 중이 아닙니다.";
+"kafhdns.popup.configuration.error.title" = "구성 오류. 설정에서 VPN 구성을 삭제했나요? 다시 연결해보세요.";
+"kafhdns.popup.haramwebsitecount.title" = "하람 웹사이트로부터 %@개 보호받고 있습니다.";
+"kafhdns.popup.broughttoyou.title" = "제공자:";

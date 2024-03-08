@@ -3828,3 +3828,12 @@
 "kahfVPN.reconnect.title" = "無法與伺服器通訊。請嘗試重新連接。";
 "kahfVPN.configuration.error.title" = "無法與伺服器通訊。請嘗試重新連接。";
 
+"kafhdns.popup.disconnected.title" = "斷線";
+"kafhdns.popup.connected.title" = "已連線";
+"kafhdns.popup.protectfromharam.title" = "您未受到對 Haram 網站的保護。";
+"kafhdns.popup.verifyprotection.title" = "驗證保護：";
+"kafhdns.popup.communicate.error.title" = "無法與伺服器通訊。";
+"kafhdns.popup.invalid.error.title" = "相關的 VPN 設定不存在於網路擴充的偏好設定中或未啟用。";
+"kafhdns.popup.configuration.error.title" = "配置錯誤。您是否在設置中刪除了 VPN 配置？請嘗試重新連線。";
+"kafhdns.popup.haramwebsitecount.title" = "您受到保護，免受 %@ 個 Haram 網站的影響。";
+"kafhdns.popup.broughttoyou.title" = "呈獻者：";

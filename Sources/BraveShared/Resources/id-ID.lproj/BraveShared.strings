@@ -3827,3 +3827,13 @@
 "kahfVPN.invalid.title" = "Konfigurasi VPN terkait tidak ada dalam preferensi Ekstensi Jaringan atau tidak diaktifkan.";
 "kahfVPN.reconnect.title" = "Tidak dapat berkomunikasi dengan server. Coba hubungkan kembali.";
 "kahfVPN.configuration.error.title" = "Tidak dapat berkomunikasi dengan server. Coba hubungkan kembali.";
+
+"kafhdns.popup.disconnected.title" = "Terputus";
+"kafhdns.popup.connected.title" = "Terhubung";
+"kafhdns.popup.protectfromharam.title" = "Anda tidak dilindungi dari situs web Haram.";
+"kafhdns.popup.verifyprotection.title" = "Verifikasi perlindungan: ";
+"kafhdns.popup.communicate.error.title" = "Tidak dapat berkomunikasi dengan server.";
+"kafhdns.popup.invalid.error.title" = "Konfigurasi VPN yang terkait tidak ada dalam preferensi Ekstensi Jaringan atau tidak diaktifkan.";
+"kafhdns.popup.configuration.error.title" = "Kesalahan konfigurasi. Sudahkah Anda menghapus konfigurasi VPN di pengaturan? Coba hubungkan kembali.";
+"kafhdns.popup.haramwebsitecount.title" = "Anda dilindungi dari %@ situs web Haram.";
+"kafhdns.popup.broughttoyou.title" = "Dipersembahkan oleh:";

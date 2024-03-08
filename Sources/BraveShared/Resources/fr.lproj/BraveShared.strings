@@ -3827,3 +3827,13 @@
 "kahfVPN.invalid.title" = "La configuration VPN associée n'existe pas dans les préférences d'extension réseau ou n'est pas activée.";
 "kahfVPN.reconnect.title" = "Impossible de communiquer avec le serveur. Essayez de vous reconnecter.";
 "kahfVPN.configuration.error.title" = "Impossible de communiquer avec le serveur. Essayez de vous reconnecter.";
+
+"kafhdns.popup.disconnected.title" = "Déconnecté";
+"kafhdns.popup.connected.title" = "Connecté";
+"kafhdns.popup.protectfromharam.title" = "Vous n'êtes pas protégé contre les sites Haram.";
+"kafhdns.popup.verifyprotection.title" = "Vérifier la protection : ";
+"kafhdns.popup.communicate.error.title" = "Impossible de communiquer avec le serveur.";
+"kafhdns.popup.invalid.error.title" = "La configuration VPN associée n'existe pas dans les préférences de l'extension réseau ou n'est pas activée.";
+"kafhdns.popup.configuration.error.title" = "Erreur de configuration. Avez-vous supprimé la configuration VPN dans les paramètres ? Essayez de vous connecter à nouveau.";
+"kafhdns.popup.haramwebsitecount.title" = "Vous êtes protégé contre %@ sites Haram.";
+"kafhdns.popup.broughttoyou.title" = "Présenté par :";

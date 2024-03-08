@@ -3827,3 +3827,13 @@
 "kahfVPN.invalid.title" = "关联的 VPN 配置不存在于网络扩展首选项中或未启用。";
 "kahfVPN.reconnect.title" = "无法与服务器通信。请尝试重新连接。";
 "kahfVPN.configuration.error.title" = "无法与服务器通信。请尝试重新连接。";
+
+"kafhdns.popup.disconnected.title" = "断开连接";
+"kafhdns.popup.connected.title" = "已连接";
+"kafhdns.popup.protectfromharam.title" = "您未受到对 Haram 网站的保护。";
+"kafhdns.popup.verifyprotection.title" = "验证保护：";
+"kafhdns.popup.communicate.error.title" = "无法与服务器通讯。";
+"kafhdns.popup.invalid.error.title" = "相关的 VPN 配置不存在于网络扩展的偏好设置中或未启用。";
+"kafhdns.popup.configuration.error.title" = "配置错误。您是否在设置中删除了 VPN 配置？请尝试重新连接。";
+"kafhdns.popup.haramwebsitecount.title" = "您受到保护，免受 %@ 个 Haram 网站的影响。";
+"kafhdns.popup.broughttoyou.title" = "呈献者：";

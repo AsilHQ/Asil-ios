@@ -127,8 +127,6 @@ extension KahfVPNPopUpViewController {
       $0.translatesAutoresizingMaskIntoConstraints = false
     }
 
-    let kahfVPNView = KahfVPNView()
-
     override init(frame: CGRect) {
       super.init(frame: frame)
 

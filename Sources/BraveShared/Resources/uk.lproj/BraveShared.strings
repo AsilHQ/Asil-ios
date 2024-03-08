@@ -3827,3 +3827,13 @@
 "kahfVPN.invalid.title" = "Пов'язана конфігурація VPN відсутня в налаштуваннях розширення мережі або не активована.";
 "kahfVPN.reconnect.title" = "Неможливо зв'язатися з сервером. Спробуйте підключитися знову.";
 "kahfVPN.configuration.error.title" = "Неможливо зв'язатися з сервером. Спробуйте підключитися знову.";
+
+"kafhdns.popup.disconnected.title" = "Відключено";
+"kafhdns.popup.connected.title" = "Підключено";
+"kafhdns.popup.protectfromharam.title" = "Ви не захищені від Haram-сайтів.";
+"kafhdns.popup.verifyprotection.title" = "Перевірте захист: ";
+"kafhdns.popup.communicate.error.title" = "Неможливо зв'язатися з сервером.";
+"kafhdns.popup.invalid.error.title" = "Пов'язана конфігурація VPN відсутня в уподобаннях розширення мережі або не активована.";
+"kafhdns.popup.configuration.error.title" = "Помилка конфігурації. Чи ви видалили конфігурацію VPN у налаштуваннях? Спробуйте підключитися знову.";
+"kafhdns.popup.haramwebsitecount.title" = "Ви захищені від %@ Haram-сайтів.";
+"kafhdns.popup.broughttoyou.title" = "Представляється вам:";

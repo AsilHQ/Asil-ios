@@ -8,6 +8,7 @@
 
 import SwiftUI
 import NetworkExtension
+import BraveShared
 
 struct KahfDNSContentView: View {
     let companyUrl = "https://halalz.co"
@@ -60,7 +61,7 @@ struct KahfDNSContentView: View {
                             .tint(Color.gray)
                             .padding(.top, 30)
                     } else {
-                        if error != nil {
+                        if error != nil && !connected {
                             // error
                             Text(error!)
                                 .foregroundStyle(.red)
@@ -97,7 +98,7 @@ struct KahfDNSContentView: View {
                         if !connected {
                             // not connected
                             
-                            Text("Disconnected")
+                            Text(Strings.kahfDnsPopupDisconnectedTitle)
                                 .padding(.top, 35)
                                 .font(.system(size: 20))
                                 // .fontWeight(.bold)
@@ -105,7 +106,7 @@ struct KahfDNSContentView: View {
                                 .foregroundColor(Color.black)
                             
                             if error == nil {
-                                Text("You're not protected from Haram websites.")
+                                Text(Strings.kahfDnsPopupProtectFromHaramTitle)
                                     .font(.system(size: 15))
                                     .italic()
                                     .multilineTextAlignment(.center)
@@ -113,7 +114,7 @@ struct KahfDNSContentView: View {
                             }
                         } else {
                             // connected.
-                            Text("Connected")
+                            Text(Strings.kahfDnsPopupConnectedTitle)
                                 .padding(.top, 35)
                                 .font(.system(size: 20))
                                 // .fontWeight(.bold)
@@ -121,7 +122,7 @@ struct KahfDNSContentView: View {
                                 .foregroundColor(Color.black)
                             
                             if totalBlacklistHosts != nil {
-                                Text("You're protected from \(totalBlacklistHosts!) Haram websites.")
+                                Text(String(format: Strings.kahfDnsPopupHaramWebsiteCountTitle, totalBlacklistHosts!))
                                     .font(.system(size: 15))
                                     .italic()
                                     .multilineTextAlignment(.center)
@@ -130,7 +131,7 @@ struct KahfDNSContentView: View {
                             
                             // verify button
                             (
-                                Text("Verify protection: ")
+                                Text(Strings.kahfDnsPopupVerifyProtectionTitle)
                                 .foregroundColor(Color.black)
                                 + Text("https://check.kahfdns.com").underline()
                             )
@@ -202,7 +203,7 @@ struct KahfDNSContentView: View {
     func connectErrorCallback(connectError: String, showError: Bool) {
         print("Connect error: \(connectError)")
         if showError {
-            error = "Configuration error. Have you deleted VPN configuration in settings? Try connecting again."
+            error = Strings.kahfDnsPopupConfigurationErrorTitle
         }
     }
     
@@ -247,13 +248,13 @@ struct KahfDNSContentView: View {
         switch status {
         case NEVPNStatus.invalid:
             print("vpnStatusChanged: Invalid")
-            error = "The associated VPN configuration doesn’t exist in the Network Extension preferences or isn’t enabled."
+            error = Strings.kahfDnsPopupInvalidErrorTitle
             connected = false
             connecting = false
         case NEVPNStatus.disconnected:
             print("vpnStatusChanged: Disconnected")
             if connecting && VpnConnectObject.retried {
-                error = "Unable to communicate with server."
+                error = Strings.kahfDnsPopupCommunicateErrorTitle
             }
             connected = false
             connecting = false

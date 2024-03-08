@@ -2690,3 +2690,13 @@
 "kahfVPN.invalid.title" = "التكوين المرتبط بالـ VPN غير موجود في تفضيلات Network Extension أو غير مُمكّن.";
 "kahfVPN.reconnect.title" = "غير قادر على التواصل مع الخادم. حاول الاتصال مرة أخرى.";
 "kahfVPN.configuration.error.title" = "غير قادر على التواصل مع الخادم. حاول الاتصال مرة أخرى.";
+
+"kafhdns.popup.disconnected.title" = "منفصل";
+"kafhdns.popup.connected.title" = "متصل";
+"kafhdns.popup.protectfromharam.title" = "أنت غير محمي من مواقع الحرام.";
+"kafhdns.popup.verifyprotection.title" = "تحقق من الحماية: ";
+"kafhdns.popup.communicate.error.title" = "غير قادر على التواصل مع الخادم.";
+"kafhdns.popup.invalid.error.title" = "تكوين الـ VPN المرتبط لا يوجد في تفضيلات Network Extension أو غير ممكن.";
+"kafhdns.popup.configuration.error.title" = "خطأ في التكوين. هل قمت بحذف تكوين الـ VPN في الإعدادات؟ حاول الاتصال مرة أخرى.";
+"kafhdns.popup.haramwebsitecount.title" = "أنت محمي من %@ مواقع حرام.";
+"kafhdns.popup.broughttoyou.title" = "مقدمة من قبل:";

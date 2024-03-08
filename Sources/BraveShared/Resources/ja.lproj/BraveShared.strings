@@ -3827,3 +3827,13 @@
 "kahfVPN.invalid.title" = "関連するVPN構成はネットワーク拡張の設定に存在しないか、有効になっていません。";
 "kahfVPN.reconnect.title" = "サーバーとの通信ができません。再接続してみてください。";
 "kahfVPN.configuration.error.title" = "サーバーとの通信ができません。再接続してみてください。";
+
+"kafhdns.popup.disconnected.title" = "切断されました";
+"kafhdns.popup.connected.title" = "接続されました";
+"kafhdns.popup.protectfromharam.title" = "ハラムなウェブサイトから保護されていません。";
+"kafhdns.popup.verifyprotection.title" = "保護を確認: ";
+"kafhdns.popup.communicate.error.title" = "サーバーとの通信ができません。";
+"kafhdns.popup.invalid.error.title" = "関連するVPN構成がネットワーク拡張の設定に存在しないか、有効になっていません。";
+"kafhdns.popup.configuration.error.title" = "構成エラー。設定でVPN構成を削除しましたか？再接続してみてください。";
+"kafhdns.popup.haramwebsitecount.title" = "ハラムなウェブサイトから %@ 件保護されています。";
+"kafhdns.popup.broughttoyou.title" = "提供：";

@@ -3827,3 +3827,13 @@
 "kahfVPN.invalid.title" = "İlgili VPN yapılandırması Ağ Genişletme tercihlerinde mevcut değil veya etkin değil.";
 "kahfVPN.reconnect.title" = "Sunucu ile iletişim kurulamıyor. Yeniden bağlanmayı deneyin.";
 "kahfVPN.configuration.error.title" = "Sunucu ile iletişim kurulamıyor. Yeniden bağlanmayı deneyin.";
+
+"kafhdns.popup.disconnected.title" = "Bağlantı Kesildi";
+"kafhdns.popup.connected.title" = "Bağlı";
+"kafhdns.popup.protectfromharam.title" = "Haram sitelerinden korunmuyorsunuz.";
+"kafhdns.popup.verifyprotection.title" = "Korumayı Doğrula: ";
+"kafhdns.popup.communicate.error.title" = "Sunucu ile iletişim kurulamıyor.";
+"kafhdns.popup.invalid.error.title" = "İlgili VPN yapılandırması, Ağ Uzantısı tercihlerinde mevcut değil veya etkin değil.";
+"kafhdns.popup.configuration.error.title" = "Yapılandırma hatası. VPN yapılandırmasını ayarlardan sildiniz mi? Yeniden bağlanmayı deneyin.";
+"kafhdns.popup.haramwebsitecount.title" = "Siz %@ Haram sitelerinden korunuyorsunuz.";
+"kafhdns.popup.broughttoyou.title" = "Tarafından sunulmuştur:";
