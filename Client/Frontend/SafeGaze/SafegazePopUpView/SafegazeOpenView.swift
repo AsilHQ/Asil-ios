@@ -300,7 +300,7 @@ struct SafegazeOpenView: View {
                 Spacer()
                 
                 Button {
-                    guard let url = URL(string: "https://safegaze.com/support-safegaze/") else { return }
+                    guard let url = URL(string: "https://www.patreon.com/SafeGaze") else { return }
                     UIApplication.shared.open(url)
                 } label: {
                     ZStack {
