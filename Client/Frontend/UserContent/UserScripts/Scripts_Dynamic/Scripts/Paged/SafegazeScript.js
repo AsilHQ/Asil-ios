@@ -175,6 +175,8 @@ function unblurImage(image) {
 
 function setImageSrc(element, url) {
     const isBackgroundImage = element.getAttribute('hasBackgroundImage') && element.tagName !== "IMG" && element.tagName !== "image";
+    element.setAttribute('original-url', element.src)
+    element.setAttribute('processed-url', url)
     if (isBackgroundImage) {
         element.style.backgroundImage = `url(${url})`;
         element.setAttribute('data-replaced', 'true');
@@ -191,6 +193,7 @@ function setImageSrc(element, url) {
             element.dataset.src = url;
         }
     }
+    createButtons(element)
     sendMessage("replaced"); //Sends message for total blurred imaged count
 }
 
@@ -443,6 +446,40 @@ class RemoteAnalyzer {
         return "";
       }
   };
+}
+
+
+function createButtons(image) {
+    var container = document.createElement('div');
+    container.style.position = 'relative';
+    container.style.display = 'inline-block';
+    container.style.width = image.width + 50 + 'px';
+    container.style.height = image.height + 50 + 'px';
+    container.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+    container.addEventListener('click', function(event) {
+        event.preventDefault();
+    });
+
+    image.parentNode.insertBefore(container, image);
+    container.appendChild(image);
+
+    var button1 = document.createElement('button');
+    button1.textContent = 'Button';
+    button1.classList.add('button');
+    button1.style.position = 'absolute';
+    button1.style.top = '10px';
+    button1.style.left = '10px';
+    button1.addEventListener('click', function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (image.src === image.getAttribute("original-url")) {
+            image.src = image.getAttribute("processed-url")
+        } else {
+            image.src = image.getAttribute("original-url")
+        }
+        sendMessage('Button 1 clicked!');
+    });
+    container.appendChild(button1);
 }
 
 replaceImagesWithApiResults();
