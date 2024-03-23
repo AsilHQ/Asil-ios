@@ -57,7 +57,7 @@ async function sendSingleRequest(base64, src) {
             }
         }
     } catch (error) {
-        sendMessage(`Error occurred while processing ${src}: ${error.message}`);
+        sendMessage('Error occurred during single /api/v1/safegazeSendBase64RequestsHandler request:' + error);
     }
 }
 
@@ -70,13 +70,6 @@ async function safegazeSendBase64RequestsHandler (srcs, base64s) {
         }
     } catch(error) {
         sendMessage('Error occurred during /api/v1/safegazeSendBase64RequestsHandler request:' + error);
-        /*srcs.map(src => {
-            sendMessage("Error media:" + src)
-            const correspondingMedia = requestFailImages[src];
-            if (correspondingMedia) {
-                unblurImage(correspondingMedia)
-            }
-        });*/
     }
 };
 
@@ -263,6 +256,7 @@ const analyzeImages = async (batch) => {
     }
   } catch (error) {
       sendMessage('Error occurred during /api/v1/analyze request:' + error);
+      await sendConvertToBase64Request(batch);
   }
 };
 
@@ -453,8 +447,8 @@ function createButtons(image) {
     var container = document.createElement('div');
     container.style.position = 'relative';
     container.style.display = 'inline-block';
-    container.style.width = image.width + 50 + 'px';
-    container.style.height = image.height + 50 + 'px';
+    container.style.width = image.width + 'px';
+    container.style.height = image.height + 'px';
     container.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
     container.addEventListener('click', function(event) {
         event.preventDefault();
@@ -463,23 +457,97 @@ function createButtons(image) {
     image.parentNode.insertBefore(container, image);
     container.appendChild(image);
 
-    var button1 = document.createElement('button');
-    button1.textContent = 'Button';
-    button1.classList.add('button');
-    button1.style.position = 'absolute';
-    button1.style.top = '10px';
-    button1.style.left = '10px';
-    button1.addEventListener('click', function(event) {
+    var mainButton = document.createElement('button');
+    var imgElement = document.createElement('img');
+    imgElement.setAttribute('alt', "logo");
+    imgElement.src = 'data:image/png;base64,' + window.safegazeImageBase64;
+    imgElement.style.width = '20px';
+    imgElement.style.height = '20px';
+    mainButton.appendChild(imgElement);
+    mainButton.classList.add('button');
+    mainButton.style.position = 'absolute';
+    mainButton.style.top = '5px';
+    mainButton.style.left = '5px';
+
+    var dropdownContainer = document.createElement('div');
+    dropdownContainer.classList.add('dropdown-container');
+    dropdownContainer.style.position = 'absolute';
+    dropdownContainer.style.top = '30px';
+    dropdownContainer.style.left = '5px';
+    dropdownContainer.style.display = 'none';
+    dropdownContainer.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+    dropdownContainer.style.padding = '10px';
+    container.appendChild(dropdownContainer);
+
+    mainButton.addEventListener('click', function(event) {
         event.stopPropagation();
         event.preventDefault();
-        if (image.src === image.getAttribute("original-url")) {
-            image.src = image.getAttribute("processed-url")
-        } else {
-            image.src = image.getAttribute("original-url")
-        }
-        sendMessage('Button 1 clicked!');
+        toggleDropdown();
     });
-    container.appendChild(button1);
+    container.appendChild(mainButton);
+
+    var button1 = document.createElement('button');
+    button1.classList.add('button');
+    button1.style.display = 'block';
+    button1.style.marginBottom = '5px';
+    button1.style.width = dropdownContainer.style.width - 10 + 'px';
+
+
+    var button2 = document.createElement('button');
+    button2.textContent = 'Report Issue';
+    button2.classList.add('button');
+    button2.style.display = 'block';
+    button2.style.marginBottom = '5px';
+    button2.style.width = dropdownContainer.style.width - 10 + 'px';
+    button2.style.height =  + 'px';
+    button2.addEventListener('click', function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+        toggleDropdown();
+    });
+
+    sendMessage("image.width" + image.width + "image.height" + image.height)
+    if (image.width > 150 ) {
+        dropdownContainer.style.width = '100px';
+        sendMessage("image-pixel-bigger")
+    }
+    else {
+        dropdownContainer.style.width = image.width - 5 + 'px';
+        dropdownContainer.style.height = image.height - 25 + 'px';
+        button1.style.height = '10px';
+        button2.style.height =  '10px';
+        button1.style.fontSize = '10px';
+        button2.style.fontSize = '10px';
+        sendMessage("image-pixel-smaller")
+    }
+
+    function toggleDropdown() {
+        if (dropdownContainer.style.display === 'none') {
+            dropdownContainer.style.display = 'block';
+            if (image.src === image.getAttribute("processed-url")) {
+                button1.textContent = 'Show Original';
+                button1.addEventListener('click', function(event) {
+                    event.stopPropagation()
+                    event.preventDefault()
+                    image.src = image.getAttribute("original-url")
+                    toggleDropdown()
+                });
+            }
+            else {
+                button1.textContent = 'Show Purified';
+                button1.addEventListener('click', function(event) {
+                    event.stopPropagation()
+                    event.preventDefault()
+                    image.src = image.getAttribute("processed-url")
+                    toggleDropdown()
+                });
+            }
+            dropdownContainer.appendChild(button1);
+            dropdownContainer.appendChild(button2);
+        } else {
+            dropdownContainer.style.display = 'none';
+        }
+    }
 }
 
 replaceImagesWithApiResults();

@@ -29,7 +29,11 @@ class SafegazeContentScriptHandler: TabContentScript {
     static let messageHandlerName = "safegazeMessageHandler"
     static let scriptSandbox: WKContentWorld = .page
     static let userScript: WKUserScript? = {
-        let scriptSetup = "window.blurIntensity = \(Preferences.Safegaze.blurIntensity.value);"
+        let scriptSetup = """
+                             window.blurIntensity = \(Preferences.Safegaze.blurIntensity.value);
+                             window.safegazeImageBase64 = "\(UIImage(sharedNamed: "sg-logo-only")!.pngData()!.base64EncodedString)";
+                          """
+
         guard var script = loadUserScript(named: scriptName) else {
             return nil
         }
