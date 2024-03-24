@@ -448,25 +448,12 @@ extension BrowserViewController: TopToolbarDelegate {
     navigationHelper.openBookmarks()
   }
 
-  func topToolbarDidTapBraveRewardsButton(_ topToolbar: TopToolbarView) {}
-
-  func topToolbarDidLongPressBraveRewardsButton(_ topToolbar: TopToolbarView) {
-    showRewardsDebugSettings()
-  }
-
   func topToolbarDidTapMenuButton(_ topToolbar: TopToolbarView) {
     tabToolbarDidPressMenu(topToolbar)
   }
 
   func topToolbarDidPressQrCodeButton(_ urlBar: TopToolbarView) {
     scanQRCode()
-  }
-
-  func topToolbarDidTapWalletButton(_ urlBar: TopToolbarView) {
-    guard let selectedTab = tabManager.selectedTab else {
-      return
-    }
-    presentWalletPanel(from: selectedTab.getOrigin(), with: selectedTab.tabDappStore)
   }
     
   func topToolbarDidTapShareButton(_ urlBar: TopToolbarView) {

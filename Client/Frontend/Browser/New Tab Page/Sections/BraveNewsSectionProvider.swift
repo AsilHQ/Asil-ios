@@ -42,17 +42,14 @@ class BraveNewsSectionProvider: NSObject, NTPObservableSectionProvider {
   }
 
   let dataSource: FeedDataSource
-  let rewards: BraveRewards
   var sectionDidChange: (() -> Void)?
   var actionHandler: (Action) -> Void
 
   init(
     dataSource: FeedDataSource,
-    rewards: BraveRewards,
     actionHandler: @escaping (Action) -> Void
   ) {
     self.dataSource = dataSource
-    self.rewards = rewards
     self.actionHandler = actionHandler
 
     super.init()
@@ -178,7 +175,7 @@ class BraveNewsSectionProvider: NSObject, NTPObservableSectionProvider {
     if indexPath.item == 0, let cell = cell as? FeedCardCell<BraveNewsOptInView> {
       cell.content.graphicAnimationView.play()
     }
-    if let card = dataSource.state.cards?[safe: indexPath.item] {
+    /*if let card = dataSource.state.cards?[safe: indexPath.item] {
       if case .partner(let item) = card,
         let creativeInstanceID = item.content.creativeInstanceID {
         iabTrackedCellContexts[indexPath] = .init(collectionView: collectionView) { [weak self] in
@@ -198,7 +195,7 @@ class BraveNewsSectionProvider: NSObject, NTPObservableSectionProvider {
           )
         }
       }
-    }
+    }*/
   }
 
   func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {

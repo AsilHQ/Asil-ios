@@ -18,7 +18,6 @@ let package = Package(
     .library(name: "BraveShared", targets: ["BraveShared"]),
     .library(name: "BraveUI", targets: ["BraveUI"]),
     .library(name: "DesignSystem", targets: ["DesignSystem"]),
-    .library(name: "BraveWallet", targets: ["BraveWallet"]),
     .library(name: "Data", targets: ["Data"]),
     .library(name: "Storage", targets: ["Storage", "sqlcipher"]),
     .library(name: "BrowserIntentsModels", targets: ["BrowserIntentsModels"]),
@@ -62,7 +61,6 @@ let package = Package(
       dependencies: [
         "BraveShared",
         "Shared",
-        "BraveWallet",
         "BraveCore",
         "MaterialComponents",
         "BraveUI",
@@ -282,27 +280,6 @@ let package = Package(
       plugins: ["LoggerPlugin"]
     ),
     .target(
-      name: "BraveWallet",
-      dependencies: [
-        "Data",
-        "BraveCore",
-        "MaterialComponents",
-        "BraveShared",
-        "BraveUI",
-        "DesignSystem",
-        "Strings",
-        "PanModal",
-        "SDWebImage",
-        "SDWebImageSwiftUI",
-        "SnapKit",
-        "Then",
-        .product(name: "BigNumber", package: "Swift-BigInt"),
-        .product(name: "Algorithms", package: "swift-algorithms"),
-        .product(name: "Collections", package: "swift-collections"),
-      ],
-      plugins: ["LoggerPlugin"]
-    ),
-    .target(
       name: "BrowserIntentsModels",
       sources: ["BrowserIntents.intentdefinition", "CustomIntentHandler.swift"],
       plugins: ["IntentBuilderPlugin"]
@@ -404,14 +381,6 @@ let package = Package(
         .copy("Certificates/expired.badssl.com/untrusted.badssl.com-root.cer"),
         .copy("Certificates/certviewer/brave.com.cer"),
         .copy("Certificates/certviewer/github.com.cer"),
-      ]
-    ),
-    .testTarget(
-      name: "BraveWalletTests",
-      dependencies: [
-        "BraveWallet",
-        "DataTestsUtils",
-        .product(name: "CustomDump", package: "swift-custom-dump")
       ]
     ),
     .testTarget(name: "StorageTests", dependencies: ["Storage", "BraveSharedTestUtils"], resources: [.copy("fixtures/v33.db"), .copy("testcert1.pem"), .copy("testcert2.pem")]),

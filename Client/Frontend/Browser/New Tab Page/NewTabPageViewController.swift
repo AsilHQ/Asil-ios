@@ -75,9 +75,7 @@ protocol NewTabPageDelegate: AnyObject {
   func focusURLBar()
   func navigateToInput(_ input: String, inNewTab: Bool, switchingToPrivateMode: Bool)
   func handleFavoriteAction(favorite: Favorite, action: BookmarksAction)
-  func brandedImageCalloutActioned(_ state: BrandedImageCalloutState)
   func tappedQRCodeButton(url: URL)
-  func showNTPOnboarding()
 }
 
 /// The new tab page. Shows users a variety of information, including stats and
@@ -102,7 +100,6 @@ class NewTabPageViewController: UIViewController {
   private let layout = NewTabPageFlowLayout()
   private let collectionView: NewTabCollectionView
   private weak var tab: Tab?
-  private let rewards: BraveRewards
 
   private var background: NewTabPageBackground
   private let backgroundView = NewTabPageBackgroundView()
@@ -126,21 +123,17 @@ class NewTabPageViewController: UIViewController {
   private let feedOverlayView = NewTabPageFeedOverlayView()
   private var preventReloadOnBraveNewsEnabledChange = false
 
-  private let notifications: NewTabPageNotifications
   private var cancellables: Set<AnyCancellable> = []
 
   init(
     tab: Tab,
     profile: Profile,
     dataSource: NTPDataSource,
-    feedDataSource: FeedDataSource,
-    rewards: BraveRewards
+    feedDataSource: FeedDataSource
   ) {
     self.tab = tab
-    self.rewards = rewards
     self.feedDataSource = feedDataSource
     background = NewTabPageBackground(dataSource: dataSource)
-    notifications = NewTabPageNotifications(rewards: rewards)
     collectionView = NewTabCollectionView(frame: .zero, collectionViewLayout: layout)
     super.init(nibName: nil, bundle: nil)
 
@@ -306,11 +299,6 @@ class NewTabPageViewController: UIViewController {
     super.viewDidAppear(animated)
 
     reportSponsoredImageBackgroundEvent(.viewed)
-    presentNotification()
-
-    DispatchQueue.main.asyncAfter(deadline: .now() + 0.50) {
-      self.delegate?.showNTPOnboarding()
-    }
   }
 
   override func viewSafeAreaInsetsDidChange() {
@@ -334,30 +322,8 @@ class NewTabPageViewController: UIViewController {
 
   // MARK: - Background
 
-  /// Hide any visible sponsored image notification if the current background
-  /// is no longer a sponsored image. If the visible notification is not
-  /// for sponsored images, this does nothing.
-  private func hideVisibleSponsoredImageNotification() {
-    if case .brandedImages = visibleNotification {
-      guard let background = background.currentBackground else {
-        hideNotification()
-        return
-      }
-      switch background.type {
-      case .regular, .withQRCode:
-        hideNotification()
-      case .withBrandLogo:
-        // Current background is still a sponsored image so it can stay
-        // visible
-        break
-      }
-    }
-  }
-
   func setupBackgroundImage() {
     collectionView.reloadData()
-
-    hideVisibleSponsoredImageNotification()
 
     if let backgroundType = background.currentBackground?.type {
       switch backgroundType {
@@ -426,73 +392,13 @@ class NewTabPageViewController: UIViewController {
     else {
       return
     }
-    rewards.ads.reportNewTabPageAdEvent(
-      background.wallpaperId.uuidString,
-      creativeInstanceId: creativeInstanceId,
-      eventType: event
-    )
   }
 
   // MARK: - Notifications
 
   private var notificationController: UIViewController?
-  private var visibleNotification: NewTabPageNotifications.NotificationType?
   private var notificationShowing: Bool {
     notificationController?.parent != nil
-  }
-
-  private func presentNotification() {
-    if PrivateBrowsingManager.shared.isPrivateBrowsing || notificationShowing {
-      return
-    }
-
-    var isShowingSponseredImage = false
-    if case .withBrandLogo(let logo) = background.currentBackground?.type, logo != nil {
-      isShowingSponseredImage = true
-    }
-
-    guard
-      let notification = notifications.notificationToShow(
-        isShowingBackgroundImage: background.currentBackground != nil,
-        isShowingSponseredImage: isShowingSponseredImage
-      )
-    else {
-      return
-    }
-
-    var vc: UIViewController?
-
-    switch notification {
-    case .brandedImages(let state):
-      if Preferences.NewTabPage.atleastOneNTPNotificationWasShowed.value { return }
-
-      guard let notificationVC = NTPNotificationViewController(state: state, rewards: rewards) else { return }
-
-      notificationVC.closeHandler = { [weak self] in
-        self?.notificationController = nil
-      }
-
-      notificationVC.learnMoreHandler = { [weak self] in
-        self?.delegate?.brandedImageCalloutActioned(state)
-      }
-
-      vc = notificationVC
-    }
-
-    guard let viewController = vc else { return }
-    notificationController = viewController
-    visibleNotification = notification
-
-    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
-      guard let self = self else { return }
-
-      if case .brandedImages = notification {
-        Preferences.NewTabPage.atleastOneNTPNotificationWasShowed.value = true
-      }
-
-      self.addChild(viewController)
-      self.view.addSubview(viewController.view)
-    }
   }
 
   private func hideNotification() {
@@ -541,10 +447,6 @@ class NewTabPageViewController: UIViewController {
       Preferences.BraveNews.userOptedIn.value = true
       Preferences.BraveNews.isShowingOptIn.value = false
       Preferences.BraveNews.isEnabled.value = true
-      rewards.ads.initialize { [weak self] _ in
-        // Initialize ads if it hasn't already been done
-        self?.loadFeedContents()
-      }
     case .emptyCardTappedSourcesAndSettings:
       tappedBraveNewsSettings()
     case .errorCardTappedRefresh:
@@ -564,14 +466,6 @@ class NewTabPageViewController: UIViewController {
     case .itemAction(.opened(let inNewTab, let switchingToPrivateMode), let context):
       guard let url = context.item.content.url else { return }
       let item = context.item
-      if !switchingToPrivateMode, item.content.contentType == .partner,
-        let creativeInstanceID = item.content.creativeInstanceID {
-        rewards.ads.reportPromotedContentAdEvent(
-          item.content.urlHash,
-          creativeInstanceId: creativeInstanceID,
-          eventType: .clicked
-        )
-      }
       delegate?.navigateToInput(
         url.absoluteString,
         inNewTab: inNewTab,
@@ -590,13 +484,6 @@ class NewTabPageViewController: UIViewController {
       }
     case .inlineContentAdAction(.opened(let inNewTab, let switchingToPrivateMode), let ad):
       guard let url = ad.targetURL.asURL else { return }
-      if !switchingToPrivateMode {
-        rewards.ads.reportInlineContentAdEvent(
-          ad.placementID,
-          creativeInstanceId: ad.creativeInstanceID,
-          eventType: .clicked
-        )
-      }
       delegate?.navigateToInput(
         url.absoluteString,
         inNewTab: inNewTab,

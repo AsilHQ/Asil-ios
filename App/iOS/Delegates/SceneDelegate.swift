@@ -422,9 +422,6 @@ extension SceneDelegate {
       // Add restoration class, the factory that will return the ViewController we will restore with.
       $0.restorationIdentifier = NSStringFromClass(BrowserViewController.self)
       $0.restorationClass = SceneDelegate.self
-
-      // Remove Ad-Grant Reminders
-      $0.removeScheduledAdGrantReminders()
     }
 
     return browserViewController

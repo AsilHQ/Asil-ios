@@ -9,7 +9,6 @@ import BraveUI
 import BraveShared
 import Shared
 import Data
-import BraveWallet
 import BraveCore
 import os.log
 
@@ -68,46 +67,17 @@ extension BrowserViewController {
       }*/
       MenuItemFactory.button(for: .settings) { [unowned self, unowned menuController] in
         let isPrivateMode = PrivateBrowsingManager.shared.isPrivateBrowsing
-        let keyringService = BraveWallet.KeyringServiceFactory.get(privateMode: isPrivateMode)
-        let walletService = BraveWallet.ServiceFactory.get(privateMode: isPrivateMode)
-        let rpcService = BraveWallet.JsonRpcServiceFactory.get(privateMode: isPrivateMode)
-        
-        var keyringStore: KeyringStore?
-        if let keyringService = keyringService,
-           let walletService = walletService,
-           let rpcService = rpcService {
-          keyringStore = KeyringStore(
-            keyringService: keyringService,
-            walletService: walletService,
-            rpcService: rpcService
-          )
-        }
-        
-        let cryptoStore = CryptoStore.from(privateMode: isPrivateMode)
 
         let vc = SettingsViewController(
           profile: self.profile,
           tabManager: self.tabManager,
           feedDataSource: self.feedDataSource,
-          rewards: self.rewards,
-          legacyWallet: self.legacyWallet,
           windowProtection: self.windowProtection,
-          braveCore: self.braveCore,
-          keyringStore: keyringStore,
-          cryptoStore: cryptoStore
+          braveCore: self.braveCore
         )
         vc.settingsDelegate = self
         menuController.pushInnerMenu(vc)
       }
-    }
-  }
-
-  func presentWallet() {
-    guard let walletStore = self.walletStore ?? newWalletStore() else { return }
-    let vc = WalletHostingViewController(walletStore: walletStore, faviconRenderer: FavIconImageRenderer())
-    vc.delegate = self
-    self.dismiss(animated: true) {
-      self.present(vc, animated: true)
     }
   }
 

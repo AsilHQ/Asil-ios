@@ -11,7 +11,6 @@ import BraveShared
 import SwiftyJSON
 import Data
 import os.log
-import BraveWallet
 
 protocol TabContentScriptLoader {
   static func loadUserScript(named: String) -> String?
@@ -41,10 +40,7 @@ protocol TabDelegate {
   func tab(_ tab: Tab, didSelectSearchWithBraveFor selectedText: String)
   func tab(_ tab: Tab, didCreateWebView webView: WKWebView)
   func tab(_ tab: Tab, willDeleteWebView webView: WKWebView)
-  func showRequestRewardsPanel(_ tab: Tab)
   func stopMediaPlayback(_ tab: Tab)
-  func showWalletNotification(_ tab: Tab, origin: URLOrigin)
-  func updateURLBarWalletButton()
   func isTabVisible(_ tab: Tab) -> Bool
 }
 
@@ -81,21 +77,6 @@ class Tab: NSObject {
 
   var secureContentState: TabSecureContentState = .unknown
 
-  var walletEthProvider: BraveWalletEthereumProvider?
-  var walletEthProviderScript: WKUserScript?
-  var walletSolProvider: BraveWalletSolanaProvider?
-  var walletSolProviderScripts: [BraveWalletProviderScriptKey: String] = [:]
-  var tabDappStore: TabDappStore = .init()
-  var isWalletIconVisible: Bool = false {
-    didSet {
-      tabDelegate?.updateURLBarWalletButton()
-    }
-  }
-  var walletKeyringService: BraveWalletKeyringService? {
-    didSet {
-      walletKeyringService?.add(self)
-    }
-  }
   // PageMetadata is derived from the page content itself, and as such lags behind the
   // rest of the tab.
   var pageMetadata: PageMetadata?
@@ -1076,8 +1057,6 @@ extension Tab {
   private func updateInjectedScripts() {
     UserScriptManager.shared.loadCustomScripts(into: self,
                                                userScripts: userScripts,
-                                               customScripts: customUserScripts,
-                                               walletEthProviderScript: walletEthProviderScript,
-                                               walletSolProviderScripts: walletSolProviderScripts)
+                                               customScripts: customUserScripts)
   }
 }

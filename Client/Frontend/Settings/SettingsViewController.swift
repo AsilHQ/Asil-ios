@@ -13,7 +13,6 @@ import Data
 import WebKit
 import BraveCore
 import SwiftUI
-import BraveWallet
 import BraveUI
 import BraveVPN
 import BraveNews
@@ -39,7 +38,6 @@ class SettingsViewController: TableViewController {
 
   private let profile: Profile
   private let tabManager: TabManager
-  private let rewards: BraveRewards?
   private let legacyWallet: BraveLedger?
   private let feedDataSource: FeedDataSource
   private let historyAPI: BraveHistoryAPI
@@ -47,8 +45,6 @@ class SettingsViewController: TableViewController {
   private let syncAPI: BraveSyncAPI
   private let syncProfileServices: BraveSyncProfileServiceIOS
   private let p3aUtilities: BraveP3AUtils
-  private let keyringStore: KeyringStore?
-  private let cryptoStore: CryptoStore?
   private let windowProtection: WindowProtection?
 
   private let featureSectionUUID: UUID = .init()
@@ -58,17 +54,13 @@ class SettingsViewController: TableViewController {
     profile: Profile,
     tabManager: TabManager,
     feedDataSource: FeedDataSource,
-    rewards: BraveRewards? = nil,
     legacyWallet: BraveLedger? = nil,
     windowProtection: WindowProtection?,
-    braveCore: BraveCoreMain,
-    keyringStore: KeyringStore? = nil,
-    cryptoStore: CryptoStore? = nil
+    braveCore: BraveCoreMain
   ) {
     self.profile = profile
     self.tabManager = tabManager
     self.feedDataSource = feedDataSource
-    self.rewards = rewards
     self.legacyWallet = legacyWallet
     self.windowProtection = windowProtection
     self.historyAPI = braveCore.historyAPI
@@ -76,9 +68,6 @@ class SettingsViewController: TableViewController {
     self.syncAPI = braveCore.syncAPI
     self.syncProfileServices = braveCore.syncProfileService
     self.p3aUtilities = braveCore.p3aUtils
-    self.keyringStore = keyringStore
-    self.cryptoStore = cryptoStore
-
     super.init(style: .insetGrouped)
   }
 
@@ -99,12 +88,6 @@ class SettingsViewController: TableViewController {
     view.backgroundColor = .braveGroupedBackground
     view.tintColor = .braveBlurpleTint
     navigationController?.view.backgroundColor = .braveGroupedBackground
-  }
-
-  private func displayRewardsDebugMenu() {
-    guard let rewards = rewards else { return }
-    let settings = RewardsDebugSettingsViewController(rewards: rewards, legacyWallet: legacyWallet)
-    navigationController?.pushViewController(settings, animated: true)
   }
 
   private func displayBraveNewsDebugMenu() {
@@ -215,25 +198,6 @@ class SettingsViewController: TableViewController {
       ],
       uuid: featureSectionUUID.uuidString
     )
-
-    if BraveRewards.isAvailable, let rewards = rewards {
-      section.rows += [
-        Row(
-          text: Strings.braveRewardsTitle,
-          selection: { [unowned self] in
-            let rewardsVC = BraveRewardsSettingsViewController(rewards, legacyWallet: self.legacyWallet)
-            rewardsVC.walletTransferLearnMoreTapped = { [weak self] in
-              guard let self = self else { return }
-              self.dismiss(animated: true) {
-                self.presentingViewController?.dismiss(animated: true) {
-                  self.settingsDelegate?.settingsOpenURLInNewTab(BraveUX.braveRewardsLearnMoreURL)
-                }
-              }
-            }
-            self.navigationController?.pushViewController(rewardsVC, animated: true)
-          }, image: UIImage(named: "settings-brave-rewards", in: .module, compatibleWith: nil)!, accessory: .disclosureIndicator)
-      ]
-    }
 
     section.rows.append(
       Row(
@@ -627,8 +591,6 @@ class SettingsViewController: TableViewController {
   }()
 
   private lazy var debugSection: Static.Section? = {
-    if AppConstants.buildChannel.isPublic { return nil }
-
     return Static.Section(
       rows: [
         Row(text: "Region: \(Locale.current.regionCode ?? "--")"),
@@ -656,11 +618,6 @@ class SettingsViewController: TableViewController {
             let controller = UIHostingController(rootView: BraveCoreDebugSwitchesView())
             self.navigationController?.pushViewController(controller, animated: true)
           }, accessory: .disclosureIndicator, cellClass: MultilineSubtitleCell.self),
-        Row(
-          text: "View Rewards Debug Menu",
-          selection: { [unowned self] in
-            self.displayRewardsDebugMenu()
-          }, accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self),
         Row(
           text: "View Brave News Debug Menu",
           selection: { [unowned self] in
@@ -721,44 +678,7 @@ class SettingsViewController: TableViewController {
   }()
 
   private func setUpSections() {
-    if let cryptoStore = cryptoStore, let keyringStore = keyringStore {
-      let settingsStore = cryptoStore.settingsStore
-      settingsStore.isDefaultKeyringCreated { [weak self] created in
-        guard let self = self else { return }
-        var copyOfSections = self.sections
-        if let featureSectionIndex = self.sections.firstIndex(where: {
-          $0.uuid == self.featureSectionUUID.uuidString
-        }) {
-          let walletRowIndex = copyOfSections[featureSectionIndex].rows.firstIndex(where: {
-            $0.uuid == self.walletRowUUID.uuidString
-          })
-          if created, walletRowIndex == nil {
-            settingsStore.addKeyringServiceObserver(self)
-            copyOfSections[featureSectionIndex].rows.append(
-              Row(
-                text: Strings.Wallet.braveWallet,
-                selection: { [unowned self] in
-                  let walletSettingsView = WalletSettingsView(
-                    settingsStore: settingsStore,
-                    networkStore: cryptoStore.networkStore,
-                    keyringStore: keyringStore
-                  )
-                  let vc = UIHostingController(rootView: walletSettingsView)
-                  self.navigationController?.pushViewController(vc, animated: true)
-                },
-                image: UIImage(named: "menu-crypto", in: .module, compatibleWith: nil)!.template,
-                accessory: .disclosureIndicator,
-                uuid: self.walletRowUUID.uuidString)
-            )
-          } else if !created, let index = walletRowIndex {
-            copyOfSections.remove(at: index)
-          }
-        }
-        self.dataSource.sections = copyOfSections
-      }
-    } else {
       self.dataSource.sections = sections
-    }
   }
 
   // MARK: - Actions

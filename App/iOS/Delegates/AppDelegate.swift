@@ -55,7 +55,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
       }
     }
-    switches.append(.init(key: .rewardsFlags, value: BraveRewards.Configuration.current().flags))
     return BraveCoreMain(userAgent: UserAgent.mobile, additionalSwitches: switches)
   }()
   
@@ -252,10 +251,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     AdblockEngine.setDomainResolver(AdblockEngine.defaultDomainResolver)
 
     UIView.applyAppearanceDefaults()
-
-    if Preferences.Rewards.isUsingBAP.value == nil {
-      Preferences.Rewards.isUsingBAP.value = Locale.current.regionCode == "JP"
-    }
 
     // If a shortcut was launched, display its information and take the appropriate action
     if let shortcutItem = launchOptions?[UIApplication.LaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {

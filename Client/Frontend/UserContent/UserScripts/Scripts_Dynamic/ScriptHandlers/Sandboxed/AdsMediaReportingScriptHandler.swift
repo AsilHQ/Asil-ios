@@ -9,11 +9,9 @@ import BraveCore
 import os.log
 
 class AdsMediaReportingScriptHandler: TabContentScript {
-  let rewards: BraveRewards
   weak var tab: Tab?
 
-  init(rewards: BraveRewards, tab: Tab) {
-    self.rewards = rewards
+  init(tab: Tab) {
     self.tab = tab
   }
 
@@ -33,15 +31,6 @@ class AdsMediaReportingScriptHandler: TabContentScript {
     
     guard let body = message.body as? [String: AnyObject] else {
       return
-    }
-
-    if let isPlaying = body["data"] as? Bool, rewards.isEnabled {
-      guard let tab = tab else { return }
-      if isPlaying {
-        rewards.reportMediaStarted(tabId: Int(tab.rewardsId))
-      } else {
-        rewards.reportMediaStopped(tabId: Int(tab.rewardsId))
-      }
     }
   }
 }
