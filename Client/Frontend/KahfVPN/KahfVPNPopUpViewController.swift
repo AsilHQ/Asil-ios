@@ -132,7 +132,7 @@ extension KahfVPNPopUpViewController {
 
       backgroundColor = .braveBackground
 
-      stackView.addArrangedSubview(KahfDNSContentView.redirect())
+     stackView.addArrangedSubview(KahfGuardContentView.redirect())
 
       addSubview(scrollView)
       scrollView.addSubview(stackView)
