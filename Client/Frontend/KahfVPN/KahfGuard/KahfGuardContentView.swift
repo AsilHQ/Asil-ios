@@ -49,7 +49,7 @@ struct KahfGuardContentView: View {
                 ScrollView {
                     // company
                     TopBannerView(showConnectedMessage: $showConnectedMessage)
-                    
+
                     // logo
                     Image(.logo)
                         .resizable()
@@ -61,8 +61,8 @@ struct KahfGuardContentView: View {
                         // connecting...
                         ProgressView()
                             .tint(Color.gray)
-                            .padding(.top, 40)
-                        
+                            .padding(.top, 30)
+
                     } else {
                         if error != nil && !connected {
                             // error
@@ -73,7 +73,7 @@ struct KahfGuardContentView: View {
                                 .padding(.bottom, -10)
                                 .multilineTextAlignment(.center)
                         }
-                        
+
                         Toggle("", isOn: $connectSwitch)
                             .labelsHidden()
                             .toggleStyle(.switch)
@@ -96,16 +96,16 @@ struct KahfGuardContentView: View {
                             .onHover { inside in
                                 onConnectToggleHover(inside: inside)
                             }
-                        
+
                         if !connected {
                             // not connected
 
                             Text("Disconnected")
-                                .padding(.top, 40)
+                                .padding(.top, 20)
                                 .font(.custom("Poppins-Bold", size: 22))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.black)
-                            
+
                             if error == nil {
                                 Text("You're not protected from Haram websites.")
                                     .font(.custom("Poppins-Regular", size: 13))
@@ -115,11 +115,11 @@ struct KahfGuardContentView: View {
                         } else {
                             // connected.
                             Text("Connected")
-                                .padding(.top, 35)
+                                .padding(.top, 20)
                                 .font(.custom("Poppins-Bold", size: 22))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.black)
-                            
+
                             if totalBlacklistHosts != nil {
                                 Group {
                                     Text("You're protected from ")
@@ -132,14 +132,14 @@ struct KahfGuardContentView: View {
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.black)
                             }
-                            
+
                             // verify button
                             Link(destination: URL(string: verifyLink)!) {
                                 Text("Verify Protection")
                                     .font(.custom("Poppins-Regular", size: 13))
                                     .underline()
                                     .multilineTextAlignment(.center)
-                                    .padding(.top, 25)
+                                    .padding(.top, 15)
                             }
                             .onHover { inside in
                                 onVerifyButtonHover(inside: inside)
@@ -161,7 +161,7 @@ struct KahfGuardContentView: View {
                 }
                 .padding(.leading, 0)
                 .padding(.trailing, 0)
-                
+
                 // bottom banner
                 #if os(macOS)
                     if showBottomBanner {
@@ -171,16 +171,16 @@ struct KahfGuardContentView: View {
                     }
                 #else
                 #endif
-                
+
             }
             .frame(
                 maxWidth: .infinity,
                 maxHeight: .infinity
             )
-    
+
         }
         .frame(
-            maxWidth: .infinity, minHeight: 400.0,
+            maxWidth: .infinity,
             maxHeight: .infinity
         )
         .background(KahfGuardContentView.background)
@@ -195,12 +195,12 @@ struct KahfGuardContentView: View {
         .animation(.easeInOut, value: error)
         .animation(.easeInOut, value: showBottomBanner)
         .animation(.easeInOut, value: showConnectedMessage)
-        
+
         // prefer light mode.
         .preferredColorScheme(.light)
-    
+
     }
-    
+
     func setTotalBlacklistHosts() {
         api.getTotalBlacklistHosts { success, errorMessage, totalFormatted, totalUnformatted in
             if success {

@@ -9,13 +9,13 @@ import SwiftUI
 
 struct TopBannerView: View {
     let companyUrl = "https://halalz.co"
-    
+
     @Binding var showConnectedMessage: Bool
-    
+
     static let backgroundCompanyOriginal = Color(hex: 0xFFFFFF)
     static let backgroundCompanyOnHover = Color(hex: 0xe8fce5)
     @State var backgroundCompanyChangeable = TopBannerView.backgroundCompanyOriginal
-    
+
     var body: some View {
         VStack(spacing: 0) {
             // show connected message to user so he calmly can close the app as vpn will still be connected.
@@ -25,51 +25,48 @@ struct TopBannerView: View {
                         // no need to show arrow button in iOS since there is no close button on top like OSX
                         Image(systemName: "arrow.up.square.fill")
                             .font(.system(size: 15))
-                            .foregroundColor(ContentView.accentColor)
                     #endif
                     Text("Connected. Safe to close this app.")
                         .font(.system(size: 12))
-                        .foregroundColor(KahfGuardContentView.accentColor)
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 5)
                 .padding(.top, 5)
                 .padding(.bottom, 5)
-                .background(TopBannerView.backgroundCompanyOriginal)
+                .background(KahfGuardContentView.accentColor)
+                .foregroundColor(.white)
             }
-            
-            if !showConnectedMessage {
-                Link(destination: URL(string: companyUrl)!) {
-                    HStack {
-                        Image(.halalzLogoSmall)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 30)
-                        
-                        VStack(alignment: .leading) {
-                            Text("KahfGuard")
-                                .foregroundStyle(.black)
-                                .font(.system(size: 14))
-                                // .fontWeight(.bold)
-                            Text("© by Halalz e-Tİcaret Ltd Şti.")
-                                .foregroundStyle(.gray)
-                                .font(.system(size: 12))
-                        }
-                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+
+            Link(destination: URL(string: companyUrl)!) {
+                HStack {
+                    Image(.halalzLogoSmall)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 30)
+
+                    VStack(alignment: .leading) {
+                        Text("KahfGuard")
+                            .foregroundStyle(.black)
+                            .font(.system(size: 14))
+                            //.fontWeight(.bold)
+                        Text("© by Halalz e-Tİcaret Ltd Şti.")
+                            .foregroundStyle(.gray)
+                            .font(.system(size: 12))
                     }
-                    .padding(.top, 10)
-                    .padding(.bottom, 10)
-                    .padding(.leading, 10)
-                    .background(backgroundCompanyChangeable)
-                }.onHover { inside in
-                    onHover(inside: inside)
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 }
+                .padding(.top, 10)
+                .padding(.bottom, 10)
+                .padding(.leading, 10)
+                .background(backgroundCompanyChangeable)
+            }.onHover { inside in
+                onHover(inside: inside)
             }
         }
         .animation(.easeInOut, value: backgroundCompanyChangeable)
         .animation(.easeInOut, value: showConnectedMessage)
     }
-    
+
     func onHover(inside: Bool) {
         #if os(macOS)
             if inside {

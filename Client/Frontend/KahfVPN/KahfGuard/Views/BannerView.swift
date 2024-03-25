@@ -10,7 +10,7 @@ import SwiftUI
 struct BannerView: View {
     @State var bottomBanner: Banner
     @State var opacity = 1.0
-    
+
     var body: some View {
         AsyncImage(url: URL(string: bottomBanner.image), transaction: Transaction(animation: .bouncy)) { phase in
             switch phase {
@@ -38,7 +38,7 @@ struct BannerView: View {
         .opacity(opacity)
         .animation(.easeInOut, value: opacity)
     }
-    
+
     func onHover(inside: Bool) {
         #if os(macOS)
             if inside {
