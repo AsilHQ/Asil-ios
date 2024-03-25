@@ -181,6 +181,7 @@ struct KahfGuardContentView: View {
         }
         .frame(
             maxWidth: .infinity,
+            minHeight: 400,
             maxHeight: .infinity
         )
         .background(KahfGuardContentView.background)

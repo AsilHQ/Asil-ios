@@ -245,7 +245,7 @@ class TabLocationView: UIView {
 
   lazy var kahfVPNButton: ToolbarButton = {
       let button = ToolbarButton(top: true)
-      button.setImage(UIImage(named: "kahfdns", in: .module, compatibleWith: nil)!.scale(toSize: CGSize(width: 20, height: 20)), for: .normal)
+      button.setImage(UIImage(named: "kahfguard", in: .module, compatibleWith: nil)!.scale(toSize: CGSize(width: 20, height: 20)), for: .normal)
       button.addTarget(self, action: #selector(didClickKahfVPNButton), for: .touchUpInside)
       button.imageView?.contentMode = .scaleAspectFit
       button.accessibilityLabel = Strings.bravePanel
