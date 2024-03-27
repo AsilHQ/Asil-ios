@@ -26,8 +26,6 @@ public class Migration {
 
   public func launchMigrations(keyPrefix: String, profile: Profile) {
     Preferences.migratePreferences(keyPrefix: keyPrefix)
-    
-    Preferences.migrateWalletPreferences()
 
     if !Preferences.Migration.documentsDirectoryCleanupCompleted.value {
       documentsDirectoryCleanup()
@@ -376,15 +374,5 @@ fileprivate extension Preferences {
     Preferences.General.isFirstLaunch.value = Preferences.DAU.lastLaunchInfo.value == nil
 
     Preferences.Migration.completed.value = true
-  }
-  
-  /// Migrate Wallet Preferences from version <1.43
-  class func migrateWalletPreferences() {
-    guard Preferences.Migration.walletProviderAccountRequestCompleted.value != true else { return }
-    
-    // Migrate `allowDappProviderAccountRequests` to `allowEthProviderAccess`
-    migrate(keyPrefix: "", key: "wallet.allow-eth-provider-account-requests", to: Preferences.Wallet.allowEthProviderAccess)
-    
-    Preferences.Migration.walletProviderAccountRequestCompleted.value = true
   }
 }

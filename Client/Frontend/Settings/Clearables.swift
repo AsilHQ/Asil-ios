@@ -8,7 +8,6 @@ import Data
 import BraveShared
 import WebKit
 import BraveCore
-import BraveNews
 import os.log
 
 // A base protocol for something that can be cleared.
@@ -158,23 +157,6 @@ class DownloadsClearable: Clearable {
       // Not logging the `error` because downloaded file names can be sensitive to some users.
       Logger.module.error("Could not remove downloaded file")
     }
-  }
-}
-
-class BraveNewsClearable: Clearable {
-
-  let feedDataSource: FeedDataSource
-
-  init(feedDataSource: FeedDataSource) {
-    self.feedDataSource = feedDataSource
-  }
-
-  var label: String {
-    return Strings.BraveNews.braveNews
-  }
-
-  func clear() async throws {
-    feedDataSource.clearCachedFiles()
   }
 }
 

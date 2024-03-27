@@ -36,8 +36,6 @@ protocol TopToolbarDelegate: AnyObject {
   func topToolbarDidBeginDragInteraction(_ topToolbar: TopToolbarView)
   func topToolbarDidTapBookmarkButton(_ topToolbar: TopToolbarView)
   func topToolbarDidTapBraveShieldsButton(_ topToolbar: TopToolbarView)
-  func topToolbarDidTapBraveRewardsButton(_ topToolbar: TopToolbarView)
-  func topToolbarDidLongPressBraveRewardsButton(_ topToolbar: TopToolbarView)
   func topToolbarDidTapMenuButton(_ topToolbar: TopToolbarView)
 
   func topToolbarDidLongPressReloadButton(_ urlBar: TopToolbarView, from button: UIButton)
@@ -45,7 +43,6 @@ protocol TopToolbarDelegate: AnyObject {
   func topToolbarDidPressReload(_ urlBar: TopToolbarView)
   func topToolbarDidPressQrCodeButton(_ urlBar: TopToolbarView)
   func topToolbarDidPressLockImageView(_ urlBar: TopToolbarView)
-  func topToolbarDidTapWalletButton(_ urlBar: TopToolbarView)
   func topToolbarDidTapShareButton(_ urlBar: TopToolbarView)
   func topToolbarDidTapSafegazeButton(_ topToolbar: TopToolbarView)
   func topToolbarDidTapKahftubeButton(_ topToolbar: TopToolbarView)
@@ -326,9 +323,6 @@ class TopToolbarView: UIView, ToolbarProtocol {
     locationView.shieldsButton.snp.remakeConstraints {
       $0.height.equalTo(pointSize)
     }
-    locationView.rewardsButton.snp.remakeConstraints {
-      $0.height.equalTo(pointSize)
-    }
     let clampedTraitCollection = traitCollection.clampingSizeCategory(maximum: .accessibilityLarge)
     locationTextField?.font = .preferredFont(forTextStyle: .body, compatibleWith: clampedTraitCollection)
   }
@@ -461,17 +455,10 @@ class TopToolbarView: UIView, ToolbarProtocol {
     locationView.playlistButton.buttonState = state
     updateURLBarButtonsVisibility()
   }
-  
-  func updateWalletButtonState(_ state: WalletURLBarButton.ButtonState) {
-    locationView.walletButton.buttonState = state
-    updateURLBarButtonsVisibility()
-  }
-  
+
   /// Updates the `currentURLBarButton` based on priority: 1) Wallet 2) Playlist 3) ReaderMode.
   private func updateURLBarButtonsVisibility() {
-    if locationView.walletButton.buttonState != .inactive {
-      currentURLBarButton = .wallet
-    } else if locationView.playlistButton.buttonState != .none {
+    if locationView.playlistButton.buttonState != .none {
       currentURLBarButton = .playlist
     } else if locationView.readerModeState != .unavailable {
       currentURLBarButton = .readerMode
@@ -481,7 +468,6 @@ class TopToolbarView: UIView, ToolbarProtocol {
   }
   
   enum URLBarButton {
-    case wallet
     case playlist
     case readerMode
   }
@@ -489,7 +475,6 @@ class TopToolbarView: UIView, ToolbarProtocol {
   /// The currently visible URL bar button beside the refresh button.
   private(set) var currentURLBarButton: URLBarButton? {
     didSet {
-      locationView.walletButton.isHidden = currentURLBarButton != .wallet
       locationView.playlistButton.isHidden = currentURLBarButton != .playlist
       locationView.readerModeButton.isHidden = currentURLBarButton != .readerMode
     }
@@ -680,14 +665,6 @@ extension TopToolbarView: TabLocationViewDelegate {
   func tabLocationViewDidTapKahfVPNButton(_ urlBar: TabLocationView) {
       delegate?.topToolbarDidTapKahfVPNButton(self)
   }
-    
-  func tabLocationViewDidTapRewardsButton(_ urlBar: TabLocationView) {
-    delegate?.topToolbarDidTapBraveRewardsButton(self)
-  }
-
-  func tabLocationViewDidLongPressRewardsButton(_ urlBar: TabLocationView) {
-    delegate?.topToolbarDidLongPressBraveRewardsButton(self)
-  }
 
   func tabLocationViewDidLongPressReaderMode(_ tabLocationView: TabLocationView) -> Bool {
     return delegate?.topToolbarDidLongPressReaderMode(self) ?? false
@@ -735,10 +712,6 @@ extension TopToolbarView: TabLocationViewDelegate {
 
   func tabLocationViewDidBeginDragInteraction(_ tabLocationView: TabLocationView) {
     delegate?.topToolbarDidBeginDragInteraction(self)
-  }
-  
-  func tabLocationViewDidTapWalletButton(_ urlBar: TabLocationView) {
-    delegate?.topToolbarDidTapWalletButton(self)
   }
     
   func topToolbarDidTapShareButton(_ urlBar: TabLocationView) {

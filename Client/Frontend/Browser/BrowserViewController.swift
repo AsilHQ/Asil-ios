@@ -16,12 +16,9 @@ import CoreData
 import StoreKit
 import SafariServices
 import BraveUI
-import FeedKit
 import SwiftUI
 import class Combine.AnyCancellable
-import BraveWallet
 import BraveVPN
-import BraveNews
 import os.log
 import BraveTalk
 import Onboarding
@@ -124,7 +121,6 @@ public class BrowserViewController: UIViewController {
 
   // Single data source used for all favorites vcs
   public let backgroundDataSource = NTPDataSource()
-  let feedDataSource = FeedDataSource()
 
   private var postSetupTasks: [() -> Void] = []
   private var setupTasksCompleted: Bool = false
@@ -200,12 +196,8 @@ public class BrowserViewController: UIViewController {
 
   private var cancellables: Set<AnyCancellable> = []
 
-  let rewards: BraveRewards
   var ledgerObserver: LedgerObserver?
-  let legacyWallet: BraveLedger?
   var promotionFetchTimer: Timer?
-  private var notificationsHandler: AdsNotificationHandler?
-  let notificationsPresenter = BraveNotificationsPresenter()
   var publisher: Ledger.PublisherInfo?
 
   let vpnProductInfo = VPNProductInfo()
@@ -243,14 +235,9 @@ public class BrowserViewController: UIViewController {
 
   private(set) var widgetBookmarksFRC: NSFetchedResultsController<Favorite>?
   var widgetFaviconFetchers: [FaviconFetcher] = []
-  let deviceCheckClient: DeviceCheckClient?
   
   // Brave Talk native implementations
   let braveTalkJitsiCoordinator = BraveTalkJitsiCoordinator()
-
-  /// The currently open WalletStore
-  weak var walletStore: WalletStore?
-  
   var lastEnteredURLVisitType: VisitType = .unknown
 
   public init(
@@ -266,36 +253,16 @@ public class BrowserViewController: UIViewController {
     self.migration = migration
     self.crashedLastSession = crashedLastSession
 
-    let configuration: BraveRewards.Configuration = .current()
-
     let buildChannel = Ads.BuildChannelInfo().then {
       $0.name = AppConstants.buildChannel.rawValue
       $0.isRelease = AppConstants.buildChannel == .release
     }
-    Self.migrateAdsConfirmations(for: configuration)
-    legacyWallet = Self.legacyWallet(for: configuration)
-    if let wallet = legacyWallet {
-      // Legacy ledger is disabled by default
-      wallet.isAutoContributeEnabled = false
-      // Ensure we remove any pending contributions or recurring tips from the legacy wallet
-      wallet.removeAllPendingContributions { _ in }
-      wallet.listRecurringTips { publishers in
-        publishers.forEach {
-          wallet.removeRecurringTip(publisherId: $0.id)
-        }
-      }
-    }
-
-    // Initialize Rewards
-    self.rewards = BraveRewards(configuration: configuration, buildChannel: buildChannel)
 
     // Initialize TabManager
     self.tabManager = TabManager(
       prefs: profile.prefs,
-      imageStore: diskImageStore,
-      rewards: rewards,
-      tabGeneratorAPI: braveCore.tabGeneratorAPI)
-    
+      imageStore: diskImageStore, tabGeneratorAPI: braveCore.tabGeneratorAPI)
+
     // Add Regular tabs to Sync Chain
     if Preferences.Chromium.syncOpenTabsEnabled.value {
       tabManager.addRegularTabsToSyncChain()
@@ -304,18 +271,6 @@ public class BrowserViewController: UIViewController {
     // Setup ReaderMode Cache
     self.readerModeCache = ReaderModeScriptHandler.cache(for: tabManager.selectedTab)
 
-    if !BraveRewards.isAvailable {
-      // Disable rewards services in case previous user already enabled
-      // rewards in previous build
-      rewards.isEnabled = false
-    } else {
-      if rewards.isEnabled && !Preferences.Rewards.rewardsToggledOnce.value {
-        Preferences.Rewards.rewardsToggledOnce.value = true
-      }
-    }
-
-    self.deviceCheckClient = DeviceCheckClient(environment: configuration.environment)
-
     if Locale.current.regionCode == "JP" {
       benchmarkBlockingDataSource = BlockingSummaryDataSource()
     }
@@ -323,25 +278,6 @@ public class BrowserViewController: UIViewController {
     super.init(nibName: nil, bundle: nil)
     didInit()
 
-    rewards.ledgerServiceDidStart = { [weak self] _ in
-      self?.setupLedger()
-    }
-
-    rewards.ads.captchaHandler = self
-    let shouldStartAds = rewards.ads.isEnabled || Preferences.BraveNews.isEnabled.value
-    if shouldStartAds {
-      // Only start ledger service automatically if ads is enabled
-      if rewards.isEnabled {
-        rewards.startLedgerService {
-          self.legacyWallet?.initializeLedgerService(nil)
-        }
-      } else {
-        rewards.ads.initialize { _ in }
-      }
-    }
-
-    feedDataSource.ads = rewards.ads
-    
     // Observer watching tab information is sent by another device
     openTabsModelStateListener = braveCore.sendTabAPI.add(
       SendTabToSelfStateObserver { [weak self] stateChange in
@@ -358,50 +294,6 @@ public class BrowserViewController: UIViewController {
     // Remove the open tabs model state observer
     if let observer = openTabsModelStateListener {
       braveCore.sendTabAPI.removeObserver(observer)
-    }
-  }
-  
-  static func legacyWallet(for config: BraveRewards.Configuration) -> BraveLedger? {
-    let fm = FileManager.default
-    let stateStorage = config.storageURL
-    let legacyLedger = stateStorage.appendingPathComponent("legacy_ledger")
-
-    // Check if we've already migrated the users wallet to the `legacy_rewards` folder
-    if fm.fileExists(atPath: legacyLedger.path) {
-      return BraveLedger(stateStoragePath: legacyLedger.path)
-    }
-
-    // We've already performed an attempt at migration, if there wasn't a legacy folder, then
-    // we have no legacy wallet.
-    if Preferences.Rewards.migratedLegacyWallet.value {
-      return nil
-    }
-
-    // Ledger exists in the state storage under `ledger` folder, if that folder doesn't exist
-    // then the user hasn't actually launched the app before and doesn't need to migrate
-    let ledgerFolder = stateStorage.appendingPathComponent("ledger")
-    if !fm.fileExists(atPath: ledgerFolder.path) {
-      // No wallet, therefore no legacy folder needed
-      Preferences.Rewards.migratedLegacyWallet.value = true
-      return nil
-    }
-
-    do {
-      // Copy the current `ledger` directory into the new legacy state storage path
-      try fm.copyItem(at: ledgerFolder, to: legacyLedger)
-      // Remove the old Rewards DB so that it starts fresh
-      try fm.removeItem(atPath: ledgerFolder.appendingPathComponent("Rewards.db").path)
-      // And remove the sqlite journal file if it exists
-      let journalPath = ledgerFolder.appendingPathComponent("Rewards.db-journal").path
-      if fm.fileExists(atPath: journalPath) {
-        try fm.removeItem(atPath: journalPath)
-      }
-
-      Preferences.Rewards.migratedLegacyWallet.value = true
-      return BraveLedger(stateStoragePath: legacyLedger.path)
-    } catch {
-      adsRewardsLog.error("Failed to migrate legacy wallet into a new folder: \(error.localizedDescription)")
-      return nil
     }
   }
 
@@ -453,22 +345,6 @@ public class BrowserViewController: UIViewController {
     updateApplicationShortcuts()
     tabManager.addDelegate(self)
     tabManager.addNavigationDelegate(self)
-    tabManager.makeWalletEthProvider = { [weak self] tab in
-      guard let self = self,
-            let provider = self.braveCore.braveWalletAPI.ethereumProvider(with: tab, isPrivateBrowsing: tab.isPrivate),
-            let js = self.braveCore.braveWalletAPI.providerScripts(for: .eth)[.ethereum] else {
-        return nil
-      }
-      return (provider, js: js)
-    }
-    tabManager.makeWalletSolProvider = { [weak self] tab in
-      guard let self = self,
-            let provider = self.braveCore.braveWalletAPI.solanaProvider(with: tab, isPrivateBrowsing: tab.isPrivate) else {
-        return nil
-      }
-      let scripts = self.braveCore.braveWalletAPI.providerScripts(for: .sol)
-      return (provider, jsScripts: scripts)
-    }
     downloadQueue.delegate = self
 
     // Observe some user preferences
@@ -480,8 +356,6 @@ public class BrowserViewController: UIViewController {
     Preferences.General.defaultPageZoomLevel.observe(from: self)
     Preferences.Shields.allShields.forEach { $0.observe(from: self) }
     Preferences.Privacy.blockAllCookies.observe(from: self)
-    Preferences.Rewards.hideRewardsIcon.observe(from: self)
-    Preferences.Rewards.rewardsToggledOnce.observe(from: self)
     Preferences.Playlist.enablePlaylistMenuBadge.observe(from: self)
     Preferences.Playlist.enablePlaylistURLBarButton.observe(from: self)
     Preferences.Playlist.syncSharedFoldersAutomatically.observe(from: self)
@@ -493,22 +367,10 @@ public class BrowserViewController: UIViewController {
         $0.webView?.setValue(zoomLevel, forKey: PageZoomView.propertyName)
       })
     }
-    
-    rewardsEnabledObserveration = rewards.observe(\.isEnabled, options: [.new]) { [weak self] _, _ in
-      guard let self = self else { return }
-      self.updateRewardsButtonState()
-      self.setupAdsNotificationHandler()
-    }
     Preferences.NewTabPage.selectedCustomTheme.observe(from: self)
     Preferences.Playlist.webMediaSourceCompatibility.observe(from: self)
     Preferences.PrivacyReports.captureShieldsData.observe(from: self)
     Preferences.PrivacyReports.captureVPNAlerts.observe(from: self)
-    Preferences.Wallet.defaultEthWallet.observe(from: self)
-
-    if rewards.ledger != nil {
-      // Ledger was started immediately due to user having ads enabled
-      setupLedger()
-    }
 
     Preferences.NewTabPage.attemptToShowClaimRewardsNotification.value = true
 
@@ -530,8 +392,6 @@ public class BrowserViewController: UIViewController {
         Favorite.add(from: customFavorites)
       }
     }
-
-    setupAdsNotificationHandler()
     backgroundDataSource.replaceFavoritesIfNeeded = { sites in
       if Preferences.NewTabPage.initialFavoritesHaveBeenReplaced.value { return }
 
@@ -580,34 +440,6 @@ public class BrowserViewController: UIViewController {
     AppReviewManager.shared.processMainCriteria(for: .daysInUse)
     
     maybeRecordInitialShieldsP3A()
-  }
-
-  private func setupAdsNotificationHandler() {
-    notificationsHandler = AdsNotificationHandler(ads: rewards.ads,
-                                                  presentingController: self,
-                                                  notificationsPresenter: notificationsPresenter)
-    notificationsHandler?.canShowNotifications = { [weak self] in
-      guard let self = self else { return false }
-      return !PrivateBrowsingManager.shared.isPrivateBrowsing && !self.topToolbar.inOverlayMode
-    }
-    notificationsHandler?.actionOccured = { [weak self] ad, action in
-      guard let self = self, let ad = ad else { return }
-      if action == .opened {
-        var url = URL(string: ad.targetURL)
-        if url == nil,
-           let percentEncodedURLString =
-            ad.targetURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
-          // Try to percent-encode the string and try that
-          url = URL(string: percentEncodedURLString)
-        }
-        guard let targetURL = url else {
-          assertionFailure("Invalid target URL for creative instance id: \(ad.creativeInstanceID)")
-          return
-        }
-        let request = URLRequest(url: targetURL)
-        self.tabManager.addTabAndSelect(request, isPrivate: PrivateBrowsingManager.shared.isPrivateBrowsing)
-      }
-    }
   }
 
   func shouldShowFooterForTraitCollection(_ previousTraitCollection: UITraitCollection) -> Bool {
@@ -853,9 +685,6 @@ public class BrowserViewController: UIViewController {
         self, selector: #selector(appDidEnterBackgroundNotification),
         name: UIApplication.didEnterBackgroundNotification, object: nil)
       $0.addObserver(
-        self, selector: #selector(resetNTPNotification),
-        name: .adsOrRewardsToggledInSettings, object: nil)
-      $0.addObserver(
         self, selector: #selector(updateShieldNotifications),
         name: NSNotification.Name(rawValue: BraveGlobalShieldStats.didUpdateNotification), object: nil)
     }
@@ -867,7 +696,6 @@ public class BrowserViewController: UIViewController {
     topTouchArea.addTarget(self, action: #selector(tappedTopArea), for: .touchUpInside)
     bottomTouchArea.addTarget(self, action: #selector(tappedTopArea), for: .touchUpInside)
     header.collapsedBarContainerView.addTarget(self, action: #selector(tappedCollapsedURLBar), for: .touchUpInside)
-    updateRewardsButtonState()
 
     // Setup UIDropInteraction to handle dragging and dropping
     // links into the view from other apps.
@@ -1095,10 +923,6 @@ public class BrowserViewController: UIViewController {
   override public func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     updateToolbarUsingTabManager(tabManager)
-
-    if let tabId = tabManager.selectedTab?.rewardsId, rewards.ledger?.selectedTabId == 0 {
-      rewards.ledger?.selectedTabId = tabId
-    }
   }
 
   private func checkCrashRestorationOrSetupTabs() {
@@ -1176,8 +1000,6 @@ public class BrowserViewController: UIViewController {
   override public func viewWillDisappear(_ animated: Bool) {
     screenshotHelper.viewIsVisible = false
     super.viewWillDisappear(animated)
-
-    rewards.ledger?.selectedTabId = 0
   }
 
   /// A layout guide defining where the favorites and NTP overlay are placed
@@ -1318,9 +1140,7 @@ public class BrowserViewController: UIViewController {
       let ntpController = NewTabPageViewController(
         tab: selectedTab,
         profile: profile,
-        dataSource: backgroundDataSource,
-        feedDataSource: feedDataSource,
-        rewards: rewards)
+        dataSource: backgroundDataSource)
       /// Donate NewTabPage Activity For Custom Suggestions
       let newTabPageActivity =
         ActivityShortcutManager.shared.createShortcutActivity(type: selectedTab.isPrivate ? .newPrivateTab : .newTab)
@@ -1621,17 +1441,6 @@ public class BrowserViewController: UIViewController {
         navigateInTab(tab: tab)
       }
 
-      // Rewards reporting
-      if let url = change?[.newKey] as? URL, !url.isLocal {
-        // Notify Rewards of new page load.
-        if let rewardsURL = rewardsXHRLoadURL,
-          url.host == rewardsURL.host {
-          tabManager.selectedTab?.reportPageNavigation(to: rewards)
-          // Not passing redirection chain here, in page navigation should not use them.
-          tabManager.selectedTab?.reportPageLoad(to: rewards, redirectionURLs: [])
-        }
-      }
-      
       // Update the estimated progress when the URL changes. Estimated progress may update to 0.1 when the url
       // is still an internal URL even though a request may be pending for a web page.
       if tab === tabManager.selectedTab, let url = webView.url,
@@ -1767,8 +1576,6 @@ public class BrowserViewController: UIViewController {
   /// Updates the URL bar security, text and button states.
   fileprivate func updateURLBar() {
     guard let tab = tabManager.selectedTab else { return }
-
-    updateRewardsButtonState()
 
     DispatchQueue.main.async {
       if let item = tab.playlistItem {
@@ -1966,30 +1773,6 @@ public class BrowserViewController: UIViewController {
           tab?.switchUserAgent()
         })
 
-      if Preferences.BraveNews.isEnabled.value, let metadata = tab?.pageMetadata,
-        !metadata.feeds.isEmpty {
-        let feeds: [RSSFeedLocation] = metadata.feeds.compactMap { feed in
-          guard let url = URL(string: feed.href) else { return nil }
-          return RSSFeedLocation(title: feed.title, url: url)
-        }
-        if !feeds.isEmpty {
-          let addToBraveNews = AddFeedToBraveNewsActivity() { [weak self] in
-            guard let self = self else { return }
-            let controller = BraveNewsAddSourceResultsViewController(
-              dataSource: self.feedDataSource,
-              searchedURL: url,
-              rssFeedLocations: feeds,
-              sourcesAdded: nil
-            )
-            let container = UINavigationController(rootViewController: controller)
-            let idiom = UIDevice.current.userInterfaceIdiom
-            container.modalPresentationStyle = idiom == .phone ? .pageSheet : .formSheet
-            self.present(container, animated: true)
-          }
-          activities.append(addToBraveNews)
-        }
-      }
-
       if let webView = tab?.webView, tab?.temporaryDocument == nil {
         let createPDFActivity = CreatePDFActivity(webView: webView) { [weak self] pdfData in
           guard let self = self else { return }
@@ -2016,31 +1799,6 @@ public class BrowserViewController: UIViewController {
           }
         }
         activities.append(createPDFActivity)
-      }
-
-    } else {
-      // Check if it's a feed, url is a temp document file URL
-      if let selectedTab = tabManager.selectedTab,
-        (selectedTab.mimeType == "application/xml" || selectedTab.mimeType == "application/json"),
-        let tabURL = selectedTab.url {
-
-        let parser = FeedParser(URL: url)
-        if case .success(let feed) = parser.parse() {
-          let addToBraveNews = AddFeedToBraveNewsActivity() { [weak self] in
-            guard let self = self else { return }
-            let controller = BraveNewsAddSourceResultsViewController(
-              dataSource: self.feedDataSource,
-              searchedURL: tabURL,
-              rssFeedLocations: [.init(title: feed.title, url: tabURL)],
-              sourcesAdded: nil
-            )
-            let container = UINavigationController(rootViewController: controller)
-            let idiom = UIDevice.current.userInterfaceIdiom
-            container.modalPresentationStyle = idiom == .phone ? .pageSheet : .formSheet
-            self.present(container, animated: true)
-          }
-          activities.append(addToBraveNews)
-        }
       }
     }
 
@@ -2404,17 +2162,11 @@ extension BrowserViewController: TabDelegate {
       NightModeScriptHandler(tab: tab),
       FocusScriptHandler(tab: tab),
       BraveGetUA(tab: tab),
-      BraveSearchScriptHandler(tab: tab, profile: profile, rewards: rewards),
-      BraveTalkScriptHandler(tab: tab, rewards: rewards, launchNativeBraveTalk: { [weak self] tab, room, token in
-        self?.launchNativeBraveTalk(tab: tab, room: room, token: token)
-      }),
       ResourceDownloadScriptHandler(tab: tab),
       DownloadContentScriptHandler(browserController: self, tab: tab),
       WindowRenderScriptHandler(tab: tab),
       PlaylistScriptHandler(tab: tab),
       PlaylistFolderSharingScriptHandler(tab: tab),
-      RewardsReportingScriptHandler(rewards: rewards, tab: tab),
-      AdsMediaReportingScriptHandler(rewards: rewards, tab: tab),
       ReadyStateScriptHandler(tab: tab),
       DeAmpScriptHandler(tab: tab),
       SiteStateListenerScriptHandler(tab: tab),
@@ -2432,9 +2184,7 @@ extension BrowserViewController: TabDelegate {
     // Only add the logins handler and wallet provider if the tab is NOT a private browsing tab
     if !tab.isPrivate {
       injectedScripts += [
-        LoginsScriptHandler(tab: tab, profile: profile, passwordAPI: braveCore.passwordAPI),
-        EthereumProviderScriptHandler(tab: tab),
-        SolanaProviderScriptHandler(tab: tab)
+        LoginsScriptHandler(tab: tab, profile: profile, passwordAPI: braveCore.passwordAPI)
       ]
     }
 
@@ -2517,99 +2267,15 @@ extension BrowserViewController: TabDelegate {
     }
   }
 
-  func showRequestRewardsPanel(_ tab: Tab) {
-    let vc = BraveTalkRewardsOptInViewController()
-
-    // Edge case: user disabled Rewards button and wants to access free Brave Talk
-    // We re-enable the button again. It can be disabled in settings later.
-    Preferences.Rewards.hideRewardsIcon.value = false
-
-    let popover = PopoverController(
-      contentController: vc,
-      contentSizeBehavior: .preferredContentSize)
-    popover.addsConvenientDismissalMargins = false
-    popover.present(from: topToolbar.locationView.rewardsButton, on: self)
-    popover.popoverDidDismiss = { _ in
-      // This gets called if popover is dismissed by user gesture
-      // This does not conflict with 'Enable Rewards' button.
-      tab.rewardsEnabledCallback?(false)
-    }
-
-    vc.rewardsEnabledHandler = { [weak self] in
-      guard let self = self else { return }
-
-      self.rewards.isEnabled = true
-      tab.rewardsEnabledCallback?(true)
-
-      let vc2 = BraveTalkOptInSuccessViewController()
-      let popover2 = PopoverController(
-        contentController: vc2,
-        contentSizeBehavior: .preferredContentSize)
-      popover2.present(from: self.topToolbar.locationView.rewardsButton, on: self)
-    }
-
-    vc.linkTapped = { [unowned self] request in
-      tab.rewardsEnabledCallback?(false)
-      self.tabManager
-        .addTabAndSelect(request, isPrivate: PrivateBrowsingManager.shared.isPrivateBrowsing)
-    }
-  }
-
   func stopMediaPlayback(_ tab: Tab) {
     tabManager.allTabs.forEach({
       PlaylistScriptHandler.stopPlayback(tab: $0)
     })
   }
-  
-  func showWalletNotification(_ tab: Tab, origin: URLOrigin) {
-    // only display notification when BVC is front and center
-    guard presentedViewController == nil,
-          Preferences.Wallet.displayWeb3Notifications.value else {
-      return
-    }
-    let origin = tab.getOrigin()
-    let tabDappStore = tab.tabDappStore
-    let walletNotificaton = WalletNotification(priority: .low, origin: origin, isUsingBottomBar: isUsingBottomBar) { [weak self] action in
-      if action == .connectWallet {
-        self?.presentWalletPanel(from: origin, with: tabDappStore)
-      }
-    }
-    notificationsPresenter.display(notification: walletNotificaton, from: self)
-  }
+
   
   func isTabVisible(_ tab: Tab) -> Bool {
     tabManager.selectedTab === tab
-  }
-
-  func updateURLBarWalletButton() {
-    let shouldShowWalletButton = tabManager.selectedTab?.isWalletIconVisible == true
-    if shouldShowWalletButton {
-      Task { @MainActor in
-        let isPendingRequestAvailable = await isPendingRequestAvailable()
-        topToolbar.updateWalletButtonState(isPendingRequestAvailable ? .activeWithPendingRequest : .active)
-      }
-    } else {
-      topToolbar.updateWalletButtonState(.inactive)
-    }
-  }
-
-  @MainActor
-  private func isPendingRequestAvailable() async -> Bool {
-    let privateMode = PrivateBrowsingManager.shared.isPrivateBrowsing
-    /// If we have an open `WalletStore`, use that so we can assign the pending request if the wallet is open,
-    /// which allows us to store the new `PendingRequest` triggering a modal presentation for that request.
-    guard let cryptoStore = self.walletStore?.cryptoStore ?? CryptoStore.from(privateMode: privateMode) else {
-      return false
-    }
-    if await cryptoStore.isPendingRequestAvailable() {
-      return true
-    } else if let selectedTabOrigin = tabManager.selectedTab?.url?.origin {
-      if WalletProviderAccountCreationRequestManager.shared.hasPendingRequest(for: selectedTabOrigin, coinType: .sol) {
-        return true
-      }
-      return WalletProviderPermissionRequestsManager.shared.hasPendingRequest(for: selectedTabOrigin, coinType: .eth)
-    }
-    return false
   }
 }
 
@@ -2778,11 +2444,6 @@ extension BrowserViewController: TabManagerDelegate {
     }
 
     updateInContentHomePanel(selected?.url as URL?)
-
-    notificationsPresenter.removeNotification(with: WalletNotification.Constant.id)
-    WalletProviderPermissionRequestsManager.shared.cancelAllPendingRequests(for: [.eth, .sol])
-    WalletProviderAccountCreationRequestManager.shared.cancelAllPendingRequests(coins: [.eth, .sol])
-    updateURLBarWalletButton()
   }
 
   func tabManager(_ tabManager: TabManager, willAddTab tab: Tab) {
@@ -2794,7 +2455,6 @@ extension BrowserViewController: TabManagerDelegate {
       updateToolbarUsingTabManager(tabManager)
     }
     tab.tabDelegate = self
-    tab.walletKeyringService = BraveWallet.KeyringServiceFactory.get(privateMode: tab.isPrivate)
     updateTabsBarVisibility()
   }
 
@@ -2808,10 +2468,6 @@ extension BrowserViewController: TabManagerDelegate {
     // so we don't expcitly unset it.
     topToolbar.leaveOverlayMode(didCancel: true)
     updateTabsBarVisibility()
-
-    if !PrivateBrowsingManager.shared.isPrivateBrowsing {
-      rewards.reportTabClosed(tabId: Int(tab.rewardsId))
-    }
   }
 
   func tabManagerDidAddTabs(_ tabManager: TabManager) {
@@ -3320,7 +2976,6 @@ extension BrowserViewController: ToolbarUrlActionsDelegate {
     switch action {
     case .openInCurrentTab:
       finishEditingAndSubmit(url, visitType: visitType)
-      updateURLBarWalletButton()
     case .openInNewTab(let isPrivate):
       let tab = tabManager.addTab(PrivilegedRequest(url: url) as URLRequest, afterTab: tabManager.selectedTab, isPrivate: isPrivate)
       if isPrivate && !PrivateBrowsingManager.shared.isPrivateBrowsing {
@@ -3341,7 +2996,6 @@ extension BrowserViewController: ToolbarUrlActionsDelegate {
           })
         show(toast: toast)
       }
-      updateURLBarWalletButton()
     case .copy:
       UIPasteboard.general.url = url
     case .share:
@@ -3409,22 +3063,6 @@ extension BrowserViewController: NewTabPageDelegate {
     topToolbar.tabLocationViewDidTapLocation(topToolbar.locationView)
   }
 
-  func brandedImageCalloutActioned(_ state: BrandedImageCalloutState) {
-    guard state.hasDetailViewController else { return }
-
-    let vc = NTPLearnMoreViewController(state: state, rewards: rewards)
-
-    vc.linkHandler = { [weak self] url in
-      self?.tabManager.selectedTab?.loadRequest(PrivilegedRequest(url: url) as URLRequest)
-    }
-
-    addChild(vc)
-    view.addSubview(vc.view)
-    vc.view.snp.remakeConstraints {
-      $0.right.top.bottom.leading.equalToSuperview()
-    }
-  }
-
   func tappedQRCodeButton(url: URL) {
     let qrPopup = QRCodePopupView(url: url)
     qrPopup.showWithType(showType: .flyUp)
@@ -3488,9 +3126,6 @@ extension BrowserViewController: PreferencesObserver {
       } else {
         tabManager.reloadSelectedTab()
       }
-    case Preferences.Rewards.hideRewardsIcon.key,
-      Preferences.Rewards.rewardsToggledOnce.key:
-      updateRewardsButtonState()
     case Preferences.NewTabPage.selectedCustomTheme.key:
       Preferences.NTP.ntpCheckDate.value = nil
       backgroundDataSource.startFetching()
@@ -3518,28 +3153,6 @@ extension BrowserViewController: PreferencesObserver {
       PrivacyReportsManager.scheduleNotification(debugMode: !AppConstants.buildChannel.isPublic)
     case Preferences.PrivacyReports.captureVPNAlerts.key:
       return
-    case Preferences.Wallet.defaultEthWallet.key:
-      tabManager.reset()
-      tabManager.reloadSelectedTab()
-      notificationsPresenter.removeNotification(with: WalletNotification.Constant.id)
-      WalletProviderPermissionRequestsManager.shared.cancelAllPendingRequests(for: [.eth])
-      WalletProviderAccountCreationRequestManager.shared.cancelAllPendingRequests(coins: [.eth])
-      let privateMode = PrivateBrowsingManager.shared.isPrivateBrowsing
-      if let cryptoStore = CryptoStore.from(privateMode: privateMode) {
-        cryptoStore.rejectAllPendingWebpageRequests()
-      }
-      updateURLBarWalletButton()
-    case Preferences.Wallet.defaultSolWallet.key:
-      tabManager.reset()
-      tabManager.reloadSelectedTab()
-      notificationsPresenter.removeNotification(with: WalletNotification.Constant.id)
-      WalletProviderPermissionRequestsManager.shared.cancelAllPendingRequests(for: [.sol])
-      WalletProviderAccountCreationRequestManager.shared.cancelAllPendingRequests(coins: [.sol])
-      let privateMode = PrivateBrowsingManager.shared.isPrivateBrowsing
-      if let cryptoStore = CryptoStore.from(privateMode: privateMode) {
-        cryptoStore.rejectAllPendingWebpageRequests()
-      }
-      updateURLBarWalletButton()
     case Preferences.Playlist.syncSharedFoldersAutomatically.key:
       syncPlaylistFolders()
     default:

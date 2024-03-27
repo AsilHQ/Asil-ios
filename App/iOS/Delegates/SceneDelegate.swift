@@ -312,13 +312,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       }
 
       return
-    case ActivityType.openBraveNews.identifier:
-      if let browserViewController = scene.browserViewController {
-        ActivityShortcutManager.shared.performShortcutActivity(
-          type: .openBraveNews, using: browserViewController)
-      }
-
-      return
     case ActivityType.openPlayList.identifier:
       if let browserViewController = scene.browserViewController {
         ActivityShortcutManager.shared.performShortcutActivity(
@@ -422,9 +415,6 @@ extension SceneDelegate {
       // Add restoration class, the factory that will return the ViewController we will restore with.
       $0.restorationIdentifier = NSStringFromClass(BrowserViewController.self)
       $0.restorationClass = SceneDelegate.self
-
-      // Remove Ad-Grant Reminders
-      $0.removeScheduledAdGrantReminders()
     }
 
     return browserViewController

@@ -10,7 +10,6 @@ import BraveShared
 import Data
 import CoreData
 import BraveCore
-import BraveWallet
 import os.log
 import Growth
 
@@ -86,22 +85,18 @@ class TabManager: NSObject {
   }
   var normalTabSelectedIndex: Int = 0
   var tempTabs: [Tab]?
-  private weak var rewards: BraveRewards?
   private weak var tabGeneratorAPI: BraveTabGeneratorAPI?
-  var makeWalletEthProvider: ((Tab) -> (BraveWalletEthereumProvider, js: String)?)?
-  var makeWalletSolProvider: ((Tab) -> (BraveWalletSolanaProvider, jsScripts: [BraveWalletProviderScriptKey: String])?)?
   private var domainFrc = Domain.frc()
   private let syncedTabsQueue = DispatchQueue(label: "synced-tabs-queue")
   private var syncTabsTask: DispatchWorkItem?
   private var metricsHeartbeat: Timer?
 
-  init(prefs: Prefs, imageStore: DiskImageStore?, rewards: BraveRewards?, tabGeneratorAPI: BraveTabGeneratorAPI?) {
+  init(prefs: Prefs, imageStore: DiskImageStore?, tabGeneratorAPI: BraveTabGeneratorAPI?) {
     assert(Thread.isMainThread)
 
     self.prefs = prefs
     self.navDelegate = TabManagerNavDelegate()
     self.imageStore = imageStore
-    self.rewards = rewards
     self.tabGeneratorAPI = tabGeneratorAPI
     self.tabEventHandlers = TabEventHandlers.create(with: prefs)
     super.init()
@@ -353,25 +348,6 @@ class TabManager: NSObject {
     if let tabID = tab?.id {
       TabMO.touch(tabID: tabID)
     }
-
-    guard let newSelectedTab = tab, let previousTab = previous, let newTabUrl = newSelectedTab.url, let previousTabUrl = previousTab.url else { return }
-
-    if !PrivateBrowsingManager.shared.isPrivateBrowsing {
-      let previousFaviconURL = URL(string: previousTab.displayFavicon?.url ?? "")
-      if previousFaviconURL == nil && !previousTabUrl.isLocal {
-        adsRewardsLog.warning("No favicon found in \(previousTab) to report to rewards panel")
-      }
-      rewards?.reportTabUpdated(
-        tab: previousTab, url: previousTabUrl, faviconURL: previousFaviconURL, isSelected: false,
-        isPrivate: previousTab.isPrivate)
-      let faviconURL = URL(string: newSelectedTab.displayFavicon?.url ?? "")
-      if faviconURL == nil && !newTabUrl.isLocal {
-        adsRewardsLog.warning("No favicon found in \(newSelectedTab) to report to rewards panel")
-      }
-      rewards?.reportTabUpdated(
-        tab: newSelectedTab, url: newTabUrl, faviconURL: faviconURL, isSelected: true,
-        isPrivate: newSelectedTab.isPrivate)
-    }
   }
 
   // Called by other classes to signal that they are entering/exiting private mode
@@ -489,28 +465,6 @@ class TabManager: NSObject {
       tab.id = UUID().uuidString
     } else {
       tab.id = id ?? TabMO.create()
-      
-      if let (provider, js) = makeWalletEthProvider?(tab) {
-        let providerJS = """
-        window.__firefox__.execute(function($, $Object) {
-          if (window.isSecureContext) {
-            \(js)
-          }
-        });
-        """
-        
-        tab.walletEthProvider = provider
-        tab.walletEthProvider?.`init`(tab)
-        tab.walletEthProviderScript = WKUserScript.create(source: providerJS,
-                                                          injectionTime: .atDocumentStart,
-                                                          forMainFrameOnly: true,
-                                                          in: EthereumProviderScriptHandler.scriptSandbox)
-      }
-      if let (provider, jsScripts) = makeWalletSolProvider?(tab) {
-        tab.walletSolProvider = provider
-        tab.walletSolProvider?.`init`(tab)
-        tab.walletSolProviderScripts = jsScripts
-      }
     }
     
     delegates.forEach { $0.get()?.tabManager(self, willAddTab: tab) }
@@ -1155,8 +1109,7 @@ extension TabManager: NSFetchedResultsControllerDelegate {
       let tabsForDomain = self.allTabs.filter { $0.url?.domainURL.absoluteString.caseInsensitiveCompare(domainURL) == .orderedSame }
       tabsForDomain.forEach { tab in
         Task { @MainActor in
-          let accounts = await tab.allowedAccountsForCurrentCoin().1
-          tab.accountsChangedEvent(Array(accounts))
+         
         }
       }
     }

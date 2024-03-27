@@ -12,7 +12,6 @@ import MobileCoreServices
 import UIKit
 import BrowserIntentsModels
 import BraveVPN
-import BraveNews
 import Growth
 import os.log
 import SwiftUI
@@ -23,7 +22,6 @@ public enum ActivityType: String {
   case newPrivateTab = "NewPrivateTab"
   case clearBrowsingHistory = "ClearBrowsingHistory"
   case enableBraveVPN = "EnableBraveVPN"
-  case openBraveNews = "OpenBraveNews"
   case openPlayList = "OpenPlayList"
 
   public var identifier: String {
@@ -41,8 +39,6 @@ public enum ActivityType: String {
       return Strings.Shortcuts.activityTypeClearHistoryTitle
     case .enableBraveVPN:
       return Strings.Shortcuts.activityTypeEnableVPNTitle
-    case .openBraveNews:
-      return Strings.Shortcuts.activityTypeOpenBraveNewsTitle
     case .openPlayList:
       return Strings.Shortcuts.activityTypeOpenPlaylistTitle
     }
@@ -57,8 +53,6 @@ public enum ActivityType: String {
       return Strings.Shortcuts.activityTypeClearHistoryDescription
     case .enableBraveVPN:
       return Strings.Shortcuts.activityTypeEnableVPNDescription
-    case .openBraveNews:
-      return Strings.Shortcuts.activityTypeBraveNewsDescription
     case .openPlayList:
       return Strings.Shortcuts.activityTypeOpenPlaylistDescription
     }
@@ -75,8 +69,6 @@ public enum ActivityType: String {
       return Strings.Shortcuts.activityTypeClearHistorySuggestedPhrase
     case .enableBraveVPN:
       return Strings.Shortcuts.activityTypeEnableVPNSuggestedPhrase
-    case .openBraveNews:
-      return Strings.Shortcuts.activityTypeOpenBraveNewsSuggestedPhrase
     case .openPlayList:
       return Strings.Shortcuts.activityTypeOpenPlaylistSuggestedPhrase
     }
@@ -148,32 +140,6 @@ public class ActivityShortcutManager: NSObject {
         if !connected {
           BraveVPN.reconnect()
         }
-      }
-    case .openBraveNews:
-      // Do nothing as browser when browser to PB only and Brave News isn't available on private tabs
-      guard !Preferences.Privacy.privateBrowsingOnly.value else {
-        return
-      }
-
-      if Preferences.BraveNews.isEnabled.value {
-        bvc.openBlankNewTab(attemptLocationFieldFocus: false, isPrivate: false, isExternal: true)
-        bvc.popToBVC()
-
-        guard let newTabPageController = bvc.tabManager.selectedTab?.newTabPageViewController else { return }
-        newTabPageController.scrollToBraveNews()
-      } else {
-        let controller = NewsSettingsViewController(dataSource: bvc.feedDataSource, openURL: { url in
-          bvc.dismiss(animated: true)
-          bvc.select(url: url, visitType: .link)
-        })
-        controller.viewDidDisappear = {
-          if Preferences.Review.braveNewsCriteriaPassed.value {
-            AppReviewManager.shared.isReviewRequired = true
-            Preferences.Review.braveNewsCriteriaPassed.value = false
-          }
-        }
-        let container = UINavigationController(rootViewController: controller)
-        bvc.present(container, animated: true)
       }
     case .openPlayList:
       let tab = bvc.tabManager.selectedTab

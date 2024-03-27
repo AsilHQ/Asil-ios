@@ -21,7 +21,6 @@ import Brave
 import BraveVPN
 import Growth
 import RuntimeWarnings
-import BraveNews
 import BraveTalk
 import Onboarding
 import os
@@ -55,7 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
       }
     }
-    switches.append(.init(key: .rewardsFlags, value: BraveRewards.Configuration.current().flags))
     return BraveCoreMain(userAgent: UserAgent.mobile, additionalSwitches: switches)
   }()
   
@@ -218,20 +216,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       class_addMethod(clazz, MenuHelper.selectorFindInPage, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))
     }
 
-    if Preferences.BraveNews.isEnabled.value && !Preferences.BraveNews.userOptedIn.value {
-      // Opt-out any user that has not explicitly opted-in
-      Preferences.BraveNews.isEnabled.value = false
-      // User now has to explicitly opt-in
-      Preferences.BraveNews.isShowingOptIn.value = true
-    }
-
-    if !Preferences.BraveNews.languageChecked.value,
-      let languageCode = Locale.preferredLanguages.first?.prefix(2) {
-      Preferences.BraveNews.languageChecked.value = true
-      // Base opt-in visibility on whether or not the user's language is supported in BT
-      Preferences.BraveNews.isShowingOptIn.value = FeedDataSource.supportedLanguages.contains(String(languageCode)) || FeedDataSource.knownSupportedLocales.contains(Locale.current.identifier)
-    }
-
     SystemUtils.onFirstRun()
 
     // Schedule Brave Core Priority Tasks
@@ -252,10 +236,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     AdblockEngine.setDomainResolver(AdblockEngine.defaultDomainResolver)
 
     UIView.applyAppearanceDefaults()
-
-    if Preferences.Rewards.isUsingBAP.value == nil {
-      Preferences.Rewards.isUsingBAP.value = Locale.current.regionCode == "JP"
-    }
 
     // If a shortcut was launched, display its information and take the appropriate action
     if let shortcutItem = launchOptions?[UIApplication.LaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {
