@@ -21,9 +21,6 @@ protocol TabLocationViewDelegate {
   func tabLocationViewDidLongPressReload(_ tabLocationView: TabLocationView, from button: UIButton)
   func tabLocationViewDidTapStop(_ tabLocationView: TabLocationView)
   func tabLocationViewDidTapShieldsButton(_ urlBar: TabLocationView)
-  func tabLocationViewDidTapRewardsButton(_ urlBar: TabLocationView)
-  func tabLocationViewDidLongPressRewardsButton(_ urlBar: TabLocationView)
-  func tabLocationViewDidTapWalletButton(_ urlBar: TabLocationView)
   func topToolbarDidTapShareButton(_ urlBar: TabLocationView)
   func tabLocationViewDidTapSafegazeButton(_ tabLocationView: TabLocationView)
   func tabLocationViewDidTapKahftubeButton(_ tabLocationView: TabLocationView)
@@ -192,13 +189,6 @@ class TabLocationView: UIView {
     $0.addTarget(self, action: #selector(didClickPlaylistButton), for: .touchUpInside)
   }
   
-  private(set) lazy var walletButton = WalletURLBarButton(frame: .zero).then {
-    $0.accessibilityIdentifier = "TabToolbar.walletButton"
-    $0.isAccessibilityElement = true
-    $0.buttonState = .inactive
-    $0.addTarget(self, action: #selector(tappedWalletButton), for: .touchUpInside)
-  }
-  
   lazy var reloadButton = ToolbarButton(top: true).then {
     $0.accessibilityIdentifier = "TabToolbar.stopReloadButton"
     $0.isAccessibilityElement = true
@@ -245,21 +235,13 @@ class TabLocationView: UIView {
 
   lazy var kahfVPNButton: ToolbarButton = {
       let button = ToolbarButton(top: true)
-      button.setImage(UIImage(named: "kahfdns", in: .module, compatibleWith: nil)!.scale(toSize: CGSize(width: 20, height: 20)), for: .normal)
+      button.setImage(UIImage(named: "kahfguard", in: .module, compatibleWith: nil)!.scale(toSize: CGSize(width: 20, height: 20)), for: .normal)
       button.addTarget(self, action: #selector(didClickKahfVPNButton), for: .touchUpInside)
       button.imageView?.contentMode = .scaleAspectFit
       button.accessibilityLabel = Strings.bravePanel
       button.imageView?.adjustsImageSizeForAccessibilityContentSizeCategory = true
       button.accessibilityIdentifier = "urlBar-kahfTubebButton"
       return button
-  }()
- 
-  lazy var rewardsButton: RewardsButton = {
-    let button = RewardsButton()
-    button.addTarget(self, action: #selector(didClickBraveRewardsButton), for: .touchUpInside)
-    let longPressGestureRewardsButton = UILongPressGestureRecognizer(target: self, action: #selector(didLongPressRewardsButton(_:)))
-    button.addGestureRecognizer(longPressGestureRewardsButton)
-    return button
   }()
 
   lazy var separatorLine: UIView = CustomSeparatorView(lineSize: .init(width: 1, height: 26), cornerRadius: 2).then {
@@ -300,7 +282,7 @@ class TabLocationView: UIView {
     addGestureRecognizer(longPressRecognizer)
     addGestureRecognizer(tapRecognizer)
     
-    let optionSubviews = [readerModeButton, walletButton, shareButton, separatorLine, shieldsButton, kahfVPNButton]
+    let optionSubviews = [readerModeButton, shareButton, separatorLine, shieldsButton, kahfVPNButton]
     optionSubviews.forEach {
       ($0 as? UIButton)?.contentEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
       $0.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
@@ -309,7 +291,6 @@ class TabLocationView: UIView {
     }
 
     // Visual centering
-    rewardsButton.contentEdgeInsets = .init(top: 1, left: 5, bottom: 1, right: 5)
     playlistButton.contentEdgeInsets = .init(top: 2, left: 10, bottom: 2, right: 6)
     
     urlTextField.setContentHuggingPriority(.defaultLow, for: .horizontal)
@@ -472,20 +453,6 @@ class TabLocationView: UIView {
     
   @objc func didClickKahfVPNButton() {
     delegate?.tabLocationViewDidTapKahfVPNButton(self)
-  }
-    
-  @objc func didClickBraveRewardsButton() {
-    delegate?.tabLocationViewDidTapRewardsButton(self)
-  }
-
-  @objc func didLongPressRewardsButton(_ gesture: UILongPressGestureRecognizer) {
-    if gesture.state == .began {
-      delegate?.tabLocationViewDidLongPressRewardsButton(self)
-    }
-  }
-  
-  @objc func tappedWalletButton() {
-    delegate?.tabLocationViewDidTapWalletButton(self)
   }
 
   @objc func didClickShareButton() {

@@ -18,14 +18,12 @@ let package = Package(
     .library(name: "BraveShared", targets: ["BraveShared"]),
     .library(name: "BraveUI", targets: ["BraveUI"]),
     .library(name: "DesignSystem", targets: ["DesignSystem"]),
-    .library(name: "BraveWallet", targets: ["BraveWallet"]),
     .library(name: "Data", targets: ["Data"]),
     .library(name: "Storage", targets: ["Storage", "sqlcipher"]),
     .library(name: "BrowserIntentsModels", targets: ["BrowserIntentsModels"]),
     .library(name: "BraveWidgetsModels", targets: ["BraveWidgetsModels"]),
     .library(name: "Strings", targets: ["Strings"]),
     .library(name: "BraveVPN", targets: ["BraveVPN"]),
-    .library(name: "BraveNews", targets: ["BraveNews"]),
     .library(name: "Onboarding", targets: ["Onboarding"]),
     .library(name: "BraveTalk", targets: ["BraveTalk"]),
     .library(name: "Growth", targets: ["Growth"]),
@@ -62,7 +60,6 @@ let package = Package(
       dependencies: [
         "BraveShared",
         "Shared",
-        "BraveWallet",
         "BraveCore",
         "MaterialComponents",
         "BraveUI",
@@ -82,7 +79,6 @@ let package = Package(
         "BrowserIntentsModels",
         "BraveWidgetsModels",
         "BraveVPN",
-        "BraveNews",
         "Onboarding",
         "Growth",
         "CodableHelpers",
@@ -282,27 +278,6 @@ let package = Package(
       plugins: ["LoggerPlugin"]
     ),
     .target(
-      name: "BraveWallet",
-      dependencies: [
-        "Data",
-        "BraveCore",
-        "MaterialComponents",
-        "BraveShared",
-        "BraveUI",
-        "DesignSystem",
-        "Strings",
-        "PanModal",
-        "SDWebImage",
-        "SDWebImageSwiftUI",
-        "SnapKit",
-        "Then",
-        .product(name: "BigNumber", package: "Swift-BigInt"),
-        .product(name: "Algorithms", package: "swift-algorithms"),
-        .product(name: "Collections", package: "swift-collections"),
-      ],
-      plugins: ["LoggerPlugin"]
-    ),
-    .target(
       name: "BrowserIntentsModels",
       sources: ["BrowserIntents.intentdefinition", "CustomIntentHandler.swift"],
       plugins: ["IntentBuilderPlugin"]
@@ -331,31 +306,6 @@ let package = Package(
       plugins: ["LoggerPlugin"]
     ),
     .target(
-      name: "BraveNews",
-      dependencies: [
-        "BraveShared",
-        "Strings",
-        "SnapKit",
-        "Then",
-        "Data",
-        "BraveUI",
-        "DesignSystem",
-        "CodableHelpers",
-        "BraveCore",
-        "MaterialComponents",
-        "Static",
-        "FeedKit",
-        "Fuzi",
-        "Growth",
-        .product(name: "Lottie", package: "lottie-ios"),
-        .product(name: "Collections", package: "swift-collections"),
-      ],
-      resources: [
-        .copy("Lottie Assets/brave-today-welcome-graphic.json"),
-      ],
-      plugins: ["LoggerPlugin"]
-    ),
-    .target(
       name: "Onboarding",
       dependencies: [
         "BraveShared",
@@ -380,10 +330,6 @@ let package = Package(
       ],
       plugins: ["LoggerPlugin"]
     ),
-    .testTarget(name: "BraveNewsTests", dependencies: ["BraveNews"], resources: [
-      .copy("opml-test-files/subscriptionList.opml"),
-      .copy("opml-test-files/states.opml"),
-    ]),
     .target(name: "CodableHelpers"),
     .testTarget(name: "SharedTests", dependencies: ["Shared"]),
     .testTarget(
@@ -404,14 +350,6 @@ let package = Package(
         .copy("Certificates/expired.badssl.com/untrusted.badssl.com-root.cer"),
         .copy("Certificates/certviewer/brave.com.cer"),
         .copy("Certificates/certviewer/github.com.cer"),
-      ]
-    ),
-    .testTarget(
-      name: "BraveWalletTests",
-      dependencies: [
-        "BraveWallet",
-        "DataTestsUtils",
-        .product(name: "CustomDump", package: "swift-custom-dump")
       ]
     ),
     .testTarget(name: "StorageTests", dependencies: ["Storage", "BraveSharedTestUtils"], resources: [.copy("fixtures/v33.db"), .copy("testcert1.pem"), .copy("testcert2.pem")]),
