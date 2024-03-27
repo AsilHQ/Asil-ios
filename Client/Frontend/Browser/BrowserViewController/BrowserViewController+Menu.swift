@@ -71,7 +71,6 @@ extension BrowserViewController {
         let vc = SettingsViewController(
           profile: self.profile,
           tabManager: self.tabManager,
-          feedDataSource: self.feedDataSource,
           windowProtection: self.windowProtection,
           braveCore: self.braveCore
         )

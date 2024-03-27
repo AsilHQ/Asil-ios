@@ -15,7 +15,6 @@ import BraveCore
 import SwiftUI
 import BraveUI
 import BraveVPN
-import BraveNews
 import Growth
 
 extension TabBarVisibility: RepresentableOptionType {
@@ -39,7 +38,6 @@ class SettingsViewController: TableViewController {
   private let profile: Profile
   private let tabManager: TabManager
   private let legacyWallet: BraveLedger?
-  private let feedDataSource: FeedDataSource
   private let historyAPI: BraveHistoryAPI
   private let passwordAPI: BravePasswordAPI
   private let syncAPI: BraveSyncAPI
@@ -53,14 +51,12 @@ class SettingsViewController: TableViewController {
   init(
     profile: Profile,
     tabManager: TabManager,
-    feedDataSource: FeedDataSource,
     legacyWallet: BraveLedger? = nil,
     windowProtection: WindowProtection?,
     braveCore: BraveCoreMain
   ) {
     self.profile = profile
     self.tabManager = tabManager
-    self.feedDataSource = feedDataSource
     self.legacyWallet = legacyWallet
     self.windowProtection = windowProtection
     self.historyAPI = braveCore.historyAPI
@@ -90,11 +86,6 @@ class SettingsViewController: TableViewController {
     navigationController?.view.backgroundColor = .braveGroupedBackground
   }
 
-  private func displayBraveNewsDebugMenu() {
-    let settings = UIHostingController(rootView: BraveNewsDebugSettingsView(dataSource: feedDataSource))
-    navigationController?.pushViewController(settings, animated: true)
-  }
-
   private func displayBraveSearchDebugMenu() {
     let hostingController =
       UIHostingController(rootView: BraveSearchDebugMenu(logging: BraveSearchLogEntry.shared))
@@ -106,7 +97,6 @@ class SettingsViewController: TableViewController {
   private var sections: [Static.Section] {
     var list = [
       defaultBrowserSection,
-      //featuresSection,
       generalSection,
       displaySection,
       tabsSection,
@@ -179,61 +169,6 @@ class SettingsViewController: TableViewController {
     return section
   }()
 
-  private lazy var featuresSection: Static.Section = {
-    var section = Static.Section(
-      header: .title(Strings.features),
-      rows: [
-        Row(
-          text: Strings.braveShieldsAndPrivacy,
-          selection: { [unowned self] in
-            let controller = BraveShieldsAndPrivacySettingsController(
-              profile: self.profile,
-              tabManager: self.tabManager,
-              feedDataSource: self.feedDataSource,
-              historyAPI: self.historyAPI,
-              p3aUtilities: self.p3aUtilities
-            )
-            self.navigationController?.pushViewController(controller, animated: true)
-          }, image: UIImage(named: "settings-shields", in: .module, compatibleWith: nil)!, accessory: .disclosureIndicator)
-      ],
-      uuid: featureSectionUUID.uuidString
-    )
-
-    section.rows.append(
-      Row(
-        text: Strings.BraveNews.braveNews,
-        selection: {
-          let controller = NewsSettingsViewController(dataSource: self.feedDataSource, openURL: { [weak self] url in
-            guard let self else { return }
-            self.dismiss(animated: true)
-            self.settingsDelegate?.settingsOpenURLs([url])
-          })
-          controller.viewDidDisappear = {
-            if Preferences.Review.braveNewsCriteriaPassed.value {
-              AppReviewManager.shared.isReviewRequired = true
-              Preferences.Review.braveNewsCriteriaPassed.value = false
-            }
-          }
-          self.navigationController?.pushViewController(controller, animated: true)
-        }, image: UIImage(named: "settings-brave-today", in: .module, compatibleWith: nil)!.template, accessory: .disclosureIndicator)
-    )
-
-    vpnRow = vpnSettingsRow()
-    if let vpnRow = vpnRow {
-      section.rows.append(vpnRow)
-    }
-
-    section.rows.append(
-      Row(
-        text: Strings.PlayList.playListTitle,
-        selection: { [unowned self] in
-          let playlistSettings = PlaylistSettingsViewController()
-          self.navigationController?.pushViewController(playlistSettings, animated: true)
-        }, image: UIImage(named: "settings-playlist", in: .module, compatibleWith: nil)!.template, accessory: .disclosureIndicator)
-    )
-
-    return section
-  }()
 
   private lazy var generalSection: Static.Section = {
     var general = Static.Section(
@@ -245,23 +180,6 @@ class SettingsViewController: TableViewController {
             let viewController = SearchSettingsTableViewController(profile: self.profile)
             self.navigationController?.pushViewController(viewController, animated: true)
           }, image: UIImage(named: "settings-search", in: .module, compatibleWith: nil)!.template, accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self),
-        /*Row(
-          text: Strings.sync,
-          selection: { [unowned self] in
-            if syncAPI.isInSyncGroup {
-              if !DeviceInfo.hasConnectivity() {
-                self.present(SyncAlerts.noConnection, animated: true)
-                return
-              }
-
-              self.navigationController?
-                .pushViewController(SyncSettingsTableViewController(syncAPI: syncAPI, syncProfileService: syncProfileServices, tabManager: tabManager), animated: true)
-            } else {
-              self.navigationController?.pushViewController(SyncWelcomeViewController(syncAPI: syncAPI, syncProfileServices: syncProfileServices, tabManager: tabManager), animated: true)
-            }
-          }, image: UIImage(named: "settings-sync", in: .module, compatibleWith: nil)!.template, accessory: .disclosureIndicator,
-          cellClass: MultilineValue1Cell.self),
-        .boolRow(title: Strings.bookmarksLastVisitedFolderTitle, option: Preferences.General.showLastVisitedBookmarksFolder, image: UIImage(named: "menu_folder_open", in: .module, compatibleWith: nil)!.template),*/
         Row(
           text: Strings.Shortcuts.shortcutSettingsTitle,
           selection: { [unowned self] in
@@ -618,11 +536,6 @@ class SettingsViewController: TableViewController {
             let controller = UIHostingController(rootView: BraveCoreDebugSwitchesView())
             self.navigationController?.pushViewController(controller, animated: true)
           }, accessory: .disclosureIndicator, cellClass: MultilineSubtitleCell.self),
-        Row(
-          text: "View Brave News Debug Menu",
-          selection: { [unowned self] in
-            self.displayBraveNewsDebugMenu()
-          }, accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self),
         Row(
           text: "View Brave Search Debug Menu",
           selection: { [unowned self] in

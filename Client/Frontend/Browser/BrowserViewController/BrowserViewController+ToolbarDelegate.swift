@@ -10,7 +10,6 @@ import BraveCore
 import Storage
 import Data
 import SwiftUI
-import BraveNews
 import os.log
 
 // MARK: - TopToolbarDelegate
@@ -326,7 +325,6 @@ extension BrowserViewController: TopToolbarDelegate {
         let shieldsAndPrivacy = BraveShieldsAndPrivacySettingsController(
           profile: self.profile,
           tabManager: self.tabManager,
-          feedDataSource: self.feedDataSource,
           historyAPI: self.braveCore.historyAPI,
           p3aUtilities: self.braveCore.p3aUtils
         )
@@ -377,7 +375,6 @@ extension BrowserViewController: TopToolbarDelegate {
             let shieldsAndPrivacy = BraveShieldsAndPrivacySettingsController(
                 profile: self.profile,
                 tabManager: self.tabManager,
-                feedDataSource: self.feedDataSource,
                 historyAPI: self.braveCore.historyAPI,
                 p3aUtilities: self.braveCore.p3aUtils
             )
@@ -414,7 +411,6 @@ extension BrowserViewController: TopToolbarDelegate {
             let shieldsAndPrivacy = BraveShieldsAndPrivacySettingsController(
                 profile: self.profile,
                 tabManager: self.tabManager,
-                feedDataSource: self.feedDataSource,
                 historyAPI: self.braveCore.historyAPI,
                 p3aUtilities: self.braveCore.p3aUtils
             )

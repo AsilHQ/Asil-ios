@@ -11,7 +11,6 @@ import BraveCore
 import class SwiftUI.UIHostingController
 import UIKit
 import BraveUI
-import BraveNews
 import os.log
 import Data
 import Combine
@@ -20,7 +19,6 @@ import Growth
 class BraveShieldsAndPrivacySettingsController: TableViewController {
   let profile: Profile
   let tabManager: TabManager
-  let feedDataSource: FeedDataSource
   let historyAPI: BraveHistoryAPI
   let p3aUtilities: BraveP3AUtils
 
@@ -31,13 +29,11 @@ class BraveShieldsAndPrivacySettingsController: TableViewController {
   init(
     profile: Profile,
     tabManager: TabManager,
-    feedDataSource: FeedDataSource,
     historyAPI: BraveHistoryAPI,
     p3aUtilities: BraveP3AUtils
   ) {
     self.profile = profile
     self.tabManager = tabManager
-    self.feedDataSource = feedDataSource
     self.historyAPI = historyAPI
     self.p3aUtilities = p3aUtilities
 

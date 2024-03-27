@@ -21,7 +21,6 @@ import Brave
 import BraveVPN
 import Growth
 import RuntimeWarnings
-import BraveNews
 import BraveTalk
 import Onboarding
 import os
@@ -215,20 +214,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Temporary fix for Bug 1390871 - NSInvalidArgumentException: -[WKContentView menuHelperFindInPage]: unrecognized selector
     if let clazz = NSClassFromString("WKCont" + "ent" + "View"), let swizzledMethod = class_getInstanceMethod(TabWebViewMenuHelper.self, #selector(TabWebViewMenuHelper.swizzledMenuHelperFindInPage)) {
       class_addMethod(clazz, MenuHelper.selectorFindInPage, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))
-    }
-
-    if Preferences.BraveNews.isEnabled.value && !Preferences.BraveNews.userOptedIn.value {
-      // Opt-out any user that has not explicitly opted-in
-      Preferences.BraveNews.isEnabled.value = false
-      // User now has to explicitly opt-in
-      Preferences.BraveNews.isShowingOptIn.value = true
-    }
-
-    if !Preferences.BraveNews.languageChecked.value,
-      let languageCode = Locale.preferredLanguages.first?.prefix(2) {
-      Preferences.BraveNews.languageChecked.value = true
-      // Base opt-in visibility on whether or not the user's language is supported in BT
-      Preferences.BraveNews.isShowingOptIn.value = FeedDataSource.supportedLanguages.contains(String(languageCode)) || FeedDataSource.knownSupportedLocales.contains(Locale.current.identifier)
     }
 
     SystemUtils.onFirstRun()

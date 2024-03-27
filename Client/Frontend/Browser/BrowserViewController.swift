@@ -16,11 +16,9 @@ import CoreData
 import StoreKit
 import SafariServices
 import BraveUI
-import FeedKit
 import SwiftUI
 import class Combine.AnyCancellable
 import BraveVPN
-import BraveNews
 import os.log
 import BraveTalk
 import Onboarding
@@ -123,7 +121,6 @@ public class BrowserViewController: UIViewController {
 
   // Single data source used for all favorites vcs
   public let backgroundDataSource = NTPDataSource()
-  let feedDataSource = FeedDataSource()
 
   private var postSetupTasks: [() -> Void] = []
   private var setupTasksCompleted: Bool = false
@@ -1143,8 +1140,7 @@ public class BrowserViewController: UIViewController {
       let ntpController = NewTabPageViewController(
         tab: selectedTab,
         profile: profile,
-        dataSource: backgroundDataSource,
-        feedDataSource: feedDataSource)
+        dataSource: backgroundDataSource)
       /// Donate NewTabPage Activity For Custom Suggestions
       let newTabPageActivity =
         ActivityShortcutManager.shared.createShortcutActivity(type: selectedTab.isPrivate ? .newPrivateTab : .newTab)
@@ -1777,30 +1773,6 @@ public class BrowserViewController: UIViewController {
           tab?.switchUserAgent()
         })
 
-      if Preferences.BraveNews.isEnabled.value, let metadata = tab?.pageMetadata,
-        !metadata.feeds.isEmpty {
-        let feeds: [RSSFeedLocation] = metadata.feeds.compactMap { feed in
-          guard let url = URL(string: feed.href) else { return nil }
-          return RSSFeedLocation(title: feed.title, url: url)
-        }
-        if !feeds.isEmpty {
-          let addToBraveNews = AddFeedToBraveNewsActivity() { [weak self] in
-            guard let self = self else { return }
-            let controller = BraveNewsAddSourceResultsViewController(
-              dataSource: self.feedDataSource,
-              searchedURL: url,
-              rssFeedLocations: feeds,
-              sourcesAdded: nil
-            )
-            let container = UINavigationController(rootViewController: controller)
-            let idiom = UIDevice.current.userInterfaceIdiom
-            container.modalPresentationStyle = idiom == .phone ? .pageSheet : .formSheet
-            self.present(container, animated: true)
-          }
-          activities.append(addToBraveNews)
-        }
-      }
-
       if let webView = tab?.webView, tab?.temporaryDocument == nil {
         let createPDFActivity = CreatePDFActivity(webView: webView) { [weak self] pdfData in
           guard let self = self else { return }
@@ -1827,31 +1799,6 @@ public class BrowserViewController: UIViewController {
           }
         }
         activities.append(createPDFActivity)
-      }
-
-    } else {
-      // Check if it's a feed, url is a temp document file URL
-      if let selectedTab = tabManager.selectedTab,
-        (selectedTab.mimeType == "application/xml" || selectedTab.mimeType == "application/json"),
-        let tabURL = selectedTab.url {
-
-        let parser = FeedParser(URL: url)
-        if case .success(let feed) = parser.parse() {
-          let addToBraveNews = AddFeedToBraveNewsActivity() { [weak self] in
-            guard let self = self else { return }
-            let controller = BraveNewsAddSourceResultsViewController(
-              dataSource: self.feedDataSource,
-              searchedURL: tabURL,
-              rssFeedLocations: [.init(title: feed.title, url: tabURL)],
-              sourcesAdded: nil
-            )
-            let container = UINavigationController(rootViewController: controller)
-            let idiom = UIDevice.current.userInterfaceIdiom
-            container.modalPresentationStyle = idiom == .phone ? .pageSheet : .formSheet
-            self.present(container, animated: true)
-          }
-          activities.append(addToBraveNews)
-        }
       }
     }
 

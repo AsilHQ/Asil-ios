@@ -24,7 +24,6 @@ let package = Package(
     .library(name: "BraveWidgetsModels", targets: ["BraveWidgetsModels"]),
     .library(name: "Strings", targets: ["Strings"]),
     .library(name: "BraveVPN", targets: ["BraveVPN"]),
-    .library(name: "BraveNews", targets: ["BraveNews"]),
     .library(name: "Onboarding", targets: ["Onboarding"]),
     .library(name: "BraveTalk", targets: ["BraveTalk"]),
     .library(name: "Growth", targets: ["Growth"]),
@@ -80,7 +79,6 @@ let package = Package(
         "BrowserIntentsModels",
         "BraveWidgetsModels",
         "BraveVPN",
-        "BraveNews",
         "Onboarding",
         "Growth",
         "CodableHelpers",
@@ -308,31 +306,6 @@ let package = Package(
       plugins: ["LoggerPlugin"]
     ),
     .target(
-      name: "BraveNews",
-      dependencies: [
-        "BraveShared",
-        "Strings",
-        "SnapKit",
-        "Then",
-        "Data",
-        "BraveUI",
-        "DesignSystem",
-        "CodableHelpers",
-        "BraveCore",
-        "MaterialComponents",
-        "Static",
-        "FeedKit",
-        "Fuzi",
-        "Growth",
-        .product(name: "Lottie", package: "lottie-ios"),
-        .product(name: "Collections", package: "swift-collections"),
-      ],
-      resources: [
-        .copy("Lottie Assets/brave-today-welcome-graphic.json"),
-      ],
-      plugins: ["LoggerPlugin"]
-    ),
-    .target(
       name: "Onboarding",
       dependencies: [
         "BraveShared",
@@ -357,10 +330,6 @@ let package = Package(
       ],
       plugins: ["LoggerPlugin"]
     ),
-    .testTarget(name: "BraveNewsTests", dependencies: ["BraveNews"], resources: [
-      .copy("opml-test-files/subscriptionList.opml"),
-      .copy("opml-test-files/states.opml"),
-    ]),
     .target(name: "CodableHelpers"),
     .testTarget(name: "SharedTests", dependencies: ["Shared"]),
     .testTarget(

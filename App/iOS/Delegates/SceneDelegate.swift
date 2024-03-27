@@ -312,13 +312,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       }
 
       return
-    case ActivityType.openBraveNews.identifier:
-      if let browserViewController = scene.browserViewController {
-        ActivityShortcutManager.shared.performShortcutActivity(
-          type: .openBraveNews, using: browserViewController)
-      }
-
-      return
     case ActivityType.openPlayList.identifier:
       if let browserViewController = scene.browserViewController {
         ActivityShortcutManager.shared.performShortcutActivity(
