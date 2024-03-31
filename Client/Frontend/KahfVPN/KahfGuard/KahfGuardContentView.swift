@@ -23,15 +23,19 @@ struct KahfGuardContentView: View {
     @State var connected = false
     @State var connecting = false
     @State var connectSwitch = false
+    @State var reconnectOnChange = false
     @State var error: String?
     @State var totalBlacklistHosts: String?
     @State var bottomBanner: Banner?
     @State var showBottomBanner = false
+    @State var showBottomButtons: Bool = false
     
     @State var overVerifyButton = false
     let overVerifyColor = Color(hex: 0x000)
     
     @State var showConnectedMessage = false
+    
+    @State var youtubeSafeSearchDisabled =  UserDefaults.standard.bool(forKey: VpnConnect.storageKeys.youtubeSafeSearchDisabled)
     
     var onConnectionStatusChanged: ((Bool) -> Void)?
     var onTotalBlacklistHostsFetched: ((Int64) -> Void)?
@@ -44,41 +48,42 @@ struct KahfGuardContentView: View {
     // view
     var body: some View {
         ZStack(alignment: .top) {
+            // company
+            TopBannerView(showConnectedMessage: $showConnectedMessage)
+            
             // version
             VStack {
-                ScrollView {
-                    // company
-                    TopBannerView(showConnectedMessage: $showConnectedMessage)
-
+                VStack (alignment: .center) {
                     // logo
                     Image(.logo)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 300)
-                        .padding(.top, 30)
+                        .padding(.top, -80)
 
-                    if connecting {
+                    if connecting || reconnectOnChange {
                         // connecting...
                         ProgressView()
                             .tint(Color.gray)
-                            .padding(.top, 30)
-
+                            .padding(.top, 0)
+                        
                     } else {
                         if error != nil && !connected {
                             // error
                             Text(error!)
                                 .foregroundStyle(.red)
                                 .font(.system(size: 14))
-                                .padding(.top, 20)
-                                .padding(.bottom, -10)
+                                .padding(.top, 40)
+                                .padding(.leading, 10)
+                                .padding(.trailing, 10)
                                 .multilineTextAlignment(.center)
                         }
-
+                        
                         Toggle("", isOn: $connectSwitch)
                             .labelsHidden()
                             .toggleStyle(.switch)
                             .scaleEffect(CGSize(width: 2.5, height: 2.5))
-                            .padding(.top, 50)
+                            .padding(.top, 20)
                             .tint(KahfGuardContentView.accentColor)
                             .environment(\.colorScheme, .light)
                             .onChange(of: self.connectSwitch, perform: { status in
@@ -93,10 +98,7 @@ struct KahfGuardContentView: View {
                                     }
                                 }
                             })
-                            .onHover { inside in
-                                onConnectToggleHover(inside: inside)
-                            }
-
+                        
                         if !connected {
                             // not connected
 
@@ -105,7 +107,7 @@ struct KahfGuardContentView: View {
                                 .font(.custom("Poppins-Bold", size: 22))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.black)
-
+                            
                             if error == nil {
                                 Text("You're not protected from Haram websites.")
                                     .font(.custom("Poppins-Regular", size: 13))
@@ -119,7 +121,7 @@ struct KahfGuardContentView: View {
                                 .font(.custom("Poppins-Bold", size: 22))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.black)
-
+                            
                             if totalBlacklistHosts != nil {
                                 Group {
                                     Text("You're protected from ")
@@ -132,52 +134,64 @@ struct KahfGuardContentView: View {
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.black)
                             }
+                            
+                            // switch server type
+                            Toggle(isOn: $youtubeSafeSearchDisabled) {
+                                        Text("(Optional) Disable safe search in Youtube.")
+                                        .opacity(youtubeSafeSearchDisabled ? 1 : 0.5)
+                                        .font(.custom("Poppins-Italic", size: 12))
+                                        .foregroundStyle(.black)
+                                        .animation(.easeInOut, value: youtubeSafeSearchDisabled)
 
+                            }
+                            .padding(.horizontal, 20)
+                            .onChange(of: self.youtubeSafeSearchDisabled, perform: { enabled in
+                                print("Toggle Youtube Safe search event.")
+                                youtubeSafeSearchToggled(enabled: enabled)
+                            })
+                            
                             // verify button
                             Link(destination: URL(string: verifyLink)!) {
                                 Text("Verify Protection")
                                     .font(.custom("Poppins-Regular", size: 13))
                                     .underline()
                                     .multilineTextAlignment(.center)
-                                    .padding(.top, 15)
-                            }
-                            .onHover { inside in
-                                onVerifyButtonHover(inside: inside)
-                                overVerifyButton = inside
+                                    .padding(.top, 10)
                             }
                             .foregroundStyle(overVerifyButton ? overVerifyColor : KahfGuardContentView.accentColor)
                             .animation(.easeInOut, value: overVerifyButton)
                         }
                     }
-
-                    #if os(iOS)
-                        if showBottomBanner {
-                            if let bottomBanner = bottomBanner {
-                                BannerView(bottomBanner: bottomBanner)
-                            }
-                        }
-                    #else
-                    #endif
                 }
                 .padding(.leading, 0)
                 .padding(.trailing, 0)
-
-                // bottom banner
-                #if os(macOS)
-                    if showBottomBanner {
-                        if let bottomBanner = bottomBanner {
-                            BannerView(bottomBanner: bottomBanner)
-                        }
-                    }
-                #else
-                #endif
-
             }
             .frame(
                 maxWidth: .infinity,
                 maxHeight: .infinity
             )
-
+            
+            Group{
+                VStack (spacing: 0) {
+                    if showBottomBanner {
+                        if let bottomBanner = bottomBanner {
+                            BannerView(bottomBanner: bottomBanner)
+                            .onAppear {
+                                print("Bottom banner appeared")
+                                //show bottom buttons
+                                Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
+                                    showBottomButtons = true
+                                }
+                            }
+                            
+                            if showBottomButtons {
+                                BottomButtonsContainerView()
+                            }
+                            
+                        }
+                    }
+                }
+            }.frame(maxHeight: .infinity, alignment: .bottom)
         }
         .frame(
             maxWidth: .infinity,
@@ -195,13 +209,14 @@ struct KahfGuardContentView: View {
         .animation(.easeInOut, value: totalBlacklistHosts)
         .animation(.easeInOut, value: error)
         .animation(.easeInOut, value: showBottomBanner)
+        .animation(.easeInOut, value: showBottomButtons)
         .animation(.easeInOut, value: showConnectedMessage)
-
+        
         // prefer light mode.
         .preferredColorScheme(.light)
-
+    
     }
-
+    
     func setTotalBlacklistHosts() {
         api.getTotalBlacklistHosts { success, errorMessage, totalFormatted, totalUnformatted in
             if success {
@@ -232,8 +247,14 @@ struct KahfGuardContentView: View {
     
     func disconnectButtonPressed() {
         error = nil // clear error.
-
+        connecting = true
         let vpnConnectObject = VpnConnect()
+        vpnConnectObject.disconnect()
+    }
+    
+    func youtubeSafeSearchToggled(enabled: Bool) {
+        UserDefaults.standard.set(enabled, forKey: VpnConnect.storageKeys.youtubeSafeSearchDisabled)
+        reconnectOnChange = true
         vpnConnectObject.disconnect()
     }
     
@@ -253,6 +274,7 @@ struct KahfGuardContentView: View {
             if success {
                 bottomBanner = banner
                 showBottomBanner = true
+                
             } else {
                 print("setBottomBanner: \(errorMessage ?? "Unknown")")
             }
@@ -286,8 +308,14 @@ struct KahfGuardContentView: View {
             showConnectedMessage = false
             
             onConnectionStatusChanged?(false)
+            
+            if (reconnectOnChange){
+                reconnectOnChange = false
+                connectButtonPressed()
+            }
         case NEVPNStatus.connecting:
             print("vpnStatusChanged: Connecting")
+            error = nil
             connecting = true
             connected = false
             showConnectedMessage = false
@@ -295,6 +323,7 @@ struct KahfGuardContentView: View {
             onConnectionStatusChanged?(false)
         case NEVPNStatus.connected:
             print("vpnStatusChanged: Connected")
+            error = nil
             connecting = false
             connected = true
             connectSwitch = true
@@ -331,28 +360,6 @@ struct KahfGuardContentView: View {
             connectSwitch = false
         }
     }
-    
-    func onConnectToggleHover(inside: Bool) {
-        #if os(macOS)
-            if inside {
-                NSCursor.pointingHand.push()
-            } else {
-                NSCursor.pop()
-            }
-        #else
-        #endif
-    }
-    
-    func onVerifyButtonHover(inside: Bool) {
-        #if os(macOS)
-            if inside {
-                NSCursor.pointingHand.push()
-            } else {
-                NSCursor.pop()
-            }
-        #else
-        #endif
-    }
 
     @MainActor static func redirect() -> UIView {
         let popupView = KahfGuardContentView()
@@ -362,16 +369,4 @@ struct KahfGuardContentView: View {
 
 #Preview {
     KahfGuardContentView()
-}
-
-extension Color {
-    init(hex: UInt, alpha: Double = 1) {
-        self.init(
-            .sRGB,
-            red: Double((hex >> 16) & 0xff) / 255,
-            green: Double((hex >> 08) & 0xff) / 255,
-            blue: Double((hex >> 00) & 0xff) / 255,
-            opacity: alpha
-        )
-    }
 }

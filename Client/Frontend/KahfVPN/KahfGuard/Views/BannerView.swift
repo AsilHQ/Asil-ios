@@ -10,7 +10,7 @@ import SwiftUI
 struct BannerView: View {
     @State var bottomBanner: Banner
     @State var opacity = 1.0
-
+    
     var body: some View {
         AsyncImage(url: URL(string: bottomBanner.image), transaction: Transaction(animation: .bouncy)) { phase in
             switch phase {
@@ -21,11 +21,8 @@ struct BannerView: View {
                     image.resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(maxWidth: .infinity, maxHeight: 90)
-                        .padding(.leading, 2)
-                        .padding(.trailing, 2)
-                        .onHover { inside in
-                            onHover(inside: inside)
-                        }
+                        .padding(.leading, 10)
+                        .padding(.trailing, 10)
                 }
                 .transition(.move(edge: .bottom))
                 .transition(.slide)
@@ -37,18 +34,5 @@ struct BannerView: View {
         }
         .opacity(opacity)
         .animation(.easeInOut, value: opacity)
-    }
-
-    func onHover(inside: Bool) {
-        #if os(macOS)
-            if inside {
-                NSCursor.pointingHand.push()
-                self.opacity = 0.8
-            } else {
-                NSCursor.pop()
-                self.opacity = 1.0
-            }
-        #else
-        #endif
     }
 }

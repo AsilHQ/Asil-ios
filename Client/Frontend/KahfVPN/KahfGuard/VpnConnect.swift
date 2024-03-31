@@ -11,12 +11,15 @@ import NetworkExtension
 import KeychainAccess
 
 public class VpnConnect {
+    static let storageKeys = (youtubeSafeSearchDisabled: "youtubeSafeSearchDisabled", useForLater: "useForLater")
+    
     struct VpnServiceDetailsStruct {
         let name: String
     }
     
     struct VpnDetailsStruct {
         let serverAddress: String
+        let serverAddressForNoYoutubeSs: String
         let sharedSecret: String
         let username: String
         let password: String
@@ -27,14 +30,16 @@ public class VpnConnect {
         let keySharedSecret: String
         let keyUsername: String
         let keyPassword: String
+        let keyServerType: Int
     }
     
     let vpnServiceDetails = VpnServiceDetailsStruct(
-        name: "KahfDNS VPN"
+        name: "Kahf Guard VPN"
     )
     
     let vpnDetails = VpnDetailsStruct(
         serverAddress: "146.190.201.161",
+        serverAddressForNoYoutubeSs: "167.172.5.116",
         sharedSecret: "KahfDns-shared", // case-sensitive
         username: "kahf", // case-sensitive
         password: "KahfDns-p" // case-sensitive
@@ -44,7 +49,8 @@ public class VpnConnect {
         serviceName: "com.halalz.kahfdns",
         keySharedSecret: "sharedSecret",
         keyUsername: "username",
-        keyPassword: "password"
+        keyPassword: "password",
+        keyServerType: 1 //1 => normal, 2 => no youtube ss.
     )
     
     var retried = false
@@ -80,7 +86,6 @@ public class VpnConnect {
         
         // setup vpn protocol
         let vpnProtocol = NEVPNProtocolIPSec()
-        vpnProtocol.serverAddress = vpnDetails.serverAddress
         vpnProtocol.username = username
         vpnProtocol.authenticationMethod = NEVPNIKEAuthenticationMethod.sharedSecret
         vpnProtocol.sharedSecretReference = refSharedSecret
@@ -90,7 +95,33 @@ public class VpnConnect {
         vpnProtocol.localIdentifier = ""
         vpnProtocol.remoteIdentifier = ""
         
+        //server address based on user setting
+        let youtubeSafeSearchDisabled = UserDefaults.standard.bool(forKey: VpnConnect.storageKeys.youtubeSafeSearchDisabled)
+        if (!youtubeSafeSearchDisabled){
+            //use default server
+            vpnProtocol.serverAddress = vpnDetails.serverAddress
+        } else {
+            //use no-youtube-safe-search server
+            vpnProtocol.serverAddress = vpnDetails.serverAddressForNoYoutubeSs
+        }
+        
         return vpnProtocol
+    }
+    
+    private func _prepareVpnManager() -> NEVPNManager {
+        
+        let vpnManager = NEVPNManager.shared()
+
+        let connectRule = NEOnDemandRuleConnect()
+        connectRule.interfaceTypeMatch = .any
+        vpnManager.isOnDemandEnabled = true
+        vpnManager.onDemandRules = [connectRule]
+        vpnManager.protocolConfiguration?.disconnectOnSleep = false
+        vpnManager.protocolConfiguration = self._makeProtocol()
+        vpnManager.localizedDescription = self.vpnServiceDetails.name
+        vpnManager.isEnabled = true
+        
+        return vpnManager
     }
     
     /**
@@ -99,21 +130,18 @@ public class VpnConnect {
     func connect(errorCallback: @escaping (String, Bool) -> Void) {
         print("VPNConnect: connect()")
         
-        let vpnManager = NEVPNManager.shared()
+        var vpnManager = _prepareVpnManager()
         
+        //there's a bug in ios where we have to load and save again and load.
         vpnManager.loadFromPreferences { error in
             if error != nil {
-                print("VPNConnect: connect() - VPN Preferences load error (1)")
+                print("VPNConnect: connect() - VPN Preferences load error (1).")
                 print(error ?? "Unknown error")
                 errorCallback("Unable to connect with VPN (error: 1)", true)
             } else {
                 print("VPNConnect: connect() - Preferences loaded (1)", true)
-
-                vpnManager.protocolConfiguration = self._makeProtocol()
-                vpnManager.localizedDescription = self.vpnServiceDetails.name
-                vpnManager.isEnabled = true
-                vpnManager.isOnDemandEnabled = true
                 
+                vpnManager = self._prepareVpnManager()
                 vpnManager.saveToPreferences(completionHandler: { error in
                     if error != nil {
                         print("VPNConnect: connect() - VPN Preferences save error")
@@ -166,7 +194,22 @@ public class VpnConnect {
     
     func disconnect() {
         print("VPNConnect: disconnect()")
-        NEVPNManager.shared().connection.stopVPNTunnel()
+        
+        let vpnManager = _prepareVpnManager()
+        
+        //remove ondemand rules so it does not keep on reconnecting.
+        vpnManager.isOnDemandEnabled = false
+        vpnManager.onDemandRules = []
+        
+        vpnManager.saveToPreferences { error in
+            if error != nil {
+                print("VPNConnect: connect() - VPN Preferences save error")
+                print(error ?? "Unknown error")
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                vpnManager.connection.stopVPNTunnel()
+            }
+        }
     }
 }
-
