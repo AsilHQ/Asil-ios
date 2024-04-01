@@ -5,7 +5,6 @@ import Shared
 import BraveShared
 import BraveCore
 import Data
-import BraveWallet
 import BraveUI
 
 enum SyncDeviceType {
@@ -294,7 +293,7 @@ extension SyncAddDeviceViewController {
 
   @objc func copyToClipboard() {
     if let words = self.codewordsView.text {
-      UIPasteboard.general.setSecureString(words, expirationDate: Date().addingTimeInterval(30))
+      //UIPasteboard.general.setSecureString(words, expirationDate: Date().addingTimeInterval(30))
       copyButtonPressed = true
     }
   }

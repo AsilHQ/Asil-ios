@@ -13,9 +13,3 @@ extension Strings.CertificateViewer {
   public static let sha1Title = "SHA-1"
 }
 
-extension Strings {
-  /// "BAT" or "BAT Points" depending on the region
-  public static var BAT: String {
-    return Preferences.Rewards.isUsingBAP.value == true ? "BAP" : "BAT"
-  }
-}

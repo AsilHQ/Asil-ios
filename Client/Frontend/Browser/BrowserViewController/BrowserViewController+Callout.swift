@@ -193,19 +193,6 @@ extension BrowserViewController {
     if presentedViewController != nil || !FullScreenCalloutManager.shouldShowDefaultBrowserCallout(calloutType: .rewards) {
       return
     }
-
-    if BraveRewards.isAvailable, !Preferences.Rewards.rewardsToggledOnce.value {
-      let controller = OnboardingRewardsAgreementViewController()
-      controller.onOnboardingStateChanged = { [weak self] controller, state in
-        self?.completeOnboarding(controller)
-      }
-      controller.onRewardsStatusChanged = { [weak self] status in
-        self?.rewards.isEnabled = status
-      }
-      
-      present(controller, animated: true)
-      isOnboardingOrFullScreenCalloutPresented = true
-    }
   }
   
   func presentTabReceivedCallout(url: URL) {

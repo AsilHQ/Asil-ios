@@ -13,7 +13,6 @@ class MenuItemFactory {
     case playlist(subtitle: String? = nil)
     case settings
     case talk
-    case wallet(subtitle: String? = nil)
     case kafhTube
     
     var icon: UIImage {
@@ -32,8 +31,6 @@ class MenuItemFactory {
           return UIImage(named: "menu-settings", in: .module, compatibleWith: nil)!.template
         case .talk:
           return UIImage(named: "menu-brave-talk", in: .module, compatibleWith: nil)!.template
-        case .wallet(_):
-          return UIImage(named: "menu-crypto", in: .module, compatibleWith: nil)!.template
         case .kafhTube:
           return UIImage(named: "menu-kahf-tube", in: .module, compatibleWith: nil)!
       }
@@ -55,8 +52,6 @@ class MenuItemFactory {
         return Strings.settingsMenuItem
       case .talk:
         return Strings.OptionsMenu.braveTalkItemTitle
-      case .wallet:
-        return Strings.Wallet.wallet
       case .kafhTube:
         return Strings.youtubeFiltrationItem
       }
@@ -70,8 +65,6 @@ class MenuItemFactory {
         return subtitle
       case .talk:
         return Strings.OptionsMenu.braveTalkItemDescription
-      case let .wallet(subtitle):
-        return subtitle
       default:
         return nil
       }

@@ -92,50 +92,6 @@ extension Preferences {
     public static let initialP3AStateReported = Option<Bool>(key: "shields.initial-p3a-state-reported", default: false)
   }
 
-  public final class Rewards {
-    public static let myFirstAdShown = Option<Bool>(key: "rewards.ads.my-first-ad-shown", default: false)
-    public static let hideRewardsIcon = Option<Bool>(key: "rewards.new-hide-rewards-icon", default: false)
-    public static let rewardsToggledOnce = Option<Bool>(key: "rewards.rewards-toggled-once", default: false)
-    public static let isUsingBAP = Option<Bool?>(key: "rewards.is-using-bap", default: nil)
-    public static let seenDataMigrationFailureError = Option<Bool>(key: "rewards.seen-data-migration-failure-error", default: false)
-    public static let migratedLegacyWallet = Option<Bool>(key: "rewards.migrated-legacy-wallet", default: false)
-    public static let adaptiveCaptchaFailureCount = Option<Int>(key: "rewards.adaptive-captcha-failure-count", default: 0)
-
-    public enum EnvironmentOverride: Int {
-      case none
-      case staging
-      case prod
-      case dev
-
-      public var name: String {
-        switch self {
-        case .none: return "None"
-        case .staging: return "Staging"
-        case .prod: return "Prod"
-        case .dev: return "Dev"
-        }
-      }
-
-      public static var sortedCases: [EnvironmentOverride] {
-        return [.none, .dev, .staging, .prod]
-      }
-    }
-    /// In debug/beta, this is the overriden environment.
-    public static let environmentOverride = Option<Int>(
-      key: "rewards.environment-override",
-      default: EnvironmentOverride.none.rawValue)
-    
-    public static let debugFlagIsDebug = Option<Bool?>(key: "rewards.flag.is-debug", default: nil)
-    public static let debugFlagRetryInterval = Option<Int?>(key: "rewards.flag.retry-interval", default: nil)
-    public static let debugFlagReconcileInterval = Option<Int?>(key: "rewards.flag.reconcile-interval", default: nil)
-
-    /// In debut/beta, the number of seconds before an ad should automatically dismiss
-    public static let adsDurationOverride = Option<Int?>(key: "rewards.ads.dismissal-override", default: nil)
-
-    /// Whether or not the user successfully enrolled before
-    public static let didEnrollDeviceCheck = Option<Bool>(key: "rewards.devicecheck.did.enroll", default: false)
-  }
-
   public final class BraveCore {
     /// Switches that are passed into BraveCoreMain during launch.
     ///

@@ -10,7 +10,6 @@ import BraveCore
 import Storage
 import Data
 import SwiftUI
-import BraveNews
 import os.log
 
 // MARK: - TopToolbarDelegate
@@ -322,7 +321,6 @@ extension BrowserViewController: TopToolbarDelegate {
         let shieldsAndPrivacy = BraveShieldsAndPrivacySettingsController(
           profile: self.profile,
           tabManager: self.tabManager,
-          feedDataSource: self.feedDataSource,
           historyAPI: self.braveCore.historyAPI,
           p3aUtilities: self.braveCore.p3aUtils
         )
@@ -373,7 +371,6 @@ extension BrowserViewController: TopToolbarDelegate {
             let shieldsAndPrivacy = BraveShieldsAndPrivacySettingsController(
                 profile: self.profile,
                 tabManager: self.tabManager,
-                feedDataSource: self.feedDataSource,
                 historyAPI: self.braveCore.historyAPI,
                 p3aUtilities: self.braveCore.p3aUtils
             )
@@ -410,7 +407,6 @@ extension BrowserViewController: TopToolbarDelegate {
             let shieldsAndPrivacy = BraveShieldsAndPrivacySettingsController(
                 profile: self.profile,
                 tabManager: self.tabManager,
-                feedDataSource: self.feedDataSource,
                 historyAPI: self.braveCore.historyAPI,
                 p3aUtilities: self.braveCore.p3aUtils
             )
@@ -437,27 +433,12 @@ extension BrowserViewController: TopToolbarDelegate {
     navigationHelper.openBookmarks()
   }
 
-  func topToolbarDidTapBraveRewardsButton(_ topToolbar: TopToolbarView) {
-    //showBraveRewardsPanel()
-  }
-
-  func topToolbarDidLongPressBraveRewardsButton(_ topToolbar: TopToolbarView) {
-    showRewardsDebugSettings()
-  }
-
   func topToolbarDidTapMenuButton(_ topToolbar: TopToolbarView) {
     tabToolbarDidPressMenu(topToolbar)
   }
 
   func topToolbarDidPressQrCodeButton(_ urlBar: TopToolbarView) {
     scanQRCode()
-  }
-
-  func topToolbarDidTapWalletButton(_ urlBar: TopToolbarView) {
-    guard let selectedTab = tabManager.selectedTab else {
-      return
-    }
-    presentWalletPanel(from: selectedTab.getOrigin(), with: selectedTab.tabDappStore)
   }
     
   func topToolbarDidTapShareButton(_ urlBar: TopToolbarView) {

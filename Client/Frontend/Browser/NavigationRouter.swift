@@ -124,8 +124,6 @@ public enum NavigationPath: Equatable {
       }
     case .playlist:
       bvc.navigationHelper.openPlaylist()
-    case .wallet:
-      bvc.navigationHelper.openWallet()
     case .scanQRCode:
       bvc.scanQRCode()
     @unknown default:

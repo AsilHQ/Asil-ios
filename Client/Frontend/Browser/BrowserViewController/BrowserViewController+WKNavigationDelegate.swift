@@ -9,7 +9,6 @@ import Data
 import BraveShared
 import BraveCore
 import BraveUI
-import BraveWallet
 import os.log
 
 extension WKNavigationAction {
@@ -94,20 +93,6 @@ extension BrowserViewController: WKNavigationDelegate {
       return
     }
     toolbarVisibilityViewModel.toolbarState = .expanded
-
-    if let selectedTab = tabManager.selectedTab,
-       selectedTab.url?.origin != webView.url?.origin {
-      // new site has a different origin, hide wallet icon.
-      tabManager.selectedTab?.isWalletIconVisible = false
-      // new site, reset connected addresses
-      tabManager.selectedTab?.clearSolanaConnectedAccounts()
-      // close wallet panel if it's open
-      if let popoverController = self.presentedViewController as? PopoverController,
-         popoverController.contentController is WalletPanelHostingController {
-        self.dismiss(animated: true)
-      }
-    }
-
     updateFindInPageVisibility(visible: false)
     displayPageZoom(visible: false)
 
@@ -361,14 +346,6 @@ extension BrowserViewController: WKNavigationDelegate {
     if navigationAction.targetFrame?.isMainFrame == true,
       BraveSearchManager.isValidURL(url) {
 
-      // Add Brave Search headers if Rewards is enabled
-      if !isPrivateBrowsing && rewards.isEnabled && navigationAction.request.allHTTPHeaderFields?["X-Brave-Ads-Enabled"] == nil {
-        var modifiedRequest = URLRequest(url: url)
-        modifiedRequest.setValue("1", forHTTPHeaderField: "X-Brave-Ads-Enabled")
-        tab?.loadRequest(modifiedRequest)
-        return (.cancel, preferences)
-      }
-
       // We fetch cookies to determine if backup search was enabled on the website.
       let profile = self.profile
       let cookies = await webView.configuration.websiteDataStore.httpCookieStore.allCookies()
@@ -616,9 +593,6 @@ extension BrowserViewController: WKNavigationDelegate {
     
     // Need to evaluate Night mode script injection after url is set inside the Tab
     tab.nightMode = Preferences.General.nightModeEnabled.value
-    tab.clearSolanaConnectedAccounts()
-
-    rewards.reportTabNavigation(tabId: tab.rewardsId)
 
     if tabManager.selectedTab === tab {
       updateUIForReaderHomeStateForTab(tab)
@@ -652,21 +626,6 @@ extension BrowserViewController: WKNavigationDelegate {
       }
 
       navigateInTab(tab: tab, to: navigation)
-      if let url = tab.url, tab.shouldClassifyLoadsForAds {
-        let faviconURL = URL(string: tab.displayFavicon?.url ?? "")
-        rewards.reportTabUpdated(
-          tab: tab,
-          url: url,
-          faviconURL: faviconURL,
-          isSelected: tabManager.selectedTab == tab,
-          isPrivate: PrivateBrowsingManager.shared.isPrivateBrowsing
-        )
-      }
-      tab.updateEthereumProperties()
-      Task {
-        await tab.updateSolanaProperties()
-      }
-      tab.reportPageLoad(to: rewards, redirectionURLs: tab.redirectURLs)
       tab.redirectURLs = []
       if webView.url?.isLocal == false {
         // Reset should classify
@@ -676,10 +635,6 @@ extension BrowserViewController: WKNavigationDelegate {
       }
 
       tabsBar.reloadDataAndRestoreSelectedTab()
-      
-      if tab.walletEthProvider != nil {
-        tab.emitEthereumEvent(.connect)
-      }
     
       if let url = webView.url {
           if url.absoluteString.contains("youtube.com") {
@@ -693,11 +648,6 @@ extension BrowserViewController: WKNavigationDelegate {
     // Added this method to determine long press menu actions better
     // Since these actions are depending on tabmanager opened WebsiteCount
     updateToolbarUsingTabManager(tabManager)
-  }
-
-  public func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
-    guard let tab = tab(for: webView), let url = webView.url, rewards.isEnabled else { return }
-    tab.redirectURLs.append(url)
   }
   
   /// Invoked when an error occurs while starting to load data for the main frame.
