@@ -288,6 +288,10 @@ extension BrowserViewController: TopToolbarDelegate {
     presentKahftubeViewController()
   }
 
+  func topToolbarDidTapKahfGuardButton(_ topToolbar: TopToolbarView) {
+    presentKahfGuardViewController()
+  }
+
   func presentBraveShieldsViewController() {
     guard let selectedTab = tabManager.selectedTab, var url = selectedTab.url else { return }
     if let internalUrl = InternalURL(url), internalUrl.isErrorPage, let originalURL = internalUrl.originalURLFromErrorPage {
@@ -425,6 +429,14 @@ extension BrowserViewController: TopToolbarDelegate {
     let container = PopoverNavigationController(rootViewController: shields)
     let popover = PopoverController(contentController: container, contentSizeBehavior: .preferredContentSize)
     popover.present(from: topToolbar.locationView.kahfTubeButton, on: self)
+  }
+
+  func presentKahfGuardViewController() {
+    guard let selectedTab = tabManager.selectedTab else { return }
+    let shields = KahfGuardViewController(tab: selectedTab)
+    let container = PopoverNavigationController(rootViewController: shields)
+    let popover = PopoverController(contentController: container, contentSizeBehavior: .preferredContentSize)
+    popover.present(from: topToolbar.locationView.kahfGuardButton, on: self)
   }
 
   // TODO: This logic should be fully abstracted away and share logic from current MenuViewController
