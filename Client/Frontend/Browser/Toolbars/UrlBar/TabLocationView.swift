@@ -51,6 +51,9 @@ class TabLocationView: UIView {
       updateLockImageView()
       updateTextWithURL()
       setNeedsUpdateConstraints()
+      if url == nil {
+        clearAndReplaceItems()
+      }
     }
   }
 
@@ -282,7 +285,7 @@ class TabLocationView: UIView {
     addGestureRecognizer(longPressRecognizer)
     addGestureRecognizer(tapRecognizer)
     
-    let optionSubviews = [readerModeButton, shareButton, separatorLine, shieldsButton, kahfGuardButton]
+    let optionSubviews = [readerModeButton, shareButton, separatorLine, kahfGuardButton]
     optionSubviews.forEach {
       ($0 as? UIButton)?.contentEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
       $0.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
@@ -337,15 +340,19 @@ class TabLocationView: UIView {
   func configureTabLocationView(isKahfTube: Bool) {
     if isKahfTube {
       safegazeButton.removeFromSuperview()
+      shieldsButton.removeFromSuperview()
       kahfTubeButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
       kahfTubeButton.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
       kahfTubeButton.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+      tabOptionsStackView.addArrangedSubview(shieldsButton)
       tabOptionsStackView.addArrangedSubview(kahfTubeButton)
     } else {
       kahfTubeButton.removeFromSuperview()
+      shieldsButton.removeFromSuperview()
       safegazeButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
       safegazeButton.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
       safegazeButton.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+      tabOptionsStackView.addArrangedSubview(shieldsButton)
       tabOptionsStackView.addArrangedSubview(safegazeButton)
     }
   }
@@ -379,6 +386,18 @@ class TabLocationView: UIView {
       overrideUserInterfaceStyle = DefaultTheme(
         rawValue: Preferences.General.themeNormalMode.value)?.userInterfaceStyleOverride ?? .unspecified
       backgroundColor = .braveBackground
+    }
+  }
+
+  private func clearAndReplaceItems() {
+    tabOptionsStackView.subviews.forEach { view in
+        view.removeFromSuperview()
+    }
+    let optionSubviews = [readerModeButton, shareButton, separatorLine, kahfGuardButton]
+    optionSubviews.forEach {
+       $0.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+       $0.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+       tabOptionsStackView.addArrangedSubview($0)
     }
   }
 
