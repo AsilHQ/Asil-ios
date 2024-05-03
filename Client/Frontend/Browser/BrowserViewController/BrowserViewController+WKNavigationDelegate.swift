@@ -331,8 +331,8 @@ extension BrowserViewController: WKNavigationDelegate {
       // TODO: Make as safegaze after kids feature
       if let url = webView.url {
         if url.absoluteString.contains("youtube.com") {
-            KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
-            topToolbar.locationView.configureTabLocationView(isKahfTube: true)
+            // KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+            // topToolbar.locationView.configureTabLocationView(isKahfTube: true)
         } else {
             topToolbar.locationView.configureTabLocationView(isKahfTube: false)
         }
@@ -638,7 +638,7 @@ extension BrowserViewController: WKNavigationDelegate {
     
       if let url = webView.url {
           if url.absoluteString.contains("youtube.com") {
-              KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
+             // KahfTubeManager.shared.startKahfTube(view: self.view, webView: webView, vc: self)
           } else {
               KahfTubeManager.shared.closeKahfTubeTools()
           }
