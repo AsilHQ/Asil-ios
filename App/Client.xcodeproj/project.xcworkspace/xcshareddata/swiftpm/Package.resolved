@@ -188,6 +188,15 @@
       }
     },
     {
+      "identity" : "tensorflowlitec",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kewlbear/TensorFlowLiteC",
+      "state" : {
+        "revision" : "c35cd51c933aa2cdf9f92caf139935e3bbdafd27",
+        "version" : "2.14.0"
+      }
+    },
+    {
       "identity" : "then",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/devxoul/Then",
