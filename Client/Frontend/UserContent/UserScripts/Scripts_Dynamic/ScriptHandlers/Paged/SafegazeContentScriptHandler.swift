@@ -45,7 +45,8 @@ class SafegazeContentScriptHandler: TabContentScript {
     private weak var tab: Tab?
     var request: VNCoreMLRequest?
     var visionModel: VNCoreMLModel?
-    
+    let detector = NsfwDetector()
+
     init(tab: Tab) {
         self.tab = tab
     }

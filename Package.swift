@@ -161,6 +161,7 @@ let package = Package(
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/DomainSpecific/Paged/YoutubeAdblock.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/CookieControlScript.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/SafegazeScript.js"),
+        .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/ScriptHandlers/Paged/TensorFlowLite/Models/nsfw.tflite"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/KahfTube/KahfTubeChannelScript.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/KahfTube/KahfTubeCloseVideoPreview.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/KahfTube/KahfTubeEmail.js"),
