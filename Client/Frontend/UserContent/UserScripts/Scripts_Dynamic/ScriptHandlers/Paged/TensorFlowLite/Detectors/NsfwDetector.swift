@@ -16,9 +16,9 @@ class NsfwDetector {
         do {
             interpreter = try Interpreter(modelPath: Bundle.module.path(forResource: "nsfw", ofType: "tflite") ?? "")
             try interpreter.allocateTensors()
-            print("Nsfw model has been loaded")
+            print("NsfwDetector model has been loaded")
         } catch {
-            print("Failed to create interpreter with error: \(error.localizedDescription)")
+            print("NsfwDetector Failed to create interpreter with error: \(error.localizedDescription)")
             return nil
         }
     }
@@ -30,19 +30,19 @@ class NsfwDetector {
         }
 
         do {
-            try interpreter.copy(buffer, toInputAt: 0)
+            let normalizedBuffer = normalize(buffer: buffer)
+
+            try interpreter.copy(normalizedBuffer, toInputAt: 0)
+
             try interpreter.invoke()
+
             let outputTensor = try interpreter.output(at: 0)
-            let prediction = NsfwPrediction(probabilities: outputTensor.data.toArray(type: Float32.self))
+            let prediction = NsfwPrediction(predictions: outputTensor.data.toArray(type: Float32.self))
             return prediction
         } catch {
-            print("Failed to invoke interpreter with error: \(error.localizedDescription)")
+            print("NsfwDetector Failed to invoke interpreter with error: \(error.localizedDescription)")
             return nil
         }
-    }
-
-    func dispose() {
-        // TensorFlow Lite interpreter does not need explicit disposal in Swift.
     }
 
     private func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage? {
@@ -52,32 +52,39 @@ class NsfwDetector {
         UIGraphicsEndImageContext()
         return resizedImage
     }
-
+    
     private func imageToRGBData(_ image: UIImage) -> Data? {
         guard let cgImage = image.cgImage else { return nil }
         let width = cgImage.width
         let height = cgImage.height
-        let byteCount = width * height * 3
+        let bytesPerRow = width * 3
+        let byteCount = bytesPerRow * height
+        
         var rgbData = Data(count: byteCount)
-
         rgbData.withUnsafeMutableBytes { (bytes: UnsafeMutableRawBufferPointer) in
-            guard let context = CGContext(data: bytes.baseAddress,
-                                          width: width,
-                                          height: height,
-                                          bitsPerComponent: 8,
-                                          bytesPerRow: width * 3,
-                                          space: CGColorSpaceCreateDeviceRGB(),
-                                          bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue) else { return }
-            context.draw(cgImage, in: CGRect(x: 0, y: 0, width: width, height: height))
+            let context = CGContext(
+                data: bytes.baseAddress,
+                width: width,
+                height: height,
+                bitsPerComponent: 8,
+                bytesPerRow: bytesPerRow,
+                space: CGColorSpaceCreateDeviceRGB(),
+                bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue
+            )
+            context?.draw(cgImage, in: CGRect(x: 0, y: 0, width: width, height: height))
         }
-
         return rgbData
+    }
+    
+    private func normalize(buffer: Data) -> Data {
+        let normalizedBuffer = buffer.withUnsafeBytes { (ptr: UnsafeRawBufferPointer) -> [Float] in
+            let buffer = ptr.bindMemory(to: UInt8.self)
+            return buffer.map { Float($0) / 255.0 }
+        }
+        return Data(bytes: normalizedBuffer, count: normalizedBuffer.count * MemoryLayout<Float>.stride)
     }
 }
 
-struct NsfwPrediction {
-    let probabilities: [Float]
-}
 
 extension Data {
     func toArray<T>(type: T.Type) -> [T] {

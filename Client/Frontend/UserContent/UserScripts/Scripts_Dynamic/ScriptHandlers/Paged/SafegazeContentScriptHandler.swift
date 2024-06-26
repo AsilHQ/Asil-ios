@@ -45,7 +45,7 @@ class SafegazeContentScriptHandler: TabContentScript {
     private weak var tab: Tab?
     var request: VNCoreMLRequest?
     var visionModel: VNCoreMLModel?
-    let detector = NsfwDetector()
+    let nsfwDetector = NsfwDetector()
 
     init(tab: Tab) {
         self.tab = tab
@@ -109,34 +109,25 @@ class SafegazeContentScriptHandler: TabContentScript {
                     }
                     return
                 }
-                
-                let imageHandler = VNImageRequestHandler(data: imageData)
-                
-                var humanCount = 0
-                var faceCount = 0
-                
-                let humanRequest = VNDetectHumanRectanglesRequest { request, error in
-                    // Process the results for human detection
-                    if let humanObservations = request.results as? [VNHumanObservation] {
-                        humanCount = humanObservations.count
-                    }
+
+                guard let image = UIImage(data: imageData) else {
+                    return
                 }
-                humanRequest.usesCPUOnly = true
-                
-                let faceRequest = VNDetectFaceRectanglesRequest { request, error in
-                    // Process the results for face detection
-                    if let faceObservations = request.results as? [VNFaceObservation] {
-                        faceCount = faceObservations.count
+
+                if let prediction = self.nsfwDetector?.isNsfw(bitmap: image) {
+
+                    if prediction.isSafe() {
+                        print("NSFW: isSafe")
+                    } else {
+                        print("NSFW: isNotSafe")
                     }
+                } else {
+                    print("NSFW Failed to get prediction.")
                 }
-                faceRequest.usesCPUOnly = true
-                
-                // Perform the requests on the image handler
-                try? imageHandler.perform([humanRequest, faceRequest])
-                
+
                 // Notify on the main queue when the background tasks are completed
                 DispatchQueue.main.async {
-                    completion(humanCount + faceCount > 0)
+                    completion(true)
                 }
             }
         }
