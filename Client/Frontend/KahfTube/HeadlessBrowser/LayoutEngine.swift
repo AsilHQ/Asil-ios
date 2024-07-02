@@ -261,7 +261,7 @@ extension WebKitLayoutEngine {
     public func currentContent(completionHandler: CompletionHandler?) {
         waitLoadingQueue.async { [unowned self] in
             self.handleLoadRequestCompletion { error in
-                if let error = error  {
+                if let error = error {
                     self.callBackQueue.asyncOrCurrent {
                         completionHandler?(nil, error)
                     }
@@ -277,7 +277,7 @@ extension WebKitLayoutEngine {
         let condition = pageLoadedPolicy.continueCondition
         let max = Date().timeIntervalSince1970 + pageLoadTimeout
         while(condition(self)) {
-            if pageLoadTimeout > 0 && Date().timeIntervalSince1970 > max  {
+            if pageLoadTimeout > 0 && Date().timeIntervalSince1970 > max {
                 completionHandler(ErikError.timeOutError(time: pageLoadTimeout))
                 return
             }

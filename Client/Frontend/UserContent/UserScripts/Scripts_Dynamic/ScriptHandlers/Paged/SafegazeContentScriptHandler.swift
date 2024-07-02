@@ -9,7 +9,6 @@ import WebKit
 import BraveCore
 import BraveShared
 import Data
-import Vision
 import CoreMedia
 
 class SafegazeContentScriptHandler: TabContentScript {
@@ -43,9 +42,8 @@ class SafegazeContentScriptHandler: TabContentScript {
     }()
     
     private weak var tab: Tab?
-    var request: VNCoreMLRequest?
-    var visionModel: VNCoreMLModel?
     let nsfwDetector = NsfwDetector()
+    let genderDetector = GenderDetector()
 
     init(tab: Tab) {
         self.tab = tab
@@ -113,16 +111,20 @@ class SafegazeContentScriptHandler: TabContentScript {
                 guard let image = UIImage(data: imageData) else {
                     return
                 }
-
-                if let prediction = self.nsfwDetector?.isNsfw(bitmap: image) {
+                
+                if let prediction = self.nsfwDetector.isNsfw(bitmap: image) {
 
                     if prediction.isSafe() {
-                        print("NSFW: isSafe")
+                        print("**NSFW: isSafe")
+                        
+                        self.genderDetector.predict(image: image, data: imageData) { prediction in
+                            print("Gender prediction \(prediction.hasFemale)")
+                        }
                     } else {
-                        print("NSFW: isNotSafe")
+                        print("**NSFW: isNotSafe")
                     }
                 } else {
-                    print("NSFW Failed to get prediction.")
+                    print("**NSFW Failed to get prediction.")
                 }
 
                 // Notify on the main queue when the background tasks are completed

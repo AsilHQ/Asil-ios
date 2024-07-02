@@ -33,7 +33,7 @@
       "location" : "https://github.com/tid-kijyun/Kanna",
       "state" : {
         "branch" : "master",
-        "revision" : "bf19cf5f5fff3924cc2b63dd32732bce28b4c748"
+        "revision" : "41c3d28ea0eac07e4551b28def9de1ede702e739"
       }
     },
     {
@@ -67,8 +67,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/SDWebImageSVGNativeCoder.git",
       "state" : {
-        "revision" : "2e5522fa9d95b2bfccbf38b1c97cd68f06931b02",
-        "version" : "0.1.1"
+        "revision" : "09a6199bbc0899c90382e734bbe07850eae2aa83",
+        "version" : "0.2.0"
       }
     },
     {
@@ -76,8 +76,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI",
       "state" : {
-        "revision" : "261b6cec35686d2dc192b809ab50742b4502a73b",
-        "version" : "2.2.6"
+        "revision" : "53573d6dd017e354c0e7d8f1c86b77ef1383c996",
+        "version" : "2.2.7"
       }
     },
     {
@@ -85,8 +85,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SnapKit/SnapKit",
       "state" : {
-        "revision" : "e74fe2a978d1216c3602b129447c7301573cc2d8",
-        "version" : "5.7.0"
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
       }
     },
     {
@@ -94,8 +94,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/svgnative-Xcode.git",
       "state" : {
-        "revision" : "46c0196664b445c59d8c9c2f55c076cd9869f980",
-        "version" : "0.1.0-beta"
+        "revision" : "de560bb9f69bc89f4624855998148eb6e0bb8e60",
+        "version" : "0.1.0"
       }
     },
     {
@@ -139,8 +139,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-custom-dump",
       "state" : {
-        "revision" : "4a87bb75be70c983a9548597e8783236feb3401e",
-        "version" : "0.11.1"
+        "revision" : "0a5bff05fe01dcd513932ed338a4efad8268b803",
+        "version" : "0.11.2"
       }
     },
     {
@@ -183,8 +183,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SwiftyJSON/SwiftyJSON",
       "state" : {
-        "revision" : "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
-        "version" : "5.0.1"
+        "revision" : "af76cf3ef710b6ca5f8c05f3a31307d44a3c5828",
+        "version" : "5.0.2"
       }
     },
     {
@@ -219,8 +219,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/weichsel/ZIPFoundation",
       "state" : {
-        "revision" : "b979e8b52c7ae7f3f39fa0182e738e9e7257eb78",
-        "version" : "0.9.18"
+        "revision" : "02b6abe5f6eef7e3cbd5f247c5cc24e246efcfe0",
+        "version" : "0.9.19"
       }
     }
   ],
