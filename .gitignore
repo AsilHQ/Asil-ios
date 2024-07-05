@@ -100,6 +100,9 @@ yubikit.log
 .env
 .env.*
 
+
+*.tflite
+
 # Packed Scripts
 Client/Assets/__firefox__.js
 Client/Assets/AllFramesAtDocumentStart.js

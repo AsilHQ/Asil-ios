@@ -21,7 +21,12 @@ class GenderDetector: TensorflowDetector {
     private var interpreter: Interpreter?
     private var SAFE_GAZE_DEFAULT_BLUR_VALUE = 30
     private var SAFE_GAZE_MIN_FACE_SIZE = 15
-    private var SAFE_GAZE_MIN_FEMALE_CONFIDENCE: Float = 0.8
+    private var SAFE_GAZE_MIN_FEMALE_CONFIDENCE: Float = 0.7
+    
+    let batchSize = 1
+    let inputChannels = 3
+    let inputWidth = 224
+    let inputHeight = 224
     
     override init() {
         do {
@@ -37,7 +42,7 @@ class GenderDetector: TensorflowDetector {
     func predict(image: UIImage, data: Data, completion: @escaping (GenderPrediction) -> Void) {
         let requestHandler = VNImageRequestHandler(data: data, options: [:])
         
-        let faceDetectionRequest = VNDetectFaceRectanglesRequest { (request, error) in
+        let faceDetectionRequest = VNDetectFaceRectanglesRequest { [self] (request, error) in
             guard let observations = request.results as? [VNFaceObservation] else {
                 DispatchQueue.main.async {
                     completion(GenderPrediction())
@@ -50,14 +55,14 @@ class GenderDetector: TensorflowDetector {
             
             for faceObservation in observations {
                 guard let faceImage = self.cropToBBox(image: image, boundingBox: faceObservation.boundingBox) else { continue }
+                
                 let genderPredictions = self.getGenderPrediction(image: faceImage)
                 
-                let isMale = genderPredictions.0 > genderPredictions.1
+                let isMale = genderPredictions.0 < genderPredictions.1
                 prediction.hasMale = prediction.hasMale || isMale
-                prediction.maleConfidence = genderPredictions.0
-                prediction.femaleConfidence = genderPredictions.1
+                prediction.femaleConfidence = genderPredictions.0
+                prediction.maleConfidence = genderPredictions.1
                 
-                print("GenderDetector: Female Confidence \(prediction.femaleConfidence) \(self.SAFE_GAZE_MIN_FEMALE_CONFIDENCE)")
                 if prediction.femaleConfidence >= self.SAFE_GAZE_MIN_FEMALE_CONFIDENCE {
                     prediction.hasFemale = true
                     break
@@ -70,7 +75,7 @@ class GenderDetector: TensorflowDetector {
         }
         
         #if targetEnvironment(simulator)
-            faceDetectionRequest.usesCPUOnly = true
+                faceDetectionRequest.usesCPUOnly = true
         #endif
         
         do {
@@ -84,14 +89,25 @@ class GenderDetector: TensorflowDetector {
     }
     
     private func getGenderPrediction(image: UIImage) -> (Float, Float, Bool) {
-        guard let resizedImage = resizeImage(image: image, targetSize: inputImageSize),
-              let buffer = imageToRGBData(resizedImage) else {
+        
+        guard let thumbnailPixelBuffer = CVPixelBuffer.buffer(from: image)?.centerThumbnail(ofSize: inputImageSize) else {
             return (0, 0, false)
         }
         
         do {
-            let normalizedBuffer = normalize(buffer: buffer)
-            try interpreter?.copy(normalizedBuffer, toInputAt: 0)
+            let inputTensor = try interpreter?.input(at: 0)
+
+            guard let rgbData = rgbDataFromBuffer(
+                thumbnailPixelBuffer,
+                byteCount: batchSize * inputWidth * inputHeight * inputChannels,
+                isModelQuantized: inputTensor?.dataType == .float16
+            ) else {
+                print("Failed to convert the image buffer to RGB data.")
+                return (0, 0, false)
+            }
+
+            try interpreter?.copy(rgbData, toInputAt: 0)
+
             try interpreter?.invoke()
             
             let outputTensor = try interpreter?.output(at: 0)

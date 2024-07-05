@@ -8,9 +8,14 @@
 import UIKit
 
 class NsfwDetector: TensorflowDetector {
-    private let inputImageSize = 224
+    
     private var interpreter: Interpreter?
-
+    let batchSize = 1
+    let inputChannels = 3
+    let inputWidth = 224
+    let inputHeight = 224
+    private let inputImageSize = CGSize(width: 224, height: 224)
+    
     override init() {
         do {
             interpreter = try Interpreter(modelPath: Bundle.module.path(forResource: "nsfw", ofType: "tflite") ?? "")
@@ -22,24 +27,32 @@ class NsfwDetector: TensorflowDetector {
         super.init()
     }
 
-    func isNsfw(bitmap: UIImage) -> NsfwPrediction? {
-        guard let resizedImage = resizeImage(image: bitmap, targetSize: CGSize(width: inputImageSize, height: inputImageSize)),
-              let buffer = imageToRGBData(resizedImage) else {
+    func isNsfw(image: UIImage) -> NsfwPrediction? {
+        guard let thumbnailPixelBuffer = CVPixelBuffer.buffer(from: image)?.centerThumbnail(ofSize: inputImageSize) else {
             return nil
         }
-
+        
         do {
-            let normalizedBuffer = normalize(buffer: buffer)
+            let inputTensor = try interpreter?.input(at: 0)
 
-            try interpreter?.copy(normalizedBuffer, toInputAt: 0)
+            guard let rgbData = rgbDataFromBuffer(
+                thumbnailPixelBuffer,
+                byteCount: batchSize * inputWidth * inputHeight * inputChannels,
+                isModelQuantized: inputTensor?.dataType == .float16
+            ) else {
+                print("Failed to convert the image buffer to RGB data.")
+                return nil
+            }
+
+            try interpreter?.copy(rgbData, toInputAt: 0)
 
             try interpreter?.invoke()
-
+            
             let outputTensor = try interpreter?.output(at: 0)
             let prediction = NsfwPrediction(predictions: outputTensor?.data.toArray(type: Float32.self) ?? [])
             return prediction
         } catch {
-            print("NsfwDetector Failed to invoke interpreter with error: \(error.localizedDescription)")
+            print("GenderDetector Failed to invoke interpreter with error: \(error.localizedDescription)")
             return nil
         }
     }

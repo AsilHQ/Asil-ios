@@ -70,14 +70,13 @@ class SafegazeContentScriptHandler: TabContentScript {
                 if messageArray.count == 3 {
                     if let url = URL(string: messageArray[1]) {
                         if #available(iOS 15.0, *) {
-                            downloadAndProcessImage(from: url) { isExist in
+                            downloadAndProcessImage(from: url) { isBlur in
                                 let jsString =
                                 """
                                     (function() {
-                                        safegazeOnDeviceModelHandler(\(isExist),\(messageArray[2]));
+                                        safegazeOnDeviceModelHandler(\(isBlur),\(messageArray[2]));
                                     })();
                                 """
-                                    
                                 tab.webView?.evaluateSafeJavaScript(functionName: jsString, contentWorld: .page, asFunction: false) { object, error in
                                     if let error = error {
                                         print("SafegazeContentScriptHandler coreML script\(error)")
@@ -112,24 +111,28 @@ class SafegazeContentScriptHandler: TabContentScript {
                     return
                 }
                 
-                if let prediction = self.nsfwDetector.isNsfw(bitmap: image) {
-
+                if let prediction = self.nsfwDetector.isNsfw(image: image) {
                     if prediction.isSafe() {
-                        print("**NSFW: isSafe")
-                        
                         self.genderDetector.predict(image: image, data: imageData) { prediction in
-                            print("Gender prediction \(prediction.hasFemale)")
+                            if prediction.faceCount > 0 {
+                                DispatchQueue.main.async {
+                                    completion(prediction.hasFemale)
+                                }
+                            } else {
+                                DispatchQueue.main.async {
+                                    completion(false)
+                                }
+                            }
                         }
                     } else {
-                        print("**NSFW: isNotSafe")
+                        DispatchQueue.main.async {
+                            completion(true)
+                        }
                     }
                 } else {
-                    print("**NSFW Failed to get prediction.")
-                }
-
-                // Notify on the main queue when the background tasks are completed
-                DispatchQueue.main.async {
-                    completion(true)
+                    DispatchQueue.main.async {
+                        completion(true)
+                    }
                 }
             }
         }
@@ -144,39 +147,6 @@ class SafegazeContentScriptHandler: TabContentScript {
                 completion(data)
             }
         }.resume()
-    }
-    
-    func asyncDownloadAndConvertToBase64(for imageStrings: [String], completion: @escaping ([String?]) -> Void) {
-        let dispatchGroup = DispatchGroup()
-        var base64Strings: [String?] = []
-
-        for imageURLString in imageStrings {
-            guard let imageURL = URL(string: imageURLString) else {
-                // Invalid URL string, append nil to the result
-                base64Strings.append(nil)
-                continue
-            }
-
-            dispatchGroup.enter()
-
-            asyncDownloadImage(from: imageURL) { data in
-                defer {
-                    dispatchGroup.leave()
-                }
-
-                if let imageData = data {
-                    let base64String = imageData.base64EncodedString()
-                    base64Strings.append(base64String)
-                } else {
-                    // Failed to download image, append nil to the result
-                    base64Strings.append(nil)
-                }
-            }
-        }
-
-        dispatchGroup.notify(queue: .main) {
-            completion(base64Strings)
-        }
     }
 }
 
