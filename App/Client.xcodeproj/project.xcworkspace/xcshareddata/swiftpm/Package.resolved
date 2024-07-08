@@ -188,11 +188,11 @@
       }
     },
     {
-      "identity" : "tensorflowlitec",
+      "identity" : "tensorflowliteswift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/kewlbear/TensorFlowLiteC",
+      "location" : "https://github.com/tareksabry1337/TensorFlowLiteSwift",
       "state" : {
-        "revision" : "c35cd51c933aa2cdf9f92caf139935e3bbdafd27",
+        "revision" : "4a5e8b93351148c70cda70c8271ccd29bdb793e2",
         "version" : "2.14.0"
       }
     },

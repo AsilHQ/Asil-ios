@@ -37,7 +37,7 @@
 		2F6931B7260CFB3700ECEB38 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6931B6260CFB3700ECEB38 /* IntentHandler.swift */; };
 		2F6931BB260CFB3700ECEB38 /* BrowserIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F6931B4260CFB3700ECEB38 /* BrowserIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		441A6360272445F9001492C3 /* StatDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441A635F272444DE001492C3 /* StatDataModel.swift */; };
-		4E5F3D122C29CD4200D6D40F /* TensorFlowLiteC in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F3D112C29CD4200D6D40F /* TensorFlowLiteC */; };
+		4E536AFB2C3C6CA400724748 /* TensorFlowLiteSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4E536AFA2C3C6CA400724748 /* TensorFlowLiteSwift */; };
 		4EB430F829C9E5BB00290375 /* Kanna in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB430F729C9E5BB00290375 /* Kanna */; };
 		5E8CD8E123D5E3DA00548FC0 /* libarchive.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8CD8E023D5E3D100548FC0 /* libarchive.2.tbd */; };
 		5EE5918123A290E000E8E8DE /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F926647A234D4EF400359492 /* CoreNFC.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -272,6 +272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E536AFB2C3C6CA400724748 /* TensorFlowLiteSwift in Frameworks */,
 				4EB430F829C9E5BB00290375 /* Kanna in Frameworks */,
 				270ECFC82838210F0089B8B7 /* Brave in Frameworks */,
 				279A9BCC2823370100F40FC6 /* SwiftKeychainWrapper in Frameworks */,
@@ -282,7 +283,6 @@
 				27FA21892837FB0100FA2C45 /* Shared in Frameworks */,
 				5EE5918123A290E000E8E8DE /* CoreNFC.framework in Frameworks */,
 				5E8CD8E123D5E3DA00548FC0 /* libarchive.2.tbd in Frameworks */,
-				4E5F3D122C29CD4200D6D40F /* TensorFlowLiteC in Frameworks */,
 				E6231C051B90A472005ABB0D /* libxml2.2.tbd in Frameworks */,
 				E6231C011B90A44F005ABB0D /* libz.tbd in Frameworks */,
 				27FA217F2837FB0100FA2C45 /* BraveShared in Frameworks */,
@@ -626,7 +626,7 @@
 				7DDE6307292FEC9500B8B585 /* SDWebImage */,
 				7DDAF2222930091600D955A2 /* SDWebImageSVGNativeCoder */,
 				4EB430F729C9E5BB00290375 /* Kanna */,
-				4E5F3D112C29CD4200D6D40F /* TensorFlowLiteC */,
+				4E536AFA2C3C6CA400724748 /* TensorFlowLiteSwift */,
 			);
 			productName = Client;
 			productReference = F84B21BE1A090F8100AAB793 /* Client.app */;
@@ -711,7 +711,7 @@
 				7DDE6306292FEC9500B8B585 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				7DDAF2212930091600D955A2 /* XCRemoteSwiftPackageReference "SDWebImageSVGNativeCoder" */,
 				4EB430F629C9E5BB00290375 /* XCRemoteSwiftPackageReference "Kanna" */,
-				4E5F3D102C29CD4200D6D40F /* XCRemoteSwiftPackageReference "TensorFlowLiteC" */,
+				4E536AF92C3C6CA300724748 /* XCRemoteSwiftPackageReference "TensorFlowLiteSwift" */,
 			);
 			productRefGroup = F84B21BF1A090F8100AAB793 /* Products */;
 			projectDirPath = "";
@@ -2409,9 +2409,9 @@
 				minimumVersion = 4.0.1;
 			};
 		};
-		4E5F3D102C29CD4200D6D40F /* XCRemoteSwiftPackageReference "TensorFlowLiteC" */ = {
+		4E536AF92C3C6CA300724748 /* XCRemoteSwiftPackageReference "TensorFlowLiteSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kewlbear/TensorFlowLiteC";
+			repositoryURL = "https://github.com/tareksabry1337/TensorFlowLiteSwift";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.14.0;
@@ -2505,10 +2505,10 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Storage;
 		};
-		4E5F3D112C29CD4200D6D40F /* TensorFlowLiteC */ = {
+		4E536AFA2C3C6CA400724748 /* TensorFlowLiteSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4E5F3D102C29CD4200D6D40F /* XCRemoteSwiftPackageReference "TensorFlowLiteC" */;
-			productName = TensorFlowLiteC;
+			package = 4E536AF92C3C6CA300724748 /* XCRemoteSwiftPackageReference "TensorFlowLiteSwift" */;
+			productName = TensorFlowLiteSwift;
 		};
 		4EB430F729C9E5BB00290375 /* Kanna */ = {
 			isa = XCSwiftPackageProductDependency;
