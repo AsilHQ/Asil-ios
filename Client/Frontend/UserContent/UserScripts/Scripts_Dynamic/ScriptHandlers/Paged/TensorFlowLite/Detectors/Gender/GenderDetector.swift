@@ -7,6 +7,7 @@
 
 import UIKit
 import Vision
+import TensorFlowLiteSwift
 
 class GenderPrediction {
     var faceCount: Int = 0

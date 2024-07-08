@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import TensorFlowLiteSwift
 
 class NsfwDetector: TensorflowDetector {
     
