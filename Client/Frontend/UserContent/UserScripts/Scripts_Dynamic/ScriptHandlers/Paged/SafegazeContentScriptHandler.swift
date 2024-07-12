@@ -29,13 +29,30 @@ class SafegazeContentScriptHandler: TabContentScript {
     static let scriptSandbox: WKContentWorld = .page
     static let userScript: WKUserScript? = {
         let scriptSetup = "window.blurIntensity = \(Preferences.Safegaze.blurIntensity.value);"
+        let sendMessage = """
+                            function sendMessage(message) {
+                                try {
+                                    window.__firefox__.execute(function($) {
+                                        let postMessage = $(function(message) {
+                                            $.postNativeMessage('$<message_handler>', {
+                                                "securityToken": SECURITY_TOKEN,
+                                                "state": message
+                                            });
+                                        });
+
+                                        postMessage(message);
+                                    });
+                                }
+                                catch {}
+                            }
+                          """
         guard var script = loadUserScript(named: scriptName) else {
             return nil
         }
         
         return WKUserScript.create(source: secureScript(handlerName: messageHandlerName,
                                                         securityToken: scriptId,
-                                                        script: scriptSetup + script),
+                                                        script: scriptSetup + sendMessage + script),
                                    injectionTime: .atDocumentEnd,
                                    forMainFrameOnly: false,
                                    in: scriptSandbox)

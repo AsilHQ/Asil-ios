@@ -7,7 +7,6 @@ const onProcessImageMap = new Map();
 var imageCount = 0;
 
 window.safegazeOnDeviceModelHandler = safegazeOnDeviceModelHandler;
-window.sendMessage = sendMessage;
 window.updateBluredImageOpacity = updateBluredImageOpacity;
 
 async function safegazeOnDeviceModelHandler(shouldBlur, index) {
@@ -17,7 +16,7 @@ async function safegazeOnDeviceModelHandler(shouldBlur, index) {
         imgElement.setAttribute('isSent', 'true');
 
         sendMessage("replaced"); // Update total blurred image count
-        
+
         // upon hover or long press, we will unblur the image momentarily
         imgElement.onmouseenter = () => {
             unblurImage(imgElement);
@@ -40,34 +39,6 @@ async function safegazeOnDeviceModelHandler(shouldBlur, index) {
         unblurImage(element);
     }
 };
-
-function sendMessage(message) {
-    console.log(message);
-    try {
-        window.__firefox__.execute(function($) {
-            let postMessage = $(function(message) {
-                $.postNativeMessage('$<message_handler>', {
-                    "securityToken": SECURITY_TOKEN,
-                    "state": message
-                });
-            });
-
-            postMessage(message);
-        });
-    }
-    catch {}
-}
-
-function removeSourceElementsInPictures() {
-    const pictureElements = document.querySelectorAll('picture');
-
-    pictureElements.forEach(picture => {
-        const sourceElements = picture.querySelectorAll('source');
-        sourceElements.forEach(source => {
-            source.remove();
-        });
-    });
-}
 
 function blurImage(image) {
     image.style.filter = `blur(${window.blurIntensity * 10}px) grayscale(100%) brightness(0.5)`;
