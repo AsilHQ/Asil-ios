@@ -101,4 +101,33 @@ public class SafegazeManager {
             }
         }
     }
+    
+    public func overwriteSafegazeJs() {
+        let remoteHostFileURL = URL(string: "https://raw.githubusercontent.com/AsilHQ/Android/js_code_dev/node_modules/%40duckduckgo/privacy-dashboard/build/app/safe_gaze_v2.js")!
+
+        DispatchQueue.global(qos: .background).async {
+            if let localSafegazeFilePath = Bundle.module.path(forResource: "SafegazeScript", ofType: "js") {
+                if let remoteSafegazeFileData = try? Data(contentsOf: remoteHostFileURL) {
+                    do {
+                        try remoteSafegazeFileData.write(to: URL(fileURLWithPath: localSafegazeFilePath))
+                        DispatchQueue.main.async {
+                            print("SafegazeManager: SafegazeScript file downloaded and overwritten successfully.")
+                        }
+                    } catch {
+                        DispatchQueue.main.async {
+                            print("SafegazeManager: Error writing to the local SafegazScript file: \(error)")
+                        }
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        print("SafegazeManager: Error downloading the remote SafegazeScript file.")
+                    }
+                }
+            } else {
+                DispatchQueue.main.async {
+                    print("SafegazeManager: Local SafegazeScript file not found.")
+                }
+            }
+        }
+    }
 }

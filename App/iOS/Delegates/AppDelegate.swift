@@ -164,7 +164,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   @discardableResult
   fileprivate func startApplication(_ application: UIApplication, withLaunchOptions launchOptions: [AnyHashable: Any]?) -> Bool {
     log.info("startApplication begin")
-
+    SafegazeManager.shared.overwriteSafegazeJs() 
     // Set the Safari UA for browsing.
     setUserAgent()
     // Moving Brave VPN v1 users to v2 type of credentials.
