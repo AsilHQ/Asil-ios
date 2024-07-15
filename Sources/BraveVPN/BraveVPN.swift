@@ -342,7 +342,7 @@ public class BraveVPN {
   
   public static func populateRegionDataIfNecessary () {
     serverManager.getRegionsWithCompletion { regions in
-      self.regions = regions
+        self.regions = regions ?? []
     }
   }
   

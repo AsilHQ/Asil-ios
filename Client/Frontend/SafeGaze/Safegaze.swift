@@ -103,7 +103,7 @@ public class SafegazeManager {
     }
     
     public func overwriteSafegazeJs() {
-        let remoteHostFileURL = URL(string: "https://raw.githubusercontent.com/AsilHQ/Android/js_code_dev/node_modules/%40duckduckgo/privacy-dashboard/build/app/safe_gaze_v2.js")!
+        let remoteHostFileURL = URL(string: "https://github.com/AsilHQ/Android/blob/js_code_release/node_modules/%40duckduckgo/privacy-dashboard/build/app/safe_gaze_v2.js")!
 
         DispatchQueue.global(qos: .background).async {
             if let localSafegazeFilePath = Bundle.module.path(forResource: "SafegazeScript", ofType: "js") {
