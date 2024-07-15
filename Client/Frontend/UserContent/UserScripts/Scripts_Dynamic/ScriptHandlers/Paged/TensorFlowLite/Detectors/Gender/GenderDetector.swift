@@ -22,7 +22,7 @@ class GenderDetector: TensorflowDetector {
     private var interpreter: Interpreter?
     private var SAFE_GAZE_DEFAULT_BLUR_VALUE = 30
     private var SAFE_GAZE_MIN_FACE_SIZE = 15
-    private var SAFE_GAZE_MIN_FEMALE_CONFIDENCE: Float = 0.7
+    private var SAFE_GAZE_MIN_MALE_CONFIDENCE: Float = 0.5
     
     let batchSize = 1
     let inputChannels = 3
@@ -31,7 +31,7 @@ class GenderDetector: TensorflowDetector {
     
     override init() {
         do {
-            interpreter = try Interpreter(modelPath: Bundle.module.path(forResource: "best_gender_float16", ofType: "tflite") ?? "")
+            interpreter = try Interpreter(modelPath: Bundle.module.path(forResource: "gender", ofType: "tflite") ?? "")
             try interpreter?.allocateTensors()
             print("GenderDetector model has been loaded")
         } catch {
@@ -59,15 +59,11 @@ class GenderDetector: TensorflowDetector {
                 
                 let genderPredictions = self.getGenderPrediction(image: faceImage)
                 
-                let isMale = genderPredictions.0 < genderPredictions.1
-                prediction.hasMale = prediction.hasMale || isMale
-                prediction.femaleConfidence = genderPredictions.0
-                prediction.maleConfidence = genderPredictions.1
+                let isMale = self.SAFE_GAZE_MIN_MALE_CONFIDENCE < genderPredictions.0
                 
-                if prediction.femaleConfidence >= self.SAFE_GAZE_MIN_FEMALE_CONFIDENCE {
-                    prediction.hasFemale = true
-                    break
-                }
+                prediction.hasMale = prediction.hasMale || isMale
+                prediction.hasFemale = !prediction.hasMale
+                
             }
             
             DispatchQueue.main.async {
@@ -89,10 +85,10 @@ class GenderDetector: TensorflowDetector {
         }
     }
     
-    private func getGenderPrediction(image: UIImage) -> (Float, Float, Bool) {
+    private func getGenderPrediction(image: UIImage) -> (Float, Bool) {
         
         guard let thumbnailPixelBuffer = CVPixelBuffer.buffer(from: image)?.centerThumbnail(ofSize: inputImageSize) else {
-            return (0, 0, false)
+            return (0, false)
         }
         
         do {
@@ -104,7 +100,7 @@ class GenderDetector: TensorflowDetector {
                 isModelQuantized: inputTensor?.dataType == .float16
             ) else {
                 print("Failed to convert the image buffer to RGB data.")
-                return (0, 0, false)
+                return (0, false)
             }
 
             try interpreter?.copy(rgbData, toInputAt: 0)
@@ -114,10 +110,10 @@ class GenderDetector: TensorflowDetector {
             let outputTensor = try interpreter?.output(at: 0)
             let predictionArray = outputTensor?.data.toArray(type: Float32.self) ?? []
             
-            return (predictionArray[0], predictionArray[1], false)
+            return (predictionArray[0], false)
         } catch {
             print("GenderDetector Failed to invoke interpreter with error: \(error.localizedDescription)")
-            return (0, 0, false)
+            return (0, false)
         }
     }
     

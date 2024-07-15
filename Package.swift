@@ -163,7 +163,6 @@ let package = Package(
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/SafegazeScript.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/ScriptHandlers/Paged/TensorFlowLite/Detectors/Nsfw/nsfw.tflite"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/ScriptHandlers/Paged/TensorFlowLite/Detectors/Gender/gender.tflite"),
-        .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/ScriptHandlers/Paged/TensorFlowLite/Detectors/Gender/best_gender_float16.tflite"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/KahfTube/KahfTubeChannelScript.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/KahfTube/KahfTubeCloseVideoPreview.js"),
         .copy("Frontend/UserContent/UserScripts/Scripts_Dynamic/Scripts/Paged/KahfTube/KahfTubeEmail.js"),
