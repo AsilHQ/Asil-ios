@@ -59,10 +59,15 @@ class GenderDetector: TensorflowDetector {
                 
                 let genderPredictions = self.getGenderPrediction(image: faceImage)
                 
-                let isMale = self.SAFE_GAZE_MIN_MALE_CONFIDENCE < genderPredictions.0
-                
+                let isMale = genderPredictions.0 > 0.5
                 prediction.hasMale = prediction.hasMale || isMale
-                prediction.hasFemale = !prediction.hasMale
+                prediction.maleConfidence = isMale ? genderPredictions.0 : 1 - genderPredictions.0
+                prediction.femaleConfidence = 1 - prediction.maleConfidence
+
+                if (!isMale) {
+                    prediction.hasFemale = true
+                    break
+                }
                 
             }
             
