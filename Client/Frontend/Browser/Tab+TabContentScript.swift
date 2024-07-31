@@ -27,6 +27,23 @@ extension TabContentScriptLoader {
     return source
   }
     
+  static func loadUserScriptFileManager(named: String) -> String? {
+    let fileManager = FileManager.default
+    let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+    let localFileURL = documentsURL.appendingPathComponent(named).appendingPathExtension("js").path
+    
+    do {
+        // Attempt to load the file contents
+        let source = try String(contentsOfFile: localFileURL, encoding: .utf8)
+        return source
+    } catch {
+        // Log error and handle failure
+        Logger.module.error("Failed to load script: \(named).js - \(error.localizedDescription)")
+        assertionFailure("Failed to Load Script: \(named).js - \(error.localizedDescription)")
+        return nil
+    }
+  }
+    
   static func loadUserStyle(named: String, cssStyleName: String) -> String? {
     guard let path = Bundle.module.path(forResource: named, ofType: "css"),
           var cssString: String = try? String(contentsOfFile: path, encoding: String.Encoding.utf8) else {

@@ -102,32 +102,34 @@ public class SafegazeManager {
         }
     }
     
-    public func overwriteSafegazeJs() {
+    public func downloadAndSaveJavaScriptFile() {
         let remoteHostFileURL = URL(string: "https://raw.githubusercontent.com/AsilHQ/Android/js_code_dev/node_modules/%40duckduckgo/privacy-dashboard/build/app/safe_gaze_v2.js")!
-
-        DispatchQueue.global(qos: .background).async {
-            if let localSafegazeFilePath = Bundle.module.path(forResource: "SafegazeScript", ofType: "js") {
-                if let remoteSafegazeFileData = try? Data(contentsOf: remoteHostFileURL) {
-                    do {
-                        try remoteSafegazeFileData.write(to: URL(fileURLWithPath: localSafegazeFilePath))
-                        DispatchQueue.main.async {
-                            print("SafegazeManager: SafegazeScript file downloaded and overwritten successfully.")
-                        }
-                    } catch {
-                        DispatchQueue.main.async {
-                            print("SafegazeManager: Error writing to the local SafegazScript file: \(error)")
-                        }
-                    }
-                } else {
-                    DispatchQueue.main.async {
-                        print("SafegazeManager: Error downloading the remote SafegazeScript file.")
-                    }
-                }
-            } else {
-                DispatchQueue.main.async {
-                    print("SafegazeManager: Local SafegazeScript file not found.")
-                }
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let localFileURL = documentsURL.appendingPathComponent("SafegazeScript.js")
+        
+        // Create the download task
+        let task = URLSession.shared.dataTask(with: remoteHostFileURL) { data, response, error in
+            if let error = error {
+                print("Failed to download file: \(error)")
+                return
+            }
+            
+            guard let data = data else {
+                print("No data downloaded.")
+                return
+            }
+            
+            do {
+                // Write the downloaded data to the file
+                try data.write(to: localFileURL)
+                print("SafegazeManager: JavaScript file downloaded and saved successfully.")
+            } catch {
+                print("SafegazeManager: Failed to save JavaScript file: \(error)")
             }
         }
+        
+        // Start the download task
+        task.resume()
     }
 }

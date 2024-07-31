@@ -46,7 +46,7 @@ class SafegazeContentScriptHandler: TabContentScript {
                                 catch {}
                             }
                           """
-        guard var script = loadUserScript(named: scriptName) else {
+        guard var script = loadUserScriptFileManager(named: scriptName) else {
             return nil
         }
         
